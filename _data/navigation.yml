@@ -4,5 +4,7 @@ main:
     url: /blog/
   - title: "Projects"
     url: /portfolio/
+  - title: "Hobbies"
+    url: /hobbies/
   - title: "CV"
     url: /assets/images/CV.pdf

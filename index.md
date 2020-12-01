@@ -6,26 +6,38 @@ layout : single
 header :
     overlay_image: "assets/images/wolf.jpg"
     teaser: "assets/images/wolf.jpg"
-redirect_from: 
+redirect_from:
     - /about/
     - /about.html
 ---
+# Welcome
+##### Current status: BSc & MSc undegraduate student @[NTUA](https://www.ece.ntua.gr/en). Freelance project on the side
 
-Welcome to my blog. 
+Welcome to my blog. My name is Dimitris and I’m an Aspiring Data Scientist.
 
-Here's how to insert a [link](https://www.google.com/).
 
-You can also add all HTML elements you are used to:
+Outside of Data Science, my interests are:
 
-<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+* **Traveling**: I have been traveling to North Europe for the past 4 years. I will post pictures of the trips in the Travel section
+* **Sports** : I practice Crossfit. My ultimate goal is to participate in competitions here in Greece.
+* **Reading/Learning**: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don’t always manage to do so.
+* **Projects & Competitions** : I always try to improve my programming & employability skills and enrich my engineering knowledge by working on Data Science Projects ([Kaggle](kaggle.com)) or participating in international programming competitions ([leetcode](leetcode.com), [codechef](codechef.com))
 
-You can make a link to your [email address](mailto:yourmail@gmail.com).
+I have a BSc and MSc in Computer Science. I developed
 
-Your can put text in *italic*, **bold**, ***bold italic*** and use classic HTML too.
 
-<hr>
 
-Just add any script that you want at the end:
+I did an internship as a Data Scientist at the research centre of ["Demokritos"](https://www.iit.demokritos.gr/). I also write articles about AI, Finance & Biomedical Engineering on [Medium](www.medium.com).
+My technical interests are:
+* Applied Machine Learning and Deep Learning
+* Natural Language Processing
+* Speech Processing
+* Algorithms
+* A bit of data engineering, since I’d like my next professional experience to be as a Machine Learning Engineering
 
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+
+I started this blog in November 2020 for several reasons:
+* Writing helps me understand. Pictures and schemas too. I am trying to combine both in my articles.
+* Data Science is moving fast. Reading about AI-related news could be a full-time job. I learn best by doing projects. So I post most of them here.
+* I forget stuff, so it’s always good to have them written down in a single place.
+* If this blog can help someone else, this really makes my day

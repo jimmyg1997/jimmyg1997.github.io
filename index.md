@@ -23,11 +23,11 @@ Outside of Data Science, my interests are:
 * **Reading/Learning**: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don’t always manage to do so.
 * **Projects & Competitions** : I always try to improve my programming & employability skills and enrich my engineering knowledge by working on Data Science Projects ([Kaggle](kaggle.com)) or participating in international programming competitions ([leetcode](leetcode.com), [codechef](codechef.com))
 
-I have a BSc and MSc in Computer Science. I developed
+I have a BSc & MSc in Computer Science. I developed
 
 
 
-I did an internship as a Data Scientist at the research centre of ["Demokritos"](https://www.iit.demokritos.gr/). I also write articles about AI, Finance & Biomedical Engineering on [Medium](www.medium.com).
+I did an internship as a Data Scientist at the research centre of [Demokritos](https://www.iit.demokritos.gr/). I also write articles about AI, Finance & Biomedical Engineering on [Medium](https://medium.com/@dimitrisgeorgiou).
 My technical interests are:
 * Applied Machine Learning and Deep Learning
 * Natural Language Processing

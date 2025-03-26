@@ -3,7 +3,7 @@ title: Projects
 layout: splash
 permalink: /projects/
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/projects-header.jpg
 excerpt: "Exploring the intersection of data science, machine learning, and healthcare"

@@ -7,14 +7,172 @@ entries_layout: grid
 classes: wide
 author_profile: false
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/fitness-header.jpg
 excerpt: "Documenting my fitness journey, workout progress, and nutritional insights"
 ---
 
 <div class="fitness-intro">
-  <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Here you'll find workout routines, progress tracking, and healthy eating tips.</p>
+  <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p>
+</div>
+
+## Instagram Feed
+
+<div class="instagram-feed">
+  <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="btn btn--primary">Follow My Calisthenics Journey on Instagram</a>
+  <div class="instagram-grid">
+    <!-- Replace with actual Instagram embeds or images -->
+    <div class="instagram-post">
+      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
+        <img src="/assets/images/fitness/insta-1.jpg" alt="Instagram Post">
+      </a>
+    </div>
+    <div class="instagram-post">
+      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
+        <img src="/assets/images/fitness/insta-2.jpg" alt="Instagram Post">
+      </a>
+    </div>
+    <div class="instagram-post">
+      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
+        <img src="/assets/images/fitness/insta-3.jpg" alt="Instagram Post">
+      </a>
+    </div>
+  </div>
+</div>
+
+## Current Workout Plan
+
+<div class="workout-plan">
+  <h3>5-Day Split: Calisthenics + Legs</h3>
+  <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day.</p>
+  
+  <div class="workout-day">
+    <h4>Day 1 & 3: Straight Arm</h4>
+    <table class="workout-table">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps/Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Front Lever</td>
+          <td>3</td>
+          <td>8-15s</td>
+        </tr>
+        <tr>
+          <td>Tuck Planche</td>
+          <td>3</td>
+          <td>8-15s</td>
+        </tr>
+        <tr>
+          <td>Front Lever Pull</td>
+          <td>3</td>
+          <td>3-5</td>
+        </tr>
+        <tr>
+          <td>L-Sit to Planche</td>
+          <td>3</td>
+          <td>3-5</td>
+        </tr>
+        <tr>
+          <td>Arch Active Hang</td>
+          <td>3</td>
+          <td>3-5</td>
+        </tr>
+        <tr>
+          <td>Dumbbell Planche Raise</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="workout-day">
+    <h4>Day 2 & 4: Bent Arm</h4>
+    <table class="workout-table">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Handstand Push-Up</td>
+          <td>3</td>
+          <td>3-6</td>
+        </tr>
+        <tr>
+          <td>Pull-Up</td>
+          <td>3</td>
+          <td>3-6</td>
+        </tr>
+        <tr>
+          <td>Parallel Bar Dip</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+        <tr>
+          <td>Front Lever Row</td>
+          <td>3</td>
+          <td>3-6</td>
+        </tr>
+        <tr>
+          <td>Pseudo Planche Push-Up</td>
+          <td>3</td>
+          <td>6-10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="workout-day">
+    <h4>Day 5: Legs</h4>
+    <table class="workout-table">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Squat</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+        <tr>
+          <td>Romanian Deadlift</td>
+          <td>3</td>
+          <td>10-15</td>
+        </tr>
+        <tr>
+          <td>Split Squat</td>
+          <td>2</td>
+          <td>10-20</td>
+        </tr>
+        <tr>
+          <td>Hamstring Curl</td>
+          <td>3</td>
+          <td>10-15</td>
+        </tr>
+        <tr>
+          <td>Calf Raise</td>
+          <td>3</td>
+          <td>Max</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <p class="workout-note">I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</a>.</p>
 </div>
 
 ## Fitness Journey Timeline
@@ -23,24 +181,24 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <div class="timeline-item">
     <div class="timeline-date">2023</div>
     <div class="timeline-content">
-      <h3>Current Focus</h3>
-      <p>Description of your current fitness goals, routines, and achievements.</p>
+      <h3>Advanced Skills</h3>
+      <p>Working on front lever and planche progressions, with consistent training 5 days per week. Focus on straight arm strength and skill development.</p>
     </div>
   </div>
   
   <div class="timeline-item">
     <div class="timeline-date">2022</div>
     <div class="timeline-content">
-      <h3>Advanced Training</h3>
-      <p>Highlights from this stage of your training journey.</p>
+      <h3>Intermediate Training</h3>
+      <p>Achieved muscle-ups and handstand holds, increased training frequency to 4 days per week, and began focusing on more advanced calisthenics skills.</p>
     </div>
   </div>
   
   <div class="timeline-item">
     <div class="timeline-date">2021</div>
     <div class="timeline-content">
-      <h3>Intermediate Skills</h3>
-      <p>Progress and milestones achieved during this period.</p>
+      <h3>Building Foundations</h3>
+      <p>Focused on mastering the basics: pull-ups, dips, push-ups, and core strength. Established consistent training routine of 3 days per week.</p>
     </div>
   </div>
   
@@ -48,7 +206,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="timeline-date">2020</div>
     <div class="timeline-content">
       <h3>Beginning Calisthenics</h3>
-      <p>How your fitness journey began and initial challenges.</p>
+      <p>Started with basic bodyweight exercises during the pandemic, learning proper form and building initial strength.</p>
     </div>
   </div>
 </div>

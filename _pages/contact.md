@@ -5,7 +5,7 @@ permalink: /contact/
 author_profile: true
 toc: false
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/contact-header.jpg
 excerpt: "Get in touch with me"
@@ -62,16 +62,16 @@ excerpt: "Get in touch with me"
     </div>
     
     <div class="social-item">
-      <a href="mailto:dimitriosgeorgiou@gmail.com">
+      <a href="mailto:dgeorgiou3@gmail.com">
         <i class="fas fa-envelope fa-3x"></i>
         <p>Email</p>
       </a>
     </div>
     
     <div class="social-item">
-      <a href="YOUR_MEDIUM_URL" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-medium fa-3x"></i>
-        <p>Medium</p>
+      <a href="https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-graduation-cap fa-3x"></i>
+        <p>Google Scholar</p>
       </a>
     </div>
   </div>
@@ -80,7 +80,7 @@ excerpt: "Get in touch with me"
 ## Academic & Professional Inquiries
 
 <div class="professional-inquiries">
-  <p>For academic collaborations, speaking engagements, or professional opportunities, please email me directly at <a href="mailto:dimitriosgeorgiou@gmail.com">dimitriosgeorgiou@gmail.com</a> with a detailed description of your proposal.</p>
+  <p>For academic collaborations, speaking engagements, or professional opportunities, please email me directly at <a href="mailto:dgeorgiou3@gmail.com">dgeorgiou3@gmail.com</a> with a detailed description of your proposal.</p>
 </div>
 
 <div class="response-time">

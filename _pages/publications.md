@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 toc: true
 toc_sticky: true
+header:
+  overlay_color: "#001f3f"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/publications-header.jpg
 ---
 
 ## Academic Publications
@@ -25,6 +29,28 @@ toc_sticky: true
   <hr>
   {% endif %}
 {% endfor %}
+
+<div class="publication-item">
+  <h3>A Novel Deep Learning Approach for Emotion Recognition Based on EEG Signals</h3>
+  <p class="publication-authors">Dimitrios Georgiou, Panagiotis Papapetrou, George Potamias</p>
+  <p class="publication-venue"><em>IEEE Access</em>, 2021</p>
+  <p class="publication-abstract">This paper presents a novel deep learning approach for emotion recognition based on EEG signals. We propose a framework that combines convolutional neural networks with recurrent neural networks to capture both spatial and temporal features from EEG data.</p>
+  <div class="publication-links">
+    <a href="https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en" class="btn btn--primary btn--small" target="_blank">Google Scholar</a>
+  </div>
+</div>
+
+## Academic Presentations
+
+<div class="publication-item">
+  <h3>Neural Data Analysis and Experimental Design: Insights from Cognitive Neuroscience</h3>
+  <p class="publication-authors">Dimitrios Georgiou</p>
+  <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, July 2024</p>
+  <p class="publication-abstract">Presented advanced techniques for neural data analysis and experimental design in cognitive neuroscience. The presentation covered methodologies for processing EEG data, statistical approaches for analyzing neural signals, and best practices for designing experiments in neuroscience research.</p>
+  <div class="publication-links">
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288560720093310976/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+  </div>
+</div>
 
 ## Industry Publications & Articles
 

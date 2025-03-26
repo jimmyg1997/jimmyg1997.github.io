@@ -9,7 +9,7 @@ author_profile: false
 sort_by: date
 sort_order: reverse
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/datascience-header.jpg
 excerpt: "Machine learning, AI, and data analysis projects"

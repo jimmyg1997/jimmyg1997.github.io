@@ -5,7 +5,7 @@ permalink: /now/
 author_profile: true
 toc: false
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/now-header.jpg
 excerpt: "A snapshot of my current focus and activities"

@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Dimitrios Georgiou"
 description              : "Personal website showcasing my work, research, and interests"
 url                      : "https://dimitriosgeorgiou.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : ""
 repository               : "jimmyg1997/dimitriosgeorgiou.github.io"
 teaser                   : # Default teaser image "assets/images/contents/main-cover.jpg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -108,19 +108,22 @@ analytics:
 author:
   name             : "Dimitrios Georgiou"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "Data Scientist & PhD Researcher"
-  location         : "London, UK"
+  bio              : "Data Scientist @HSBC"
+  location         : "Krakow, Poland"
   email            : 
   links:
     - label: "Mail"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:dimitriosgeorgiou@gmail.com
+      url: mailto:dgeorgiou3@gmail.com
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dimitriosgeorgiou/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jimmyg1997/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en"
 
 # Site Footer
 footer:

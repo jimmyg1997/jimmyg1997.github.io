@@ -11,27 +11,27 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : ""
+title                    : "Dimitrios Georgiou"
 title_separator          : "-"
-name                     : "YOUR NAME"
-description              : "DESCRIPTION"
-url                      : https://sample_website.github.io
+name                     : "Dimitrios Georgiou"
+description              : "Personal website showcasing my work, research, and interests"
+url                      : "https://dimitriosgeorgiou.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "jimmyg1997/dimitriosgeorgiou.github.io"
 teaser                   : # Default teaser image "assets/images/contents/main-cover.jpg"
-logo                     : https://sample_website.github.io/assets/images/logo.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "sample_website-github-io" # TO SETUP ON DISQUS WEBSITE https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # TO SETUP ON DISQUS WEBSITE https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -106,40 +106,31 @@ analytics:
 
 # Site Author
 author:
-  name             : "YOUR NAME"
+  name             : "Dimitrios Georgiou"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "YOUR BIO"
-  location         : ""
+  bio              : "Data Scientist & PhD Researcher"
+  location         : "London, UK"
   email            : 
   links:
     - label: "Mail"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:sample_website@gmail.com
+      url: mailto:dimitriosgeorgiou@gmail.com
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/your_lkdin/"
+      url: "https://www.linkedin.com/in/dimitriosgeorgiou/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/your_git/"
+      url: "https://github.com/jimmyg1997/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: https://twitter.com/your_twitter
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/your_git/"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/your_lkdin/"
+      url: "https://www.linkedin.com/in/dimitriosgeorgiou/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jimmyg1997/"
 
 
 # Reading Files
@@ -180,6 +171,24 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Collections
 collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  datascience:
+    output: true
+    permalink: /:collection/:path/
+  phd:
+    output: true
+    permalink: /:collection/:path/
+  travelling:
+    output: true
+    permalink: /:collection/:path/
+  calisthenics:
+    output: true
+    permalink: /:collection/:path/
+  personal:
+    output: true
+    permalink: /:collection/:path/
   dl:
     output: true
     permalink: /:collection/:path/

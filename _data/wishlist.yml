@@ -1,0 +1,75 @@
+# Books
+- name: "Atomic Habits"
+  category: "books"
+  price_range: "$10-20"
+  description: "A guide to building good habits and breaking bad ones by James Clear."
+  link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/"
+
+- name: "Deep Learning with Python"
+  category: "books"
+  price_range: "$30-50"
+  description: "A comprehensive guide to deep learning using Python by François Chollet."
+  link: "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/"
+
+# Tech & Gadgets
+- name: "Noise-Canceling Headphones"
+  category: "tech"
+  price_range: "$200-300"
+  description: "Quality headphones for focused work and travel."
+  link: "https://www.amazon.com/Sony-WH-1000XM4-Canceling-Headphones-phone-call/dp/B0863TXGM3/"
+
+- name: "E-ink Tablet"
+  category: "tech"
+  price_range: "$400-500"
+  description: "For reading papers and taking notes."
+  link: "https://remarkable.com/"
+
+# Fitness Equipment
+- name: "Gymnastics Rings"
+  category: "fitness"
+  price_range: "$30-50"
+  description: "Wooden gymnastics rings for calisthenics training."
+  link: "https://www.amazon.com/PACEARTH-Gymnastics-Adjustable-Strength-Training/dp/B088K93JMJ/"
+
+- name: "Resistance Bands Set"
+  category: "fitness"
+  price_range: "$20-40"
+  description: "A complete set of resistance bands for versatile training."
+  link: "https://www.amazon.com/Resistance-Exercise-Different-Stackable-Waterproof/dp/B07DWSPQQY/"
+
+# Clothing & Accessories
+- name: "Minimalist Watch"
+  category: "clothing"
+  price_range: "$100-150"
+  description: "A simple, elegant timepiece for everyday wear."
+  link: "https://www.amazon.com/Timex-Fairfield-Quartz-Movement-Silver-Tone/dp/B01ACAMV16/"
+
+- name: "Merino Wool Socks"
+  category: "clothing"
+  price_range: "$15-30"
+  description: "Comfortable, moisture-wicking socks for everyday use."
+  link: "https://www.amazon.com/Darn-Tough-Hiker-Micro-Cushion/dp/B000XFW6OU/"
+
+# Experiences
+- name: "Cooking Class"
+  category: "experiences"
+  price_range: "$50-100"
+  description: "A local cooking class to learn new cuisines."
+  link: ""
+
+- name: "Museum Membership"
+  category: "experiences"
+  price_range: "$60-120"
+  description: "Annual membership to a local science or art museum."
+  link: ""
+
+# Donations
+- name: "Doctors Without Borders"
+  category: "donations"
+  description: "An international humanitarian organization that provides medical aid where it's needed most."
+  link: "https://www.doctorswithoutborders.org/"
+
+- name: "GiveWell"
+  category: "donations"
+  description: "A nonprofit dedicated to finding outstanding giving opportunities through in-depth analysis."
+  link: "https://www.givewell.org/" 

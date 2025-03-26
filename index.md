@@ -1,43 +1,90 @@
 ---
-title: "Welcome"
-excerpt: ""
-author_profile: true
-layout : single
-header :
-    overlay_image: "assets/images/wolf.jpg"
-    teaser: "assets/images/wolf.jpg"
-redirect_from:
-    - /about/
-    - /about.html
+layout: splash
+permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+  actions:
+    - label: "Contact Me"
+      url: "/contact/"
+excerpt: "Data Scientist & PhD Researcher"
+intro: 
+  - excerpt: "Welcome to my personal website. I'm passionate about data science, healthcare research, and personal development."
+
+feature_row:
+  - image_path: /assets/images/cv-thumb.jpg
+    alt: "CV"
+    title: "Curriculum Vitae"
+    excerpt: "My professional background, education, and experience."
+    url: "/cv/"
+    btn_label: "View CV"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/publications-thumb.jpg
+    alt: "Publications"
+    title: "Publications"
+    excerpt: "Academic papers and industry publications."
+    url: "/publications/"
+    btn_label: "Read Publications"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/projects-thumb.jpg
+    alt: "Projects"
+    title: "Projects"
+    excerpt: "Data science, ML, AI, and healthcare research projects."
+    url: "/projects/"
+    btn_label: "View Projects"
+    btn_class: "btn--primary"
+
+feature_row2:
+  - image_path: /assets/images/travel-thumb.jpg
+    alt: "Travelling"
+    title: "Travelling"
+    excerpt: "My travel adventures around the world."
+    url: "/travelling/"
+    btn_label: "Explore"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/calisthenics-thumb.jpg
+    alt: "Calisthenics & Nutrition"
+    title: "Calisthenics & Nutrition"
+    excerpt: "Workout progress, nutrition tips, and healthy living."
+    url: "/calisthenics/"
+    btn_label: "Learn More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/personal-thumb.jpg
+    alt: "Personal Development"
+    title: "Personal Development"
+    excerpt: "Books, courses, and continuous learning."
+    url: "/personal/"
+    btn_label: "Discover"
+    btn_class: "btn--primary"
 ---
-# Welcome
-##### Current status: BSc & MSc undegraduate student @[NTUA](https://www.ece.ntua.gr/en). Freelance project on the side
 
-Welcome to my blog. My name is Dimitris and I’m an Aspiring Data Scientist.
+{% include feature_row id="intro" type="center" %}
 
+## Professional
 
-Outside of Data Science, my interests are:
+{% include feature_row %}
 
-* **Traveling**: I have been traveling to North Europe for the past 4 years. I will post pictures of the trips in the Travel section
-* **Sports** : I practice Crossfit. My ultimate goal is to participate in competitions here in Greece.
-* **Reading/Learning**: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don’t always manage to do so.
-* **Projects & Competitions** : I always try to improve my programming & employability skills and enrich my engineering knowledge by working on Data Science Projects ([Kaggle](kaggle.com)) or participating in international programming competitions ([leetcode](leetcode.com), [codechef](codechef.com))
+## Personal Interests
 
-I have a BSc & MSc in Computer Science. I developed
+{% include feature_row id="feature_row2" %}
 
+## What I'm Doing Now
 
+<div class="now-section">
+  <p>Here's what I'm currently focusing on:</p>
+  <ul>
+    <li>Working on my PhD research in healthcare data science</li>
+    <li>Developing machine learning models for medical applications</li>
+    <li>Training for my next calisthenics milestone</li>
+    <li>Planning my upcoming travel to [destination]</li>
+  </ul>
+  <p><a href="/now/" class="btn btn--primary">See My Full "Now" Page</a></p>
+</div>
 
-I did an internship as a Data Scientist at the research centre of [Demokritos](https://www.iit.demokritos.gr/). I also write articles about AI, Finance & Biomedical Engineering on [Medium](https://medium.com/@dimitrisgeorgiou).
-My technical interests are:
-* Applied Machine Learning and Deep Learning
-* Natural Language Processing
-* Speech Processing
-* Algorithms
-* A bit of data engineering, since I’d like my next professional experience to be as a Machine Learning Engineering
+## Gift Wishlist
 
-
-I started this blog in November 2020 for several reasons:
-* Writing helps me understand. Pictures and schemas too. I am trying to combine both in my articles.
-* Data Science is moving fast. Reading about AI-related news could be a full-time job. I learn best by doing projects. So I post most of them here.
-* I forget stuff, so it’s always good to have them written down in a single place.
-* If this blog can help someone else, this really makes my day
+<div class="wishlist-section">
+  <p>Looking for gift ideas? Check out my wishlist!</p>
+  <p><a href="/wishlist/" class="btn btn--primary">View Wishlist</a></p>
+</div>

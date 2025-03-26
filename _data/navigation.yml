@@ -1,10 +1,25 @@
 # main links links
 main:
-  - title: "Blog"
-    url: /blog/
-  - title: "Projects"
-    url: /portfolio/
-  - title: "Hobbies"
-    url: /hobbies/
   - title: "CV"
-    url: /assets/images/CV.pdf
+    url: /cv/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+    children:
+      - title: "Data Science"
+        url: /datascience/
+      - title: "PhD & Healthcare"
+        url: /phd/
+  - title: "Personal"
+    url: /personal/
+  - title: "Travelling"
+    url: /travelling/
+  - title: "Calisthenics"
+    url: /calisthenics/
+  - title: "Now"
+    url: /now/
+  - title: "Wishlist"
+    url: /wishlist/
+  - title: "Contact"
+    url: /contact/

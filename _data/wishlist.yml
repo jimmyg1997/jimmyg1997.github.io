@@ -11,6 +11,12 @@
   description: "A comprehensive guide to deep learning using Python by François Chollet."
   link: "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/"
 
+- name: "The Pragmatic Programmer"
+  category: "books"
+  price_range: "$25-40"
+  description: "A classic book on software development that provides practical advice for programmers."
+  link: "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/"
+
 # Tech & Gadgets
 - name: "Noise-Canceling Headphones"
   category: "tech"
@@ -23,6 +29,12 @@
   price_range: "$400-500"
   description: "For reading papers and taking notes."
   link: "https://remarkable.com/"
+
+- name: "Mechanical Keyboard"
+  category: "tech"
+  price_range: "$100-150"
+  description: "A high-quality mechanical keyboard for programming and writing."
+  link: "https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard"
 
 # Fitness Equipment
 - name: "Gymnastics Rings"
@@ -37,6 +49,12 @@
   description: "A complete set of resistance bands for versatile training."
   link: "https://www.amazon.com/Resistance-Exercise-Different-Stackable-Waterproof/dp/B07DWSPQQY/"
 
+- name: "Foam Roller"
+  category: "fitness"
+  price_range: "$15-30"
+  description: "A high-density foam roller for recovery and myofascial release."
+  link: "https://www.amazon.com/321-STRONG-Foam-Roller-Myofascial/dp/B00KAEJ3UE/"
+
 # Clothing & Accessories
 - name: "Minimalist Watch"
   category: "clothing"
@@ -49,6 +67,12 @@
   price_range: "$15-30"
   description: "Comfortable, moisture-wicking socks for everyday use."
   link: "https://www.amazon.com/Darn-Tough-Hiker-Micro-Cushion/dp/B000XFW6OU/"
+
+- name: "Navy Blue Blazer"
+  category: "clothing"
+  price_range: "$150-250"
+  description: "A versatile navy blazer for professional and semi-formal occasions."
+  link: "https://www.jcrew.com/p/mens/categories/clothing/blazers/wool/ludlow-slim-fit-unstructured-suit-jacket-in-english-wool/H6478"
 
 # Experiences
 - name: "Cooking Class"
@@ -63,6 +87,12 @@
   description: "Annual membership to a local science or art museum."
   link: ""
 
+- name: "Concert Tickets"
+  category: "experiences"
+  price_range: "$75-200"
+  description: "Tickets to see a favorite band or musician perform live."
+  link: ""
+
 # Donations
 - name: "Doctors Without Borders"
   category: "donations"
@@ -72,4 +102,9 @@
 - name: "GiveWell"
   category: "donations"
   description: "A nonprofit dedicated to finding outstanding giving opportunities through in-depth analysis."
-  link: "https://www.givewell.org/" 
+  link: "https://www.givewell.org/"
+
+- name: "Electronic Frontier Foundation"
+  category: "donations"
+  description: "A nonprofit defending civil liberties in the digital world."
+  link: "https://www.eff.org/" 

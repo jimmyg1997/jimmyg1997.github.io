@@ -22,9 +22,9 @@ body {
 
 /* Buttons */
 .btn--primary {
-  background-color: var(--primary-color);
+  background-color: #001f3f;
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: #00346c;
   }
 }
 
@@ -188,20 +188,47 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background-color: white;
+  border-left: 4px solid #001f3f;
+  transition: var(--transition);
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 31, 63, 0.2);
+  }
   
   h3 {
     margin-top: 0;
-    color: var(--primary-color);
+    color: #001f3f;
   }
   
   .price-range {
     display: inline-block;
-    background-color: var(--light-bg);
-    padding: 0.25rem 0.5rem;
+    background-color: rgba(0, 31, 63, 0.1);
+    color: #001f3f;
+    padding: 0.25rem 0.75rem;
     border-radius: 50px;
     font-size: 0.9rem;
     margin-bottom: 1rem;
+    font-weight: 500;
   }
+}
+
+.wishlist-section {
+  margin-bottom: 2.5rem;
+}
+
+.wishlist-intro, .wishlist-footer {
+  background-color: rgba(0, 31, 63, 0.05);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  border-left: 4px solid #001f3f;
+}
+
+.wishlist-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Contact Form Styles */
@@ -478,5 +505,110 @@ body {
     margin-top: 0.5rem;
     font-style: italic;
     color: #666;
+  }
+}
+
+/* Workout Plan Styles */
+.workout-plan {
+  margin-bottom: 3rem;
+}
+
+.workout-day {
+  margin-bottom: 2rem;
+  
+  h4 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+  }
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  
+  th {
+    background-color: #f5f5f5;
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+.workout-note {
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+/* Instagram Feed Styles */
+.instagram-feed {
+  margin-bottom: 2rem;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.instagram-post {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* Seminar Items */
+.seminars-section {
+  margin-bottom: 2rem;
+}
+
+.seminar-item {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+  
+  .seminar-date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
   }
 } 

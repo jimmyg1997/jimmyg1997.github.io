@@ -47,10 +47,48 @@ header:
 <hr>
 
 ## Academic Presentations
-(No changes to this section)
+
+<div class="publication-item">
+  <h3>Neural Data Analysis and Experimental Design: Insights from Cognitive Neuroscience</h3>
+  <p class="publication-authors">Dimitrios Georgiou</p>
+  <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, July 2024</p>
+  <p class="publication-abstract">Presented advanced techniques for neural data analysis and experimental design in cognitive neuroscience. The presentation covered methodologies for processing EEG data, statistical approaches for analyzing neural signals, and best practices for designing experiments in neuroscience research.</p>
+  <div class="publication-links">
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288560720093310976/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+  </div>
+</div>
 
 ## Industry Publications & Articles
-(Removed existing content as no publications were specified)
+
+{% for pub in site.publications %}
+  {% if pub.type == "industry" %}
+  <div class="publication-item">
+    <h3><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
+    <p class="publication-authors">{{ pub.authors }}</p>
+    <p class="publication-venue"><em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}</p>
+    <p class="publication-abstract">{{ pub.excerpt }}</p>
+    <div class="publication-links">
+      {% if pub.link %}<a href="{{ pub.link }}" class="btn btn--primary btn--small" target="_blank">Read Article</a>{% endif %}
+    </div>
+  </div>
+  <hr>
+  {% endif %}
+{% endfor %}
 
 ## Conference Presentations
-(Removed existing content as no publications were specified)
+
+{% for pub in site.publications %}
+  {% if pub.type == "conference" %}
+  <div class="publication-item">
+    <h3>{{ pub.title }}</h3>
+    <p class="publication-authors">{{ pub.authors }}</p>
+    <p class="publication-venue"><em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}</p>
+    <p class="publication-abstract">{{ pub.excerpt }}</p>
+    <div class="publication-links">
+      {% if pub.slides %}<a href="{{ pub.slides }}" class="btn btn--primary btn--small" target="_blank">Slides</a>{% endif %}
+      {% if pub.poster %}<a href="{{ pub.poster }}" class="btn btn--primary btn--small" target="_blank">Poster</a>{% endif %}
+    </div>
+  </div>
+  <hr>
+  {% endif %}
+{% endfor %} 

@@ -18,7 +18,7 @@ header:
   <p class="publication-authors">V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong</p>
   <p class="publication-venue"><em>Information Fusion</em>, 2024</p>
   <p class="publication-abstract">A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
-  <img src="assets/publications/2024_multi_source_stocks.png" alt="Stock Selection Framework Image">
+  <img src="../assets/publications/2024_multi_source_stocks.png" alt="Stock Selection Framework Image">
   <div class="publication-links">
     <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>
@@ -30,6 +30,7 @@ header:
   <p class="publication-authors">A Christodoulou, MS Katsarou, C Emmanouil, M Gavrielatos, D Georgiou, et al.</p>
   <p class="publication-venue"><em>BioTech</em>, 2024</p>
   <p class="publication-abstract">Development of a web-based machine learning tool designed to predict the severity of COVID-19 using advanced predictive models.</p>
+  <img src="../assets/publications/2024_biotech_covid.png" alt="Stock Selection Framework Image">
   <div class="publication-links">
     <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>

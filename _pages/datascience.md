@@ -36,11 +36,6 @@ excerpt: "Machine learning, AI, and data analysis projects"
     <h3>Data Analysis</h3>
     <p>Exploratory data analysis, statistical analysis, data visualization, and insights extraction.</p>
   </div>
-  
-  <div class="category-box">
-    <h3>MLOps</h3>
-    <p>Tools and processes for deploying machine learning models to production environments.</p>
-  </div>
 </div>
 
 ## Featured Projects

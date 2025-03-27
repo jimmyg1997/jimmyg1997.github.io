@@ -18,7 +18,7 @@ header:
   <p class="publication-authors">V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong</p>
   <p class="publication-venue"><em>Information Fusion</em>, 2024</p>
   <p class="publication-abstract">A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
-  <img src="../assets/images/publications/2024_multi_source_stocks.png" alt="Stock Selection Framework Image">
+  <img src="../assets/images/publications/2024_information_fusion_multi_source_stocks.png" alt="Stock Selection Framework Image">
   <div class="publication-links">
     <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>
@@ -68,6 +68,7 @@ header:
   • Keep your network strong: Opportunities often come from connections. 🌐
     
   </p>
+  <img src="../assets/images/publications/2025_uek.png" alt="UEK Complaints Classification">
   <div class="publication-links">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288560720093310976/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
   </div>

@@ -19,7 +19,7 @@ header:
   <p class="publication-venue"><em>Information Fusion</em>, 2024</p>
   <p class="publication-abstract">A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
   <div class="publication-links">
-    <a href="https://doi.org/10.1016/j.inffus.2024.102018" class="btn btn--primary btn--small" target="_blank">DOI</a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>
 </div>
 <hr>
@@ -30,7 +30,7 @@ header:
   <p class="publication-venue"><em>BioTech</em>, 2024</p>
   <p class="publication-abstract">Development of a web-based machine learning tool designed to predict the severity of COVID-19 using advanced predictive models.</p>
   <div class="publication-links">
-    <a href="https://doi.org/10.3390/biotech13030022" class="btn btn--primary btn--small" target="_blank">DOI</a>
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>
 </div>
 <hr>

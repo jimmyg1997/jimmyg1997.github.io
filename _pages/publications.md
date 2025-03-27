@@ -57,15 +57,7 @@ header:
   <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, January 2025</p>
   <p class="publication-abstract">
 
-  🗣️ 𝐖𝐡𝐚𝐭 𝐈 𝐒𝐡𝐚𝐫𝐞𝐝 \n
-  • I introduced the students to a practical business case: using 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 (𝐌𝐋) for 𝐂𝐨𝐦𝐩𝐥𝐚𝐢𝐧𝐭𝐬 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧. This project highlights how ML can drive actionable outcomes in customer experience by identifying sentiment and repeat complaints, enabling smarter decision-making in business operations. \n
-  • 📌 I emphasized how hashtag#MachineLearning isn’t just about models or algorithms; it’s about solving real problems—whether it’s automating processes or delivering insights that make businesses more efficient.
-
-  💡 𝐂𝐚𝐫𝐞𝐞𝐫 𝐓𝐢𝐩𝐬 𝐟𝐨𝐫 𝐒𝐭𝐮𝐝𝐞𝐧𝐭𝐬
-  One of the most rewarding parts of the session was offering advice on career building:
-  • Stay curious and be ready to ask “why” and “how” questions. The habit of critical thinking is priceless. 🔍
-  • Invest in practical skills: Tools like Python, data visualization, and cloud platforms can make you industry-ready.
-  • Keep your network strong: Opportunities often come from connections. 🌐
+  🗣️ I introduced students to using Machine Learning (ML) for Complaint Classification 📊, demonstrating how ML enhances customer experience by detecting sentiment and repeat complaints, leading to smarter business decisions. 🚀 I emphasized that ML isn’t just about models but solving real problems. 💡 To build a strong career, I advised students to think critically 🔍, invest in practical skills like Python & cloud tools 🛠️, and strengthen their network for better opportunities. 🌐
     
   </p>
   <img src="../assets/images/publications/2025_uek.png" alt="UEK Complaints Classification">

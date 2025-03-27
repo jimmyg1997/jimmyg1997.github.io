@@ -73,10 +73,6 @@ You can download a PDF version of my CV here:
   - Diagnostic classification using text and audio data of Alzheimer's patients.
   - Used NLP and ML models such as LSTM, CNN, and BERT.
 
-## Selected Publications
-- **Information Fusion 2024 (Elsevier BV)**: "A Generalization of Multi-Source Fusion-Based Framework to Stock Selection." ([link], [code])
-- **BioTech 2024 (MDPI)**: "A Machine-Learning-Based Web Tool for the Severity Prediction of COVID-19." ([link])
-
 ## Skills
 
 ### Technical Skills
@@ -90,7 +86,7 @@ You can download a PDF version of my CV here:
 ### Languages
 - **English**: Fluent
 - **Greek**: Native
-- **French**: Upper-Intermediate
+- **French**: Intermediate
 - **Spanish**: Intermediate
 
 ## Honors & Awards
@@ -103,27 +99,16 @@ You can download a PDF version of my CV here:
 
 ## Volunteering & Activities
 
+### Volunteer
+- **Organization**: Wheeling2Help NGO
+- **Period**: Jan 2024 - Present
+- **Responsibilities**: Focusing on community empowerment, I engaged in environmental conservation, sports development, and educational support initiatives. This experience deepened my understanding of sustainable development and reinforced my commitment to meaningful change.
+  - Kenya, Jan 2024
+  - Nepal, May 2024
+
+
 ### Marketing Coordinator
 - **Organization**: CogniHub (Interdisciplinary Non-Profit Student Organization)
-- **Period**: Jan 2021 - Present
+- **Period**: Jan 2021 - Nov 2023
 - **Responsibilities**: Conducting competitive marketing research and organizing events.
-
-## Projects
-
-### Feature Engineer ([GitHub Project, 8 stars])
-- **Tech**: fastAPI, Docker Compose, Logger, Google API
-- **Description**:
-  - Developed a feature engineering module for Machine and Deep Learning models.
-  - The module is dockerized and accessible via an API endpoint.
-
-### Agora ([GitHub Project, 36 stars, 8 forks])
-- **Tech**: Pandas, Keras, NumPy
-- **Description**:
-  - Implements Markowitz Portfolio Optimization for investment insights.
-  - Designed for casual investors and extensible for further research.
-
-## Interests
-- **Sports**: Calisthenics, Running
-- **Competitions**: Kaggle, Leetcode, CodeChef
-- **Travel & History**: Visited 36 countries
 

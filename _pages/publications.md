@@ -51,7 +51,7 @@ header:
 <div class="publication-item">
   <h3>Complaints Classification : Sentinment Analytics, Machine Learning to assess if customer queries should have been logged as complaint</h3>
   <p class="publication-authors">Dimitrios Georgiou</p>
-  <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, July 2024</p>
+  <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, January 2025</p>
   <p class="publication-abstract">
 
   🗣️ 𝐖𝐡𝐚𝐭 𝐈 𝐒𝐡𝐚𝐫𝐞𝐝

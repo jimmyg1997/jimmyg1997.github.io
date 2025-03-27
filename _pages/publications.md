@@ -57,8 +57,8 @@ header:
   <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, January 2025</p>
   <p class="publication-abstract">
 
-  🗣️ 𝐖𝐡𝐚𝐭 𝐈 𝐒𝐡𝐚𝐫𝐞𝐝
-  • I introduced the students to a practical business case: using 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 (𝐌𝐋) for 𝐂𝐨𝐦𝐩𝐥𝐚𝐢𝐧𝐭𝐬 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧. This project highlights how ML can drive actionable outcomes in customer experience by identifying sentiment and repeat complaints, enabling smarter decision-making in business operations.
+  🗣️ 𝐖𝐡𝐚𝐭 𝐈 𝐒𝐡𝐚𝐫𝐞𝐝 \n
+  • I introduced the students to a practical business case: using 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 (𝐌𝐋) for 𝐂𝐨𝐦𝐩𝐥𝐚𝐢𝐧𝐭𝐬 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧. This project highlights how ML can drive actionable outcomes in customer experience by identifying sentiment and repeat complaints, enabling smarter decision-making in business operations. \n
   • 📌 I emphasized how hashtag#MachineLearning isn’t just about models or algorithms; it’s about solving real problems—whether it’s automating processes or delivering insights that make businesses more efficient.
 
   💡 𝐂𝐚𝐫𝐞𝐞𝐫 𝐓𝐢𝐩𝐬 𝐟𝐨𝐫 𝐒𝐭𝐮𝐝𝐞𝐧𝐭𝐬

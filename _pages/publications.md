@@ -18,6 +18,7 @@ header:
   <p class="publication-authors">V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong</p>
   <p class="publication-venue"><em>Information Fusion</em>, 2024</p>
   <p class="publication-abstract">A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
+  <img src="assets/publications/2024_multi_source_stocks.png" alt="Stock Selection Framework Image">
   <div class="publication-links">
     <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" class="btn btn--primary btn--small" target="_blank">Link</a>
   </div>

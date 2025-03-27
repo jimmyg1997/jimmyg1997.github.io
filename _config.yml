@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Dimitrios Georgiou"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/me/profile_v1.png"
   bio              : "Data Scientist @HSBC"
   location         : "Krakow, Poland"
   email            : 

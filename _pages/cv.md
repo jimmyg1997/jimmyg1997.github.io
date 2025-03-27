@@ -17,24 +17,6 @@ You can download a PDF version of my CV here:
 
 <a href="https://drive.google.com/file/d/1w1fEtlQIcSq32F1ZRjFRlP97h5B9pGvC/view?usp=sharing" class="btn btn--primary btn--large" target="_blank">Download CV (PDF)</a>
 
-## Education
-
-### Diploma in Electrical and Computer Engineering
-- **Institution**: National Technical University of Athens
-- **Period**: 2015 - 2022
-- **Major**: Computing & Software Systems
-- **GPA**: 9.1/10.0 (Top 5%)
-- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" ([link])
-
-### Minor in Finance
-- **Institution**: American College of Greece (Deree College)
-- **Period**: 2017 - 2020
-- **GPA**: 3.82/4.00
-
-### Summer School in Foundations of Neuroscience
-- **Institution**: Harvard University (Remote)
-- **Period**: 2021
-- **Scholarship**: Stavros Niarchos Foundation / American College of Greece (SNF/ACG)
 
 ## Professional Experience
 
@@ -72,6 +54,26 @@ You can download a PDF version of my CV here:
 - **Research**:
   - Diagnostic classification using text and audio data of Alzheimer's patients.
   - Used NLP and ML models such as LSTM, CNN, and BERT.
+
+
+## Education
+
+### Diploma in Electrical and Computer Engineering
+- **Institution**: National Technical University of Athens
+- **Period**: 2015 - 2022
+- **Major**: Computing & Software Systems
+- **GPA**: 9.1/10.0 (Top 5%)
+- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" ([link])
+
+### Minor in Finance
+- **Institution**: American College of Greece (Deree College)
+- **Period**: 2017 - 2020
+- **GPA**: 3.82/4.00
+
+### Summer School in Foundations of Neuroscience
+- **Institution**: Harvard University (Remote)
+- **Period**: 2021
+- **Scholarship**: Stavros Niarchos Foundation / American College of Greece (SNF/ACG)
 
 ## Skills
 

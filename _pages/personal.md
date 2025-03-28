@@ -161,7 +161,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="../assets/images/books/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck" class = "img">
+      <img src="../assets/images/books/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck">
       <div class="book-details">
         <h4>The Subtle Art of Not Giving a F*ck</h4>
         <p class="book-author">by Mark Manson</p>
@@ -169,8 +169,6 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
         <p>A counterintuitive approach to living a good life by focusing on what truly matters and letting go of the rest.</p>
       </div>
     </div>
-
-    
     
     <div class="book-card">
       <img src="../assets/images/books/vasishoupanwmou.jpg" alt="Βασίσου Πάνω Μου">

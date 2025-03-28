@@ -16,7 +16,7 @@ excerpt: "Exploring the world, one adventure at a time"
   <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram <a href="https://www.instagram.com/dimiles.away/" target="_blank">@dimiles.away</a> for more travel content.</p>
 </div>
 
-## Instagram Feed {#instagram-feed}
+## Instagram Feed
 
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="btn btn--primary">Follow My Travel Adventures on Instagram</a>
@@ -40,14 +40,14 @@ excerpt: "Exploring the world, one adventure at a time"
   </div>
 </div>
 
-## Travel Map {#travel-map}
+## Travel Map
 
 <div class="travel-map">
   <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID" width="100%" height="480"></iframe>
   <p class="map-caption">Countries I've visited highlighted in blue</p>
 </div>
 
-## Recent Adventures {#recent-adventures}
+## Recent Adventures
 
 <div class="recent-travels">
   <div class="travel-card">
@@ -98,7 +98,7 @@ excerpt: "Exploring the world, one adventure at a time"
   {% endfor %}
 </div>
 
-## Travel Categories {#travel-categories}
+## Travel Categories
 
 <div class="travel-categories">
   <div class="category-item">
@@ -123,7 +123,7 @@ excerpt: "Exploring the world, one adventure at a time"
   </div>
 </div>
 
-## Travel Gallery {#travel-gallery}
+## Travel Gallery
 
 <div class="travel-gallery">
   {% for travel in site.travelling %}
@@ -137,7 +137,7 @@ excerpt: "Exploring the world, one adventure at a time"
   {% endfor %}
 </div>
 
-## Travel Archive {#travel-archive}
+## Travel Archive
 
 <div class="travel-archive">
   <h3>All Destinations</h3>

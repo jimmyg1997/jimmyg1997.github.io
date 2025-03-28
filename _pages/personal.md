@@ -16,7 +16,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>
 </div>
 
-## Seminars & Workshops {#seminars-workshops}
+## Seminars & Workshops
 
 <div class="seminars-section">
   <div class="seminar-item">
@@ -34,7 +34,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Online Courses {#online-courses}
+## Online Courses
 
 <div class="courses-section">
   <div class="course-card">
@@ -67,7 +67,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   {% endfor %}
 </div>
 
-## Reading List {#reading-list}
+## Reading List
 
 <div class="books-section">
   <h3>Currently Reading</h3>
@@ -220,7 +220,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Media Recommendations {#media-recommendations}
+## Media Recommendations
 
 <div class="media-section">
   <div class="media-category">
@@ -266,7 +266,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Learning Statistics {#learning-statistics}
+## Learning Statistics
 
 <div class="stats-section">
   <div class="stat-item">

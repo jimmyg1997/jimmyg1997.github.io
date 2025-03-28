@@ -74,7 +74,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   <h3>Currently Reading</h3>
   <div class="current-books">
     <div class="book-card">
-      <img src="/assets/images/books/power-of-now.jpg" alt="The Power of Now">
+      <img src="../assets/images/books/power-of-now.jpg" alt="The Power of Now">
       <div class="book-details">
         <h4>The Power of Now</h4>
         <p class="book-author">by Eckhart Tolle</p>
@@ -101,7 +101,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   <h3>Recently Completed</h3>
   <div class="completed-books">
     <div class="book-card">
-      <img src="/assets/images/books/why-buddhism-is-true.jpg" alt="Why Buddhism is True">
+      <img src="../assets/images/books/why-buddhism-is-true.jpg" alt="Why Buddhism is True">
       <div class="book-details">
         <h4>Why Buddhism is True</h4>
         <p class="book-author">by Robert Wright</p>
@@ -111,7 +111,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/how-to-be-stoic.jpg" alt="How to Be Stoic">
+      <img src="../assets/images/books/how-to-be-stoic.jpg" alt="How to Be Stoic">
       <div class="book-details">
         <h4>How to Be Stoic</h4>
         <p class="book-author">by Massimo Pigliucci</p>
@@ -121,7 +121,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/a-man-called-otto.jpg" alt="A Man Called Otto">
+      <img src="../assets/images/books/a-man-called-otto.jpg" alt="A Man Called Otto">
       <div class="book-details">
         <h4>A Man Called Otto</h4>
         <p class="book-author">by Fredrik Backman</p>
@@ -131,7 +131,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/midnight-library.jpg" alt="The Midnight Library">
+      <img src="../assets/images/books/midnight-library.jpg" alt="The Midnight Library">
       <div class="book-details">
         <h4>The Midnight Library</h4>
         <p class="book-author">by Matt Haig</p>
@@ -141,7 +141,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/painful-truth.jpg" alt="The Painful Truth">
+      <img src="../assets/images/books/painful-truth.jpg" alt="The Painful Truth">
       <div class="book-details">
         <h4>The Painful Truth</h4>
         <p class="book-author">by Monty Lyman</p>
@@ -151,7 +151,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/tender-is-the-night.jpg" alt="Tender is the Night">
+      <img src="../assets/images/books/tender-is-the-night.jpg" alt="Tender is the Night">
       <div class="book-details">
         <h4>Tender is the Night</h4>
         <p class="book-author">by F. Scott Fitzgerald</p>
@@ -161,7 +161,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck">
+      <img src="../assets/images/books/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck">
       <div class="book-details">
         <h4>The Subtle Art of Not Giving a F*ck</h4>
         <p class="book-author">by Mark Manson</p>
@@ -171,7 +171,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/vasishoupanwmou.jpg" alt="Βασίσου Πάνω Μου">
+      <img src="../assets/images/books/vasishoupanwmou.jpg" alt="Βασίσου Πάνω Μου">
       <div class="book-details">
         <h4>Βασίσου Πάνω Μου</h4>
         <p class="book-author">by Greek Author</p>
@@ -181,7 +181,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/lost-symbol.jpg" alt="The Lost Symbol">
+      <img src="../assets/images/books/lost-symbol.jpg" alt="The Lost Symbol">
       <div class="book-details">
         <h4>The Lost Symbol</h4>
         <p class="book-author">by Dan Brown</p>

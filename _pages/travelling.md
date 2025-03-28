@@ -1,11 +1,10 @@
 ---
 title: Travelling
-layout: collection
+layout: single
 permalink: /travelling/
-collection: travelling
-entries_layout: grid
-classes: wide
-author_profile: false
+author_profile: true
+toc: true
+toc_sticky: true
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"

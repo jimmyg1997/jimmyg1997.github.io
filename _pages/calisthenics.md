@@ -1,15 +1,14 @@
 ---
 title: Calisthenics & Nutrition
-layout: collection
+layout: single
 permalink: /calisthenics/
-collection: calisthenics
-entries_layout: grid
-classes: wide
-author_profile: false
+author_profile: true
+toc: true
+toc_sticky: true
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/fitness-header.jpg
+  overlay_image: /assets/images/calisthenics-header.jpg
 excerpt: "Documenting my fitness journey, workout progress, and nutritional insights"
 ---
 

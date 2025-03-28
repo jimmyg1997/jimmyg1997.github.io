@@ -16,7 +16,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p>
 </div>
 
-## Instagram Feed
+## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="btn btn--primary">Follow My Calisthenics Journey on Instagram</a>
@@ -40,13 +40,13 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Current Workout Plan
+## Current Workout Plan {#current-workout-plan}
 
 <div class="workout-plan">
-  <h3>5-Day Split: Calisthenics + Legs</h3>
+  <h3 id="five-day-split">5-Day Split: Calisthenics + Legs</h3>
   <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day.</p>
   
-  <div class="workout-day">
+  <div class="workout-day" id="straight-arm">
     <h4>Day 1 & 3: Straight Arm</h4>
     <table class="workout-table">
       <thead>
@@ -91,7 +91,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </table>
   </div>
   
-  <div class="workout-day">
+  <div class="workout-day" id="bent-arm">
     <h4>Day 2 & 4: Bent Arm</h4>
     <table class="workout-table">
       <thead>
@@ -131,7 +131,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </table>
   </div>
   
-  <div class="workout-day">
+  <div class="workout-day" id="legs">
     <h4>Day 5: Legs</h4>
     <table class="workout-table">
       <thead>
@@ -174,7 +174,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <p class="workout-note">I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</a>.</p>
 </div>
 
-## Fitness Journey Timeline
+## Fitness Journey Timeline {#fitness-journey-timeline}
 
 <div class="timeline">
   <div class="timeline-item" id="advanced-skills">
@@ -210,10 +210,10 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Featured Skills & Progress
+## Featured Skills & Progress {#featured-skills-progress}
 
 <div class="skills-grid">
-  <div class="skill-item">
+  <div class="skill-item" id="planche">
     <h3>Planche</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 65%;">65%</div>
@@ -221,7 +221,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <p>Current status: Advanced tuck planche, working towards straddle planche</p>
   </div>
   
-  <div class="skill-item">
+  <div class="skill-item" id="front-lever">
     <h3>Front Lever</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 70%;">70%</div>
@@ -229,7 +229,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <p>Current status: Advanced tuck front lever, working on single leg extensions</p>
   </div>
   
-  <div class="skill-item">
+  <div class="skill-item" id="handstand">
     <h3>Handstand</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 85%;">85%</div>
@@ -237,7 +237,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <p>Current status: Freestanding handstand for 30 seconds, working on handstand push-ups</p>
   </div>
   
-  <div class="skill-item">
+  <div class="skill-item" id="muscle-up">
     <h3>Muscle-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
@@ -246,7 +246,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Workout Routines
+## Workout Routines {#workout-routines}
 
 <div class="routines-section">
   {% for routine in site.calisthenics %}
@@ -261,7 +261,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   {% endfor %}
 </div>
 
-## Nutrition Tips & Meal Plans
+## Nutrition Tips & Meal Plans {#nutrition-tips-meal-plans}
 
 <div class="nutrition-section">
   {% for post in site.calisthenics %}
@@ -275,7 +275,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   {% endfor %}
 </div>
 
-## Progress Photos
+## Progress Photos {#progress-photos}
 
 <div class="progress-gallery">
   {% for photo in site.data.fitness_progress %}

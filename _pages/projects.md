@@ -34,16 +34,52 @@ feature_row:
 
 {% include feature_row %}
 
-## Featured Project
+## Data Science Projects {#data-science-projects}
+
+<div class="projects-grid">
+  <div class="project-card" id="project-1">
+    <h3>Project Title</h3>
+    <p><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn</p>
+    <p>Brief description of your most significant project, highlighting its impact, innovation, or technical challenges.</p>
+    <a href="/datascience/featured-project/" class="btn btn--primary">View Project Details</a>
+  </div>
+  
+  <div class="project-card" id="project-2">
+    <h3>Project Title</h3>
+    <p><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn</p>
+    <p>Brief description of your most significant project, highlighting its impact, innovation, or technical challenges.</p>
+    <a href="/datascience/featured-project/" class="btn btn--primary">View Project Details</a>
+  </div>
+</div>
+
+## PhD & Healthcare Projects {#phd-healthcare-projects}
+
+<div class="projects-grid">
+  <div class="project-card" id="research-1">
+    <h3>Project Title</h3>
+    <p><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn</p>
+    <p>Brief description of your most significant project, highlighting its impact, innovation, or technical challenges.</p>
+    <a href="/phd/featured-project/" class="btn btn--primary">View Project Details</a>
+  </div>
+  
+  <div class="project-card" id="research-2">
+    <h3>Project Title</h3>
+    <p><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn</p>
+    <p>Brief description of your most significant project, highlighting its impact, innovation, or technical challenges.</p>
+    <a href="/phd/featured-project/" class="btn btn--primary">View Project Details</a>
+  </div>
+</div>
+
+## Featured Project {#featured-project}
 
 <div class="featured-project">
-  <h3>Project Title</h3>
+  <h3 id="project-title">Project Title</h3>
   <p><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn</p>
   <p>Brief description of your most significant project, highlighting its impact, innovation, or technical challenges.</p>
   <a href="/datascience/featured-project/" class="btn btn--primary">View Project Details</a>
 </div>
 
-## Project Skills & Technologies
+## Project Skills & Technologies {#project-skills-technologies}
 
 <div class="skills-section">
   <div class="skill-category" id="languages-tools">

@@ -16,17 +16,17 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>
 </div>
 
-## Seminars & Workshops
+## Seminars & Workshops {#seminars-workshops}
 
 <div class="seminars-section">
-  <div class="seminar-item">
+  <div class="seminar-item" id="upcoming-workshops">
     <h3>Matplotlib and SciPy Signal Workshop</h3>
     <p class="seminar-date">November 2023</p>
     <p>Led a workshop on using Matplotlib and SciPy Signal for data visualization and signal processing in neuroscience research applications.</p>
     <a href="https://www.linkedin.com/posts/dimitrios-georgiou_matplotlib-scipysignal-elephant-activity-7308436851609022464-E5XT" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
   </div>
   
-  <div class="seminar-item">
+  <div class="seminar-item" id="past-workshops">
     <h3>Experimental Design in Behavioral Science</h3>
     <p class="seminar-date">October 2023</p>
     <p>Presented techniques and best practices for designing experiments in behavioral science, including software development considerations.</p>
@@ -34,7 +34,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Online Courses
+## Online Courses {#online-courses}
 
 <div class="courses-section">
   <div class="course-card">
@@ -67,7 +67,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   {% endfor %}
 </div>
 
-## Reading List
+## Reading List {#reading-list}
 
 <div class="books-section">
   <h3 id="currently-reading">Currently Reading</h3>
@@ -220,11 +220,11 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Media Recommendations
+## Media Recommendations {#media-recommendations}
 
 <div class="media-section">
-  <div class="media-category">
-    <h3 id="podcasts">Podcasts</h3>
+  <div class="media-category" id="podcasts">
+    <h3>Podcasts</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "podcast" %}
@@ -243,8 +243,8 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
   </div>
   
-  <div class="media-category">
-    <h3 id="movies-series">Movies & Series</h3>
+  <div class="media-category" id="movies-series">
+    <h3>Movies & Series</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "movie" or media.type == "series" %}
@@ -266,23 +266,23 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
 </div>
 
-## Learning Statistics
+## Learning Statistics {#learning-statistics}
 
 <div class="stats-section">
-  <div class="stat-item">
+  <div class="stat-item" id="books-read">
     <h3>Books Read</h3>
     <div class="stat-number">25+</div>
     <p>Since 2020</p>
   </div>
   
-  <div class="stat-item">
+  <div class="stat-item" id="courses-completed">
     <h3>Courses Completed</h3>
     <div class="stat-number">15+</div>
     <p>Since 2020</p>
   </div>
   
-  <div class="stat-item">
-    <h3>Learning Hours</h3>
+  <div class="stat-item" id="learning-hours">
+    <h3>Total Learning Hours</h3>
     <div class="stat-number">500+</div>
     <p>Invested in self-improvement</p>
   </div>

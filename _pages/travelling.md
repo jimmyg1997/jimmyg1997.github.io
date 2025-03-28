@@ -16,7 +16,7 @@ excerpt: "Exploring the world, one adventure at a time"
   <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram <a href="https://www.instagram.com/dimiles.away/" target="_blank">@dimiles.away</a> for more travel content.</p>
 </div>
 
-## Instagram Feed
+## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="btn btn--primary">Follow My Travel Adventures on Instagram</a>
@@ -52,14 +52,14 @@ excerpt: "Exploring the world, one adventure at a time"
 
 <script async src="//www.instagram.com/embed.js"></script>
 
-## Travel Map
+## Travel Map {#travel-map}
 
 <div class="travel-map">
   <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID" width="100%" height="480"></iframe>
   <p class="map-caption">Countries I've visited highlighted in blue</p>
 </div>
 
-## Recent Adventures
+## Recent Adventures {#recent-adventures}
 
 <div class="recent-travels">
   <div class="travel-card" id="living-in-krakow">
@@ -110,7 +110,7 @@ excerpt: "Exploring the world, one adventure at a time"
   {% endfor %}
 </div>
 
-## Travel Categories
+## Travel Categories {#travel-categories}
 
 <div class="travel-categories">
   <div class="category-item" id="city-explorations">
@@ -135,7 +135,7 @@ excerpt: "Exploring the world, one adventure at a time"
   </div>
 </div>
 
-## Travel Gallery
+## Travel Gallery {#travel-gallery}
 
 <div class="travel-gallery">
   {% for travel in site.travelling %}
@@ -149,10 +149,10 @@ excerpt: "Exploring the world, one adventure at a time"
   {% endfor %}
 </div>
 
-## Travel Archive
+## Travel Archive {#travel-archive}
 
 <div class="travel-archive">
-  <h3>All Destinations</h3>
+  <h3 id="all-destinations">All Destinations</h3>
   <ul class="destinations-list">
     {% for travel in site.travelling %}
       <li><a href="{{ travel.url }}">{{ travel.title }} ({{ travel.date | date: "%Y" }})</a></li>

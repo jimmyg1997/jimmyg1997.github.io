@@ -141,7 +141,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="../assets/images/books/painful-truth.jpg" alt="The Painful Truth">
+      <img src="../assets/images/books/painful-truth.jpeg" alt="The Painful Truth">
       <div class="book-details">
         <h4>The Painful Truth</h4>
         <p class="book-author">by Monty Lyman</p>
@@ -174,7 +174,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
       <img src="../assets/images/books/vasishoupanwmou.jpg" alt="Βασίσου Πάνω Μου">
       <div class="book-details">
         <h4>Βασίσου Πάνω Μου</h4>
-        <p class="book-author">by Greek Author</p>
+        <p class="book-author">by Bucay Jorge</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A Greek novel exploring themes of trust, relationships, and personal growth.</p>
       </div>

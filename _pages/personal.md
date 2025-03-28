@@ -70,7 +70,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
 ## Reading List
 
 <div class="books-section">
-  <h3>Currently Reading</h3>
+  <h3 id="currently-reading">Currently Reading</h3>
   <div class="current-books">
     <div class="book-card">
       <img src="../assets/images/books/power-of-now.jpg" alt="The Power of Now">
@@ -97,7 +97,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     {% endfor %}
   </div>
 
-  <h3>Recently Completed</h3>
+  <h3 id="recently-completed">Recently Completed</h3>
   <div class="completed-books">
     <div class="book-card">
       <img src="../assets/images/books/why-buddhism-is-true.jpg" alt="Why Buddhism is True">
@@ -224,7 +224,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
 
 <div class="media-section">
   <div class="media-category">
-    <h3>Podcasts</h3>
+    <h3 id="podcasts">Podcasts</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "podcast" %}
@@ -244,7 +244,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
   </div>
   
   <div class="media-category">
-    <h3>Movies & Series</h3>
+    <h3 id="movies-series">Movies & Series</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "movie" or media.type == "series" %}

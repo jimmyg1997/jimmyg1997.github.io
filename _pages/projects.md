@@ -46,7 +46,7 @@ feature_row:
 ## Project Skills & Technologies
 
 <div class="skills-section">
-  <div class="skill-category">
+  <div class="skill-category" id="languages-tools">
     <h3>Languages & Tools</h3>
     <ul>
       <li>Python</li>
@@ -58,7 +58,7 @@ feature_row:
     </ul>
   </div>
   
-  <div class="skill-category">
+  <div class="skill-category" id="ml-data-science">
     <h3>ML & Data Science</h3>
     <ul>
       <li>TensorFlow</li>
@@ -69,7 +69,7 @@ feature_row:
     </ul>
   </div>
   
-  <div class="skill-category">
+  <div class="skill-category" id="data-processing">
     <h3>Data Processing</h3>
     <ul>
       <li>Pandas</li>
@@ -79,7 +79,7 @@ feature_row:
     </ul>
   </div>
   
-  <div class="skill-category">
+  <div class="skill-category" id="visualization">
     <h3>Visualization</h3>
     <ul>
       <li>Matplotlib</li>

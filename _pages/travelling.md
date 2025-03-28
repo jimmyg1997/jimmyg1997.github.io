@@ -50,7 +50,7 @@ excerpt: "Exploring the world, one adventure at a time"
 ## Recent Adventures
 
 <div class="recent-travels">
-  <div class="travel-card">
+  <div class="travel-card" id="living-in-krakow">
     <div class="travel-image">
       <img src="/assets/images/travel/krakow-poland.jpg" alt="Krakow, Poland">
     </div>
@@ -61,7 +61,7 @@ excerpt: "Exploring the world, one adventure at a time"
     </div>
   </div>
   
-  <div class="travel-card">
+  <div class="travel-card" id="summer-in-santorini">
     <div class="travel-image">
       <img src="/assets/images/travel/santorini-greece.jpg" alt="Santorini, Greece">
     </div>
@@ -72,7 +72,7 @@ excerpt: "Exploring the world, one adventure at a time"
     </div>
   </div>
   
-  <div class="travel-card">
+  <div class="travel-card" id="weekend-in-stockholm">
     <div class="travel-image">
       <img src="/assets/images/travel/stockholm-sweden.jpg" alt="Stockholm, Sweden">
     </div>
@@ -101,21 +101,21 @@ excerpt: "Exploring the world, one adventure at a time"
 ## Travel Categories
 
 <div class="travel-categories">
-  <div class="category-item">
+  <div class="category-item" id="city-explorations">
     <img src="/assets/images/travel/city-travels.jpg" alt="City Travels">
     <h3>City Explorations</h3>
     <p>Urban adventures and city discoveries</p>
     <a href="/travelling/tag/cities/" class="btn btn--primary btn--small">View Cities</a>
   </div>
   
-  <div class="category-item">
+  <div class="category-item" id="nature-outdoors">
     <img src="/assets/images/travel/nature-travels.jpg" alt="Nature Travels">
     <h3>Nature & Outdoors</h3>
     <p>Hiking, national parks, and natural wonders</p>
     <a href="/travelling/tag/nature/" class="btn btn--primary btn--small">View Nature</a>
   </div>
   
-  <div class="category-item">
+  <div class="category-item" id="food-culture">
     <img src="/assets/images/travel/food-travels.jpg" alt="Food Travels">
     <h3>Food & Culture</h3>
     <p>Culinary adventures and local experiences</p>

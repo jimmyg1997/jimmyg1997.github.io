@@ -191,7 +191,7 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
     </div>
     
     <div class="book-card">
-      <img src="/assets/images/books/sapiens.jpg" alt="Sapiens">
+      <img src="../assets/images/books/sapiens.jpg" alt="Sapiens">
       <div class="book-details">
         <h4>Sapiens</h4>
         <p class="book-author">by Yuval Noah Harari</p>

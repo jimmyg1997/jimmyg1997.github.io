@@ -16,7 +16,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p>
 </div>
 
-## Instagram Feed
+## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="btn btn--primary">Follow My Calisthenics Journey on Instagram</a>
@@ -40,7 +40,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Current Workout Plan
+## Current Workout Plan {#current-workout-plan}
 
 <div class="workout-plan">
   <h3>5-Day Split: Calisthenics + Legs</h3>
@@ -174,7 +174,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <p class="workout-note">I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</a>.</p>
 </div>
 
-## Fitness Journey Timeline
+## Fitness Journey Timeline {#fitness-journey-timeline}
 
 <div class="timeline">
   <div class="timeline-item">
@@ -210,7 +210,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Featured Skills & Progress
+## Featured Skills & Progress {#featured-skills-progress}
 
 <div class="skills-grid">
   <div class="skill-item">
@@ -246,7 +246,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   </div>
 </div>
 
-## Workout Routines
+## Workout Routines {#workout-routines}
 
 <div class="routines-section">
   {% for routine in site.calisthenics %}
@@ -261,7 +261,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   {% endfor %}
 </div>
 
-## Nutrition Tips & Meal Plans
+## Nutrition Tips & Meal Plans {#nutrition-tips-meal-plans}
 
 <div class="nutrition-section">
   {% for post in site.calisthenics %}
@@ -275,7 +275,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   {% endfor %}
 </div>
 
-## Progress Photos
+## Progress Photos {#progress-photos}
 
 <div class="progress-gallery">
   {% for photo in site.data.fitness_progress %}

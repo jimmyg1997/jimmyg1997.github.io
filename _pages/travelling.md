@@ -21,24 +21,36 @@ excerpt: "Exploring the world, one adventure at a time"
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="btn btn--primary">Follow My Travel Adventures on Instagram</a>
   <div class="instagram-grid">
-    <!-- Replace with actual Instagram embeds or images -->
+    <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimiles.away/" target="_blank">
-        <img src="/assets/images/travel/insta-1.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4XqXqXqXqX/" data-instgrm-version="14">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/C4XqXqXqXqX/embed/captioned/" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
+    
+    <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimiles.away/" target="_blank">
-        <img src="/assets/images/travel/insta-2.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4WqWqWqWqW/" data-instgrm-version="14">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/C4WqWqWqWqW/embed/captioned/" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
+    
+    <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimiles.away/" target="_blank">
-        <img src="/assets/images/travel/insta-3.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C4VqVqVqVqV/" data-instgrm-version="14">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/C4VqVqVqVqV/embed/captioned/" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
   </div>
 </div>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
 ## Travel Map
 

@@ -45,11 +45,11 @@ You can download a PDF version of my CV here:
 - **Institution**: Biomedical Research Foundation, Academy of Athens
 - **Period**: Sep 2021 - Dec 2021
 - **Research**:
-  - Conducted research on Machine & Deep Learning for Parkinson’s classification using tabular data.
+  - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data.
   - Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.
 
 ### Data Science Intern
-- **Institution**: National Center for Scientific Research “Demokritos”
+- **Institution**: National Center for Scientific Research "Demokritos"
 - **Period**: Sep 2019 - Oct 2019
 - **Research**:
   - Diagnostic classification using text and audio data of Alzheimer's patients.
@@ -78,18 +78,20 @@ You can download a PDF version of my CV here:
 ## Skills
 
 ### Technical Skills
-- **Programming Languages**: Python, C/C++, MATLAB, Java, SQL, HTML/CSS/JS
-- **Machine Learning & AI**: TensorFlow, PyTorch, scikit-learn, Keras
-- **Big Data & Cloud**: Apache Spark, Apache Kafka, Hive, AWS S3, BigQuery
-- **Data Processing**: Pandas, NumPy, SciPy, OpenCV
-- **Visualization**: Matplotlib, Seaborn, Tableau, Grafana
-- **Version Control & Tools**: Git, VS Code, PyCharm, Docker
+
+* **Programming Languages**: Python, C/C++, MATLAB, Java, SQL, HTML/CSS/JS
+* **Machine Learning & AI**: TensorFlow, PyTorch, scikit-learn, Keras, 🤗 Hugging Face
+* **Big Data & Cloud**: Apache Spark, Apache Kafka, Hive, AWS S3, Google BigQuery
+* **Data Processing**: Pandas, NumPy, SciPy, OpenCV
+* **Visualization**: Matplotlib, Seaborn, Tableau, Grafana, Plotly
+* **Version Control & Tools**: Git, VS Code, PyCharm, Docker
 
 ### Languages
-- **English**: Fluent
-- **Greek**: Native
-- **French**: Intermediate
-- **Spanish**: Intermediate
+
+* **English**: Fluent
+* **Greek**: Native
+* **French**: Intermediate
+* **Spanish**: Intermediate
 
 ## Honors & Awards
 - **Honorary Award** | Ministry of Education & Eurobank EFG

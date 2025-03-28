@@ -177,7 +177,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 ## Fitness Journey Timeline {#fitness-journey-timeline}
 
 <div class="timeline">
-  <div class="timeline-item">
+  <div class="timeline-item" id="advanced-skills">
     <div class="timeline-date">2023</div>
     <div class="timeline-content">
       <h3>Advanced Skills</h3>
@@ -185,7 +185,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
   </div>
   
-  <div class="timeline-item">
+  <div class="timeline-item" id="intermediate-training">
     <div class="timeline-date">2022</div>
     <div class="timeline-content">
       <h3>Intermediate Training</h3>
@@ -193,7 +193,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
   </div>
   
-  <div class="timeline-item">
+  <div class="timeline-item" id="building-foundations">
     <div class="timeline-date">2021</div>
     <div class="timeline-content">
       <h3>Building Foundations</h3>
@@ -201,7 +201,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
   </div>
   
-  <div class="timeline-item">
+  <div class="timeline-item" id="beginning-calisthenics">
     <div class="timeline-date">2020</div>
     <div class="timeline-content">
       <h3>Beginning Calisthenics</h3>

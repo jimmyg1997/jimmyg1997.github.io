@@ -50,9 +50,11 @@ feature_row:
     <h3>Languages & Tools</h3>
     <ul>
       <li>Python</li>
-      <li>R</li>
+      <li>C/C++</li>
       <li>SQL</li>
-      <li>Git</li>
+      <li>MATLAB</li>
+      <li>Java</li>
+      <li>HTML/CSS/JS</li>
     </ul>
   </div>
   
@@ -62,8 +64,18 @@ feature_row:
       <li>TensorFlow</li>
       <li>PyTorch</li>
       <li>Scikit-learn</li>
+      <li>Keras</li>
+      <li>🤗 Hugging Face</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>Data Processing</h3>
+    <ul>
       <li>Pandas</li>
       <li>NumPy</li>
+      <li>SciPy</li>
+      <li>OpenCV</li>
     </ul>
   </div>
   
@@ -74,6 +86,7 @@ feature_row:
       <li>Seaborn</li>
       <li>Plotly</li>
       <li>Tableau</li>
+      <li>Grafana</li>
     </ul>
   </div>
 </div> 

@@ -231,11 +231,13 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
         {% if media.type == "podcast" %}
           <div class="media-item">
             <img src="{{ media.cover }}" alt="{{ media.title }}">
-            <h4>{{ media.title }}</h4>
-            <p>{{ media.excerpt | truncate: 100 }}</p>
-            {% if media.link %}
-              <a href="{{ media.link }}" class="btn btn--primary btn--small" target="_blank">Listen</a>
-            {% endif %}
+            <div class="media-details">
+              <h4>{{ media.title }}</h4>
+              <p>{{ media.excerpt | truncate: 100 }}</p>
+              {% if media.link %}
+                <a href="{{ media.link }}" class="btn btn--primary btn--small" target="_blank">Listen</a>
+              {% endif %}
+            </div>
           </div>
         {% endif %}
       {% endfor %}
@@ -249,13 +251,15 @@ excerpt: "Continuous learning, books, courses, and media I recommend"
         {% if media.type == "movie" or media.type == "series" %}
           <div class="media-item">
             <img src="{{ media.cover }}" alt="{{ media.title }}">
-            <h4>{{ media.title }}</h4>
-            <p class="media-rating">Rating: 
-              {% for i in (1..5) %}
-                {% if i <= media.rating %}⭐{% else %}☆{% endif %}
-              {% endfor %}
-            </p>
-            <p>{{ media.excerpt | truncate: 80 }}</p>
+            <div class="media-details">
+              <h4>{{ media.title }}</h4>
+              <p class="media-rating">Rating: 
+                {% for i in (1..5) %}
+                  {% if i <= media.rating %}⭐{% else %}☆{% endif %}
+                {% endfor %}
+              </p>
+              <p>{{ media.excerpt | truncate: 80 }}</p>
+            </div>
           </div>
         {% endif %}
       {% endfor %}

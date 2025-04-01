@@ -20,7 +20,7 @@ excerpt: "Making a difference through community service and youth leadership"
 
 <div class="timeline">
   <!-- 2024 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="erasmus-2024">
     <div class="timeline-content">
       <div class="timeline-date">May - June 2024</div>
       <h3>Team Lead - Erasmus+ Youth Exchange</h3>
@@ -29,7 +29,7 @@ excerpt: "Making a difference through community service and youth leadership"
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item" id="wheeling2help-nepal">
     <div class="timeline-content">
       <div class="timeline-date">May 2024</div>
       <h3>Volunteer - Wheeling2help NGO</h3>
@@ -38,7 +38,7 @@ excerpt: "Making a difference through community service and youth leadership"
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item" id="wheeling2help-kenya">
     <div class="timeline-content">
       <div class="timeline-date">January 2024</div>
       <h3>Volunteer - Wheeling2help NGO</h3>
@@ -48,7 +48,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2021-2023 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="cognihub">
     <div class="timeline-content">
       <div class="timeline-date">January 2021 - October 2023</div>
       <h3>Marketing Coordinator - CogniHub</h3>
@@ -57,7 +57,7 @@ excerpt: "Making a difference through community service and youth leadership"
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item" id="citycampus">
     <div class="timeline-content">
       <div class="timeline-date">January - November 2021</div>
       <h3>Research And Development Specialist - citycampus.gr</h3>
@@ -67,7 +67,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2018 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="web-summit">
     <div class="timeline-content">
       <div class="timeline-date">November 2018</div>
       <h3>Student Volunteer - Web Summit</h3>
@@ -77,7 +77,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2017-2018 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="cansat">
     <div class="timeline-content">
       <div class="timeline-date">September 2017 - April 2018</div>
       <h3>Contact Person Volunteer - CanSat in Greece</h3>
@@ -86,7 +86,7 @@ excerpt: "Making a difference through community service and youth leadership"
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item" id="job-fair">
     <div class="timeline-content">
       <div class="timeline-date">November 2017 - April 2018</div>
       <h3>Main Event Projects Volunteer - Job Fair Athens</h3>
@@ -96,7 +96,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2017 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="business-week">
     <div class="timeline-content">
       <div class="timeline-date">March 2018</div>
       <h3>Interaction Volunteer - Business Week 2018</h3>
@@ -105,7 +105,7 @@ excerpt: "Making a difference through community service and youth leadership"
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item" id="tedx">
     <div class="timeline-content">
       <div class="timeline-date">May 2017</div>
       <h3>Registration & Ticketing Volunteer - TEDxAthens</h3>
@@ -115,7 +115,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2016 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="arduino">
     <div class="timeline-content">
       <div class="timeline-date">December 2016</div>
       <h3>Arduino Workshops Organizer - IEEE NTUA Student Branch</h3>
@@ -125,7 +125,7 @@ excerpt: "Making a difference through community service and youth leadership"
   </div>
 
   <!-- 2011-2017 -->
-  <div class="timeline-item">
+  <div class="timeline-item" id="mun">
     <div class="timeline-content">
       <div class="timeline-date">March 2011 - May 2017</div>
       <h3>Delegate - Model United Nations</h3>

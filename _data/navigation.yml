@@ -17,6 +17,8 @@ main:
     url: /travelling/
   - title: "Calisthenics"
     url: /calisthenics/
+  - title: "Volunteering"
+    url: /volunteering/
   - title: "Now"
     url: /now/
   - title: "Wishlist"

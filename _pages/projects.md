@@ -21,7 +21,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="bonobo-gentlemen">
   <h3>Bonobo Gentlemen Podcast</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/bonobo-gentlemen.jpg" alt="Bonobo Gentlemen Podcast" class="project-image">
+    <img src="../assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-image">
     <div class="project-details">
       <p>A podcast series exploring personal development, technology, and life experiences. Each episode features in-depth discussions on various topics, from overthinking to personal growth.</p>
       <div class="project-links">
@@ -36,7 +36,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="gmail-reporter">
   <h3>Gmail Newsletter Reporter</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/gmail-reporter.jpg" alt="Gmail Newsletter Reporter" class="project-image">
+    <img src="../assets/images/projects/gmail-reporter.png" alt="Gmail Newsletter Reporter" class="project-image">
     <div class="project-details">
       <p>📧 A Python-based automation project that integrates Gmail, Google Sheets, Google Docs, Telegram and OpenAI APIs to streamline email summarization and report generation. It leverages CLI configurations to provide a seamless experience.</p>
       <div class="project-links">
@@ -49,7 +49,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="polls-analyzer">
   <h3>Polls Analyzer</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/polls-analyzer.jpg" alt="Polls Analyzer" class="project-image">
+    <img src="../assets/images/projects/polls-analyzer.png" alt="Polls Analyzer" class="project-image">
     <div class="project-details">
       <p>📊💬 Streamlit App to Create & Analyze Polls. Design polls, collect responses, and visualize results in real-time 🚀. Get insights quickly with interactive charts and analytics 📈.</p>
       <div class="project-links">
@@ -62,7 +62,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="ml-feature-engineering">
   <h3>ML Feature Engineering FastAPI Docker</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/ml-feature-engineering.jpg" alt="ML Feature Engineering FastAPI Docker" class="project-image">
+    <img src="../assets/images/projects/ml-feature-engineering.png" alt="ML Feature Engineering FastAPI Docker" class="project-image">
     <div class="project-details">
       <p>🤖 Docker Compose image with Uvicorn managed for a simple Machine Learning Feature Engineering FastAPI web application in Python 3.6 and above with multiple endpoints.</p>
       <div class="project-links">
@@ -77,7 +77,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="suicide-prevention">
   <h3>Suicide Prevention Survey</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/suicide-prevention.jpg" alt="Suicide Prevention Survey" class="project-image">
+    <img src="../assets/images/projects/suicide-prevention.png" alt="Suicide Prevention Survey" class="project-image">
     <div class="project-details">
       <p>A Streamlit-based web app designed for Greek hospitals, allowing doctors to complete a survey for their patients to assess suicide risk.</p>
       <div class="project-links">
@@ -90,7 +90,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 <div class="project-card" id="covid-classification">
   <h3>COVID-19 Tabular Classification Genes</h3>
   <div class="project-content">
-    <img src="/assets/images/projects/covid-classification.jpg" alt="COVID-19 Tabular Classification Genes" class="project-image">
+    <img src="../assets/images/projects/covid-classification.png" alt="COVID-19 Tabular Classification Genes" class="project-image">
     <div class="project-details">
       <p>This tool is built by using machine learning techniques in order to help doctors in the diagnosis of COVID-19 status based only on genetic factors.</p>
       <div class="project-links">

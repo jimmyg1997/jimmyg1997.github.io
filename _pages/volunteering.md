@@ -25,7 +25,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">May - June 2024</div>
       <h3>Team Lead - Erasmus+ Youth Exchange</h3>
       <p>Led the Greek team 🇬🇷 at the Erasmus+ Youth Exchange, «rECOnnect», held in Tatra Mountains, Murzasichle, Zakopane, Poland📍. Focused on environmental initiatives and youth leadership development.</p>
-      <img src="/assets/images/volunteering/reconnect.png" alt="Erasmus+ Youth Exchange" class="timeline-image">
+      <img src="../assets/images/volunteering/reconnect.png" alt="Erasmus+ Youth Exchange" class="timeline-image">
     </div>
   </div>
 
@@ -34,7 +34,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">May 2024</div>
       <h3>Volunteer - Wheeling2help NGO</h3>
       <p>Volunteered with Wheeling2help in Nepal, focusing on community empowerment through environmental conservation, sports development, and educational support initiatives.</p>
-      <img src="/assets/images/volunteering/wheeling2help-nepal.jpg" alt="Wheeling2help Nepal" class="timeline-image">
+      <img src="../assets/images/volunteering/wheeling2help-nepal.png" alt="Wheeling2help Nepal" class="timeline-image">
     </div>
   </div>
 
@@ -43,7 +43,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">January 2024</div>
       <h3>Volunteer - Wheeling2help NGO</h3>
       <p>Volunteered with Wheeling2help in Kenya, working on environmental conservation, sports development, and education initiatives for sustainable community impact.</p>
-      <img src="/assets/images/volunteering/wheeling2help-kenya.jpg" alt="Wheeling2help Kenya" class="timeline-image">
+      <img src="../assets/images/volunteering/wheeling2help-kenya.png" alt="Wheeling2help Kenya" class="timeline-image">
     </div>
   </div>
 

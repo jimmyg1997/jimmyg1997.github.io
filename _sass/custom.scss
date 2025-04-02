@@ -606,33 +606,87 @@ body {
   }
 }
 
-/* Seminar Items */
+/* Seminars & Workshops Section */
 .seminars-section {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .seminar-item {
-  background-color: white;
+  background-color: #f5f5f5;
+  padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: var(--transition);
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
   
   h3 {
-    margin-top: 0;
     color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .seminar-provider {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
   
   .seminar-date {
     color: #666;
-    font-style: italic;
     margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .seminar-skills {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Online Courses Section */
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.course-card {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  
+  h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .course-provider {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-date {
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-id {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .course-skills {
+    margin-bottom: 1.5rem;
   }
 }
 

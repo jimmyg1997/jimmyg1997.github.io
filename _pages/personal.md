@@ -19,48 +19,66 @@ This section is dedicated to my personal growth journey. Here you'll find book r
 
 ## Seminars & Workshops
 
-### Experimental Design Workshop
+<div class="seminars-section">
+  <div class="seminar-item">
+    <h3>Building Robust Experiments with Python and PsychoPy</h3>
+    <p class="seminar-provider">**Universitätsklinikum Bonn**</p>
+    <p class="seminar-date">*Issued: Dec 2024*</p>
+    
+    <p>This intensive 18-hour workshop provided hands-on experience with experimental design:</p>
+    <ul>
+      <li>Setting up experiments with 𝘗𝘴𝘺𝘤𝘩𝘰𝘗𝘺, a powerful tool for behavioral research</li>
+      <li>Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity</li>
+      <li>Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing</li>
+      <li>Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments</li>
+    </ul>
 
-**Universitätsklinikum Bonn**  
-*Issued: Dec 2024*
+    <p class="seminar-skills">**Skills:** PsychoPy · Pydantic · pytest · Mocks · Git · GitHub · Patches · Design of Experiments (DOE)</p>
+    
+    <a href="https://www.linkedin.com/in/dimitrios-georgiou/details/certifications/1737379204518/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
 
-This intensive 18-hour workshop provided hands-on experience with experimental design:
-- Setting up experiments with 𝘗𝘴𝘺𝘤𝘩𝘰𝘗𝘺, a powerful tool for behavioral research
-- Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity
-- Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing
-- Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments
+  <div class="seminar-item">
+    <h3>ANDA-NI Neuroinformatics Workshop</h3>
+    <p class="seminar-provider">**Universitätsklinikum Bonn**</p>
+    <p class="seminar-date">*Issued: Sep 2024*</p>
+    
+    <p>Workshop Content:</p>
+    <ul>
+      <li>Data Representations for Neuroscience Data and Metadata: JSON, YAML, HDF5, NIX and Neo</li>
+      <li>Version Control and Data Management with Git, Git-Annex, and DataLad</li>
+      <li>Data Sharing Platforms with GitHub and Gin-G-Node</li>
+    </ul>
 
-**Skills:** PsychoPy · Pydantic · pytest · Mocks · Git · GitHub · Patches · Design of Experiments (DOE)
-
-### ANDA-NI Neuroinformatics Workshop
-
-**Universitätsklinikum Bonn**  
-*Issued: Sep 2024*
-
-Workshop Content:
-- Data Representations for Neuroscience Data and Metadata: JSON, YAML, HDF5, NIX and Neo
-- Version Control and Data Management with Git, Git-Annex, and DataLad
-- Data Sharing Platforms with GitHub and Gin-G-Node
-
-**Skills:** Neo · Gin-G-Node · JSON · Git · Data Representation · Neuroscience · GitHub · NIX · YAML · HDF5 · DataLad · Git-Annex
+    <p class="seminar-skills">**Skills:** Neo · Gin-G-Node · JSON · Git · Data Representation · Neuroscience · GitHub · NIX · YAML · HDF5 · DataLad · Git-Annex</p>
+    
+    <a href="https://www.linkedin.com/in/dimitrios-georgiou/details/certifications/1377283814/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1727954364448" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
+</div>
 
 ## Online Courses
 
-### HelloAI Advanced RIS Scholarship
+<div class="courses-section">
+  <div class="course-card">
+    <h3>HelloAI Advanced RIS Scholarship</h3>
+    <p class="course-provider">**EIT Health**</p>
+    <p class="course-date">*Issued: Jan 2025*</p>
+    <p class="course-id">*Credential ID: vpnbd7fxja*</p>
+    
+    <p class="course-skills">**Skills:** Bioinformatics · Prompt Engineering · Machine Learning · Healthcare</p>
+    
+    <a href="https://www.linkedin.com/in/dimitrios-georgiou/details/certifications/1273040901/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1738587313558" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
 
-**EIT Health**  
-*Issued: Jan 2025*  
-*Credential ID: vpnbd7fxja*
-
-**Skills:** Bioinformatics · Prompt Engineering · Machine Learning · Healthcare
-
-### Generative AI for Healthcare
-
-**Google**  
-*Issued: Feb 2025*  
-*Credential ID: 14142481*
-
-**Skills:** Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning
+  <div class="course-card">
+    <h3>Generative AI for Healthcare</h3>
+    <p class="course-provider">**Google**</p>
+    <p class="course-date">*Issued: Feb 2025*</p>
+    <p class="course-id">*Credential ID: 14142481*</p>
+    
+    <p class="course-skills">**Skills:** Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning</p>
+  </div>
+</div>
 
 ## Reading List {#reading-list}
 

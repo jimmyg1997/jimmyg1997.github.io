@@ -1,71 +1,66 @@
 ---
-title: Personal Development
+title: "Personal Development"
 layout: single
 permalink: /personal/
 author_profile: true
 toc: true
 toc_sticky: true
 header:
-  overlay_color: "#001f3f"
+  overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/personal-header.jpg
+  actions:
+    - label: "View CV"
+      url: /assets/pdf/cv.pdf
 excerpt: "Continuous learning, books, courses, and media I recommend"
 ---
 
-<div class="personal-intro">
-  <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>
-</div>
+This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.
 
-## Seminars & Workshops {#seminars-workshops}
+## Seminars & Workshops
 
-<div class="seminars-section">
-  <div class="seminar-item" id="upcoming-workshops">
-    <h3>Matplotlib and SciPy Signal Workshop</h3>
-    <p class="seminar-date">November 2023</p>
-    <p>Led a workshop on using Matplotlib and SciPy Signal for data visualization and signal processing in neuroscience research applications.</p>
-    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_matplotlib-scipysignal-elephant-activity-7308436851609022464-E5XT" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
-  </div>
-  
-  <div class="seminar-item" id="past-workshops">
-    <h3>Experimental Design in Behavioral Science</h3>
-    <p class="seminar-date">October 2023</p>
-    <p>Presented techniques and best practices for designing experiments in behavioral science, including software development considerations.</p>
-    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_experimentaldesign-behavioralscience-softwaredevelopment-activity-7275528404844580864-cMVU" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
-  </div>
-</div>
+### Experimental Design Workshop
 
-## Online Courses {#online-courses}
+**Universitätsklinikum Bonn**  
+*Issued: Dec 2024*
 
-<div class="courses-section">
-  <div class="course-card">
-    <div class="course-content">
-      <h3>EIT Health - Business Plan Bootcamp</h3>
-      <p class="course-provider">EIT Health</p>
-      <p class="course-date">Completed: August 2023</p>
-      <p>Intensive workshop on developing business plans for healthcare innovations, covering market analysis, financial planning, and investor pitching.</p>
-      <a href="https://www.linkedin.com/posts/dimitrios-georgiou_eithealth-networking-healthtech-activity-7292162583011196928-wQ3c" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
-    </div>
-  </div>
-  
-  {% for course in site.personal %}
-    {% if course.type == "course" %}
-      <div class="course-card">
-        <div class="course-content">
-          <h3>{{ course.title }}</h3>
-          <p class="course-provider">{{ course.provider }}</p>
-          <p class="course-date">Completed: {{ course.date | date: "%B %Y" }}</p>
-          <p>{{ course.excerpt | truncate: 150 }}</p>
-          {% if course.certificate %}
-            <a href="{{ course.certificate }}" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
-          {% endif %}
-          {% if course.notes %}
-            <a href="{{ course.url }}" class="btn btn--primary btn--small">View Notes</a>
-          {% endif %}
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div>
+This intensive 18-hour workshop provided hands-on experience with experimental design:
+- Setting up experiments with 𝘗𝘴𝘺𝘤𝘩𝘰𝘗𝘺, a powerful tool for behavioral research
+- Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity
+- Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing
+- Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments
+
+**Skills:** PsychoPy · Pydantic · pytest · Mocks · Git · GitHub · Patches · Design of Experiments (DOE)
+
+### ANDA-NI Neuroinformatics Workshop
+
+**Universitätsklinikum Bonn**  
+*Issued: Sep 2024*
+
+Workshop Content:
+- Data Representations for Neuroscience Data and Metadata: JSON, YAML, HDF5, NIX and Neo
+- Version Control and Data Management with Git, Git-Annex, and DataLad
+- Data Sharing Platforms with GitHub and Gin-G-Node
+
+**Skills:** Neo · Gin-G-Node · JSON · Git · Data Representation · Neuroscience · GitHub · NIX · YAML · HDF5 · DataLad · Git-Annex
+
+## Online Courses
+
+### HelloAI Advanced RIS Scholarship
+
+**EIT Health**  
+*Issued: Jan 2025*  
+*Credential ID: vpnbd7fxja*
+
+**Skills:** Bioinformatics · Prompt Engineering · Machine Learning · Healthcare
+
+### Generative AI for Healthcare
+
+**Google**  
+*Issued: Feb 2025*  
+*Credential ID: 14142481*
+
+**Skills:** Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning
 
 ## Reading List {#reading-list}
 

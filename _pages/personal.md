@@ -60,6 +60,14 @@ This section is dedicated to my personal growth journey. Here you'll find book r
 
 <div class="courses-section">
   <div class="course-card">
+    <h3>Generative AI for Healthcare</h3>
+    <p class="course-provider">Google</p>
+    <p class="course-date">Issued: Feb 2025</p>
+    <p class="course-id">Credential ID: 14142481</p>
+    
+    <p class="course-skills"><b>Skills:</b> Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning</p>
+  </div>
+  <div class="course-card">
     <h3>HelloAI Advanced RIS Scholarship</h3>
     <p class="course-provider">EIT Health</p>
     <p class="course-date">Issued: Jan 2025</p>
@@ -70,14 +78,7 @@ This section is dedicated to my personal growth journey. Here you'll find book r
     <a href="https://www.linkedin.com/in/dimitrios-georgiou/details/certifications/1273040901/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1738587313558" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
   </div>
 
-  <div class="course-card">
-    <h3>Generative AI for Healthcare</h3>
-    <p class="course-provider">Google</p>
-    <p class="course-date">Issued: Feb 2025</p>
-    <p class="course-id">Credential ID: 14142481</p>
-    
-    <p class="course-skills"><b>Skills:</b> Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning</p>
-  </div>
+  
 </div>
 
 ## Reading List {#reading-list}

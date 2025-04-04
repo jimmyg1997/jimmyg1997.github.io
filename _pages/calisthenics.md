@@ -225,33 +225,76 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <div class="skill-item" id="planche">
     <h3>Planche</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 65%;">65%</div>
+      <div class="progress" style="width: 30%;">30%</div>
     </div>
     <p>Current status: Advanced tuck planche, working towards straddle planche</p>
+  </div>
+
+  <div class="skill-item" id="front-lever-pull-up">
+    <h3>Front Lever</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 20%;">20%</div>
+    </div>
+    <p>Current status: 3 reps with band for -18kg, False Grip</p>
   </div>
   
   <div class="skill-item" id="front-lever">
     <h3>Front Lever</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 70%;">70%</div>
+      <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Advanced tuck front lever, working on single leg extensions</p>
+    <p>Current status: Full front lever for at least 6 seconds</p>
+  </div>
+
+  <div class="skill-item" id="handstand">
+    <h3>Handstand Push-up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;">40%</div>
+    </div>
+    <p>Current status: Push-up on parallettes (not touching the floor, wide grip, 3 reps), Push-ups on floor (touching the floor, wide grip, 3 reps) </p>
   </div>
   
   <div class="skill-item" id="handstand">
     <h3>Handstand</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 85%;">85%</div>
+      <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Freestanding handstand for 30 seconds, working on handstand push-ups</p>
+    <p>Current status: Freestanding handstand for 60 sec</p>
   </div>
+
+  <div class="skill-item" id="weighted-muscle-up">
+    <h3>Weighted Muscle-Up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;">40%</div>
+    </div>
+    <p>Current status: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
+  </div>
+</div>
   
-  <div class="skill-item" id="muscle-up">
+<div class="skill-item" id="muscle-up">
     <h3>Muscle-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Clean muscle-ups, working on consecutive repetitions</p>
+    <p>Current status: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
+  </div>
+</div>
+
+<div class="skill-item" id="weigthed-dip">
+    <h3>Weighted Dips</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;">40%</div>
+    </div>
+    <p>Current status: Clean dips, working on progressive overload. 10 reps for +25kg</p>
+  </div>
+</div>
+
+<div class="skill-item" id="weigthed-pull-up">
+    <h3>Weighted Pull-Up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;">40%</div>
+    </div>
+    <p>Current status: Clean pull-ups, working on progressive overload. 10 reps for +20kg</p>
   </div>
 </div>
 

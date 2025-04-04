@@ -227,7 +227,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 30%;">30%</div>
     </div>
-    <p>Current status: Advanced tuck planche, working towards straddle planche</p>
+    <p><b>Current status</b>: Advanced tuck planche, working towards straddle planche</p>
   </div>
 
   <div class="skill-item" id="front-lever-pull-up">
@@ -235,7 +235,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 20%;">20%</div>
     </div>
-    <p>Current status: 3 reps with band for -18kg, False Grip</p>
+    <p><b>Current status</b>: 3 reps with band for -18kg, False Grip</p>
   </div>
   
   <div class="skill-item" id="front-lever">
@@ -243,7 +243,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Full front lever for at least 6 seconds</p>
+    <p><b>Current status</b>: Full front lever for at least 6 seconds</p>
   </div>
 
   <div class="skill-item" id="handstand">
@@ -251,7 +251,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
-    <p>Current status: Push-up on parallettes (not touching the floor, wide grip, 3 reps), Push-ups on floor (touching the floor, wide grip, 3 reps) </p>
+    <p><b>Current status</b>: Push-up on parallettes (not touching the floor, wide grip, 3 reps), Push-ups on floor (touching the floor, wide grip, 3 reps) </p>
   </div>
   
   <div class="skill-item" id="handstand">
@@ -259,7 +259,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Freestanding handstand for 60 sec</p>
+    <p><b>Current status</b>: Freestanding handstand for 60 sec</p>
   </div>
 
   <div class="skill-item" id="weighted-muscle-up">
@@ -267,7 +267,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
-    <p>Current status: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
+    <p><b>Current status</b>: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
   </div>
 </div>
   
@@ -276,7 +276,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
-    <p>Current status: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
+    <p><b>Current status</b>: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
   </div>
 </div>
 
@@ -285,7 +285,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
-    <p>Current status: Clean dips, working on progressive overload. 10 reps for +25kg</p>
+    <p><b>Current status</b>: Clean dips, working on progressive overload. 10 reps for +25kg</p>
   </div>
 </div>
 
@@ -294,7 +294,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
-    <p>Current status: Clean pull-ups, working on progressive overload. 10 reps for +20kg</p>
+    <p><b>Current status</b>: Clean pull-ups, working on progressive overload. 10 reps for +20kg</p>
   </div>
 </div>
 
@@ -328,7 +328,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 </div>
 
 ## Progress Photos {#progress-photos}
-
+<!-- 
 <div class="progress-gallery">
   {% for photo in site.data.fitness_progress %}
     <div class="progress-item">
@@ -337,4 +337,4 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
       <p>{{ photo.description }}</p>
     </div>
   {% endfor %}
-</div> 
+</div>  -->

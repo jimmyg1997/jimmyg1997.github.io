@@ -37,6 +37,7 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   <h3>Gmail Newsletter Reporter</h3>
   <div class="project-content">
     <img src="../assets/images/projects/gmail-reporter.png" alt="Gmail Newsletter Reporter" class="project-image">
+    <br>
     <div class="project-details">
       <p>📧 A Python-based automation project that integrates Gmail, Google Sheets, Google Docs, Telegram and OpenAI APIs to streamline email summarization and report generation. It leverages CLI configurations to provide a seamless experience.</p>
       <div class="project-links">

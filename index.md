@@ -29,7 +29,7 @@ feature_row:
     btn_class: "btn--primary"
   - image_path: /assets/images/projects-thumb.jpg
     alt: "Projects"
-    title: "Projects"
+    title: "🧠 Projects"
     excerpt: "Data science, ML, AI, and healthcare research projects."
     url: "/projects/"
     btn_label: "View Projects"
@@ -38,21 +38,21 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/travel-thumb.jpg
     alt: "Travelling"
-    title: "Travelling"
+    title: "✈️ Travelling"
     excerpt: "My travel adventures around the world."
     url: "/travelling/"
     btn_label: "Explore"
     btn_class: "btn--primary"
   - image_path: /assets/images/calisthenics-thumb.jpg
     alt: "Calisthenics & Nutrition"
-    title: "Calisthenics & Nutrition"
+    title: "🏋️‍♂️ Calisthenics & 🥦 Nutrition"
     excerpt: "Workout progress, nutrition tips, and healthy living."
     url: "/calisthenics/"
     btn_label: "Learn More"
     btn_class: "btn--primary"
   - image_path: /assets/images/personal-thumb.jpg
     alt: "Personal Development"
-    title: "Personal Development"
+    title: "🌱 Personal Development"
     excerpt: "Books, courses, and continuous learning."
     url: "/personal/"
     btn_label: "Discover"

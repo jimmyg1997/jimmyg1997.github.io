@@ -53,7 +53,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">January 2021 - October 2023</div>
       <h3>Marketing Coordinator - CogniHub</h3>
       <p>Led marketing initiatives for CogniHub, an interdisciplinary non-profit student organization promoting interdisciplinarity through events, talks, and workshops.</p>
-      <img src="/assets/images/volunteering/cognihub.jpg" alt="CogniHub" class="timeline-image">
+      <img src="../assets/images/volunteering/cognihub.jpg" alt="CogniHub" class="timeline-image">
     </div>
   </div>
 
@@ -62,7 +62,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">January - November 2021</div>
       <h3>Research And Development Specialist - citycampus.gr</h3>
       <p>Conducted competitive research and analyzed statistics using Python, Google Analytics, and SimilarWeb to improve educational platform performance.</p>
-      <img src="/assets/images/volunteering/citycampus.jpg" alt="CityCampus" class="timeline-image">
+      <img src="../assets/images/volunteering/citycampus.jpg" alt="CityCampus" class="timeline-image">
     </div>
   </div>
 
@@ -72,7 +72,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">November 2018</div>
       <h3>Student Volunteer - Web Summit</h3>
       <p>Member of the Media Team at the world's largest tech conference in Lisbon, Portugal, assisting in interview booths and press conferences.</p>
-      <img src="/assets/images/volunteering/web-summit.jpg" alt="Web Summit" class="timeline-image">
+      <img src="../assets/images/volunteering/websummit.jpg" alt="Web Summit" class="timeline-image">
     </div>
   </div>
 
@@ -82,7 +82,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">September 2017 - April 2018</div>
       <h3>Contact Person Volunteer - CanSat in Greece</h3>
       <p>Responsible for supporting one of ten participating school teams with programming and information-related challenges throughout the 8-month program.</p>
-      <img src="/assets/images/volunteering/cansat.jpg" alt="CanSat" class="timeline-image">
+      <img src="../assets/images/volunteering/cansat.jpg" alt="CanSat" class="timeline-image">
     </div>
   </div>
 
@@ -91,7 +91,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">November 2017 - April 2018</div>
       <h3>Main Event Projects Volunteer - Job Fair Athens</h3>
       <p>Organized panels, speeches, and sessions on various topics including Technology and Life failures during the two-day event.</p>
-      <img src="/assets/images/volunteering/job-fair.jpg" alt="Job Fair Athens" class="timeline-image">
+      <img src="../assets/images/volunteering/job-fair.jpg" alt="Job Fair Athens" class="timeline-image">
     </div>
   </div>
 
@@ -101,7 +101,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">March 2018</div>
       <h3>Interaction Volunteer - Business Week 2018</h3>
       <p>Represented the Career's office at The American College of Greece, promoting the internship program of Deree College.</p>
-      <img src="/assets/images/volunteering/business-week.jpg" alt="Business Week" class="timeline-image">
+      <img src="../assets/images/volunteering/business-week.jpg" alt="Business Week" class="timeline-image">
     </div>
   </div>
 
@@ -110,7 +110,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">May 2017</div>
       <h3>Registration & Ticketing Volunteer - TEDxAthens</h3>
       <p>Managed registration and ticketing operations for the TEDxAthens event.</p>
-      <img src="/assets/images/volunteering/tedx.jpg" alt="TEDxAthens" class="timeline-image">
+      <img src="../assets/images/volunteering/tedx.jpg" alt="TEDxAthens" class="timeline-image">
     </div>
   </div>
 
@@ -120,7 +120,7 @@ excerpt: "Making a difference through community service and youth leadership"
       <div class="timeline-date">December 2016</div>
       <h3>Arduino Workshops Organizer - IEEE NTUA Student Branch</h3>
       <p>Organized and conducted a 4-day Arduino workshop for students.</p>
-      <img src="/assets/images/volunteering/arduino.jpg" alt="Arduino Workshop" class="timeline-image">
+      <img src="../assets/images/volunteering/arduino.jpg" alt="Arduino Workshop" class="timeline-image">
     </div>
   </div>
 
@@ -140,7 +140,7 @@ excerpt: "Making a difference through community service and youth leadership"
         <li>Platon School MUN 2014 - Delegate of China</li>
         <li>Thessaloniki International Student MUN 2016 - Ambassador of Democratic Republic of Congo</li>
       </ul>
-      <img src="/assets/images/volunteering/mun.jpg" alt="Model United Nations" class="timeline-image">
+      <img src="../assets/images/volunteering/mun.jpg" alt="Model United Nations" class="timeline-image">
     </div>
   </div>
 </div> 

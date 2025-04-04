@@ -17,36 +17,22 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 </div>
 
 ## Instagram Feed {#instagram-feed}
-
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="btn btn--primary">Follow My Calisthenics Journey on Instagram</a>
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" style="width:100%"></blockquote>
     </div>
-    
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGss-fkN4_x/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGss-fkN4_x/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGss-fkN4_x/" data-instgrm-version="14" style="width:100%"></blockquote>
     </div>
-    
     <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" style="width:100%"></blockquote>
     </div>
+
   </div>
 </div>
 

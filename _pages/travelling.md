@@ -1,5 +1,5 @@
 ---
-title: Travelling
+title: ✈️ Travelling
 layout: single
 permalink: /travelling/
 author_profile: true
@@ -9,7 +9,7 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/travel-header.jpg
-excerpt: "Exploring the world, one adventure at a time"
+excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 ---
 
 <div class="travel-intro">

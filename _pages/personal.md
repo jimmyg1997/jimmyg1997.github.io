@@ -1,5 +1,5 @@
 ---
-title: "Personal Development"
+title: "🌱 Personal Development"
 layout: single
 permalink: /personal/
 author_profile: true
@@ -12,7 +12,7 @@ header:
   actions:
     - label: "View CV"
       url: /assets/pdf/cv.pdf
-excerpt: "Continuous learning, books, courses, and media I recommend"
+excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend"
 ---
 
 This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.

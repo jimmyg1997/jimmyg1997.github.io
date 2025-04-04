@@ -328,7 +328,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 </div>
 
 ## Progress Photos {#progress-photos}
-<!-- 
+
 <div class="progress-gallery">
   {% for photo in site.data.fitness_progress %}
     <div class="progress-item">
@@ -337,4 +337,4 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
       <p>{{ photo.description }}</p>
     </div>
   {% endfor %}
-</div>  -->
+</div> 

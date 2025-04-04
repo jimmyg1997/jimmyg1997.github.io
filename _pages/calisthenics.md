@@ -269,16 +269,16 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
     <p><b>Current status</b>: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
   </div>
-</div>
+
   
-<div class="skill-item" id="muscle-up">
+  <div class="skill-item" id="muscle-up">
     <h3>Muscle-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
     <p><b>Current status</b>: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
   </div>
-</div>
+
 
 <div class="skill-item" id="weigthed-dip">
     <h3>Weighted Dips</h3>
@@ -287,7 +287,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
     <p><b>Current status</b>: Clean dips, working on progressive overload. 10 reps for +25kg</p>
   </div>
-</div>
+
 
 <div class="skill-item" id="weigthed-pull-up">
     <h3>Weighted Pull-Up</h3>
@@ -296,7 +296,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
     <p><b>Current status</b>: Clean pull-ups, working on progressive overload. 10 reps for +20kg</p>
   </div>
-</div>
+
 
 ## Workout Routines {#workout-routines}
 

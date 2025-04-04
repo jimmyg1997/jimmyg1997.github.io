@@ -29,7 +29,6 @@ excerpt: "Exploring the world, one adventure at a time"
         </div>
       </blockquote>
     </div>
-    
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuAEdRMJWv/" data-instgrm-version="14" data-instgrm-width="100%">
@@ -38,7 +37,6 @@ excerpt: "Exploring the world, one adventure at a time"
         </div>
       </blockquote>
     </div>
-    
     <!-- Instagram Post 3 -->
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">

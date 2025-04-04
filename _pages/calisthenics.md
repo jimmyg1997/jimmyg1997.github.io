@@ -21,27 +21,36 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 <div class="instagram-feed">
   <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="btn btn--primary">Follow My Calisthenics Journey on Instagram</a>
   <div class="instagram-grid">
-    <!-- Replace with actual Instagram embeds or images -->
+    <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
-        <img src="/assets/images/fitness/insta-1.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
+    
+    <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
-        <img src="/assets/images/fitness/insta-2.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGss-fkN4_x/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DHuAEdRMJWv/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
+    
+    <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <a href="https://www.instagram.com/dimisthenics/" target="_blank">
-        <img src="/assets/images/fitness/insta-3.jpg" alt="Instagram Post">
-      </a>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+        </div>
+      </blockquote>
     </div>
   </div>
 </div>
 
 ## Current Workout Plan {#current-workout-plan}
-
 <div class="workout-plan">
   <h3 id="five-day-split">5-Day Split: Calisthenics + Legs</h3>
   <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day.</p>

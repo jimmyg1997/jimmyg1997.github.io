@@ -1,5 +1,5 @@
 ---
-title: Calisthenics & Nutrition
+title: 🏋️‍♂️ Calisthenics & 🥦 Nutrition
 layout: single
 permalink: /calisthenics/
 author_profile: true
@@ -9,7 +9,7 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/calisthenics-header.jpg
-excerpt: "Documenting my fitness journey, workout progress, and nutritional insights"
+excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress, and nutritional insights 🥦🔥"
 ---
 
 <div class="fitness-intro">

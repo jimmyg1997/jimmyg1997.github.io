@@ -187,36 +187,37 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 <div class="timeline">
   <div class="timeline-item" id="advanced-skills">
-    <div class="timeline-date">2023</div>
+    <div class="timeline-date">2025</div>
     <div class="timeline-content">
       <h3>Advanced Skills</h3>
-      <p>Working on front lever and planche progressions, with consistent training 5 days per week. Focus on straight arm strength and skill development.</p>
+      <p>Working on front lever pull-ups and planche progressions, with consistent training 5 days per week. Focus on straight arm strength and skill development.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item" id="intermediate-training">
+    <div class="timeline-date">2024</div>
+    <div class="timeline-content">
+      <h3>Intermediate Training</h3>
+      <p>Achieved first milestones on basics (weighted dips, weighted pull-ups, weighted chin-ups), 100% form of handstand hold (and handstand variations), first attemptos of weigthed muscle-ups. Increased training frequency to 4 days per week, and began focusing on more advanced calisthenics skills.</p>
     </div>
   </div>
   
   <div class="timeline-item" id="intermediate-training">
-    <div class="timeline-date">2022</div>
+    <div class="timeline-date">2023</div>
     <div class="timeline-content">
       <h3>Intermediate Training</h3>
-      <p>Achieved muscle-ups and handstand holds, increased training frequency to 4 days per week, and began focusing on more advanced calisthenics skills.</p>
+      <p>Achieved muscle-ups, front lever (fast enough) and handstand holds, mastered back lever </p>
     </div>
   </div>
   
   <div class="timeline-item" id="building-foundations">
-    <div class="timeline-date">2021</div>
+    <div class="timeline-date">2022</div>
     <div class="timeline-content">
       <h3>Building Foundations</h3>
       <p>Focused on mastering the basics: pull-ups, dips, push-ups, and core strength. Established consistent training routine of 3 days per week.</p>
     </div>
   </div>
   
-  <div class="timeline-item" id="beginning-calisthenics">
-    <div class="timeline-date">2020</div>
-    <div class="timeline-content">
-      <h3>Beginning Calisthenics</h3>
-      <p>Started with basic bodyweight exercises during the pandemic, learning proper form and building initial strength.</p>
-    </div>
-  </div>
 </div>
 
 ## Featured Skills & Progress {#featured-skills-progress}

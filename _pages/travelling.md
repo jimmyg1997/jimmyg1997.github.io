@@ -62,13 +62,13 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 <div class="recent-travels">
   <div class="travel-card" id="vietnam-2025">
     <div class="travel-image">
-      <img src="/assets/images/travel/vietnam-2025.jpg" alt="Krakow, Poland">
+      <img src="/assets/images/travel/vietnam-2025.jpg" alt="Northen Vietnam">
     </div>
     <div class="travel-content">
       <h3>Easter in Vietnam</h3>
       <p class="travel-date">April 2025</p>
-      <p>My experience in the beautiful country of Vietnam</p>
-      <a href=""  class="btn btn--primary btn--small" target="_blank">View Krakow Tour Guide </a>
+      <p>My experience in the northen part of the beautiful country of Vietnam</p>
+      <a href=""  class="btn btn--primary btn--small" target="_blank">View Vietnam photos </a>
     </div>
   </div>
 
@@ -95,7 +95,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 
 <div class="travel-categories">
   <div class="category-item" id="city-explorations">
-    <img src="/assets/images/travel/city-travels.jpg" alt="City Travels">
+    <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
     <h3>Living in Krakow</h3>
     <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
     <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">View the Guide</a>
@@ -123,6 +123,8 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
     {% endfor %}
   {% endfor %}
 </div>
+
+
 
 ## Travel Archive {#travel-archive}
 

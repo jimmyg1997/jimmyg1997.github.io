@@ -6,12 +6,9 @@ author_profile: true
 toc: true
 toc_sticky: true
 header:
-  overlay_color: "#000"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/personal-header.jpg
-  actions:
-    - label: "View CV"
-      url: /assets/pdf/cv.pdf
 excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend."
 ---
 

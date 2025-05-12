@@ -9,7 +9,7 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/volunteering-header.jpg
-excerpt: "Making a difference through community service and youth leadership"
+excerpt: "🌍 Making a difference through 🤝 community service and 🌱 youth leadership 💡"
 ---
 
 <div class="volunteering-intro">

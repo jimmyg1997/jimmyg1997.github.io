@@ -68,6 +68,11 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
       <h3>Living in Krakow</h3>
       <p class="travel-date">2022 - Present</p>
       <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture.</p>
+      <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" 
+        class="btn btn--primary btn--small" 
+        target="_blank">
+        View Krakow Tour Guide
+      </a>
     </div>
   </div>
   

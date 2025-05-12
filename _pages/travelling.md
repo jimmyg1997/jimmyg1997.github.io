@@ -57,7 +57,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
   <p class="map-caption">Countries I've visited highlighted in blue</p>
 </div>
 
-## Recent Adventures {#recent-adventures}
+## Recent Adventures & Tour Guides {#recent-adventures}
 
 <div class="recent-travels">
   <div class="travel-card" id="living-in-krakow">
@@ -75,7 +75,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
       </a>
     </div>
   </div>
-  
+
   <div class="travel-card" id="summer-in-santorini">
     <div class="travel-image">
       <img src="/assets/images/travel/santorini-greece.jpg" alt="Santorini, Greece">

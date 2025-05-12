@@ -79,7 +79,6 @@ feature_row2:
     <li>Training for my next calisthenics milestone</li>
     <li>Planning my upcoming travel to [destination]</li>
   </ul>
-  <p><a href="/now/" class="btn btn--primary">See My Full "Now" Page</a></p>
 </div>
 
 ## Gift Wishlist

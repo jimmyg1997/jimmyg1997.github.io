@@ -24,6 +24,29 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
 
 <div class="seminars-section">
   <div class="seminar-item">
+    <h3>LFP Analysis in Python</h3>
+    <p class="seminar-provider">University of Bonn – iBOTS (Innovative Brain Organization Technologies & Signals)</p>
+    <p class="seminar-date">Issued: Mar 2025</p>
+
+    <p>This intensive 18-hour workshop provided hands-on experience in analyzing Local Field Potentials (LFPs) and spike data:</p>
+    <ul>
+      <li>Visualizing continuous neural signals related to behavior using <i>Matplotlib</i></li>
+      <li>Frequency analysis of LFPs and spikes with <i>ScipySignal</i> for identifying neural oscillations</li>
+      <li>Relating LFPs and spikes via Current Source Density and Coherence Analyses using <i>Elephant</i></li>
+      <li>Time-Frequency Decomposition with <i>Wavelet Transform</i> and <i>Fourier Analysis</i></li>
+      <li>Neuropixels data processing using <i>Neo</i> and <i>Pandas</i> for large-scale multi-area neural recordings</li>
+      <li>Signal filtering and artifact removal via <i>Notch Filtering</i> and <i>Bandpass Filtering</i></li>
+    </ul>
+
+    <p class="seminar-skills"><b>Skills:</b> Electrophysiology · Python · ScipySignal · Wavelet Transform · Neo · Notch Filtering · Bandpass Filtering · Elephant · Fourier Analysis · Neuropixels · Matplotlib · Pandas · Signal Processing · Experimental Design</p>
+
+    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_matplotlib-scipysignal-elephant-activity-7308436851609022464-E5XT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+
+
+  </div>
+
+
+  <div class="seminar-item">
     <h3>Building Robust Experiments with Python and PsychoPy</h3>
     <p class="seminar-provider">Universitätsklinikum Bonn</p>
     <p class="seminar-date">Issued: Dec 2024</p>

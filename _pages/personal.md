@@ -15,7 +15,7 @@ header:
 excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend."
 ---
 
-<div class="personal-intro">
+<div class="volunteering-intro">
   <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>
 </div>
 

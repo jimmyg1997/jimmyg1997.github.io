@@ -60,43 +60,21 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 ## Recent Adventures & Tour Guides {#recent-adventures}
 
 <div class="recent-travels">
-  <div class="travel-card" id="living-in-krakow">
+  <div class="travel-card" id="vietnam-2025">
     <div class="travel-image">
-      <img src="/assets/images/travel/krakow-poland.jpg" alt="Krakow, Poland">
+      <img src="/assets/images/travel/vietnam-2025.jpg" alt="Krakow, Poland">
     </div>
     <div class="travel-content">
-      <h3>Living in Krakow</h3>
-      <p class="travel-date">2022 - Present</p>
-      <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture.</p>
-      <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" 
-        class="btn btn--primary btn--small" 
-        target="_blank">
-        View Krakow Tour Guide
-      </a>
+      <h3>Easter in Vietnam</h3>
+      <p class="travel-date">April 2025</p>
+      <p>My experience in the beautiful country of Vietnam</p>
+      <a href=""  class="btn btn--primary btn--small" target="_blank">View Krakow Tour Guide </a>
     </div>
   </div>
 
-  <div class="travel-card" id="summer-in-santorini">
-    <div class="travel-image">
-      <img src="/assets/images/travel/santorini-greece.jpg" alt="Santorini, Greece">
-    </div>
-    <div class="travel-content">
-      <h3>Summer in Santorini</h3>
-      <p class="travel-date">August 2023</p>
-      <p>Exploring the breathtaking views, white-washed buildings, and crystal-clear waters of Santorini, Greece.</p>
-    </div>
-  </div>
   
-  <div class="travel-card" id="weekend-in-stockholm">
-    <div class="travel-image">
-      <img src="/assets/images/travel/stockholm-sweden.jpg" alt="Stockholm, Sweden">
-    </div>
-    <div class="travel-content">
-      <h3>Weekend in Stockholm</h3>
-      <p class="travel-date">June 2023</p>
-      <p>A weekend getaway to Stockholm, Sweden, exploring its beautiful archipelago, historic old town, and modern design.</p>
-    </div>
-  </div>
+  
+ 
   
   {% for travel in site.travelling limit:3 %}
     <div class="travel-card">
@@ -118,9 +96,9 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 <div class="travel-categories">
   <div class="category-item" id="city-explorations">
     <img src="/assets/images/travel/city-travels.jpg" alt="City Travels">
-    <h3>City Explorations</h3>
-    <p>Urban adventures and city discoveries</p>
-    <a href="/travelling/tag/cities/" class="btn btn--primary btn--small">View Cities</a>
+    <h3>Living in Krakow</h3>
+    <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
+    <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">View the Guide</a>
   </div>
   
   <div class="category-item" id="nature-outdoors">
@@ -130,13 +108,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
     <a href="/travelling/tag/nature/" class="btn btn--primary btn--small">View Nature</a>
   </div>
   
-  <div class="category-item" id="food-culture">
-    <img src="/assets/images/travel/food-travels.jpg" alt="Food Travels">
-    <h3>Food & Culture</h3>
-    <p>Culinary adventures and local experiences</p>
-    <a href="/travelling/tag/food/" class="btn btn--primary btn--small">View Food</a>
-  </div>
-</div>
+
 
 ## Travel Gallery {#travel-gallery}
 

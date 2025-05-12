@@ -20,12 +20,12 @@ excerpt: "Making a difference through community service and youth leadership"
 
 <div class="timeline">
   <!-- 2025 -->
-  <div class="timeline-item" id="wheeling2help-nepal">
+  <div class="timeline-item" id="wheeling2help-vietnam">
     <div class="timeline-content">
       <div class="timeline-date">April 2025</div>
       <h3>Volunteer - Wheeling2help NGO</h3>
       <p>Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten and cultural centre, assisted in agricultural tasks, and participated in traditional art workshops. This immersive experience deepened my appreciation for cultural heritage preservation and reinforced my commitment to sustainable community empowerment.</p>
-      <img src="../assets/images/volunteering/wheeling2help-vietnam.png" alt="Wheeling2help Nepal" class="timeline-image">
+      <img src="../assets/images/volunteering/wheeling2help-vietnam.png" alt="Wheeling2help Vietnam" class="timeline-image">
     </div>
   </div>
 

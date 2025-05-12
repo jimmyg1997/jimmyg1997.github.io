@@ -24,6 +24,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
     {% if item.category == "books" %}
       <div class="wishlist-item">
         <h3>{{ item.name }}</h3>
+        <p class="author">By {{ item.author }}</p>
         <p class="price-range">{{ item.price_range }}</p>
         <p>{{ item.description }}</p>
         {% if item.link %}
@@ -85,6 +86,23 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   {% endfor %}
 </div>
 
+## Creative Gifts
+
+<div class="wishlist-section">
+  {% for item in site.data.wishlist %}
+    {% if item.category == "creative" %}
+      <div class="wishlist-item">
+        <h3>{{ item.name }}</h3>
+        <p class="price-range">{{ item.price_range }}</p>
+        <p>{{ item.description }}</p>
+        {% if item.link %}
+          <a href="{{ item.link }}" class="btn btn--primary btn--small" target="_blank">View Item</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
 ## Experiences
 
 <div class="wishlist-section">
@@ -105,7 +123,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
 ## Donations
 
 <div class="wishlist-section">
-  <p>If you'd prefer to make a donation in my name, here are some organizations I support:</p>
+  <p>If you'd prefer to make a donation in my name, I'm open to supporting meaningful causes:</p>
   {% for item in site.data.wishlist %}
     {% if item.category == "donations" %}
       <div class="wishlist-item">
@@ -123,4 +141,4 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
 
 <div class="wishlist-footer">
   <p>Don't see anything that inspires you? A thoughtful card or spending quality time together is always appreciated!</p>
-</div> 
+</div>

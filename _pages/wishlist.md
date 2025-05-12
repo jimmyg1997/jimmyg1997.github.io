@@ -6,7 +6,8 @@ author_profile: true
 toc: true
 toc_sticky: true
 header:
-  overlay_color: "#001f3f"
+  overlay_color: "
+#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/wishlist-header.jpg
 excerpt: "A list of things I'd enjoy receiving as gifts"

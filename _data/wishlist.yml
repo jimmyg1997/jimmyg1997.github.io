@@ -2,161 +2,115 @@
 # Wishlist Data
 
 books:
-  - name: "The Schopenhauer Cure"
-    author: "Irvin David Yalom"
-    year: 2005
-    price_range: "$15 - $25"
-    category: books
-    description: "A psychological novel exploring therapy and philosophical insights"
-
-  - name: "The Art of War"
-    author: "Sun Tzu"
-    year: "5th BC"
+  - name: "Atomic Habits"
+    author: "James Clear"
     price_range: "$10 - $20"
     category: books
-    description: "Classic ancient Chinese military strategy text with broader life applications"
+    description: "A guide to building good habits and breaking bad ones"
+    link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/"
 
-  - name: "The Road Less Traveled"
-    author: "M. Scott Peck"
-    year: 1978
-    pages: 464
-    price_range: "$15 - $25"
+  - name: "Deep Learning with Python"
+    author: "François Chollet"
+    price_range: "$30 - $50"
     category: books
-    description: "A groundbreaking book on personal growth, discipline, and spiritual development"
+    description: "A comprehensive guide to deep learning using Python"
+    link: "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/"
 
-  - name: "Love's Executioner"
-    author: "Irvin David Yalom"
-    price_range: "$15 - $25"
+  - name: "The Pragmatic Programmer"
+    author: "David Thomas & Andrew Hunt"
+    price_range: "$25 - $40"
     category: books
-    description: "Profound exploration of death, life, and psychological healing"
-
-fitness:
-  - name: "Workout Supplements"
-    price_range: "$30 - $60"
-    category: fitness
-    description: "Various fitness and performance supplements"
-    link: null
-
-  - name: "Electrolytes"
-    price_range: "$10 - $20"
-    category: fitness
-    description: "Hydration and electrolyte supplements for workouts"
-    link: null
-
-  - name: "Weight Lifting Belt"
-    price_range: "$30 - $80"
-    category: fitness
-    description: "Support for heavy weightlifting and strength training"
-    link: null
+    description: "A classic book on software development that provides practical advice for programmers"
+    link: "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/"
 
 tech:
-  - name: "Drone"
-    estimated_price: "250€ (~$270)"
+  - name: "Noise-Canceling Headphones"
+    price_range: "$200 - $300"
     category: tech
-    description: "High-quality camera drone for aerial photography and videography"
-    link: null
+    description: "Quality headphones for focused work and travel"
+    link: "https://www.amazon.com/Sony-WH-1000XM4-Canceling-Headphones-phone-call/dp/B0863TXGM3/"
 
-  - name: "AirPods Pro"
-    estimated_price: "200€ (~$220)"
+  - name: "E-ink Tablet"
+    price_range: "$400 - $500"
     category: tech
-    description: "Wireless earbuds with noise cancellation"
-    link: null
+    description: "For reading papers and taking notes"
+    link: "https://remarkable.com/"
 
-  - name: "E-reader"
-    estimated_price: "100€ (~$110)"
+  - name: "Mechanical Keyboard"
+    price_range: "$100 - $150"
     category: tech
-    description: "Digital book reader for convenient reading"
-    link: null
+    description: "A high-quality mechanical keyboard for programming and writing"
+    link: "https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard"
 
-  - name: "Professional Camera"
-    estimated_price: "500€ (~$550)"
-    category: tech
-    description: "High-end camera for professional photography and content creation"
-    link: null
+fitness:
+  - name: "Gymnastics Rings"
+    price_range: "$30 - $50"
+    category: fitness
+    description: "Wooden gymnastics rings for calisthenics training"
+    link: "https://www.amazon.com/PACEARTH-Gymnastics-Adjustable-Strength-Training/dp/B088K93JMJ/"
 
-  - name: "Cursor Pro Coding Subscription"
-    price_range: "$20/month"
-    category: tech
-    description: "Advanced coding AI assistant subscription"
-    link: null
+  - name: "Resistance Bands Set"
+    price_range: "$20 - $40"
+    category: fitness
+    description: "A complete set of resistance bands for versatile training"
+    link: "https://www.amazon.com/Resistance-Exercise-Different-Stackable-Waterproof/dp/B07DWSPQQY/"
 
-  - name: "Portable Ring Light"
-    price_range: "$30 - $100"
-    category: tech
-    description: "Compact lighting for content creation and streaming"
-    link: null
-
-  - name: "Tripod with Smartphone Remote"
-    price_range: "$30 - $80"
-    category: tech
-    description: "Versatile tripod for mobile photography and videography"
-    link: null
-
-  - name: "Canva Pro Subscription"
-    price_range: "$12.99/month"
-    category: tech
-    description: "Premium design tool for social media and content creation"
-    link: null
+  - name: "Foam Roller"
+    price_range: "$15 - $30"
+    category: fitness
+    description: "A high-density foam roller for recovery and myofascial release"
+    link: "https://www.amazon.com/321-STRONG-Foam-Roller-Myofascial/dp/B00KAEJ3UE/"
 
 clothing:
-  - name: "Athletic Shoes"
-    price_range: "$50 - $150"
+  - name: "Minimalist Watch"
+    price_range: "$100 - $150"
     category: clothing
-    description: "Comfortable and stylish athletic footwear"
-    link: null
+    description: "A simple, elegant timepiece for everyday wear"
+    link: "https://www.amazon.com/Timex-Fairfield-Quartz-Movement-Silver-Tone/dp/B01ACAMV16/"
 
-  - name: "White Hoodie"
-    price_range: "$30 - $80"
+  - name: "Merino Wool Socks"
+    price_range: "$15 - $30"
     category: clothing
-    description: "Casual, versatile white hoodie"
-    link: null
+    description: "Comfortable, moisture-wicking socks for everyday use"
+    link: "https://www.amazon.com/Darn-Tough-Hiker-Micro-Cushion/dp/B000XFW6OU/"
 
-  - name: "Baggy Pants"
-    price_range: "$40 - $100"
+  - name: "Navy Blue Blazer"
+    price_range: "$150 - $250"
     category: clothing
-    description: "Trendy, comfortable baggy-style pants"
-    link: "https://www.bershka.com/gr/pants/mens-clothing/tailoring-super-baggy-pants-c1010690760p175233250.html"
-
-  - name: "White Shoes"
-    price_range: "$30 - $70"
-    category: clothing
-    description: "Clean, simple white sneakers from Primark"
-    link: null
-
-  - name: "Party Glasses"
-    price_range: "$20 - $50"
-    category: clothing
-    description: "Stylish glasses for techno parties"
-    link: null
+    description: "A versatile navy blazer for professional and semi-formal occasions"
+    link: "https://www.jcrew.com/p/mens/categories/clothing/blazers/wool/ludlow-slim-fit-unstructured-suit-jacket-in-english-wool/H6478"
 
 experiences:
-  - name: "Summer Concert Tickets"
-    price_range: "$50 - $200"
+  - name: "Cooking Class"
+    price_range: "$50 - $100"
     category: experiences
-    description: "Tickets to live music events or summer festivals"
+    description: "A local cooking class to learn new cuisines"
     link: null
 
-  - name: "Ceramics Workshop in Krakow"
-    price_range: "$50 - $150"
+  - name: "Museum Membership"
+    price_range: "$60 - $120"
     category: experiences
-    description: "Hands-on ceramics class in Krakow, Poland"
+    description: "Annual membership to a local science or art museum"
     link: null
 
-  - name: "Aerodynamic Airplane Simulation in Krakow"
-    price_range: "$100 - $250"
+  - name: "Concert Tickets"
+    price_range: "$75 - $200"
     category: experiences
-    description: "Immersive flight simulation experience"
-    link: null
-
-creative:
-  - name: "Polaroid/Instax Mini Camera"
-    price_range: "$70 - $150"
-    category: creative
-    description: "Instant camera for capturing candid memories"
+    description: "Tickets to see a favorite band or musician perform live"
     link: null
 
 donations:
-  # Note: No specific organizations were mentioned in the original list
-  - name: "Open to Suggestions"
-    description: "Interested in meaningful charitable contributions"
-    link: null
+  - name: "Doctors Without Borders"
+    category: donations
+    description: "An international humanitarian organization that provides medical aid where it's needed most"
+    link: "https://www.doctorswithoutborders.org/"
+
+  - name: "GiveWell"
+    category: donations
+    description: "A nonprofit dedicated to finding outstanding giving opportunities through in-depth analysis"
+    link: "https://www.givewell.org/"
+
+  - name: "Electronic Frontier Foundation"
+    category: donations
+    description: "A nonprofit defending civil liberties in the digital world"
+    link: "https://www.eff.org/"

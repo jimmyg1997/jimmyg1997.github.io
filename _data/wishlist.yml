@@ -115,7 +115,7 @@
   image: "../assets/images/wishlist/foam-roller.png"
 
 - name: "Drone"
-  price_range: "250€ (~$270)"
+  price_range: "~$270"
   category: tech
   description: "High-quality camera drone for aerial photography and videography"
   link: null

@@ -171,27 +171,6 @@
   bought: true
   image: "../assets/images/wishlist/cursor-pro.png"
 
-- name: "Noise-Canceling Headphones"
-  price_range: "$200 - $300"
-  category: tech
-  description: "Quality headphones for focused work and travel"
-  link: "https://www.amazon.com/Sony-WH-1000XM4-Canceling-Headphones-phone-call/dp/B0863TXGM3/"
-  bought: false
-
-- name: "E-ink Tablet"
-  price_range: "$400 - $500"
-  category: tech
-  description: "For reading papers and taking notes"
-  link: "https://remarkable.com/"
-  bought: false
-
-- name: "Mechanical Keyboard"
-  price_range: "$100 - $150"
-  category: tech
-  description: "A high-quality mechanical keyboard for programming and writing"
-  link: "https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard"
-  bought: false
-
 - name: "Bag Hangers"
   price_range: "$10 - $20"
   category: travel

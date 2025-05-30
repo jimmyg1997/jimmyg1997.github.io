@@ -8,6 +8,7 @@
   category: books
   description: "A psychological novel exploring therapy and philosophical insights"
   link: null
+  bought: false
 
 - name: "The Art of War"
   author: "Sun Tzu"
@@ -16,6 +17,7 @@
   category: books
   description: "Classic ancient Chinese military strategy text with broader life applications"
   link: null
+  bought: false
 
 - name: "The Road Less Traveled"
   author: "M. Scott Peck"
@@ -25,6 +27,7 @@
   category: books
   description: "A groundbreaking book on personal growth, discipline, and spiritual development"
   link: null
+  bought: false
 
 - name: "A Matter of Death and Life"
   author: "Irvin David Yalom"
@@ -32,6 +35,7 @@
   category: books
   description: "A memoir combining the journals of Yalom and his wife"
   link: null
+  bought: false
 
 - name: "Karokarydo"
   author: "Unknown"
@@ -39,6 +43,7 @@
   category: books
   description: "Greek literature"
   link: null
+  bought: false
 
 - name: "Atomic Habits"
   author: "James Clear"
@@ -46,6 +51,7 @@
   category: books
   description: "A guide to building good habits and breaking bad ones"
   link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/"
+  bought: false
 
 - name: "Deep Learning with Python"
   author: "François Chollet"
@@ -53,6 +59,7 @@
   category: books
   description: "A comprehensive guide to deep learning using Python"
   link: "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/"
+  bought: false
 
 - name: "The Pragmatic Programmer"
   author: "David Thomas & Andrew Hunt"
@@ -60,6 +67,7 @@
   category: books
   description: "A classic book on software development that provides practical advice for programmers"
   link: "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/"
+  bought: false
 
 - name: "Workout Supplements"
   price_range: "$30 - $60"
@@ -67,6 +75,7 @@
   description: "Various fitness and performance supplements"
   link: null
   always_needed: true
+  bought: false
 
 - name: "Electrolytes"
   price_range: "$10 - $20"
@@ -74,147 +83,168 @@
   description: "Hydration and electrolyte supplements for workouts"
   link: null
   always_needed: true
+  bought: false
 
 - name: "Weight Lifting Belt"
   price_range: "$30 - $80"
   category: fitness
   description: "Support for heavy weightlifting and strength training"
   link: null
+  bought: false
 
 - name: "Gymnastics Rings"
   price_range: "$30 - $50"
   category: fitness
   description: "Wooden gymnastics rings for calisthenics training"
   link: "https://www.amazon.com/PACEARTH-Gymnastics-Adjustable-Strength-Training/dp/B088K93JMJ/"
+  bought: true
 
 - name: "Resistance Bands Set"
   price_range: "$20 - $40"
   category: fitness
   description: "A complete set of resistance bands for versatile training"
   link: "https://www.amazon.com/Resistance-Exercise-Different-Stackable-Waterproof/dp/B07DWSPQQY/"
+  bought: true
 
 - name: "Foam Roller"
   price_range: "$15 - $30"
   category: fitness
   description: "A high-density foam roller for recovery and myofascial release"
   link: "https://www.amazon.com/321-STRONG-Foam-Roller-Myofascial/dp/B00KAEJ3UE/"
+  bought: false
 
 - name: "Drone"
   price_range: "250€ (~$270)"
   category: tech
   description: "High-quality camera drone for aerial photography and videography"
   link: null
-  purchased: true
+  bought: true
 
 - name: "iPad"
   price_range: "$350 - $800"
   category: tech
   description: "Versatile tablet for digital art, note-taking, and productivity"
   link: null
+  bought: false
 
 - name: "AirPods"
   price_range: "200€ (~$220)"
   category: tech
   description: "Wireless earbuds with noise cancellation"
   link: null
+  bought: false
 
 - name: "E-reader"
   price_range: "100€ (~$110)"
   category: tech
   description: "Digital book reader for convenient reading"
   link: null
+  bought: false
 
 - name: "Professional Camera"
   price_range: "500€ (~$550)"
   category: tech
   description: "High-end camera for professional photography and content creation"
   link: null
+  bought: false
   
 - name: "Power Bank for iPhone"
   price_range: "$30 - $60"
   category: tech
   description: "Portable charger for iPhone on the go"
   link: null
-  purchased: true
+  bought: false
 
 - name: "Cursor Pro Coding Subscription"
   price_range: "$20/month"
   category: tech
   description: "Advanced coding AI assistant subscription"
   link: null
+  bought: false
 
 - name: "Noise-Canceling Headphones"
   price_range: "$200 - $300"
   category: tech
   description: "Quality headphones for focused work and travel"
   link: "https://www.amazon.com/Sony-WH-1000XM4-Canceling-Headphones-phone-call/dp/B0863TXGM3/"
+  bought: false
 
 - name: "E-ink Tablet"
   price_range: "$400 - $500"
   category: tech
   description: "For reading papers and taking notes"
   link: "https://remarkable.com/"
+  bought: false
 
 - name: "Mechanical Keyboard"
   price_range: "$100 - $150"
   category: tech
   description: "A high-quality mechanical keyboard for programming and writing"
   link: "https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard"
+  bought: false
 
 - name: "Bag Hangers"
   price_range: "$10 - $20"
   category: travel
   description: "Hooks or hangers for organizing bags while traveling"
   link: null
+  bought: false
   
 - name: "Travel Planner for Tickets"
   price_range: "$15 - $30"
   category: travel
   description: "Organizer for travel documents and tickets"
   link: null
+  bought: false
   
 - name: "New Travel Bag (Primark)"
   price_range: "50€ (~$55)"
   category: travel
   description: "Durable travel bag for trips and adventures"
   link: null
+  bought: false
 
 - name: "Video Lights"
   price_range: "5€ (~$5.50)"
   category: content_creation
   description: "Basic lighting setup for video recording"
   link: null
-  purchased: true
+  bought: false
   
 - name: "TikTok Background Poster"
   price_range: "$15 - $40"
   category: content_creation
   description: "Background decoration for social media content"
   link: null
+  bought: false
   
 - name: "Portable Ring Light"
   price_range: "$30 - $60"
   category: content_creation
   description: "Compact lighting for @dimisthenics or @dimiles.away content"
   link: null
+  bought: false
   
 - name: "Tripod with Smartphone Remote"
   price_range: "$30 - $80"
   category: content_creation
   description: "Versatile tripod for mobile photography and videography"
   link: null
+  bought: false
   
 - name: "Canva Pro Premium Subscription"
   price_range: "$12.99/month"
   category: content_creation
   description: "Premium design tool for creating Threads & posts"
   link: null
+  bought: false
 
 - name: "Polaroid/Instax Mini Camera"
   price_range: "$70 - $150"
   category: creative
   description: "Instant camera for capturing candid travel/artistic memories"
   link: null
+  bought: false
 
 - name: "Athletic Shoes"
   price_range: "$50 - $150"
@@ -223,25 +253,12 @@
   link: null
   purchased: true
 
-- name: "Glasses + Reimbursement"
-  price_range: "200€ (~$220)"
-  category: clothing
-  description: "Prescription eyeglasses with reimbursement"
-  link: null
-  purchased: true
-  
-- name: "Socks"
-  price_range: "$10 - $20"
-  category: clothing
-  description: "Basic socks for everyday wear"
-  link: null
-  purchased: true
-  
 - name: "Vintage Glasses"
   price_range: "$30 - $80"
   category: clothing
   description: "Stylish vintage eyewear"
   link: null
+  bought: false
 
 - name: "White Hoodie"
   price_range: "$30 - $80"
@@ -255,83 +272,71 @@
   description: "Clean, simple white sneakers"
   link: null
   
-- name: "Hoodie (H&M or Temu)"
-  price_range: "$20 - $50"
-  category: clothing
-  description: "Casual hoodie for everyday wear"
-  link: null
-
 - name: "Baggy Pants"
   price_range: "$40 - $100"
   category: clothing
   description: "Trendy, comfortable baggy-style pants"
   link: "https://www.bershka.com/gr/pants/mens-clothing/tailoring-super-baggy-pants-c1010690760p175233250.html"
+  bought: false
 
-- name: "Party Glasses"
-  price_range: "$20 - $50"
-  category: clothing
-  description: "Stylish glasses for techno parties"
-  link: null
 
 - name: "Minimalist Watch"
   price_range: "$100 - $150"
   category: clothing
   description: "A simple, elegant timepiece for everyday wear"
   link: "https://www.amazon.com/Timex-Fairfield-Quartz-Movement-Silver-Tone/dp/B01ACAMV16/"
+  bought: false
 
-- name: "Merino Wool Socks"
-  price_range: "$15 - $30"
-  category: clothing
-  description: "Comfortable, moisture-wicking socks for everyday use"
-  link: "https://www.amazon.com/Darn-Tough-Hiker-Micro-Cushion/dp/B000XFW6OU/"
 
 - name: "Navy Blue Blazer"
   price_range: "$150 - $250"
   category: clothing
   description: "A versatile navy blazer for professional and semi-formal occasions"
   link: "https://www.jcrew.com/p/mens/categories/clothing/blazers/wool/ludlow-slim-fit-unstructured-suit-jacket-in-english-wool/H6478"
+  bought: false
 
 - name: "Summer Concert Tickets"
   price_range: "$50 - $200"
   category: experiences
   description: "Tickets to live music events or summer festivals"
   link: null
+  bought: false
 
 - name: "Ceramics Workshop in Krakow"
   price_range: "$50 - $150"
   category: experiences
   description: "Hands-on ceramics class in Krakow, Poland"
   link: null
+  bought: false
 
 - name: "Aerodynamic Airplane Simulation in Krakow"
   price_range: "$100 - $250"
   category: experiences
   description: "Immersive flight simulation experience"
   link: null
+  bought: false
   
 - name: "Cooking Class"
   price_range: "$50 - $100"
   category: experiences
   description: "A local cooking class to learn new cuisines"
   link: null
-
-- name: "Museum Membership"
-  price_range: "$60 - $120"
-  category: experiences
-  description: "Annual membership to a local science or art museum"
-  link: null
+  bought: false
 
 - name: "Doctors Without Borders"
   category: donations
   description: "An international humanitarian organization that provides medical aid where it's needed most"
   link: "https://www.doctorswithoutborders.org/"
+  bought: false
 
 - name: "GiveWell"
   category: donations
   description: "A nonprofit dedicated to finding outstanding giving opportunities through in-depth analysis"
   link: "https://www.givewell.org/"
+  bought: false
 
 - name: "Electronic Frontier Foundation"
   category: donations
   description: "A nonprofit defending civil liberties in the digital world"
   link: "https://www.eff.org/"
+  bought: false

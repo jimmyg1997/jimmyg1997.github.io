@@ -18,6 +18,81 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   <p><strong>Last updated:</strong> {{ site.time | date: "%B %d, %Y" }}</p>
 </div>
 
+
+<style>
+.wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+.wishlist-table th, .wishlist-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+.wishlist-table th {
+  background-color: #f5f5f5;
+}
+.wishlist-table td a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .wishlist-table td, .wishlist-table th {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+}
+</style>
+
+{% assign categories = "books,tech,fitness,clothing,experiences,donations" | split: "," %}
+{% assign category_names = "Books,Tech & Gadgets,Fitness Equipment,Clothing & Accessories,Experiences,Donations" | split: "," %}
+
+{% for cat in (0..categories.size) %}
+  {% assign cat_key = categories[cat] %}
+  {% assign cat_name = category_names[cat] %}
+  {% assign items = site.data.wishlist | where: "category", cat_key %}
+  {% if items.size > 0 %}
+  ## {{ cat_name }}
+
+  <table class="wishlist-table">
+    <thead>
+      <tr>
+        <th>✔</th>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Link</th>
+        <th>Added</th>
+        <th>Bought</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in items %}
+      <tr>
+        <td>{% if item.bought %}✅{% else %}⬜{% endif %}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price_range }}</td>
+        <td>
+          {% if item.link %}
+            <a href="{{ item.link }}" target="_blank">🔗</a>
+          {% else %}
+            –
+          {% endif %}
+        </td>
+        <td>{{ item.date_added | default: "—" }}</td>
+        <td>{{ item.date_bought | default: "—" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+{% endfor %}
+
+---
+
+
+
+
+
 ## Books
 
 <div class="wishlist-section">

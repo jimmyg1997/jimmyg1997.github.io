@@ -131,19 +131,21 @@
   link: null
   bought: false
 
-- name: "AirPods"
-  price_range: "200€ (~$220)"
+- name: "AirPods (3rd Generation)"
+  price_range: "~$120-140"
   category: tech
   description: "Wireless earbuds with noise cancellation"
-  link: null
+  link: "https://www.amazon.com/Apple-Generation-Lightning-Resistant-Headphones/dp/B0BDHB9Y8H"
   bought: false
+  image: "../assets/images/wishlist/airpods-3rd.png"
 
-- name: "E-reader"
-  price_range: "100€ (~$110)"
+- name: "Kindle (E-reader)"
+  price_range: "~$140 - 160"
   category: tech
   description: "Digital book reader for convenient reading"
-  link: null
+  link: "https://www.amazon.com/Kindle-Essentials-Bundle-including-release/dp/B0D9ZWBFWQ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.L48IRoKSK08xBAtJAmkzvoc7DwgPk5s3dl6xlAmREGzuVL6J0ALAkCgTDwUXtUKaLGOCyH3wMidIyVAtq_TKiIvN4r0ViPaNnHDPrFDkPgdOiDMIrrmT-VZe5kdbFZgd1SGI5lk_yXssvkzfECq39UkMhHwjs474qbVe_Rkylr4NhmxtmkfEyF_C9BazeHLPnD76pxVWm8J_wmCuKOzrth_Atjt8fzBrvIKlcIGZII8.a7dCbexcgziD2N8h53mZ-0OhGKYkk-C2Du3Mg5FQwLI&dib_tag=se&keywords=kindle&qid=1748638690&sr=8-5&th=1"
   bought: false
+  image: "../assets/images/wishlist/kindle.png"
 
 - name: "Professional Camera"
   price_range: "500€ (~$550)"

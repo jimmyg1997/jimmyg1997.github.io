@@ -156,18 +156,20 @@
   image: "../assets/images/wishlist/camera.png"
   
 - name: "Power Bank for iPhone"
-  price_range: "$30 - $60"
+  price_range: "$10 - $60"
   category: tech
   description: "Portable charger for iPhone on the go"
-  link: null
-  bought: false
+  link: "https://www.amazon.pl/Flintronic-Magnetyczna-bezprzewodowy-powerbank-ladowanie/dp/B0CT3JWRF7/ref=asc_df_B0CT3JWRF7?mcid=491c0a578ffb3a91bac38183aa69ba7e&tag=plshogostdde-21&linkCode=df0&hvadid=749178449996&hvpos=&hvnetw=g&hvrand=16571135247857357876&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067394&hvtargid=pla-2292614464506&language=pl_PL&gad_source=1&th=1"
+  bought: true
+  image: "../assets/images/wishlist/power-bank.png"
 
 - name: "Cursor Pro Coding Subscription"
   price_range: "$20/month"
   category: tech
   description: "Advanced coding AI assistant subscription"
-  link: null
-  bought: false
+  link: "https://www.cursor.com/pricing"
+  bought: true
+  image: "../assets/images/wishlist/cursor-pro.png"
 
 - name: "Noise-Canceling Headphones"
   price_range: "$200 - $300"

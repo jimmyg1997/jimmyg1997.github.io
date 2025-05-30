@@ -112,6 +112,7 @@
   description: "A high-density foam roller for recovery and myofascial release"
   link: "https://www.amazon.com/321-STRONG-Foam-Roller-Myofascial/dp/B00KAEJ3UE/"
   bought: false
+  image: "../assets/images/wishlist/foam-roller.png"
 
 - name: "Drone"
   price_range: "250€ (~$270)"

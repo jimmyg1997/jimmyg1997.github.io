@@ -115,7 +115,7 @@
   image: "../assets/images/wishlist/foam-roller.png"
 
 - name: "Drone"
-  price_range: "~$270"
+  price_range: "$270"
   category: tech
   description: "High-quality camera drone for aerial photography and videography"
   link: null
@@ -132,7 +132,7 @@
   bought: false
 
 - name: "AirPods (3rd Generation)"
-  price_range: "~$120-140"
+  price_range: "$120-140"
   category: tech
   description: "Wireless earbuds with noise cancellation"
   link: "https://www.amazon.com/Apple-Generation-Lightning-Resistant-Headphones/dp/B0BDHB9Y8H"
@@ -140,19 +140,20 @@
   image: "../assets/images/wishlist/airpods-3rd.png"
 
 - name: "Kindle (E-reader)"
-  price_range: "~$140 - 160"
+  price_range: "$140 - 160"
   category: tech
   description: "Digital book reader for convenient reading"
   link: "https://www.amazon.com/Kindle-Essentials-Bundle-including-release/dp/B0D9ZWBFWQ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.L48IRoKSK08xBAtJAmkzvoc7DwgPk5s3dl6xlAmREGzuVL6J0ALAkCgTDwUXtUKaLGOCyH3wMidIyVAtq_TKiIvN4r0ViPaNnHDPrFDkPgdOiDMIrrmT-VZe5kdbFZgd1SGI5lk_yXssvkzfECq39UkMhHwjs474qbVe_Rkylr4NhmxtmkfEyF_C9BazeHLPnD76pxVWm8J_wmCuKOzrth_Atjt8fzBrvIKlcIGZII8.a7dCbexcgziD2N8h53mZ-0OhGKYkk-C2Du3Mg5FQwLI&dib_tag=se&keywords=kindle&qid=1748638690&sr=8-5&th=1"
   bought: false
   image: "../assets/images/wishlist/kindle.png"
 
-- name: "Professional Camera"
-  price_range: "500€ (~$550)"
+- name: "Nikon D7500 20.9MP DSLR Camera with AF-S DX NIKKOR 18-140mm f/3.5-5.6G ED VR Lens, Black"
+  price_range: "$769"
   category: tech
   description: "High-end camera for professional photography and content creation"
-  link: null
+  link: "https://www.amazon.com/Nikon-20-9MP-Camera-18-140mm-3-5-5-6G/dp/B06Y5RTN1T/ref=sr_1_1?dib=eyJ2IjoiMSJ9.4PfexqctkTL-feolwFQbOPkacrj0i3Retk1fGDAGZ6lROCKFYMH7BE6_guV7Oeg_ymmQaSb9-r_XfEdn6cIhK-_x8AicjEEdAu13xPnjEZ8G4uze_RXhR0jNMAgT0R-JhCAHQZ85yb-Y5YXy8gWyB5Hg751WdvJ-NZT8qrnuCpaXd0gmOEQv2HHKlB6s__pl4XBajJkkKFSxFDapWi9M7OENRUhYVAALPLbNyNC7qCj5QYAi27SKIjYg4JciA7-J2632hhxPmSUYfWEe1mzHOOSE6xx0vZEjpnQDmVrLSs0.1tjIsUKbCd0EA8colb3GOSu5PGs5wbDCntDwfO-hBds&dib_tag=se&qid=1748639254&refinements=p_89%3ANikon&s=photo&sr=1-1&th=1"
   bought: false
+  image: "../assets/images/wishlist/camera.png"
   
 - name: "Power Bank for iPhone"
   price_range: "$30 - $60"

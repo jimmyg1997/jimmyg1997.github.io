@@ -121,7 +121,7 @@
   bought: true
   date_bought: "2025-05-10"
   link: "https://www.amazon.pl/dji-mini-4-pro/s?k=dji+mini+4+pro"
-  image: "../assets/images/whishlist/drone-4k.png"
+  image: "../assets/images/wishlist/drone-4k.png"
 
 - name: "iPad"
   price_range: "$350 - $800"

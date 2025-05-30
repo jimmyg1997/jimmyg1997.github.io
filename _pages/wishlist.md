@@ -58,6 +58,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   {% assign items = site.data.wishlist | where: "category", cat_key %}
   {% if items.size > 0 %}
   ## {{ cat_name }}
+  <br>
 
   <table class="wishlist-table">
     <thead>

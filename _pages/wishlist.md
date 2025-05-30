@@ -29,9 +29,15 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   border: 1px solid #ccc;
   padding: 0.5rem;
   text-align: left;
+  vertical-align: middle;
 }
 .wishlist-table th {
   background-color: #f5f5f5;
+}
+.wishlist-table img {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
 }
 .wishlist-table td a {
   text-decoration: none;
@@ -43,7 +49,6 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   }
 }
 </style>
-
 {% assign categories = "books,tech,fitness,clothing,experiences,donations" | split: "," %}
 {% assign category_names = "Books,Tech & Gadgets,Fitness Equipment,Clothing & Accessories,Experiences,Donations" | split: "," %}
 
@@ -58,6 +63,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
     <thead>
       <tr>
         <th>✔</th>
+        <th>Image</th>
         <th>Item</th>
         <th>Price</th>
         <th>Link</th>
@@ -69,6 +75,13 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
       {% for item in items %}
       <tr>
         <td>{% if item.bought %}✅{% else %}⬜{% endif %}</td>
+        <td>
+          {% if item.image %}
+            <img src="{{ item.image }}" alt="{{ item.name }}">
+          {% else %}
+            –
+          {% endif %}
+        </td>
         <td>{{ item.name }}</td>
         <td>{{ item.price_range }}</td>
         <td>

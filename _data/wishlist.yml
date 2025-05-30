@@ -119,6 +119,7 @@
   description: "High-quality camera drone for aerial photography and videography"
   link: null
   bought: true
+  date_bought: "2025-05-10"
 
 - name: "iPad"
   price_range: "$350 - $800"

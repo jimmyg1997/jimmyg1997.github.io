@@ -1,19 +1,19 @@
 ---
 title: "🌱 Personal Development"
-layout: splash
+layout: single
 permalink: /personal/
 author_profile: true
 toc: true
 toc_sticky: true
 toc_label: "On This Page"
-toc_icon: "book"
+toc_icon: "gift"
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/personal-header.jpg
-  show_overlay_excerpt: true
+  overlay_image: /assets/images/wishlist-header.jpg
 excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend."
 ---
+
 
 <div class="volunteering-intro">
   <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>

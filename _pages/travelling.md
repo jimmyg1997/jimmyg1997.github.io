@@ -167,30 +167,37 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="width: 150px; height: 200px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="width: 250px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" width="24" height="24" style="border-radius: 50%;" />
+        <strong>@dimiles.away</strong>
+      </div>
       <iframe 
-        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=150&rd=https%3A%2F%2Fjimmyg1997.github.io" 
-        width="150" 
-        height="195" 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=250" 
+        width="100%" 
+        height="300" 
         frameborder="0" 
         scrolling="no" 
         allowtransparency="true"
-        style="border: none; overflow: hidden; width: 150px; height: 195px; margin: 2px; transform: scale(0.85); transform-origin: top left;">
+        style="border: none; overflow: hidden;">
       </iframe>
+      <div style="margin-top: 8px;">
+        <div><strong>Location:</strong> ${post.city}, ${post.country}</div>
+        <a href="${post.instagramUrl}" target="_blank" style="display: inline-block; margin-top: 6px; background-color: #0095f6; color: white; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: 500;">View Profile</a>
+      </div>
     </div>
   `;
 
   const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
     .addTo(travelMap)
     .bindPopup(popupContent, {
-      maxWidth: 160,
-      minWidth: 160,
-      maxHeight: 210,
+      maxWidth: 270,
+      minWidth: 270,
+      maxHeight: 350,
       className: 'travel-popup',
       closeButton: true,
-      autoPan: false,
-      keepInView: false,
-      closeOnClick: false
+      autoPan: true,
+      keepInView: true
     });
 
   // Load Instagram embed script when popup opens

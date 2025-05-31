@@ -11,7 +11,11 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/personal-header.jpg
+  actions:
+    - label: "View My Books"
+      url: "#reading-list"
 excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend."
+classes: wide
 ---
 
 <div class="volunteering-intro">

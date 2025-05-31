@@ -23,27 +23,21 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuB01cMnFK/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <div class="instagram-embed-container">
+        <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=540" frameborder="0" scrolling="no" allowtransparency></iframe>
+      </div>
     </div>
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuAEdRMJWv/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DHuAEdRMJWv/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <div class="instagram-embed-container">
+        <iframe src="https://www.instagram.com/p/DHuAEdRMJWv/embed/captioned/cr=1&v=14&wp=540" frameborder="0" scrolling="no" allowtransparency></iframe>
+      </div>
     </div>
     <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
-        </div>
-      </blockquote>
+      <div class="instagram-embed-container">
+        <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=540" frameborder="0" scrolling="no" allowtransparency></iframe>
+      </div>
     </div>
   </div>
 </div>
@@ -167,13 +161,13 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="width: 250px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="width: 270px; max-height: 400px; overflow-y: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       <iframe 
-        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=250" 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=270" 
         width="100%" 
-        height="300" 
+        height="400" 
         frameborder="0" 
-        scrolling="no" 
+        scrolling="yes" 
         allowtransparency="true"
         style="border: none; overflow: hidden;">
       </iframe>

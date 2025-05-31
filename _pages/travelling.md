@@ -49,6 +49,13 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 </div>
 
 <script async src="//www.instagram.com/embed.js"></script>
+<script>
+  window.addEventListener('load', function() {
+    if (typeof instgrm !== 'undefined') {
+      instgrm.Embeds.process();
+    }
+  });
+</script>
 
 ## Interactive Travel Map {#interactive-travel-map}
 

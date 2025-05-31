@@ -166,15 +166,15 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="width: 150px; height: 200px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="width: 280px; height: 380px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       <iframe 
-        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=130&rd=https%3A%2F%2Fjimmyg1997.github.io" 
-        width="100" 
-        height="140" 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=260&rd=https%3A%2F%2Fjimmyg1997.github.io" 
+        width="260" 
+        height="360" 
         frameborder="0" 
         scrolling="no" 
         allowtransparency="true"
-        style="border: none; overflow: hidden; width: 100px; height: 140px; margin: 10px;">
+        style="border: none; overflow: hidden; width: 260px; height: 360px; margin: 10px;">
       </iframe>
     </div>
   `;
@@ -182,9 +182,9 @@ myTravelPosts.forEach(post => {
   const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
     .addTo(travelMap)
     .bindPopup(popupContent, {
-      maxWidth: 160,
-      minWidth: 160,
-      maxHeight: 210,
+      maxWidth: 300,
+      minWidth: 300,
+      maxHeight: 400,
       className: 'travel-popup',
       closeButton: true,
       autoPan: false,

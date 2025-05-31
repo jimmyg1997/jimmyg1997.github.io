@@ -168,13 +168,13 @@ myTravelPosts.forEach(post => {
   const popupContent = `
     <div style="width: 150px; height: 200px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       <iframe 
-        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=150&rd=https%3A%2F%2Fjimmyg1997.github.io" 
-        width="150" 
-        height="200" 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=130&rd=https%3A%2F%2Fjimmyg1997.github.io" 
+        width="130" 
+        height="180" 
         frameborder="0" 
         scrolling="no" 
         allowtransparency="true"
-        style="border: none; overflow: hidden; width: 150px; height: 200px;">
+        style="border: none; overflow: hidden; width: 130px; height: 180px; margin: 10px;">
       </iframe>
     </div>
   `;

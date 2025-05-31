@@ -168,10 +168,6 @@ const travelIcon = L.divIcon({
 myTravelPosts.forEach(post => {
   const popupContent = `
     <div style="width: 250px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
-        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" width="24" height="24" style="border-radius: 50%;" />
-        <strong>@dimiles.away</strong>
-      </div>
       <iframe 
         src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=250" 
         width="100%" 

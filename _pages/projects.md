@@ -8,7 +8,7 @@ toc_sticky: true
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/projects-header.jpg
+  overlay_image: /assets/images/projects-header.png
 excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine learning, and 🏥 healthcare"
 ---
 

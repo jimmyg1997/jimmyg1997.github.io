@@ -177,10 +177,6 @@ myTravelPosts.forEach(post => {
         allowtransparency="true"
         style="border: none; overflow: hidden;">
       </iframe>
-      <div style="margin-top: 8px;">
-        <div><strong>Location:</strong> ${post.city}, ${post.country}</div>
-        <a href="${post.instagramUrl}" target="_blank" style="display: inline-block; margin-top: 6px; background-color: #0095f6; color: white; padding: 4px 8px; border-radius: 4px; text-decoration: none; font-weight: 500;">View Profile</a>
-      </div>
     </div>
   `;
 

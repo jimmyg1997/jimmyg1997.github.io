@@ -169,12 +169,12 @@ myTravelPosts.forEach(post => {
     <div style="width: 150px; height: 200px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       <iframe 
         src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=130&rd=https%3A%2F%2Fjimmyg1997.github.io" 
-        width="130" 
-        height="180" 
+        width="100" 
+        height="140" 
         frameborder="0" 
         scrolling="no" 
         allowtransparency="true"
-        style="border: none; overflow: hidden; width: 130px; height: 180px; margin: 10px;">
+        style="border: none; overflow: hidden; width: 100px; height: 140px; margin: 10px;">
       </iframe>
     </div>
   `;

@@ -53,7 +53,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
 {% assign categories = "books,tech,fitness,clothing,experiences,donations" | split: "," %}
 {% assign category_names = "Books,Tech & Gadgets,Fitness Equipment,Clothing & Accessories,Experiences,Donations" | split: "," %}
 
-{% for cat in (0..categories.size) %}
+{% for cat in (0..categories.size | minus: 1) %}
   {% assign cat_key = categories[cat] %}
   {% assign cat_name = category_names[cat] %}
   {% assign items = site.data.wishlist | where: "category", cat_key %}

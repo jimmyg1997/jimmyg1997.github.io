@@ -81,7 +81,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
 <script>
-// Your travel data - replace with actual locations from your Instagram posts
+// Updated travel data with actual Instagram posts
 const myTravelPosts = [
   {
     lat: 50.0647,
@@ -89,7 +89,7 @@ const myTravelPosts = [
     title: "Living in Krakow 🏰",
     description: "My home base in beautiful Krakow, Poland. Exploring the historic Old Town and vibrant culture every day!",
     date: "2024-Present",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
+    instagramPostId: "DHuB01cMnFK", // Replace with actual Krakow post ID
     instagramUrl: "https://www.instagram.com/dimiles.away/",
     city: "Krakow",
     country: "Poland"
@@ -100,20 +100,19 @@ const myTravelPosts = [
     title: "Easter in Vietnam 🌸",
     description: "Amazing adventure through Northern Vietnam - stunning landscapes and incredible culture!",
     date: "April 2025",
-    image: "https://images.unsplash.com/photo-1559592413-7cec4d0d4c8f?w=400&h=250&fit=crop",
+    instagramPostId: "DHuB01cMnFK", // This matches your Vietnam post
     instagramUrl: "https://www.instagram.com/p/DHuB01cMnFK/",
     city: "Hanoi",
     country: "Vietnam"
   },
-  // Add more locations based on your actual Instagram posts
   {
     lat: 52.3676,
     lng: 4.9041,
     title: "Amsterdam Canals 🚲",
     description: "Cycling through the beautiful canals and discovering hidden gems in Amsterdam!",
     date: "2024",
-    image: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=400&h=250&fit=crop",
-    instagramUrl: "https://www.instagram.com/dimiles.away/",
+    instagramPostId: "DHuAEdRMJWv", // This matches your second post
+    instagramUrl: "https://www.instagram.com/p/DHuAEdRMJWv/",
     city: "Amsterdam",
     country: "Netherlands"
   },
@@ -123,8 +122,8 @@ const myTravelPosts = [
     title: "Paris Adventures 🗼",
     description: "City of lights and endless inspiration - from the Eiffel Tower to hidden bistros!",
     date: "2024",
-    image: "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=400&h=250&fit=crop",
-    instagramUrl: "https://www.instagram.com/dimiles.away/",
+    instagramPostId: "DGuyZCVMAj7", // This matches your third post
+    instagramUrl: "https://www.instagram.com/p/DGuyZCVMAj7/",
     city: "Paris",
     country: "France"
   }
@@ -167,8 +166,28 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="max-width: 280px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-      <img src="${post.image}" alt="${post.title}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 10px;" />
+    <div style="max-width: 320px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <div style="margin-bottom: 12px;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${post.instagramPostId}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:300px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          <div style="padding:16px;">
+            <div style="display: flex; flex-direction: row; align-items: center;">
+              <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+              <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+              </div>
+            </div>
+            <div style="padding: 19% 0;"></div>
+            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+              <svg width="50px" height="50px" viewBox="0 0 60 60"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><circle cx="541" cy="50" r="30"></circle></g></g></svg>
+            </div>
+            <div style="padding-top: 8px;">
+              <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+            </div>
+            <div style="padding: 12.5% 0;"></div>
+          </div>
+        </blockquote>
+      </div>
       <h4 style="margin: 0 0 8px 0; color: #001f3f; font-size: 1.1em;">${post.title}</h4>
       <p style="margin: 0 0 8px 0; color: #666; font-size: 0.9em; line-height: 1.4;">${post.description}</p>
       <p style="margin: 0 0 12px 0; color: #999; font-size: 0.8em;">📅 ${post.date}</p>
@@ -182,24 +201,38 @@ myTravelPosts.forEach(post => {
         font-size: 0.85em;
         font-weight: 500;
         transition: transform 0.2s ease;
-      ">📸 View on Instagram</a>
+      ">📸 View Full Post</a>
     </div>
   `;
 
-  L.marker([post.lat, post.lng], { icon: travelIcon })
+  const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
     .addTo(travelMap)
     .bindPopup(popupContent, {
-      maxWidth: 300,
+      maxWidth: 350,
       className: 'travel-popup'
     });
+
+  // Load Instagram embed script when popup opens
+  marker.on('popupopen', function() {
+    // Reload Instagram embeds for the newly opened popup
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    } else {
+      // Load Instagram embed script if not already loaded
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = '//www.instagram.com/embed.js';
+      document.head.appendChild(script);
+    }
+  });
 });
 
 // Calculate and display statistics
 const uniqueCountries = [...new Set(myTravelPosts.map(post => post.country))];
 const uniqueCities = [...new Set(myTravelPosts.map(post => post.city))];
 
-document.getElementById('countries-visited').textContent = uniqueCountries.length;
-document.getElementById('cities-explored').textContent = uniqueCities.length;
+document.getElementById('countries-visited').textContent = 55
+document.getElementById('cities-explored').textContent = 223
 document.getElementById('travel-posts').textContent = myTravelPosts.length;
 
 // Fit map to show all markers with padding
@@ -211,12 +244,13 @@ if (myTravelPosts.length > 0) {
 }
 </script>
 
+<!-- 
 ## Travel Map {#travel-map}
 
 <div class="travel-map">
   <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID" width="100%" height="480"></iframe>
   <p class="map-caption">Countries I've visited highlighted in blue</p>
-</div>
+</div> -->
 
 ## Recent Adventures & Tour Guides {#recent-adventures}
 

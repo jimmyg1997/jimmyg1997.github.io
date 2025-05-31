@@ -1,6 +1,6 @@
 ---
 title: "🌱 Personal Development"
-layout: single
+layout: splash
 permalink: /personal/
 author_profile: true
 toc: true

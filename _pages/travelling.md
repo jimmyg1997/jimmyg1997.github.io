@@ -166,50 +166,39 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="max-width: 320px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-      <div style="margin-bottom: 12px;">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${post.instagramPostId}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:300px; min-width:200px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-          <div style="padding:16px;">
-            <div style="display: flex; flex-direction: row; align-items: center;">
-              <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-              <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-              </div>
+    <div style="max-width: 280px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${post.instagramPostId}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0; max-width:280px; min-width:240px; padding:0; width:100%;">
+        <div style="padding:16px;">
+          <div style="display: flex; flex-direction: row; align-items: center;">
+            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+              <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+              <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
             </div>
-            <div style="padding: 19% 0;"></div>
-            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-              <svg width="50px" height="50px" viewBox="0 0 60 60"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><circle cx="541" cy="50" r="30"></circle></g></g></svg>
-            </div>
-            <div style="padding-top: 8px;">
-              <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
-            </div>
-            <div style="padding: 12.5% 0;"></div>
           </div>
-        </blockquote>
-      </div>
-      <h4 style="margin: 0 0 8px 0; color: #001f3f; font-size: 1.1em;">${post.title}</h4>
-      <p style="margin: 0 0 8px 0; color: #666; font-size: 0.9em; line-height: 1.4;">${post.description}</p>
-      <p style="margin: 0 0 12px 0; color: #999; font-size: 0.8em;">📅 ${post.date}</p>
-      <a href="${post.instagramUrl}" target="_blank" style="
-        display: inline-block;
-        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-        color: white;
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-size: 0.85em;
-        font-weight: 500;
-        transition: transform 0.2s ease;
-      ">📸 View Full Post</a>
+          <div style="padding: 19% 0;"></div>
+          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+            <svg width="50px" height="50px" viewBox="0 0 60 60"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><circle cx="541" cy="50" r="30"></circle></g></g></svg>
+          </div>
+          <div style="padding-top: 8px;">
+            <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+          </div>
+          <div style="padding: 12.5% 0;"></div>
+        </div>
+      </blockquote>
     </div>
   `;
 
   const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
     .addTo(travelMap)
     .bindPopup(popupContent, {
-      maxWidth: 350,
-      className: 'travel-popup'
+      maxWidth: 300,
+      minWidth: 260,
+      maxHeight: 400,
+      className: 'travel-popup',
+      closeButton: true,
+      autoPan: true,
+      keepInView: true
     });
 
   // Load Instagram embed script when popup opens

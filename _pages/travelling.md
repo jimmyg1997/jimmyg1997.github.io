@@ -166,53 +166,41 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="max-width: 280px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/${post.instagramPostId}/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0; max-width:280px; min-width:240px; padding:0; width:100%;">
-        <div style="padding:16px;">
-          <div style="display: flex; flex-direction: row; align-items: center;">
-            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-              <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-              <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-            </div>
-          </div>
-          <div style="padding: 19% 0;"></div>
-          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-            <svg width="50px" height="50px" viewBox="0 0 60 60"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><circle cx="541" cy="50" r="30"></circle></g></g></svg>
-          </div>
-          <div style="padding-top: 8px;">
-            <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
-          </div>
-          <div style="padding: 12.5% 0;"></div>
-        </div>
-      </blockquote>
+    <div style="width: 250px; height: 280px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <iframe 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=250&rd=https%3A%2F%2Fjimmyg1997.github.io" 
+        width="250" 
+        height="280" 
+        frameborder="0" 
+        scrolling="no" 
+        allowtransparency="true"
+        style="border: none; overflow: hidden; width: 250px; height: 280px;">
+      </iframe>
     </div>
   `;
 
   const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
     .addTo(travelMap)
     .bindPopup(popupContent, {
-      maxWidth: 300,
+      maxWidth: 260,
       minWidth: 260,
-      maxHeight: 400,
+      maxHeight: 290,
       className: 'travel-popup',
       closeButton: true,
-      autoPan: true,
-      keepInView: true
+      autoPan: false,
+      keepInView: false,
+      closeOnClick: false
     });
 
   // Load Instagram embed script when popup opens
   marker.on('popupopen', function() {
-    // Reload Instagram embeds for the newly opened popup
-    if (window.instgrm) {
-      window.instgrm.Embeds.process();
-    } else {
-      // Load Instagram embed script if not already loaded
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = '//www.instagram.com/embed.js';
-      document.head.appendChild(script);
-    }
+    // Prevent zoom events from affecting popup size
+    travelMap.off('zoom');
+  });
+
+  // Re-enable zoom events when popup closes
+  marker.on('popupclose', function() {
+    // Re-enable zoom handling if needed
   });
 });
 

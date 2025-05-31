@@ -82,6 +82,7 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 
 <script>
 // Updated travel data with actual Instagram posts
+// Updated travel data with actual Instagram posts
 const myTravelPosts = [
   {
     lat: 50.0647,
@@ -166,15 +167,15 @@ const travelIcon = L.divIcon({
 // Add markers for each travel post
 myTravelPosts.forEach(post => {
   const popupContent = `
-    <div style="width: 150px; height: 200px; overflow: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="width: 150px; height: 200px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       <iframe 
-        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=140&rd=https%3A%2F%2Fjimmyg1997.github.io" 
-        width="140" 
-        height="190" 
+        src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=150&rd=https%3A%2F%2Fjimmyg1997.github.io" 
+        width="150" 
+        height="195" 
         frameborder="0" 
-        scrolling="yes" 
+        scrolling="no" 
         allowtransparency="true"
-        style="border: none; overflow: hidden; width: 140px; height: 190px; margin: 5px;">
+        style="border: none; overflow: hidden; width: 150px; height: 195px; margin: 2px; transform: scale(0.85); transform-origin: top left;">
       </iframe>
     </div>
   `;

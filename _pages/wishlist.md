@@ -5,9 +5,10 @@ permalink: /wishlist/
 author_profile: true
 toc: true
 toc_sticky: true
+toc_label: "On This Page"
+toc_icon: "gift"
 header:
-  overlay_color: "
-#001f3f"
+  overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/wishlist-header.jpg
 excerpt: "A list of things I'd enjoy receiving as gifts"
@@ -17,7 +18,6 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   <p>This page is for friends and family who are looking for gift ideas. These are things I'd enjoy receiving but wouldn't necessarily buy for myself. The list is organized by category and price range to help you find something that fits your budget.</p>
   <p><strong>Last updated:</strong> {{ site.time | date: "%B %d, %Y" }}</p>
 </div>
-
 
 <style>
 .wishlist-table {
@@ -49,6 +49,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   }
 }
 </style>
+
 {% assign categories = "books,tech,fitness,clothing,experiences,donations" | split: "," %}
 {% assign category_names = "Books,Tech & Gadgets,Fitness Equipment,Clothing & Accessories,Experiences,Donations" | split: "," %}
 
@@ -57,8 +58,7 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   {% assign cat_name = category_names[cat] %}
   {% assign items = site.data.wishlist | where: "category", cat_key %}
   {% if items.size > 0 %}
-  ## {{ cat_name }}
-  <br>
+  <h2 id="{{ cat_key }}">{{ cat_name }}</h2>
 
   <table class="wishlist-table">
     <thead>
@@ -100,10 +100,6 @@ excerpt: "A list of things I'd enjoy receiving as gifts"
   </table>
   {% endif %}
 {% endfor %}
-
----
-
-
 
 <div class="wishlist-footer">
   <p>Don't see anything that inspires you? A thoughtful card or spending quality time together is always appreciated!</p>

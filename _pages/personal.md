@@ -5,6 +5,8 @@ permalink: /personal/
 author_profile: true
 toc: true
 toc_sticky: true
+toc_label: "On This Page"
+toc_icon: "book"
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
@@ -15,7 +17,6 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
 <div class="volunteering-intro">
   <p>This section is dedicated to my personal growth journey. Here you'll find book reviews, course summaries, and media recommendations that have influenced my thinking and development.</p>
 </div>
-
 
 ## Seminars & Workshops
 
@@ -50,7 +51,7 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
     
     <p>This intensive 18-hour workshop provided hands-on experience with experimental design:</p>
     <ul>
-      <li>Setting up experiments with 𝘗𝘴𝘺𝘤𝘩𝘰𝘗𝘺, a powerful tool for behavioral research</li>
+      <li>Setting up experiments with 𝘗𝘳𝘰𝘱𝘩𝘰𝘱𝘺, a powerful tool for behavioral research</li>
       <li>Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity</li>
       <li>Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing</li>
       <li>Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments</li>
@@ -104,7 +105,7 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
   
 </div>
 
-## Reading List {#reading-list}
+## Reading List
 
 <div class="books-section">
   <h3 id="currently-reading">Currently Reading</h3>
@@ -257,7 +258,7 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
   </div>
 </div>
 
-## Media Recommendations {#media-recommendations}
+## Media Recommendations
 
 <div class="media-section">
   <div class="media-category" id="podcasts">
@@ -303,7 +304,7 @@ excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙�
   </div>
 </div>
 
-## Learning Statistics {#learning-statistics}
+## Learning Statistics
 
 <div class="stats-section">
   <div class="stat-item" id="books-read">

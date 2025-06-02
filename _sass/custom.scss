@@ -1053,11 +1053,10 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .feature__item {
@@ -1065,7 +1064,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;

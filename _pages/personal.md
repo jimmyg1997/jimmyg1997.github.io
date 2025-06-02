@@ -10,7 +10,7 @@ toc_icon: "gift"
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/personal-header.jpg
+  overlay_image: /assets/images/personal-header.png
 excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠, Media 🎙️ I recommend."
 ---
 

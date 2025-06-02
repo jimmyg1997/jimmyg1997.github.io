@@ -8,7 +8,7 @@ toc_sticky: true
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/calisthenics-header.jpg
+  overlay_image: /assets/images/calisthenics-header.png
 excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress, and nutritional insights 🥦🔥"
 ---
 

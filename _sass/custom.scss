@@ -1010,81 +1010,84 @@ body {
 
 /* Page Hero Styles */
 .page__hero {
-  .page__lead {
-    color: #fff !important;
-    font-size: 1.5em !important;
-    font-weight: 500 !important;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
-    margin-top: 1em !important;
-    max-width: 800px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-  }
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .page__hero--overlay {
-  .page__lead {
-    color: #fff !important;
-    font-size: 1.5em !important;
-    font-weight: 500 !important;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
-    margin-top: 1em !important;
-    max-width: 800px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-  }
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 3rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page__hero .wrapper {
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page__lead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin: 1rem auto;
+  max-width: 800px;
+  text-align: center;
 }
 
 /* Feature Row Styles */
 .feature__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .feature__item {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 420px;
   height: 100%;
-  transition: box-shadow 0.2s, transform 0.2s;
-  position: relative;
-  overflow: hidden;
+  min-height: 400px;
+  transition: all 0.3s ease;
 }
 
 .feature__item:hover {
-  box-shadow: 0 8px 24px rgba(0,31,63,0.12);
-  transform: translateY(-4px) scale(1.02);
-  border-color: #b3c6e0;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .archive__item-teaser {
   width: 100%;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 200px;
   overflow: hidden;
-  border-radius: 8px 8px 0 0;
+  border-radius: 6px;
   margin-bottom: 1rem;
-  background: #f5f7fa;
 }
 
 .archive__item-teaser img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .feature__item:hover .archive__item-teaser img {
@@ -1092,31 +1095,34 @@ body {
 }
 
 .archive__item-title {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #001f3f;
-  margin: 0.5rem 0 0.25rem 0;
+  margin: 0.5rem 0;
   text-align: center;
 }
 
 .archive__item-excerpt {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: #333;
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
   flex-grow: 1;
-  font-family: inherit;
 }
 
 .feature__item .btn {
   margin-top: auto;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   padding: 0.5rem 1.5rem;
   background: #001f3f;
   border: 1px solid #001f3f;
   color: #fff;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
 .feature__item .btn:hover {
@@ -1124,17 +1130,118 @@ body {
   color: #001f3f;
 }
 
+/* Section Styles */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(0,31,63,0.3), transparent);
+  margin: 3rem 0;
+}
+
+/* Now Section Styles */
+.now-section {
+  background: rgba(0,31,63,0.02);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid rgba(0,31,63,0.1);
+}
+
+.now-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.now-content h3 {
+  color: #001f3f;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.now-list li {
+  position: relative;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: rgba(0,31,63,0.02);
+  border-radius: 4px;
+  border: 1px solid rgba(0,31,63,0.1);
+}
+
+.now-list li:before {
+  content: "▹";
+  color: #001f3f;
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Wishlist Section Styles */
+.wishlist-section {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  background: rgba(0,31,63,0.02);
+  border-radius: 8px;
+  border: 1px solid rgba(0,31,63,0.1);
+}
+
+.wishlist-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wishlist-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #001f3f;
+}
+
+.wishlist-content .btn {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  background: #001f3f;
+  border: 1px solid #001f3f;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.wishlist-content .btn:hover {
+  background: #fff;
+  color: #001f3f;
+}
+
+/* Responsive Styles */
 @media (max-width: 900px) {
   .feature__wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
-  .archive__item-teaser {
-    height: 140px;
-  }
+  
   .feature__item {
-    min-height: 340px;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    min-height: 350px;
+  }
+  
+  .archive__item-teaser {
+    height: 180px;
+  }
+  
+  .page__title {
+    font-size: 2rem;
+  }
+  
+  .page__lead {
+    font-size: 1.25rem;
   }
 }
 
@@ -1143,102 +1250,26 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .archive__item-teaser {
-    height: 120px;
-  }
+  
   .feature__item {
-    min-height: 260px;
-    padding: 0.7rem 0.3rem 0.3rem 0.3rem;
+    min-height: 300px;
   }
-}
-
-/* Section Dividers */
-.section-divider {
-  height: 2px;
-  background: linear-gradient(to right, transparent, rgba(0, 31, 63, 0.3), transparent);
-  margin: 2rem 0;
-}
-
-/* Now Section Styles */
-.now-section {
-  background: rgba(0, 31, 63, 0.02);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border: 1px solid rgba(0, 31, 63, 0.1);
   
-  .now-content {
-    max-width: 800px;
-    margin: 0 auto;
-    
-    h3 {
-      color: #001f3f;
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-      text-align: center;
-    }
-    
-    .now-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      
-      li {
-        position: relative;
-        padding: 0.5rem 0 0.5rem 1.5rem;
-        font-size: 0.95rem;
-        background: rgba(0, 31, 63, 0.02);
-        border-radius: 4px;
-        border: 1px solid rgba(0, 31, 63, 0.1);
-        
-        &:before {
-          content: "▹";
-          color: #001f3f;
-          position: absolute;
-          left: 0.5rem;
-          font-size: 1rem;
-          line-height: 1;
-        }
-      }
-    }
+  .archive__item-teaser {
+    height: 160px;
   }
-}
-
-/* Wishlist Section Styles */
-.wishlist-section {
-  text-align: center;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  background: rgba(0, 31, 63, 0.02);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 31, 63, 0.1);
   
-  .wishlist-content {
-    max-width: 600px;
-    margin: 0 auto;
-    
-    p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      color: #001f3f;
-    }
-    
-    .btn {
-      font-size: 0.9rem;
-      padding: 0.5rem 1.5rem;
-      background: #001f3f;
-      border: 1px solid #001f3f;
-      transition: all 0.3s ease;
-      
-      &:hover {
-        background: transparent;
-        color: #001f3f;
-        transform: translateY(-2px);
-      }
-    }
+  .page__title {
+    font-size: 1.75rem;
+  }
+  
+  .page__lead {
+    font-size: 1.1rem;
+  }
+  
+  .now-section,
+  .wishlist-section {
+    padding: 1.5rem;
   }
 }
 

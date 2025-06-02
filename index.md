@@ -39,21 +39,21 @@ feature_row2:
   - image_path: ../assets/images/overall/travel-thumb.png
     alt: "✈️ Travelling"
     title: "✈️ Travelling"
-    excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍."
+    excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
     url: "/travelling/"
     btn_label: "Explore"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/calisthenics-thumb.png
     alt: "🏋️‍♂️ Calisthenics & 🥦 Nutrition"
     title: "🏋️‍♂️ Calisthenics & 🥦 Nutrition"
-    excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress, and nutritional insights 🥦🔥."
+    excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress, and nutritional insights 🥦🔥"
     url: "/calisthenics/"
     btn_label: "Learn More"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/personal-thumb.jpg
     alt: "🌱 Personal Development"
     title: "🌱 Personal Development"
-    excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend."
+    excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend"
     url: "/personal/"
     btn_label: "Discover"
     btn_class: "btn--primary"
@@ -61,29 +61,41 @@ feature_row2:
 
 {% include feature_row id="intro" type="center" %}
 
-## Professional
+<div class="section-divider"></div>
+
+## Professional Journey
 
 {% include feature_row %}
+
+<div class="section-divider"></div>
 
 ## Personal Interests
 
 {% include feature_row id="feature_row2" %}
 
-## What I'm Doing Now
+<div class="section-divider"></div>
+
+## Current Focus
 
 <div class="now-section">
-  <p>Here's what I'm currently focusing on:</p>
-  <ul>
-    <li>Working on my PhD research in healthcare data science</li>
-    <li>Developing machine learning models for medical applications</li>
-    <li>Training for my next calisthenics milestone</li>
-    <li>Planning my upcoming travel to [destination]</li>
-  </ul>
+  <div class="now-content">
+    <h3>What I'm Working On</h3>
+    <ul class="now-list">
+      <li>Working on my PhD research in healthcare data science</li>
+      <li>Developing machine learning models for medical applications</li>
+      <li>Training for my next calisthenics milestone</li>
+      <li>Planning my upcoming travel to [destination]</li>
+    </ul>
+  </div>
 </div>
 
-## Gift Wishlist
+<div class="section-divider"></div>
+
+## Gift Ideas
 
 <div class="wishlist-section">
-  <p>Looking for gift ideas? Check out my wishlist!</p>
-  <p><a href="/wishlist/" class="btn btn--primary">View Wishlist</a></p>
+  <div class="wishlist-content">
+    <p>Looking for gift ideas? Check out my wishlist!</p>
+    <a href="/wishlist/" class="btn btn--primary">View Wishlist</a>
+  </div>
 </div>

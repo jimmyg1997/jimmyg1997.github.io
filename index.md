@@ -53,7 +53,7 @@ feature_row2:
   - image_path: ../assets/images/overall/personal-thumb.jpg
     alt: "🌱 Personal Development"
     title: "🌱 Personal Development"
-    excerpt: "💡 Continuous learning 🔁 | Books 📘, Courses 🧠, Media 🎙️ I recommend"
+    excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     url: "/personal/"
     btn_label: "Discover"
     btn_class: "btn--primary"

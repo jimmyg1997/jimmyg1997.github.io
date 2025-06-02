@@ -65,13 +65,17 @@ feature_row2:
 
 ## Professional Journey
 
+<div class="feature__wrapper">
 {% include feature_row %}
+</div>
 
 <div class="section-divider"></div>
 
 ## Personal Interests
 
+<div class="feature__wrapper">
 {% include feature_row id="feature_row2" %}
+</div>
 
 <div class="section-divider"></div>
 

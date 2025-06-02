@@ -8,7 +8,7 @@ header:
   actions:
     - label: "Contact Me"
       url: "/contact/"
-excerpt: "Data Scientist @HSBC"
+excerpt: "Data Scientist, Researcher, Calisthenics Athlete, Traveller"
 intro: 
   - excerpt: "Welcome to my personal website. I'm passionate about data science, healthcare research, and personal development."
 

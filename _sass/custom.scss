@@ -1393,6 +1393,16 @@ h2 {
   padding: 1rem 0;
   text-align: center;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.intro .excerpt {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Better mobile text sizing */

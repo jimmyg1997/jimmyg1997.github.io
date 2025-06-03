@@ -284,27 +284,22 @@
   link: null
   bought: false
 
-- name: "Ceramics Workshop in Krakow"
-  price_range: "$50 - $150"
+- name: "Ceramics Workshop in Krakow (eg. Lyko)"
+  price_range: "$80 - $100"
   category: experiences
   description: "Hands-on ceramics class in Krakow, Poland"
-  link: null
   bought: false
+  link: "https://lykoceramika.pl/en/product/kurs-ceramiczny/"
+  image: "../assets/images/wishlist/ceramic-workshop.png"
 
-- name: "Aerodynamic Airplane Simulation in Krakow"
-  price_range: "$100 - $250"
+- name: "Airpoint Aerodynamic Airplane Simulation in Krakow"
+  price_range: "$150 - $170"
   category: experiences
   description: "Immersive flight simulation experience"
-  link: null
   bought: false
+  image: "../assets/images/wishlist/airpoint.png"
+  link: "https://airpoint.eu/zarezerwuj-lot/book-fun-60-minut/krakow/#!/Service/2025/06/03/60-minut-fun-46.html"
   
-- name: "Cooking Class"
-  price_range: "$50 - $100"
-  category: experiences
-  description: "A local cooking class to learn new cuisines"
-  link: null
-  bought: false
-
 - name: "Doctors Without Borders"
   category: donations
   description: "An international humanitarian organization that provides medical aid where it's needed most"

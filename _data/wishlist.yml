@@ -307,15 +307,11 @@
   description: "An international humanitarian organization that provides medical aid where it's needed most"
   link: "https://www.doctorswithoutborders.org/"
   bought: false
+  image: "../assets/images/wishlist/doctors-without-border.png"
 
 - name: "GiveWell"
   category: donations
   description: "A nonprofit dedicated to finding outstanding giving opportunities through in-depth analysis"
   link: "https://www.givewell.org/"
   bought: false
-
-- name: "Electronic Frontier Foundation"
-  category: donations
-  description: "A nonprofit defending civil liberties in the digital world"
-  link: "https://www.eff.org/"
-  bought: false
+  image: "../assets/images/wishlist/give-well.png"

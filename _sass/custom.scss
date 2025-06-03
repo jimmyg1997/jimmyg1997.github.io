@@ -1057,6 +1057,7 @@ body {
   width: 100%;
   max-width: 1200px;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .feature__item {
@@ -1070,6 +1071,7 @@ body {
   height: 100%;
   min-height: 400px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .feature__item:hover {

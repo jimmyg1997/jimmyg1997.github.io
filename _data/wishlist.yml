@@ -229,11 +229,13 @@
   bought: false
   image: "../assets/images/wishlist/vintage-glasses.png"
 
-- name: "White Hoodie"
-  price_range: "$30 - $80"
+- name: "(Oversized) White Hoodie"
+  price_range: "$30 - $50"
   category: clothing
   description: "Casual, versatile white hoodie"
-  link: null
+  link: "https://www.asos.com/selected-homme/selected-homme-oversized-hoodie-in-cream-with-text-backprint/prd/206377160#colourWayId-206377161"
+  image: "../assets/images/wishlist/oversized-white-hoodie.png"
+
 
 - name: "Loafers (beige)"
   price_range: "$150 - $200"

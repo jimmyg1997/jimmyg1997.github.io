@@ -4,45 +4,41 @@
 - name: "The Schopenhauer Cure"
   author: "Irvin David Yalom"
   year: 2005
-  price_range: "$15 - $25"
+  price_range: "$10 - $15"
   category: books
   description: "A psychological novel exploring therapy and philosophical insights"
-  link: null
+  image: "../assets/images/wishlist/schopenhauer.jpeg"
+  link: "https://www.amazon.com/Schopenhauer-Cure-Novel-Irvin-Yalom/dp/0060938102"
   bought: false
 
 - name: "The Art of War"
   author: "Sun Tzu"
   year: "5th BC"
-  price_range: "$10 - $20"
+  price_range: "$10 - $15"
   category: books
   description: "Classic ancient Chinese military strategy text with broader life applications"
-  link: null
+  image: "../assets/images/wishlist/art-of-war.jpg"
+  link: "https://www.amazon.com/Art-War-Sun-Tzu/dp/1599869772"
   bought: false
 
 - name: "The Road Less Traveled"
   author: "M. Scott Peck"
   year: 1978
   pages: 464
-  price_range: "$15 - $25"
+  price_range: "$10 - $15"
   category: books
   description: "A groundbreaking book on personal growth, discipline, and spiritual development"
-  link: null
+  image: "../assets/images/wishlist/road-less-traveled.jpg"
+  link: "https://www.amazon.com/Road-Less-Traveled-Timeless-Traditional/dp/0743243153"
   bought: false
-
+  
 - name: "A Matter of Death and Life"
   author: "Irvin David Yalom"
-  price_range: "$15 - $25"
+  price_range: "$10 - $15"
   category: books
   description: "A memoir combining the journals of Yalom and his wife"
-  link: null
-  bought: false
-
-- name: "Karokarydo"
-  author: "Unknown"
-  price_range: "$10 - $20"
-  category: books
-  description: "Greek literature"
-  link: null
+  image: "../assets/images/wishlist/matter-of-death.jpg"
+  link: "https://www.amazon.com/Matter-Death-Life-Irvin-Yalom/dp/1503613763"
   bought: false
 
 - name: "Atomic Habits"
@@ -51,23 +47,10 @@
   category: books
   description: "A guide to building good habits and breaking bad ones"
   link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/"
+  image: "../assets/images/wishlist/atomic-habits.jpg"
   bought: false
 
-- name: "Deep Learning with Python"
-  author: "François Chollet"
-  price_range: "$30 - $50"
-  category: books
-  description: "A comprehensive guide to deep learning using Python"
-  link: "https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438/"
-  bought: false
 
-- name: "The Pragmatic Programmer"
-  author: "David Thomas & Andrew Hunt"
-  price_range: "$25 - $40"
-  category: books
-  description: "A classic book on software development that provides practical advice for programmers"
-  link: "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/"
-  bought: false
 
 - name: "Workout Supplements"
   price_range: "$30 - $60"

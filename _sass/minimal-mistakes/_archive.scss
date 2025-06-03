@@ -436,3 +436,13 @@
     }
   }
 }
+
+
+// Override the feature item width
+@media (min-width: 37.5em) {
+  .feature__item {
+    float: none;
+    margin-bottom: 0;
+    width: auto; // Remove the fixed width
+  }
+}

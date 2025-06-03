@@ -1048,44 +1048,49 @@ body {
   text-align: center;
 }
 
-/* Feature Row Styles */
+/* Feature Row Styles - UPDATED FOR COMPACT LAYOUT */
 .feature__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.2rem;
-  max-width: 1050px;
-  margin: 2rem auto;
-  padding: 0 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem;
   box-sizing: border-box;
   justify-items: center;
 }
 
+
 .feature__item {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
-  padding: 1.2rem 1rem 1rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   min-width: 0;
-  min-height: 370px;
+  max-width: 350px;
+  width: 100%;
+  min-height: 320px;
   transition: box-shadow 0.2s, transform 0.2s;
   box-sizing: border-box;
 }
 
 .feature__item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .archive__item-teaser {
   width: 100%;
-  height: 200px;
+  height: 160px;
   overflow: hidden;
   border-radius: 6px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
 }
 
 .archive__item-teaser img {
@@ -1100,26 +1105,31 @@ body {
 }
 
 .archive__item-title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #001f3f;
   margin: 0.5rem 0;
   text-align: center;
+  line-height: 1.3;
 }
 
+
 .archive__item-excerpt {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 0.75rem;
   text-align: center;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature__item .btn {
   margin-top: auto;
-  font-size: 0.9rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem;
   background: #001f3f;
   border: 1px solid #001f3f;
   color: #fff;
@@ -1127,7 +1137,8 @@ body {
   transition: all 0.3s ease;
   text-align: center;
   display: inline-block;
-  width: 100%;
+  width: auto;
+  min-width: 120px;
 }
 
 .feature__item .btn:hover {
@@ -1135,31 +1146,63 @@ body {
   color: #001f3f;
 }
 
-/* Section Styles */
+
+/* Section Styles - MORE COMPACT */
 .section-divider {
-  height: 2px;
-  background: linear-gradient(to right, transparent, rgba(0,31,63,0.3), transparent);
-  margin: 3rem 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,31,63,0.2), transparent);
+  margin: 1.5rem 0;
 }
 
-/* Now Section Styles */
+
+/* Page Hero Styles - MORE COMPACT */
+.page__hero--overlay {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 2rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.page__lead {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin: 0.5rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+
+// .now-content {
+//   max-width: 800px;
+//   margin: 0 auto;
+// }
+
+/* Now Section Styles - MORE COMPACT */
 .now-section {
   background: rgba(0,31,63,0.02);
   border-radius: 8px;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   border: 1px solid rgba(0,31,63,0.1);
-}
-
-.now-content {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .now-content h3 {
   color: #001f3f;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -1168,14 +1211,14 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
 }
 
 .now-list li {
   position: relative;
-  padding: 0.75rem 0 0.75rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.6rem 0 0.6rem 1.25rem;
+  font-size: 0.9rem;
   background: rgba(0,31,63,0.02);
   border-radius: 4px;
   border: 1px solid rgba(0,31,63,0.1);
@@ -1185,35 +1228,35 @@ body {
   content: "▹";
   color: #001f3f;
   position: absolute;
-  left: 0.5rem;
-  font-size: 1rem;
+  left: 0.4rem;
+  font-size: 0.9rem;
   line-height: 1;
 }
 
-/* Wishlist Section Styles */
+/* Wishlist Section Styles - MORE COMPACT */
 .wishlist-section {
   text-align: center;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   background: rgba(0,31,63,0.02);
   border-radius: 8px;
   border: 1px solid rgba(0,31,63,0.1);
 }
 
-.wishlist-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
+// .wishlist-content {
+//   max-width: 600px;
+//   margin: 0 auto;
+// }
 
 .wishlist-content p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   color: #001f3f;
 }
 
 .wishlist-content .btn {
-  font-size: 1rem;
-  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.5rem;
   background: #001f3f;
   border: 1px solid #001f3f;
   color: #fff;
@@ -1221,62 +1264,107 @@ body {
   transition: all 0.3s ease;
 }
 
-.wishlist-content .btn:hover {
-  background: #fff;
-  color: #001f3f;
+// .wishlist-content .btn:hover {
+//   background: #fff;
+//   color: #001f3f;
+// }
+
+
+/* Main Content Spacing */
+main {
+  padding-top: 0;
 }
 
-/* Responsive Styles */
+.page__content {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles - UPDATED */
+@media (max-width: 1200px) {
+  .feature__wrapper {
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}
+
+
 @media (max-width: 900px) {
   .feature__wrapper {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
-  .feature__item {
-    min-height: 350px;
-  }
-  
-  .archive__item-teaser {
-    height: 180px;
-  }
-  
-  .page__title {
-    font-size: 2rem;
-  }
-  
-  .page__lead {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .feature__wrapper {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
+    max-width: 600px;
   }
   
   .feature__item {
     min-height: 300px;
+    max-width: none;
   }
   
   .archive__item-teaser {
-    height: 160px;
+    height: 140px;
   }
   
   .page__title {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
   
   .page__lead {
     font-size: 1.1rem;
   }
   
-  .now-section,
-  .wishlist-section {
-    padding: 1.5rem;
+  .page__hero--overlay {
+    padding: 1.5rem 0;
   }
 }
+@media (max-width: 600px) {
+  .feature__wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0 0.75rem;
+  }
+  
+  .feature__item {
+    min-height: 280px;
+    padding: 0.75rem;
+  }
+  
+  .archive__item-teaser {
+    height: 120px;
+  }
+  
+  .archive__item-title {
+    font-size: 1rem;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.8rem;
+  }
+  
+  .page__title {
+    font-size: 1.6rem;
+  }
+  
+  .page__lead {
+    font-size: 1rem;
+  }
+  
+  .now-section,
+  .wishlist-section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .now-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .section-divider {
+    margin: 1rem 0;
+  }
+}
+
 
 @media (max-width: 1100px) {
   .feature__wrapper {
@@ -1291,6 +1379,77 @@ body {
   }
   .feature__item {
     max-width: 100%;
+  }
+}
+
+/* Ensure everything is properly centered */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Remove excessive margins from sections */
+section {
+  margin: 1rem 0;
+}
+
+/* Compact header spacing */
+.masthead {
+  margin-bottom: 0;
+}
+
+/* Ensure proper content flow */
+.initial-content {
+  padding-top: 0;
+}
+
+.layout--splash .initial-content {
+  padding-top: 0;
+}
+
+/* Additional compact styling */
+h2 {
+  margin: 1.5rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Make sure feature rows are well spaced */
+.feature_row {
+  margin: 1rem 0;
+}
+
+/* Ensure intro section is compact */
+.intro {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Better mobile text sizing */
+@media (max-width: 480px) {
+  .archive__item-title {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+  
+  .feature__item .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .page__title {
+    font-size: 1.4rem;
+  }
+  
+  .page__lead {
+    font-size: 0.9rem;
   }
 }
 

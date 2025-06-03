@@ -5,9 +5,9 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/header-bg.jpg
-  actions:
-    - label: "Contact Me"
-      url: "/contact/"
+  # actions:
+  #   - label: "Contact Me"
+  #     url: "/contact/"
 excerpt: "Data Scientist, Researcher, Calisthenics Athlete, Traveller"
 intro: 
   - excerpt: "Welcome to my personal website. I'm passionate about data science, healthcare research, and personal development."

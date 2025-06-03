@@ -235,11 +235,12 @@
   description: "Casual, versatile white hoodie"
   link: null
 
-- name: "White Shoes (Primark)"
-  price_range: "$30 - $70"
+- name: "Loafers (beige)"
+  price_range: "$150 - $200"
   category: clothing
-  description: "Clean, simple white sneakers"
-  link: null
+  description: "Clean, simple beige loafers"
+  link: "https://tryglasskin.com/pl/products/mens-leather-shoes-elegant-slip-ons-for-office-and-leisure?currency=PLN&country=PL&variant=54261432647948&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=9a6e0611a90f&utm_campaign=22255029265&utm_ad_group=&utm_ad=&utm_source=google&gad_source=1&gad_campaignid=22251175403&gbraid=0AAAAA-lkip2VF4xxJXyGxLknM9RalsW70&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjfz0yRfNiVnULV5iCiyywu5L0eI3Ng7HupsXBHPX3we-_TzQFK99ZkaApTqEALw_wcB"
+  image: "../assets/images/wishlist/loafers-beige.png"
   
 - name: "Tailoring Super Baggy Pants"
   price_range: "$30 - $50"

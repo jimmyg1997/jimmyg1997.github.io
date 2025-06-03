@@ -8,9 +8,9 @@ header:
   # actions:
   #   - label: "Contact Me"
   #     url: "/contact/"
-excerpt: "Data Scientist, Researcher, Calisthenics Athlete, Traveller"
+excerpt: "Data Scientist • Researcher • Calisthenics Athlete • Traveller"
 intro: 
-  - excerpt: "Welcome to my personal website. I'm passionate about data science, healthcare research, and personal development."
+  - excerpt: "Welcome to my personal website. I’m passionate about 𝘥𝘢𝘵𝘢 𝘴𝘤𝘪𝘦𝘯𝘤𝘦,𝘩𝘦𝘢𝘭𝘵𝘩𝘤𝘢𝘳𝘦 𝘳𝘦𝘴𝘦𝘢𝘳𝘤𝘩, and 𝘱𝘦𝘳𝘴𝘰𝘯𝘢𝘭 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘮𝘦𝘯𝘵 — constantly exploring the intersection of analytics, movement, and meaningful impact"
 
 feature_row:
   - image_path: ../assets/images/overall/cv-thumb.png

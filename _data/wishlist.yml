@@ -281,8 +281,9 @@
   price_range: "$50 - $200"
   category: experiences
   description: "Tickets to live music events or summer festivals"
-  link: null
   bought: false
+  image: "../assets/images/wishlist/summer-concert.png"
+  link: "https://www.icloud.com/notes/0b9GEyqu0x7wJircVviKJbRuw"
 
 - name: "Ceramics Workshop in Krakow (eg. Lyko)"
   price_range: "$80 - $100"

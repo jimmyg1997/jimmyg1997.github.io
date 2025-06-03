@@ -74,7 +74,7 @@
   description: "Wooden gymnastics rings for calisthenics training"
   link: "https://gymbeam.pl/kolka-gimnastyczne-crossfit-gymbeam.html?utm_source=google&utm_medium=cpc&utm_campaign=PMax%20-%20All%20products&utm_id=17747285516&gad_source=1&gad_campaignid=17178523857&gbraid=0AAAAACdb-Q-qNMkqJGIK8lwVW2-toP0ja&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjeNJABKHr8wF9PKL8dGP2PkTRaJP34oJRrEb0nkZEYm8eLrduol50gaAksiEALw_wcB#47620"
   bought: true
-  image: "../assets/images/wishlist/gymnastics-rings.png"
+  image: "../assets/images/wishlist/gymnastic-rings.png"
 
 - name: "Resistance Bands Set"
   price_range: "$30 - $35"
@@ -213,19 +213,21 @@
   link: null
   bought: false
 
-- name: "Athletic Shoes"
-  price_range: "$50 - $150"
+- name: "Adizero Adios Pro 4 (Apr2025)"
+  price_range: "$200 - $250"
   category: clothing
   description: "Comfortable and stylish athletic footwear"
-  link: null
+  link: "https://www.adidas.pl/buty-adizero-adios-pro-4/JR1094.html"
   purchased: true
+  image: "../assets/images/wishlist/adios-pro-4.png"
 
 - name: "Vintage Glasses"
-  price_range: "$30 - $80"
+  price_range: "$30 - $60"
   category: clothing
   description: "Stylish vintage eyewear"
   link: null
   bought: false
+  image: "../assets/images/wishlist/vintage-glasses.png"
 
 - name: "White Hoodie"
   price_range: "$30 - $80"
@@ -239,28 +241,41 @@
   description: "Clean, simple white sneakers"
   link: null
   
-- name: "Baggy Pants"
-  price_range: "$40 - $100"
+- name: "Tailoring Super Baggy Pants"
+  price_range: "$30 - $50"
   category: clothing
   description: "Trendy, comfortable baggy-style pants"
   link: "https://www.bershka.com/gr/pants/mens-clothing/tailoring-super-baggy-pants-c1010690760p175233250.html"
   bought: false
+  image: "../assets/images/wishlist/tailoring-super-baggy.png"
 
 
-- name: "Minimalist Watch"
-  price_range: "$100 - $150"
+- name: "Minimalist Watch (eg. Marlin Jet Automatic)"
+  price_range: "$200 - $300"
   category: clothing
   description: "A simple, elegant timepiece for everyday wear"
-  link: "https://www.amazon.com/Timex-Fairfield-Quartz-Movement-Silver-Tone/dp/B01ACAMV16/"
+  link: "https://timex.eu/products/marlin-jet-automatic-38mm-fabric-strap-watch-tw2v72300"
   bought: false
+  image: "../assets/images/wishlist/minimalistic-watch.png"
 
 
-- name: "Navy Blue Blazer"
-  price_range: "$150 - $250"
+- name: "Sweater (Polo Ralph Lauren, camel)"
+  price_range: "$150 - $180"
   category: clothing
-  description: "A versatile navy blazer for professional and semi-formal occasions"
-  link: "https://www.jcrew.com/p/mens/categories/clothing/blazers/wool/ludlow-slim-fit-unstructured-suit-jacket-in-english-wool/H6478"
+  description: "A versatile camel sweater for professional and semi-formal occasions"
+  link: "https://www.zalando.pl/polo-ralph-lauren-long-sleeve-sweter-camel-melange-po222q0ed-b11.html?ssku=PO222Q0ED-B11000M000&lang=pl&otid=default&wmc=SEM480_NB_GO._6748070217_703410928_38453349724.&opc=2211&mpp=google|v1||pla-18283950120||9067394||g|c||161674294310||pla|PO222Q0ED-B11000M000|18283950120|1|&gclsrc=aw.ds&gad_source=1&gad_campaignid=703410928&gbraid=0AAAAADM1oAacWed9NDfKGQNtz2Wtk_xF3&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjdwEfWUw6h2xjL-aWxud1vRjlTGLIXy4WBBBrKYEK4ZO1DhiTmLhC8aAnV4EALw_wcB"
   bought: false
+  image: "../assets/images/wishlist/sweater-camel.png"
+
+
+- name: "Sweater (Polo Ralph Lauren, creme)"
+  price_range: "$150 - $180"
+  category: clothing
+  description: "A versatile camel sweater for professional and semi-formal occasions"
+  link: "  https://gomez.pl/pl/product/polo-ralph-lauren-51-roving-cotton-lsl-plo-710775885-3/size/XL?utm_source=google&utm_medium=cpc&utm_campaign=%5BPLA%5D%5BPL%5D%5BShopping%5D%5BStandard%5D%20Akcja_Sale_2&utm_id=22010735519&gad_source=1&gad_campaignid=22010735519&gbraid=0AAAAADxIPXHJ_0zPpFDJZIHbIE6qKxekn&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjd0xepWdU1W15NumLtRqqIjmkcXKkuuE9_QRiaZ0Qvcn3RTgLWdII0aAtg7EALw_wcB"
+  bought: false
+  image: "../assets/images/wishlist/sweater-creme.png"
+
 
 - name: "Summer Concert Tickets"
   price_range: "$50 - $200"

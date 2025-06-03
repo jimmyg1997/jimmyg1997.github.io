@@ -446,3 +446,11 @@
     width: auto; // Remove the fixed width
   }
 }
+
+@media (min-width: #{$small}) {
+  .feature__item {
+    float: none !important;
+    margin-bottom: 0;
+    width: auto !important;
+  }
+}

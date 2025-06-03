@@ -51,49 +51,44 @@
   bought: false
 
 
-
-- name: "Workout Supplements"
-  price_range: "$30 - $60"
-  category: fitness
-  description: "Various fitness and performance supplements"
-  link: null
-  always_needed: true
-  bought: false
-
-- name: "Electrolytes"
-  price_range: "$10 - $20"
+- name: "Parallettes (caliathletics)"
+  price_range: "$40 - $50"
   category: fitness
   description: "Hydration and electrolyte supplements for workouts"
-  link: null
+  link: "https://shop.caliathletics.com/products/wooden-parallettes-mini"
   always_needed: true
   bought: false
+  image: "../assets/images/wishlist/parallettes.png"
 
-- name: "Weight Lifting Belt"
-  price_range: "$30 - $80"
+- name: "Weight Dip Belt (caliathletics)"
+  price_range: "$30 - $50"
   category: fitness
   description: "Support for heavy weightlifting and strength training"
-  link: null
+  link: "https://shop.caliathletics.com/products/weighted-belt"
   bought: false
+  image: "../assets/images/wishlist/weighted-belt.png"
 
 - name: "Gymnastics Rings"
   price_range: "$30 - $50"
   category: fitness
   description: "Wooden gymnastics rings for calisthenics training"
-  link: "https://www.amazon.com/PACEARTH-Gymnastics-Adjustable-Strength-Training/dp/B088K93JMJ/"
+  link: "https://gymbeam.pl/kolka-gimnastyczne-crossfit-gymbeam.html?utm_source=google&utm_medium=cpc&utm_campaign=PMax%20-%20All%20products&utm_id=17747285516&gad_source=1&gad_campaignid=17178523857&gbraid=0AAAAACdb-Q-qNMkqJGIK8lwVW2-toP0ja&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjeNJABKHr8wF9PKL8dGP2PkTRaJP34oJRrEb0nkZEYm8eLrduol50gaAksiEALw_wcB#47620"
   bought: true
+  image: "../assets/images/wishlist/gymnastics-rings.png"
 
 - name: "Resistance Bands Set"
-  price_range: "$20 - $40"
+  price_range: "$30 - $35"
   category: fitness
   description: "A complete set of resistance bands for versatile training"
   link: "https://www.amazon.com/Resistance-Exercise-Different-Stackable-Waterproof/dp/B07DWSPQQY/"
   bought: true
+  image: "../assets/images/wishlist/resistance-bands.png"
 
 - name: "Foam Roller"
-  price_range: "$15 - $30"
+  price_range: "$15 - $20"
   category: fitness
   description: "A high-density foam roller for recovery and myofascial release"
-  link: "https://www.amazon.com/321-STRONG-Foam-Roller-Myofascial/dp/B00KAEJ3UE/"
+  link: "https://www.amazon.com/Amazon-Basics-Density-Exercise-Recovery/dp/B00XM2MXK8/ref=sr_1_1_ffob_sspa?c=ts&dib=eyJ2IjoiMSJ9.PH1_1GvlrXxqcYt5DiW6WI22_9YwS_Iiw5D4AeDmrufy-A-mAh4t0ev24_c3Sy01oK-BrqNVCRx_Wg61jMtuRQ7u1bMaXAG7gnGrIzBLLjZiu-mgbNn5-U8YYYQcElmVyIrKYrgDLnhIa6FpzFrn1St3oqMTOmAZgK_GxivxL2hn94eZKAZesZG-9FbR0HZh0T4mSmIVVQFcMAIxzA5XH6NKtBLs98JOKyNbDxF2Xe_zfsbDXFyUkHkrLOrI1BWE82neVHt7caeADZ8axbvwOSyZZveVXUCz04-O6DeyXVQ.UcS0cgHnSegal8SMneGjggd5MJpkJZfpTc_g2CDbvgI&dib_tag=se&keywords=Foam+Rollers&qid=1748971441&s=exercise-and-fitness&sr=1-1-spons&ts_id=3407871&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
   bought: false
   image: "../assets/images/wishlist/foam-roller.png"
 
@@ -107,14 +102,15 @@
   link: "https://www.amazon.pl/dji-mini-4-pro/s?k=dji+mini+4+pro"
   image: "../assets/images/wishlist/drone-4k.png"
 
-- name: "iPad"
-  price_range: "$350 - $800"
+- name: "iPad Pro (7th Gen, 256GB)"
+  price_range: "$900 - $1000"
   category: tech
   description: "Versatile tablet for digital art, note-taking, and productivity"
-  link: null
+  link: "https://www.amazon.com/Apple-iPad-13-inch-Wi-Fi-256GB/dp/B0D4XCLY9X?th=1"
   bought: false
+  image: "../assets/images/wishlist/ipad-pro.jpg"
 
-- name: "AirPods (3rd Generation)"
+- name: "AirPods (3rd Gen)"
   price_range: "$120-140"
   category: tech
   description: "Wireless earbuds with noise cancellation"
@@ -143,7 +139,7 @@
   category: tech
   description: "Portable charger for iPhone on the go"
   link: "https://www.amazon.pl/Flintronic-Magnetyczna-bezprzewodowy-powerbank-ladowanie/dp/B0CT3JWRF7/ref=asc_df_B0CT3JWRF7?mcid=491c0a578ffb3a91bac38183aa69ba7e&tag=plshogostdde-21&linkCode=df0&hvadid=749178449996&hvpos=&hvnetw=g&hvrand=16571135247857357876&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067394&hvtargid=pla-2292614464506&language=pl_PL&gad_source=1&th=1"
-  bought: true
+  bought: "2025-04-01"
   image: "../assets/images/wishlist/power-bank.png"
 
 - name: "Cursor Pro Coding Subscription"
@@ -151,7 +147,7 @@
   category: tech
   description: "Advanced coding AI assistant subscription"
   link: "https://www.cursor.com/pricing"
-  bought: true
+  bought: false
   image: "../assets/images/wishlist/cursor-pro.png"
 
 - name: "Bag Hangers"

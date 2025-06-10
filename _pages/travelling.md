@@ -127,7 +127,7 @@ const myTravelPosts = [
 
   {
     lat: 1.2869,
-    lng: 103.8545,
+    lng: 103.8532,
     title: "Singapore Free Walking Tour",
     description: "A recommended free walking tour in Singapore, titled 'Stroll through the Past, Present & Future of Singapore' by Stephen via GuruWalk. The guide is described as knowledgeable, funny, and able to make history engaging and conversational. The experience includes relaxing on the grass, enjoying ice cream, and connecting with new friends, offering a mix of stories, laughter, and calm moments in the heart of the city. The tour is highly rated by participants.",
     date: "2025-04",
@@ -150,7 +150,7 @@ const myTravelPosts = [
   },
   {
     lat: 21.0297,
-    lng: 105.8419,
+    lng: 105.8432,
     title: "Hanoi Train Street",
     description: "Hanoi Train Street is a famous narrow alley in the heart of Hanoi’s Old Quarter where trains pass just inches from tightly packed homes, cafés, and shops. Dating back to the early 20th century, this unique street runs between Phung Hung and Tran Phu streets, as well as Le Duan and Kham Thien streets, offering a thrilling and photogenic experience as trains rumble through several times a day. As of February 2025, visitors can freely walk along the tracks without needing an invitation from a café, but are still encouraged to order something if they wish to stay and watch the trains. The lively atmosphere, local charm, and proximity to Hanoi’s main attractions make it a must-visit spot for travelers.",
     date: "2025-04",
@@ -184,10 +184,28 @@ const myTravelPosts = [
     country: "Vietnam"
   },
 
-
-
-
-
+  {
+    lat: 1.282375,
+    lng: 103.864273,
+    title: "Gardens by the Bay",
+    description: "Gardens by the Bay is a spectacular urban nature park in the heart of Singapore, renowned for its futuristic Supertree Grove, lush themed gardens, and innovative conservatories like the Flower Dome and Cloud Forest. Entry to the main gardens is free, while attractions such as the OCBC Skyway—an elevated walkway among the Supertrees—offer stunning panoramic views for a small fee. The Supertrees come alive at night with a dazzling light and music show, creating an otherworldly atmosphere. This award-winning park is celebrated for its blend of cutting-edge design, sustainability, and immersive natural beauty, making it a must-visit for travelers seeking both relaxation and awe-inspiring sights in Asia.",
+    date: "2025-04",
+    instagramPostId: "DKYAy9gsFmz",
+    instagramUrl: "https://www.instagram.com/p/DKYAy9gsFmz/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 1.282375,
+    lng: 103.864290,
+    title: "Gardens by the Bay",
+    description: "Gardens by the Bay is a spectacular urban nature park in the heart of Singapore, renowned for its futuristic Supertree Grove, lush themed gardens, and innovative conservatories like the Flower Dome and Cloud Forest. Entry to the main gardens is free, while attractions such as the OCBC Skyway—an elevated walkway among the Supertrees—offer stunning panoramic views for a small fee. The Supertrees come alive at night with a dazzling light and music show, creating an otherworldly atmosphere. This award-winning park is celebrated for its blend of cutting-edge design, sustainability, and immersive natural beauty, making it a must-visit for travelers seeking both relaxation and awe-inspiring sights in Asia.",
+    date: "2025-04",
+    instagramPostId: "DKX-MXisM0X",
+    instagramUrl: "https://www.instagram.com/p/DKX-MXisM0X/",
+    city: "Singapore",
+    country: "Singapore"
+  },
 
 ];
 

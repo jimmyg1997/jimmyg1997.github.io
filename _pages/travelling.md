@@ -92,49 +92,103 @@ excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
 // Updated travel data with actual Instagram posts
 const myTravelPosts = [
   {
-    lat: 50.0647,
-    lng: 19.9450,
-    title: "Living in Krakow 🏰",
-    description: "My home base in beautiful Krakow, Poland. Exploring the historic Old Town and vibrant culture every day!",
-    date: "2024-Present",
-    instagramPostId: "DHuB01cMnFK", // Replace with actual Krakow post ID
-    instagramUrl: "https://www.instagram.com/dimiles.away/",
-    city: "Krakow",
-    country: "Poland"
+    lat: 20.9500,  // Approximate latitude for Ha Long Bay, Vietnam
+    lng: 107.0833, // Approximate longitude for Ha Long Bay, Vietnam
+    title: "Cruise in Ha Long Bay",
+    description: "Had the most unforgettable day cruising through Ha Long Bay — one of the true wonders of Vietnam! From appreciating calm emerald waters, exploring epic caves, hiking peaks with jaw-dropping views, to watching the sun melt into the sea with a glass of wine in hand — this was a dream come true. Here's what was packed into this amazing day: pearl workshop, tasty lunch with vegetarian and fish options onboard, Sung Sot cave visit, speed boat ride, island hike with a chill at the beach below, and a sunset party with wine, fruit, and good vibes on deck. All of it for just €38.53!",
+    date: "2025-05",
+    instagramPostId: "DKmiksJslAo",
+    instagramUrl: "https://instagram.com/p/DKmiksJslAo/",
+    city: "Ha Long",
+    country: "Vietnam"
   },
   {
-    lat: 21.0285,
-    lng: 105.8542,
-    title: "Easter in Vietnam 🌸",
-    description: "Amazing adventure through Northern Vietnam - stunning landscapes and incredible culture!",
-    date: "April 2025",
-    instagramPostId: "DHuB01cMnFK", // This matches your Vietnam post
-    instagramUrl: "https://www.instagram.com/p/DHuB01cMnFK/",
+    lat: 40.050,
+    lng: 20.750,
+    title: "Konitsa Bridge, Greece",
+    description: "The iconic Konitsa Bridge is a historic single-arch stone bridge spanning the Aoos River just south of the town of Konitsa in northwestern Greece, near the Albanian border. Completed in 1870 by master builder Ziogas Frontzos, the bridge is renowned for its elegant design and impressive dimensions—about 20 meters high and 35 meters long—making it one of the largest single-arch stone bridges in the Balkans. The bridge is a pedestrian crossing and features a bell under its arch to warn travelers of strong winds. It is a major attraction in the Epirus region, set against the dramatic backdrop of the Aoos Gorge and the mountains of the Vikos–Aoös National Park. The area is also popular for trekking and river rafting.",
+    date: "2025-05",
+    instagramPostId: "DKmFv8rsmKj",
+    instagramUrl: "https://www.instagram.com/p/DKmFv8rsmKj/",
+    city: "Konitsa",
+    country: "Greece"
+  },
+  {
+    lat: 1.2869,
+    lng: 103.8547,
+    title: "Singapore Free Walking Tour",
+    description: "A recommended free walking tour in Singapore, titled 'Stroll through the Past, Present & Future of Singapore' by Stephen via GuruWalk. The guide is described as knowledgeable, funny, and able to make history engaging and conversational. The experience includes relaxing on the grass, enjoying ice cream, and connecting with new friends, offering a mix of stories, laughter, and calm moments in the heart of the city. The tour is highly rated by participants.",
+    date: "2025-04",
+    instagramPostId: "DKklDwjM9oK",
+    instagramUrl: "https://www.instagram.com/p/DKklDwjM9oK/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+
+  {
+    lat: 1.2869,
+    lng: 103.8545,
+    title: "Singapore Free Walking Tour",
+    description: "A recommended free walking tour in Singapore, titled 'Stroll through the Past, Present & Future of Singapore' by Stephen via GuruWalk. The guide is described as knowledgeable, funny, and able to make history engaging and conversational. The experience includes relaxing on the grass, enjoying ice cream, and connecting with new friends, offering a mix of stories, laughter, and calm moments in the heart of the city. The tour is highly rated by participants.",
+    date: "2025-04",
+    instagramPostId: "DKkS1OhspIN",
+    instagramUrl: "https://www.instagram.com/p/DKkS1OhspIN/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+
+  {
+    lat: 21.0297,
+    lng: 105.8417,
+    title: "Hanoi Train Street",
+    description: "Hanoi Train Street is a famous narrow alley in the heart of Hanoi’s Old Quarter where trains pass just inches from tightly packed homes, cafés, and shops. Dating back to the early 20th century, this unique street runs between Phung Hung and Tran Phu streets, as well as Le Duan and Kham Thien streets, offering a thrilling and photogenic experience as trains rumble through several times a day. As of February 2025, visitors can freely walk along the tracks without needing an invitation from a café, but are still encouraged to order something if they wish to stay and watch the trains. The lively atmosphere, local charm, and proximity to Hanoi’s main attractions make it a must-visit spot for travelers.",
+    date: "2025-04",
+    instagramPostId: "DKhS7Pjo74h",
+    instagramUrl: "https://www.instagram.com/p/DKhS7Pjo74h/",
     city: "Hanoi",
     country: "Vietnam"
   },
   {
-    lat: 52.3676,
-    lng: 4.9041,
-    title: "Amsterdam Canals 🚲",
-    description: "Cycling through the beautiful canals and discovering hidden gems in Amsterdam!",
-    date: "2024",
-    instagramPostId: "DHuAEdRMJWv", // This matches your second post
-    instagramUrl: "https://www.instagram.com/p/DHuAEdRMJWv/",
-    city: "Amsterdam",
-    country: "Netherlands"
+    lat: 21.0297,
+    lng: 105.8419,
+    title: "Hanoi Train Street",
+    description: "Hanoi Train Street is a famous narrow alley in the heart of Hanoi’s Old Quarter where trains pass just inches from tightly packed homes, cafés, and shops. Dating back to the early 20th century, this unique street runs between Phung Hung and Tran Phu streets, as well as Le Duan and Kham Thien streets, offering a thrilling and photogenic experience as trains rumble through several times a day. As of February 2025, visitors can freely walk along the tracks without needing an invitation from a café, but are still encouraged to order something if they wish to stay and watch the trains. The lively atmosphere, local charm, and proximity to Hanoi’s main attractions make it a must-visit spot for travelers.",
+    date: "2025-04",
+    instagramPostId: "DKhKyAkMInA",
+    instagramUrl: "https://www.instagram.com/p/DKhKyAkMInA/",
+    city: "Hanoi",
+    country: "Vietnam"
   },
+
   {
-    lat: 48.8566,
-    lng: 2.3522,
-    title: "Paris Adventures 🗼",
-    description: "City of lights and endless inspiration - from the Eiffel Tower to hidden bistros!",
-    date: "2024",
-    instagramPostId: "DGuyZCVMAj7", // This matches your third post
-    instagramUrl: "https://www.instagram.com/p/DGuyZCVMAj7/",
-    city: "Paris",
-    country: "France"
-  }
+    lat: 20.6700,
+    lng: 105.2500,
+    title: "Da Bia Lake, Vietnam",
+    description: "Da Bia Lake, located in Hoa Binh province, northern Vietnam, is a tranquil reservoir surrounded by lush mountains and home to several peaceful Muong ethnic minority villages. Life here flows with the rhythm of the water: there are no roads or cars, only floating homes and calm waters, with supply boats arriving every few days to bring essentials. The area is known for its authentic community-based tourism, offering homestays in traditional stilt houses, boat trips, and opportunities to volunteer and connect with local culture. Visitors are drawn to Da Bia for its serene natural beauty, simplicity, and the harmony between people and nature.",
+    date: "2025-04",
+    instagramPostId: "DKajRN1swYJ",
+    instagramUrl: "https://www.instagram.com/p/DKajRN1swYJ/",
+    city: "Da Bac",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 20.6700,
+    lng: 105.2503,
+    title: "Da Bia Lake, Vietnam",
+    description: "Da Bia Lake, located in Hoa Binh province, northern Vietnam, is a tranquil reservoir surrounded by lush mountains and home to several peaceful Muong ethnic minority villages. Life here flows with the rhythm of the water: there are no roads or cars, only floating homes and calm waters, with supply boats arriving every few days to bring essentials. The area is known for its authentic community-based tourism, offering homestays in traditional stilt houses, boat trips, and opportunities to volunteer and connect with local culture. Visitors are drawn to Da Bia for its serene natural beauty, simplicity, and the harmony between people and nature.",
+    date: "2025-04",
+    instagramPostId: "DKagLYZsEcb",
+    instagramUrl: "https://www.instagram.com/p/DKagLYZsEcb/",
+    city: "Da Bac",
+    country: "Vietnam"
+  },
+
+
+
+
+
+
 ];
 
 // Initialize the map
@@ -289,7 +343,7 @@ if (myTravelPosts.length > 0) {
   
 
 
-## Travel Gallery {#travel-gallery}
+<!-- ## Travel Gallery {#travel-gallery} -->
 
 <div class="travel-gallery">
   {% for travel in site.travelling %}
@@ -305,7 +359,7 @@ if (myTravelPosts.length > 0) {
 
 
 
-## Travel Archive {#travel-archive}
+<!-- ## Travel Archive {#travel-archive} -->
 
 <div class="travel-archive">
   <h3 id="all-destinations">All Destinations</h3>

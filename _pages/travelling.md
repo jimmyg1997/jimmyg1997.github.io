@@ -300,8 +300,8 @@ if (myTravelPosts.length > 0) {
     <div class="travel-content">
       <h3>Easter in Vietnam</h3>
       <p class="travel-date">April 2025</p>
-      <p>My experience in the northen part of the beautiful country of Vietnam</p>
-      <a href=""  class="btn btn--primary btn--small" target="_blank">View Vietnam photos </a>
+      <p>My volunteering experience with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
+      <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
     </div>
   </div>
 

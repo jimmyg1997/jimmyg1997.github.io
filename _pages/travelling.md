@@ -429,7 +429,234 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DJZhMnFs_IV/",
     city: "Athens",
     country: "Greece"
+  },
+
+  {
+    lat: 20.6700,
+    lng: 105.2540,
+    title: "𝐃𝐚𝐲 𝟏 – 𝐖𝐞’𝐯𝐞 𝐀𝐫𝐫𝐢𝐯𝐞𝐝! 🇻🇳🌿",
+    description: "Our journey began as we all gathered in Hanoi, buzzing with energy and excitement! 🧡 After preparing our things, we hopped on a 4-hour bus ride to 𝘋𝘢 𝘉𝘪𝘢 𝘙𝘪𝘷𝘦𝘳. The landscapes were breathtaking — green mountains, peaceful waters — and plenty of bonding time with games and laughter on the way 🎲🚌. We arrived at the community that will be our home for the next 7 days. The locals greeted us with delicious food 🍲, and we explored the area and the lake nearby 🌄. We’re now settled into 3 cozy guesthouses, all 30 of us ready to dive into this experience. We ended the night with our first 𝘤𝘪𝘳𝘤𝘭𝘦 𝘰𝘧 𝘨𝘳𝘢𝘵𝘦𝘧𝘶𝘭𝘯𝘦𝘴𝘴, a core tradition of @wheeling2help 🙏 — grounding ourselves in community, purpose, and connection.",
+    date: "2025.04",
+    instagramPostId: "DJXmZ-5sLTg",
+    instagramUrl: "https://www.instagram.com/p/DJXmZ-5sLTg/",
+    city: "Da Bac",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 20.6700,
+    lng: 105.2560,
+    title: "𝐃𝐚𝐲 𝟏 – 𝐖𝐞’𝐯𝐞 𝐀𝐫𝐫𝐢𝐯𝐞𝐝! 🇻🇳🌿",
+    description: "Our journey began as we all gathered in Hanoi, buzzing with energy and excitement! 🧡 After preparing our things, we hopped on a 4-hour bus ride to 𝘋𝘢 𝘉𝘪𝘢 𝘙𝘪𝘷𝘦𝘳. The landscapes were breathtaking — green mountains, peaceful waters — and plenty of bonding time with games and laughter on the way 🎲🚌. We arrived at the community that will be our home for the next 7 days. The locals greeted us with delicious food 🍲, and we explored the area and the lake nearby 🌄. We’re now settled into 3 cozy guesthouses, all 30 of us ready to dive into this experience. We ended the night with our first 𝘤𝘪𝘳𝘤𝘭𝘦 𝘰𝘧 𝘨𝘳𝘢𝘵𝘦𝘧𝘶𝘭𝘯𝘦𝘴𝘴, a core tradition of @wheeling2help 🙏 — grounding ourselves in community, purpose, and connection.",
+    date: "2025.04",
+    instagramPostId: "DJXlBkYszQY",
+    instagramUrl: "https://www.instagram.com/p/DJXlBkYszQY/",
+    city: "Da Bac",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 20.9500,  // Approximate latitude for Ha Long Bay, Vietnam
+    lng: 107.0873, // Approximate longitude for Ha Long Bay, Vietnam
+    title: "𝐕𝐢𝐞𝐭𝐧𝐚𝐦, 𝐲𝐨𝐮 𝐦𝐚𝐬𝐭𝐞𝐫𝐩𝐢𝐞𝐜𝐞 𝐨𝐟 𝐧𝐚𝐭𝐮𝐫𝐞",
+    description: "Had the most unforgettable day cruising through Ha Long Bay — one of the true wonders of Vietnam! From appreciating calm emerald waters, exploring epic caves, hiking peaks with jaw-dropping views, to watching the sun melt into the sea with a glass of wine in hand — this was a dream come true. Here's what was packed into this amazing day: pearl workshop, tasty lunch with vegetarian and fish options onboard, Sung Sot cave visit, speed boat ride, island hike with a chill at the beach below, and a sunset party with wine, fruit, and good vibes on deck. All of it for just €38.53!",
+    date: "2025.04",
+    instagramPostId: "DJSFrIusYii",
+    instagramUrl: "https://instagram.com/p/DJSFrIusYii/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+  {
+    lat: 1.2494,
+    lng: 103.8303,
+    title: "Sentosa Island – Singapore’s Playground Paradise",
+    description: "Sentosa Island is Singapore’s ultimate leisure and adventure destination, offering a blend of sun-soaked beaches, thrilling attractions, and lush greenery just minutes from the city center. Known for its world-class resorts, Universal Studios Singapore, S.E.A. Aquarium, and vibrant beach clubs, Sentosa is perfect for families, couples, and solo travelers alike. The island’s seamless blend of relaxation and excitement, from tranquil coastal walks to adrenaline-pumping rides, makes it a must-visit for anyone seeking fun and unforgettable experiences in Singapore.",
+    date: "2025.04",
+    instagramPostId: "DJRTD99sCnI",
+    instagramUrl: "https://www.instagram.com/p/DJRTD99sCnI/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+
+  {
+    lat: 1.2864,
+    lng: 103.8531,
+    title: "Singapore – The Futuristic Garden City",
+    description: "Singapore’s most central point lies in the heart of the Downtown Core, where the city’s iconic skyline, vibrant culture, and lush green spaces converge. Surrounded by landmarks like Marina Bay Sands, Gardens by the Bay, and the Singapore River, this area epitomizes the city’s blend of ultra-modern architecture and natural beauty. Every corner is spotless, efficient, and full of surprises, with Michelin-level street food, world-class shopping, and a seamless mix of cultures. Whether you’re marveling at the skyline from a lotus pond or exploring the bustling streets, central Singapore is a must for every traveler’s bucket list.",
+    date: "2025.04",
+    instagramPostId: "DJRR3ZGsQM0",
+    instagramUrl: "https://www.instagram.com/p/DJRR3ZGsQM0/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 20.2500,
+    lng: 105.9740,
+    title: "Vietnamese Boat Rowers of Trang An, Ninh Binh",
+    description: "In Ninh Binh’s UNESCO-listed Trang An Scenic Landscape Complex, local boat rowers—often women—are the heart of the experience, expertly guiding visitors through winding waterways surrounded by towering limestone karsts and lush greenery. These skilled rowers, sometimes using their feet to paddle, embody the region’s deep connection to the river and its traditions. Wearing iconic conical hats, they navigate tranquil rivers and hidden grottoes, sharing stories about local life and the natural wonders of ‘Ha Long Bay on Land.’ A boat tour here is not just a journey through breathtaking scenery, but also a cultural encounter with the people who call this magical landscape home.",
+    date: "2025.04",
+    instagramPostId: "DJOVtjrs6Ck",
+    instagramUrl: "https://www.instagram.com/p/DJOVtjrs6Ck/",
+    city: "Ninh Binh",
+    country: "Vietnam"
+  },
+  {
+    lat: 46.5057,
+    lng: 6.6846,
+    title: "Lutry, Switzerland – Lakeside Serenity",
+    description: "Lutry, Switzerland, is a peaceful lakeside town celebrated for its cobblestone streets, charming atmosphere, and stunning views of Lake Geneva. Visitors are drawn to its tranquil ambiance, scenic promenades, and the pure serenity that surrounds the waterfront. Lutry is one of those hidden gems you never forget, offering a blend of picturesque landscapes and authentic Swiss charm, just a short distance from Geneva.",
+    date: "2025.03",
+    instagramPostId: "DJK6qLfo2ro",
+    instagramUrl: "https://www.instagram.com/p/DJK6qLfo2ro/",
+    city: "Lutry",
+    country: "Switzerland"
+  },
+  {
+    lat: 46.5057,
+    lng: 6.6866,
+    title: "Lutry, Switzerland – Lakeside Serenity",
+    description: "Lutry, Switzerland, is a peaceful lakeside town celebrated for its cobblestone streets, charming atmosphere, and stunning views of Lake Geneva. Visitors are drawn to its tranquil ambiance, scenic promenades, and the pure serenity that surrounds the waterfront. Lutry is one of those hidden gems you never forget, offering a blend of picturesque landscapes and authentic Swiss charm, just a short distance from Geneva.",
+    date: "2025.03",
+    instagramPostId: "DJJ5zgzMqcd",
+    instagramUrl: "https://www.instagram.com/p/DJJ5zgzMqcd/",
+    city: "Lutry",
+    country: "Switzerland"
+  },
+  {
+    lat: 21.0389,
+    lng: 105.8342,
+    title: "Vietnamese People – Part 1 at the Presidential Palace, Hanoi",
+    description: "From the warm smiles to the strong community spirit, the people of Vietnam leave a lasting impression. Captured in front of the iconic Presidential Palace in Hanoi, this scene reflects the kindness and unity that define the country. The Presidential Palace, a stunning example of French colonial architecture surrounded by lush gardens, stands as a symbol of both Vietnam’s history and its vibrant present. Located in Ba Dinh district near the Ho Chi Minh Mausoleum, the palace grounds are a popular gathering spot for families and visitors, making it an ideal place to experience the heart of Vietnamese culture.",
+    date: "2024-Present",
+    instagramPostId: "DJJ2JJSsFfI",
+    instagramUrl: "https://www.instagram.com/p/DJJ2JJSsFfI/",
+    city: "Hanoi",
+    country: "Vietnam"
+  },
+  {
+    lat: 46.3833,
+    lng: 6.2333,
+    title: "Nyon – Roman Ruins and Lakeside Charm",
+    description: "Nyon, Switzerland, is a picturesque town on the shores of Lake Geneva, celebrated for its deep Roman roots, charming old town, and vibrant cultural scene. Strolling through Nyon reveals Roman ruins scattered across the town, including impressive columns and archaeological sites that recall its history as the Roman colony Colonia Iulia Equestris. The lakeside promenade offers stunning views of Lake Geneva and the Alps, while the uphill walk to Château de Nyon rewards visitors with panoramic vistas. Nyon is also known for its lively festivals, such as the renowned Paleo Festival, and its cozy cafés like Café Jayko. Whether exploring ancient history, relaxing by the water, or enjoying local events, Nyon promises a delightful blend of culture, nature, and Swiss hospitality.",
+    date: "2025.03",
+    instagramPostId: "DJGym-dMdK9",
+    instagramUrl: "https://www.instagram.com/p/DJGym-dMdK9/",
+    city: "Nyon",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.3833,
+    lng: 6.2353,
+    title: "Nyon – Roman Ruins and Lakeside Charm",
+    description: "Nyon, Switzerland, is a picturesque town on the shores of Lake Geneva, celebrated for its deep Roman roots, charming old town, and vibrant cultural scene. Strolling through Nyon reveals Roman ruins scattered across the town, including impressive columns and archaeological sites that recall its history as the Roman colony Colonia Iulia Equestris. The lakeside promenade offers stunning views of Lake Geneva and the Alps, while the uphill walk to Château de Nyon rewards visitors with panoramic vistas. Nyon is also known for its lively festivals, such as the renowned Paleo Festival, and its cozy cafés like Café Jayko. Whether exploring ancient history, relaxing by the water, or enjoying local events, Nyon promises a delightful blend of culture, nature, and Swiss hospitality.",
+    date: "2025.03",
+    instagramPostId: "DJGwrqkszM-",
+    instagramUrl: "https://www.instagram.com/p/DJGwrqkszM-/",
+    city: "Nyon",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.5197,
+    lng: 6.6323,
+    title: "Exploring Lausanne – Part 1",
+    description: "Lausanne, perched on the shores of Lake Geneva and framed by the Alps, is a city bursting with photogenic spots and vibrant culture. Highlights include the Olympic Games Museum surroundings, golden hour walks by the lake in Ouchy, lively pizzerias and coffee festivals, the iconic Pont Bessières offering spectacular city views, and the majestic Lausanne Cathedral at the end of the bridge. From charming old town alleys to panoramic lake vistas, Lausanne is a paradise for city walks, history lovers, and Instagrammers alike.",
+    date: "2025.03",
+    instagramPostId: "DJFpbhos9jX",
+    instagramUrl: "https://www.instagram.com/p/DJFpbhos9jX/",
+    city: "Lausanne",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.5197,
+    lng: 6.6353,
+    title: "Exploring Lausanne – Part 1",
+    description: "Lausanne, perched on the shores of Lake Geneva and framed by the Alps, is a city bursting with photogenic spots and vibrant culture. Highlights include the Olympic Games Museum surroundings, golden hour walks by the lake in Ouchy, lively pizzerias and coffee festivals, the iconic Pont Bessières offering spectacular city views, and the majestic Lausanne Cathedral at the end of the bridge. From charming old town alleys to panoramic lake vistas, Lausanne is a paradise for city walks, history lovers, and Instagrammers alike.",
+    date: "2025.03",
+    instagramPostId: "DJFoV3PMUWs",
+    instagramUrl: "https://www.instagram.com/p/DJFoV3PMUWs/",
+    city: "Lausanne",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 45.8992,
+    lng: 6.1286,
+    title: "Pont des Amours & Lake Views, Annecy",
+    description: "Annecy, France, charms visitors with its stunning lake views—clear water, a dramatic mountain backdrop, and the romantic Pont des Amours bridge adorned with love locks. The city is famed for its cheese fondue, colorful old town architecture with canals and bridges, and a relaxed, photogenic vibe. Annecy is perfect for walking, exploring local markets, small shops, and quiet streets, with plenty of gelato stops along the way. Whether you’re after a slow day outdoors or a taste of Savoie culture, Annecy is a top destination for friends and travelers seeking beauty and tranquility.",
+    date: "2025.03",
+    instagramPostId: "DJFaRqmM81-",
+    instagramUrl: "https://www.instagram.com/p/DJFaRqmM81-/",
+    city: "Annecy",
+    country: "France"
+  },
+
+  {
+    lat: 45.8992,
+    lng: 6.1266,
+    title: "Pont des Amours & Lake Views, Annecy",
+    description: "Annecy, France, charms visitors with its stunning lake views—clear water, a dramatic mountain backdrop, and the romantic Pont des Amours bridge adorned with love locks. The city is famed for its cheese fondue, colorful old town architecture with canals and bridges, and a relaxed, photogenic vibe. Annecy is perfect for walking, exploring local markets, small shops, and quiet streets, with plenty of gelato stops along the way. Whether you’re after a slow day outdoors or a taste of Savoie culture, Annecy is a top destination for friends and travelers seeking beauty and tranquility.",
+    date: "2025.03",
+    instagramPostId: "DJFZ3_Ns09h",
+    instagramUrl: "https://www.instagram.com/p/DJFZ3_Ns09h/",
+    city: "Annecy",
+    country: "France"
+  },
+
+  {
+    lat: 9.6566,
+    lng: -82.7546,
+    title: "Puerto Viejo Main Street – Souvenirs and Local Vibes",
+    description: "Puerto Viejo’s main street is the vibrant heart of this laid-back Caribbean beach town in Costa Rica. Packed with souvenir shops, tattoo studios, braiding stalls, and colorful local businesses, it’s the go-to spot for travelers looking for unique keepsakes and authentic experiences. From handmade crafts and traditional braids to adventurous tattoos, the main street buzzes with energy day and night. The area is easily walkable, lined with restaurants, bars, and the sounds of reggae, making it a must-visit for anyone wanting to soak up the local culture and take home a memorable souvenir.",
+    date: "2025.01",
+    instagramPostId: "DJFW6zVM3jY",
+    instagramUrl: "https://www.instagram.com/p/DJFW6zVM3jY/",
+    city: "Puerto Viejo de Talamanca",
+    country: "Costa Rica" 
+  },
+  {
+    lat: 20.6896,
+    lng: -88.2016,
+    title: "Valladolid – Colorful Streets & Mayan Culture",
+    description: "Valladolid, Mexico, is a vibrant colonial city in the Yucatán Peninsula known for its pastel-colored streets, rich Mayan heritage, and laid-back atmosphere. The city’s main avenues, like Calzada de los Frailes, are filled with photogenic houses, artisan shops, and street stalls offering everything from handmade crafts to traditional braids and tattoos. Valladolid is also famous for its proximity to iconic cenotes such as Cenote Suytun and Cenote Xkeken, and for being a gateway to Chichen Itza. Whether you’re strolling past the colorful Valladolid letters in Parque Sisal, sampling authentic tacos, or exploring the local art scene at Casa de los Venados, Valladolid offers a unique blend of culture, history, and Instagram-worthy experiences.",
+    date: "2025.01",
+    instagramPostId: "DJFW6zVM3jY",
+    instagramUrl: "https://www.instagram.com/p/DJFW6zVM3jY/",
+    city: "Valladolid",
+    country: "Mexico"
+  },
+  {
+    lat: 41.9400,
+    lng: 21.3000,
+    title: "Matka Canyon – North Macedonia’s Natural Wonder",
+    description: "Matka Canyon, located just 17 km west of Skopje, is North Macedonia’s premier outdoor destination, celebrated for its dramatic cliffs, emerald waters, and diverse flora and fauna. The canyon features the oldest artificial lake in the country, created by a dam on the Treska River, and offers a wealth of activities: kayaking, boat tours to the famed Vrelo Cave (one of the world’s deepest underwater caves), hiking scenic trails, and exploring medieval monasteries like St. Andrew’s and St. Nicholas Šiševski. With over 5,000 hectares of protected landscape, Matka Canyon is a haven for nature lovers, adventure seekers, and anyone looking to escape the city for breathtaking views, serene waters, and a glimpse into North Macedonia’s natural and cultural heritage.",
+    date: "2025.01",
+    instagramPostId: "DJFGURIseLz",
+    instagramUrl: "https://www.instagram.com/p/DJFGURIseLz/",
+    city: "Skopje",
+    country: "North Macedonia"
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

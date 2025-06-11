@@ -206,6 +206,108 @@ const myTravelPosts = [
     city: "Singapore",
     country: "Singapore"
   },
+  {
+    lat: 50.0586,
+    lng: 19.9117,
+    title: "Cracow Coffee Festival at Hala Cracovia",
+    description: "The Cracow Coffee Festival at Hala Cracovia is a vibrant event in Kraków, Poland, celebrating coffee culture with a wide array of international coffee blends, including Turkish coffee, and an impressive selection of food stalls. Visitors can enjoy cakes, special teas, Polish and Georgian treats, sushi, Japanese cuisine, and quirky collectibles. The festival features dozens of exhibitors, live events, a chillout zone, and opportunities to learn about coffee brewing and tasting. Hosted at Hala Cracovia, a modern, accessible event venue at Aleja Marszałka Ferdinanda Focha 40, the festival draws coffee lovers, foodies, and families for a unique and aromatic experience.",
+    date: "2025.03",
+    instagramPostId: "DKVDl68symH",
+    instagramUrl: "https://www.instagram.com/p/DKVDl68symH/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.0586,
+    lng: 19.9130,
+    title: "Cracow Coffee Festival at Hala Cracovia",
+    description: "The Cracow Coffee Festival at Hala Cracovia is a vibrant event in Kraków, Poland, celebrating coffee culture with a wide array of international coffee blends, including Turkish coffee, and an impressive selection of food stalls. Visitors can enjoy cakes, special teas, Polish and Georgian treats, sushi, Japanese cuisine, and quirky collectibles. The festival features dozens of exhibitors, live events, a chillout zone, and opportunities to learn about coffee brewing and tasting. Hosted at Hala Cracovia, a modern, accessible event venue at Aleja Marszałka Ferdinanda Focha 40, the festival draws coffee lovers, foodies, and families for a unique and aromatic experience.",
+    date: "2025.03",
+    instagramPostId: "DKU_sHWMb9h",
+    instagramUrl: "https://www.instagram.com/p/DKU_sHWMb9h/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 1.2731,
+    lng: 103.8176,
+    title: "Singapore Cable Car – Mount Faber Station",
+    description: "The Singapore Cable Car offers a unique aerial journey connecting mainland Singapore to Sentosa Island, starting from the scenic Mount Faber Station. This iconic ride provides unlimited trips with a single ticket, allowing visitors to enjoy jaw-dropping views of the city skyline, lush jungle, and the sea. The cable car is rainproof, cozy, and perfect for dates, solo adventures, or family fun. Highlights include access to both Sentosa Island and Mount Faber, panoramic vistas, and a memorable, value-packed experience that’s more than just transportation—it's an adventure above the city.",
+    date: "2025.04",
+    instagramPostId: "DJ_8DWqMG-j",
+    instagramUrl: "https://www.instagram.com/p/DJ_8DWqMG-j/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+
+  {
+    lat: 1.2731,
+    lng: 103.8190,
+    title: "Singapore Cable Car – Mount Faber Station",
+    description: "The Singapore Cable Car offers a unique aerial journey connecting mainland Singapore to Sentosa Island, starting from the scenic Mount Faber Station. This iconic ride provides unlimited trips with a single ticket, allowing visitors to enjoy jaw-dropping views of the city skyline, lush jungle, and the sea. The cable car is rainproof, cozy, and perfect for dates, solo adventures, or family fun. Highlights include access to both Sentosa Island and Mount Faber, panoramic vistas, and a memorable, value-packed experience that’s more than just transportation—it's an adventure above the city.",
+    date: "2025.04",
+    instagramPostId: "DJ_6OqvMaP0",
+    instagramUrl: "https://www.instagram.com/p/DJ_6OqvMaP0/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+
+  {
+    lat: 46.9481,
+    lng: 7.4474,
+    title: "Exploring Bern, Switzerland",
+    description: "Bern, the capital of Switzerland, feels like a living storybook—calm, beautiful, and full of charm. The city’s UNESCO-listed Old Town is famous for its medieval arcades, quirky fountains and statues, and the iconic Zytglogge astronomical clock. Strolling through Bern, you’ll discover panoramic views from the Rose Garden, picturesque bridges like the Nydeggbrücke over the turquoise River Aare, and a backdrop of mountains and rooftops in one frame. Bern’s blend of history, nature, and relaxed vibes makes it a must-visit for those who love scenic walks, architecture, and peaceful city experiences.",
+    date: "2025.03",
+    instagramPostId: "DJ_yCFZMBE",
+    instagramUrl: "https://www.instagram.com/p/DJ_yCFZMBE/",
+    city: "Bern",
+    country: "Switzerland"
+  },
+  {
+    lat: 46.9481,
+    lng: 7.4490,
+    title: "Exploring Bern, Switzerland",
+    description: "Bern, the capital of Switzerland, feels like a living storybook—calm, beautiful, and full of charm. The city’s UNESCO-listed Old Town is famous for its medieval arcades, quirky fountains and statues, and the iconic Zytglogge astronomical clock. Strolling through Bern, you’ll discover panoramic views from the Rose Garden, picturesque bridges like the Nydeggbrücke over the turquoise River Aare, and a backdrop of mountains and rooftops in one frame. Bern’s blend of history, nature, and relaxed vibes makes it a must-visit for those who love scenic walks, architecture, and peaceful city experiences.",
+    date: "2025.03",
+    instagramPostId: "DJ_ysXlMNjw",
+    instagramUrl: "https://www.instagram.com/p/DJ_ysXlMNjw/",
+    city: "Bern",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.2074,
+    lng: 6.1550,
+    title: "Jet d’Eau, Geneva",
+    description: "The Jet d’Eau in Geneva is one of the world’s tallest fountains and a powerful symbol of the city. Shooting water 140 meters (459 feet) high at a speed of 200 km/h (124 mph), it propels 500 liters per second—about the volume of a bathtub every second. Originally built in 1886 as a pressure release valve for a hydraulic plant, it became a permanent landmark in 1891 and reached its current height in 1951. The fountain is illuminated at night and can be seen from up to 10 kilometers away. Visitors can approach it via a stone pier, but should be mindful of sudden wind shifts that can cause a soaking. The Jet d’Eau is not just an engineering marvel, but also a glowing centerpiece of Geneva’s harbor and skyline.",
+    date: "2025.03",
+    instagramPostId: "DJ8z51wsLpe",
+    instagramUrl: "https://www.instagram.com/p/DJ8z51wsLpe/",
+    city: "Geneva",
+    country: "Switzerland"
+  },
+  {
+    lat: 46.2044,
+    lng: 6.1432,
+    title: "Pont du Mont-Blanc, Geneva",
+    description: "Pont du Mont-Blanc is one of Geneva’s most iconic bridges, spanning the Rhône River at the point where it flows out of Lake Geneva. Lined with Swiss and cantonal flags, the bridge offers picturesque views of the city’s elegant architecture and the surrounding Alps. It’s a popular spot for scenic walks and photography, connecting the historic Old Town with Geneva’s modern neighborhoods. From here, visitors can enjoy close proximity to the city’s landmarks, including the famous Jet d’Eau fountain, luxury shops, and lakeside promenades. The bridge embodies Geneva’s cosmopolitan spirit and is a must-see for anyone exploring Switzerland’s second-largest city.",
+    date: "2025.03",
+    instagramPostId: "DJ8wVrSMWvL",
+    instagramUrl: "https://www.instagram.com/p/DJ8wVrSMWvL/",
+    city: "Geneva",
+    country: "Switzerland"
+  },
+
+
+
+
+
+
+
+
+  
 
 ];
 

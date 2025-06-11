@@ -781,7 +781,7 @@ if (myTravelPosts.length > 0) {
 <div class="recent-travels">
   <div class="travel-card" id="vietnam-2025">
     <div class="travel-image">
-      <img src="/assets/images/travel/vietnam-2025.jpg" alt="Northen Vietnam">
+      <img src="/assets/images/travel/vietnam-2025.png" alt="Northen Vietnam">
     </div>
     <div class="travel-content">
       <h3>Easter in Vietnam</h3>

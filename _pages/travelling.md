@@ -236,8 +236,8 @@ const myTravelPosts = [
     title: "Singapore Cable Car – Mount Faber Station",
     description: "The Singapore Cable Car offers a unique aerial journey connecting mainland Singapore to Sentosa Island, starting from the scenic Mount Faber Station. This iconic ride provides unlimited trips with a single ticket, allowing visitors to enjoy jaw-dropping views of the city skyline, lush jungle, and the sea. The cable car is rainproof, cozy, and perfect for dates, solo adventures, or family fun. Highlights include access to both Sentosa Island and Mount Faber, panoramic vistas, and a memorable, value-packed experience that’s more than just transportation—it's an adventure above the city.",
     date: "2025.04",
-    instagramPostId: "DJ_8DWqMG-j",
-    instagramUrl: "https://www.instagram.com/p/DJ_8DWqMG-j/",
+    instagramPostId: "DJ_8DWqMG-i",
+    instagramUrl: "https://www.instagram.com/p/DJ_8DWqMG-i/",
     city: "Singapore",
     country: "Singapore"
   },
@@ -299,6 +299,145 @@ const myTravelPosts = [
     city: "Geneva",
     country: "Switzerland"
   },
+
+  {
+    lat: 20.6700,
+    lng: 105.2500,
+    title: "MyQuestVietnam – Volunteering in Da Bia Village",
+    description: "Da Bia Village, nestled on the edge of Hoa Binh Lake in northern Vietnam, is home to the Muong Ao Ta ethnic community and renowned for its serene landscape, floating houses, and rich cultural traditions. As part of the MyQuestVietnam experience, volunteers help with community projects such as building drainage paths and cozy sitting areas under traditional stilt houses. The village offers a unique glimpse into rural Vietnamese life, with locals fishing, carrying baskets, and always ready with a smile. Evenings are filled with music, group dances, and lakeside relaxation after a day's work. Da Bia is celebrated for its self-service stalls, authentic homestays, and a strong sense of trust and community, making it a model for sustainable tourism and a recipient of the ASEAN Community Tourism Award.",
+    date: "2025.04",
+    instagramPostId: "DJy9UFGsJc9",
+    instagramUrl: "https://www.instagram.com/p/DJy9UFGsJc9/",
+    city: "Da Bia",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 20.6700,
+    lng: 105.252,
+    title: "MyQuestVietnam – Volunteering in Da Bia Village",
+    description: "Da Bia Village, nestled on the edge of Hoa Binh Lake in northern Vietnam, is home to the Muong Ao Ta ethnic community and renowned for its serene landscape, floating houses, and rich cultural traditions. As part of the MyQuestVietnam experience, volunteers help with community projects such as building drainage paths and cozy sitting areas under traditional stilt houses. The village offers a unique glimpse into rural Vietnamese life, with locals fishing, carrying baskets, and always ready with a smile. Evenings are filled with music, group dances, and lakeside relaxation after a day's work. Da Bia is celebrated for its self-service stalls, authentic homestays, and a strong sense of trust and community, making it a model for sustainable tourism and a recipient of the ASEAN Community Tourism Award.",
+    date: "2025.04",
+    instagramPostId: "DJy2_vPMFsD",
+    instagramUrl: "https://www.instagram.com/p/DJy2_vPMFsD/",
+    city: "Da Bia",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 46.2342,
+    lng: 6.0528,
+    title: "Exploring the Frontiers of Physics at CERN",
+    description: "CERN, the European Organization for Nuclear Research, is the world's largest particle physics laboratory, located in Meyrin near Geneva on the Franco–Swiss border. A visit to CERN offers a deep dive into cutting-edge research on the fundamental structure of the universe. Highlights include witnessing antimatter experiments that explore why our universe is predominantly matter, touring the vast Data Centre with over 10,000 servers and 450,000 processor cores, and learning about the LEIR and LINAC2 accelerators, which have played pivotal roles in decades of groundbreaking experiments. CERN is not only a hub for Nobel Prize-winning discoveries and technological innovation, such as the invention of the World Wide Web, but also a symbol of international scientific collaboration and open knowledge.",
+    date: "2025.03",
+    instagramPostId: "DJjXMNYMMJN",
+    instagramUrl: "https://www.instagram.com/p/DJjXMNYMMJN/",
+    city: "Meyrin",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 50.0702,
+    lng: 19.9562,
+    title: "MuFo Café at the Museum of Photography in Krakow",
+    description: "MuFo Café, located within the main building of the Museum of Photography (MuFo) at Rakowicka 22A in Kraków, is a stylish spot to relax with a coffee before or after exploring the museum’s acclaimed exhibitions. The café sits opposite the bookstore, just before the exhibition entrance, and offers a calm, modern atmosphere for visitors. MuFo itself is Poland’s only museum entirely dedicated to photography, featuring a rich collection and innovative exhibitions like 'Co robi zdjęcie?' that explore the history and future of the medium. The café is open during museum hours and is part of a cultural hub that includes a library, bookstore, and educational spaces, making it a favorite for locals and travelers seeking inspiration and a break from city life.",
+    date: "2025.03",
+    instagramPostId: "DJhV5P3s2jJ",
+    instagramUrl: "https://www.instagram.com/p/DJhV5P3s2jJ/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 46.5833,
+    lng: 7.0833,
+    title: "Gruyères – Fairytale Streets and Swiss Cheese",
+    description: "Gruyères, Switzerland, enchants with its fairytale streets, castle vibes, and world-famous cheese and wine. The medieval village is deliciously scenic, inviting visitors to wander, eat, sip, and soak in the charming atmosphere. From cobblestone lanes to the iconic Gruyères Castle, every corner feels like a storybook come to life—especially when enjoyed with next-level Gruyère cheese and local wine.",
+    date: "2025.03",
+    instagramPostId: "DJey9IhMCAI",
+    instagramUrl: "https://www.instagram.com/p/DJey9IhMCAI/",
+    city: "Gruyères",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.5833,
+    lng: 7.0853,
+    title: "Gruyères – Fairytale Streets and Swiss Cheese",
+    description: "Gruyères, Switzerland, enchants with its fairytale streets, castle vibes, and world-famous cheese and wine. The medieval village is deliciously scenic, inviting visitors to wander, eat, sip, and soak in the charming atmosphere. From cobblestone lanes to the iconic Gruyères Castle, every corner feels like a storybook come to life—especially when enjoyed with next-level Gruyère cheese and local wine.",
+    date: "2025.03",
+    instagramPostId: "DJexou5MgIW",
+    instagramUrl: "https://www.instagram.com/p/DJexou5MgIW/",
+    city: "Gruyères",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 37.9757,
+    lng: 23.7392,
+    title: "Sunset from Lycabettus Hill, Athens",
+    description: "Lycabettus Hill, the highest point in central Athens at nearly 300 meters above sea level, is renowned for its breathtaking panoramic views of the city, especially at sunset. Covered in lush pine trees and crowned by the charming whitewashed chapel of St. George, the hill is a favorite spot for both locals and travelers seeking a peaceful retreat from the city bustle. Visitors can ascend by foot, funicular, or taxi (partway), and at the summit, enjoy not only the sweeping vistas of the Acropolis and the Aegean Sea but also cafés and restaurants perfect for relaxing as the city lights come alive. Lycabettus Hill is an iconic destination for unforgettable moments and stunning photography in Athens.",
+    date: "2025.02",
+    instagramPostId: "DJcovQHssNd",
+    instagramUrl: "https://www.instagram.com/p/DJcovQHssNd/",
+    city: "Athens",
+    country: "Greece"
+  },
+
+  {
+    lat: 46.4578,
+    lng: 6.8463,
+    title: "The Fork of Vevey – Iconic Lakeside Sculpture",
+    description: "Vevey, Switzerland, is home to 'The Fork,' an 8-meter-tall stainless steel sculpture embedded in Lake Geneva near the Alimentarium food museum. Created by Swiss artist Jean-Pierre Zaugg in 1995 to celebrate the museum’s tenth anniversary, the fork has become a beloved symbol of Vevey’s culinary heritage and artistic spirit. Initially intended as a temporary installation, its popularity led to its permanent return in 2008 following a public petition. The Fork stands as a quirky landmark, offering a striking photo opportunity against the backdrop of the lake and Alps, and invites visitors to explore Vevey’s postcard-perfect streets, rich food culture, and serene lakeside atmosphere.",
+    date: "2025.03",
+    instagramPostId: "DJb_aL4MC9gC",
+    instagramUrl: "https://www.instagram.com/p/DJb_aL4MC9gC/",
+    city: "Vevey",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 46.4578,
+    lng: 6.8483,
+    title: "The Fork of Vevey – Iconic Lakeside Sculpture",
+    description: "Vevey, Switzerland, is home to 'The Fork,' an 8-meter-tall stainless steel sculpture embedded in Lake Geneva near the Alimentarium food museum. Created by Swiss artist Jean-Pierre Zaugg in 1995 to celebrate the museum’s tenth anniversary, the fork has become a beloved symbol of Vevey’s culinary heritage and artistic spirit. Initially intended as a temporary installation, its popularity led to its permanent return in 2008 following a public petition. The Fork stands as a quirky landmark, offering a striking photo opportunity against the backdrop of the lake and Alps, and invites visitors to explore Vevey’s postcard-perfect streets, rich food culture, and serene lakeside atmosphere.",
+    date: "2025.03",
+    instagramPostId: "DJb-Bz6s0u6",
+    instagramUrl: "https://www.instagram.com/p/DJb-Bz6s0u6/",
+    city: "Vevey",
+    country: "Switzerland"
+  },
+
+  {
+    lat: 37.9715,
+    lng: 23.7261,
+    title: "Acropolis of Athens",
+    description: "The Acropolis of Athens is an ancient citadel perched above the city, renowned as the most important sanctuary of ancient Athens and dedicated primarily to Athena, the city's patron goddess. Dominating the center of modern Athens, this UNESCO World Heritage Site features iconic monuments such as the Parthenon, the Propylaea, the Erechtheion, and the Temple of Athena Nike. The Acropolis stands as a symbol of the city's golden age under Pericles in the 5th century BC, reflecting the height of classical art, architecture, and Athenian power. Its harmonious blend of natural setting and architectural mastery has influenced global culture for centuries, making it a must-visit for history and art lovers.",
+    date: "2025.02",
+    instagramPostId: "DJZm8_iMSXN",
+    instagramUrl: "https://www.instagram.com/p/DJZm8_iMSXN/",
+    city: "Athens",
+    country: "Greece"
+  },
+  {
+    lat: 37.9715,
+    lng: 23.7281,
+    title: "Acropolis of Athens",
+    description: "The Acropolis of Athens is an ancient citadel perched above the city, renowned as the most important sanctuary of ancient Athens and dedicated primarily to Athena, the city's patron goddess. Dominating the center of modern Athens, this UNESCO World Heritage Site features iconic monuments such as the Parthenon, the Propylaea, the Erechtheion, and the Temple of Athena Nike. The Acropolis stands as a symbol of the city's golden age under Pericles in the 5th century BC, reflecting the height of classical art, architecture, and Athenian power. Its harmonious blend of natural setting and architectural mastery has influenced global culture for centuries, making it a must-visit for history and art lovers.",
+    date: "2025.02",
+    instagramPostId: "DJZhMnFs_IV",
+    instagramUrl: "https://www.instagram.com/p/DJZhMnFs_IV/",
+    city: "Athens",
+    country: "Greece"
+  }
+
+
+
+
+
+
+
+
 
 
 

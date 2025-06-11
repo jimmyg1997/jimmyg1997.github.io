@@ -637,7 +637,66 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DJFGURIseLz/",
     city: "Skopje",
     country: "North Macedonia"
+  },
+
+  {
+    lat: 48.1459,
+    lng: 17.1077,
+    title: "Bratislava – 1-Day Itinerary Highlights",
+    description: "Bratislava, Slovakia’s charming capital, is perfect for a one-day adventure packed with color, creativity, and local flavor. Start by getting lost in the mesmerizing mirrors and lights of Multium, then grab a unique soup-in-a-bread-cone at Soupculture. Find calm at Čajovňa v podzemí, a cozy underground teahouse, before wrapping up your day with a dreamy sunset from one of the city’s iconic bridges. Bratislava’s walkable center is full of quirky museums, vibrant Old Town streets, and hidden gems—ideal for slow travel and spontaneous discoveries.",
+    date: "2025.01",
+    instagramPostId: "DJFDADSSkw6",
+    instagramUrl: "https://www.instagram.com/p/DJFDADSSkw6/",
+    city: "Bratislava",
+    country: "Slovakia"
+  },
+  {
+    lat: 45.9237,
+    lng: 6.8694,
+    title: "Chamonix – Mont Blanc Base & Aiguille du Midi Cable Car",
+    description: "Chamonix, nestled at the base of Mont Blanc—the tallest mountain in Western Europe at 4,810 meters—is a year-round destination famed for epic views, great food, and fresh air. A highlight is the Aiguille du Midi cable car, which transports visitors up to 3,842 meters for breathtaking panoramas, with a round-trip ride costing around €82. Chamonix offers world-class skiing in winter, as well as hiking and mountain biking in summer, making it a must-visit for adventure seekers and nature lovers.",
+    date: "2025.03",
+    instagramPostId: "DJFAki8s0Yn",
+    instagramUrl: "https://www.instagram.com/p/DJFAki8s0Yn/",
+    city: "Chamonix",
+    country: "France"
+  },
+  {
+    lat: 45.9237,
+    lng: 6.8674,
+    title: "Chamonix – Mont Blanc Base & Aiguille du Midi Cable Car",
+    description: "Chamonix, nestled at the base of Mont Blanc—the tallest mountain in Western Europe at 4,810 meters—is a year-round destination famed for epic views, great food, and fresh air. A highlight is the Aiguille du Midi cable car, which transports visitors up to 3,842 meters for breathtaking panoramas, with a round-trip ride costing around €82. Chamonix offers world-class skiing in winter, as well as hiking and mountain biking in summer, making it a must-visit for adventure seekers and nature lovers.",
+    date: "2025.03",
+    instagramPostId: "DJFBG9tMCGC",
+    instagramUrl: "https://www.instagram.com/p/DJFBG9tMCGC/",
+    city: "Chamonix",
+    country: "France"
+  },
+  {
+    lat: 9.9325,
+    lng: -84.0796,
+    title: "Sloth-Painted Coffee Maker – San Jose Souvenir",
+    description: "In the heart of San Jose, Costa Rica, coffee culture meets artistry with this adorable sloth-painted wooden filter coffee maker, known as a chorreador. Handcrafted and found in local artisan markets, this unique souvenir brings a touch of Costa Rican charm and 'pura vida' spirit to your daily coffee routine. The sloth motif—beloved in Costa Rica—makes every cup cuter and serves as a perfect memento from the city’s vibrant craft scene. Whether brewing at home or gifting to a fellow coffee lover, this piece captures the warmth, creativity, and slow-paced joy of Costa Rican life.",
+    date: "2024.12",
+    instagramPostId: "DlaknQQT35o",
+    instagramUrl: "https://www.instagram.com/p/DlaknQQT35o/",
+    city: "San Jose",
+    country: "Costa Rica"
+  },
+  {
+    lat: 20.6896,
+    lng: -88.2016,
+    title: "Exploring the Yucatán Region, Mexico",
+    description: "The Yucatán region of Mexico is a treasure trove of breathtaking landscapes, ancient Mayan wonders, and vibrant colonial towns. From hidden cenotes like the crystal-clear Cenote Ik-Kil to the iconic pyramid of Chichén Itzá—one of the world’s most famous archaeological sites—this area is a dream for explorers. Cruising through scenic roads feels like traveling back in time, with stops in colorful cities such as Valladolid, known for its charming colonial streets and lively atmosphere. The region’s food scene is rich with shrimp tacos, brunch spots, and flavors inspired by Mayan culture. Whether you’re wandering photogenic avenues, swimming in cenotes, or admiring Mayan glyph art, the Yucatán offers a unique blend of history, adventure, and culture.",
+    date: "2025.12",
+    instagramPostId: "DH176kllbx8",
+    instagramUrl: "https://www.instagram.com/p/DH176kllbx8/",
+    city: "Valladolid",
+    country: "Mexico"
   }
+
+
+
 
 
 

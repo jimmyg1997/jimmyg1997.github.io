@@ -1069,7 +1069,72 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DDUThw5sDOr/",
     city: "Kraków",
     country: "Poland"
+  },
+
+  {
+    lat: 51.4308,
+    lng: 17.7875,
+    title: "Gatsby Party Night – Kobyla Góra, Poland",
+    description: "In Kobyla Góra, a private Gatsby-inspired party brought friends together for an unforgettable night in a cozy bar. Guests embraced the theme with creative costumes—one even arriving as Zeus—while the organizer (dressed as Joker) set the tone with fantastic food and vibrant vibes. The highlight was a live performance blending hip-hop, rap, and pop, delivering unmatched energy and entertainment. The evening was filled with laughter, music, and great company, making it a truly memorable experience for everyone involved.",
+    date: "2024.11",
+    instagramPostId: "DDH-cWbsrWH",
+    instagramUrl: "https://www.instagram.com/p/DDH-cWbsrWH/",
+    city: "Kobyla Góra",
+    country: "Poland"
+  },
+
+  {
+    lat: 51.1091,
+    lng: 17.0316,
+    title: "Wroclaw’s Magical Christmas Market",
+    description: "Wroclaw’s Jarmark Bożonarodzeniowy transforms the city’s Old Town Rynek into a fairytale wonderland, blending Gothic architecture with twinkling lights. Unique traditions include sipping on grzaniec galicyjski (Galician mulled wine) from collectible mugs—some flavors are exclusive to this market! Entry is free, and visitors can browse handcrafted ornaments, candles, and treats from local and international vendors. The market is family-friendly, featuring whimsical dwarf displays and Santa’s sleigh rides for children. More than just a market, it’s a festive tradition and the perfect way to embrace the season’s spirit. The event runs from November 17 to December 24 at Rynek, Plac Solny, and Świdnicka Street.",
+    date: "2024.12",
+    instagramPostId: "DDFJbYMLd9J",
+    instagramUrl: "https://www.instagram.com/p/DDFJbYMLd9J/",
+    city: "Wroclaw",
+    country: "Poland"
+  },
+  {
+    lat: 50.050846,
+    lng: 19.931291,
+    title: "19th Krakow Jazz Autumn – What a Night! Manggha Museum",
+    description: "The 19th Krakow Jazz Autumn ended on a high note at the iconic Manggha Museum, with the final concert of the Blue Shroud Band residency and a phenomenal performance by the ADAM Quartet. This world-class jazz festival brings together international musicians and innovative collaborations—like the ADAM Quartet’s fresh take on classical and contemporary music with guests such as Laufey and ISH. The festival’s atmosphere blends Krakow’s vibrant culture, stunning venues, and unforgettable live music. Mark your calendar for 2025 and immerse yourself in the magic of Krakow Jazz Autumn!",
+    date: "2024.11",
+    instagramPostId: "DC5ZKH3IqGB",
+    instagramUrl: "https://www.instagram.com/p/DC5ZKH3IqGB/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 50.0545,
+    lng: 19.9366,
+    title: "Lapidarium at Wawel Castle – Kraków’s Hidden Treasure",
+    description: "Step into the heart of history with the Lapidarium, a hidden gem within Wawel Castle that showcases ancient stone artifacts, sculptures, tombstones, and architectural fragments from Poland’s royal past. Located in the castle’s medieval cloisters, the Lapidarium offers a peaceful setting for reflection and a fascinating glimpse into Kraków’s rich cultural heritage. The collection features stone carvings dating back to the 14th century, highlighting medieval craftsmanship and artistic styles, as well as fragments from historical buildings and monuments from across Poland. This contemplative museum is perfect for history buffs, art lovers, and anyone seeking a unique and immersive experience in Polish history.",
+    date: "2024.11",
+    instagramPostId: "DCrmNgJsrC1",
+    instagramUrl: "https://www.instagram.com/p/DCrmNgJsrC1/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.050846,
+    lng: 19.931291,
+    title: "Bonsai & Ikebana Exhibition at Manggha Museum – Kraków",
+    description: "The Bonsai & Ikebana exhibition at Manggha Museum in Kraków offers a serene journey into Japanese art and tradition. Ikebana, which originated in Japan during the 6th century as a Buddhist offering practice, emphasizes harmony between heaven, earth, and humankind. Bonsai is not a type of tree but an art form of cultivating miniature trees in containers—some bonsai trees can live for over 1,000 years! The exhibition highlights the meditative and philosophical aspects of both arts: Ikebana’s use of negative space, asymmetry, and seasonal elements, and Bonsai’s range of styles from formal upright to windswept, reflecting nature’s beauty. Visitors can experience the balance, simplicity, and deep connection to nature that define these timeless Japanese traditions.",
+    date: "2024.11",
+    instagramPostId: "DCJ1EqkMSg3",
+    instagramUrl: "https://www.instagram.com/p/DCJ1EqkMSg3/",
+    city: "Kraków",
+    country: "Poland"
   }
+
+
+
+
+  
+
+
 
 
 

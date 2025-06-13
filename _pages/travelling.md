@@ -863,7 +863,42 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DGb6ZW4IDag/",
     city: "Panama City",
     country: "Panama"
+  },
+  {
+    lat: 9.3897,
+    lng: -84.1383,
+    title: "Manuel Antonio National Park, Costa Rica",
+    description: "Manuel Antonio National Park, nestled on Costa Rica’s Pacific coast near Quepos, is a small yet stunning protected area renowned for its incredible biodiversity and breathtaking scenery. The park is a paradise where lush rainforest meets pristine white-sand beaches and turquoise waters, home to sloths, howler monkeys, toucans, and over 100 species of mammals and 180+ bird species. Visitors can explore scenic jungle trails, relax on beaches like Playa Espadilla Sur and Playa Manuel Antonio, and snorkel among coral reefs. The park is open Tuesday through Sunday, 7:30 am to 4 pm, with visitor limits to preserve its natural beauty. Ticket fees vary: foreigners $18/adult, children $5, locals $5 (adults), $1.50 (children). Manuel Antonio is a must-visit for nature lovers and adventure seekers alike.",
+    date: "2024.12",
+    instagramPostId: "DGQ3tenMzB9",
+    instagramUrl: "https://www.instagram.com/p/DGQ3tenMzB9/",
+    city: "Quepos",
+    country: "Costa Rica"
+  },
+  {
+    lat: 41.9502,
+    lng: 21.2993,
+    title: "Amazing Tour with GetYourGuide in Matka Canyon, North Macedonia!",
+    description: "Just 15 km from Skopje, Matka Canyon is a paradise for nature lovers! This stunning gorge is home to Vrelo Cave, one of the deepest underwater caves in the world. Why visit Matka Canyon? Glide through turquoise waters on scenic boat rides, hike trails to hidden monasteries and panoramic viewpoints, and paddle through serene waters by kayak. The canyon is a haven for rare butterflies, birds, and unique wildlife, and offers mesmerizing underground wonders in Vrelo Cave. Covering 5,000 hectares, Matka Canyon features dramatic cliffs, historic churches, and endless opportunities for adventure—perfect for hikers, photographers, and history buffs. Ticket fees: boat tours ~400 MKD (€7), kayak rental ~200 MKD (€3.50/hour). Pro tip: Visit early morning for magical lighting and fewer crowds.",
+    date: "2025.01",
+    instagramPostId: "DGMXeFJIirW",
+    instagramUrl: "https://www.instagram.com/p/DGMXeFJIirW/",
+    city: "Skopje",
+    country: "North Macedonia"
+  },
+  {
+    lat: 50.067472,
+    lng: 19.991694,
+    title: "Exotic Festival 2025 at Tauron Arena Kraków",
+    description: "The Exotic Festival 2025 at Tauron Arena Kraków was an unforgettable one-day event that brought together exotic animals, tropical plants, and unique exhibits, creating an electrifying and mesmerizing atmosphere. From giant African snails to intricately designed terrariums, every corner was a feast for the senses. Highlights included educational zones with passionate breeders, a vibrant marketplace featuring rare plants, handmade art, and unique jewelry, and face-to-face encounters with fascinating creatures. More than just a festival, it was a journey into the exotic world—perfect for families, nature lovers, and adventurers alike.",
+    date: "2024-Present",
+    instagramPostId: "CL_K/",
+    instagramUrl: "https://www.instagram.com/p/CL_K/",
+    city: "Kraków",
+    country: "Poland"
   }
+
+
 
 
 

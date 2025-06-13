@@ -965,7 +965,119 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DEqu51e1ZKK/",
     city: "Cartago",
     country: "Costa Rica"
+  },
+  {
+    lat: 21.1619,
+    lng: -86.8515,
+    title: "Should You Rent a Car in Cancun, Mexico?",
+    description: "Renting a car in Cancun is a great way to unlock the best of Mexico’s Yucatán Peninsula, offering freedom to explore cenotes, Mayan ruins, and charming towns at your own pace. Many travelers worry about hidden fees, frozen deposits, or scams at the airport, but with reputable agencies like Jolly Car Rent, Discover Cars, or Fiesta Car Rental, you can enjoy transparent pricing, no hidden fees, and reliable service. Always opt for full coverage insurance (required by Mexican law), inspect your vehicle, and confirm all costs upfront. Most agencies require a valid driver’s license, passport, credit card, and a minimum age of 18–25. Renting a car is often cheaper and more flexible than relying on tours or taxis, making it ideal for adventurous travelers who want to see more than just the resorts.",
+    date: "2024.12",
+    instagramPostId: "DEn6vrEIKI4",
+    instagramUrl: "https://www.instagram.com/p/DEn6vrEIKI4/",
+    city: "Cancun",
+    country: "Mexico"
+  },
+
+  {
+    lat: 9.6566,
+    lng: -82.7546,
+    title: "Renting an Airbnb in Puerto Viejo, Costa Rica",
+    description: "Looking for a tropical escape that blends adventure and relaxation? Renting an Airbnb in Puerto Viejo de Talamanca is the perfect choice. Wake up to howler monkeys calling from the treetops, unwind with toucans, sloths, and the soothing sound of tropical rain, and experience true eco-living while staying close to stunning Caribbean beaches. Price ranges vary from budget-friendly ($50–$100/night) to luxe options ($150–$250+/night), making it ideal for couples, groups, or anyone seeking a romantic escape. Puerto Viejo is home to Costa Rica’s top surf spots and boasts a laid-back Caribbean vibe that’s unmatched anywhere else.",
+    date: "2024.12",
+    instagramPostId: "DEljocLoi4w",
+    instagramUrl: "https://www.instagram.com/p/DEljocLoi4w/",
+    city: "Puerto Viejo de Talamanca",
+    country: "Costa Rica"
+  },
+  {
+    lat: 20.661014,
+    lng: -88.550438,
+    title: "Cenote Ik-Kil – Dive Into Paradise, Mexico",
+    description: "Cenote Ik-Kil is a spectacular natural limestone sinkhole (cenote azul) near Chichén Itzá, sacred to the Mayans and famed for its jaw-dropping 40-meter depth and crystal-clear sapphire waters. Surrounded by lush jungle vines, it feels like stepping into an otherworldly oasis—perfect for swimming, floating, and escaping the heat. The cenote features a diving platform for thrill-seekers and is just 3km from Chichén Itzá, making it an ideal stop after exploring ancient ruins. Tickets cost about $5 USD (100 MXN), with lockers and life jackets available for rent. While it’s a paradise for adventure junkies, swimmers, and families, visitors should be aware of occasional water contamination and frequent crowds. Pro tip: Visit early or late afternoon to avoid the rush.",
+    date: "2024.12",
+    instagramPostId: "DEhbFppspwD",
+    instagramUrl: "https://www.instagram.com/p/DEhbFppspwD/",
+    city: "Yucatán",
+    country: "Mexico"
+  },
+
+  {
+    lat: 9.9763,
+    lng: -84.8360,
+    title: "Walking and Experiencing Puntarenas at Costa Rica",
+    description: "Puntarenas is Costa Rica’s coastal gem, offering a unique blend of culture, nature, and serenity. Founded in 1575, this bustling port town is known for its beautiful beaches, vibrant local life, and rich history. Visitors can enjoy relaxed strolls along the oceanfront, feast on fresh seafood at open-air cafés, and explore lively local markets. The town’s Paseo de los Turistas promenade is lined with shade trees, seafood restaurants, and vendors selling souvenirs and the famous Churchill dessert. Puntarenas is a gateway to adventure, with easy access to the Nicoya Peninsula, nearby wildlife refuges, and boat tours to Tortuga Island. Whether you’re seeking peaceful views, authentic Costa Rican lifestyle, or a taste of local festivities, Puntarenas offers a welcoming and memorable experience.",
+    date: "2024.12",
+    instagramPostId: "DEUA-Vwsm_p",
+    instagramUrl: "https://www.instagram.com/p/DEUA-Vwsm_p/",
+    city: "Puntarenas",
+    country: "Costa Rica"
+  },
+  {
+    lat: 4.5231,
+    lng: -73.9856,
+    title: "Cascada La Chorrera – Colombia’s Tallest Waterfall Near Bogotá",
+    description: "Cascada La Chorrera is Colombia’s tallest waterfall, plunging an impressive 590 meters (1,936 feet) through lush cloud forests near the town of Choachi, just 30 kilometers from Bogotá. Reaching the falls is an adventure: order an Uber or take a bus, then hike 2–3 hours through scenic paramo landscapes, crossing suspension bridges and passing smaller waterfalls like El Chiflón along the way. The moderately difficult hike rewards visitors with breathtaking views and the chance to swim in cold, crystal-clear waters. Entrance costs around $10 USD, with transport from Bogotá typically $50 by Uber. The entire trip takes about 5 hours, making it a perfect day escape for hikers, nature lovers, and anyone seeking Colombia’s wild beauty.",
+    date: "2024.12",
+    instagramPostId: "DEGj9Dosjg-",
+    instagramUrl: "https://www.instagram.com/p/DEGj9Dosjg-/",
+    city: "Choachi",
+    country: "Colombia"
+  },
+  {
+    lat: 9.3897,
+    lng: -84.1383,
+    title: "Exploring Manuel Antonio National Park, Costa Rica",
+    description: "Manuel Antonio National Park is one of the world’s smallest yet most biodiverse national parks, renowned for its lush rainforests, turquoise beaches, and abundant wildlife—including sloths, monkeys, and colorful toucans. Visitors can hike stunning jungle trails that lead to pristine beaches, swim, snorkel, or simply enjoy unmatched views. Entry fees are $18 for adults and free for kids under 12; the park is open from 7 AM to 4 PM, closed on Tuesdays. Hidden gems include Playa Biesanz for calm waters and ziplining adventures through the rainforest canopy. For sunset, El Avión Restaurant offers epic ocean views paired with fresh seafood and drinks. Manuel Antonio is a paradise for adventure lovers, nature enthusiasts, and anyone seeking a unique Costa Rican experience.",
+    date: "2024-Present",
+    instagramPostId: "DEGd67XMO2P",
+    instagramUrl: "https://www.instagram.com/p/DEGd67XMO2P/",
+    city: "Quepos",
+    country: "Costa Rica"
+  },
+
+  {
+    lat: 50.05672,
+    lng: 19.91050,
+    title: "Saint Coffee Festival 2024 – Kraków, Poland",
+    description: "The Saint Coffee Festival 2024 at Hala Cracovia in Kraków is a must-visit event for coffee enthusiasts, taking place on 14–15 December 2024. The festival features exclusive coffee tastings with rare brews from over 30 specialty roasters worldwide and thrilling live barista battles where top baristas compete for the ultimate coffee crown. Fun facts: the festival celebrates Saint Drogo, the patron saint of coffee lovers, and local legend claims that the aroma of freshly brewed coffee helps ward off the winter blues. A day pass costs 20zł and includes a recyclable cup you can keep. The festival is perfect for anyone passionate about coffee culture, specialty brews, and Kraków’s vibrant community spirit.",
+    date: "2024.12",
+    instagramPostId: "DDni8MUlo6D",
+    instagramUrl: "https://www.instagram.com/p/DDni8MUlo6D/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.0468,
+    lng: 19.9571,
+    title: "Christmas Breakfast Weekend at Hala Lipowa, Kraków",
+    description: "Hala Lipowa in Kraków comes alive during the Christmas season with a perfect blend of festive vibes, great food, and community spirit. The weekend kicks off with the Breakfast Festival, where for 29 PLN, guests enjoy classic breakfasts paired with coffee in a cozy, welcoming setting. On Sunday, the Jarmark Świąteczny (Christmas Market) transforms the venue with handmade decorations, local crafts, unique gifts, and seasonal treats, all set to the backdrop of live music that elevates the holiday magic. Hala Lipowa’s vibrant food hall atmosphere, diverse street food stalls, and creative events make it a must-visit for anyone seeking Kraków’s authentic holiday charm and culinary delights.",
+    date: "2024.12",
+    instagramPostId: "DDa1iPrMTGu",
+    instagramUrl: "https://www.instagram.com/p/DDa1iPrMTGu/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.0617,
+    lng: 19.9370,
+    title: "Lighting of the Christmas Tree – Krakow Main Square",
+    description: "Krakow’s Main Square comes alive each December with the magical lighting ceremony of its iconic Christmas tree. This year’s tree stands 15 meters tall and dazzles with 26,000 energy-saving lights, 63 icicles, and over 1,000 baubles, creating a festive atmosphere in the heart of the city. The event draws locals and visitors alike to celebrate the start of the holiday season beneath the historic spires of St. Mary’s Basilica. The lighting ceremony is a highlight of Krakow’s winter, perfect for families, photographers, and anyone seeking the true spirit of Christmas in Poland.",
+    date: "8 December 2024",
+    instagramPostId: "DDUThw5sDOr",
+    instagramUrl: "https://www.instagram.com/p/DDUThw5sDOr/",
+    city: "Kraków",
+    country: "Poland"
   }
+
+
+
+
+
+
+
+
 
 
 

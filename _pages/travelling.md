@@ -896,7 +896,81 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/CL_K/",
     city: "Kraków",
     country: "Poland"
+  },
+
+  {
+    lat: 50.0647,
+    lng: 19.9480,
+    title: "Making Homemade Pierogis in Krakow, Poland",
+    description: "After three years, I’m back in Krakow—the place where it all began. Nothing beats the smell of fresh pierogis cooking in the kitchen, just like my grandmother used to make them. The process is therapeutic: hand-rolling the dough, stuffing it with savory fillings, and folding them with love. It’s more than just food; it’s a piece of my heart that I’ve carried across borders. Krakow is where I feel most connected to my roots—full of nostalgia, tradition, and joy in simple moments. This is the magic of homemade pierogis: a true taste of Polish heritage, best enjoyed with family and friends in the city’s warm, welcoming kitchens.",
+    date: "2024-Present",
+    instagramPostId: "DFETS7So3dK",
+    instagramUrl: "https://www.instagram.com/p/DFETS7So3dK/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 9.9325,
+    lng: -84.0796,
+    title: "Gingerbread House Competition – San Jose, Costa Rica",
+    description: "Costa Rica’s festive spirit shines in San Jose during Christmas with a joyful gingerbread house competition, where families come together to craft creative, festive houses in a warm, community atmosphere. This unique experience blends local holiday traditions with hands-on workshops, allowing both kids and adults to express their creativity and create lasting memories. The event highlights Costa Rican craftsmanship and the holiday vibe at the heart of the city, making it a perfect activity for families, creative enthusiasts, and Christmas lovers seeking to embrace the magic of the season.",
+    date: "2024.12",
+    instagramPostId: "dimiles.away",
+    instagramUrl: "https://www.instagram.com/p/dimiles.away/",
+    city: "San Jose",
+    country: "Costa Rica"
+  },
+
+  {
+    lat: 5.8192,
+    lng: -73.0333,
+    title: "Cascada El Chiflón – A Hidden Paradise in Colombia",
+    description: "Cascada El Chiflón is a breathtaking waterfall in Colombia, cascading over 70 meters and surrounded by lush, tropical greenery. Its name, 'El Chiflón,' comes from the whistling sound made by the rushing water. Visitors can enjoy crystal-clear pools for a refreshing dip, serene hiking trails with jaw-dropping views, and suspension bridges offering panoramic vistas. Entry is approximately $3 (10,000 COP). The site is perfect for hikers, photographers, and anyone seeking tranquility in nature, with plenty of photo spots for adventure seekers. Cascada El Chiflón is a must-visit gem for those exploring Colombia’s natural beauty.",
+    date: "2024.12",
+    instagramPostId: "DE6GZEjJ9XH",
+    instagramUrl: "https://www.instagram.com/p/DE6GZEjJ9XH/",
+    city: "Boyacá",
+    country: "Colombia"
+  },
+  {
+    lat: 8.9739,
+    lng: -79.5306,
+    title: "Discover Ancon Hill, Panama City",
+    description: "Ancon Hill (Cerro Ancón) stands tall at 199 meters, offering the best panoramic views of Panama City, the famous Miraflores Locks, and the lush rainforest. It is a protected area home to unique wildlife like sloths, toucans, and butterflies. The lush greenery becomes even more vibrant in the rain, and wildlife spotting improves as many animals become more active. Ancon Hill is a gift from nature with no entry charge, symbolizing Panama’s sovereignty, with a flag at the summit commemorating independence. The hike is moderate and accessible for most, taking around 30-40 minutes to the top. It is ideal for nature lovers, photographers, and adventure seekers.",
+    date: "2024.12",
+    instagramPostId: "DEyAeSHMAyY",
+    instagramUrl: "https://www.instagram.com/p/DEyAeSHMAyY/",
+    city: "Panama City",
+    country: "Panama"
+  },
+  {
+    lat: 8.9525,
+    lng: -79.5350,
+    title: "Casco Viejo – Panama City’s Historic Soul",
+    description: "Casco Viejo, also known as Casco Antiguo or San Felipe, is the UNESCO-listed historic district of Panama City, celebrated for its cobblestone streets, colonial architecture, vibrant murals, and lively atmosphere. Founded in 1673 after the original city was destroyed by pirates, Casco Viejo is a cultural melting pot where French, Spanish, and Caribbean influences blend in restored neoclassical buildings, centuries-old churches, boutique cafés, rooftop bars, and colorful plazas. Highlights include the famous Golden Altar at Iglesia de San José, the bustling Plaza de la Independencia, and panoramic city views from rooftop lounges. Entry to explore Casco Viejo is free, with guided tours available for $10–$20. It’s a must-visit for history lovers, foodies, and anyone seeking Panama’s vibrant nightlife and cultural heart.",
+    date: "2024.12",
+    instagramPostId: "DEvqO4io7yy",
+    instagramUrl: "https://www.instagram.com/p/DEvqO4io7yy/",
+    city: "Panama City",
+    country: "Panama"
+  },
+  {
+    lat: 9.9001,
+    lng: -83.8838,
+    title: "Carlos Durán Sanatorium – Cartago, Costa Rica",
+    description: "Nestled in the scenic hills near Cartago, the Carlos Durán Sanatorium is one of Costa Rica’s most intriguing and eerie attractions. Built in 1918 by Dr. Carlos Durán Cartín—who briefly served as the country’s president—the sanatorium was originally a tuberculosis treatment center, chosen for its remote location and healing climate. At its peak, it housed up to 300 patients and was staffed largely by nuns from the Sisters of Charity Santa Anna. The facility later served as an orphanage and prison before closing permanently in the 1970s. Today, the decaying Gothic-modernist buildings and graffiti-lined corridors have earned a reputation as the country’s most haunted site, attracting history buffs, ghost hunters, and explorers. Visitors can roam the grounds, discover chilling legends of ghostly nuns and children, and capture panoramic views of Cartago and the Irazú Volcano. Admission is about $3, with guided tours available for a deeper dive into its mysterious past.",
+    date: "2024.12",
+    instagramPostId: "DEqu51e1ZKK",
+    instagramUrl: "https://www.instagram.com/p/DEqu51e1ZKK/",
+    city: "Cartago",
+    country: "Costa Rica"
   }
+
+
+
+
+
 
 
 

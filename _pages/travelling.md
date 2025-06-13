@@ -693,7 +693,189 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DH176kllbx8/",
     city: "Valladolid",
     country: "Mexico"
+  },
+  {
+    lat: 20.6896,
+    lng: -88.2056,
+    title: "Exploring the Yucatán Region, Mexico",
+    description: "The Yucatán region is home to some of Mexico’s most breathtaking landscapes and ancient wonders, from hidden cenotes to iconic pyramids. Cruising through its scenic roads feels like traveling back in time, with stops in colorful colonial towns like Valladolid for coffee and a stroll. Don’t miss swimming in the crystal-clear Cenote Ik-Kil, exploring the awe-inspiring pyramid of Chichén Itzá—a giant Mayan calendar with 365 steps—and soaking up the vibrant vibes of Valladolid’s charming streets. The region’s food scene features shrimp tacos, green landscapes, and brunch inspired by Mayan culture. Whether you’re wandering photogenic avenues, swimming in cenotes, or admiring Mayan art, the Yucatán offers a dream for explorers.",
+    date: "2025.01",
+    instagramPostId: "DH16eX_o3WK",
+    instagramUrl: "https://www.instagram.com/p/DH16eX_o3WK/",
+    city: "Valladolid",
+    country: "Mexico"
+  },
+
+  {
+    lat: 20.6296,
+    lng: -87.0739,
+    title: "Exploring the Quintana Roo Coast: From Cancun to Playa del Carmen",
+    description: "The Quintana Roo coastline is famed for its turquoise waters, vibrant beach towns, and colorful local culture. From Cancun’s perfect weather and endless beaches to the charming streets and souvenir stalls of Puerto Morelos, every stop offers a new adventure. Playa del Carmen enchants with stunning sunset views and delicious guacamole, while Akumal invites you to swim with turtles and snorkel vibrant reefs. Whether you’re exploring Mayan ruins, bargaining for unique crafts like painted skulls and textiles, or simply soaking up the sun, this stretch of the Riviera Maya is a paradise for adventurers, foodies, and anyone seeking relaxation and exploration.",
+    date: "2025.01",
+    instagramPostId: "DHuB01cMnFK",
+    instagramUrl: "https://www.instagram.com/p/DHuB01cMnFK/",
+    city: "Playa del Carmen",
+    country: "Mexico"
+  },
+
+  {
+    lat: 20.6296,
+    lng: -87.0769,
+    title: "Exploring the Quintana Roo Coast: From Cancun to Playa del Carmen",
+    description: "The Quintana Roo coastline is famed for its turquoise waters, vibrant beach towns, and colorful local culture. From Cancun’s perfect weather and endless beaches to the charming streets and souvenir stalls of Puerto Morelos, every stop offers a new adventure. Playa del Carmen enchants with stunning sunset views and delicious guacamole, while Akumal invites you to swim with turtles and snorkel vibrant reefs. Whether you’re exploring Mayan ruins, bargaining for unique crafts like painted skulls and textiles, or simply soaking up the sun, this stretch of the Riviera Maya is a paradise for adventurers, foodies, and anyone seeking relaxation and exploration.",
+    date: "2025.01",
+    instagramPostId: "DHuAEdRMJWv",
+    instagramUrl: "https://www.instagram.com/p/DHuAEdRMJWv/",
+    city: "Playa del Carmen",
+    country: "Mexico"
+  },
+
+  {
+    lat: 9.9763,
+    lng: -84.8330,
+    title: "Walking and Experiencing Puntarenas at Costa Rica",
+    description: "Puntarenas is Costa Rica’s coastal gem, offering a unique blend of culture, nature, and serenity. Founded in 1575, this bustling port town is known for its beautiful beaches, vibrant local life, and rich history. Visitors can enjoy relaxed strolls along the oceanfront, feast on fresh seafood at open-air cafés, and explore lively local markets. The town’s Paseo de los Turistas promenade is lined with shade trees, seafood restaurants, and vendors selling souvenirs and the famous Churchill dessert. Puntarenas is a gateway to adventure, with easy access to the Nicoya Peninsula, nearby wildlife refuges, and boat tours to Tortuga Island. Whether you’re seeking peaceful views, authentic Costa Rican lifestyle, or a taste of local festivities, Puntarenas offers a welcoming and memorable experience.",
+    date: "2024.12",
+    instagramPostId: "DHPmMF-9o40I",
+    instagramUrl: "https://www.instagram.com/p/DHPmMF-9o40I/",
+    city: "Puntarenas",
+    country: "Costa Rica"
+  },
+
+  {
+    lat: 9.9763,
+    lng: -84.8330,
+    title: "Walking and Experiencing Puntarenas at Costa Rica",
+    description: "Puntarenas is Costa Rica’s coastal gem, offering a unique blend of culture, nature, and serenity. Founded in 1575, this bustling port town is known for its beautiful beaches, vibrant local life, and rich history. Visitors can enjoy relaxed strolls along the oceanfront, feast on fresh seafood at open-air cafés, and explore lively local markets. The town’s Paseo de los Turistas promenade is lined with shade trees, seafood restaurants, and vendors selling souvenirs and the famous Churchill dessert. Puntarenas is a gateway to adventure, with easy access to the Nicoya Peninsula, nearby wildlife refuges, and boat tours to Tortuga Island. Whether you’re seeking peaceful views, authentic Costa Rican lifestyle, or a taste of local festivities, Puntarenas offers a welcoming and memorable experience.",
+    date: "2024.12",
+    instagramPostId: "DHpJv9fIPmF",
+    instagramUrl: "https://www.instagram.com/p/DHpJv9fIPmF/",
+    city: "Puntarenas",
+    country: "Costa Rica"
+  },
+
+  {
+    lat: 50.077808,
+    lng: 19.991343,
+    title: "Polish Aviation Museum in Kraków",
+    description: "The Polish Aviation Museum in Kraków is one of the world’s premier aviation museums, set on the historic grounds of the former Rakowice-Czyżyny airfield—one of Europe’s oldest, dating back to 1912. The museum’s collection features over 300 aircraft, including rare World War I and II planes, Soviet-era jets like the MiG-29, gliders, helicopters, and unique artifacts such as the only surviving Russian Grigorovich M-15 flying boat. Visitors can explore open-air exhibits, historic hangars, and a modern main building shaped like a propeller. The museum is a must-visit for aviation enthusiasts, history buffs, and families, offering immersive experiences, interactive displays, and special events like air shows. Ticket prices are affordable, with discounts for students and free admission for young children.",
+    date: "2025.03",
+    instagramPostId: "DHjmKRzMIwV",
+    instagramUrl: "https://www.instagram.com/p/DHjmKRzMIwV/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 9.6350,
+    lng: -82.6540,
+    title: "POV: Seeing a Sloth for the First Time – Manzanillo, Costa Rica",
+    description: "Fifteen minutes of staring at the same patch of trees, and then—finally—I spot it. A bundle of fur clinging lazily to a branch, moving so slowly it’s almost imperceptible. Its face, frozen in a permanent, sleepy smile, tilts slightly as if acknowledging my presence. The world around it is alive with buzzing insects and chattering monkeys, yet the sloth exists in its own peaceful dimension, unbothered, unhurried. Watching it, I feel my own heartbeat slow, my thoughts quiet. Maybe, for once, nature is teaching me to stop rushing.",
+    date: "2024.12",
+    instagramPostId: "DHZsI8loUFe",
+    instagramUrl: "https://www.instagram.com/p/DHZsI8loUFe/",
+    city: "Manzanillo",
+    country: "Costa Rica"
+  },
+  {
+    lat: 38.0391,
+    lng: 23.8297,
+    title: "The Feeling of Coming Back to Your Own Country – Vrilissia, Athens",
+    description: "After three years living in Krakow, Poland, returning to Athens—specifically the Vrilissia region—brings a profound sense of belonging. Each visit is filled with the warmth of family and friends, vibrant gatherings, and unforgettable hangouts that make every return feel like a heartfelt reunion. The lively atmosphere and community spirit of Vrilissia, a northeastern suburb of Athens nestled at the foot of Penteli Mountain, offer the perfect backdrop for reconnecting with your roots and celebrating the magic of homecoming.",
+    date: "2025.02",
+    instagramPostId: "DHXBHvKoNvw",
+    instagramUrl: "https://www.instagram.com/p/DHXBHvKoNvw/",
+    city: "Athens",
+    country: "Greece"
+  },
+  {
+    lat: 9.8644,
+    lng: -83.9194,
+    title: "Exploring Cartago, Costa Rica",
+    description: "Wandering through the misty roads of Cartago, Costa Rica, feels like stepping into a dream. Surrounded by lush green valleys, towering volcanoes like Irazú, and hidden waterfalls, the region offers an unforgettable drive through nature’s masterpiece. Cartago is home to the mystical ruins of Santiago Apóstol, the stunning Orosi Valley, and the magnificent Basilica of Our Lady of the Angels—one of the most important pilgrimage sites in Latin America. The city’s colonial past, vibrant markets, and proximity to both the Pacific and Caribbean make it a perfect destination for road trip lovers, history enthusiasts, and nature seekers. Cartago’s cool climate, scenic drives, and rich cultural heritage invite travelers to explore beyond Costa Rica’s beaches and discover its original capital in the heart of the Central Valley.",
+    date: "2024.12",
+    instagramPostId: "DGy0RNdsB1H",
+    instagramUrl: "https://www.instagram.com/p/DGy0RNdsB1H/",
+    city: "Cartago",
+    country: "Costa Rica"
+  },
+  {
+    lat: 8.9131,
+    lng: -79.5282,
+    title: "Amador Causeway – A Scenic Escape in Panama City",
+    description: "Just a short ride from downtown, the Amador Causeway offers stunning views of the Panama City skyline and the Panama Canal. Built using rocks from the canal’s excavation, this iconic road connects four small islands, blending history, nature, and leisure. Visitors can enjoy breathtaking sunsets, rent a bike to cruise the 6km stretch, dine at waterfront restaurants serving fresh seafood, and explore the Frank Gehry-designed Museum of Biodiversity. The causeway is free to visit, with rental fees applying for bikes and attractions, making it ideal for solo travelers, couples, families, and photography lovers.",
+    date: "2024.12",
+    instagramPostId: "DGuyZCVMAj7",
+    instagramUrl: "https://www.instagram.com/p/DGuyZCVMAj7/",
+    city: "Panama City",
+    country: "Panama"
+  },
+  {
+    lat: 8.9131,
+    lng: -79.5242,
+    title: "Amador Causeway – A Scenic Escape in Panama City",
+    description: "Just a short ride from downtown, the Amador Causeway offers stunning views of the Panama City skyline and the Panama Canal. Built using rocks from the canal’s excavation, this iconic road connects four small islands, blending history, nature, and leisure. Visitors can enjoy breathtaking sunsets, rent a bike to cruise the 6km stretch, dine at waterfront restaurants serving fresh seafood, and explore the Frank Gehry-designed Museum of Biodiversity. The causeway is free to visit, with rental fees applying for bikes and attractions, making it ideal for solo travelers, couples, families, and photography lovers.",
+    date: "2024.12",
+    instagramPostId: "DGtZrAvsdaJ",
+    instagramUrl: "https://www.instagram.com/p/DGtZrAvsdaJ/",
+    city: "Panama City",
+    country: "Panama"
+  },
+  {
+    lat: 4.6462,
+    lng: -74.0628,
+    title: "Colombian Coffee Experience in Bogotá, Colombia",
+    description: "Colombia isn’t just famous for coffee—it’s a global leader in specialty brews! This coffee-tasting journey in Quinta Camacho, Chapinero—Bogotá’s trendiest neighborhood—offers award-winning specialty coffees from different Colombian regions. Visitors learn about the bean-to-cup process with expert baristas and explore Bogotá’s vibrant café culture. The experience includes guided tastings at top specialty coffee shops and insights into why Colombian coffee is considered among the world’s finest. Ideal for coffee lovers and travelers seeking immersive local experiences.",
+    date: "2024-Present",
+    instagramPostId: "DGjQiXMMcYZ",
+    instagramUrl: "https://www.instagram.com/p/DGjQiXMMcYZ/",
+    city: "Bogotá",
+    country: "Colombia"
+  },
+  {
+    lat: 4.6462,
+    lng: -74.0668,
+    title: "Colombian Coffee Experience in Bogotá, Colombia",
+    description: "Colombia isn’t just famous for coffee—it’s a global leader in specialty brews! This coffee-tasting journey in Quinta Camacho, Chapinero—Bogotá’s trendiest neighborhood—offers award-winning specialty coffees from different Colombian regions. Visitors learn about the bean-to-cup process with expert baristas and explore Bogotá’s vibrant café culture. The experience includes guided tastings at top specialty coffee shops and insights into why Colombian coffee is considered among the world’s finest. Ideal for coffee lovers and travelers seeking immersive local experiences.",
+    date: "2024.12",
+    instagramPostId: "DGitcNnMH-i",
+    instagramUrl: "https://www.instagram.com/p/DGitcNnMH-i/",
+    city: "Bogotá",
+    country: "Colombia"
+  },
+  {
+    lat: 8.956960,
+    lng: -79.534727,
+    title: "Mola Museum (MuMo), Panama City",
+    description: "The Mola Museum (MuMo) in Panama City is dedicated to the vibrant textile art of the indigenous Guna people, showcasing over 200 molas in five themed exhibition rooms. Located in the historic Casco Viejo district at the El Colegio II building on José D. de la Obaldía Street, the museum offers a unique insight into the evolution, spirituality, and storytelling behind these intricate fabrics. Visitors can enjoy bilingual exhibits (Spanish and English), interactive displays, and creative workshops suitable for all ages. Entry is free, making it an essential stop for art lovers, families, and anyone interested in indigenous culture and Panamanian heritage.",
+    date: "2024.12",
+    instagramPostId: "DGb8n-3lh-O",
+    instagramUrl: "https://www.instagram.com/p/DGb8n-3lh-O/",
+    city: "Panama City",
+    country: "Panama"
+  },
+  {
+    lat: 8.956960,
+    lng: -79.534767,
+    title: "Mola Museum (MuMo), Panama City",
+    description: "The Mola Museum (MuMo) in Panama City is dedicated to the vibrant textile art of the indigenous Guna people, showcasing over 200 molas in five themed exhibition rooms. Located in the historic Casco Viejo district at the El Colegio II building on José D. de la Obaldía Street, the museum offers a unique insight into the evolution, spirituality, and storytelling behind these intricate fabrics. Visitors can enjoy bilingual exhibits (Spanish and English), interactive displays, and creative workshops suitable for all ages. Entry is free, making it an essential stop for art lovers, families, and anyone interested in indigenous culture and Panamanian heritage.",
+    date: "2024.12",
+    instagramPostId: "DGb6ZW4IDag",
+    instagramUrl: "https://www.instagram.com/p/DGb6ZW4IDag/",
+    city: "Panama City",
+    country: "Panama"
   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

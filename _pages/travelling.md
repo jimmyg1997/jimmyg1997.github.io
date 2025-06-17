@@ -1127,7 +1127,95 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DCJ1EqkMSg3/",
     city: "Kraków",
     country: "Poland"
+  },
+
+  {
+    lat: 50.0649,
+    lng: 19.9541,
+    title: "Open Eyes Art Festival 2024 – Kraków, Poland",
+    description: "The Open Eyes Art Festival 2024 in Kraków is a vibrant celebration of contemporary art, running from November 6th to 22nd, 2024. Hosted primarily at the historic former hospital building on ul. Kopernika 15, the festival features a dynamic blend of exhibitions, performances, and discussions that highlight creativity and innovation. With over 23 events across 14 unique venues, visitors can experience visual arts, music, theatre, and interdisciplinary activities, engaging with artists from around the world. The festival is a must-visit for art enthusiasts, travelers, and anyone seeking to explore new perspectives on European identity through art.",
+    date: "2024.11",
+    instagramPostId: "DCP-aS0o_ih",
+    instagramUrl: "https://www.instagram.com/p/DCP-aS0o_ih/",
+    city: "Kraków",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.0518,
+    lng: 19.7852,
+    title: "Zalew Kryspinów – Kraków’s Beloved Lakeside Escape",
+    description: "Zalew Kryspinów, also known as the Lake at Piaski, is a popular recreational spot located just west of Kraków in the village of Budzyń, near Kryspinów. Formed from a former sand mine, the lake stretches about 1.5 km long and 400 meters wide, surrounded by sandy beaches and lush greenery. It is a favorite destination for locals seeking relaxation, water sports, and family outings, offering facilities such as guarded swimming areas, water equipment rentals, sports fields, playgrounds, and an adventure park with a zip line over the water. The lake is also a haven for birdwatchers and anglers, home to a variety of fish and bird species. Easily accessible by car or public transport, Zalew Kryspinów is perfect for a peaceful escape from city life, especially in autumn when the golden foliage creates a magical atmosphere.",
+    date: "2024.11",
+    instagramPostId: "DB03q7_MqjU",
+    instagramUrl: "https://www.instagram.com/p/DB03q7_MqjU/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 50.1207,
+    lng: 19.8601,
+    title: "Farma DyniowaMo – The Perfect Pumpkin Escape Near Kraków",
+    description: "Farma DyniowaMo in Modlnica, just north of Kraków, is the region’s go-to pumpkin paradise for autumn adventures. The farm features rows of vibrant pumpkins, cozy hay bales, and plenty of Insta-worthy photo spots, making it a favorite for families, couples, and solo explorers. Visitors can pick their own pumpkins, enjoy delicious treats, and participate in games and activities for all ages. The farm is open all season long, offering a festive atmosphere with local food, crafts, and a magical autumn vibe. Whether you’re snapping photos, soaking in the fall colors, or spending quality time with loved ones, Farma DyniowaMo is a must-visit autumn destination near Kraków.",
+    date: "2024.10",
+    instagramPostId: "DBqcHk9sJUW",
+    instagramUrl: "https://www.instagram.com/p/DBqcHk9sJUW/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 43.9361,
+    lng: 12.4467,
+    title: "San Marino’s Three Castles – Guaita, Cesta, and Montale",
+    description: "San Marino’s three iconic castles—Guaita, Cesta, and Montale—stand proudly atop Monte Titano, offering breathtaking views and a journey through centuries of history. Guaita, the oldest and most famous, dates back to the 11th century and features dramatic cliffside views[1][2][3]. Cesta, perched on the highest peak, houses a museum of ancient arms and offers panoramic vistas[4][5][6]. Montale, the smallest and most mysterious, was built in the 14th century and is not open to the public[1][7]. The castles are connected by the scenic ‘Path of the Witches,’ making them a must-visit for history lovers, photographers, and adventurers exploring the world’s oldest republic[1][8][7].",
+    date: "2024.10",
+    instagramPostId: "DA8zWS2MQCe",
+    instagramUrl: "https://www.instagram.com/p/DA8zWS2MQCe/",
+    city: "San Marino",
+    country: "San Marino"
+  },
+  {
+    lat: 43.9361,
+    lng: 12.4497,
+    title: "People Watching and Local Life – San Marino Viewpoint",
+    description: "San Marino’s historic center is filled with picturesque stone benches and scenic viewpoints, making it perfect for people-watching and soaking in the local atmosphere. One of the best spots is along the fortress walls near the towers, where locals and visitors gather to enjoy panoramic views of the surrounding countryside and the Adriatic coast. The stone benches, often shaded by trees, offer a tranquil place to pause, chat, and take in the medieval charm of the world’s oldest republic. Whether you’re admiring the ancient architecture, watching daily life unfold, or simply enjoying a quiet moment, these viewpoints capture the essence of San Marino’s slow-paced, friendly lifestyle.",
+    date: "2024.10",
+    instagramPostId: "DA4PqaoM42i",
+    instagramUrl: "https://www.instagram.com/p/DA4PqaoM42i/",
+    city: "San Marino",
+    country: "San Marino"
+  },
+  {
+    lat: 50.0502,
+    lng: 19.9432,
+    title: "Welcome to Kraków – Sunset at Hala Forum",
+    description: "Hala Forum, located at ul. Marii Konopnickiej 28 in Kraków, is a riverside cultural, gastronomic, and event space that has become a hub for locals and visitors alike. Set in the iconic former Forum Hotel, Hala Forum is renowned for its sprawling riverside beer garden, vibrant food stalls, live music, and panoramic views of the Vistula River and Wawel Castle. Whether you’re catching a summer sunset, enjoying a concert, or simply relaxing with friends, Hala Forum offers a unique blend of Kraków’s modern creativity and historic charm. The venue regularly hosts festivals, art exhibitions, and community gatherings, making it a must-visit for anyone seeking Kraków’s contemporary spirit and laid-back atmosphere.",
+    date: "2024.10",
+    instagramPostId: "DAvdbeQsw0Y",
+    instagramUrl: "https://www.instagram.com/p/DAvdbeQsw0Y/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 50.0620,
+    lng: 19.9389,
+    title: "Coffee Tasting at Pożegnanie z Afryką – Kraków",
+    description: "Pożegnanie z Afryką is a cozy African-inspired café and coffee shop located in the heart of Kraków’s Old Town at ul. Św. Tomasza 21. Renowned for its authentic African coffee blends, handcrafted décor, and peaceful ambiance, it offers a unique escape from the city’s bustle. Visitors can enjoy expertly brewed coffee, a wide selection of teas, and a welcoming atmosphere perfect for relaxing or catching up with friends. The café is a must-visit for coffee lovers seeking a taste of Africa and Kraków’s vibrant café culture.",
+    date: "2024.10",
+    instagramPostId: "DAjsWjNlYEx",
+    instagramUrl: "https://www.instagram.com/p/DAjsWjNlYEx/",
+    city: "Kraków",
+    country: "Poland"
   }
+
+
+
+
+  
+
+
+
+
 
 
 

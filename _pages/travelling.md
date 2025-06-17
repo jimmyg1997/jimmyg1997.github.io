@@ -1202,11 +1202,23 @@ const myTravelPosts = [
     title: "Coffee Tasting at Pożegnanie z Afryką – Kraków",
     description: "Pożegnanie z Afryką is a cozy African-inspired café and coffee shop located in the heart of Kraków’s Old Town at ul. Św. Tomasza 21. Renowned for its authentic African coffee blends, handcrafted décor, and peaceful ambiance, it offers a unique escape from the city’s bustle. Visitors can enjoy expertly brewed coffee, a wide selection of teas, and a welcoming atmosphere perfect for relaxing or catching up with friends. The café is a must-visit for coffee lovers seeking a taste of Africa and Kraków’s vibrant café culture.",
     date: "2024.10",
-    instagramPostId: "DAjsWjNlYEx",
-    instagramUrl: "https://www.instagram.com/p/DAjsWjNlYEx/",
+    instagramPostId: "DAjsWjNIYEx",
+    instagramUrl: "https://www.instagram.com/p/DAjsWjNIYEx/",
     city: "Kraków",
     country: "Poland"
+  },
+  {
+    lat: 51.9379,
+    lng: 15.5120,
+    title: "Alpaca Herd Experience – Alpaki z Winnego Wzgórza",
+    description: "Alpaki z Winnego Wzgórza is a charming alpaca farm located in the picturesque countryside of western Poland. This family-friendly destination allows visitors to meet gentle alpacas, learn about their care, and observe their social behavior in a peaceful, natural setting. The farm offers guided tours, educational workshops, and opportunities to interact with the alpacas, making it a perfect getaway for animal lovers, families, and anyone seeking a relaxing rural experience. The tranquil landscape and welcoming atmosphere provide an ideal escape from city life.",
+    date: "2024.09",
+    instagramPostId: "DAYUctes7Am",
+    instagramUrl: "https://www.instagram.com/p/DAYUctes7Am/",
+    city: "Winne Wzgórze",
+    country: "Poland"
   }
+
 
 
 

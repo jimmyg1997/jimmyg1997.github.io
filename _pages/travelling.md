@@ -1307,7 +1307,43 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/C-02kkNMtfG/",
     city: "Lesser Poland Voivodeship",
     country: "Poland"
+  },
+  {
+    lat: 36.83175,
+    lng: 25.89821,
+    title: "Mavros Coffee Experience – Amorgos, Greece",
+    description: "Mavros is a beloved local coffee spot in the heart of Amorgos, Greece, where visitors and locals alike gather for a classic Greek coffee experience. Located in the main settlement of Chora, Mavros offers a cozy atmosphere and serves up traditional Greek coffee, iced frappés, and fresh pastries. The café is a perfect place to relax, people-watch, and soak in the slow pace of island life. With its welcoming vibe and authentic flavors, Mavros is a must-visit for anyone exploring the Cycladic paradise of Amorgos.",
+    date: "2024.08",
+    instagramPostId: "C-mgOSHmk1Q",
+    instagramUrl: "https://www.instagram.com/p/C-mgOSHmk1Q/",
+    city: "Amorgos",
+    country: "Greece"
+  },
+  {
+    lat: 36.5500,
+    lng: 26.3500,
+    title: "Astypalaia Chora – The Whitewashed Heart of the Aegean",
+    description: "Astypalaia Chora, the capital of Astypalaia Island, is a dazzling cascade of white houses with blue windows and balconies, climbing the hillside beneath the medieval Venetian castle. The town’s labyrinthine cobblestone streets, iconic windmills, and vibrant bougainvillea create a quintessential Greek island scene. Chora’s architecture blends Cycladic and Dodecanese influences, with narrow alleys, flower-filled courtyards, and panoramic views over the Aegean Sea. Highlights include the imposing Astypalaia Castle, the picturesque windmills at the town’s entrance, and the charming squares lined with cafés and local shops. Chora is the perfect place to wander, soak in the island’s relaxed pace, and experience authentic Greek island life.",
+    date: "2024.07",
+    instagramPostId: "C-cfupTs2Jq",
+    instagramUrl: "https://www.instagram.com/p/C-cfupTs2Jq/",
+    city: "Astypalaia",
+    country: "Greece"
+  },
+  {
+    lat: 37.10556,
+    lng: 25.37639,
+    title: "Welcome to Naxos, Greece – Sunset Sailing Experience",
+    description: "Naxos, the largest island in the Cyclades, is renowned for its stunning sunsets, vibrant harbor, and authentic Greek island charm. The island’s west coast, especially near Naxos Town (Chora), offers breathtaking views of the Aegean Sea, with sailboats silhouetted against the setting sun. Visitors can enjoy sunset sailing tours, stroll along the waterfront, and savor local cuisine at seaside tavernas. Naxos is also famous for its ancient Portara (Temple of Apollo), picturesque villages, and beautiful beaches, making it a must-visit destination for travelers seeking both relaxation and adventure.",
+    date: "2024.07",
+    instagramPostId: "C-YoAxtM3QA",
+    instagramUrl: "https://www.instagram.com/p/C-YoAxtM3QA/",
+    city: "Naxos",
+    country: "Greece"
   }
+
+
+
 
 
 

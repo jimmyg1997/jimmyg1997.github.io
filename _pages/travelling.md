@@ -1217,7 +1217,108 @@ const myTravelPosts = [
     instagramUrl: "https://www.instagram.com/p/DAYUctes7Am/",
     city: "Winne Wzgórze",
     country: "Poland"
+  },
+  {
+    lat: 50.0637,
+    lng: 19.9317,
+    title: "Arteteka Library – Kraków’s Creative Hub",
+    description: "Arteteka Library, located at ul. Rajska 12 in the Małopolska Garden of the Arts, is Kraków’s most innovative public library and creative space. Spread over three floors, Arteteka offers a unique blend of traditional and digital resources, including e-books, audiobooks, music and film collections, and one of Poland’s largest comic book libraries. The space is designed for creativity and collaboration, hosting workshops, author events, board game tournaments, and VR experiences. With modern equipment, professional software, and a welcoming atmosphere, Arteteka is a favorite spot for students, artists, and anyone seeking inspiration or a quiet place to study in the heart of Kraków.",
+    date: "2024.09",
+    instagramPostId: "C_78tTzsuAB",
+    instagramUrl: "https://www.instagram.com/p/C_78tTzsuAB/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 50.058246,
+    lng: 19.968082,
+    title: "Autumn Walk in Kraków’s Green Park – A Leafy Escape",
+    description: "Located in the eastern part of Kraków, this tranquil park offers a picturesque autumn experience with tall trees, golden leaves carpeting the walkways, and a peaceful atmosphere perfect for a seasonal stroll. Kraków is renowned as one of the greenest cities in Poland, with over 36% of its urban area covered by trees and 53% of the city classified as green space, making it ideal for nature lovers and those seeking a break from the urban bustle. The park is part of Kraków’s extensive network of green areas, which collectively provide residents and visitors with easy access to nature, fresh air, and beautiful scenery throughout the year.",
+    date: "2024.09",
+    instagramPostId: "C_71eJ0spKf",
+    instagramUrl: "https://www.instagram.com/p/C_71eJ0spKf/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 49.7589,
+    lng: 19.3122,
+    title: "Birthday Retreat in Kocierz Rychwałdzki – Nature, Laughter, and Magic",
+    description: "Celebrating Angelika’s birthday in the heart of nature at Kocierz Rychwałdzki, Poland, was pure magic. Surrounded by the whispering trees and the warmth of a wooden house, the retreat featured a fire crackling, BBQ sizzling, and hearts full of joy. The days were filled with laughter, deep conversations, and the kindness of amazing souls. Walks through the forest, delicious food, and love poured into every detail made it unforgettable. Kocierz Rychwałdzki is a tranquil village in the Silesian Voivodeship, nestled in the Beskid Mały mountains, perfect for nature lovers and those seeking a peaceful escape.",
+    date: "2024.09",
+    instagramPostId: "C_agn4ysc9P",
+    instagramUrl: "https://www.instagram.com/p/C_agn4ysc9P/",
+    city: "Kocierz Rychwałdzki",
+    country: "Poland"
+  },
+  {
+    lat: 50.1498,
+    lng: 19.7797,
+    title: "Dreamy Wedding Villa – Karniowice, Poland",
+    description: "Experience a magical wedding day at a beautiful villa in Karniowice, transformed into a floral paradise by talented decorators. From flying golden frames adorned with delicate blooms to stunning white roses and eustomas, every detail is crafted to perfection. The villa’s enchanting atmosphere, filled with love and beauty, makes it an unforgettable venue for couples seeking elegance and romance in the Polish countryside.",
+    date: "2024.08",
+    instagramPostId: "C_K_RZos3ln",
+    instagramUrl: "https://www.instagram.com/p/C_K_RZos3ln/",
+    city: "Karniowice",
+    country: "Poland"
+  },
+
+  {
+    lat: 50.1498,
+    lng: 19.7797,
+    title: "Dreamy Wedding Villa – Karniowice, Poland",
+    description: "Experience a magical wedding day at a beautiful villa in Karniowice, transformed into a floral paradise by talented decorators. From flying golden frames adorned with delicate blooms to stunning white roses and eustomas, every detail is crafted to perfection. The villa’s enchanting atmosphere, filled with love and beauty, makes it an unforgettable venue for couples seeking elegance and romance in the Polish countryside.",
+    date: "2024.08",
+    instagramPostId: "C_K9_VDs2c5",
+    instagramUrl: "https://www.instagram.com/p/C_K9_VDs2c5/",
+    city: "Karniowice",
+    country: "Poland"
+  },
+  {
+    lat: 50.0622,
+    lng: 19.9372,
+    title: "Afrotopias – Contemporary African and Diaspora Art at Potocki Palace, Kraków",
+    description: "The 'Afrotopias' exhibition, part of Krakow Photomonth 2024, is the largest showcase of contemporary art from Sub-Saharan Africa in Central and Eastern Europe. Hosted at the historic Potocki Palace (Pałac Potockich) on Kraków’s Main Market Square, the exhibition features works by artists from over a dozen East and West African cultures. 'Afrotopias' challenges stereotypes, reimagines narratives, and emphasizes restitution, representation, and a shift from victimization to equality between Africa and the West. The exhibition is accompanied by meetings, debates, and a film program, inviting audiences to envision and work towards a just, empowered future for Africa.",
+    date: "2024.06–2024.09",
+    instagramPostId: "C--FApnMNKI",
+    instagramUrl: "https://www.instagram.com/p/C--FApnMNKI/",
+    city: "Kraków",
+    country: "Poland"
+},
+{
+    lat: 50.2584,
+    lng: 19.0275,
+    title: "Discover the Hidden Gem of Poland: Katowice – Culture, History, and Modern Vibes",
+    description: "Katowice is a vibrant city in southern Poland, blending rich industrial heritage with contemporary culture and a lively urban scene. Start your day with a delicious brunch at Primo Caffè, known for its artisanal coffee, fresh breakfasts, and cozy atmosphere in the heart of the city. Dive into the region’s history and creativity at the Silesian Museum, a world-class institution built on a former coal mine, featuring interactive exhibits on Silesian identity, art, and industrial heritage. For lunch or dinner, Tatiana Restaurant offers a fusion of traditional Polish and European flavors in an elegant, welcoming setting. As you stroll through Katowice’s charming streets, you’ll encounter spontaneous street performances and a dynamic local vibe. When night falls, Orange Club is the go-to spot for dancing and live music, while Mariacka Street is famous for its stylish cocktail bars and vibrant nightlife. Katowice is perfect for travelers seeking a unique mix of history, art, gastronomy, and modern energy.",
+    date: "2024.09",
+    instagramPostId: "C-46gCrMwv_",
+    instagramUrl: "https://www.instagram.com/p/C-46gCrMwv_/",
+    city: "Katowice",
+    country: "Poland"
+  },
+
+  {
+    lat: 49.7225,
+    lng: 20.2503,
+    title: "Hidden Gems of Lesser Poland – Classic Cars, Castles, and Cream Cake",
+    description: "Discover the heart of Lesser Poland Voivodeship, a region renowned for its fairytale villages, medieval castles, and unique local experiences. Start your journey in Lanckorona, a picturesque village famous for its charming streets, cozy cafés like Arka Coffee, and artisan ceramics—perfect for souvenirs. Step back in time at Tenczyn Castle, where history comes alive and you might catch a vintage car exhibition, adding a touch of nostalgia to your visit. Don’t miss Wadowice, the birthplace of Pope John Paul II, and indulge in the legendary Wadowice cream cake, a local delicacy that captures the sweet spirit of the region. Lesser Poland’s central location offers a blend of natural beauty, cultural heritage, and vibrant community life, making it a must-visit for explorers, history buffs, and food lovers alike.",
+    date: "2024.08",
+    instagramPostId: "C-02kkNMtfG",
+    instagramUrl: "https://www.instagram.com/p/C-02kkNMtfG/",
+    city: "Lesser Poland Voivodeship",
+    country: "Poland"
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

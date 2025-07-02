@@ -298,9 +298,9 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
 
 
-## Workout Routines {#workout-routines}
+<!-- ## Workout Routines {#workout-routines} -->
 
-<div class="routines-section">
+<!-- <div class="routines-section">
   {% for routine in site.calisthenics %}
     {% if routine.type == "workout" %}
       <div class="routine-card">
@@ -311,7 +311,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
       </div>
     {% endif %}
   {% endfor %}
-</div>
+</div> -->
 
 ## Nutrition Tips & Meal Plans {#nutrition-tips-meal-plans}
 
@@ -327,9 +327,9 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   {% endfor %}
 </div>
 
-## Progress Photos {#progress-photos}
+<!-- ## Progress Photos {#progress-photos} -->
 
-<div class="progress-gallery">
+<!-- <div class="progress-gallery">
   {% for photo in site.data.fitness_progress %}
     <div class="progress-item">
       <div class="progress-date">{{ photo.date }}</div>
@@ -337,4 +337,4 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
       <p>{{ photo.description }}</p>
     </div>
   {% endfor %}
-</div> 
+</div>  -->

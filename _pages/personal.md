@@ -259,8 +259,8 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
   </div>
 </div>
 
-## Media Recommendations
-
+<!-- ## Media Recommendations -->
+<!-- 
 <div class="media-section">
   <div class="media-category" id="podcasts">
     <h3 id="podcasts-section">Podcasts</h3>
@@ -303,7 +303,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->
 
 ## Learning Statistics
 

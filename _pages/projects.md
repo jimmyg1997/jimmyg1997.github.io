@@ -19,7 +19,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 ## Non-coding Projects {#non-coding-projects}
 
 <div class="project-card" id="bonobo-gentlemen">
-  <h3>Bonobo Gentlemen Podcast</h3>
+  <h3 id="bonobo-gentlemen-podcast">Bonobo Gentlemen Podcast</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-image">
@@ -37,7 +37,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 
 
 <div class="project-card" id="gmail-reporter">
-  <h3>Gmail Newsletter Reporter</h3>
+  <h3 id="gmail-newsletter-reporter">Gmail Newsletter Reporter</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/gmail-reporter.png" alt="Gmail Newsletter Reporter" class="project-image">
@@ -52,7 +52,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 </div>
 
 <div class="project-card" id="polls-analyzer">
-  <h3>Polls Analyzer</h3>
+  <h3 id="polls-analyzer">Polls Analyzer</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/polls-analyzer.png" alt="Polls Analyzer" class="project-image">
@@ -67,7 +67,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 </div>
 
 <div class="project-card" id="ml-feature-engineering">
-  <h3>ML Feature Engineering FastAPI Docker</h3>
+  <h3 id="ml-feature-engineering-fastapi">ML Feature Engineering FastAPI Docker</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/ml-feature-engineering.png" alt="ML Feature Engineering FastAPI Docker" class="project-image">
@@ -84,7 +84,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 ## Healthcare & PhD Projects {#healthcare-projects}
 
 <div class="project-card" id="suicide-prevention">
-  <h3>Suicide Prevention Survey</h3>
+  <h3 id="suicide-prevention-survey">Suicide Prevention Survey</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/suicide-prevention.png" alt="Suicide Prevention Survey" class="project-image">
@@ -99,7 +99,7 @@ excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine lea
 </div>
 
 <div class="project-card" id="covid-classification">
-  <h3>COVID-19 Tabular Classification Genes</h3>
+  <h3 id="covid-19-classification">COVID-19 Tabular Classification Genes</h3>
   <div class="project-content">
     <div class="project-details">
       <img src="../assets/images/projects/covid-classification.png" alt="COVID-19 Tabular Classification Genes" class="project-image">

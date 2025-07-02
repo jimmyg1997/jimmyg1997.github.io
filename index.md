@@ -95,11 +95,11 @@ feature_row2:
 
 <div class="section-divider"></div>
 
-## Gift Ideas
+<!-- ## Gift Ideas
 
 <div class="wishlist-section">
   <div class="wishlist-content">
     <p>Looking for gift ideas? Check out my wishlist!</p>
     <a href="/wishlist/" class="btn btn--primary">View Wishlist</a>
   </div>
-</div>
+</div> -->

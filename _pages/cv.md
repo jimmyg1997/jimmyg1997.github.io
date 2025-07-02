@@ -109,6 +109,7 @@ You can download a PDF version of my CV here:
 - **Responsibilities**: Focusing on community empowerment, I engaged in environmental conservation, sports development, and educational support initiatives. This experience deepened my understanding of sustainable development and reinforced my commitment to meaningful change.
   - Kenya, Jan 2024
   - Nepal, May 2024
+  - Vietnam, Apr 2025
 
 
 ### Marketing Coordinator

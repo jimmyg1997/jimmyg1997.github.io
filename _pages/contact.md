@@ -3,7 +3,8 @@ title: "Contact Me"
 layout: single
 permalink: /contact/
 author_profile: true
-toc: false
+toc: true
+toc_sticky: true
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"

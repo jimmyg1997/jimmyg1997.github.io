@@ -188,7 +188,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   <div class="timeline-item" id="advanced-skills">
     <div class="timeline-date">2025</div>
     <div class="timeline-content">
-      <h3>Advanced Skills</h3>
+      <h3 id="advanced-skills-2025">Advanced Skills</h3>
       <p>Working on front lever pull-ups and planche progressions, with consistent training 5 days per week. Focus on straight arm strength and skill development.</p>
     </div>
   </div>
@@ -196,7 +196,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   <div class="timeline-item" id="intermediate-training">
     <div class="timeline-date">2024</div>
     <div class="timeline-content">
-      <h3>Intermediate Training</h3>
+      <h3 id="intermediate-training-2024">Intermediate Training</h3>
       <p>Achieved first milestones on basics (weighted dips, weighted pull-ups, weighted chin-ups), 100% form of handstand hold (and handstand variations), first attemptos of weigthed muscle-ups. Increased training frequency to 4 days per week, and began focusing on more advanced calisthenics skills.</p>
     </div>
   </div>
@@ -204,7 +204,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   <div class="timeline-item" id="intermediate-training">
     <div class="timeline-date">2023</div>
     <div class="timeline-content">
-      <h3>Intermediate Training</h3>
+      <h3 id="intermediate-training-2023">Intermediate Training</h3>
       <p>Achieved muscle-ups, front lever (fast enough) and handstand holds, mastered back lever </p>
     </div>
   </div>
@@ -212,7 +212,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   <div class="timeline-item" id="building-foundations">
     <div class="timeline-date">2022</div>
     <div class="timeline-content">
-      <h3>Building Foundations</h3>
+      <h3 id="building-foundations-2022">Building Foundations</h3>
       <p>Focused on mastering the basics: pull-ups, dips, push-ups, and core strength. Established consistent training routine of 3 days per week.</p>
     </div>
   </div>
@@ -223,7 +223,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
 
 <div class="skills-grid">
   <div class="skill-item" id="planche">
-    <h3>Planche</h3>
+    <h3 id="planche-progress">Planche</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 30%;">30%</div>
     </div>
@@ -231,7 +231,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
 
   <div class="skill-item" id="front-lever-pull-up">
-    <h3>Front Lever</h3>
+    <h3 id="front-lever-pull-up-progress">Front Lever</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 20%;">20%</div>
     </div>
@@ -239,7 +239,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
   
   <div class="skill-item" id="front-lever">
-    <h3>Front Lever</h3>
+    <h3 id="front-lever-progress">Front Lever</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
@@ -247,7 +247,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
 
   <div class="skill-item" id="handstand">
-    <h3>Handstand Push-up</h3>
+    <h3 id="handstand-push-up-progress">Handstand Push-up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
@@ -255,7 +255,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
   
   <div class="skill-item" id="handstand">
-    <h3>Handstand</h3>
+    <h3 id="handstand-progress">Handstand</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
@@ -263,7 +263,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
 
   <div class="skill-item" id="weighted-muscle-up">
-    <h3>Weighted Muscle-Up</h3>
+    <h3 id="weighted-muscle-up-progress">Weighted Muscle-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
@@ -272,7 +272,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
 
   
   <div class="skill-item" id="muscle-up">
-    <h3>Muscle-Up</h3>
+    <h3 id="muscle-up-progress">Muscle-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 100%;">100%</div>
     </div>
@@ -281,7 +281,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
 
 
 <div class="skill-item" id="weigthed-dip">
-    <h3>Weighted Dips</h3>
+    <h3 id="weighted-dips-progress">Weighted Dips</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>
@@ -290,7 +290,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
 
 
 <div class="skill-item" id="weigthed-pull-up">
-    <h3>Weighted Pull-Up</h3>
+    <h3 id="weighted-pull-up-progress">Weighted Pull-Up</h3>
     <div class="progress-bar">
       <div class="progress" style="width: 40%;">40%</div>
     </div>

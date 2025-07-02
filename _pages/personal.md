@@ -23,7 +23,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
 
 <div class="seminars-section">
   <div class="seminar-item">
-    <h3>LFP Analysis in Python</h3>
+    <h3 id="lfp-analysis-python">LFP Analysis in Python</h3>
     <p class="seminar-provider">University of Bonn – iBOTS (Innovative Brain Organization Technologies & Signals)</p>
     <p class="seminar-date">Issued: Mar 2025</p>
 
@@ -46,7 +46,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
 
 
   <div class="seminar-item">
-    <h3>Building Robust Experiments with Python and PsychoPy</h3>
+    <h3 id="building-robust-experiments">Building Robust Experiments with Python and PsychoPy</h3>
     <p class="seminar-provider">Universitätsklinikum Bonn</p>
     <p class="seminar-date">Issued: Dec 2024</p>
     
@@ -64,7 +64,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
   </div>
 
   <div class="seminar-item">
-    <h3>ANDA-NI Neuroinformatics Workshop</h3>
+    <h3 id="anda-ni-neuroinformatics">ANDA-NI Neuroinformatics Workshop</h3>
     <p class="seminar-provider">Universitätsklinikum Bonn</p>
     <p class="seminar-date">Issued: Sep 2024</p>
     
@@ -85,7 +85,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
 
 <div class="courses-section">
   <div class="course-card">
-    <h3>Generative AI for Healthcare</h3>
+    <h3 id="generative-ai-healthcare">Generative AI for Healthcare</h3>
     <p class="course-provider">Google</p>
     <p class="course-date">Issued: Feb 2025</p>
     <p class="course-id">Credential ID: 14142481</p>
@@ -93,7 +93,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <p class="course-skills"><b>Skills:</b> Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning</p>
   </div>
   <div class="course-card">
-    <h3>HelloAI Advanced RIS Scholarship</h3>
+    <h3 id="helloai-advanced-ris">HelloAI Advanced RIS Scholarship</h3>
     <p class="course-provider">EIT Health</p>
     <p class="course-date">Issued: Jan 2025</p>
     <p class="course-id">Credential ID: vpnbd7fxja</p>

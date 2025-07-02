@@ -9,7 +9,7 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/travel-header.png
-excerpt: "🧭 Exploring the world 🌄 one adventure at a time 🌍"
+excerpt: "Exploring the world one adventure at a time"
 ---
 
 <div class="travel-intro">

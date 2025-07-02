@@ -55,7 +55,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day.</p>
   
   <div class="workout-day" id="straight-arm">
-    <h4>Day 1 & 3: Straight Arm</h4>
+    <h4 id="day-1-3-straight-arm">Day 1 & 3: Straight Arm</h4>
     <table class="workout-table">
       <thead>
         <tr>
@@ -100,7 +100,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
   
   <div class="workout-day" id="bent-arm">
-    <h4>Day 2 & 4: Bent Arm</h4>
+    <h4 id="day-2-4-bent-arm">Day 2 & 4: Bent Arm</h4>
     <table class="workout-table">
       <thead>
         <tr>
@@ -140,7 +140,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   </div>
   
   <div class="workout-day" id="legs">
-    <h4>Day 5: Legs</h4>
+    <h4 id="day-5-legs">Day 5: Legs</h4>
     <table class="workout-table">
       <thead>
         <tr>
@@ -304,7 +304,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   {% for routine in site.calisthenics %}
     {% if routine.type == "workout" %}
       <div class="routine-card">
-        <h3><a href="{{ routine.url }}">{{ routine.title }}</a></h3>
+        <h3 id="{{ routine.title | slugify }}"><a href="{{ routine.url }}">{{ routine.title }}</a></h3>
         <p class="routine-meta">{{ routine.difficulty }} | {{ routine.duration }} minutes | {{ routine.frequency }}</p>
         <p>{{ routine.excerpt | truncate: 150 }}</p>
         <a href="{{ routine.url }}" class="btn btn--primary btn--small">View Full Routine</a>
@@ -319,7 +319,7 @@ excerpt: "📸 Documenting my fitness journey 🏋️‍♂️, workout progress
   {% for post in site.calisthenics %}
     {% if post.type == "nutrition" %}
       <div class="nutrition-card">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 id="{{ post.title | slugify }}"><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.excerpt | truncate: 150 }}</p>
         <a href="{{ post.url }}" class="btn btn--primary btn--small">Read More</a>
       </div>

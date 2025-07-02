@@ -114,7 +114,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/power-of-now.jpg" alt="The Power of Now">
       <div class="book-details">
-        <h4>The Power of Now</h4>
+        <h4 id="power-of-now">The Power of Now</h4>
         <p class="book-author">by Eckhart Tolle</p>
         <p class="book-progress">Progress: 60%</p>
         <p>A guide to spiritual enlightenment that emphasizes living in the present moment and transcending thoughts of the past or future.</p>
@@ -126,7 +126,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
         <div class="book-card">
           <img src="{{ book.cover }}" alt="{{ book.title }}">
           <div class="book-details">
-            <h4>{{ book.title }}</h4>
+            <h4 id="{{ book.title | slugify }}">{{ book.title }}</h4>
             <p class="book-author">by {{ book.author }}</p>
             <p class="book-progress">Progress: {{ book.progress }}%</p>
             <p>{{ book.excerpt | truncate: 100 }}</p>
@@ -141,7 +141,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/why-buddhism-is-true.jpg" alt="Why Buddhism is True">
       <div class="book-details">
-        <h4>Why Buddhism is True</h4>
+        <h4 id="why-buddhism-is-true">Why Buddhism is True</h4>
         <p class="book-author">by Robert Wright</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐⭐</p>
         <p>An exploration of Buddhism's core psychological insights through the lens of evolutionary psychology and neuroscience.</p>
@@ -151,7 +151,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/how-to-be-stoic.jpg" alt="How to Be Stoic">
       <div class="book-details">
-        <h4>How to Be Stoic</h4>
+        <h4 id="how-to-be-stoic">How to Be Stoic</h4>
         <p class="book-author">by Massimo Pigliucci</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A practical guide to applying stoic philosophy to modern life, focusing on virtue, resilience, and inner peace.</p>
@@ -161,7 +161,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/a-man-called-otto.jpg" alt="A Man Called Otto">
       <div class="book-details">
-        <h4>A Man Called Otto</h4>
+        <h4 id="a-man-called-otto">A Man Called Otto</h4>
         <p class="book-author">by Fredrik Backman</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐⭐</p>
         <p>A heartwarming novel about a grumpy yet lovable man who finds his structured life disrupted by new neighbors.</p>
@@ -171,7 +171,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/midnight-library.jpg" alt="The Midnight Library">
       <div class="book-details">
-        <h4>The Midnight Library</h4>
+        <h4 id="midnight-library">The Midnight Library</h4>
         <p class="book-author">by Matt Haig</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A novel about a library between life and death where each book represents a different version of what your life could have been.</p>
@@ -181,7 +181,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/painful-truth.jpeg" alt="The Painful Truth">
       <div class="book-details">
-        <h4>The Painful Truth</h4>
+        <h4 id="painful-truth">The Painful Truth</h4>
         <p class="book-author">by Monty Lyman</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>An exploration of pain from scientific, psychological, and philosophical perspectives.</p>
@@ -191,7 +191,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/tender-is-the-night.jpg" alt="Tender is the Night">
       <div class="book-details">
-        <h4>Tender is the Night</h4>
+        <h4 id="tender-is-the-night">Tender is the Night</h4>
         <p class="book-author">by F. Scott Fitzgerald</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A psychological novel about the rise and fall of a promising young psychiatrist and his wife.</p>
@@ -201,7 +201,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/subtle-art.jpg" alt="The Subtle Art of Not Giving a F*ck">
       <div class="book-details">
-        <h4>The Subtle Art of Not Giving a F*ck</h4>
+        <h4 id="subtle-art-not-giving-fck">The Subtle Art of Not Giving a F*ck</h4>
         <p class="book-author">by Mark Manson</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A counterintuitive approach to living a good life by focusing on what truly matters and letting go of the rest.</p>
@@ -211,7 +211,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/vasishoupanwmou.jpg" alt="Βασίσου Πάνω Μου">
       <div class="book-details">
-        <h4>Βασίσου Πάνω Μου</h4>
+        <h4 id="vasishou-panw-mou">Βασίσου Πάνω Μου</h4>
         <p class="book-author">by Bucay Jorge</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A Greek novel exploring themes of trust, relationships, and personal growth.</p>
@@ -221,7 +221,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/lost-symbol.jpg" alt="The Lost Symbol">
       <div class="book-details">
-        <h4>The Lost Symbol</h4>
+        <h4 id="lost-symbol">The Lost Symbol</h4>
         <p class="book-author">by Dan Brown</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
         <p>A thriller following Robert Langdon as he decodes ancient symbols in Washington, D.C. to save his mentor.</p>
@@ -231,7 +231,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
     <div class="book-card">
       <img src="../assets/images/books/sapiens.jpg" alt="Sapiens">
       <div class="book-details">
-        <h4>Sapiens</h4>
+        <h4 id="sapiens">Sapiens</h4>
         <p class="book-author">by Yuval Noah Harari</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐⭐</p>
         <p>A brief history of humankind, exploring how Homo sapiens evolved and came to dominate the planet.</p>
@@ -243,7 +243,7 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
         <div class="book-card">
           <img src="{{ book.cover }}" alt="{{ book.title }}">
           <div class="book-details">
-            <h4><a href="{{ book.url }}">{{ book.title }}</a></h4>
+            <h4 id="{{ book.title | slugify }}"><a href="{{ book.url }}">{{ book.title }}</a></h4>
             <p class="book-author">by {{ book.author }}</p>
             <p class="book-rating">Rating: 
               {% for i in (1..5) %}
@@ -263,14 +263,14 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
 
 <div class="media-section">
   <div class="media-category" id="podcasts">
-    <h3>Podcasts</h3>
+    <h3 id="podcasts-section">Podcasts</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "podcast" %}
           <div class="media-item">
             <img src="{{ media.cover }}" alt="{{ media.title }}">
             <div class="media-details">
-              <h4>{{ media.title }}</h4>
+              <h4 id="{{ media.title | slugify }}">{{ media.title }}</h4>
               <p>{{ media.excerpt | truncate: 100 }}</p>
               {% if media.link %}
                 <a href="{{ media.link }}" class="btn btn--primary btn--small" target="_blank">Listen</a>
@@ -283,14 +283,14 @@ excerpt: "💡 Continuous learning 🔁 Books 📘, Courses 🧠 I recommend."
   </div>
   
   <div class="media-category" id="movies-series">
-    <h3>Movies & Series</h3>
+    <h3 id="movies-series-section">Movies & Series</h3>
     <div class="media-grid">
       {% for media in site.personal %}
         {% if media.type == "movie" or media.type == "series" %}
           <div class="media-item">
             <img src="{{ media.cover }}" alt="{{ media.title }}">
             <div class="media-details">
-              <h4>{{ media.title }}</h4>
+              <h4 id="{{ media.title | slugify }}">{{ media.title }}</h4>
               <p class="media-rating">Rating: 
                 {% for i in (1..5) %}
                   {% if i <= media.rating %}⭐{% else %}☆{% endif %}

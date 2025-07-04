@@ -1632,7 +1632,7 @@ if (myTravelPosts.length > 0) {
 
 <!-- ## Travel Gallery {#travel-gallery} -->
 
-<div class="travel-gallery">
+<!-- <div class="travel-gallery">
   {% for travel in site.travelling %}
     {% for image in travel.gallery %}
       <div class="gallery-item">
@@ -1642,7 +1642,7 @@ if (myTravelPosts.length > 0) {
       </div>
     {% endfor %}
   {% endfor %}
-</div>
+</div> -->
 
 
 

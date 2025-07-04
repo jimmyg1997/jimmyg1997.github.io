@@ -102,16 +102,19 @@ You can download a PDF version of my CV here:
 - **Major**: Computing & Software Systems
 - **GPA**: 9.1/10.0 (Top 5%)
 - **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" [[pdf](http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593)] [[slides](https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk)]
+- **Skills**: Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, Natural Language Processing (NLP), Python, Signal Processing, Git
 
 ### Minor in Finance
 - **Institution**: American College of Greece (Deree College)
 - **Period**: 2017 - 2020
 - **GPA**: 3.82/4.00
+- **Skills**: Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git
 
 ### Summer School in Foundations of Neuroscience
 - **Institution**: Harvard University (Remote)
 - **Period**: 2021
 - **Scholarship**: Stavros Niarchos Foundation / American College of Greece (SNF/ACG)
+- **Skills**: Data Processing, Data Analysis, Data Visualization, Data Extraction, Python
 
 ## Skills
 

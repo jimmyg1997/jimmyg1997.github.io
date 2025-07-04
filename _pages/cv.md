@@ -15,12 +15,12 @@ header:
 /* Even smaller, compact font for web app (desktop) */
 @media (min-width: 700px) {
   .cv-section, .cv-section * {
-    font-size: 0.85em;
-    line-height: 1.09;
+    font-size: 0.85em !important;
+    line-height: 1.09 !important;
     letter-spacing: -0.013em;
   }
   .cv-section h2, .cv-section h3 {
-    font-size: 0.97em;
+    font-size: 0.97em !important;
     margin-bottom: 0.11em;
     margin-top: 0.7em;
     letter-spacing: -0.015em;
@@ -34,6 +34,8 @@ header:
   }
 }
 </style>
+
+<div class="cv-section">
 
 ## Download CV
 
@@ -157,4 +159,6 @@ You can download a PDF version of my CV here:
 - **Organization**: CogniHub (Interdisciplinary Non-Profit Student Organization)
 - **Period**: Jan 2021 - Nov 2023
 - **Responsibilities**: Conducting competitive marketing research and organizing events.
+
+</div>
 

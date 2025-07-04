@@ -1551,11 +1551,28 @@ if (myTravelPosts.length > 0) {
       <h3 id="easter-vietnam">Easter in Vietnam</h3>
       <p class="travel-date">April 2025</p>
       <p>My volunteering experience with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
-      <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
+      <div style="text-align: center;">
+        <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
+      </div>
     </div>
   </div>
 
-  
+
+<div class="recent-travels">
+  <div class="travel-card" id="vietnam-2025">
+    <div class="travel-image">
+      <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
+    </div>
+    <div class="travel-content">
+      <h3 id="living-krakow">Living in Krakow</h3>
+      <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
+      <div style="text-align: center;">
+        <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
+          View the Guide
+        </a>
+      </div>
+  </div>
+
   
  
   
@@ -1574,23 +1591,27 @@ if (myTravelPosts.length > 0) {
   {% endfor %}
 </div>
 
-## Travel Categories {#travel-categories}
+<!-- ## Travel Guides {#travel-categories} -->
 
-<div class="travel-categories">
+<!-- <div class="travel-categories">
   <div class="category-item" id="city-explorations">
     <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
     <h3 id="living-krakow">Living in Krakow</h3>
     <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
-    <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">View the Guide</a>
-  </div>
+    <div style="text-align: center;">
+      <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
+        View the Guide
+      </a>
+    </div>
+  </div> -->
   
-  <div class="category-item" id="nature-outdoors">
+  <!-- <div class="category-item" id="nature-outdoors">
     <img src="/assets/images/travel/nature-travels.jpg" alt="Nature Travels">
     <h3 id="nature-outdoors">Nature & Outdoors</h3>
     <p>Hiking, national parks, and natural wonders</p>
     <a href="/travelling/tag/nature/" class="btn btn--primary btn--small">View Nature</a>
   </div>
-</div>
+</div> -->
 
 <!-- ## Travel Gallery {#travel-gallery} -->
 

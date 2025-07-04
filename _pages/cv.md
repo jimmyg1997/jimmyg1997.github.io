@@ -11,6 +11,28 @@ header:
   overlay_image: /assets/images/cv-header.jpg
 ---
 
+<style>
+/* Compact, elegant font for web app (desktop) */
+@media (min-width: 700px) {
+  .cv-section, .cv-section * {
+    font-size: 0.98em;
+    line-height: 1.35;
+  }
+  .cv-section h2, .cv-section h3 {
+    font-size: 1.15em;
+    margin-bottom: 0.3em;
+    margin-top: 1.2em;
+  }
+  .cv-section ul, .cv-section ol {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .cv-section li {
+    margin-bottom: 0.15em;
+  }
+}
+</style>
+
 ## Download CV
 
 You can download a PDF version of my CV here:
@@ -55,6 +77,18 @@ You can download a PDF version of my CV here:
   - Diagnostic classification using text and audio data of Alzheimer's patients.
   - Used NLP and ML models such as LSTM, CNN, and BERT.
 
+### AI Researcher & IT Support for Mental Health Projects
+- **Company**: Klimaka NGO
+- **Period**: Mar 2025 - Present
+- **Location**: Athens, Attiki, Greece
+- **Responsibilities**:
+  - Create personalized mental health questionnaires using LLMs tailored to individual patient profiles.
+  - Collaborate with Laiko General Hospital to integrate dynamic questionnaires for use in emergency settings.
+  - Work on a mobile app supporting suicide prevention through self-assessment tools and access to crisis resources.
+  - Develop a feedback loop between clinicians and AI tools to improve question quality and clinical relevance.
+  - Ensure GDPR compliance and ethical handling of sensitive mental health data.
+- **Skills**: Large Language Models (LLM), Mental Health, Suicide Prevention, Project Management, Python, Data Analysis, Data Extraction, Data Processing, Version Control, Bioinformatics
+- **Tech Stack**: Python, Hugging Face Transformers, OpenAI API, FastAPI, Pandas, NumPy, Git, Docker, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), PostgreSQL, GDPR Compliance Tools
 
 ## Education
 

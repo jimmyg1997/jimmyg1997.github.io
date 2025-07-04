@@ -1561,7 +1561,7 @@ if (myTravelPosts.length > 0) {
 <div class="recent-travels">
   <div class="travel-card" id="vietnam-2025">
     <div class="travel-image">
-      <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
+      <img src="/assets/images/travel/krakow-guide2.png" alt="City Travels">
     </div>
     <div class="travel-content">
       <h3 id="living-krakow">Living in Krakow</h3>
@@ -1573,7 +1573,7 @@ if (myTravelPosts.length > 0) {
       </div>
   </div>
 
-  
+<!--   
  
   
   {% for travel in site.travelling limit:3 %}
@@ -1589,7 +1589,7 @@ if (myTravelPosts.length > 0) {
       </div>
     </div>
   {% endfor %}
-</div>
+</div> -->
 
 <!-- ## Travel Guides {#travel-categories} -->
 

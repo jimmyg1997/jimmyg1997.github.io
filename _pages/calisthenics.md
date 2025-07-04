@@ -16,6 +16,57 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p>
 </div>
 
+<style>
+/* Instagram Feed Responsive Fix */
+.instagram-grid {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.instagram-post {
+  width: 340px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.instagram-embed-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  min-height: 340px;
+  max-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.instagram-embed-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 340px;
+  max-height: 420px;
+  border: none;
+  display: block;
+}
+@media (max-width: 900px) {
+  .instagram-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .instagram-post {
+    width: 100%;
+    min-width: 0;
+  }
+}
+</style>
+
 ## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">

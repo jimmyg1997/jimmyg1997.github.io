@@ -17,6 +17,51 @@ excerpt: "Making a difference through community service and youth leadership"
 </div>
 
 <style>
+/* Card Grid Layout */
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+}
+.timeline-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+.timeline-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.timeline-date {
+  font-size: 0.95em;
+  color: #888;
+  margin-bottom: 0.5em;
+}
+.timeline-image {
+  width: 100%;
+  max-width: 320px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.15s;
+}
+.timeline-image:hover {
+  transform: scale(1.04);
+}
 .expand-link, .collapse-link {
   color: #0074D9;
   cursor: pointer;
@@ -26,7 +71,58 @@ excerpt: "Making a difference through community service and youth leadership"
 .expand-link:hover, .collapse-link:hover {
   text-decoration: underline;
 }
+
+/* Modal Styles */
+#image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+}
+#image-modal.active {
+  display: flex;
+}
+#image-modal img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+#image-modal .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10001;
+}
 </style>
+
+<div id="image-modal">
+  <span class="close-btn" onclick="closeImageModal()">&times;</span>
+  <img id="modal-img" src="" alt="Popup image">
+</div>
+<script>
+function openImageModal(src, alt) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal-img').alt = alt;
+  document.getElementById('image-modal').classList.add('active');
+}
+function closeImageModal() {
+  document.getElementById('image-modal').classList.remove('active');
+  document.getElementById('modal-img').src = '';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('image-modal').addEventListener('click', function(e) {
+    if (e.target === this || e.target.classList.contains('close-btn')) closeImageModal();
+  });
+});
+</script>
 
 ## Volunteering Timeline {#volunteering-timeline}
 
@@ -44,7 +140,7 @@ excerpt: "Making a difference through community service and youth leadership"
         Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten and cultural centre, assisted in agricultural tasks, and participated in traditional art workshops. This immersive experience deepened my appreciation for cultural heritage preservation and reinforced my commitment to sustainable community empowerment.
         <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
       </p>
-      <img src="../assets/images/volunteering/wheeling2help-vietnam.png" alt="Wheeling2help Vietnam" class="timeline-image">
+      <img src="../assets/images/volunteering/wheeling2help-vietnam.png" alt="Wheeling2help Vietnam" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -53,8 +149,15 @@ excerpt: "Making a difference through community service and youth leadership"
     <div class="timeline-content">
       <div class="timeline-date">May - June 2024</div>
       <h3 id="erasmus-youth-exchange-2024">Team Lead - Erasmus+ Youth Exchange</h3>
-      <p>Led the Greek team 🇬🇷 at the Erasmus+ Youth Exchange, «rECOnnect», held in Tatra Mountains, Murzasichle, Zakopane, Poland📍. Focused on environmental initiatives and youth leadership development.</p>
-      <img src="../assets/images/volunteering/reconnect.png" alt="Erasmus+ Youth Exchange" class="timeline-image">
+      <p class="timeline-summary">
+        Led the Greek team 🇬🇷 at the Erasmus+ Youth Exchange, «rECOnnect», held in Tatra Mountains, Murzasichle, Zakopane, Poland📍. Focused on environmental initiatives and youth leadership...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Led the Greek team 🇬🇷 at the Erasmus+ Youth Exchange, «rECOnnect», held in Tatra Mountains, Murzasichle, Zakopane, Poland📍. Focused on environmental initiatives and youth leadership development.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/reconnect.png" alt="Erasmus+ Youth Exchange" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 

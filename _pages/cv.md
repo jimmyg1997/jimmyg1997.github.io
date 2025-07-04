@@ -82,8 +82,9 @@ You can download a PDF version of my CV here:
 - **Institution**: Biomedical Research Foundation, Academy of Athens
 - **Period**: Sep 2021 - Dec 2021
 - **Research**:
-  - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data.
+  - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]
   - Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.
+  - Conducted research on Machine & Deep Learning for COVID severity classification using tabular data. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
 
 ### Data Science Intern
 - **Institution**: National Center for Scientific Research "Demokritos"
@@ -100,7 +101,7 @@ You can download a PDF version of my CV here:
 - **Period**: 2015 - 2022
 - **Major**: Computing & Software Systems
 - **GPA**: 9.1/10.0 (Top 5%)
-- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" [[link](http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593)] [[presentation](https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk)]
+- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" [[pdf](http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593)] [[slides](https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk)]
 
 ### Minor in Finance
 - **Institution**: American College of Greece (Deree College)

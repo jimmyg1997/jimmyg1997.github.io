@@ -165,8 +165,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">May 2024</div>
       <h3 id="wheeling2help-nepal-2024">Volunteer - Wheeling2help NGO</h3>
-      <p>Volunteered with Wheeling2help in Nepal, focusing on community empowerment through environmental conservation, sports development, and educational support initiatives.</p>
-      <img src="../assets/images/volunteering/wheeling2help-nepal.png" alt="Wheeling2help Nepal" class="timeline-image">
+      <p class="timeline-summary">
+        Volunteered with Wheeling2help in Nepal, focusing on community empowerment through environmental conservation, sports development, and educational support...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Volunteered with Wheeling2help in Nepal, focusing on community empowerment through environmental conservation, sports development, and educational support initiatives.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/wheeling2help-nepal.png" alt="Wheeling2help Nepal" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -174,8 +181,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">January 2024</div>
       <h3 id="wheeling2help-kenya-2024">Volunteer - Wheeling2help NGO</h3>
-      <p>Volunteered with Wheeling2help in Kenya, working on environmental conservation, sports development, and education initiatives for sustainable community impact.</p>
-      <img src="../assets/images/volunteering/wheeling2help-kenya.png" alt="Wheeling2help Kenya" class="timeline-image">
+      <p class="timeline-summary">
+        Volunteered with Wheeling2help in Kenya, working on environmental conservation, sports development, and education initiatives for sustainable...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Volunteered with Wheeling2help in Kenya, working on environmental conservation, sports development, and education initiatives for sustainable community impact.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/wheeling2help-kenya.png" alt="Wheeling2help Kenya" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -184,8 +198,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">January 2021 - October 2023</div>
       <h3 id="cognihub-marketing">Marketing Coordinator - CogniHub</h3>
-      <p>Led marketing initiatives for CogniHub, an interdisciplinary non-profit student organization promoting interdisciplinarity through events, talks, and workshops.</p>
-      <img src="../assets/images/volunteering/cognihub.png" alt="CogniHub" class="timeline-image">
+      <p class="timeline-summary">
+        Led marketing initiatives for CogniHub, an interdisciplinary non-profit student organization promoting interdisciplinarity through events...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Led marketing initiatives for CogniHub, an interdisciplinary non-profit student organization promoting interdisciplinarity through events, talks, and workshops.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/cognihub.png" alt="CogniHub" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -193,8 +214,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">January - November 2021</div>
       <h3 id="citycampus-rd">Research And Development Specialist - citycampus.gr</h3>
-      <p>Conducted competitive research and analyzed statistics using Python, Google Analytics, and SimilarWeb to improve educational platform performance.</p>
-      <img src="../assets/images/volunteering/citycampus.png" alt="CityCampus" class="timeline-image">
+      <p class="timeline-summary">
+        Conducted competitive research and analyzed statistics using Python, Google Analytics, and SimilarWeb to improve educational platform...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Conducted competitive research and analyzed statistics using Python, Google Analytics, and SimilarWeb to improve educational platform performance.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/citycampus.png" alt="CityCampus" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -203,8 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">November 2018</div>
       <h3 id="web-summit-volunteer">Student Volunteer - Web Summit</h3>
-      <p>Member of the Media Team at the world's largest tech conference in Lisbon, Portugal, assisting in interview booths and press conferences.</p>
-      <img src="../assets/images/volunteering/websummit.png" alt="Web Summit" class="timeline-image">
+      <p class="timeline-summary">
+        Member of the Media Team at the world's largest tech conference in Lisbon, Portugal, assisting in interview booths and press conferences...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Member of the Media Team at the world's largest tech conference in Lisbon, Portugal, assisting in interview booths and press conferences.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/websummit.png" alt="Web Summit" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -213,8 +248,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">September 2017 - April 2018</div>
       <h3 id="cansat-greece">Contact Person Volunteer - CanSat in Greece</h3>
-      <p>Responsible for supporting one of ten participating school teams with programming and information-related challenges throughout the 8-month program.</p>
-      <img src="../assets/images/volunteering/cansat.png" alt="CanSat" class="timeline-image">
+      <p class="timeline-summary">
+        Responsible for supporting one of ten participating school teams with programming and information-related challenges throughout the 8-month program...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Responsible for supporting one of ten participating school teams with programming and information-related challenges throughout the 8-month program.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/cansat.png" alt="CanSat" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -222,8 +264,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">November 2017 - April 2018</div>
       <h3 id="job-fair-athens">Main Event Projects Volunteer - Job Fair Athens</h3>
-      <p>Organized panels, speeches, and sessions on various topics including Technology and Life failures during the two-day event.</p>
-      <img src="../assets/images/volunteering/job-fair.png" alt="Job Fair Athens" class="timeline-image">
+      <p class="timeline-summary">
+        Organized panels, speeches, and sessions on various topics including Technology and Life failures during the two-day event...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Organized panels, speeches, and sessions on various topics including Technology and Life failures during the two-day event.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/job-fair.png" alt="Job Fair Athens" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -232,8 +281,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">March 2018</div>
       <h3 id="business-week-2018">Interaction Volunteer - Business Week 2018</h3>
-      <p>Represented the Career's office at The American College of Greece, promoting the internship program of Deree College.</p>
-      <img src="../assets/images/volunteering/business-week.png" alt="Business Week" class="timeline-image">
+      <p class="timeline-summary">
+        Represented the Career's office at The American College of Greece, promoting the internship program of Deree College...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Represented the Career's office at The American College of Greece, promoting the internship program of Deree College.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/business-week.png" alt="Business Week" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -241,8 +297,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">May 2017</div>
       <h3 id="tedx-athens">Registration & Ticketing Volunteer - TEDxAthens</h3>
-      <p>Managed registration and ticketing operations for the TEDxAthens event.</p>
-      <img src="../assets/images/volunteering/tedx.png" alt="TEDxAthens" class="timeline-image">
+      <p class="timeline-summary">
+        Managed registration and ticketing operations for the TEDxAthens event...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Managed registration and ticketing operations for the TEDxAthens event.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/tedx.png" alt="TEDxAthens" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -251,8 +314,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">December 2016</div>
       <h3 id="arduino-workshop">Arduino Workshops Organizer - IEEE NTUA Student Branch</h3>
-      <p>Organized and conducted a 4-day Arduino workshop for students.</p>
-      <img src="../assets/images/volunteering/arduino.png" alt="Arduino Workshop" class="timeline-image">
+      <p class="timeline-summary">
+        Organized and conducted a 4-day Arduino workshop for students...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Organized and conducted a 4-day Arduino workshop for students.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/arduino.png" alt="Arduino Workshop" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 
@@ -261,18 +331,25 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">
       <div class="timeline-date">March 2011 - May 2017</div>
       <h3 id="model-united-nations">Delegate - Model United Nations</h3>
-      <p>Participated in various MUN conferences representing different countries and committees:</p>
-      <ul>
-        <li>Costeas-Geitonas School MUN 2011 - Delegate of Bosnia Herzegovina</li>
-        <li>Platon School MUN 2012 - Delegate of Guatemala</li>
-        <li>Deutsche Schule Athens MUN 2012 - Delegate of U.S.A</li>
-        <li>Costeas-Geitonas School MUN 2012 - Ambassador of Sierra Leone</li>
-        <li>Platon School MUN 2013 - Ambassador of Azerbaijan</li>
-        <li>Athens MUN 2013 - Ambassador of Chile</li>
-        <li>Platon School MUN 2014 - Delegate of China</li>
-        <li>Thessaloniki International Student MUN 2016 - Ambassador of Democratic Republic of Congo</li>
-      </ul>
-      <img src="../assets/images/volunteering/mun.png" alt="Model United Nations" class="timeline-image">
+      <p class="timeline-summary">
+        Participated in various MUN conferences representing different countries and committees (Bosnia Herzegovina, Guatemala, U.S.A, Sierra Leone, Azerbaijan, Chile, China, DRC)...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Participated in various MUN conferences representing different countries and committees:
+        <ul>
+          <li>Costeas-Geitonas School MUN 2011 - Delegate of Bosnia Herzegovina</li>
+          <li>Platon School MUN 2012 - Delegate of Guatemala</li>
+          <li>Deutsche Schule Athens MUN 2012 - Delegate of U.S.A</li>
+          <li>Costeas-Geitonas School MUN 2012 - Ambassador of Sierra Leone</li>
+          <li>Platon School MUN 2013 - Ambassador of Azerbaijan</li>
+          <li>Athens MUN 2013 - Ambassador of Chile</li>
+          <li>Platon School MUN 2014 - Delegate of China</li>
+          <li>Thessaloniki International Student MUN 2016 - Ambassador of Democratic Republic of Congo</li>
+        </ul>
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
+      <img src="../assets/images/volunteering/mun.png" alt="Model United Nations" class="timeline-image" onclick="openImageModal(this.src, this.alt)">
     </div>
   </div>
 </div> 

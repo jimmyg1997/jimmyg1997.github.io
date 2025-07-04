@@ -12,25 +12,25 @@ header:
 ---
 
 <style>
-/* Even more compact, elegant font for web app (desktop) */
+/* Even smaller, compact font for web app (desktop) */
 @media (min-width: 700px) {
   .cv-section, .cv-section * {
-    font-size: 0.89em;
-    line-height: 1.13;
-    letter-spacing: -0.012em;
+    font-size: 0.85em;
+    line-height: 1.09;
+    letter-spacing: -0.013em;
   }
   .cv-section h2, .cv-section h3 {
-    font-size: 1.01em;
-    margin-bottom: 0.13em;
-    margin-top: 0.8em;
-    letter-spacing: -0.014em;
+    font-size: 0.97em;
+    margin-bottom: 0.11em;
+    margin-top: 0.7em;
+    letter-spacing: -0.015em;
   }
   .cv-section ul, .cv-section ol {
-    margin-top: 0.08em;
-    margin-bottom: 0.08em;
+    margin-top: 0.06em;
+    margin-bottom: 0.06em;
   }
   .cv-section li {
-    margin-bottom: 0.05em;
+    margin-bottom: 0.03em;
   }
 }
 </style>

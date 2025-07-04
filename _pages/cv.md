@@ -12,90 +12,28 @@ header:
 ---
 
 <style>
-/* Elegant, modern typography for CV page */
-.cv-root, .cv-root * {
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, system-ui, sans-serif !important;
-  color: #23272f;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  background: none;
-}
-.cv-root {
-  font-size: 1.01em;
-  line-height: 1.5;
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-.cv-root h1, .cv-root h2, .cv-root h3, .cv-root h4 {
-  font-family: inherit;
-  font-weight: 600;
-  color: #1a1d23;
-  letter-spacing: -0.015em;
-  margin-top: 2.2em;
-  margin-bottom: 0.5em;
-}
-.cv-root h1 {
-  font-size: 2.1em;
-  margin-top: 1.2em;
-}
-.cv-root h2 {
-  font-size: 1.35em;
-  margin-top: 1.8em;
-}
-.cv-root h3 {
-  font-size: 1.13em;
-  margin-top: 1.2em;
-}
-.cv-root h4 {
-  font-size: 1.01em;
-  margin-top: 1em;
-}
-.cv-root ul, .cv-root ol {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  padding-left: 1.3em;
-}
-.cv-root li {
-  margin-bottom: 0.13em;
-}
-.cv-root strong {
-  font-weight: 600;
-  color: #1a1d23;
-}
-.cv-root em {
-  color: #3a3f4b;
-}
-.cv-root a {
-  color: #0074D9;
-  text-decoration: none;
-  border-bottom: 1px dotted #0074D9;
-  transition: border 0.15s;
-}
-.cv-root a:hover {
-  border-bottom: 1px solid #0074D9;
-}
+/* Even more compact, elegant font for web app (desktop) */
 @media (min-width: 700px) {
-  .cv-root {
-    font-size: 0.93em;
-    line-height: 1.22;
+  .cv-section, .cv-section * {
+    font-size: 0.89em;
+    line-height: 1.13;
+    letter-spacing: -0.012em;
   }
-  .cv-root h1 {
-    font-size: 2em;
+  .cv-section h2, .cv-section h3 {
+    font-size: 1.01em;
+    margin-bottom: 0.13em;
+    margin-top: 0.8em;
+    letter-spacing: -0.014em;
   }
-  .cv-root h2 {
-    font-size: 1.18em;
+  .cv-section ul, .cv-section ol {
+    margin-top: 0.08em;
+    margin-bottom: 0.08em;
   }
-  .cv-root h3 {
-    font-size: 1.04em;
-  }
-  .cv-root h4 {
-    font-size: 0.97em;
+  .cv-section li {
+    margin-bottom: 0.05em;
   }
 }
 </style>
-
-<div class="cv-root">
 
 ## Download CV
 
@@ -215,6 +153,4 @@ You can download a PDF version of my CV here:
 - **Organization**: CogniHub (Interdisciplinary Non-Profit Student Organization)
 - **Period**: Jan 2021 - Nov 2023
 - **Responsibilities**: Conducting competitive marketing research and organizing events.
-
-</div>
 

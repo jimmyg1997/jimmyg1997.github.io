@@ -15,8 +15,9 @@ header:
 /***** Compact font and centered buttons for publications *****/
 @media (min-width: 700px) {
   .publication-box, .publication-box * {
-    font-size: 0.85em !important;
-    line-height: 1.15 !important;
+    font-size: 0.93em;
+    line-height: 1.22;
+    padding: 1.1em 1.2em;
   }
   .publication-buttons {
     display: flex;
@@ -32,8 +33,6 @@ header:
   }
 }
 </style>
-
-<div class="publication-box">
 
 ## Academic Publications
 
@@ -132,6 +131,4 @@ header:
   </div>
   <hr>
   {% endif %}
-{% endfor %}
-
-</div> 
+{% endfor %} 

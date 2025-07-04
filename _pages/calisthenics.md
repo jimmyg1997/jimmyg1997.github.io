@@ -20,9 +20,10 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 /* Instagram Feed Responsive Fix */
 .instagram-grid {
   display: flex;
+  flex-direction: row;
   gap: 1.2rem;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .instagram-post {
   width: 340px;
@@ -35,6 +36,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  flex: 0 0 340px;
 }
 .instagram-embed-container {
   width: 100%;
@@ -59,10 +61,12 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    flex-wrap: wrap;
   }
   .instagram-post {
     width: 100%;
     min-width: 0;
+    flex: 1 1 100%;
   }
 }
 </style>

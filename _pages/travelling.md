@@ -528,8 +528,8 @@ const myTravelPosts = [
     title: "Vietnamese People – Part 1 at the Presidential Palace, Hanoi",
     description: "From the warm smiles to the strong community spirit, the people of Vietnam leave a lasting impression. Captured in front of the iconic Presidential Palace in Hanoi, this scene reflects the kindness and unity that define the country. The Presidential Palace, a stunning example of French colonial architecture surrounded by lush gardens, stands as a symbol of both Vietnam's history and its vibrant present. Located in Ba Dinh district near the Ho Chi Minh Mausoleum, the palace grounds are a popular gathering spot for families and visitors, making it an ideal place to experience the heart of Vietnamese culture.",
     date: "2024-Present",
-    instagramPostId: "DJJ2JJSsFfI",
-    instagramUrl: "https://www.instagram.com/p/DJJ2JJSsFfI/",
+    instagramPostId: "DJJ2JJSsFFf",
+    instagramUrl: "https://www.instagram.com/p/DJJ2JJSsFFf/",
     city: "Hanoi",
     country: "Vietnam"
   },
@@ -689,8 +689,8 @@ const myTravelPosts = [
     title: "Exploring the Yucatán Region, Mexico",
     description: "The Yucatán region of Mexico is a treasure trove of breathtaking landscapes, ancient Mayan wonders, and vibrant colonial towns. From hidden cenotes like the crystal-clear Cenote Ik-Kil to the iconic pyramid of Chichén Itzá—one of the world's most famous archaeological sites—this area is a dream for explorers. Cruising through scenic roads feels like traveling back in time, with stops in colorful cities such as Valladolid, known for its charming colonial streets and lively atmosphere. The region's food scene is rich with shrimp tacos, brunch spots, and flavors inspired by Mayan culture. Whether you're wandering photogenic avenues, swimming in cenotes, or admiring Mayan glyph art, the Yucatán offers a unique blend of history, adventure, and culture.",
     date: "2025.12",
-    instagramPostId: "DH176kllbx8",
-    instagramUrl: "https://www.instagram.com/p/DH176kllbx8/",
+    instagramPostId: "DH176klIbx8",
+    instagramUrl: "https://www.instagram.com/p/DH176klIbx8/",
     city: "Valladolid",
     country: "Mexico"
   },
@@ -848,14 +848,16 @@ const myTravelPosts = [
     title: "Mola Museum (MuMo), Panama City",
     description: "The Mola Museum (MuMo) in Panama City is dedicated to the vibrant textile art of the indigenous Guna people, showcasing over 200 molas in five themed exhibition rooms. Located in the historic Casco Viejo district at the El Colegio II building on José D. de la Obaldía Street, the museum offers a unique insight into the evolution, spirituality, and storytelling behind these intricate fabrics. Visitors can enjoy bilingual exhibits (Spanish and English), interactive displays, and creative workshops suitable for all ages. Entry is free, making it an essential stop for art lovers, families, and anyone interested in indigenous culture and Panamanian heritage.",
     date: "2024.12",
-    instagramPostId: "DGb8n-3lh-O",
-    instagramUrl: "https://www.instagram.com/p/DGb8n-3lh-O/",
+    instagramPostId: "DGb8n-3Ih-O",
+    instagramUrl: "https://www.instagram.com/p/DGb8n-3Ih-O/",
     city: "Panama City",
     country: "Panama"
   },
+DGb8n-3lh-O
+  
   {
     lat: 8.956960,
-    lng: -79.534767,
+    lng: -79.534797,
     title: "Mola Museum (MuMo), Panama City",
     description: "The Mola Museum (MuMo) in Panama City is dedicated to the vibrant textile art of the indigenous Guna people, showcasing over 200 molas in five themed exhibition rooms. Located in the historic Casco Viejo district at the El Colegio II building on José D. de la Obaldía Street, the museum offers a unique insight into the evolution, spirituality, and storytelling behind these intricate fabrics. Visitors can enjoy bilingual exhibits (Spanish and English), interactive displays, and creative workshops suitable for all ages. Entry is free, making it an essential stop for art lovers, families, and anyone interested in indigenous culture and Panamanian heritage.",
     date: "2024.12",
@@ -928,11 +930,13 @@ const myTravelPosts = [
     title: "Cascada El Chiflón – A Hidden Paradise in Colombia",
     description: "Cascada El Chiflón is a breathtaking waterfall in Colombia, cascading over 70 meters and surrounded by lush, tropical greenery. Its name, 'El Chiflón,' comes from the whistling sound made by the rushing water. Visitors can enjoy crystal-clear pools for a refreshing dip, serene hiking trails with jaw-dropping views, and suspension bridges offering panoramic vistas. Entry is approximately $3 (10,000 COP). The site is perfect for hikers, photographers, and anyone seeking tranquility in nature, with plenty of photo spots for adventure seekers. Cascada El Chiflón is a must-visit gem for those exploring Colombia's natural beauty.",
     date: "2024.12",
-    instagramPostId: "DE6GZEjJ9XH",
-    instagramUrl: "https://www.instagram.com/p/DE6GZEjJ9XH/",
+    instagramPostId: "DE6GZEjl9XH",
+    instagramUrl: "https://www.instagram.com/p/DE6GZEjl9XH/",
     city: "Boyacá",
     country: "Colombia"
   },
+  
+
   {
     lat: 8.9739,
     lng: -79.5306,
@@ -961,11 +965,12 @@ const myTravelPosts = [
     title: "Carlos Durán Sanatorium – Cartago, Costa Rica",
     description: "Nestled in the scenic hills near Cartago, the Carlos Durán Sanatorium is one of Costa Rica's most intriguing and eerie attractions. Built in 1918 by Dr. Carlos Durán Cartín—who briefly served as the country's president—the sanatorium was originally a tuberculosis treatment center, chosen for its remote location and healing climate. At its peak, it housed up to 300 patients and was staffed largely by nuns from the Sisters of Charity Santa Anna. The facility later served as an orphanage and prison before closing permanently in the 1970s. Today, the decaying Gothic-modernist buildings and graffiti-lined corridors have earned a reputation as the country's most haunted site, attracting history buffs, ghost hunters, and explorers. Visitors can roam the grounds, discover chilling legends of ghostly nuns and children, and capture panoramic views of Cartago and the Irazú Volcano. Admission is about $3, with guided tours available for a deeper dive into its mysterious past.",
     date: "2024.12",
-    instagramPostId: "DEqu51e1ZKK",
-    instagramUrl: "https://www.instagram.com/p/DEqu51e1ZKK/",
+    instagramPostId: "DEqu51eIZKK",
+    instagramUrl: "https://www.instagram.com/p/DEqu51eIZKK/",
     city: "Cartago",
     country: "Costa Rica"
   },
+  
   {
     lat: 21.1619,
     lng: -86.8515,
@@ -973,7 +978,7 @@ const myTravelPosts = [
     description: "Renting a car in Cancun is a great way to unlock the best of Mexico's Yucatán Peninsula, offering freedom to explore cenotes, Mayan ruins, and charming towns at your own pace. Many travelers worry about hidden fees, frozen deposits, or scams at the airport, but with reputable agencies like Jolly Car Rent, Discover Cars, or Fiesta Car Rental, you can enjoy transparent pricing, no hidden fees, and reliable service. Always opt for full coverage insurance (required by Mexican law), inspect your vehicle, and confirm all costs upfront. Most agencies require a valid driver's license, passport, credit card, and a minimum age of 18–25. Renting a car is often cheaper and more flexible than relying on tours or taxis, making it ideal for adventurous travelers who want to see more than just the resorts.",
     date: "2024.12",
     instagramPostId: "DEn6vrEIKI4",
-    instagramUrl: "https://www.instagram.com/p/DEn6vrEIKI4/",
+    instagramUrl: "https://www.instagram.com/p/DEn6vrEIKl4/",
     city: "Cancun",
     country: "Mexico"
   },
@@ -1192,8 +1197,8 @@ const myTravelPosts = [
     title: "People Watching and Local Life – San Marino Viewpoint",
     description: "San Marino's historic center is filled with picturesque stone benches and scenic viewpoints, making it perfect for people-watching and soaking in the local atmosphere. One of the best spots is along the fortress walls near the towers, where locals and visitors gather to enjoy panoramic views of the surrounding countryside and the Adriatic coast. The stone benches, often shaded by trees, offer a tranquil place to pause, chat, and take in the medieval charm of the world's oldest republic. Whether you're admiring the ancient architecture, watching daily life unfold, or simply enjoying a quiet moment, these viewpoints capture the essence of San Marino's slow-paced, friendly lifestyle.",
     date: "2024.10",
-    instagramPostId: "DA4PqaoM42i",
-    instagramUrl: "https://www.instagram.com/p/DA4PqaoM42i/",
+    instagramPostId: "DA4PqqoM42i",
+    instagramUrl: "https://www.instagram.com/p/DA4PqqoM42i/",
     city: "San Marino",
     country: "San Marino"
   },

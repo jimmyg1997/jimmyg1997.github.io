@@ -100,7 +100,7 @@ You can download a PDF version of my CV here:
 - **Period**: 2015 - 2022
 - **Major**: Computing & Software Systems
 - **GPA**: 9.1/10.0 (Top 5%)
-- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" ([link])
+- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" [[link](http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593)] [[presentation](https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk)]
 
 ### Minor in Finance
 - **Institution**: American College of Greece (Deree College)

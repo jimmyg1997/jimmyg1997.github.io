@@ -55,7 +55,7 @@ You can download a PDF version of my CV here:
   - Develop a feedback loop between clinicians and AI tools to improve question quality and clinical relevance.
   - Ensure GDPR compliance and ethical handling of sensitive mental health data.
 - **Skills**: Large Language Models (LLM), Mental Health, Suicide Prevention, Project Management, Python, Data Analysis, Data Extraction, Data Processing, Version Control, Bioinformatics
-- **Tech Stack**: Python, Hugging Face Transformers, OpenAI API, FastAPI, Pandas, NumPy, Git, Docker, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), PostgreSQL, GDPR Compliance Tools
+- **Tech Stack**: Python, OpenAI API, FastAPI, Pandas, NumPy, Git, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), GDPR Compliance Tools
 
 ### Data Scientist (Automation & Analytics)
 - **Company**: HSBC

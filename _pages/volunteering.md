@@ -16,6 +16,18 @@ excerpt: "Making a difference through community service and youth leadership"
   <p>This section documents my volunteering journey, from local community initiatives to international youth exchanges. Each experience has contributed to my personal growth and reinforced my commitment to making a positive impact in the world.</p>
 </div>
 
+<style>
+.expand-link, .collapse-link {
+  color: #0074D9;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.expand-link:hover, .collapse-link:hover {
+  text-decoration: underline;
+}
+</style>
+
 ## Volunteering Timeline {#volunteering-timeline}
 
 <div class="timeline">
@@ -24,7 +36,14 @@ excerpt: "Making a difference through community service and youth leadership"
     <div class="timeline-content">
       <div class="timeline-date">April 2025</div>
       <h3 id="wheeling2help-vietnam-2025">Volunteer - Wheeling2help NGO</h3>
-      <p>Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten and cultural centre, assisted in agricultural tasks, and participated in traditional art workshops. This immersive experience deepened my appreciation for cultural heritage preservation and reinforced my commitment to sustainable community empowerment.</p>
+      <p class="timeline-summary">
+        Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten...
+        <span class="expand-link" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">Expand</span>
+      </p>
+      <p class="timeline-details" style="display:none;">
+        Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten and cultural centre, assisted in agricultural tasks, and participated in traditional art workshops. This immersive experience deepened my appreciation for cultural heritage preservation and reinforced my commitment to sustainable community empowerment.
+        <span class="collapse-link" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Collapse</span>
+      </p>
       <img src="../assets/images/volunteering/wheeling2help-vietnam.png" alt="Wheeling2help Vietnam" class="timeline-image">
     </div>
   </div>

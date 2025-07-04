@@ -23,11 +23,13 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   flex-direction: row;
   gap: 1.2rem;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .instagram-post {
-  width: 340px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 340px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -36,7 +38,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  flex: 0 0 340px;
+  flex: 1 1 320px;
+  box-sizing: border-box;
 }
 .instagram-embed-container {
   width: 100%;

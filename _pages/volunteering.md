@@ -17,18 +17,28 @@ excerpt: "Making a difference through community service and youth leadership"
 </div>
 
 <style>
-/* Card Grid Layout */
+/* Single Column Layout */
 .timeline {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
 }
-@media (max-width: 900px) {
-  .timeline {
-    grid-template-columns: 1fr;
+
+/* Smaller font for web app (desktop) */
+@media (min-width: 700px) {
+  .timeline-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3em;
+  }
+  .timeline-date {
+    font-size: 0.9em;
+  }
+  .timeline-summary, .timeline-details {
+    font-size: 0.98em;
   }
 }
+
 .timeline-item {
   background: #fff;
   border-radius: 12px;
@@ -44,7 +54,6 @@ excerpt: "Making a difference through community service and youth leadership"
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .timeline-date {
-  font-size: 0.95em;
   color: #888;
   margin-bottom: 0.5em;
 }

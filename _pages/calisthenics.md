@@ -39,13 +39,10 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 <style>
 /* Instagram Feed Responsive Fix */
-* {
+.fitness-intro {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
@@ -53,9 +50,6 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
             align-items: center;
             justify-content: center;
             padding: 20px;
-        }
-        
-.fitness-intro {
             position: relative;
             max-width: 500px;
             width: 100%;

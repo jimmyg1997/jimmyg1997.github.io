@@ -153,6 +153,21 @@ excerpt: "Continuous learning, Seminars, Courses and Books I recommend."
 
 <div class="courses-section">
   <div class="course-card">
+    <h3 id="early-hta-introductory-course">Early Health Technology Assessment (eHTA) Introductory Course</h3>
+    <p class="course-provider">EIT Health InnoStars & EIT Health</p>
+    <p class="course-date">Issued: Jul 2025</p>
+
+    <p>A short but impactful course covering strategic pricing, net present value (NPV), and engaging healthcare providers and patients as decision-makers. The course provides practical frameworks for creating valuable and sustainable health services, especially relevant for early-phase healthcare and digital health solutions.</p>
+
+    <p class="course-skills"><b>Skills:</b> Health Technology Assessment, Strategic Pricing, Net Present Value (NPV), Value-Based Care, Digital Health, Healthcare Innovation, Nonprofit Healthcare, Stakeholder Engagement</p>
+
+    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_earlyhta-digihealthpt-innostars-activity-7339192358145511425-OLgu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
+</div>
+
+
+<div class="courses-section">
+  <div class="course-card">
     <h3 id="generative-ai-healthcare">Generative AI for Healthcare</h3>
     <p class="course-provider">Google</p>
     <p class="course-date">Issued: Feb 2025</p>
@@ -160,6 +175,8 @@ excerpt: "Continuous learning, Seminars, Courses and Books I recommend."
     
     <p class="course-skills"><b>Skills:</b> Deep Learning, Generative AI, Prompt Engineering, Large Language Models (LLM), Machine Learning</p>
   </div>
+
+
   <div class="course-card">
     <h3 id="helloai-advanced-ris">HelloAI Advanced RIS Scholarship</h3>
     <p class="course-provider">EIT Health</p>

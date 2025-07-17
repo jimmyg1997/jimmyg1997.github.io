@@ -565,7 +565,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 ## Current Workout Plan {#current-workout-plan}
 <div class="workout-plan">
   <h3 id="five-day-split">5-Day Split: Calisthenics + Legs</h3>
-  <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day. I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</p>
+  <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day. I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</a></p>
   
   <div class="workout-day" id="straight-arm">
     <h4 id="day-1-3-straight-arm">Day 1 & 3: Straight Arm</h4>

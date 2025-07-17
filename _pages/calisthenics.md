@@ -485,7 +485,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 420px;
+  max-width: 560px;
   width: 100%;
   margin: 1.2em 0 1.7em 0;
   background: rgba(255,255,255,0.92);
@@ -503,12 +503,13 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 }
 .workout-table {
   width: 100%;
+  max-width: 520px;
   margin: 0 auto;
   border-collapse: collapse;
   font-size: 0.98em;
 }
 .workout-table th, .workout-table td {
-  padding: 0.38em 0.5em;
+  padding: 0.48em 1.1em;
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -526,6 +527,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   }
   .workout-table {
     font-size: 0.93em;
+    max-width: 100%;
   }
 }
 </style>

@@ -30,7 +30,7 @@ feature_row:
   - image_path: ../assets/images/overall/projects-thumb.png
     alt: "🧠 Projects"
     title: "🧠 Projects"
-    excerpt: "🔍 Exploring the intersection of 🧠 data science, 🤖 machine learning, and 🏥 healthcare"
+    excerpt: "Exploring the intersection of data science, machine learning, and healthcare"
     url: "/projects/"
     btn_label: "View Projects"
     btn_class: "btn--primary"
@@ -90,28 +90,51 @@ feature_row2:
   margin: 0 0.5em;
 }
 
-/* Current Focus section modern card */
+/* --- Modern Current Focus Card --- */
 .now-section {
   display: flex;
   justify-content: center;
-  margin: 2.5em 0 2.5em 0;
+  margin: 2.8em 0 2.8em 0;
+  animation: fadeInCard 0.9s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
 }
 .now-content {
-  background: rgba(255,255,255,0.97);
-  border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.09);
-  padding: 2.1em 2.2em 1.5em 2.2em;
-  max-width: 480px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.85) 60%, rgba(230,245,255,0.85) 100%);
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13), 0 1.5px 8px rgba(0,0,0,0.07);
+  border: 1.5px solid rgba(60,120,255,0.13);
+  backdrop-filter: blur(7px);
+  padding: 2.3em 2.5em 1.7em 2.5em;
+  max-width: 500px;
   width: 100%;
   text-align: center;
   position: relative;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  transition: box-shadow 0.2s;
+}
+.now-content:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.17), 0 2px 12px rgba(0,0,0,0.09);
+}
+.now-content .now-icon {
+  font-size: 2.1em;
+  color: #3a7bfd;
+  margin-bottom: 0.18em;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(58,123,253,0.13));
 }
 .now-content h3 {
-  font-size: 1.18em;
-  font-weight: 700;
-  margin-bottom: 0.7em;
+  font-size: 1.32em;
+  font-weight: 800;
+  margin-bottom: 1.1em;
   letter-spacing: 0.01em;
-  color: #1a1d23;
+  color: #2a2d3a;
+  background: linear-gradient(90deg, #3a7bfd 30%, #00c6fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .now-list {
   list-style: none;
@@ -119,22 +142,54 @@ feature_row2:
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.55em;
-  font-size: 1.04em;
-  color: #333;
+  gap: 0.65em;
+  font-size: 1.07em;
+  color: #23272f;
+  align-items: flex-start;
+  animation: fadeInList 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
 }
 .now-list li {
-  padding: 0.18em 0.2em;
-  border-radius: 7px;
-  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  background: rgba(245,250,255,0.85);
+  border-radius: 9px;
+  padding: 0.32em 0.9em 0.32em 0.6em;
+  margin-bottom: 0.1em;
+  box-shadow: 0 1px 4px rgba(58,123,253,0.04);
+  font-weight: 500;
+  min-height: 2.1em;
+  position: relative;
+  transition: background 0.18s, box-shadow 0.18s;
+}
+.now-list li::before {
+  content: '';
+  display: inline-block;
+  width: 0.68em;
+  height: 0.68em;
+  border-radius: 50%;
+  margin-right: 0.85em;
+  background: linear-gradient(135deg, #3a7bfd 60%, #00c6fb 100%);
+  box-shadow: 0 1px 4px rgba(58,123,253,0.13);
 }
 .now-list li:hover {
-  background: #f3f6fa;
+  background: rgba(230,245,255,0.97);
+  box-shadow: 0 2px 8px rgba(58,123,253,0.09);
 }
 @media (max-width: 700px) {
   .feature-row--center, .feature__wrapper, .now-content {
     max-width: 98vw;
     padding: 1.1em 0.5em 1.1em 0.5em;
+  }
+  .now-content {
+    max-width: 98vw;
+    padding: 1.2em 0.5em 1.2em 0.5em;
+  }
+  .now-list {
+    font-size: 1em;
   }
 }
 </style>
@@ -163,6 +218,7 @@ feature_row2:
 
 <div class="now-section">
   <div class="now-content">
+    <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <ul class="now-list">
       <li>Working on my PhD research in healthcare data science</li>

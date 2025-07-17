@@ -89,11 +89,6 @@ excerpt: "Exploring the world one adventure at a time"
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Map script loaded');
-  // console.log('myTravelPosts:', typeof myTravelPosts !== 'undefined' ? myTravelPosts : 'undefined');
-  console.log('Leaflet:', typeof L);
-  console.log('Map container:', document.getElementById('travel-map'));
-
   // Updated travel data with actual Instagram posts
   const myTravelPosts = [
     {
@@ -1363,105 +1358,12 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Naxos",
       country: "Greece"
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
   ];
+
+  console.log('Map script loaded');
+  console.log('myTravelPosts:', myTravelPosts);
+  console.log('Leaflet:', typeof L);
+  console.log('Map container:', document.getElementById('travel-map'));
 
   // Initialize the map
   const travelMap = L.map('travel-map', {
@@ -1563,8 +1465,8 @@ document.addEventListener('DOMContentLoaded', function() {
       <img src="/assets/images/travel/vietnam-2025.png" alt="Northen Vietnam">
     </div>
     <div class="travel-content">
-      <h3 id="easter-vietnam">Easter in Vietnam</h3>
       <br>
+      <h3 id="easter-vietnam">Easter in Vietnam</h3>
       <p>In April 2025, I volunteered with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
       <div style="text-align: center;">
         <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>

@@ -224,48 +224,54 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 }
 /* Instagram Feed Desktop Fix: 3 posts side by side, post fits inside square */
 @media (min-width: 700px) {
+  .instagram-feed {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .instagram-grid {
     display: flex;
     flex-direction: row;
-    gap: 1.2rem;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    gap: 1.2rem;
     max-width: 100%;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
   }
   .instagram-post {
-    width: 360px;
-    min-width: 360px;
+    flex: 1 1 320px;
+    min-width: 280px;
     max-width: 360px;
-    height: 360px;
+    margin: 0.6rem;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    overflow: visible;
+    overflow: hidden;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 360px;
     box-sizing: border-box;
+    height: auto;
   }
   .instagram-embed-container {
     width: 100%;
-    height: 100%;
     aspect-ratio: 1/1;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .instagram-embed-container iframe {
-    width: 360px !important;
-    height: 360px !important;
-    min-width: 360px;
-    min-height: 360px;
-    max-width: 360px;
-    max-height: 360px;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: 100%;
     border: none;
     display: block;
     margin: 0 auto;
@@ -284,6 +290,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     max-width: 100%;
     flex: 1 1 100%;
     height: auto;
+    margin: 0.6rem 0;
   }
   .instagram-embed-container,
   .instagram-embed-container iframe {

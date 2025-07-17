@@ -63,7 +63,7 @@ feature_row2:
 /* Welcome text full-width and prominent */
 .feature-row--center {
   max-width: 900px;
-  margin: 0 auto 2.2rem auto;
+  margin: 0 auto 1.1rem auto; /* reduced bottom margin */
   text-align: center;
   font-size: 1.25em;
   font-weight: 500;
@@ -191,6 +191,11 @@ feature_row2:
   .now-list {
     font-size: 1em;
   }
+}
+
+/* Remove extra margin above feature row if any */
+.section-divider + h2, .section-divider + h3, .section-divider + div.feature__wrapper {
+  margin-top: 0.5em !important;
 }
 </style>
 

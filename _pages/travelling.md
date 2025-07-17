@@ -171,7 +171,6 @@ excerpt: "Exploring the world one adventure at a time"
 ## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
-  <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="btn btn--primary">Follow My Travel Adventures on Instagram</a>
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">

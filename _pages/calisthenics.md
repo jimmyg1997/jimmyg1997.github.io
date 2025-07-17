@@ -14,7 +14,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 <div class="fitness-intro">
   <!-- <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p> -->
-  <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram for more workout content.</p>
+  <!-- <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram for more workout content.</p> -->
 
   <div class="social-connect">
     <span class="connect-text">Follow my journey</span>
@@ -30,81 +30,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 <style>
 /* Instagram Feed Responsive Fix */
-.fitness-intro {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    position: relative;
-    max-width: 500px;
-    width: 100%;
-}
 
-.glass-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    padding: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.glass-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-    animation: shimmer 4s infinite;
-}
-
-@keyframes shimmer {
-    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-}
-
-.intro-header {
-    text-align: center;
-    margin-bottom: 25px;
-    position: relative;
-    z-index: 1;
-}
-
-.intro-header h2 {
-    color: #fff;
-    font-size: 2.2em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.fitness-icons {
-    font-size: 1.5em;
-    opacity: 0.8;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
-}
 
 .fitness-intro p {
     color: rgba(255, 255, 255, 0.9);

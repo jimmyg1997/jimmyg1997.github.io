@@ -14,7 +14,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 <div class="fitness-intro">
   <!-- <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p> -->
-  <!-- <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram for more workout content.</p> -->
+  <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram for more workout content.</p>
 
   <div class="social-connect">
     <span class="connect-text">Follow my journey</span>
@@ -200,27 +200,28 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   flex: 1 1 320px;
   box-sizing: border-box;
 }
 .instagram-embed-container {
   width: 100%;
   aspect-ratio: 1/1;
-  min-height: 340px;
-  max-height: 420px;
+  min-height: 320px;
+  max-height: 340px;
   overflow: hidden;
   display: flex;
-  align-items: stretch;
-  justify-content: stretch;
+  align-items: center;
+  justify-content: center;
 }
 .instagram-embed-container iframe {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 340px;
-  max-height: 420px;
+  width: 320px !important;
+  height: 320px !important;
+  max-width: 100%;
+  max-height: 100%;
   border: none;
   display: block;
+  margin: 0 auto;
 }
 @media (max-width: 900px) {
   .instagram-grid {
@@ -234,19 +235,27 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     min-width: 0;
     flex: 1 1 100%;
   }
+  .instagram-embed-container,
+  .instagram-embed-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 </style>
 
 ## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
-  
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:320px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -254,7 +263,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGss-fkN4_x/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGss-fkN4_x/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DGss-fkN4_x/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:320px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -262,7 +271,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:320px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>

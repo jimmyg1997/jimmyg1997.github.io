@@ -396,6 +396,68 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     margin-right: auto;
   }
 }
+
+@media (min-width: 900px) {
+  .instagram-feed {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .instagram-post {
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .instagram-embed-container {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .instagram-embed-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 899px) and (min-width: 600px) {
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 599px) {
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 ## Instagram Feed {#instagram-feed}

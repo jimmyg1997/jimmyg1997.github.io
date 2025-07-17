@@ -16,7 +16,6 @@ excerpt: "Exploring the world one adventure at a time"
 
 <div class="travel-intro">
   <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram for more travel content.</p>
-
   <div class="social-connect">
     <span class="connect-text">Follow my journey</span>
     <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="instagram-btn">

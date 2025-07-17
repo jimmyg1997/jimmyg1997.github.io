@@ -15,7 +15,6 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 <div class="fitness-intro">
   <!-- <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram <a href="https://www.instagram.com/dimisthenics/" target="_blank">@dimisthenics</a> for more workout content.</p> -->
   <p>This section tracks my calisthenics journey, nutrition approaches, and overall fitness progression. Follow me on Instagram for more workout content.</p>
-
   <div class="social-connect">
     <span class="connect-text">Follow my journey</span>
     <a href="https://www.instagram.com/dimisthenics/" target="_blank" class="instagram-btn">
@@ -31,7 +30,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 <style>
 /* Instagram Feed Responsive Fix */
 
-
+/* 
 .fitness-intro p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.1em;
@@ -40,7 +39,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
-}
+} */
 
 .social-connect {
     display: flex;
@@ -381,6 +380,15 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     padding: 0.9rem 0.7rem 0.7rem 0.7rem;
   }
 }
+
+/* Instagram Feed Desktop Fix: constrain to middle column */
+@media (min-width: 700px) {
+  .instagram-feed, .instagram-grid {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>
 
 ## Instagram Feed {#instagram-feed}
@@ -607,7 +615,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="progress-bar">
       <div class="progress" style="width: 100%;"> <span class="progress-badge">100%</span></div>
     </div>
-    <p><b>Current status</b>: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
+    <p><b>Current status</b>: Almost Clean muscle-ups, working on consecutive repetitions. 8 reps</p>
   </div>
   <div class="skill-item" id="handstand-push-up">
     <h3 id="handstand-push-up-progress">Handstand Push-up</h3>

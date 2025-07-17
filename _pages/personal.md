@@ -20,6 +20,74 @@ excerpt: "Continuous learning, Seminars, Courses and Books I recommend."
 </div>
 
 ## Seminars & Workshops
+<div class="seminars-section">
+  <div class="seminar-item">
+    <h3 id="eebg-2025">East European Bioinformatics & Genomics Workshop (EEBG 2025)</h3>
+    <p class="seminar-provider">Jagiellonian University & Małopolska Centre of Biotechnology</p>
+    <p class="seminar-date">Issued: Jul 2025</p>
+
+    <p>This one-week intensive workshop held in Kraków, Poland, brought together global researchers and participants to explore cutting-edge advances in genomics, metagenomics, and AI in bioinformatics:</p>
+    <ul>
+      <li><b>Transcriptomics & Metagenomics:</b> Approaches to study gene expression and microbial communities at scale</li>
+      <li><b>Omics for Personalized Medicine:</b> Leveraging genomics for patient-specific diagnostics and therapeutics</li>
+      <li><b>Oxford Nanopore Sequencing:</b> Hands-on training with long-read sequencing technologies</li>
+      <li><b>Prompt Engineering & LLM Applications:</b> Applying large language models to biological data analysis</li>
+      <li><b>Tools & Platforms:</b> Practical sessions with <i>QIIME 2</i>, <i>Galaxy</i>, <i>Geneious</i>, <i>R</i>, and <i>LLM frameworks</i></li>
+    </ul>
+
+    <p>Participants gained deep insights from lectures delivered by internationally recognized scientists, including André G. Uitterlinden (Erasmus Univ), Anton Nekrutenko (PennState), and Tomasz Kościółek (Sano), among many others.</p>
+
+    <p class="seminar-skills"><b>Skills:</b> Genomics · Metagenomics · Bioinformatics · Transcriptomics · Personalized Medicine · Nanopore Sequencing · QIIME 2 · Galaxy · Geneious · R · Prompt Engineering · Large Language Models · Scientific Programming · AI for Science</p>
+
+    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_eebg2025-bioinformatics-genomics-activity-7351247956479479808-OfmN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
+</div>
+
+
+<div class="seminars-section">
+  <div class="seminar-item">
+    <h3 id="aspire-growth-mindset">ASPIRE: Growth Mindset</h3>
+    <p class="seminar-provider">HSBC</p>
+    <p class="seminar-date">Issued: Jul 2025</p>
+
+    <p>This professional development certification focused on cultivating a growth mindset and enhancing leadership potential through structured learning, reflection, and real-world application:</p>
+    <ul>
+      <li><b>Embracing Change:</b> Reinforced adaptability as a core skill in navigating an evolving workplace</li>
+      <li><b>Intentional Development:</b> Designed an Individual Development Plan (IDP) with SMART goals in collaboration with a line manager</li>
+      <li><b>Personal Effectiveness:</b> Built self-awareness and authenticity through exercises in personal branding and values alignment</li>
+      <li><b>Presentation & Communication:</b> Learned to craft impactful messages and engage diverse audiences using structured storytelling techniques</li>
+      <li><b>Customer Focus:</b> Solved real-world challenges emphasizing customer-centric thinking and relationship-building</li>
+      <li><b>Interview Skills:</b> Practiced the CAR model and behavioral techniques to strengthen career narrative and confidence under pressure</li>
+      <li><b>Business Application:</b> Presented strategic learning outcomes to senior leaders, bridging knowledge with tangible impact</li>
+    </ul>
+
+    <p class="seminar-skills"><b>Skills:</b> Growth Mindset · Professional Development · Communication · Presentation Skills · Customer Focus · Interview Preparation · Personal Branding · Self-awareness · IDP · Career Planning</p>
+
+    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_aspire-growth-mindset-was-issued-by-hsbc-activity-7345846619637964800-gPG0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
+</div>
+
+
+<div class="seminars-section">
+  <div class="seminar-item">
+    <h3 id="spike-analysis-python">Intro to Neural Spike Analysis in Python</h3>
+    <p class="seminar-provider">University of Bonn – iBOTS (Innovative Brain Organization Technologies & Signals)</p>
+    <p class="seminar-date">Issued: Jun 2025</p>
+
+    <p>This intensive 18-hour workshop focused on extracting, modeling, and analyzing neural spike trains from both real and simulated electrophysiology recordings:</p>
+    <ul>
+      <li>Spike Train Metrics: Raster plots, PSTHs, and Cross-Correlograms using <i>NumPy</i> and <i>Matplotlib</i> to interpret neural activity</li>
+      <li>Spike Detection and Extraction: Filtering, peak detection, and PCA-based clustering using <i>ScipySignal</i>, <i>Scikit-learn</i>, and <i>SpikeInterface</i></li>
+      <li>Poisson-Based Statistical Modeling: Investigating neural population structure and coherence with <i>Elephant</i>, <i>Neo</i>, and <i>SciPy</i></li>
+      <li>Hands-on implementation in <i>Jupyter Notebooks</i> combining theoretical background with reproducible coding workflows</li>
+    </ul>
+
+    <p class="seminar-skills"><b>Skills:</b> Neural Spike Analysis · Python · NumPy · SciPy · SpikeInterface · Scikit-learn · Elephant · Neo · Jupyter Notebooks · Raster Plots · PSTH · Poisson Modeling · Signal Processing · Experimental Design</p>
+
+    <a href="https://www.linkedin.com/posts/dimitrios-georgiou_electrophysiology-rasterplots-psths-activity-7340717565037424641-b7DC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">View Certificate</a>
+  </div>
+</div>
+
 
 <div class="seminars-section">
   <div class="seminar-item">

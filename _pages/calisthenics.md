@@ -1,5 +1,5 @@
 ---
-title: 🏋️‍♂️ Calisthenics & 🥦 Nutrition
+title: 🏋️‍♂️ Calisthenics & Nutrition
 layout: single
 permalink: /calisthenics/
 author_profile: true

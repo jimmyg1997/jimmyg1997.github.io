@@ -90,7 +90,7 @@ excerpt: "Exploring the world one adventure at a time"
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Map script loaded');
-  console.log('myTravelPosts:', typeof myTravelPosts !== 'undefined' ? myTravelPosts : 'undefined');
+  // console.log('myTravelPosts:', typeof myTravelPosts !== 'undefined' ? myTravelPosts : 'undefined');
   console.log('Leaflet:', typeof L);
   console.log('Map container:', document.getElementById('travel-map'));
 
@@ -1564,8 +1564,8 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
     <div class="travel-content">
       <h3 id="easter-vietnam">Easter in Vietnam</h3>
-      <p class="travel-date">April 2025</p>
-      <p>My volunteering experience with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
+      <br>
+      <p>In April 2025, I volunteered with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
       <div style="text-align: center;">
         <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
       </div>
@@ -1579,6 +1579,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <img src="/assets/images/travel/krakow-guide2.png" alt="City Travels">
     </div>
     <div class="travel-content">
+      <br>
       <h3 id="living-krakow">Living in Krakow</h3>
       <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
       <div style="text-align: center;">

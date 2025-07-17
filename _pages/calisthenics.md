@@ -296,6 +296,91 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     max-height: 100%;
   }
 }
+
+/* Modern, compact, fancy skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem 1.5rem;
+  margin-top: 1.2rem;
+}
+.skill-item {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.1rem 1.2rem 0.8rem 1.2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  min-width: 0;
+}
+.skill-item:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+  transform: translateY(-2px) scale(1.02);
+}
+.skill-item h3 {
+  font-size: 1.08em;
+  font-weight: 600;
+  margin: 0 0 0.3em 0;
+  color: #1a1d23;
+}
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: rgba(0,0,0,0.07);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.4em;
+  margin-top: 0.1em;
+  position: relative;
+}
+.progress {
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.7em;
+  transition: width 0.7s cubic-bezier(.4,2,.6,1);
+  position: relative;
+}
+.progress-badge {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+  color: #fff;
+  font-size: 0.92em;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 1px 10px;
+  box-shadow: 0 1px 4px rgba(0,123,255,0.10);
+  pointer-events: none;
+}
+.skill-item p {
+  font-size: 0.97em;
+  color: #444;
+  margin: 0.2em 0 0 0;
+  line-height: 1.4;
+}
+@media (max-width: 700px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  .skill-item {
+    padding: 0.9rem 0.7rem 0.7rem 0.7rem;
+  }
+}
 </style>
 
 ## Instagram Feed {#instagram-feed}
@@ -503,81 +588,70 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 ## Featured Skills & Progress {#featured-skills-progress}
 
 <div class="skills-grid">
-  <div class="skill-item" id="planche">
-    <h3 id="planche-progress">Planche</h3>
-    <div class="progress-bar">
-      <div class="progress" style="width: 30%;">30%</div>
-    </div>
-    <p><b>Current status</b>: Advanced tuck planche, working towards straddle planche</p>
-  </div>
-
-  <div class="skill-item" id="front-lever-pull-up">
-    <h3 id="front-lever-pull-up-progress">Front Lever</h3>
-    <div class="progress-bar">
-      <div class="progress" style="width: 20%;">20%</div>
-    </div>
-    <p><b>Current status</b>: 3 reps with band for -18kg, False Grip</p>
-  </div>
-  
   <div class="skill-item" id="front-lever">
     <h3 id="front-lever-progress">Front Lever</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 100%;">100%</div>
+      <div class="progress" style="width: 100%;"> <span class="progress-badge">100%</span></div>
     </div>
     <p><b>Current status</b>: Full front lever for at least 6 seconds</p>
   </div>
-
-  <div class="skill-item" id="handstand">
-    <h3 id="handstand-push-up-progress">Handstand Push-up</h3>
-    <div class="progress-bar">
-      <div class="progress" style="width: 40%;">40%</div>
-    </div>
-    <p><b>Current status</b>: Push-up on parallettes (not touching the floor, wide grip, 3 reps), Push-ups on floor (touching the floor, wide grip, 3 reps) </p>
-  </div>
-  
   <div class="skill-item" id="handstand">
     <h3 id="handstand-progress">Handstand</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 100%;">100%</div>
+      <div class="progress" style="width: 100%;"> <span class="progress-badge">100%</span></div>
     </div>
     <p><b>Current status</b>: Freestanding handstand for 60 sec</p>
   </div>
-
-  <div class="skill-item" id="weighted-muscle-up">
-    <h3 id="weighted-muscle-up-progress">Weighted Muscle-Up</h3>
-    <div class="progress-bar">
-      <div class="progress" style="width: 40%;">40%</div>
-    </div>
-    <p><b>Current status</b>: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
-  </div>
-
-  
   <div class="skill-item" id="muscle-up">
     <h3 id="muscle-up-progress">Muscle-Up</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 100%;">100%</div>
+      <div class="progress" style="width: 100%;"> <span class="progress-badge">100%</span></div>
     </div>
     <p><b>Current status</b>: Almost Clean muscle-ups, working on consecutive repetitions. 10 reps</p>
   </div>
-
-
-<div class="skill-item" id="weigthed-dip">
+  <div class="skill-item" id="handstand-push-up">
+    <h3 id="handstand-push-up-progress">Handstand Push-up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;"> <span class="progress-badge">40%</span></div>
+    </div>
+    <p><b>Current status</b>: Push-up on parallettes (not touching the floor, wide grip, 3 reps), Push-ups on floor (touching the floor, wide grip, 3 reps) </p>
+  </div>
+  <div class="skill-item" id="weighted-muscle-up">
+    <h3 id="weighted-muscle-up-progress">Weighted Muscle-Up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;"> <span class="progress-badge">40%</span></div>
+    </div>
+    <p><b>Current status</b>: 1RM for +16.25kg (form 4 out 10), 3RM for +12kg (form 6 out of 10). Working on the form.</p>
+  </div>
+  <div class="skill-item" id="weigthed-dip">
     <h3 id="weighted-dips-progress">Weighted Dips</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 40%;">40%</div>
+      <div class="progress" style="width: 40%;"> <span class="progress-badge">40%</span></div>
     </div>
     <p><b>Current status</b>: Clean dips, working on progressive overload. 10 reps for +25kg</p>
   </div>
-
-
-<div class="skill-item" id="weigthed-pull-up">
+  <div class="skill-item" id="weigthed-pull-up">
     <h3 id="weighted-pull-up-progress">Weighted Pull-Up</h3>
     <div class="progress-bar">
-      <div class="progress" style="width: 40%;">40%</div>
+      <div class="progress" style="width: 40%;"> <span class="progress-badge">40%</span></div>
     </div>
     <p><b>Current status</b>: Clean pull-ups, working on progressive overload. 10 reps for +20kg</p>
   </div>
-
+  <div class="skill-item" id="planche">
+    <h3 id="planche-progress">Planche</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 30%;"> <span class="progress-badge">30%</span></div>
+    </div>
+    <p><b>Current status</b>: Advanced tuck planche, working towards straddle planche</p>
+  </div>
+  <div class="skill-item" id="front-lever-pull-up">
+    <h3 id="front-lever-pull-up-progress">Front Lever Pull-Up</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 20%;"> <span class="progress-badge">20%</span></div>
+    </div>
+    <p><b>Current status</b>: 3 reps with band for -18kg, False Grip</p>
+  </div>
+</div>
 
 <!-- ## Workout Routines {#workout-routines} -->
 

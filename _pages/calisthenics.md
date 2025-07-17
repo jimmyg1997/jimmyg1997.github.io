@@ -458,6 +458,60 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     grid-template-columns: 1fr;
   }
 }
+
+/* Workout Plan: Center and equalize header/table width */
+.workout-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workout-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+  margin: 1.2em 0 1.7em 0;
+  background: rgba(255,255,255,0.92);
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  padding: 1.1em 1.2em 1.2em 1.2em;
+}
+.workout-day h4 {
+  font-size: 1.13em;
+  font-weight: 600;
+  margin: 0 0 0.7em 0;
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+}
+.workout-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.98em;
+}
+.workout-table th, .workout-table td {
+  padding: 0.38em 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.workout-table th {
+  background: #f7f7fa;
+  font-weight: 600;
+}
+.workout-table tr:last-child td {
+  border-bottom: none;
+}
+@media (max-width: 600px) {
+  .workout-day {
+    max-width: 100%;
+    padding: 0.7em 0.2em 0.9em 0.2em;
+  }
+  .workout-table {
+    font-size: 0.93em;
+  }
+}
 </style>
 
 ## Instagram Feed {#instagram-feed}
@@ -474,7 +528,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     </div>
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGss-fkN4_x/" data-instgrm-version="14" data-instgrm-width="100%">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIEwq9Vs0qV/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
           <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:320px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>

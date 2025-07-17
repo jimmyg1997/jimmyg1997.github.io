@@ -63,7 +63,7 @@ feature_row2:
 /* Welcome text full-width and prominent */
 .feature-row--center {
   max-width: 900px;
-  margin: 0 auto 1.1rem auto; /* reduced bottom margin */
+  margin: 0 auto 0.7rem auto; /* even smaller bottom margin */
   text-align: center;
   font-size: 1.25em;
   font-weight: 500;
@@ -71,30 +71,46 @@ feature_row2:
   background: rgba(255,255,255,0.92);
   border-radius: 18px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 2.1em 1.5em 1.5em 1.5em;
+  padding: 1.5em 1.2em 1.1em 1.2em; /* tighter padding */
 }
 
-/* Center and widen feature rows */
+/* Minimal section divider */
+.section-divider {
+  border: none;
+  border-top: 1px solid #e3e8f0;
+  height: 0;
+  margin: 1.1rem 0 1.1rem 0; /* much less vertical space */
+  background: none;
+}
+
+/* Feature rows: minimal vertical spacing */
 .feature__wrapper {
   display: flex;
   justify-content: center;
-  gap: 2.2rem;
+  gap: 1.2rem; /* less gap between cards */
   flex-wrap: wrap;
   max-width: 1100px;
-  margin: 0 auto 2.2rem auto;
+  margin: 0 auto 0.7rem auto; /* less bottom margin */
+  padding: 0;
 }
 .feature__item {
   flex: 1 1 300px;
   min-width: 260px;
   max-width: 340px;
-  margin: 0 0.5em;
+  margin: 0 0.3em 0.7em 0.3em; /* less vertical margin */
 }
 
-/* --- Modern Current Focus Card --- */
+/* Headings: minimal spacing */
+h2, h3 {
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+/* Current Focus card: less margin above/below */
 .now-section {
   display: flex;
   justify-content: center;
-  margin: 2.8em 0 2.8em 0;
+  margin: 1.3em 0 1.3em 0;
   animation: fadeInCard 0.9s cubic-bezier(0.4,0,0.2,1);
 }
 @keyframes fadeInCard {
@@ -182,7 +198,7 @@ feature_row2:
 @media (max-width: 700px) {
   .feature-row--center, .feature__wrapper, .now-content {
     max-width: 98vw;
-    padding: 1.1em 0.5em 1.1em 0.5em;
+    padding: 0.7em 0.3em 0.7em 0.3em;
   }
   .now-content {
     max-width: 98vw;
@@ -195,7 +211,7 @@ feature_row2:
 
 /* Remove extra margin above feature row if any */
 .section-divider + h2, .section-divider + h3, .section-divider + div.feature__wrapper {
-  margin-top: 0.5em !important;
+  margin-top: 0.2em !important;
 }
 </style>
 

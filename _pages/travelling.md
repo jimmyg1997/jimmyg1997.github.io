@@ -242,7 +242,7 @@ excerpt: "Exploring the world one adventure at a time"
 
 @media (min-width: 900px) {
   .instagram-feed {
-    max-width: 820px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   .instagram-grid {
@@ -253,10 +253,8 @@ excerpt: "Exploring the world one adventure at a time"
     margin: 0 auto;
   }
   .instagram-post {
-    width: 100%;
-    aspect-ratio: 1/1;
-    max-width: none;
-    min-width: 0;
+    width: 320px;
+    height: 540px;
     margin: 0;
     background: #fff;
     border-radius: 12px;
@@ -267,38 +265,49 @@ excerpt: "Exploring the world one adventure at a time"
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    height: auto;
   }
   .instagram-embed-container {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1/1;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .instagram-embed-container iframe {
-    width: 100% !important;
-    height: 100% !important;
-    aspect-ratio: 1/1;
-    min-width: 0;
-    min-height: 0;
-    max-width: 100%;
-    max-height: 100%;
+    width: 320px !important;
+    height: 540px !important;
     border: none;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 @media (max-width: 899px) and (min-width: 600px) {
   .instagram-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .instagram-post {
+    width: 320px;
+    height: 540px;
+  }
+  .instagram-embed-container iframe {
+    width: 320px !important;
+    height: 540px !important;
+  }
 }
 @media (max-width: 599px) {
   .instagram-grid {
     grid-template-columns: 1fr;
+  }
+  .instagram-post {
+    width: 100%;
+    height: auto;
+  }
+  .instagram-embed-container iframe {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 </style>
@@ -311,15 +320,15 @@ excerpt: "Exploring the world one adventure at a time"
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuB01cMnFK/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="100%">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuAEdRMJWv/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DHuAEdRMJWv/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DHuAEdRMJWv/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -327,7 +336,7 @@ excerpt: "Exploring the world one adventure at a time"
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=540&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency></iframe>
+          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>

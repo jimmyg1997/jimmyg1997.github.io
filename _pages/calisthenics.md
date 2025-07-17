@@ -410,8 +410,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     margin: 0 auto;
   }
   .instagram-post {
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 320px;
+    height: 540px;
     max-width: none;
     min-width: 0;
     margin: 0;
@@ -436,8 +436,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     justify-content: center;
   }
   .instagram-embed-container iframe {
-    width: 100% !important;
-    height: 100% !important;
+    width: 320px !important;
+    height: 540px !important;
     aspect-ratio: 1/1;
     min-width: 0;
     min-height: 0;
@@ -452,10 +452,26 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .instagram-post {
+    width: 320px;
+    height: 540px;
+  }
+  .instagram-embed-container iframe {
+    width: 320px !important;
+    height: 540px !important;
+  }
 }
 @media (max-width: 599px) {
   .instagram-grid {
     grid-template-columns: 1fr;
+  }
+  .instagram-post {
+    width: 100%;
+    height: auto;
+  }
+  .instagram-embed-container iframe {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
@@ -522,7 +538,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="yes" allowtransparency style="width:100%; height:100%; object-fit:contain; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -530,7 +546,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIEwq9Vs0qV/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="yes" allowtransparency style="width:100%; height:100%; object-fit:contain; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -538,7 +554,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="yes" allowtransparency style="width:100%; height:100%; object-fit:contain; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -549,7 +565,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 ## Current Workout Plan {#current-workout-plan}
 <div class="workout-plan">
   <h3 id="five-day-split">5-Day Split: Calisthenics + Legs</h3>
-  <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day.</p>
+  <p>This is my current training plan focused on developing straight arm and bent arm strength, with a dedicated leg day. I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</p>
   
   <div class="workout-day" id="straight-arm">
     <h4 id="day-1-3-straight-arm">Day 1 & 3: Straight Arm</h4>
@@ -675,8 +691,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
       </tbody>
     </table>
   </div>
-  
-  <p class="workout-note">I track my progress in <a href="https://docs.google.com/spreadsheets/d/1PN7sDG8riJvig4173k3wGKs76VvxjHXD9Dgv4ADtYXE/edit?gid=1432199206#gid=1432199206" target="_blank">this Google Sheets document</a>.</p>
+
 </div>
 
 ## Fitness Journey Timeline {#fitness-journey-timeline}

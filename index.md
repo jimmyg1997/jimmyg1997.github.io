@@ -242,8 +242,8 @@ h2, h3 {
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <ul class="now-list">
+      <li>Building ML models for different use cases at HSBC.</li>
       <li>Working on my PhD research in healthcare data science</li>
-      <li>Developing machine learning models for medical applications</li>
       <li>Training for my next calisthenics milestone</li>
       <li>Planning my upcoming travel to [destination]</li>
     </ul>

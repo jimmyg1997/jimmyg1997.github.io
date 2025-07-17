@@ -12,9 +12,161 @@ header:
 excerpt: "Exploring the world one adventure at a time"
 ---
 
+
+
 <div class="travel-intro">
-  <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram <a href="https://www.instagram.com/dimiles.away/" target="_blank">@dimiles.away</a> for more travel content.</p>
+  <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram for more travel content.</p>
+
+  <div class="social-connect">
+    <span class="connect-text">Follow my journey</span>
+    <a href="https://www.instagram.com/dimiles.away/" target="_blank" class="instagram-btn">
+      <i class="fab fa-instagram"></i>
+      @dimiles.away
+    </a>
+  </div>
 </div>
+
+<style>
+
+.social-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.connect-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.instagram-btn:hover::before {
+    left: 100%;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-btn i {
+    font-size: 1.2em;
+}
+
+/* Font Awesome fallback */
+.fab {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+}
+
+.fab::before {
+    content: "📸";
+    font-size: 1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 30px 20px;
+    }
+    
+    .intro-header h2 {
+        font-size: 1.8em;
+    }
+    
+    .fitness-intro p {
+        font-size: 1em;
+    }
+    
+    .instagram-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+/* Additional glassmorphism elements */
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+/* Floating elements for extra visual interest */
+.floating-element {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-element:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-element:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    top: 20%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.floating-element:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+</style>
 
 ## Instagram Feed {#instagram-feed}
 

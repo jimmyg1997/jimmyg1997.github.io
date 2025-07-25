@@ -89,6 +89,17 @@ You can download a PDF version of my CV here:
   - Conducted research on Machine & Deep Learning for COVID severity classification using tabular data. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
 - **Tech Stack**: Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git
 
+### Local Operations Intern
+- **Company**: Uber
+- **Period**: Mar 2021 – Sep 2021
+- **Location**: Athens, Greece
+- **Responsibilities**:
+  - Analyzed rider and driver behavior using Advanced SQL and Python to extract business insights.
+  - Identified areas for operational improvement through data-driven recommendations.
+  - Designed and implemented a Taxi Fare Estimation optimization project for Athens & Thessaloniki to (1) improve user experience and (2) reduce fraud.
+- **Tech Stack**: Python, SQL, Pandas, NumPy, Google Sheets, Jupyter, Tableau
+
+
 ### Data Science Intern
 - **Institution**: National Center for Scientific Research "Demokritos"
 - **Period**: Sep 2019 - Oct 2019

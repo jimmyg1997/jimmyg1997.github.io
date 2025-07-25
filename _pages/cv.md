@@ -37,10 +37,13 @@ header:
 
 ## Download CV
 
-<div style="text-align:center; margin: 1.5em 0;">
+<div style="margin: 1.5em 0;">
 You can download a PDF version of my CV here:
 <br>
-<a href="https://drive.google.com/file/d/1w1fEtlQIcSq32F1ZRjFRlP97h5B9pGvC/view?usp=sharing" class="btn btn--primary btn--large" target="_blank">Download CV (PDF)</a>
+<br>
+  <div style="text-align:center; margin: 1.5em 0;">
+  <a href="https://drive.google.com/file/d/1w1fEtlQIcSq32F1ZRjFRlP97h5B9pGvC/view?usp=sharing" class="btn btn--primary btn--large" target="_blank">Download CV (PDF)</a>
+  </div>
 </div>
 
 

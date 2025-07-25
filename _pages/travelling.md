@@ -1,7 +1,6 @@
 ---
 title: ✈️ Travelling
 layout: single
-related: false
 permalink: /travelling/
 author_profile: true
 toc: true

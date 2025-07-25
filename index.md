@@ -39,14 +39,14 @@ feature_row2:
   - image_path: ../assets/images/overall/travel-thumb.png
     alt: "✈️ Travelling"
     title: "✈️ Travelling"
-    excerpt: "Exploring the world one adventure at a time 🌍"
+    excerpt: "Exploring the world one adventure at a time"
     url: "/travelling/"
     btn_label: "Explore"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/calisthenics-thumb.png
     alt: "🏋️‍♂️ Calisthenics & Nutrition"
     title: "🏋️‍♂️ Calisthenics & Nutrition"
-    excerpt: "📸 Documenting my fitness journey, workout progress, and nutritional insights"
+    excerpt: "Documenting my fitness journey, workout progress, and nutritional insights"
     url: "/calisthenics/"
     btn_label: "Learn More"
     btn_class: "btn--primary"

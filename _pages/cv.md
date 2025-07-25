@@ -85,6 +85,7 @@ You can download a PDF version of my CV here:
   - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]
   - Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.
   - Conducted research on Machine & Deep Learning for COVID severity classification using tabular data. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
+- **Tech Stack**: Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git
 
 ### Data Science Intern
 - **Institution**: National Center for Scientific Research "Demokritos"
@@ -92,6 +93,8 @@ You can download a PDF version of my CV here:
 - **Research**:
   - Diagnostic classification using text and audio data of Alzheimer's patients.
   - Used NLP and ML models such as LSTM, CNN, and BERT.
+
+- **Tech Stack**: Tech Stack: Python, TensorFlow, PyTorch, Hugging Face Transformers, Librosa, Scikit-learn, NLTK, Pandas, Jupyter
 
 
 ## Education

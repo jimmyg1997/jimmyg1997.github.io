@@ -51,14 +51,14 @@ You can download a PDF version of my CV here:
 
 ### AI Researcher & IT Support for Mental Health Projects
 <div class="cv-company-row">
-  <img src="/assets/logos/klimaka.png" alt="Klimaka NGO Logo" class="cv-logo">
+  <img src="/assets/logos/klimaka.png" alt="Klimaka NGO Logo" class="cv-logo cv-logo-klimaka">
   <span><em>Klimaka NGO</em></span>
 </div>
 <span style="color:#555; font-size:0.97em;">Mar 2025 - Present | Athens, Attiki, Greece</span>
 <ul>
   <li>Create personalized mental health questionnaires using LLMs tailored to individual patient profiles.</li>
   <li>Collaborate with Laiko General Hospital to integrate dynamic questionnaires for use in emergency settings.</li>
-  <li>Work on a mobile app supporting suicide prevention through self-assessment tools and access to crisis resources.</li>
+  <li>Work on a mobile app supporting suicide prevention through self-assessment tools and access to crisis resources. See also the <a href="/projects/#suicide-prevention-survey" target="_blank">Suicide Prevention Survey</a> project.</li>
   <li>Develop a feedback loop between clinicians and AI tools to improve question quality and clinical relevance.</li>
   <li>Ensure GDPR compliance and ethical handling of sensitive mental health data.</li>
 </ul>
@@ -112,9 +112,9 @@ You can download a PDF version of my CV here:
 </div>
 <span style="color:#555; font-size:0.97em;">Sep 2021 - Dec 2021 | Athens, Greece</span>
 <ul>
-  <li>Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]</li>
+  <li>Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)</li>
   <li>Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.</li>
-  <li>Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]</li>
+  <li>Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C) [DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342) [pdf](https://www.mdpi.com/2673-6284/13/3/22) [website](https://www.michalopoulos.net/covid/)</li>
 </ul>
 <div><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git</div>
 
@@ -241,6 +241,9 @@ You can download a PDF version of my CV here:
   border-radius: 6px;
   background: transparent;
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.cv-logo-klimaka {
+  height: 38px;
 }
 </style>
 

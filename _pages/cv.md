@@ -49,18 +49,23 @@ You can download a PDF version of my CV here:
 
 ## Professional Experience
 
-### AI Researcher & IT Support for Mental Health Projects
-- **Company**: Klimaka NGO
-- **Period**: Mar 2025 - Present
-- **Location**: Athens, Attiki, Greece
-- **Responsibilities**:
-  - Create personalized mental health questionnaires using LLMs tailored to individual patient profiles.
-  - Collaborate with Laiko General Hospital to integrate dynamic questionnaires for use in emergency settings.
-  - Work on a mobile app supporting suicide prevention through self-assessment tools and access to crisis resources.
-  - Develop a feedback loop between clinicians and AI tools to improve question quality and clinical relevance.
-  - Ensure GDPR compliance and ethical handling of sensitive mental health data.
-- **Skills**: Large Language Models (LLM), Mental Health, Suicide Prevention, Project Management, Python, Data Analysis, Data Extraction, Data Processing, Version Control, Bioinformatics
-- **Tech Stack**: Python, OpenAI API, FastAPI, Pandas, NumPy, Git, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), GDPR Compliance Tools
+<div class="cv-job-card">
+  <img src="/assets/logos/klimaka.png" alt="Klimaka NGO Logo" class="cv-logo-card">
+  <div>
+    <strong>AI Researcher & IT Support for Mental Health Projects</strong><br>
+    <span>Klimaka NGO</span><br>
+    <span>Mar 2025 - Present | Athens, Attiki, Greece</span>
+    <ul>
+      <li>Create personalized mental health questionnaires using LLMs tailored to individual patient profiles.</li>
+      <li>Collaborate with Laiko General Hospital to integrate dynamic questionnaires for use in emergency settings.</li>
+      <li>Work on a mobile app supporting suicide prevention through self-assessment tools and access to crisis resources.</li>
+      <li>Develop a feedback loop between clinicians and AI tools to improve question quality and clinical relevance.</li>
+      <li>Ensure GDPR compliance and ethical handling of sensitive mental health data.</li>
+    </ul>
+    <div><strong>Skills:</strong> Large Language Models (LLM), Mental Health, Suicide Prevention, Project Management, Python, Data Analysis, Data Extraction, Data Processing, Version Control, Bioinformatics</div>
+    <div><strong>Tech Stack:</strong> Python, OpenAI API, FastAPI, Pandas, NumPy, Git, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), GDPR Compliance Tools</div>
+  </div>
+</div>
 
 ### Data Scientist (Automation & Analytics)
 - **Company**: HSBC
@@ -210,6 +215,25 @@ You can download a PDF version of my CV here:
   color: #23272f;
   margin-left: 0.1em;
   margin-bottom: 0.1em;
+}
+.cv-job-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  background: rgba(245,250,255,0.97);
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(58,123,253,0.07);
+  border: 1px solid #e3e8f0;
+  padding: 1em 1.2em 0.8em 1.2em;
+  margin-bottom: 1.2em;
+}
+.cv-logo-card {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  margin-top: 0.2em;
 }
 </style>
 

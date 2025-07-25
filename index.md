@@ -217,6 +217,7 @@ h2, h3 {
 
 <div class="landing-page">
 {% include feature_row id="intro" type="center" %}
+</div>
 
 <div class="section-divider"></div>
 
@@ -261,7 +262,6 @@ h2, h3 {
     <a href="/wishlist/" class="btn btn--primary">View Wishlist</a>
   </div>
 </div> -->
-</div>
 
 <style>
 .landing-page .section-divider {

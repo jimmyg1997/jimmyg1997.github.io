@@ -213,6 +213,53 @@ h2, h3 {
 .section-divider + h2, .section-divider + h3, .section-divider + div.feature__wrapper {
   margin-top: 0.2em !important;
 }
+.now-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 1.1em;
+  align-items: flex-start;
+}
+.now-timeline-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.08em;
+  background: rgba(245,250,255,0.92);
+  border-radius: 9px;
+  padding: 0.32em 1.1em 0.32em 0.7em;
+  box-shadow: 0 1px 4px rgba(58,123,253,0.04);
+  font-weight: 500;
+  min-height: 2.1em;
+  position: relative;
+  transition: background 0.18s, box-shadow 0.18s;
+}
+.now-timeline-row:hover {
+  background: rgba(230,245,255,0.97);
+  box-shadow: 0 2px 8px rgba(58,123,253,0.09);
+}
+.now-dot {
+  font-size: 1.2em;
+  margin-right: 0.7em;
+  color: #3a7bfd;
+  width: 1.2em;
+  display: inline-block;
+  text-align: center;
+}
+.now-date {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.98em;
+  color: #3a7bfd;
+  font-weight: 600;
+  margin-right: 1.1em;
+  min-width: 8.5em;
+  display: inline-block;
+}
+.now-desc {
+  font-size: 1.08em;
+  color: #23272f;
+  font-weight: 500;
+  display: inline-block;
+}
 </style>
 
 <div class="landing-page">
@@ -243,12 +290,12 @@ h2, h3 {
   <div class="now-content">
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
-    <ul class="now-list">
-      <li>Building ML models for different use cases at HSBC.</li>
-      <li>Working on my PhD research in healthcare data science</li>
-      <li>Training for my next calisthenics milestone</li>
-      <li>Planning my upcoming travel to Greece</li>
-    </ul>
+    <div class="now-timeline">
+      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2022.01 – Present</span> <span class="now-desc">🏋️ Calisthenics milestone training</span></div>
+      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.06 – Present</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
+      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>
+      <div class="now-timeline-row"><span class="now-dot">○</span> <span class="now-date">2025.08 (planned)</span> <span class="now-desc">✈️ Trip to Greece</span></div>
+    </div>
   </div>
 </div>
 

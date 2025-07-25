@@ -112,9 +112,9 @@ You can download a PDF version of my CV here:
 </div>
 <span style="color:#555; font-size:0.97em;">Sep 2021 - Dec 2021 | Athens, Greece</span>
 <ul>
-  <li>Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. <a href="https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509" target="_blank">poster</a></li>
+  <li>Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [<a href="https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509" target="_blank">poster</a></li>]
   <li>Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.</li>
-  <li>Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C" target="_blank">Google Scholar</a> <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" target="_blank">DOI</a> <a href="https://www.mdpi.com/2673-6284/13/3/22" target="_blank">pdf</a> <a href="https://www.michalopoulos.net/covid/" target="_blank">website</a></li>
+  <li>Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C" target="_blank">Google Scholar</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" target="_blank">DOI</a>] [<a href="https://www.mdpi.com/2673-6284/13/3/22" target="_blank">pdf</a>] [<a href="https://www.michalopoulos.net/covid/" target="_blank">website</a></li>]
 </ul>
 <div><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git</div>
 

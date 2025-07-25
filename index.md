@@ -219,22 +219,28 @@ h2, h3 {
   gap: 0.5em;
   margin-top: 1.1em;
   align-items: flex-start;
+  width: 100%;
 }
 .now-timeline-row {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   font-size: 1.08em;
-  background: rgba(245,250,255,0.92);
+  background: rgba(245,250,255,0.97);
   border-radius: 9px;
-  padding: 0.32em 1.1em 0.32em 0.7em;
+  padding: 0.32em 0.7em 0.32em 0.7em;
   box-shadow: 0 1px 4px rgba(58,123,253,0.04);
   font-weight: 500;
   min-height: 2.1em;
   position: relative;
   transition: background 0.18s, box-shadow 0.18s;
+  border: 1px solid #e3e8f0;
+  margin-bottom: 0.15em;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .now-timeline-row:hover {
-  background: rgba(230,245,255,0.97);
+  background: rgba(230,245,255,1);
   box-shadow: 0 2px 8px rgba(58,123,253,0.09);
 }
 .now-dot {
@@ -244,6 +250,7 @@ h2, h3 {
   width: 1.2em;
   display: inline-block;
   text-align: center;
+  flex-shrink: 0;
 }
 .now-date {
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -253,12 +260,30 @@ h2, h3 {
   margin-right: 1.1em;
   min-width: 8.5em;
   display: inline-block;
+  word-break: break-word;
 }
 .now-desc {
   font-size: 1.08em;
   color: #23272f;
   font-weight: 500;
   display: inline-block;
+  word-break: break-word;
+}
+@media (max-width: 700px) {
+  .now-timeline-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    font-size: 1em;
+  }
+  .now-date {
+    margin-right: 0;
+    min-width: 0;
+    margin-bottom: 0.2em;
+  }
+  .now-desc {
+    font-size: 1em;
+  }
 }
 </style>
 

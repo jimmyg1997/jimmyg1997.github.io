@@ -19,8 +19,6 @@ main:
     url: /calisthenics/
   - title: "Volunteering"
     url: /volunteering/
-  - title: "Now"
-    url: /now/
   - title: "Wishlist"
     url: /wishlist/
   - title: "Contact"

@@ -52,7 +52,7 @@ You can download a PDF version of my CV here:
 ### AI Researcher & IT Support for Mental Health Projects
 <div class="cv-company-row">
   <img src="/assets/logos/klimaka.png" alt="Klimaka NGO Logo" class="cv-logo">
-  <span><strong>Klimaka NGO</strong></span>
+  <span><em>Klimaka NGO</em></span>
 </div>
 <span style="color:#555; font-size:0.97em;">Mar 2025 - Present | Athens, Attiki, Greece</span>
 <ul>
@@ -66,54 +66,69 @@ You can download a PDF version of my CV here:
 <div><strong>Tech Stack:</strong> Python, OpenAI API, FastAPI, Pandas, NumPy, Git, REST APIs, Mobile App Frameworks (e.g., Flutter/React Native), GDPR Compliance Tools</div>
 
 ### Data Scientist (Automation & Analytics)
-- **Company**: HSBC
-- **Period**: July 2024 - Present
-- **Location**: Krakow, Poland
-- **Responsibilities**:
-  - Leading analytical projects in investigations, intelligence delivery, and transaction monitoring.
-  - Utilizing statistical techniques for insight generation and process improvement.
-  - Ensuring compliance with organizational standards and regulatory guidelines.
-- **Skills**: Data Science, Machine Learning, Data Extraction, Data Analysis, Data Visualization, Automation, Compliance Adherence
-- **Tech Stack**: Python, SQL, NumPy, Pandas, Scikit-learn, NLTK, Seaborn, VS Code, Data Studio, Docker, Git
+<div class="cv-company-row">
+  <img src="/assets/logos/hsbc.png" alt="HSBC Logo" class="cv-logo">
+  <span><em>HSBC</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">July 2024 - Present | Krakow, Poland</span>
+<ul>
+  <li>Leading analytical projects in investigations, intelligence delivery, and transaction monitoring.</li>
+  <li>Utilizing statistical techniques for insight generation and process improvement.</li>
+  <li>Ensuring compliance with organizational standards and regulatory guidelines.</li>
+</ul>
+<div><strong>Skills:</strong> Data Science, Machine Learning, Data Extraction, Data Analysis, Data Visualization, Automation, Compliance Adherence</div>
+<div><strong>Tech Stack:</strong> Python, SQL, NumPy, Pandas, Scikit-learn, NLTK, Seaborn, VS Code, Data Studio, Docker, Git</div>
 
 ### Automation Specialist (Advanced Data Analytics)
-- **Company**: Uber
-- **Period**: Dec 2021 - May 2024
-- **Location**: Krakow, Poland
-- **Responsibilities**:
-  - Implemented and maintained 25+ automation/data science projects (real-time and non-real-time).
-  - Optimized NLP models for sentiment analysis and topic clustering.
-  - Developed tabular data models for restaurant churn prediction and retention improvement.
-- **Tech Stack**: Python, SQL, JavaScript, AWS S3, Google APIs (Sheets, Drive, Email, BigQuery), Apache Kafka, Hive, Apache Thrift, QueryRunner, Grafana, Tableau, Data Studio, Docker, Phabricator
-
-### Machine Learning Research Assistant
-- **Institution**: Biomedical Research Foundation, Academy of Athens
-- **Period**: Sep 2021 - Dec 2021
-- **Research**:
-  - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]
-  - Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.
-  - Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
-- **Tech Stack**: Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git
+<div class="cv-company-row">
+  <img src="/assets/logos/uber.png" alt="Uber Logo" class="cv-logo">
+  <span><em>Uber</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">Dec 2021 - May 2024 | Krakow, Poland</span>
+<ul>
+  <li>Implemented and maintained 25+ automation/data science projects (real-time and non-real-time).</li>
+  <li>Optimized NLP models for sentiment analysis and topic clustering.</li>
+  <li>Developed tabular data models for restaurant churn prediction and retention improvement.</li>
+</ul>
+<div><strong>Tech Stack:</strong> Python, SQL, JavaScript, AWS S3, Google APIs (Sheets, Drive, Email, BigQuery), Apache Kafka, Hive, Apache Thrift, QueryRunner, Grafana, Tableau, Data Studio, Docker, Phabricator</div>
 
 ### Local Operations Intern
-- **Company**: Uber
-- **Period**: Mar 2021 – Sep 2021
-- **Location**: Athens, Greece
-- **Responsibilities**:
-  - Analyzed rider and driver behavior using Advanced SQL and Python to extract business insights.
-  - Identified areas for operational improvement through data-driven recommendations.
-  - Designed and implemented a Taxi Fare Estimation optimization project for Athens & Thessaloniki to (1) improve user experience and (2) reduce fraud.
-- **Tech Stack**: Python, SQL, Pandas, NumPy, Google Sheets, Jupyter, Tableau
+<div class="cv-company-row">
+  <img src="/assets/logos/uber.png" alt="Uber Logo" class="cv-logo">
+  <span><em>Uber</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">Mar 2021 – Sep 2021 | Athens, Greece</span>
+<ul>
+  <li>Analyzed rider and driver behavior using Advanced SQL and Python to extract business insights.</li>
+  <li>Identified areas for operational improvement through data-driven recommendations.</li>
+  <li>Designed and implemented a Taxi Fare Estimation optimization project for Athens & Thessaloniki to (1) improve user experience and (2) reduce fraud.</li>
+</ul>
+<div><strong>Tech Stack:</strong> Python, SQL, Pandas, NumPy, Google Sheets, Jupyter, Tableau</div>
 
+### Machine Learning Research Assistant
+<div class="cv-company-row">
+  <img src="/assets/logos/brfaa.png" alt="BRFAA Logo" class="cv-logo">
+  <span><em>Biomedical Research Foundation, Academy of Athens</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">Sep 2021 - Dec 2021 | Athens, Greece</span>
+<ul>
+  <li>Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]</li>
+  <li>Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.</li>
+  <li>Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]</li>
+</ul>
+<div><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git</div>
 
 ### Data Science Intern
-- **Institution**: National Center for Scientific Research "Demokritos"
-- **Period**: Sep 2019 - Oct 2019
-- **Research**:
-  - Diagnostic classification using text and audio data of Alzheimer's patients.
-  - Used NLP and ML models such as LSTM, CNN, and BERT.
-
-- **Tech Stack**: Tech Stack: Python, TensorFlow, PyTorch, Hugging Face Transformers, Librosa, Scikit-learn, NLTK, Pandas, Jupyter
+<div class="cv-company-row">
+  <img src="/assets/logos/demokritos.png" alt="Demokritos Logo" class="cv-logo">
+  <span><em>National Center for Scientific Research "Demokritos"</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">Sep 2019 - Oct 2019 | Athens, Greece</span>
+<ul>
+  <li>Diagnostic classification using text and audio data of Alzheimer's patients.</li>
+  <li>Used NLP and ML models such as LSTM, CNN, and BERT.</li>
+</ul>
+<div><strong>Tech Stack:</strong> Python, TensorFlow, PyTorch, Hugging Face Transformers, Librosa, Scikit-learn, NLTK, Pandas, Jupyter</div>
 
 
 ## Education

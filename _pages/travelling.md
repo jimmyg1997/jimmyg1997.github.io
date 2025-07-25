@@ -1653,7 +1653,427 @@ document.addEventListener('DOMContentLoaded', function() {
       instagramUrl: "https://www.instagram.com/p/C-YoAxtM3QA/",
       city: "Naxos",
       country: "Greece"
-    }
+    },
+    {
+      lat: 36.7539,
+      lng: 24.4514,
+      title: "Sarakiniko Beach, Milos – Greece’s Surreal Moonscape",
+      description: "Sarakiniko Beach, located on the northern coast of Milos, is renowned for its white volcanic rock formations that create an otherworldly, 'moonscape' landscape. Famed for dramatic cliffs, smooth rock surfaces, and turquoise Aegean waters, Sarakiniko is a favorite for cliff jumping, exploration, and photography. Its unique scenery makes it one of the most iconic and photographed spots in the Cyclades.",
+      date: "2024.07",
+      instagramPostId: "DLZvGKANMrt",
+      instagramUrl: "https://www.instagram.com/p/DLZvGKANMrt/",
+      city: "Milos",
+      country: "Greece"
+    },
+    {
+    lat: 39.9611,
+    lng: 20.7194,
+    title: "Megalo Papigo, Zagorochoria – Timeless Stone Village in the Pindus Mountains",
+    description: "Tucked away in the heart of Zagorochoria, Megalo Papigo is a traditional stone-built village surrounded by the dramatic peaks of Mount Tymfi and the iconic cliffs of Astraka in the Epirus region. Known for its cobbled paths, charming stone houses, and breathtaking mountain scenery, Megalo Papigo offers visitors an escape into serenity, history, and untouched nature. Wander through its historic lanes, marvel at the Vikos Gorge, or immerse yourself in the rich tradition and magic of one of Greece’s best-preserved mountain havens. Adventurers and nature lovers are drawn here for hiking, bird-watching, and stunning viewpoints in this UNESCO-protected region.",
+    date: "2024.05",
+    instagramPostId: "DLiORW6MKBD",
+    instagramUrl: "https://www.instagram.com/p/DLiORW6MKBD/",
+    city: "Megalo Papigo",
+    country: "Greece"
+  },
+  {
+    lat: 50.01895,
+    lng: 19.80211,
+    title: "Benedictine Abbey in Tyniec – Poland’s Oldest Monastery",
+    description: "Perched on a limestone hill above the Vistula River, the Benedictine Abbey in Tyniec, near Kraków, stands as the oldest existing monastery in Poland. Founded circa 1044 by King Casimir I the Restorer, the abbey has witnessed nearly a millennium of Polish history. It played a crucial role as both a spiritual center and fortress, suffering destruction and rebuilding over the centuries. Renowned for its Romanesque foundations, Gothic and Baroque architecture, and a scenic setting, Tyniec remains an active monastery, offering visitors a unique blend of history, architecture, and tranquil beauty overlooking the river.",
+    date: "2024.06",
+    instagramPostId: "DLiY4sRst4g",
+    instagramUrl: "https://www.instagram.com/p/DLiY4sRst4g/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 1.2844,
+    lng: 103.8516,
+    title: "WeWork Singapore – Focused Coworking in the Heart of the City",
+    description: "WeWork Singapore offers a vibrant, modern coworking space perfect for both focused work and creative energy. Visitors enjoy a calm yet energizing atmosphere with plenty of quiet corners and good vibes all around—ideal for escaping distractions and getting work done. The location features cozy seating and quality coffee, making it a popular spot for productivity seekers in the city’s business district. Singapore, a global hub for innovation and entrepreneurship, provides a diverse backdrop and dynamic urban environment for business travelers and freelancers alike.",
+    date: "2024.04",
+    instagramPostId: "DL-gk1HMRIz",
+    instagramUrl: "https://www.instagram.com/p/DL-gk1HMRIz/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 20.9101,
+    lng: 107.1839,
+    title: "Ha Long Bay, Vietnam – Oyster Pearl Workshop Experience",
+    description: "Ha Long Bay, a UNESCO World Heritage site in northern Vietnam, is renowned for its emerald green waters, limestone islands, and floating fishing villages. Visitors can stop at floating oyster farms to witness the fascinating process of pearl cultivation—from oyster grafting to harvesting. At these workshops, you may see pearls being extracted from oysters and learn about the intricate art of pearl farming. The calm, scenic setting of Ha Long Bay provides a unique cultural and natural encounter, making it an unforgettable stop for travelers seeking authentic local traditions and stunning natural beauty.",
+    date: "2025.04",
+    instagramPostId: "DMDS6L4o4WH",
+    instagramUrl: "https://www.instagram.com/p/DMDS6L4o4WH/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+
+  {
+    lat: 20.9101,
+    lng: 107.1880,
+    title: "Ha Long Bay, Vietnam – Oyster Pearl Workshop Experience",
+    description: "Ha Long Bay, a UNESCO World Heritage site in northern Vietnam, is renowned for its emerald green waters, limestone islands, and floating fishing villages. Visitors can stop at floating oyster farms to witness the fascinating process of pearl cultivation—from oyster grafting to harvesting. At these workshops, you may see pearls being extracted from oysters and learn about the intricate art of pearl farming. The calm, scenic setting of Ha Long Bay provides a unique cultural and natural encounter, making it an unforgettable stop for travelers seeking authentic local traditions and stunning natural beauty.",
+    date: "2025.04",
+    instagramPostId: "DMDTwDTovof",
+    instagramUrl: "https://www.instagram.com/p/DMDTwDTovof/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+  {
+    lat: 20.9101,
+    lng: 107.1839,
+    title: "Ha Long Bay, Vietnam – 5 Must-Do Experiences",
+    description: "Ha Long Bay, a UNESCO World Heritage site in northern Vietnam, is celebrated for its emerald waters and dramatic limestone islands. Top experiences here include joining a pearl workshop to see how oysters are grafted, enjoying boat rides past limestone cliffs with fresh seafood, exploring the vast surreal chambers of Sung Sot Cave, taking fast and unforgettable Seajet rides across open water, and climbing Ti Top Island for panoramic views followed by a refreshing swim. Ha Long Bay perfectly balances stillness and spectacle—making every hour spent here worthwhile.",
+    date: "2025.04",
+    instagramPostId: "DMDa-5hoQwZ",
+    instagramUrl: "https://www.instagram.com/p/DMDa-5hoQwZ/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+  {
+    lat: 20.9101,
+    lng: 107.1800,
+    title: "Ha Long Bay, Vietnam – 5 Must-Do Experiences",
+    description: "Ha Long Bay, a UNESCO World Heritage site in northern Vietnam, is celebrated for its emerald waters and dramatic limestone islands. Top experiences here include joining a pearl workshop to see how oysters are grafted, enjoying boat rides past limestone cliffs with fresh seafood, exploring the vast surreal chambers of Sung Sot Cave, taking fast and unforgettable Seajet rides across open water, and climbing Ti Top Island for panoramic views followed by a refreshing swim. Ha Long Bay perfectly balances stillness and spectacle—making every hour spent here worthwhile.",
+    date: "2025.04",
+    instagramPostId: "DMDdVm0Ix5c",
+    instagramUrl: "https://www.instagram.com/p/DMDdVm0Ix5c/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+  {
+    lat: 49.2267,
+    lng: 19.9816,
+    title: "Tatra National Park, Poland – Five Reasons to Stay a While",
+    description: "Just a couple hours from Kraków, the Tatra Mountains offer endless hiking trails ranging from lakeside walks to alpine climbs, along with a scenic cable car ride to Kasprowy Wierch for unreal views. Every season here is vivid: snow may linger in May, but sunshine is common in September. Cozy mountain huts serve hot soup and cold beer in their wooden interiors. Even brief visits immerse you in stillness, mist, and the restorative natural energy of the Polish highlands—the forest, stone, and crisp air become the reset you didn't know you needed.",
+    date: "2025.07",
+    instagramPostId: "DMDe_CXIu7z",
+    instagramUrl: "https://www.instagram.com/p/DMDe_CXIu7z/",
+    city: "Zakopane",
+    country: "Poland"
+  },
+  {
+    lat: 49.2267,
+    lng: 19.9876,
+    title: "Tatra National Park, Poland – Five Reasons to Stay a While",
+    description: "Just a couple hours from Kraków, the Tatra Mountains offer endless hiking trails ranging from lakeside walks to alpine climbs, along with a scenic cable car ride to Kasprowy Wierch for unreal views. Every season here is vivid: snow may linger in May, but sunshine is common in September. Cozy mountain huts serve hot soup and cold beer in their wooden interiors. Even brief visits immerse you in stillness, mist, and the restorative natural energy of the Polish highlands—the forest, stone, and crisp air become the reset you didn't know you needed.",
+    date: "2025.07",
+    instagramPostId: "DMDgGKJMEnE",
+    instagramUrl: "https://www.instagram.com/p/DMDgGKJMEnE/",
+    city: "Zakopane",
+    country: "Poland"
+  },
+  {
+    lat: 1.30104,
+    lng: 103.85907,
+    title: "Tarik Café – Kampong Glam’s Signature Teh Tarik & Kopi",
+    description: "Nestled on Arab Street in the vibrant Kampong Glam district of Singapore, Tarik Café is a cult-favorite stop for lovers of local teh tarik and kopi. Known for its frothy, addictive signature teh tarik and strong, bold local kopi, this cozy café is a buzzing hub for both locals and travelers seeking authentic Singaporean street flavors. The menu also features comfort dishes like nasi lemak and roti john, served in a laid-back setting perfect for relaxing after exploring nearby Haji Lane and Sultan Mosque. Tarik Café blends chill vibes with a taste of tradition right in the heart of urban Singapore.",
+    date: "2025.04",
+    instagramPostId: "DMGHlb8Mtrj",
+    instagramUrl: "https://www.instagram.com/p/DMGHlb8Mtrj/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 1.30104,
+    lng: 103.85987,
+    title: "Tarik Café – Kampong Glam’s Signature Teh Tarik & Kopi",
+    description: "Nestled on Arab Street in the vibrant Kampong Glam district of Singapore, Tarik Café is a cult-favorite stop for lovers of local teh tarik and kopi. Known for its frothy, addictive signature teh tarik and strong, bold local kopi, this cozy café is a buzzing hub for both locals and travelers seeking authentic Singaporean street flavors. The menu also features comfort dishes like nasi lemak and roti john, served in a laid-back setting perfect for relaxing after exploring nearby Haji Lane and Sultan Mosque. Tarik Café blends chill vibes with a taste of tradition right in the heart of urban Singapore.",
+    date: "2025.04",
+    instagramPostId: "DMGN3J3MxVs",
+    instagramUrl: "https://www.instagram.com/p/DMGN3J3MxVs/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 20.9101,
+    lng: 107.1939,
+    title: "Ha Long Bay, Vietnam – High-Speed Sea Jet Adventure",
+    description: "Ha Long Bay, a UNESCO World Heritage site famed for its emerald waters and towering limestone karsts, offers more than mesmerizing views—adventure seekers can experience full-throttle excitement on a high-speed sea jet. With groups of up to 10 people, these sea jet rides cut through the iconic bay at exhilarating speeds, passing clusters of cruise ships and dramatic cliffs. It’s a thrilling way to witness the bay’s grandeur, blending adrenaline with breathtaking scenery, and providing travelers a unique perspective on one of Vietnam's natural wonders.",
+    date: "2025.04",
+    instagramPostId: "DML99DNohEp",
+    instagramUrl: "https://www.instagram.com/p/DML99DNohEp/",
+    city: "Ha Long",
+    country: "Vietnam"
+  },
+  {
+    lat: 39.9901,
+    lng: 20.7361,
+    title: "Kleidonia Bridge, Epirus – Iconic Stone Arch Over Voidomatis",
+    description: "The Kleidonia Bridge is a historic single-arch stone bridge located near the village of Kleidonia in Epirus, northwestern Greece. Dating back to 1853, this architectural marvel spans the crystal-clear Voidomatis River, surrounded by lush greenery at the edge of the Vikos Gorge. Renowned for its timeless stone craftsmanship and stunning natural setting, it was built on the site of an older Byzantine-era bridge and is steeped in local legends. Today it serves as both a scenic hiking destination and a cultural landmark, inviting visitors to walk its storied arch and enjoy tranquil river views amidst the mountainous landscapes of Zagori.",
+    date: "2024.05",
+    instagramPostId: "DMNGVEWMBNj",
+    instagramUrl: "https://www.instagram.com/p/DMNGVEWMBNj/",
+    city: "Kleidonia",
+    country: "Greece"
+  },
+  {
+    lat: 39.9676,
+    lng: 20.7309,
+    title: "Papingo Rock Pools – Natural Pools in the Heart of Epirus",
+    description: "Papingo Rock Pools, found between the villages of Megalo Papigo and Mikro Papigo in the Epirus region of northwestern Greece, are a series of stunning natural pools carved into the limestone by the Rogovo stream. Surrounded by dramatic cliffs and lush greenery in the Pindus Mountains, these 'ovires' offer crystal-clear, cool waters, small cascading waterfalls, and unique rock formations, making them a renowned spot for swimming and relaxation during summer months. Easily accessible by foot and located within the Vikos–Aoös National Park, the pools are a serene oasis for hikers and nature lovers, frequently described as a hidden gem and geological masterpiece of the Zagori area.",
+    date: "2024.05",
+    instagramPostId: "DMPlnHkMEHh",
+    instagramUrl: "https://www.instagram.com/p/DMPlnHkMEHh/",
+    city: "Papingo",
+    country: "Greece"
+  },
+  {
+    lat: 39.9676,
+    lng: 20.7379,
+    title: "Papingo Rock Pools – Natural Pools in the Heart of Epirus",
+    description: "Papingo Rock Pools, found between the villages of Megalo Papigo and Mikro Papigo in the Epirus region of northwestern Greece, are a series of stunning natural pools carved into the limestone by the Rogovo stream. Surrounded by dramatic cliffs and lush greenery in the Pindus Mountains, these 'ovires' offer crystal-clear, cool waters, small cascading waterfalls, and unique rock formations, making them a renowned spot for swimming and relaxation during summer months. Easily accessible by foot and located within the Vikos–Aoös National Park, the pools are a serene oasis for hikers and nature lovers, frequently described as a hidden gem and geological masterpiece of the Zagori area.",
+    date: "2024.05",
+    instagramPostId: "DMPm9EmsvZP",
+    instagramUrl: "https://www.instagram.com/p/DMPm9EmsvZP/",
+    city: "Papingo",
+    country: "Greece"
+  },
+  {
+    lat: 39.8047,
+    lng: 20.6892,
+    title: "Northwestern Greece — Aegean Views, Greek Flag & Mountain Serenity",
+    description: "Captured in the mountainous region of northwestern Greece, this destination offers panoramic vistas of lush hills, winding roads, and the distant expanse of the Aegean. Marked by the presence of the Greek flag waving over a tranquil landscape, this spot perfectly embodies Greek patriotic pride, natural beauty, and the calming effects of mountain air. It’s an ideal location for hiking, outdoor relaxation, and soaking up aesthetic views. The untouched nature, clarity, and silence make it a haven for explorers, with endless opportunities for photography and quiet reflection in a setting synonymous with freedom and Greek heritage.",
+    date: "2025.07",
+    instagramPostId: "DMSbNmOMS9B",
+    instagramUrl: "https://www.instagram.com/p/DMSbNmOMS9B/",
+    city: "Epirus",
+    country: "Greece"
+  },
+  {
+    lat: 39.6657,
+    lng: 20.8538,
+    title: "33rd Panhellenic Psychiatric Conference – Reflections from Ioannina",
+    description: "The 33rd Panhellenic Psychiatric Conference in Ioannina, Greece, brought together mental health professionals from across the country to discuss new developments in psychiatry, community care, and psychosocial support. Highlights included lectures on social reintegration, psychosocial interventions, and the evolving role of psychiatry in public health. The event emphasized the real-world impact of theory meeting practice and offered opportunities for meaningful conversations in a lakeside setting.",
+    date: "2025.05",
+    instagramPostId: "DMU7a1ZMeaU",
+    instagramUrl: "https://www.instagram.com/p/DMU7a1ZMeaU/",
+    city: "Ioannina",
+    country: "Greece"
+  },
+  {
+    lat: 39.9618,
+    lng: 20.7190,
+    title: "Papigo, Greece – A Table with a View in Zagori Mountains",
+    description: "Captured at a tranquil taverna in the Zagori region, this scene epitomizes Greek mountain serenity: a traditional Greek salad, a glass of white wine, and the gentle dusk over the Epirus mountains. Located near Papigo village, the view sweeps across terracotta rooftops and dense greenery, framed by the blue silhouettes of distant peaks. This mountain hideaway in northwestern Greece is cherished for its fresh air, hiking trails, stone-built villages, and a pace of life that invites you to savor every meal and every moment.",
+    date: "2025.05",
+    instagramPostId: "DMYzZo7ozwP",
+    instagramUrl: "https://www.instagram.com/p/DMYzZo7ozwP/",
+    city: "Papigo",
+    country: "Greece"
+  },
+  {
+    lat: 50.0573,
+    lng: 19.9095,
+    title: "Błonia Park, Kraków – Urban Green Expanse from Above",
+    description: "Błonia Park is Kraków’s iconic open green space, stretching over 48 hectares in the city center. From above, this vast meadow is a rare urban breathing space—an emerald field bordered by the city skyline and tree-lined paths, where locals and visitors walk, cycle, picnic, and gather for public events. The park symbolizes Kraków’s harmony of nature and city life, offering wide open skies and a place of movement, peace, and connection amidst urban energy.",
+    date: "2025.06",
+    instagramPostId: "DMY1ABzo6CQ",
+    instagramUrl: "https://www.instagram.com/p/DMY1ABzo6CQ/",
+    city: "Kraków",
+    country: "Poland"
+  },
+  {
+    lat: 1.2541,
+    lng: 103.8132,
+    title: "Wings of Time, Singapore – Fireworks Symphony on the Shores of Sentosa",
+    description: "Wings of Time is Singapore’s world-renowned permanent night show located on Sentosa Island, featuring a spectacular combination of 3D projection mapping, dazzling water jets, lasers, and real pyrotechnics—all set against the backdrop of the open sea. The show tells a heartwarming story about friendship and courage, following the mythical bird Shahbaz and friends as they journey through vibrant landscapes and the mysteries of time. Visitors are immersed in a 20-minute multi-sensory experience with captivating visual effects, soundtracks, and a fireworks finale—a must-see highlight described as 'mind-blowing' and an unforgettable way to end any day in Singapore. Shows are held nightly at 7:40PM and 8:40PM, with standard admission around SGD19. Arriving early is recommended to secure good seats as it draws large crowds.",
+    date: "2025.04",
+    instagramPostId: "DMd6KSaMmat",
+    instagramUrl: "https://www.instagram.com/p/DMd6KSaMmat/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 1.3057,
+    lng: 103.8531,
+    title: "Sri Veeramakaliamman Temple, Singapore – Dravidian Heritage in Little India",
+    description: "Located in the heart of Little India, Sri Veeramakaliamman Temple is one of Singapore’s oldest Hindu temples, dedicated to goddess Kali. Built in 1881 by early Indian immigrants, its colorful, intricately carved Dravidian-style tower is a visual feast, topped by rooftop statues and vibrant details that transport visitors to Southern India. The temple is open daily with free entry and is celebrated for its spiritual energy, rituals, and incense-filled atmosphere—making it both a cultural and photogenic must-see in Singapore.",
+    date: "2025.04",
+    instagramPostId: "DMe-x5Ds-aj",
+    instagramUrl: "https://www.instagram.com/p/DMe-x5Ds-aj/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 1.3057,
+    lng: 103.8591,
+    title: "Sri Veeramakaliamman Temple, Singapore – Dravidian Heritage in Little India",
+    description: "Located in the heart of Little India, Sri Veeramakaliamman Temple is one of Singapore’s oldest Hindu temples, dedicated to goddess Kali. Built in 1881 by early Indian immigrants, its colorful, intricately carved Dravidian-style tower is a visual feast, topped by rooftop statues and vibrant details that transport visitors to Southern India. The temple is open daily with free entry and is celebrated for its spiritual energy, rituals, and incense-filled atmosphere—making it both a cultural and photogenic must-see in Singapore.",
+    date: "2025.04",
+    instagramPostId: "DMfAVtJsdeK",
+    instagramUrl: "https://www.instagram.com/p/DMfAVtJsdeK/",
+    city: "Singapore",
+    country: "Singapore"
+  },
+  {
+    lat: 50.2649,
+    lng: 19.0238,
+    title: "Katowice, Poland – Culture, Cuisine & Modern Vibes",
+    description: "Katowice, the vibrant heart of the Silesian region in southern Poland, is a dynamic fusion of culture, history, and modern energy. The city enchants visitors with highlights like brunch at chic cafés, the Silesian Museum’s blend of historic and contemporary art, and a dining scene ranging from traditional Polish to global flavors. Strolling the city streets, you may encounter spontaneous Latin dance performances or local music, reflecting Katowice’s creative spirit. When night falls, locals and travelers gather at energetic clubs and bars, while places like Mariacka Street become hubs for cocktails, street food, and lively conversation. Katowice is a lively destination perfect for those seeking both authenticity and excitement in Poland.",
+    date: "2024.09",
+    instagramPostId: "C-46gCrMwv_",
+    instagramUrl: "https://www.instagram.com/p/C-46gCrMwv_/",
+    city: "Katowice",
+    country: "Poland"
+  },
+  {
+    lat: 49.7976,
+    lng: 19.6342,
+    title: "Hidden Gems of Lesser Poland – Lanckorona, Tenczyn Castle & Wadowice",
+    description: "Venture into the heart of Lesser Poland to discover charming villages, dramatic medieval castles, and sweet culinary legends! Begin in Lanckorona, a fairy-tale village famed for its cobbled lanes, unique wooden houses, local ceramics, and artisan coffee shops—an ideal retreat for those seeking nostalgia and creativity. Explore the ruins of Tenczyn Castle, a site steeped in medieval history where classic car rallies sometimes bring the past roaring to life. Finally, treat your tastebuds in Wadowice, birthplace of Pope John Paul II, and home to the iconic kremówka (cream cake). Each locale captures a different facet of southern Poland’s heritage, blending local artistry, impressive architecture, and delicious tradition.",
+    date: "2024.08",
+    instagramPostId: "C-02kkNMtfG",
+    instagramUrl: "https://www.instagram.com/p/C-02kkNMtfG/",
+    city: "Lanckorona",
+    country: "Poland"
+  },
+  {
+    lat: 36.8322,
+    lng: 25.8989,
+    title: "Welcome to Amorgos, Greece – Cycladic Island Escape",
+    description: "Amorgos, part of the Cyclades in the Aegean Sea, is celebrated for its turquoise waters, rugged cliffs, and iconic hilltop monasteries. This tranquil Greek island offers a slow pace of life, charming whitewashed villages, and a captivating blend of natural beauty and history. Visitors are drawn to Amorgos’ untamed coastal scenery, serene beaches, and the world-famous Hozoviotissa Monastery clinging to the cliffs. At local tavernas, evenings fill with music, laughter, and community under hanging vines—capturing the essence of untouched island charm and warm hospitality in the Aegean.",
+    date: "2024.08",
+    instagramPostId: "C-mgOSHMK1Q",
+    instagramUrl: "https://www.instagram.com/p/C-mgOSHMK1Q/",
+    city: "Amorgos",
+    country: "Greece"
+  },
+  {
+    lat: 36.5506,
+    lng: 26.3540,
+    title: "Astypalaia, Greece – Handstand Fun Under the Aegean Sun",
+    description: "Astypalaia, the 'Butterfly Island' of the Dodecanese, captivates visitors with its charming whitewashed villages, Venetian castle crowning Chora, and wild beaches with turquoise waters. Renowned for its tranquil vibe and photogenic landscapes, it’s a favorite for adventurers and friends seeking #GreekSummerMagic. Whether practicing handstands on sun-baked hills or wandering narrow lanes beneath endless blue skies, Astypalaia exudes a playful, authentic Greek spirit—where every moment feels sun-kissed, active, and unforgettable.",
+    date: "2024.07",
+    instagramPostId: "C-cfupTs2Jq",
+    instagramUrl: "https://www.instagram.com/p/C-cfupTs2Jq/",
+    city: "Astypalaia",
+    country: "Greece"
+  },
+  {
+    lat: 37.1056,
+    lng: 25.3764,
+    title: "Naxos, Greece – Summer Night Festival Experience",
+    description: "This scene captures a vibrant local festival or panigiri on the island of Naxos, Greece, held outdoors at night in July 2024. Residents and visitors gather in a lively village square, enjoying traditional music, dancing, and communal dining under the stars. Naxos is famous for its authentic Greek festivals, where people celebrate with live bands, folk dances, and regional cuisine. The festive atmosphere in the Cyclades showcases local culture, hospitality, and a joyful sense of community, making nights like these a cherished highlight for travelers and locals alike.",
+    date: "2024.07",
+    instagramPostId: "C-YoAxtM3QA",
+    instagramUrl: "https://www.instagram.com/p/C-YoAxtM3QA/",
+    city: "Naxos",
+    country: "Greece"
+  },
+  {
+    lat: 49.3117,
+    lng: 20.0436,
+    title: "Erasmus+ Youth Training – Leading the Greek Team in Murzasichle, Poland",
+    description: "Set in the picturesque mountain village of Murzasichle near Zakopane, Poland, this Erasmus+ program brought together youth leaders and participants from across Europe for training in environmental awareness, project management, and international collaboration. Surrounded by the stunning Tatra landscapes, the event fostered cultural exchange, ecological responsibility, and personal growth. As the leader of the Greek team, you engaged in workshops, group activities, and shared ideas on sustainability and creativity with peers from diverse backgrounds. Murzasichle’s tranquil atmosphere, traditional architecture, and panoramic mountain views made it an inspiring setting for both learning and building lifelong friendships during this unique Erasmus+ experience.",
+    date: "2024.06",
+    instagramPostId: "C72bIxAMLIe",
+    instagramUrl: "https://www.instagram.com/p/C72bIxAMLIe/",
+    city: "Murzasichle",
+    country: "Poland"
+  },
+  {
+    lat: 49.3117,
+    lng: 20.0496,
+    title: "Erasmus+ Youth Training – Leading the Greek Team in Murzasichle, Poland",
+    description: "Set in the picturesque mountain village of Murzasichle near Zakopane, Poland, this Erasmus+ program brought together youth leaders and participants from across Europe for training in environmental awareness, project management, and international collaboration. Surrounded by the stunning Tatra landscapes, the event fostered cultural exchange, ecological responsibility, and personal growth. As the leader of the Greek team, you engaged in workshops, group activities, and shared ideas on sustainability and creativity with peers from diverse backgrounds. Murzasichle’s tranquil atmosphere, traditional architecture, and panoramic mountain views made it an inspiring setting for both learning and building lifelong friendships during this unique Erasmus+ experience.",
+    date: "2024.06",
+    instagramPostId: "C72aeVaMiVg",
+    instagramUrl: "https://www.instagram.com/p/C72aeVaMiVg/",
+    city: "Murzasichle",
+    country: "Poland"
+  },
+  {
+    lat: 49.3117,
+    lng: 20.0596,
+    title: "Erasmus+ Youth Training – Leading the Greek Team in Murzasichle, Poland",
+    description: "Set in the picturesque mountain village of Murzasichle near Zakopane, Poland, this Erasmus+ program brought together youth leaders and participants from across Europe for training in environmental awareness, project management, and international collaboration. Surrounded by the stunning Tatra landscapes, the event fostered cultural exchange, ecological responsibility, and personal growth. As the leader of the Greek team, you engaged in workshops, group activities, and shared ideas on sustainability and creativity with peers from diverse backgrounds. Murzasichle’s tranquil atmosphere, traditional architecture, and panoramic mountain views made it an inspiring setting for both learning and building lifelong friendships during this unique Erasmus+ experience.",
+    date: "2024.06",
+    instagramPostId: "C72Z0jhMSkS",
+    instagramUrl: "https://www.instagram.com/p/C72Z0jhMSkS/",
+    city: "Murzasichle",
+    country: "Poland"
+  },
+  {
+    lat: 28.2643,
+    lng: 83.9721,
+    title: "Magic of Nepal – Lakes, Boats & Monkeys in Pokhara",
+    description: "This post captures the vibrant magic of Pokhara, Nepal’s lakeside gem at the foothills of the Himalayas. Featured are serene scenes of Phewa Lake with its colorful paddle boats, framed by lush greenery and blossoming jacaranda, making for a tranquil escape in Nepal’s adventure capital. Unforgettable moments include playful monkeys in the city’s open spaces, as well as glimpses of everyday life and local children. Pokhara is renowned as the gateway to the Annapurna Circuit and celebrated for its peaceful lakefront, lively street culture, and panoramic views of snow-capped peaks—blending natural beauty, wildlife encounters, and authentic community charm.",
+    date: "2024.05",
+    instagramPostId: "C7F7PiIK43X",
+    instagramUrl: "https://www.instagram.com/p/C7F7PiIK43X/",
+    city: "Pokhara",
+    country: "Nepal"
+  },
+  {
+    lat: 27.7433,
+    lng: 85.7527,
+    title: "Takure Village, Nepal – Himalayan Community, Rebuilding & Resilience",
+    description: "@wheeling2help. Nestled in the hills of Sindhupalchok district, Takure is a rural Nepali village renowned for its sense of community, culture, and striking Himalayan scenery. Severely impacted by the 2015 earthquake, Takure drew the support of local initiatives and international volunteers who helped rebuild homes, community spaces, and a future rooted in sustainability. The village is a hub for social projects focused on natural building, sustainable agriculture, and youth empowerment. Visitors experience genuine Nepali hospitality, learn local customs—including vegetarian meals and communal living—and immerse themselves in the daily rhythms of life on terraced fields with panoramic mountain views. Takure is a testament to Nepal’s enduring spirit, tradition, and the warmth of its people.",
+    date: "2024.05",
+    instagramPostId: "C6_F6edMIvj",
+    instagramUrl: "https://www.instagram.com/p/C6_F6edMIvj/",
+    city: "Takure",
+    country: "Nepal"
+  },
+  {
+    lat: 27.7433,
+    lng: 85.7597,
+    title: "Takure Village, Nepal – Himalayan Community, Rebuilding & Resilience",
+    description: "@wheeling2help. Nestled in the hills of Sindhupalchok district, Takure is a rural Nepali village renowned for its sense of community, culture, and striking Himalayan scenery. Severely impacted by the 2015 earthquake, Takure drew the support of local initiatives and international volunteers who helped rebuild homes, community spaces, and a future rooted in sustainability. The village is a hub for social projects focused on natural building, sustainable agriculture, and youth empowerment. Visitors experience genuine Nepali hospitality, learn local customs—including vegetarian meals and communal living—and immerse themselves in the daily rhythms of life on terraced fields with panoramic mountain views. Takure is a testament to Nepal’s enduring spirit, tradition, and the warmth of its people.",
+    date: "2024.05",
+    instagramPostId: "C69oQuxsRwP",
+    instagramUrl: "https://www.instagram.com/p/C69oQuxsRwP/",
+    city: "Takure",
+    country: "Nepal"
+  },
+  {
+    lat: 28.2096,
+    lng: 83.9856,
+    title: "Pokhara, Nepal – Lakeside Serenity & Mental Well-Being",
+    description: "Pokhara, often referred to as the gateway to the Himalayas, is celebrated for its tranquil lakes, lush hillsides, and breathtaking views of the Annapurna range. Recent reflections from the region highlight the profound mental health benefits of travel—Pokhara’s peaceful setting is ideal for reducing stress and increasing happiness. Immersing oneself in Pokhara’s natural beauty and cultural diversity promotes personal growth, empathy, and a deeper connection to the world. The serene landscape, with its calm waters and majestic mountain backdrops, invites travelers to relax, recharge, and embrace a holistic sense of well-being.",
+    date: "2024.05",
+    instagramPostId: "C62wULOrgyN",
+    instagramUrl: "https://www.instagram.com/p/C62wULOrgyN/",
+    city: "Pokhara",
+    country: "Nepal"
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
   ];
 
   console.log('Map script loaded');

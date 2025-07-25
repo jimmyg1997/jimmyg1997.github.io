@@ -2030,6 +2030,17 @@ document.addEventListener('DOMContentLoaded', function() {
     country: "Nepal"
   },
   {
+    lat: 27.7433,
+    lng: 85.7697,
+    title: "Takure Village, Nepal – Himalayan Community, Rebuilding & Resilience",
+    description: "@wheeling2help. Nestled in the hills of Sindhupalchok district, Takure is a rural Nepali village renowned for its sense of community, culture, and striking Himalayan scenery. Severely impacted by the 2015 earthquake, Takure drew the support of local initiatives and international volunteers who helped rebuild homes, community spaces, and a future rooted in sustainability. The village is a hub for social projects focused on natural building, sustainable agriculture, and youth empowerment. Visitors experience genuine Nepali hospitality, learn local customs—including vegetarian meals and communal living—and immerse themselves in the daily rhythms of life on terraced fields with panoramic mountain views. Takure is a testament to Nepal’s enduring spirit, tradition, and the warmth of its people.",
+    date: "2024.05",
+    instagramPostId: "C62tzvarHmO",
+    instagramUrl: "https://www.instagram.com/p/C62tzvarHmO/",
+    city: "Takure",
+    country: "Nepal"
+  },
+  {
     lat: 28.2096,
     lng: 83.9856,
     title: "Pokhara, Nepal – Lakeside Serenity & Mental Well-Being",
@@ -2039,7 +2050,269 @@ document.addEventListener('DOMContentLoaded', function() {
     instagramUrl: "https://www.instagram.com/p/C62wULOrgyN/",
     city: "Pokhara",
     country: "Nepal"
+  },
+  {
+    lat: 28.2096,
+    lng: 83.9956,
+    title: "Pokhara, Nepal – Lakeside Serenity & Mental Well-Being",
+    description: "Pokhara, often referred to as the gateway to the Himalayas, is celebrated for its tranquil lakes, lush hillsides, and breathtaking views of the Annapurna range. Recent reflections from the region highlight the profound mental health benefits of travel—Pokhara’s peaceful setting is ideal for reducing stress and increasing happiness. Immersing oneself in Pokhara’s natural beauty and cultural diversity promotes personal growth, empathy, and a deeper connection to the world. The serene landscape, with its calm waters and majestic mountain backdrops, invites travelers to relax, recharge, and embrace a holistic sense of well-being.",
+    date: "2024.05",
+    instagramPostId: "C62saz-Lu5T",
+    instagramUrl: "https://www.instagram.com/p/C62saz-Lu5T/",
+    city: "Pokhara",
+    country: "Nepal"
+  },
+  {
+    lat: 28.2272,
+    lng: 83.9584,
+    title: "Pokhara, Nepal – The World's Steepest and Fastest Zipline Adventure",
+    description: "Pokhara is home to one of the most extreme zip lines on earth—a breathtaking ride stretching 1,800 meters (1.1 miles) from the hilltop of Sarangkot. With a vertical drop of nearly 600 meters (2,000 feet) and top speeds approaching 140km/h, this zipline (often called Zipflyer Nepal or HighGround Adventures Zipline) offers unparalleled views of the Annapurna and Machapuchare mountain ranges as you soar towards the valley below. Often described as one of the world's longest, fastest, and steepest ziplines, the experience combines an adrenaline rush with panoramic Himalayan scenery. From the starting platform, riders are securely harnessed side-by-side before a dramatic launch, making this a must-try adventure for thrill-seekers in Nepal.",
+    date: "2024.05",
+    instagramPostId: "C6v1bTpvsUs",
+    instagramUrl: "https://www.instagram.com/p/C6v1bTpvsUs/",
+    city: "Pokhara",
+    country: "Nepal"
+  },
+  {
+    lat: 27.7172,
+    lng: 85.3240,
+    title: "Kathmandu, Nepal – Warmth, Hospitality & Daily Devotion",
+    description: "Kathmandu, the heart of Nepal, is renowned for its welcoming spirit and the warmth of its people. The city is a vibrant tapestry of ancient temples, bustling markets, and serene rituals. Residents are known for their kindness, hospitality, and infectious positivity—a mix that shines in every interaction, from temple offerings to moments shared with visitors. It’s common to witness locals engaging in daily acts of devotion, supporting their families and communities while radiating genuine care. Kathmandu’s blend of tradition, hard work, and community pride is unmatched, making it a truly special destination for those seeking cultural authenticity and human connection.",
+    date: "2024.05",
+    instagramPostId: "C6sNub1obMa",
+    instagramUrl: "https://www.instagram.com/p/C6sNub1obMa/",
+    city: "Kathmandu",
+    country: "Nepal"
+  },
+  {
+    lat: 35.7673,
+    lng: -5.7998,
+    title: "Tangier, Morocco – Gateway of Cultures at the Strait of Gibraltar",
+    description: "Tangier sits at the northern tip of Morocco, where the Mediterranean meets the Atlantic and Africa greets Europe across the Strait of Gibraltar. This vibrant city blends ancient medinas, French and Spanish influences, and a storied port history. Explore Tangier’s labyrinthine old town, savor Moroccan cuisine rich with spices, or relax along the bustling seafront promenade. Its strategic location offers breathtaking maritime views, inspiring artists, writers, and travelers alike for generations. Tangier is a tapestry of flavors, sounds, and cultures—an unforgettable introduction to Morocco’s diversity and magic.",
+    date: "2024.03",
+    instagramPostId: "C5oZRqJselD",
+    instagramUrl: "https://www.instagram.com/p/C5oZRqJselD/",
+    city: "Tangier",
+    country: "Morocco"
+  },
+  {
+    lat: 35.5785,
+    lng: -5.3684,
+    title: "Tétouan, Morocco – Andalusian Alleys and Seaside Charm",
+    description: "Tétouan, nicknamed the 'White Dove of the Mediterranean,' enchants visitors with its UNESCO-listed medina of whitewashed maze-like alleyways, intricate Hispano-Moorish architecture, and strong Andalusian-Spanish influences. The city’s multicultural heritage is visible in its elegant buildings, lively streets, and echoes of Spanish language and style. Highlights include wandering labyrinthine medina lanes, savoring the Mediterranean ambiance of Tamouda Bay, and exploring cultural gems like the Royal Palace and the School of Arts and Crafts. Tétouan is a crossroads of Moroccan, Andalusian, and Ottoman traditions, offering history, seaside bliss, and a unique cultural identity.",
+    date: "2024.03",
+    instagramPostId: "C5mCCLisi-J",
+    instagramUrl: "https://www.instagram.com/p/C5mCCLisi-J/",
+    city: "Tétouan",
+    country: "Morocco"
+  },
+  {
+    lat: 49.2922,
+    lng: 19.9486,
+    title: "Zakopane, Poland – Hiking the Breathtaking Tatra Landscapes",
+    description: "High in the Tatra Mountains, Zakopane is famed for its spectacular hiking trails, panoramic vistas, and unspoiled nature. Along scenic ridges and forested paths, visitors experience the ever-changing moods of the landscape—from sweeping valley views to dramatic skies over snow-dusted peaks. This region is celebrated for its vibrant mountain culture, traditional wooden architecture, and adventurous spirit, drawing hikers in every season for new perspectives, elevated outlooks, and moments of connection with the wild beauty of southern Poland.",
+    date: "2024.03",
+    instagramPostId: "C4WMoMvsVl6",
+    instagramUrl: "https://www.instagram.com/p/C4WMoMvsVl6/",
+    city: "Zakopane",
+    country: "Poland"
+  },
+  {
+    lat: 47.3769,
+    lng: 8.5417,
+    title: "Zurich, Switzerland – Medieval Charm Meets Modern Vibes",
+    description: "Zurich, Switzerland’s largest city, beautifully blends medieval heritage and contemporary life along the shores of Lake Zurich. Renowned for its well-preserved Old Town, historic churches, vibrant cultural scene, and status as a major financial hub, Zurich invites visitors to stroll cobbled lanes, discover world-class museums, and relax by the lakeside. Its story runs deep—from Roman origins to a pivotal role in the Reformation—while today’s city pulses with art, cuisine, and cosmopolitan energy. Iconic sights like Grossmünster, Bahnhofstrasse, and the view from Lindenhof Hill make Zurich a must for travelers who seek both history and modern Swiss lifestyle.",
+    date: "2022.03",
+    instagramPostId: "C4T5-z6sqY_",
+    instagramUrl: "https://www.instagram.com/p/C4T5-z6sqY_/",
+    city: "Zurich",
+    country: "Switzerland"
+  },
+  {
+    lat: 40.4168,
+    lng: -3.7038,
+    title: "Welcome to Madrid, Spain – Flamenco, Tapas & Plaza Mayor",
+    description: "Madrid, Spain’s capital, pulses with energy, creativity, and rich tradition. Stroll through the grand architecture of Plaza Mayor, savor the flavors of authentic tapas, and feel the fiery passion of Flamenco in a city where every corner tells a story. From the lush oasis of Retiro Park to the legendary Sobrino de Botín—the world’s oldest restaurant—Madrid enchants with both historic splendor and vibrant city life. Explore lively neighborhoods, indulge in Spanish cuisine, and experience a unique blend of culture and adventure that makes Madrid unforgettable.",
+    date: "2023.10",
+    instagramPostId: "C3tsKk1oJGU",
+    instagramUrl: "https://www.instagram.com/p/C3tsKk1oJGU/",
+    city: "Madrid",
+    country: "Spain"
+  },
+  {
+    lat: 43.7034,
+    lng: 7.2663,
+    title: "Welcome to Nice, France – Experience the French Riviera Magic",
+    description: "Nice, the heart of the French Riviera, is celebrated for its sun-soaked beaches, azure Mediterranean waters, and elegant seaside promenade. Stroll through the Old Town's narrow streets to discover vibrant markets, historic squares, and local delicacies. Don’t miss the breathtaking panoramic views from Castle Hill, where the city and coastline unfold below. Nice also invites you to savor culinary specialties like Salade Niçoise and Socca in charming seaside cafes. With its blend of scenery, culture, and cuisine, Nice effortlessly combines relaxation with rich local charm—making it a must-visit on the Côte d'Azur.",
+    date: "2023.10",
+    instagramPostId: "C3gqbgUIuZm",
+    instagramUrl: "https://www.instagram.com/p/C3gqbgUIuZm/",
+    city: "Nice",
+    country: "France"
+  },
+  {
+    lat: 59.9139,
+    lng: 10.7522,
+    title: "Welcome to Oslo, Norway – City of Fjords, Culture & Sauna Vibes",
+    description: "Oslo, Norway’s vibrant capital, is famed for its breathtaking landscapes—where tranquil fjords meet lush city parks, creating a scenic playground for locals and visitors alike. The city’s rich cultural heritage is woven through world-class museums, lively arts venues, and landmarks that highlight both Norway’s storied history and its creative present. Oslo also boasts a unique sauna culture: from classic wood-fired saunas to innovative floating saunas on the city’s waterfront, these social spots blend relaxation with community, offering a distinctly Norwegian way to unwind and connect. Whether exploring green spaces, immersing yourself in art, or experiencing sauna life, Oslo promises unforgettable moments at the heart of Scandinavia.",
+    date: "2023.12",
+    instagramPostId: "C3TsamwolU-",
+    instagramUrl: "https://www.instagram.com/p/C3TsamwolU-/",
+    city: "Oslo",
+    country: "Norway"
+  },
+  {
+    lat: 59.4370,
+    lng: 24.7536,
+    title: "Welcome to Estonia – Medieval Tallinn & Enchanting Landscapes",
+    description: "Estonia, nestled on the Baltic Sea, enchants travelers with its historic towns, fairy-tale architecture, and storybook winters. At the heart is Tallinn, renowned for its stunning medieval Old Town—a UNESCO World Heritage site—where snow-dusted spires and cobbled lanes evoke a sense of timeless charm. Beyond the city, Estonia unfolds into serene forests, vibrant festivals, and a culture brimming with warmth and hospitality. From legendary castles to vibrant traditions, every visit here is an immersion into magic, history, and heartfelt Estonian hospitality.",
+    date: "2023.12",
+    instagramPostId: "C2_DH_SoNMy",
+    instagramUrl: "https://www.instagram.com/p/C2_DH_SoNMy/",
+    city: "Tallinn",
+    country: "Estonia"
+  },
+  {
+    lat: 54.6851,
+    lng: 25.2876,
+    title: "Welcome to Lithuania – Winter Magic in the Heart of the Baltics",
+    description: "Lithuania enchants in winter with snow-kissed landscapes, historic towers, and festive markets. From Vilnius’s iconic Gediminas’ Tower—lit up against a wintry sky and crowned by the national flag—to charming Old Town streets, the country invites visitors to embrace cozy moments, local traditions, and dazzling seasonal events. Experience the magic of Lithuania’s towns and countryside, savor traditional winter delights, and explore a country where history meets winter wonderland charm.",
+    date: "2023.12",
+    instagramPostId: "C200ByVoHcu",
+    instagramUrl: "https://www.instagram.com/p/C200ByVoHcu/",
+    city: "Vilnius",
+    country: "Lithuania"
+  },
+  {
+    lat: 27.9158,
+    lng: 34.3290,
+    title: "Welcome to Sharm El Sheikh, Egypt – Red Sea Adventure & Coral Paradise",
+    description: "Sharm El Sheikh, nestled on Egypt’s Sinai Peninsula by the Red Sea, is world-famous for its crystal-clear waters, vibrant coral reefs, and year-round sunshine. This stunning resort town beckons with paradise beaches, spectacular snorkelling and diving, and an array of marine life that makes it a haven for underwater explorers. Beyond the sea, palm-lined promenades, luxury resorts, and unforgettable desert sunsets offer visitors relaxation and adventure in equal measure. Sharm El Sheikh is the ultimate destination for those seeking both tranquil escapes and action-packed water sports—promising a dynamic blend of natural beauty, vibrant culture, and resort-town energy at the edge of Egypt's deserts.",
+    date: "2023.11",
+    instagramPostId: "C2yLSUMIa9I",
+    instagramUrl: "https://www.instagram.com/p/C2yLSUMIa9I/",
+    city: "Sharm El Sheikh",
+    country: "Egypt"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3420,
+    title: "Walking in Samburu Villages & Local Markets – Visit to Sadhana Forest’s Projects",
+    description: "This journey in the Samburu region of Kenya combined authentic walks through traditional Samburu villages and exploration of vibrant local markets filled with colorful scenes, handmade crafts, and daily life. Visitors had the opportunity to meet the welcoming local community, experience cultural exchanges, and shop for handmade jewelry and wooden masks. The itinerary also included visits to previous projects by the Sadhana Forest organization, which implements reforestation, sustainable farming, and water management initiatives in Samburu. These efforts support food security, environmental conservation, and sustainable development in partnership with the local community. The experiences blended learning, volunteering, daily traditions, and the resilient spirit of life in the heart of Kenya.",
+    date: "2024.01",
+    instagramPostId: "C2ccu-tqTZ4",
+    instagramUrl: "https://www.instagram.com/p/C2ccu-tqTZ4/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3490,
+    title: "Volunteering with Samburu Community – Local Connections & Global Impact",
+    description: "@wheeling2help | Volunteering in the Samburu region of Kenya offers a unique blend of cultural immersion and meaningful contribution. Volunteers actively engage with Samburu communities through educational projects, youth activities, cultural exchange, and environmental initiatives. Typical experiences involve assisting in village schools, supporting sustainable development projects, participating in daily life, and learning from the rich traditions of the Samburu people. This hands-on involvement fosters impactful connections, encourages mutual understanding, and contributes to positive change in the heart of northern Kenya—a region renowned for its vibrant cultures and stunning natural landscapes.",
+    date: "2024.01",
+    instagramPostId: "C2X-XbpK720",
+    instagramUrl: "https://www.instagram.com/p/C2X-XbpK720/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3520,
+    title: "Volunteering with Samburu Community – Local Connections & Global Impact",
+    description: "@wheeling2help | Volunteering in the Samburu region of Kenya offers a unique blend of cultural immersion and meaningful contribution. Volunteers actively engage with Samburu communities through educational projects, youth activities, cultural exchange, and environmental initiatives. Typical experiences involve assisting in village schools, supporting sustainable development projects, participating in daily life, and learning from the rich traditions of the Samburu people. This hands-on involvement fosters impactful connections, encourages mutual understanding, and contributes to positive change in the heart of northern Kenya—a region renowned for its vibrant cultures and stunning natural landscapes.",
+    date: "2024.01",
+    instagramPostId: "C2VNQHNKzzI",
+    instagramUrl: "https://www.instagram.com/p/C2VNQHNKzzI/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3320,
+    title: "Sibling Caretaking in Samburu – Community, Tradition & Daily Life",
+    description: "In the Samburu region of Kenya, older siblings—often as young as 12—play a key role in family and community life. It is common for them to help care for younger brothers and sisters, sometimes carrying them on their backs. This deeply rooted practice fosters responsibility, solidarity, and strong family bonds, reflecting the communal values that define Samburu culture. Such scenes are a daily reminder of the mutual support that shapes childhood and adulthood alike, offering insight into traditions of caregiving and resilience in rural Kenya.",
+    date: "2024.01",
+    instagramPostId: "C2SnH8WqK-D",
+    instagramUrl: "https://www.instagram.com/p/C2SnH8WqK-D/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3520,
+    title: "Wildlife Safari in Samburu – Zebra Encounter on the African Plains",
+    description: "This experience captures the essence of a safari adventure in Kenya’s Samburu region—where vast, open plains stretch beneath expansive African skies and iconic wildlife roams free. Sightings of zebra herds are common in Samburu, providing visitors with unforgettable moments as these striking animals graze and journey through the reserve’s arid grasslands. The landscape is defined by its natural beauty, dotted with distant homesteads and the occasional acacia tree, offering prime opportunities for nature photography, wildlife observation, and immersion in the rhythms of the African wilderness. Encounters like these highlight the magic and richness of Samburu’s ecosystems, celebrated both for their biodiversity and connection to local culture.",
+    date: "2024.01",
+    instagramPostId: "C2QZfH9KeMM",
+    instagramUrl: "https://www.instagram.com/p/C2QZfH9KeMM/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3580,
+    title: "Samburu, Kenya – Volunteer Connections & Community Moments",
+    description: "In the Samburu region of Kenya, volunteering brings together people from different backgrounds to make a tangible difference within local communities. Volunteers often participate in educational, environmental, and cultural exchange projects, fostering friendships and breaking barriers between visitors and Samburu residents. Typical experiences include working alongside children, engaging with families, and taking part in daily activities—creating moments rich in learning, shared laughter, and mutual respect. Samburu’s compelling blend of tradition, resilience, and stunning natural landscapes makes every connection meaningful, highlighting how global impact grows from community-level engagement.",
+    date: "2024.01",
+    instagramPostId: "C2MkgAMq9Ub",
+    instagramUrl: "https://www.instagram.com/p/C2MkgAMq9Ub/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3320,
+    title: "Samburu, Kenya – Everyday Childhood and Local Encounters",
+    description: "In the Samburu region of northern Kenya, daily life features moments that reflect both the simplicity and richness of rural community living. Children, often dressed in comfortable hoodies or traditional attire, enjoy outdoor play, sibling bonds, and a deep connection with their surroundings. Encounters with local youth—whether through volunteering, education, or cultural exchange—highlight the warmth, joy, and resilience that define Samburu childhood. These everyday scenes offer visitors insight into authentic village life, fostering appreciation for solidarity, family connections, and the enduring spirit of Samburu’s younger generations.",
+    date: "2024.01",
+    instagramPostId: "C2KxU1mq8Tf",
+    instagramUrl: "https://www.instagram.com/p/C2KxU1mq8Tf/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3380,
+    title: "Samburu, Kenya – Human Connection & Solidarity Across Cultures",
+    description: "In the heart of the Samburu region of Kenya, moments of cross-cultural connection and understanding are woven into everyday life. Encounters between visitors and the Samburu community foster gestures of friendship, shared respect, and mutual curiosity—often expressed through simple, powerful acts like holding hands or exchanging smiles. Volunteering, cultural exchange, or just spending time in local villages reveals the warmth, resilience, and hospitality of the Samburu people. These meaningful interactions transcend differences, highlighting the universal values of empathy, solidarity, and dignity, and leaving lasting memories for all involved.",
+    date: "2024.01",
+    instagramPostId: "C2KxOOIKWIO",
+    instagramUrl: "https://www.instagram.com/p/C2KxOOIKWIO/",
+    city: "Samburu",
+    country: "Kenya"
+  },
+  {
+    lat: 0.8502,
+    lng: 37.3220,
+    title: "School Gathering in Samburu – Laughter, Learning & Community Spirit",
+    description: "Captured in the heart of Kenya’s Samburu region, this scene shows a joyful group of local children gathered outside a rural school building. Moments like these highlight the vibrant spirit and close-knit nature of Samburu’s community, where education, play, and togetherness shape daily life. Children’s laughter, camaraderie, and the welcoming setting underscore the value placed on learning and solidarity in Samburu villages. Such gatherings offer visiting volunteers and travelers a firsthand glimpse into the hopes and resilience of the younger generation—painting a portrait of everyday life, joy, and new possibilities in rural northern Kenya.",
+    date: "2024.01",
+    instagramPostId: "C2KxDS9K_Y4",
+    instagramUrl: "https://www.instagram.com/p/C2KxDS9K_Y4/",
+    city: "Samburu",
+    country: "Kenya"
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

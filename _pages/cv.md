@@ -86,7 +86,7 @@ You can download a PDF version of my CV here:
 - **Research**:
   - Conducted research on Machine & Deep Learning for Parkinson's classification using tabular data. [[poster](https://www.linkedin.com/in/dimitrios-georgiou/overlay/experience/1865033695/multiple-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk&treasuryMediaId=1635484219509)]
   - Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research.
-  - Conducted research on Machine & Deep Learning for COVID severity classification using tabular data. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
+  - Published a paper titled "A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19" on COVID severity classification using tabular data with Machine & Deep Learning methods. [[Google Sholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C)] [[DOI](https://www.sciencedirect.com/science/article/pii/S1566253523003342)] [[pdf](https://www.mdpi.com/2673-6284/13/3/22)] [[website](https://www.michalopoulos.net/covid/)]
 - **Tech Stack**: Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git
 
 ### Local Operations Intern
@@ -151,12 +151,64 @@ You can download a PDF version of my CV here:
 * **Spanish**: Intermediate
 
 ## Honors & Awards
-- **Honorary Award** | Ministry of Education & Eurobank EFG
-  - Recognized for achieving the highest Nationwide University Entrance Examination Score at my Senior High School.
-- **Scholarship** | Stavros Niarchos Foundation (SNF)
-  - Scholarship for Parallel Studies at Deree – The American College of Greece.
-- **Competition Award** | IEEE NTUA SB
-  - 2nd place in "IEEEXtreme 13.0" algorithmic programming competition.
+
+<div class="cv-honors">
+  <div class="cv-honor-item">
+    <span class="cv-honor-icon">🏅</span>
+    <span class="cv-honor-title"><strong>Honorary Award</strong> | Ministry of Education & Eurobank EFG</span>
+    <div class="cv-honor-desc">Recognized for achieving the highest Nationwide University Entrance Examination Score at my Senior High School.</div>
+  </div>
+  <div class="cv-honor-item">
+    <span class="cv-honor-icon">🎓</span>
+    <span class="cv-honor-title"><strong>Scholarship</strong> | Stavros Niarchos Foundation (SNF)</span>
+    <div class="cv-honor-desc">Scholarship for Parallel Studies at Deree – The American College of Greece.</div>
+  </div>
+  <div class="cv-honor-item">
+    <span class="cv-honor-icon">🏆</span>
+    <span class="cv-honor-title"><strong>Competition Award</strong> | IEEE NTUA SB</span>
+    <div class="cv-honor-desc">2nd place in "IEEEXtreme 13.0" algorithmic programming competition.</div>
+  </div>
+</div>
+
+<style>
+.cv-honors {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  margin: 1.2em 0 1.7em 0;
+}
+.cv-honor-item {
+  background: rgba(245,250,255,0.97);
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(58,123,253,0.07);
+  border: 1px solid #e3e8f0;
+  padding: 1em 1.2em 0.8em 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.cv-honor-icon {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  margin-right: 0.5em;
+  color: #3a7bfd;
+  display: inline-block;
+}
+.cv-honor-title {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #2a2d3a;
+  margin-bottom: 0.2em;
+  display: block;
+}
+.cv-honor-desc {
+  font-size: 0.98em;
+  color: #23272f;
+  margin-left: 0.1em;
+  margin-bottom: 0.1em;
+}
+</style>
 
 ## Volunteering & Activities
 

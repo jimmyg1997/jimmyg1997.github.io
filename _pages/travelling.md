@@ -485,14 +485,126 @@ excerpt: "Exploring the world one adventure at a time"
 <!-- Leaflet CSS and JS -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
- -->
+
+or 
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() { 
+  ...
+}
+
+
+  console.log('Map script loaded');
+  console.log('myTravelPosts:', myTravelPosts);
+  console.log('Leaflet:', typeof L);
+  console.log('Map container:', document.getElementById('travel-map'));
+
+  // Initialize the map
+  const travelMap = L.map('travel-map', {
+    center: [50.0647, 19.9450], // Centered on Krakow
+    zoom: 4
+  });
+
+  // Add tile layer with fallback
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  }).addTo(travelMap);
+
+  // Custom marker icon
+  const travelIcon = L.divIcon({
+    html: `<div style="
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+    ">📍</div>`,
+    className: 'travel-marker',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12]
+  });
+
+  // Add markers for each travel post
+  myTravelPosts.forEach(post => {
+    const popupContent = `
+      <div style="width: 270px; max-height: 400px; overflow-y: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <iframe 
+          src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=270" 
+          width="100%" 
+          height="400" 
+          frameborder="0" 
+          scrolling="yes" 
+          allowtransparency="true"
+          style="border: none; overflow: hidden;">
+        </iframe>
+      </div>
+    `;
+
+    const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
+      .addTo(travelMap)
+      .bindPopup(popupContent, {
+        maxWidth: 270,
+        minWidth: 270,
+        maxHeight: 350,
+        className: 'travel-popup',
+        closeButton: true,
+        autoPan: true,
+        keepInView: true
+      });
+
+    if (typeof L === 'undefined') {
+      console.error('Leaflet not loaded');
+      return;
+    }
+
+    // Load Instagram embed script when popup opens
+    marker.on('popupopen', function() {
+      // Prevent zoom events from affecting popup size
+      travelMap.off('zoom');
+    });
+
+    // Re-enable zoom events when popup closes
+    marker.on('popupclose', function() {
+      // Re-enable zoom handling if needed
+    });
+  });
+
+  // Calculate and display statistics
+  const uniqueCountries = [...new Set(myTravelPosts.map(post => post.country))];
+  const uniqueCities = [...new Set(myTravelPosts.map(post => post.city))];
+
+  document.getElementById('countries-visited').textContent = uniqueCountries.length;
+  document.getElementById('cities-explored').textContent = uniqueCities.length;
+  document.getElementById('travel-posts').textContent = myTravelPosts.length;
+
+  // Fit map to show all markers with padding
+  if (myTravelPosts.length > 0) {
+    const group = new L.featureGroup(
+      myTravelPosts.map(post => L.marker([post.lat, post.lng]))
+    );
+    travelMap.fitBounds(group.getBounds().pad(0.1));
+  }
+});
+-->
+  
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // Wait for everything to load
+  window.addEventListener('load', function() {
+    console.log('Page loaded, initializing map...');
   // Updated travel data with actual Instagram posts
   const myTravelPosts = [
     {
@@ -528,7 +640,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Singapore",
       country: "Singapore"
     },
-
     {
       lat: 1.2869,
       lng: 103.8532,
@@ -540,7 +651,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Singapore",
       country: "Singapore"
     },
-
     {
       lat: 21.0297,
       lng: 105.8417,
@@ -563,7 +673,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Hanoi",
       country: "Vietnam"
     },
-
     {
       lat: 20.6700,
       lng: 105.2500,
@@ -575,7 +684,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bac",
       country: "Vietnam"
     },
-
     {
       lat: 20.6700,
       lng: 105.2503,
@@ -587,7 +695,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bac",
       country: "Vietnam"
     },
-
     {
       lat: 1.282375,
       lng: 103.864273,
@@ -621,7 +728,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0586,
       lng: 19.9130,
@@ -633,7 +739,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 1.2731,
       lng: 103.8176,
@@ -645,7 +750,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Singapore",
       country: "Singapore"
     },
-
     {
       lat: 1.2731,
       lng: 103.8190,
@@ -657,7 +761,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Singapore",
       country: "Singapore"
     },
-
     {
       lat: 46.9481,
       lng: 7.4474,
@@ -680,7 +783,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Bern",
       country: "Switzerland"
     },
-
     {
       lat: 46.2074,
       lng: 6.1550,
@@ -703,7 +805,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Geneva",
       country: "Switzerland"
     },
-
     {
       lat: 20.6700,
       lng: 105.2500,
@@ -715,7 +816,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bia",
       country: "Vietnam"
     },
-
     {
       lat: 20.6700,
       lng: 105.252,
@@ -727,7 +827,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bia",
       country: "Vietnam"
     },
-
     {
       lat: 46.2342,
       lng: 6.0528,
@@ -739,7 +838,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Meyrin",
       country: "Switzerland"
     },
-
     {
       lat: 50.0702,
       lng: 19.9562,
@@ -751,7 +849,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 46.5833,
       lng: 7.0833,
@@ -763,7 +860,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Gruyères",
       country: "Switzerland"
     },
-
     {
       lat: 46.5833,
       lng: 7.0853,
@@ -775,7 +871,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Gruyères",
       country: "Switzerland"
     },
-
     {
       lat: 37.9757,
       lng: 23.7392,
@@ -787,7 +882,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Athens",
       country: "Greece"
     },
-
     {
       lat: 46.4578,
       lng: 6.8463,
@@ -799,7 +893,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Vevey",
       country: "Switzerland"
     },
-
     {
       lat: 46.4578,
       lng: 6.8483,
@@ -811,7 +904,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Vevey",
       country: "Switzerland"
     },
-
     {
       lat: 37.9715,
       lng: 23.7261,
@@ -834,7 +926,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Athens",
       country: "Greece"
     },
-
     {
       lat: 20.6700,
       lng: 105.2540,
@@ -846,7 +937,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bac",
       country: "Vietnam"
     },
-
     {
       lat: 20.6700,
       lng: 105.2560,
@@ -858,7 +948,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bac",
       country: "Vietnam"
     },
-
     {
       lat: 20.9500,  // Approximate latitude for Ha Long Bay, Vietnam
       lng: 107.0873, // Approximate longitude for Ha Long Bay, Vietnam
@@ -881,7 +970,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Singapore",
       country: "Singapore"
     },
-
     {
       lat: 1.2864,
       lng: 103.8531,
@@ -948,7 +1036,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Nyon",
       country: "Switzerland"
     },
-
     {
       lat: 46.3833,
       lng: 6.2353,
@@ -960,7 +1047,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Nyon",
       country: "Switzerland"
     },
-
     {
       lat: 46.5197,
       lng: 6.6323,
@@ -972,7 +1058,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Lausanne",
       country: "Switzerland"
     },
-
     {
       lat: 46.5197,
       lng: 6.6353,
@@ -984,7 +1069,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Lausanne",
       country: "Switzerland"
     },
-
     {
       lat: 45.8992,
       lng: 6.1286,
@@ -996,7 +1080,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Annecy",
       country: "France"
     },
-
     {
       lat: 45.8992,
       lng: 6.1266,
@@ -1008,7 +1091,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Annecy",
       country: "France"
     },
-
     {
       lat: 9.6566,
       lng: -82.7546,
@@ -1042,7 +1124,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Skopje",
       country: "North Macedonia"
     },
-
     {
       lat: 48.1459,
       lng: 17.1077,
@@ -1109,7 +1190,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Valladolid",
       country: "Mexico"
     },
-
     {
       lat: 20.6296,
       lng: -87.0739,
@@ -1121,7 +1201,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Playa del Carmen",
       country: "Mexico"
     },
-
     {
       lat: 20.6296,
       lng: -87.0769,
@@ -1133,7 +1212,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Playa del Carmen",
       country: "Mexico"
     },
-
     {
       lat: 9.9763,
       lng: -84.8330,
@@ -1145,7 +1223,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Puntarenas",
       country: "Costa Rica"
     },
-
     {
       lat: 9.9763,
       lng: -84.8330,
@@ -1157,7 +1234,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Puntarenas",
       country: "Costa Rica"
     },
-
     {
       lat: 50.077808,
       lng: 19.991343,
@@ -1256,9 +1332,7 @@ document.addEventListener('DOMContentLoaded', function() {
       instagramUrl: "https://www.instagram.com/p/DGb8n-3Ih-O/",
       city: "Panama City",
       country: "Panama"
-    },
-    DGb8n-3lh-O
-    
+    },    
     {
       lat: 8.956960,
       lng: -79.534797,
@@ -1303,7 +1377,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0647,
       lng: 19.9480,
@@ -1315,7 +1388,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 9.9325,
       lng: -84.0796,
@@ -1327,7 +1399,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "San Jose",
       country: "Costa Rica"
     },
-
     {
       lat: 5.8192,
       lng: -73.0333,
@@ -1339,8 +1410,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Boyacá",
       country: "Colombia"
     },
-    
-
     {
       lat: 8.9739,
       lng: -79.5306,
@@ -1374,7 +1443,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Cartago",
       country: "Costa Rica"
     },
-    
     {
       lat: 21.1619,
       lng: -86.8515,
@@ -1386,7 +1454,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Cancun",
       country: "Mexico"
     },
-
     {
       lat: 9.6566,
       lng: -82.7546,
@@ -1409,7 +1476,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Yucatán",
       country: "Mexico"
     },
-
     {
       lat: 9.9763,
       lng: -84.8360,
@@ -1443,7 +1509,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Quepos",
       country: "Costa Rica"
     },
-
     {
       lat: 50.05672,
       lng: 19.91050,
@@ -1455,7 +1520,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0468,
       lng: 19.9571,
@@ -1467,7 +1531,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0617,
       lng: 19.9370,
@@ -1479,7 +1542,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 51.4308,
       lng: 17.7875,
@@ -1491,7 +1553,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kobyla Góra",
       country: "Poland"
     },
-
     {
       lat: 51.1091,
       lng: 17.0316,
@@ -1525,7 +1586,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.050846,
       lng: 19.931291,
@@ -1537,7 +1597,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.050846,
       lng: 19.931261,
@@ -1549,7 +1608,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0649,
       lng: 19.9541,
@@ -1561,7 +1619,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Kraków",
       country: "Poland"
     },
-
     {
       lat: 50.0518,
       lng: 19.7852,
@@ -1683,7 +1740,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Karniowice",
       country: "Poland"
     },
-
     {
       lat: 50.1498,
       lng: 19.7797,
@@ -1717,7 +1773,6 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Katowice",
       country: "Poland"
     },
-
     {
       lat: 49.7225,
       lng: 20.2503,
@@ -1763,105 +1818,96 @@ document.addEventListener('DOMContentLoaded', function() {
       country: "Greece"
     }
   ];
-
-  console.log('Map script loaded');
-  console.log('myTravelPosts:', myTravelPosts);
-  console.log('Leaflet:', typeof L);
-  console.log('Map container:', document.getElementById('travel-map'));
-
-  // Initialize the map
-  const travelMap = L.map('travel-map', {
-    center: [50.0647, 19.9450], // Centered on Krakow
-    zoom: 4
-  });
-
-  // Add tile layer with fallback
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 18
-  }).addTo(travelMap);
-
-  // Custom marker icon
-  const travelIcon = L.divIcon({
-    html: `<div style="
-      background: linear-gradient(135deg, #001f3f, #0074D9);
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 3px solid white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-      font-size: 12px;
-      cursor: pointer;
-    ">📍</div>`,
-    className: 'travel-marker',
-    iconSize: [24, 24],
-    iconAnchor: [12, 12]
-  });
-
-  // Add markers for each travel post
-  myTravelPosts.forEach(post => {
-    const popupContent = `
-      <div style="width: 270px; max-height: 400px; overflow-y: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-        <iframe 
-          src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=270" 
-          width="100%" 
-          height="400" 
-          frameborder="0" 
-          scrolling="yes" 
-          allowtransparency="true"
-          style="border: none; overflow: hidden;">
-        </iframe>
-      </div>
-    `;
-
-    const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
-      .addTo(travelMap)
-      .bindPopup(popupContent, {
-        maxWidth: 270,
-        minWidth: 270,
-        maxHeight: 350,
-        className: 'travel-popup',
-        closeButton: true,
-        autoPan: true,
-        keepInView: true
-      });
-
-    if (typeof L === 'undefined') {
-      console.error('Leaflet not loaded');
-      return;
-    }
-
-    // Load Instagram embed script when popup opens
-    marker.on('popupopen', function() {
-      // Prevent zoom events from affecting popup size
-      travelMap.off('zoom');
+  console.log('Travel posts:', myTravelPosts);
+      console.log('Leaflet available:', typeof L !== 'undefined');
+      const mapContainer = document.getElementById('travel-map');
+      console.log('Map container found:', mapContainer !== null);
+      if (typeof L === 'undefined') {
+        console.error('Leaflet library not loaded!');
+        return;
+      }
+      if (!mapContainer) {
+        console.error('Map container not found!');
+        return;
+      }
+      try {
+        // Initialize the map
+        const travelMap = L.map('travel-map', {
+          center: [30.0, 50.0], // More central view
+          zoom: 3
+        });
+        console.log('Map initialized successfully');
+        // Add tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(travelMap);
+        console.log('Tile layer added');
+        // Custom marker icon
+        const travelIcon = L.divIcon({
+          html: `<div style="
+            background: linear-gradient(135deg, #001f3f, #0074D9);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+          ">📍</div>`,
+          className: 'travel-marker',
+          iconSize: [30, 30],
+          iconAnchor: [15, 15]
+        });
+        // Add markers
+        const markers = [];
+        myTravelPosts.forEach((post, index) => {
+          console.log(`Adding marker ${index + 1}:`, post.title);
+          const popupContent = `
+            <div style="width: 270px; max-height: 400px; overflow-y: auto;">
+              <h4 style="margin: 0 0 8px 0; color: #001f3f;">${post.title}</h4>
+              <p style="margin: 0 0 8px 0; color: #666; font-size: 0.9em;">${post.city}, ${post.country} • ${post.date}</p>
+              <p style="margin: 0 0 12px 0; font-size: 0.9em;">${post.description}</p>
+              <iframe 
+                src="https://www.instagram.com/p/${post.instagramPostId}/embed/captioned/?cr=1&v=14&wp=270" 
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                scrolling="yes" 
+                allowtransparency="true"
+                style="border: none;">
+              </iframe>
+            </div>
+          `;
+          const marker = L.marker([post.lat, post.lng], { icon: travelIcon })
+            .addTo(travelMap)
+            .bindPopup(popupContent, {
+              maxWidth: 300,
+              minWidth: 270,
+              className: 'travel-popup'
+            });
+          markers.push(marker);
+        });
+        console.log(`Added ${markers.length} markers`);
+        // Calculate and display statistics
+        const uniqueCountries = [...new Set(myTravelPosts.map(post => post.country))];
+        const uniqueCities = [...new Set(myTravelPosts.map(post => post.city))];
+        document.getElementById('countries-visited').textContent = uniqueCountries.length;
+        document.getElementById('cities-explored').textContent = uniqueCities.length;
+        document.getElementById('travel-posts').textContent = myTravelPosts.length;
+        // Fit map to show all markers
+        if (markers.length > 0) {
+          const group = new L.featureGroup(markers);
+          travelMap.fitBounds(group.getBounds().pad(0.1));
+        }
+        console.log('Map setup complete!');
+      } catch (error) {
+        console.error('Error initializing map:', error);
+      }
     });
-
-    // Re-enable zoom events when popup closes
-    marker.on('popupclose', function() {
-      // Re-enable zoom handling if needed
-    });
-  });
-
-  // Calculate and display statistics
-  const uniqueCountries = [...new Set(myTravelPosts.map(post => post.country))];
-  const uniqueCities = [...new Set(myTravelPosts.map(post => post.city))];
-
-  document.getElementById('countries-visited').textContent = uniqueCountries.length;
-  document.getElementById('cities-explored').textContent = uniqueCities.length;
-  document.getElementById('travel-posts').textContent = myTravelPosts.length;
-
-  // Fit map to show all markers with padding
-  if (myTravelPosts.length > 0) {
-    const group = new L.featureGroup(
-      myTravelPosts.map(post => L.marker([post.lat, post.lng]))
-    );
-    travelMap.fitBounds(group.getBounds().pad(0.1));
-  }
-});
 </script>

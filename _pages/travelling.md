@@ -378,6 +378,110 @@ excerpt: "Exploring the world one adventure at a time"
   </div>
 </div>
 
+
+
+## Recent Adventures & Tour Guides {#recent-adventures}
+
+<div class="recent-travels">
+  <div class="travel-card" id="vietnam-2025">
+    <div class="travel-image">
+      <img src="/assets/images/travel/vietnam-2025.png" alt="Northen Vietnam">
+    </div>
+    <div class="travel-content">
+      <br>
+      <h3 id="easter-vietnam">Easter in Vietnam</h3>
+      <p>In April 2025, I volunteered with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
+      <div style="text-align: center;">
+        <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
+      </div>
+    </div>
+  </div>
+
+
+<div class="recent-travels">
+  <div class="travel-card" id="vietnam-2025">
+    <div class="travel-image">
+      <img src="/assets/images/travel/krakow-guide2.png" alt="City Travels">
+    </div>
+    <div class="travel-content">
+      <br>
+      <h3 id="living-krakow">Living in Krakow</h3>
+      <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
+      <div style="text-align: center;">
+        <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
+          View the Guide
+        </a>
+      </div>
+  </div>
+
+<!--   
+  {% for travel in site.travelling limit:3 %}
+    <div class="travel-card">
+      <div class="travel-image">
+        <img src="{{ travel.header.teaser }}" alt="{{ travel.title }}">
+      </div>
+      <div class="travel-content">
+        <h3 id="{{ travel.title | slugify }}"><a href="{{ travel.url }}">{{ travel.title }}</a></h3>
+        <p class="travel-date">{{ travel.date | date: "%B %Y" }}</p>
+        <p>{{ travel.excerpt | truncate: 150 }}</p>
+        <a href="{{ travel.url }}" class="btn btn--primary btn--small">Read More</a>
+      </div>
+    </div>
+  {% endfor %}
+</div> -->
+
+<!-- ## Travel Guides {#travel-categories} -->
+
+<!-- <div class="travel-categories">
+  <div class="category-item" id="city-explorations">
+    <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
+    <h3 id="living-krakow">Living in Krakow</h3>
+    <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
+    <div style="text-align: center;">
+      <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
+        View the Guide
+      </a>
+    </div>
+  </div> -->
+  
+  <!-- <div class="category-item" id="nature-outdoors">
+    <img src="/assets/images/travel/nature-travels.jpg" alt="Nature Travels">
+    <h3 id="nature-outdoors">Nature & Outdoors</h3>
+    <p>Hiking, national parks, and natural wonders</p>
+    <a href="/travelling/tag/nature/" class="btn btn--primary btn--small">View Nature</a>
+  </div>
+</div> -->
+
+<!-- ## Travel Gallery {#travel-gallery} -->
+
+<!-- <div class="travel-gallery">
+  {% for travel in site.travelling %}
+    {% for image in travel.gallery %}
+      <div class="gallery-item">
+        <a href="{{ image.url }}" class="gallery-image">
+          <img src="{{ image.image_path }}" alt="{{ image.title }}">
+        </a>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div> -->
+
+
+
+<!-- ## Travel Archive {#travel-archive}
+
+<div class="travel-archive">
+  <h3 id="all-destinations">All Destinations</h3>
+  <ul class="destinations-list">
+    {% for travel in site.travelling %}
+      <li><a href="{{ travel.url }}">{{ travel.title }} ({{ travel.date | date: "%Y" }})</a></li>
+    {% endfor %}
+  </ul>
+</div> -->
+
+
+
+
 <!-- Leaflet CSS and JS -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -1761,102 +1865,3 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-
-## Recent Adventures & Tour Guides {#recent-adventures}
-
-<div class="recent-travels">
-  <div class="travel-card" id="vietnam-2025">
-    <div class="travel-image">
-      <img src="/assets/images/travel/vietnam-2025.png" alt="Northen Vietnam">
-    </div>
-    <div class="travel-content">
-      <br>
-      <h3 id="easter-vietnam">Easter in Vietnam</h3>
-      <p>In April 2025, I volunteered with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
-      <div style="text-align: center;">
-        <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
-      </div>
-    </div>
-  </div>
-
-
-<div class="recent-travels">
-  <div class="travel-card" id="vietnam-2025">
-    <div class="travel-image">
-      <img src="/assets/images/travel/krakow-guide2.png" alt="City Travels">
-    </div>
-    <div class="travel-content">
-      <br>
-      <h3 id="living-krakow">Living in Krakow</h3>
-      <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
-      <div style="text-align: center;">
-        <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
-          View the Guide
-        </a>
-      </div>
-  </div>
-
-<!--   
-  {% for travel in site.travelling limit:3 %}
-    <div class="travel-card">
-      <div class="travel-image">
-        <img src="{{ travel.header.teaser }}" alt="{{ travel.title }}">
-      </div>
-      <div class="travel-content">
-        <h3 id="{{ travel.title | slugify }}"><a href="{{ travel.url }}">{{ travel.title }}</a></h3>
-        <p class="travel-date">{{ travel.date | date: "%B %Y" }}</p>
-        <p>{{ travel.excerpt | truncate: 150 }}</p>
-        <a href="{{ travel.url }}" class="btn btn--primary btn--small">Read More</a>
-      </div>
-    </div>
-  {% endfor %}
-</div> -->
-
-<!-- ## Travel Guides {#travel-categories} -->
-
-<!-- <div class="travel-categories">
-  <div class="category-item" id="city-explorations">
-    <img src="/assets/images/travel/krakow-guide.jpg" alt="City Travels">
-    <h3 id="living-krakow">Living in Krakow</h3>
-    <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
-    <div style="text-align: center;">
-      <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
-        View the Guide
-      </a>
-    </div>
-  </div> -->
-  
-  <!-- <div class="category-item" id="nature-outdoors">
-    <img src="/assets/images/travel/nature-travels.jpg" alt="Nature Travels">
-    <h3 id="nature-outdoors">Nature & Outdoors</h3>
-    <p>Hiking, national parks, and natural wonders</p>
-    <a href="/travelling/tag/nature/" class="btn btn--primary btn--small">View Nature</a>
-  </div>
-</div> -->
-
-<!-- ## Travel Gallery {#travel-gallery} -->
-
-<!-- <div class="travel-gallery">
-  {% for travel in site.travelling %}
-    {% for image in travel.gallery %}
-      <div class="gallery-item">
-        <a href="{{ image.url }}" class="gallery-image">
-          <img src="{{ image.image_path }}" alt="{{ image.title }}">
-        </a>
-      </div>
-    {% endfor %}
-  {% endfor %}
-</div> -->
-
-
-
-<!-- ## Travel Archive {#travel-archive}
-
-<div class="travel-archive">
-  <h3 id="all-destinations">All Destinations</h3>
-  <ul class="destinations-list">
-    {% for travel in site.travelling %}
-      <li><a href="{{ travel.url }}">{{ travel.title }} ({{ travel.date | date: "%Y" }})</a></li>
-    {% endfor %}
-  </ul>
-</div> -->

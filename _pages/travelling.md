@@ -1727,6 +1727,11 @@ document.addEventListener('DOMContentLoaded', function() {
         keepInView: true
       });
 
+    if (typeof L === 'undefined') {
+      console.error('Leaflet not loaded');
+      return;
+    }
+
     // Load Instagram embed script when popup opens
     marker.on('popupopen', function() {
       // Prevent zoom events from affecting popup size

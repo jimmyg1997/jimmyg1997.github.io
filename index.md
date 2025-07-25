@@ -215,6 +215,7 @@ h2, h3 {
 }
 </style>
 
+<div class="landing-page">
 {% include feature_row id="intro" type="center" %}
 
 <div class="section-divider"></div>
@@ -245,7 +246,7 @@ h2, h3 {
       <li>Building ML models for different use cases at HSBC.</li>
       <li>Working on my PhD research in healthcare data science</li>
       <li>Training for my next calisthenics milestone</li>
-      <li>Planning my upcoming travel to [destination]</li>
+      <li>Planning my upcoming travel to Greece</li>
     </ul>
   </div>
 </div>
@@ -260,3 +261,76 @@ h2, h3 {
     <a href="/wishlist/" class="btn btn--primary">View Wishlist</a>
   </div>
 </div> -->
+</div>
+
+<style>
+.landing-page .section-divider {
+  border: none;
+  border-top: 1px solid #e3e8f0;
+  height: 0;
+  margin: 0.7rem 0 0.7rem 0 !important;
+  background: none;
+}
+.landing-page h2, .landing-page h3, .landing-page h4 {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.3em !important;
+  line-height: 1.15;
+}
+.landing-page .feature__wrapper {
+  gap: 0.7rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.landing-page .feature__item {
+  margin: 0 0.2em 0.5em 0.2em !important;
+  padding: 1.1em 1em 1em 1em !important;
+}
+.landing-page .feature-row--center {
+  margin-bottom: 0.5rem !important;
+  padding: 1.1em 1em 1em 1em !important;
+}
+.landing-page .now-section {
+  margin: 0.7em 0 0.7em 0 !important;
+}
+.landing-page .now-content {
+  padding: 1.2em 1em 1em 1em !important;
+}
+.landing-page .now-list {
+  gap: 0.3em !important;
+}
+.landing-page .now-list li {
+  padding: 0.18em 0.7em !important;
+  margin-bottom: 0.05em !important;
+}
+.landing-page .skills-grid {
+  gap: 0.6rem 0.8rem !important;
+  margin-top: 0.5rem !important;
+}
+.landing-page .skill-item {
+  padding: 0.7rem 0.7rem 0.5rem 0.7rem !important;
+  margin-bottom: 0.3em !important;
+}
+.landing-page .workout-day {
+  margin: 0.7em 0 1em 0 !important;
+  padding: 0.7em 0.7em 0.7em 0.7em !important;
+}
+.landing-page .workout-table th, .landing-page .workout-table td {
+  padding: 0.3em 0.7em !important;
+}
+.landing-page .instagram-grid {
+  gap: 0.7rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.landing-page .instagram-post {
+  margin: 0.3rem !important;
+}
+.landing-page .nutrition-card {
+  margin-bottom: 0.5em !important;
+  padding: 0.7em 0.7em !important;
+}
+@media (max-width: 700px) {
+  .landing-page .feature-row--center, .landing-page .feature__wrapper, .landing-page .now-content, .landing-page .workout-day, .landing-page .skill-item {
+    padding: 0.5em 0.3em 0.5em 0.3em !important;
+    margin-bottom: 0.3em !important;
+  }
+}
+</style>

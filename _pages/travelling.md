@@ -1,6 +1,7 @@
 ---
 title: ✈️ Travelling
 layout: single
+related: false
 permalink: /travelling/
 author_profile: true
 toc: true
@@ -1787,8 +1788,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
 <!--   
- 
-  
   {% for travel in site.travelling limit:3 %}
     <div class="travel-card">
       <div class="travel-image">

@@ -18,4 +18,37 @@
   {%- endcomment -%}
 </div>
 
+<div class="page__footer-visitor">
+  <span>Congrats, you are the counter <span class="visitor-number"><span id="visitor-count">...</span><sup>th</sup></span> visitor!</span>
+</div>
+<script>
+fetch('https://api.countapi.xyz/hit/dimitriosgeorgiou.github.io/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+  });
+</script>
+
+<style>
+.page__footer-visitor {
+  text-align: center;
+  font-size: 1.13em;
+  margin: 1.2em 0 0.5em 0;
+  color: #2a2d3a;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+.visitor-number {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #3a7bfd;
+  background: linear-gradient(90deg, #e0e7ff 0%, #fff 100%);
+  border-radius: 6px;
+  padding: 0.08em 0.35em;
+  margin: 0 0.1em;
+  letter-spacing: 0.03em;
+  box-shadow: 0 1px 4px rgba(58,123,253,0.07);
+}
+</style>
+
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. </div>

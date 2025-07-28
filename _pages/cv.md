@@ -168,8 +168,8 @@ You can download a PDF version of my CV here:
 ### Languages
 
 <div class="cv-languages">
-  <div class="cv-lang-row"><span class="cv-lang-label">English</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 98%"></div></div><span class="cv-lang-level">Fluent</span></div>
   <div class="cv-lang-row"><span class="cv-lang-label">Greek</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 100%"></div></div><span class="cv-lang-level">Native</span></div>
+  <div class="cv-lang-row"><span class="cv-lang-label">English</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 98%"></div></div><span class="cv-lang-level">Fluent</span></div>
   <div class="cv-lang-row"><span class="cv-lang-label">French</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 60%"></div></div><span class="cv-lang-level">Intermediate</span></div>
   <div class="cv-lang-row"><span class="cv-lang-label">Spanish</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 55%"></div></div><span class="cv-lang-level">Intermediate</span></div>
 </div>

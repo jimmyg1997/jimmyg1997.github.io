@@ -155,21 +155,66 @@ You can download a PDF version of my CV here:
 
 ## Skills
 
-### Technical Skills
 
-* **Programming Languages**: Python, C/C++, MATLAB, Java, SQL, HTML/CSS/JS
-* **Machine Learning & AI**: TensorFlow, PyTorch, scikit-learn, Keras, 🤗 Hugging Face
-* **Big Data & Cloud**: Apache Spark, Apache Kafka, Hive, AWS S3, Google BigQuery
-* **Data Processing**: Pandas, NumPy, SciPy, OpenCV
-* **Visualization**: Matplotlib, Seaborn, Tableau, Grafana, Plotly
-* **Version Control & Tools**: Git, VS Code, PyCharm, Docker
+### Technical Skills
+* **Programming Languages:** Python, C/C++, SQL (PostgreSQL, BigQuery), MATLAB, Java, HTML/CSS/JavaScript, Bash/Shell, Google Apps Script  
+* **Machine Learning & AI:** TensorFlow, Keras, PyTorch, Scikit-learn, 🤗 Hugging Face Transformers, XGBoost, LightGBM, OpenAI API, MLflow  
+* **Data Engineering & ETL:** Pandas, NumPy, SciPy, OpenCV, Apache Airflow, Apache Kafka, Apache Spark, Hive, REST APIs, JSON, XML, Shell scripting  
+* **Visualization & Reporting:** Matplotlib, Seaborn, Plotly, Tableau, Grafana, Google Data Studio, Excel, Google Sheets  
+* **Cloud & Infrastructure:** Google Cloud Platform, AWS S3, Heroku, VPS (Ubuntu), Docker, GitHub Actions  
+* **Version Control & Dev Tools:** Git, GitHub, VS Code, PyCharm, Conda, virtualenv
+
 
 ### Languages
 
-* **English**: Fluent
-* **Greek**: Native
-* **French**: Intermediate
-* **Spanish**: Intermediate
+<div class="cv-languages">
+  <div class="cv-lang-row"><span class="cv-lang-label">English</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 98%"></div></div><span class="cv-lang-level">Fluent</span></div>
+  <div class="cv-lang-row"><span class="cv-lang-label">Greek</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 100%"></div></div><span class="cv-lang-level">Native</span></div>
+  <div class="cv-lang-row"><span class="cv-lang-label">French</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 60%"></div></div><span class="cv-lang-level">Intermediate</span></div>
+  <div class="cv-lang-row"><span class="cv-lang-label">Spanish</span><div class="cv-lang-bar"><div class="cv-lang-fill" style="width: 55%"></div></div><span class="cv-lang-level">Intermediate</span></div>
+</div>
+
+<style>
+.cv-languages {
+  max-width: 420px;
+  margin: 1.2em 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+.cv-lang-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-size: 1em;
+}
+.cv-lang-label {
+  min-width: 70px;
+  font-weight: 500;
+  color: #2a2d3a;
+}
+.cv-lang-bar {
+  flex: 1;
+  height: 0.7em;
+  background: #e3e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 0.5em;
+  box-shadow: 0 1px 3px rgba(58,123,253,0.04);
+}
+.cv-lang-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3a7bfd 60%, #00c6fb 100%);
+  border-radius: 6px 0 0 6px;
+  transition: width 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.cv-lang-level {
+  min-width: 80px;
+  color: #3a7bfd;
+  font-size: 0.97em;
+  text-align: right;
+}
+</style>
 
 ## Honors & Awards
 

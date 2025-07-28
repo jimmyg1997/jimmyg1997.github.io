@@ -116,49 +116,54 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 </div>
 
 ## Project Skills & Technologies {#project-skills-technologies}
-### Languages & Tools <a name="languages-tools"></a>
+### Technical Skills
+
+#### Programming & Scripting Languages
 - **Python** (advanced)
 - **C/C++** (intermediate)
-- **SQL** (advanced; BigQuery, PostgreSQL)
+- **SQL** (advanced; PostgreSQL, Google BigQuery)
 - **MATLAB** (academic use)
 - **Java** (familiar)
-- **HTML/CSS/JS** (basic web scripting)
+- **HTML/CSS/JavaScript** (basic web scripting)
 - **Bash/Shell** (ETL, automation)
-- **Git & GitHub** (version control, collaboration)
-- **Conda & virtualenv** (environment management)
-- **Google Apps Script** (automation for Google Sheets)
-- **Excel / Google Sheets** (advanced formulas, scripting)
-- **Docker** (basic containerization)
+- **Google Apps Script** (Google Sheets automation)
 
-### ML & Data Science <a name="ml-data-science"></a>
-- **TensorFlow 2.x**
-- **PyTorch** (prototyping use)
+#### Machine Learning & AI
+- **TensorFlow 2.x**, **Keras**
+- **PyTorch** (prototyping)
 - **Scikit-learn**
-- **Keras**
 - 🤗 **Hugging Face Transformers**
 - **XGBoost**, **LightGBM**
+- **OpenAI API** (prompt engineering, summarization)
 - **MLflow** (experiment tracking)
-- **OpenAI API** (prompt engineering)
 
-### Data Processing & ETL <a name="data-processing"></a>
-- **Pandas** (advanced)
-- **NumPy**, **SciPy**
-- **OpenCV** (basic)
+#### Data Engineering & ETL
+- **Pandas**, **NumPy**, **SciPy**
+- **OpenCV** (basic image processing)
 - **Apache Airflow** (workflow orchestration)
-- **Apache Kafka** (event-driven pipelines)
-- **Shell scripting** (ETL tasks)
-- **REST APIs** (data extraction)
-- **JSON**, **XML parsing**
+- **Apache Kafka** (stream processing)
+- **Apache Spark**, **Hive** (basic familiarity)
+- **REST APIs**, **JSON**, **XML parsing**
+- **Shell scripting** (ETL pipelines)
 
-### Visualization & Dashboarding <a name="visualization"></a>
+#### Visualization & Reporting
 - **Matplotlib**, **Seaborn**
 - **Plotly**
 - **Tableau**
 - **Grafana**
 - **Google Data Studio**
+- **Excel / Google Sheets** (advanced use)
 
-### Cloud & DevOps (basic) <a name="cloud-devops"></a>
+#### Cloud & Infrastructure
 - **Google Cloud Platform** (BigQuery, Storage, Colab)
-- **Heroku** (scheduling, app hosting)
+- **AWS S3** (basic familiarity)
+- **Heroku** (deployment, scheduling)
+- **VPS (Ubuntu)** (remote hosting, cron scheduling)
+- **Docker** (containerization)
 - **GitHub Actions** (CI/CD pipelines)
-- **VPS (Ubuntu)** (remote script hosting, cron scheduling)
+
+#### Tools & Development Environments
+- **Git**, **GitHub**
+- **VS Code**, **PyCharm**
+- **Conda**, **virtualenv**
+

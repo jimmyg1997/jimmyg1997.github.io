@@ -1,54 +1,48 @@
 <div class="page__footer-follow">
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-  {# Removed subscribe form and button #}
+  <div id="mc_embed_signup" style="background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;">
+    <form action="https://gmail.us3.list-manage.com/subscribe/post?u=c76a8e2ec2bd989affb9a074f&amp;id=4646542adb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Join the newsletter </label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c76a8e2ec2bd989affb9a074f_4646542adb" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+    </form>
+  </div>
 
-  {%- comment -%}
-  <ul class="social-icons">
-    {# Removed follow label and button #}
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-  {%- endcomment -%}
+  <div class="page__footer-visitor-minimal">
+    <span>Visitor <span id="visitor-count" class="visitor-number-minimal">...</span></span>
+  </div>
+  <script>
+  fetch('https://api.countapi.xyz/hit/dimitriosgeorgiou.github.io/visits')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+    });
+  </script>
+  <style>
+  .page__footer-visitor-minimal {
+    text-align: center;
+    font-size: 1.01em;
+    margin: 0.7em 0 0.2em 0;
+    color: #2a2d3a;
+    font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.01em;
+  }
+  .visitor-number-minimal {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+    font-size: 1.08em;
+    font-weight: 600;
+    color: #3a7bfd;
+    background: none;
+    border-radius: 4px;
+    padding: 0 0.18em;
+    margin: 0 0.05em;
+    letter-spacing: 0.01em;
+  }
+  </style>
 </div>
-
-<div class="page__footer-visitor">
-  <span>Congrats, you are the counter <span class="visitor-number"><span id="visitor-count">...</span><sup>th</sup></span> visitor!</span>
-</div>
-<script>
-fetch('https://api.countapi.xyz/hit/dimitriosgeorgiou.github.io/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('visitor-count').textContent = data.value.toLocaleString();
-  });
-</script>
-
-<style>
-.page__footer-visitor {
-  text-align: center;
-  font-size: 1.13em;
-  margin: 1.2em 0 0.5em 0;
-  color: #2a2d3a;
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-}
-.visitor-number {
-  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-  font-size: 1.25em;
-  font-weight: 700;
-  color: #3a7bfd;
-  background: linear-gradient(90deg, #e0e7ff 0%, #fff 100%);
-  border-radius: 6px;
-  padding: 0.08em 0.35em;
-  margin: 0 0.1em;
-  letter-spacing: 0.03em;
-  box-shadow: 0 1px 4px rgba(58,123,253,0.07);
-}
-</style>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. </div>

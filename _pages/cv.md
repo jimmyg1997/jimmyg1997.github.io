@@ -73,11 +73,18 @@ You can download a PDF version of my CV here:
 <span style="color:#555; font-size:0.97em;">July 2024 - Present | Krakow, Poland</span>
 <ul>
   <li>Leading analytical projects in investigations, intelligence delivery, and transaction monitoring.</li>
-  <li>Utilizing statistical techniques for insight generation and process improvement.</li>
-  <li>Ensuring compliance with organizational standards and regulatory guidelines.</li>
+  <li>Developing end-to-end Data Science solutions and building analytical models using statistical and machine learning techniques to support Compliance Analytics initiatives.</li>
+  <li>Performing multi-dimensional data analysis and visualizations to generate insights for senior management decision-making.</li>
+  <li>Conducting R&D on available data and leveraging advanced statistical and mathematical modeling to enhance future-state analysis. </li>
+  <li> Identifying opportunities for process improvement and articulating the value of analytical and AI-driven solutions to stakeholders. </li>
+  <li> Ensuring compliance with organizational standards, data policies, and regulatory guidelines.</li>
 </ul>
 <div><strong>Skills:</strong> Data Science, Machine Learning, Data Extraction, Data Analysis, Data Visualization, Automation, Compliance Adherence</div>
 <div><strong>Tech Stack:</strong> Python, SQL, NumPy, Pandas, Scikit-learn, NLTK, Seaborn, VS Code, Data Studio, Docker, Git</div>
+
+
+
+
 
 ### Automation Specialist (Advanced Data Analytics)
 <div class="cv-company-row">

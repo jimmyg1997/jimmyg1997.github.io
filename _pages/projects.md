@@ -16,22 +16,6 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   <p>My work spans across various domains of data science, machine learning, and healthcare informatics. This page provides an overview of my major project categories.</p>
 </div>
 
-## Non-coding Projects {#non-coding-projects}
-
-<div class="project-card" id="bonobo-gentlemen">
-  <h3 id="bonobo-gentlemen-podcast">Bonobo Gentlemen Podcast</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-image">
-      <div class="project-text">
-        <p>A podcast series exploring personal development, technology, and life experiences. Each episode features in-depth discussions on various topics, from overthinking to personal growth.</p>
-        <div class="project-links">
-          <a href="https://open.spotify.com/episode/6A4DSZ3T7MX6pTnh0XDlau" class="btn btn--primary" target="_blank">Listen on Spotify</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 ## Data Science Projects {#data-science-projects}
 
@@ -113,32 +97,68 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   </div>
 </div>
 
+
+## Non-coding Projects {#non-coding-projects}
+
+<div class="project-card" id="bonobo-gentlemen">
+  <h3 id="bonobo-gentlemen-podcast">Bonobo Gentlemen Podcast</h3>
+  <div class="project-content">
+    <div class="project-details">
+      <img src="../assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-image">
+      <div class="project-text">
+        <p>A podcast series exploring personal development, technology, and life experiences. Each episode features in-depth discussions on various topics, from overthinking to personal growth.</p>
+        <div class="project-links">
+          <a href="https://open.spotify.com/episode/6A4DSZ3T7MX6pTnh0XDlau" class="btn btn--primary" target="_blank">Listen on Spotify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Project Skills & Technologies {#project-skills-technologies}
+### Languages & Tools <a name="languages-tools"></a>
+- **Python** (advanced)
+- **C/C++** (intermediate)
+- **SQL** (advanced; BigQuery, PostgreSQL)
+- **MATLAB** (academic use)
+- **Java** (familiar)
+- **HTML/CSS/JS** (basic web scripting)
+- **Bash/Shell** (ETL, automation)
+- **Git & GitHub** (version control, collaboration)
+- **Conda & virtualenv** (environment management)
+- **Google Apps Script** (automation for Google Sheets)
+- **Excel / Google Sheets** (advanced formulas, scripting)
+- **Docker** (basic containerization)
 
-### Languages & Tools {#languages-tools}
-* Python
-* C/C++
-* SQL
-* MATLAB
-* Java
-* HTML/CSS/JS
+### ML & Data Science <a name="ml-data-science"></a>
+- **TensorFlow 2.x**
+- **PyTorch** (prototyping use)
+- **Scikit-learn**
+- **Keras**
+- 🤗 **Hugging Face Transformers**
+- **XGBoost**, **LightGBM**
+- **MLflow** (experiment tracking)
+- **OpenAI API** (prompt engineering)
 
-### ML & Data Science {#ml-data-science}
-* TensorFlow
-* PyTorch
-* Scikit-learn
-* Keras
-* 🤗 Hugging Face
+### Data Processing & ETL <a name="data-processing"></a>
+- **Pandas** (advanced)
+- **NumPy**, **SciPy**
+- **OpenCV** (basic)
+- **Apache Airflow** (workflow orchestration)
+- **Apache Kafka** (event-driven pipelines)
+- **Shell scripting** (ETL tasks)
+- **REST APIs** (data extraction)
+- **JSON**, **XML parsing**
 
-### Data Processing {#data-processing}
-* Pandas
-* NumPy
-* SciPy
-* OpenCV
+### Visualization & Dashboarding <a name="visualization"></a>
+- **Matplotlib**, **Seaborn**
+- **Plotly**
+- **Tableau**
+- **Grafana**
+- **Google Data Studio**
 
-### Visualization {#visualization}
-* Matplotlib
-* Seaborn
-* Plotly
-* Tableau
-* Grafana 
+### Cloud & DevOps (basic) <a name="cloud-devops"></a>
+- **Google Cloud Platform** (BigQuery, Storage, Colab)
+- **Heroku** (scheduling, app hosting)
+- **GitHub Actions** (CI/CD pipelines)
+- **VPS (Ubuntu)** (remote script hosting, cron scheduling)

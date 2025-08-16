@@ -182,7 +182,6 @@ You can download a PDF version of my CV here:
 
 
 ### Technical Skills
-### Technical Skills
 
 #### Programming & Scripting Languages
 - **Python** (advanced)

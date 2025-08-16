@@ -141,24 +141,42 @@ You can download a PDF version of my CV here:
 ## Education
 
 ### Diploma in Electrical and Computer Engineering
-- **Institution**: National Technical University of Athens
-- **Period**: 2015 - 2022
-- **Major**: Computing & Software Systems
-- **GPA**: 9.1/10.0 (Top 5%)
-- **Thesis**: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data" [[pdf](http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593)] [[slides](https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/?profileId=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk)]
-- **Skills**: Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, Natural Language Processing (NLP), Python, Signal Processing, Git
+<div class="cv-company-row">
+  <img src="/assets/logos/ntua.png" alt="NTUA Logo" class="cv-logo">
+  <span><em>National Technical University of Athens</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">2015 – 2022 | Athens, Greece</span>
+<ul>
+  <li>Major: Computing & Software Systems (GPA: 9.1/10.0, Top 5%).</li>
+  <li>Thesis: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data"
+    [<a href="http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593" target="_blank">pdf</a>] 
+    [<a href="https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/" target="_blank">slides</a>]
+  </li>
+</ul>
+<div><strong>Skills:</strong> Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, NLP, Python, Signal Processing, Git</div>
 
 ### Minor in Finance
-- **Institution**: American College of Greece (Deree College)
-- **Period**: 2017 - 2020
-- **GPA**: 3.82/4.00
-- **Skills**: Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git
+<div class="cv-company-row">
+  <img src="/assets/logos/deree.png" alt="Deree Logo" class="cv-logo">
+  <span><em>American College of Greece (Deree College)</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">2017 – 2020 | Athens, Greece</span>
+<ul>
+  <li>Focused on Finance and Data Analytics (GPA: 3.82/4.00).</li>
+</ul>
+<div><strong>Skills:</strong> Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git</div>
 
 ### Summer School in Foundations of Neuroscience
-- **Institution**: Harvard University (Remote)
-- **Period**: 2021
-- **Scholarship**: Stavros Niarchos Foundation / American College of Greece (SNF/ACG)
-- **Skills**: Data Processing, Data Analysis, Data Visualization, Data Extraction, Python
+<div class="cv-company-row">
+  <img src="/assets/logos/harvard.png" alt="Harvard Logo" class="cv-logo">
+  <span><em>Harvard University (Remote)</em></span>
+</div>
+<span style="color:#555; font-size:0.97em;">2021 | Online</span>
+<ul>
+  <li>Completed Foundations of Neuroscience Summer Program with SNF/ACG Scholarship.</li>
+</ul>
+<div><strong>Skills:</strong> Data Processing, Data Analysis, Data Visualization, Data Extraction, Python</div>
+
 
 ## Skills
 

@@ -2552,244 +2552,242 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-
 ## Travel Timeline {#travel-timeline}
 
-<div class="travel-timeline-section" style="margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border-left: 5px solid #001f3f;">
-  <div style="text-align: center; margin-bottom: 2rem;">
-    <h3 style="color: #001f3f; margin-bottom: 0.5rem;">🕐 My Journey Through Time</h3>
-    <p style="color: #666; font-style: italic;">A chronological overview of my travel adventures</p>
+<div class="travel-timeline-section" style="margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #001f3f;">
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <h3 style="color: #001f3f; margin-bottom: 0.5rem; font-size: 1.3rem;">🗓️ Journey Summary</h3>
   </div>
   
-  <div id="travel-timeline-container" style="position: relative;">
+  <div id="travel-summary-stats" style="margin-bottom: 1.5rem;">
+    <!-- Stats will be populated by JavaScript -->
+  </div>
+  
+  <div id="horizontal-timeline" style="position: relative;">
     <!-- Timeline will be populated by JavaScript -->
   </div>
 </div>
 
 <style>
-.timeline-item {
-  position: relative;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border-left: 4px solid #001f3f;
-  transition: all 0.3s ease;
-}
-
-.timeline-item:hover {
-  transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
-
-.timeline-date {
-  position: absolute;
-  top: -10px;
-  left: -20px;
-  background: #001f3f;
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.timeline-content {
-  margin-left: 1rem;
-}
-
-.timeline-location {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #001f3f;
-  margin-bottom: 0.5rem;
+.summary-stats {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.timeline-description {
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.timeline-meta {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
 
-.timeline-stat {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  background: #f8f9fa;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  color: #666;
+.stat-box {
+  text-align: center;
+  background: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  min-width: 80px;
 }
 
-.instagram-link {
-  display: inline-flex;
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #001f3f;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.horizontal-timeline {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: white;
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.timeline-dot {
+  position: relative;
+  min-width: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #001f3f;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
-.instagram-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.timeline-dot:hover .dot {
+  transform: scale(1.3);
+  background: #0074D9;
+}
+
+.timeline-line {
+  height: 2px;
+  background: #ddd;
+  flex-grow: 1;
+  min-width: 20px;
+}
+
+.dot-info {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #001f3f;
   color: white;
-  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-dot:hover .dot-info {
+  opacity: 1;
+}
+
+.dot-info::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #001f3f;
+}
+
+.dot-date {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.country-list {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.country-tag {
+  display: inline-block;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #555;
 }
 
 @media (max-width: 768px) {
-  .timeline-item {
-    margin-left: 1rem;
+  .summary-stats {
+    gap: 1rem;
   }
   
-  .timeline-date {
-    position: static;
-    display: inline-block;
-    margin-bottom: 0.5rem;
+  .stat-box {
+    padding: 0.6rem 1rem;
   }
   
-  .timeline-content {
-    margin-left: 0;
+  .horizontal-timeline {
+    gap: 0.3rem;
   }
   
-  .timeline-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
+  .timeline-dot {
+    min-width: 50px;
   }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Wait a bit to ensure the map script has run and myTravelPosts is available
   setTimeout(function() {
-    // Use the existing myTravelPosts variable from the map script above
-    if (typeof myTravelPosts === 'undefined') {
-      console.error('myTravelPosts not found - make sure the map script runs first');
+    if (typeof window.myTravelPosts === 'undefined') {
+      console.error('myTravelPosts not found');
       return;
     }
 
-  // Sort posts by date (most recent first)
-  const sortedPosts = myTravelPosts.sort((a, b) => b.date.localeCompare(a.date));
-  
-  // Format date for display
-  function formatDate(dateStr) {
-    const [year, month] = dateStr.split('-');
-    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-    ];
-    return `${monthNames[parseInt(month) - 1]} ${year}`;
-  }
-  
-  // Get country flag emoji (simple mapping)
-  function getCountryFlag(country) {
-    const flags = {
-      'Vietnam': '🇻🇳',
-      'Greece': '🇬🇷',
-      'Poland': '🇵🇱',
-      'France': '🇫🇷',
-      'Italy': '🇮🇹',
-      'Spain': '🇪🇸',
-      'Germany': '🇩🇪'
-    };
-    return flags[country] || '📍';
-  }
-  
-  // Truncate description
-  function truncateText(text, maxLength = 200) {
-    if (text.length <= maxLength) return text;
-    return text.substr(0, maxLength) + '...';
-  }
-  
-  // Generate timeline HTML
-  const timelineContainer = document.getElementById('travel-timeline-container');
-  
-  if (sortedPosts.length === 0) {
-    timelineContainer.innerHTML = '<p style="text-align: center; color: #666;">No travel posts yet. Check back soon for updates!</p>';
-    return;
-  }
-  
-  const timelineHTML = sortedPosts.map((post, index) => {
-    return `
-      <div class="timeline-item">
-        <div class="timeline-date">${formatDate(post.date)}</div>
-        <div class="timeline-content">
-          <div class="timeline-location">
-            <span>${getCountryFlag(post.country)}</span>
-            <span>${post.city}, ${post.country}</span>
-          </div>
-          <div class="timeline-description">
-            ${truncateText(post.description)}
-          </div>
-          <div class="timeline-meta">
-            <div class="timeline-stat">
-              <span>📅</span>
-              <span>${formatDate(post.date)}</span>
-            </div>
-            <div class="timeline-stat">
-              <span>📍</span>
-              <span>${post.city}</span>
-            </div>
-            <a href="${post.instagramUrl}" target="_blank" class="instagram-link">
-              <span>📸</span>
-              <span>View on Instagram</span>
-            </a>
-          </div>
+    const posts = window.myTravelPosts;
+    const sortedPosts = [...posts].sort((a, b) => a.date.localeCompare(b.date)); // Oldest first for timeline
+    
+    // Calculate stats
+    const countries = [...new Set(posts.map(post => post.country))];
+    const cities = [...new Set(posts.map(post => post.city))];
+    
+    // Format date
+    function formatDate(dateStr) {
+      const [year, month] = dateStr.split('-');
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      return `${monthNames[parseInt(month) - 1]} ${year}`;
+    }
+    
+    function getCountryFlag(country) {
+      const flags = {
+        'Vietnam': '🇻🇳', 'Greece': '🇬🇷', 'Poland': '🇵🇱', 'France': '🇫🇷',
+        'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Germany': '🇩🇪'
+      };
+      return flags[country] || '📍';
+    }
+    
+    // Generate stats HTML
+    const statsHTML = `
+      <div class="summary-stats">
+        <div class="stat-box">
+          <div class="stat-number">${countries.length}</div>
+          <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">${cities.length}</div>
+          <div class="stat-label">Cities</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">${posts.length}</div>
+          <div class="stat-label">Posts</div>
         </div>
       </div>
     `;
-  }).join('');
-  
-  timelineContainer.innerHTML = timelineHTML;
-  
-  // Update summary stats
-  const countries = [...new Set(sortedPosts.map(post => post.country))];
-  const cities = [...new Set(sortedPosts.map(post => post.city))];
-  
-  // Add a summary at the top
-  const summaryHTML = `
-    <div style="text-align: center; margin-bottom: 2rem; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-        <div style="text-align: center;">
-          <strong style="font-size: 1.5em; color: #001f3f;">${countries.length}</strong>
-          <div style="color: #666; font-size: 0.9em;">Countries</div>
-          <div style="font-size: 0.8em; color: #999;">${countries.join(', ')}</div>
-        </div>
-        <div style="text-align: center;">
-          <strong style="font-size: 1.5em; color: #28a745;">${cities.length}</strong>
-          <div style="color: #666; font-size: 0.9em;">Cities</div>
-          <div style="font-size: 0.8em; color: #999;">${cities.join(', ')}</div>
-        </div>
-        <div style="text-align: center;">
-          <strong style="font-size: 1.5em; color: #dc3545;">${sortedPosts.length}</strong>
-          <div style="color: #666; font-size: 0.9em;">Adventures</div>
-          <div style="font-size: 0.8em; color: #999;">Documented</div>
-        </div>
+    
+    // Generate timeline HTML
+    const timelineHTML = `
+      <div class="horizontal-timeline">
+        ${sortedPosts.map((post, index) => {
+          return `
+            <div class="timeline-dot">
+              <div class="dot-info">${getCountryFlag(post.country)} ${post.city}</div>
+              <div class="dot"></div>
+              <div class="dot-date">${formatDate(post.date)}</div>
+            </div>
+            ${index < sortedPosts.length - 1 ? '<div class="timeline-line"></div>' : ''}
+          `;
+        }).join('')}
       </div>
-    </div>
-  `;
-  
-  timelineContainer.innerHTML = summaryHTML + timelineHTML;
-  }, 100); // Small delay to ensure map script runs first
+    `;
+    
+    // Generate country list
+    const countriesHTML = `
+      <div class="country-list">
+        ${countries.map(country => 
+          `<span class="country-tag">${getCountryFlag(country)} ${country}</span>`
+        ).join('')}
+      </div>
+    `;
+    
+    // Update DOM
+    document.getElementById('travel-summary-stats').innerHTML = statsHTML;
+    document.getElementById('horizontal-timeline').innerHTML = timelineHTML + countriesHTML;
+    
+  }, 100);
 });
 </script>
 

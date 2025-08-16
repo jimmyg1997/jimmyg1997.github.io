@@ -354,12 +354,7 @@ excerpt: "Exploring the world one adventure at a time"
 
 ## Interactive Travel Map {#interactive-travel-map}
 
-<div class="interactive-travel-map" style="margin: 2rem 0;">
-  <div style="text-align: center; margin-bottom: 1.5rem;">
-    <h3 style="color: #001f3f; margin-bottom: 0.5rem;">🗺️ My Travel Adventures</h3>
-    <p style="color: #666; font-style: italic;">Click on the markers to see my travel posts and experiences</p>
-  </div>
-  
+<div class="interactive-travel-map" style="margin: 2rem 0;">  
   <div id="travel-map" style="height: 500px; border-radius: 10px; border: 2px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></div>
   
   <div class="travel-stats" style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; text-align: center;">
@@ -2558,11 +2553,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="travel-insights" style="margin-bottom: 2rem;">
     <!-- Insights will be populated by JavaScript -->
   </div>
-  
-  <div id="countries-visited" style="margin-bottom: 2rem;">
-    <!-- Countries will be populated by JavaScript -->
-  </div>
-  
   <div id="travel-timeline-viz">
     <!-- Timeline visualization will be populated by JavaScript -->
   </div>

@@ -387,7 +387,7 @@ excerpt: "Exploring the world one adventure at a time"
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Updated travel data with actual Instagram posts
-  const myTravelPosts = [
+  window.myTravelPosts = [
     {
       lat: 20.9500,  // Approximate latitude for Ha Long Bay, Vietnam
       lng: 107.0833, // Approximate longitude for Ha Long Bay, Vietnam

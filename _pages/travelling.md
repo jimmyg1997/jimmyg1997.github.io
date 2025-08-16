@@ -310,6 +310,40 @@ excerpt: "Exploring the world one adventure at a time"
     height: auto !important;
   }
 }
+.travel-timeline {
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeline-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    min-width: 150px;
+    flex: 1 1 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.timeline-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.1em;
+}
+
+.timeline-card p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+
 </style>
 
 ## Instagram Feed {#instagram-feed}
@@ -2557,6 +2591,38 @@ document.addEventListener('DOMContentLoaded', function() {
     countryMap[post.country].dates.push(new Date(post.date));
   });
 
+  window.addEventListener("DOMContentLoaded", () => {
+    const countryMap = {};
+
+    myTravelPosts.forEach(post => {
+      if (!countryMap[post.country]) {
+        countryMap[post.country] = { count: 0, dates: [] };
+      }
+      countryMap[post.country].count += 1;
+      countryMap[post.country].dates.push(new Date(post.date));
+    });
+
+    const timelineContainer = document.getElementById("timeline-container");
+
+    Object.entries(countryMap)
+      .sort((a, b) => {
+        const aDate = Math.min(...a[1].dates);
+        const bDate = Math.min(...b[1].dates);
+        return aDate - bDate;
+      })
+      .forEach(([country, info]) => {
+        const firstDate = new Date(Math.min(...info.dates));
+        const lastDate = new Date(Math.max(...info.dates));
+        const card = document.createElement("div");
+        card.classList.add("timeline-card");
+        card.innerHTML = `
+          <h3>${country}</h3>
+          <p>Posts: ${info.count}</p>
+          <p>Visited: ${firstDate.toLocaleDateString()}${firstDate.getTime() !== lastDate.getTime() ? ' - ' + lastDate.toLocaleDateString() : ''}</p>
+        `;
+        timelineContainer.appendChild(card);
+      });
+
 });
 </script>
 
@@ -2566,75 +2632,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="timeline-container"></div>
 </div>
 
-<style>
-.travel-timeline {
-    margin: 50px auto;
-    max-width: 900px;
-    text-align: center;
-}
 
-#timeline-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.timeline-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 15px 20px;
-    min-width: 150px;
-    flex: 1 1 150px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.timeline-card h3 {
-    margin: 0 0 10px;
-    font-size: 1.1em;
-}
-
-.timeline-card p {
-    margin: 3px 0;
-    font-size: 0.9em;
-}
-</style>
-
-<script>
-  // Aggregate posts per country and first/last date
-  const countryMap = {};
-
-  myTravelPosts.forEach(post => {
-    if (!countryMap[post.country]) {
-      countryMap[post.country] = { count: 0, dates: [] };
-    }
-    countryMap[post.country].count += 1;
-    countryMap[post.country].dates.push(new Date(post.date));
-  });
-
-  const timelineContainer = document.getElementById("timeline-container");
-
-  Object.entries(countryMap)
-    .sort((a, b) => {
-      // Sort by first visit date
-      const aDate = a[1].dates[0];
-      const bDate = b[1].dates[0];
-      return aDate - bDate;
-    })
-    .forEach(([country, info]) => {
-      const firstDate = new Date(Math.min(...info.dates));
-      const lastDate = new Date(Math.max(...info.dates));
-      const card = document.createElement("div");
-      card.classList.add("timeline-card");
-      card.innerHTML = `
-        <h3>${country}</h3>
-        <p>Posts: ${info.count}</p>
-        <p>Visited: ${firstDate.toLocaleDateString()}${firstDate.getTime() !== lastDate.getTime() ? ' - ' + lastDate.toLocaleDateString() : ''}</p>
-      `;
-      timelineContainer.appendChild(card);
-    });
-</script>
 
 ## Recent Adventures & Tour Guides {#recent-adventures}
 

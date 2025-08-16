@@ -2582,7 +2582,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .insight-value {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #001f3f;
   margin-bottom: 0.4rem;

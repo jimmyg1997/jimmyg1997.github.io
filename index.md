@@ -321,6 +321,7 @@ h2, h3 {
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>
       <div class="now-timeline-row"><span class="now-dot">○</span> <span class="now-date">2025.08 (planned)</span> <span class="now-desc">✈️ Trip to Greece</span></div>
+      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.03 – Present</span> <span class="now-desc">🇪🇸 Pursuing B2 in Spanish</span></div>
     </div>
   </div>
 </div>

@@ -2551,176 +2551,219 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+## Travel Summary {#travel-summary}
 
-## Travel Timeline {#travel-timeline}
-
-<div class="travel-timeline-section" style="margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #001f3f;">
-  <div style="text-align: center; margin-bottom: 1.5rem;">
-    <h3 style="color: #001f3f; margin-bottom: 0.5rem; font-size: 1.3rem;">🗓️ Journey by Year</h3>
+<div class="travel-summary-section" style="margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
+  
+  <div id="travel-insights" style="margin-bottom: 2rem;">
+    <!-- Insights will be populated by JavaScript -->
   </div>
   
-  <div id="travel-summary-stats" style="margin-bottom: 1.5rem;">
-    <!-- Different stats will be populated by JavaScript -->
+  <div id="countries-visited" style="margin-bottom: 2rem;">
+    <!-- Countries will be populated by JavaScript -->
   </div>
   
-  <div id="yearly-timeline" style="position: relative;">
-    <!-- Timeline will be populated by JavaScript -->
+  <div id="travel-timeline-viz">
+    <!-- Timeline visualization will be populated by JavaScript -->
   </div>
 </div>
 
 <style>
-.summary-stats {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.stat-box {
-  text-align: center;
+.insight-card {
   background: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  min-width: 100px;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-left: 3px solid #001f3f;
+  transition: all 0.3s ease;
 }
 
-.stat-number {
-  font-size: 1.4rem;
+.insight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.insight-value {
+  font-size: 1.6rem;
   font-weight: bold;
   color: #001f3f;
+  margin-bottom: 0.3rem;
 }
 
-.stat-label {
-  font-size: 0.8rem;
+.insight-label {
+  font-size: 0.75rem;
   color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.insight-sublabel {
+  font-size: 0.7rem;
+  color: #999;
   margin-top: 0.2rem;
 }
 
-.yearly-timeline {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 1rem 0;
-  justify-content: center;
+.countries-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.year-bubble {
-  position: relative;
+.countries-header {
   text-align: center;
-  min-width: 120px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  color: #001f3f;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.year-bubble:hover {
-  transform: translateY(-3px);
-}
-
-.bubble {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
-  border-radius: 50%;
-  margin: 0 auto 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  border: 3px solid white;
-  transition: all 0.3s ease;
-}
-
-.year-bubble:hover .bubble {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  transform: scale(1.05);
-}
-
-.bubble-year {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
-
-.bubble-count {
-  font-size: 0.7rem;
-  opacity: 0.9;
-}
-
-.countries-flags {
+.countries-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.3rem;
-  margin-top: 0.5rem;
-  max-width: 100px;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f8f9fa;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.country-item:hover {
+  background: #001f3f;
+  color: white;
+  transform: translateY(-1px);
 }
 
 .country-flag {
-  font-size: 1.2rem;
-  transition: transform 0.2s ease;
+  font-size: 1.1rem;
 }
 
-.country-flag:hover {
-  transform: scale(1.3);
-}
-
-.timeline-connector {
-  height: 2px;
-  background: linear-gradient(to right, #ddd, #001f3f, #ddd);
-  align-self: center;
-  margin-top: 40px;
-  flex-grow: 1;
-  min-width: 30px;
-}
-
-.most-visited {
-  text-align: center;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ddd;
-}
-
-.favorite-destination {
-  display: inline-block;
-  background: linear-gradient(135deg, #001f3f, #0074D9);
+.country-posts {
+  background: #001f3f;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+}
+
+.country-item:hover .country-posts {
+  background: white;
+  color: #001f3f;
+}
+
+.timeline-viz {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-top: 1rem;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #001f3f;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.year-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.year-row:hover {
+  background: #e9ecef;
+}
+
+.year-label {
+  min-width: 50px;
+  font-weight: bold;
+  color: #001f3f;
   font-size: 0.9rem;
-  font-weight: 500;
-  margin: 0.2rem;
+}
+
+.year-countries {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  flex-grow: 1;
+}
+
+.year-country {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.year-stats {
+  min-width: 80px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666;
 }
 
 @media (max-width: 768px) {
-  .yearly-timeline {
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+  
+  .insight-card {
+    padding: 0.8rem;
+  }
+  
+  .insight-value {
+    font-size: 1.4rem;
+  }
+  
+  .countries-grid {
     gap: 0.5rem;
-    justify-content: flex-start;
   }
   
-  .year-bubble {
-    min-width: 100px;
+  .year-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
   
-  .bubble {
-    width: 60px;
-    height: 60px;
+  .year-countries {
+    margin-left: 0;
   }
   
-  .bubble-year {
-    font-size: 0.9rem;
-  }
-  
-  .countries-flags {
-    max-width: 80px;
-  }
-  
-  .country-flag {
-    font-size: 1rem;
+  .year-stats {
+    align-self: flex-end;
   }
 }
 </style>
@@ -2739,120 +2782,131 @@ document.addEventListener('DOMContentLoaded', function() {
       const flags = {
         'Vietnam': '🇻🇳', 'Greece': '🇬🇷', 'Poland': '🇵🇱', 'France': '🇫🇷',
         'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Germany': '🇩🇪', 'Thailand': '🇹🇭',
-        'Japan': '🇯🇵', 'USA': '🇺🇸', 'UK': '🇬🇧', 'Netherlands': '🇳🇱'
+        'Japan': '🇯🇵', 'USA': '🇺🇸', 'UK': '🇬🇧', 'Netherlands': '🇳🇱',
+        'Portugal': '🇵🇹', 'Czech Republic': '🇨🇿', 'Austria': '🇦🇹'
       };
       return flags[country] || '🌍';
     }
     
-    // Group posts by year and get unique countries per year
+    // Calculate comprehensive statistics
+    const uniqueCountries = [...new Set(posts.map(post => post.country))];
+    const uniqueCities = [...new Set(posts.map(post => post.city))];
+    
+    // Group by year
     const yearlyData = {};
     posts.forEach(post => {
       const year = post.date.split('-')[0];
       if (!yearlyData[year]) {
-        yearlyData[year] = {
-          countries: new Set(),
-          posts: 0
-        };
+        yearlyData[year] = { countries: new Set(), posts: 0 };
       }
       yearlyData[year].countries.add(post.country);
       yearlyData[year].posts++;
     });
     
-    // Convert to array and sort by year
-    const sortedYears = Object.keys(yearlyData).sort();
-    
-    // Calculate different stats (not duplicating the map stats)
-    const allCountries = [...new Set(posts.map(post => post.country))];
-    const totalYears = sortedYears.length;
-    const avgCountriesPerYear = totalYears > 0 ? (allCountries.length / totalYears).toFixed(1) : 0;
-    
-    // Find most visited region/continent (simplified)
-    const continents = {
-      'Europe': ['Greece', 'Poland', 'France', 'Italy', 'Spain', 'Germany', 'Netherlands', 'UK'],
-      'Asia': ['Vietnam', 'Thailand', 'Japan'],
-      'Americas': ['USA'],
-    };
-    
-    let continentCounts = {};
-    allCountries.forEach(country => {
-      for (let continent in continents) {
-        if (continents[continent].includes(country)) {
-          continentCounts[continent] = (continentCounts[continent] || 0) + 1;
-        }
-      }
-    });
-    
-    const favContinent = Object.keys(continentCounts).reduce((a, b) => 
-      continentCounts[a] > continentCounts[b] ? a : b, 'World'
+    const years = Object.keys(yearlyData).sort();
+    const mostActiveYear = years.reduce((max, year) => 
+      yearlyData[year].posts > yearlyData[max]?.posts ? year : max, years[0]
     );
     
-    // Generate different stats HTML
-    const statsHTML = `
-      <div class="summary-stats">
-        <div class="stat-box">
-          <div class="stat-number">${totalYears}</div>
-          <div class="stat-label">Travel Years</div>
+    // Country frequency
+    const countryFreq = {};
+    posts.forEach(post => {
+      countryFreq[post.country] = (countryFreq[post.country] || 0) + 1;
+    });
+    
+    const mostVisited = Object.entries(countryFreq)
+      .sort(([,a], [,b]) => b - a)[0];
+    
+    // Travel span
+    const firstYear = Math.min(...years);
+    const lastYear = Math.max(...years);
+    const travelSpan = lastYear - firstYear + 1;
+    
+    // Average posts per month (rough estimate)
+    const totalMonths = travelSpan * 12;
+    const postsPerMonth = (posts.length / totalMonths).toFixed(1);
+    
+    // Generate insights HTML
+    const insightsHTML = `
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-value">${travelSpan}</div>
+          <div class="insight-label">Travel Span</div>
+          <div class="insight-sublabel">${firstYear} - ${lastYear}</div>
         </div>
-        <div class="stat-box">
-          <div class="stat-number">${avgCountriesPerYear}</div>
-          <div class="stat-label">Countries/Year</div>
+        <div class="insight-card">
+          <div class="insight-value">${mostActiveYear}</div>
+          <div class="insight-label">Most Active</div>
+          <div class="insight-sublabel">${yearlyData[mostActiveYear].posts} posts</div>
         </div>
-        <div class="stat-box">
-          <div class="stat-number">${favContinent}</div>
-          <div class="stat-label">Fav Region</div>
+        <div class="insight-card">
+          <div class="insight-value">${mostVisited[0].split(' ')[0]}</div>
+          <div class="insight-label">Top Destination</div>
+          <div class="insight-sublabel">${mostVisited[1]} posts</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-value">${postsPerMonth}</div>
+          <div class="insight-label">Posts/Month</div>
+          <div class="insight-sublabel">Average rate</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-value">${(uniqueCountries.length / years.length).toFixed(1)}</div>
+          <div class="insight-label">Countries/Year</div>
+          <div class="insight-sublabel">Average</div>
         </div>
       </div>
     `;
     
-    // Generate timeline HTML
+    // Generate countries section
+    const countriesHTML = `
+      <div class="countries-section">
+        <div class="countries-header">📍 Countries Explored</div>
+        <div class="countries-grid">
+          ${Object.entries(countryFreq)
+            .sort(([,a], [,b]) => b - a)
+            .map(([country, count]) => `
+              <div class="country-item" title="${country}: ${count} posts">
+                <span class="country-flag">${getCountryFlag(country)}</span>
+                <span>${country}</span>
+                <span class="country-posts">${count}</span>
+              </div>
+            `).join('')}
+        </div>
+      </div>
+    `;
+    
+    // Generate timeline visualization
     const timelineHTML = `
-      <div class="yearly-timeline">
-        ${sortedYears.map((year, index) => {
+      <div class="timeline-viz">
+        <div class="timeline-header">🗓️ Year by Year Journey</div>
+        ${years.map(year => {
           const yearData = yearlyData[year];
           const countries = Array.from(yearData.countries);
-          
           return `
-            <div class="year-bubble" title="${countries.join(', ')}">
-              <div class="bubble">
-                <div class="bubble-year">${year}</div>
-                <div class="bubble-count">${countries.length} countries</div>
+            <div class="year-row">
+              <div class="year-label">${year}</div>
+              <div class="year-countries">
+                ${countries.map(country => `
+                  <div class="year-country">
+                    <span class="country-flag">${getCountryFlag(country)}</span>
+                    <span>${country}</span>
+                  </div>
+                `).join('')}
               </div>
-              <div class="countries-flags">
-                ${countries.map(country => 
-                  `<span class="country-flag" title="${country}">${getCountryFlag(country)}</span>`
-                ).join('')}
+              <div class="year-stats">
+                ${countries.length} ${countries.length === 1 ? 'country' : 'countries'}<br>
+                <small>${yearData.posts} posts</small>
               </div>
             </div>
-            ${index < sortedYears.length - 1 ? '<div class="timeline-connector"></div>' : ''}
           `;
         }).join('')}
       </div>
     `;
     
-    // Most visited countries section
-    const countryFrequency = {};
-    posts.forEach(post => {
-      countryFrequency[post.country] = (countryFrequency[post.country] || 0) + 1;
-    });
-    
-    const topCountries = Object.entries(countryFrequency)
-      .sort(([,a], [,b]) => b - a)
-      .slice(0, 3);
-    
-    const favoritesHTML = `
-      <div class="most-visited">
-        <div style="color: #666; font-size: 0.9rem; margin-bottom: 0.8rem;">Most Posted About:</div>
-        ${topCountries.map(([country, count]) => 
-          `<span class="favorite-destination">
-            ${getCountryFlag(country)} ${country} (${count})
-          </span>`
-        ).join('')}
-      </div>
-    `;
-    
     // Update DOM
-    document.getElementById('travel-summary-stats').innerHTML = statsHTML;
-    document.getElementById('yearly-timeline').innerHTML = timelineHTML + favoritesHTML;
+    document.getElementById('travel-insights').innerHTML = insightsHTML;
+    document.getElementById('countries-visited').innerHTML = countriesHTML;
+    document.getElementById('travel-timeline-viz').innerHTML = timelineHTML;
     
   }, 100);
 });

@@ -2583,46 +2583,13 @@ document.addEventListener('DOMContentLoaded', function() {
     travelMap.fitBounds(group.getBounds().pad(0.1));
   }
 
-   myTravelPosts.forEach(post => {
+  myTravelPosts.forEach(post => {
     if (!countryMap[post.country]) {
       countryMap[post.country] = { count: 0, dates: [] };
     }
     countryMap[post.country].count += 1;
     countryMap[post.country].dates.push(new Date(post.date));
   });
-
-  window.addEventListener("DOMContentLoaded", () => {
-    const countryMap = {};
-
-    myTravelPosts.forEach(post => {
-      if (!countryMap[post.country]) {
-        countryMap[post.country] = { count: 0, dates: [] };
-      }
-      countryMap[post.country].count += 1;
-      countryMap[post.country].dates.push(new Date(post.date));
-    });
-
-    const timelineContainer = document.getElementById("timeline-container");
-
-    Object.entries(countryMap)
-      .sort((a, b) => {
-        const aDate = Math.min(...a[1].dates);
-        const bDate = Math.min(...b[1].dates);
-        return aDate - bDate;
-      })
-      .forEach(([country, info]) => {
-        const firstDate = new Date(Math.min(...info.dates));
-        const lastDate = new Date(Math.max(...info.dates));
-        const card = document.createElement("div");
-        card.classList.add("timeline-card");
-        card.innerHTML = `
-          <h3>${country}</h3>
-          <p>Posts: ${info.count}</p>
-          <p>Visited: ${firstDate.toLocaleDateString()}${firstDate.getTime() !== lastDate.getTime() ? ' - ' + lastDate.toLocaleDateString() : ''}</p>
-        `;
-        timelineContainer.appendChild(card);
-      });
-
 });
 </script>
 

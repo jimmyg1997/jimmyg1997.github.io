@@ -310,40 +310,6 @@ excerpt: "Exploring the world one adventure at a time"
     height: auto !important;
   }
 }
-.travel-timeline {
-    margin: 50px auto;
-    max-width: 900px;
-    text-align: center;
-}
-
-#timeline-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.timeline-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 15px 20px;
-    min-width: 150px;
-    flex: 1 1 150px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.timeline-card h3 {
-    margin: 0 0 10px;
-    font-size: 1.1em;
-}
-
-.timeline-card p {
-    margin: 3px 0;
-    font-size: 0.9em;
-}
-
-
 </style>
 
 ## Instagram Feed {#instagram-feed}
@@ -2582,24 +2548,8 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     travelMap.fitBounds(group.getBounds().pad(0.1));
   }
-
-  myTravelPosts.forEach(post => {
-    if (!countryMap[post.country]) {
-      countryMap[post.country] = { count: 0, dates: [] };
-    }
-    countryMap[post.country].count += 1;
-    countryMap[post.country].dates.push(new Date(post.date));
-  });
 });
 </script>
-
-
-<div class="travel-timeline">
-  <h2>Travel Timeline</h2>
-  <div id="timeline-container"></div>
-</div>
-
-
 
 ## Recent Adventures & Tour Guides {#recent-adventures}
 

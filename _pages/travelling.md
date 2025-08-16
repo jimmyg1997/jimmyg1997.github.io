@@ -318,9 +318,9 @@ excerpt: "Exploring the world one adventure at a time"
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHuB01cMnFK/" data-instgrm-version="14" data-instgrm-width="100%">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DHuB01cMnFK/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -2548,7 +2548,92 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     travelMap.fitBounds(group.getBounds().pad(0.1));
   }
+
+   myTravelPosts.forEach(post => {
+    if (!countryMap[post.country]) {
+      countryMap[post.country] = { count: 0, dates: [] };
+    }
+    countryMap[post.country].count += 1;
+    countryMap[post.country].dates.push(new Date(post.date));
+  });
+
 });
+</script>
+
+
+<div class="travel-timeline">
+  <h2>Travel Timeline</h2>
+  <div id="timeline-container"></div>
+</div>
+
+<style>
+.travel-timeline {
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeline-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    min-width: 150px;
+    flex: 1 1 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.timeline-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.1em;
+}
+
+.timeline-card p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+</style>
+
+<script>
+  // Aggregate posts per country and first/last date
+  const countryMap = {};
+
+  myTravelPosts.forEach(post => {
+    if (!countryMap[post.country]) {
+      countryMap[post.country] = { count: 0, dates: [] };
+    }
+    countryMap[post.country].count += 1;
+    countryMap[post.country].dates.push(new Date(post.date));
+  });
+
+  const timelineContainer = document.getElementById("timeline-container");
+
+  Object.entries(countryMap)
+    .sort((a, b) => {
+      // Sort by first visit date
+      const aDate = a[1].dates[0];
+      const bDate = b[1].dates[0];
+      return aDate - bDate;
+    })
+    .forEach(([country, info]) => {
+      const firstDate = new Date(Math.min(...info.dates));
+      const lastDate = new Date(Math.max(...info.dates));
+      const card = document.createElement("div");
+      card.classList.add("timeline-card");
+      card.innerHTML = `
+        <h3>${country}</h3>
+        <p>Posts: ${info.count}</p>
+        <p>Visited: ${firstDate.toLocaleDateString()}${firstDate.getTime() !== lastDate.getTime() ? ' - ' + lastDate.toLocaleDateString() : ''}</p>
+      `;
+      timelineContainer.appendChild(card);
+    });
 </script>
 
 ## Recent Adventures & Tour Guides {#recent-adventures}

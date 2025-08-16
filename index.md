@@ -316,10 +316,10 @@ h2, h3 {
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <div class="now-timeline">
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2022.01 – Present</span> <span class="now-desc">🏋️ Calisthenics milestone training</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.06 – Present</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>
+      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2022.01 – Present</span> <span class="now-desc">🏋️ Calisthenics milestone training</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.03 – Present</span> <span class="now-desc">🇪🇸 Pursuing B2 in Spanish</span></div>
     </div>
   </div>

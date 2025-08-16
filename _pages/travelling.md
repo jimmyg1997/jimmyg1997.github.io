@@ -2792,20 +2792,45 @@ document.addEventListener('DOMContentLoaded', function() {
     const uniqueCountries = [...new Set(posts.map(post => post.country))];
     const uniqueCities = [...new Set(posts.map(post => post.city))];
     
+    // Parse dates properly - handle both "2025-05" and "2025" formats
+    function parsePostDate(dateStr) {
+      if (dateStr.includes('-')) {
+        const [year, month] = dateStr.split('-');
+        return { year: parseInt(year), month: parseInt(month) };
+      } else {
+        return { year: parseInt(dateStr), month: null };
+      }
+    }
+    
     // Group by year
     const yearlyData = {};
+    const monthlyData = {};
+    
     posts.forEach(post => {
-      const year = post.date.split('-')[0];
+      const parsed = parsePostDate(post.date);
+      const year = parsed.year;
+      
+      // Yearly grouping
       if (!yearlyData[year]) {
         yearlyData[year] = { countries: new Set(), posts: 0 };
       }
       yearlyData[year].countries.add(post.country);
       yearlyData[year].posts++;
+      
+      // Monthly grouping (if month is specified)
+      if (parsed.month) {
+        const monthKey = `${year}-${parsed.month.toString().padStart(2, '0')}`;
+        if (!monthlyData[monthKey]) {
+          monthlyData[monthKey] = { countries: new Set(), posts: 0 };
+        }
+        monthlyData[monthKey].countries.add(post.country);
+        monthlyData[monthKey].posts++;
+      }
     });
     
     const years = Object.keys(yearlyData).sort();
     const mostActiveYear = years.reduce((max, year) => 
-      yearlyData[year].posts > yearlyData[max]?.posts ? year : max, years[0]
+      yearlyData[year].posts > (yearlyData[max]?.posts || 0) ? year : max, years[0]
     );
     
     // Country frequency
@@ -2815,18 +2840,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     const mostVisited = Object.entries(countryFreq)
-      .sort(([,a], [,b]) => b - a)[0];
+      .sort(([,a], [,b]) => b - a)[0] || ['Unknown', 0];
     
-    // Travel span
-    const firstYear = Math.min(...years);
-    const lastYear = Math.max(...years);
+    // Travel span and better statistics
+    const firstYear = Math.min(...years.map(y => parseInt(y)));
+    const lastYear = Math.max(...years.map(y => parseInt(y)));
     const travelSpan = lastYear - firstYear + 1;
     
-    // Average posts per month (rough estimate)
-    const totalMonths = travelSpan * 12;
-    const postsPerMonth = (posts.length / totalMonths).toFixed(1);
+    // More accurate posts per month calculation
+    const monthsWithPosts = Object.keys(monthlyData).length;
+    const postsPerMonth = monthsWithPosts > 0 ? 
+      (posts.length / monthsWithPosts).toFixed(1) : 
+      (posts.length / (travelSpan * 12)).toFixed(1);
     
-    // Generate insights HTML
+    // Peak travel month (if we have monthly data)
+    let peakMonth = null;
+    if (Object.keys(monthlyData).length > 0) {
+      peakMonth = Object.entries(monthlyData)
+        .sort(([,a], [,b]) => b.posts - a.posts)[0];
+    }
+    
+    // Generate insights HTML with improved statistics
     const insightsHTML = `
       <div class="insights-grid">
         <div class="insight-card">
@@ -2840,19 +2874,27 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="insight-sublabel">${yearlyData[mostActiveYear].posts} posts</div>
         </div>
         <div class="insight-card">
-          <div class="insight-value">${mostVisited[0].split(' ')[0]}</div>
+          <div class="insight-value">${getCountryFlag(mostVisited[0])}</div>
           <div class="insight-label">Top Destination</div>
-          <div class="insight-sublabel">${mostVisited[1]} posts</div>
+          <div class="insight-sublabel">${mostVisited[0]} (${mostVisited[1]})</div>
         </div>
+        ${peakMonth ? `
+        <div class="insight-card">
+          <div class="insight-value">${peakMonth[0].split('-')[1]}/${peakMonth[0].split('-')[0]}</div>
+          <div class="insight-label">Peak Month</div>
+          <div class="insight-sublabel">${peakMonth[1].posts} posts</div>
+        </div>
+        ` : `
         <div class="insight-card">
           <div class="insight-value">${postsPerMonth}</div>
           <div class="insight-label">Posts/Month</div>
-          <div class="insight-sublabel">Average rate</div>
+          <div class="insight-sublabel">Average</div>
         </div>
+        `}
         <div class="insight-card">
           <div class="insight-value">${(uniqueCountries.length / years.length).toFixed(1)}</div>
           <div class="insight-label">Countries/Year</div>
-          <div class="insight-sublabel">Average</div>
+          <div class="insight-sublabel">Average rate</div>
         </div>
       </div>
     `;

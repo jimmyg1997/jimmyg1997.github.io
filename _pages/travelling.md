@@ -2917,7 +2917,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="insight-card">
           <div class="insight-value">${(uniqueCountries.length / years.length).toFixed(1)}</div>
-          <div class="insight-label">Countries/Year</div>
+          <div class="insight-label">Countries per Year</div>
           <div class="insight-sublabel">Average Rate</div>
         </div>
       </div>

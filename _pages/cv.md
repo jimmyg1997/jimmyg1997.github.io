@@ -157,7 +157,7 @@ You can download a PDF version of my CV here:
 
 ### Minor in Finance
 <div class="cv-company-row">
-  <img src="/assets/logos/deree.png" alt="Deree Logo" class="cv-logo">
+  <img src="/assets/logos/deree.jpg" alt="Deree Logo" class="cv-logo">
   <span><em>American College of Greece (Deree College)</em></span>
 </div>
 <span style="color:#555; font-size:0.97em;">2017 – 2020 | Athens, Greece</span>
@@ -182,12 +182,56 @@ You can download a PDF version of my CV here:
 
 
 ### Technical Skills
-* **Programming Languages:** Python, C/C++, SQL (PostgreSQL, BigQuery), MATLAB, Java, HTML/CSS/JavaScript, Bash/Shell, Google Apps Script  
-* **Machine Learning & AI:** TensorFlow, Keras, PyTorch, Scikit-learn, 🤗 Hugging Face Transformers, XGBoost, LightGBM, OpenAI API, MLflow  
-* **Data Engineering & ETL:** Pandas, NumPy, SciPy, OpenCV, Apache Airflow, Apache Kafka, Apache Spark, Hive, REST APIs, JSON, XML, Shell scripting  
-* **Visualization & Reporting:** Matplotlib, Seaborn, Plotly, Tableau, Grafana, Google Data Studio, Excel, Google Sheets  
-* **Cloud & Infrastructure:** Google Cloud Platform, AWS S3, Heroku, VPS (Ubuntu), Docker, GitHub Actions  
-* **Version Control & Dev Tools:** Git, GitHub, VS Code, PyCharm, Conda, virtualenv
+### Technical Skills
+
+#### Programming & Scripting Languages
+- **Python** (advanced)
+- **C/C++** (intermediate)
+- **SQL** (advanced; PostgreSQL, Google BigQuery)
+- **MATLAB** (academic use)
+- **Java** (familiar)
+- **HTML/CSS/JavaScript** (basic web scripting)
+- **Bash/Shell** (ETL, automation)
+- **Google Apps Script** (Google Sheets automation)
+
+#### Machine Learning & AI
+- **TensorFlow 2.x**, **Keras**
+- **PyTorch** (prototyping)
+- **Scikit-learn**
+- 🤗 **Hugging Face Transformers**
+- **XGBoost**, **LightGBM**
+- **OpenAI API** (prompt engineering, summarization)
+- **MLflow** (experiment tracking)
+
+#### Data Engineering & ETL
+- **Pandas**, **NumPy**, **SciPy**
+- **OpenCV** (basic image processing)
+- **Apache Airflow** (workflow orchestration)
+- **Apache Kafka** (stream processing)
+- **Apache Spark**, **Hive** (basic familiarity)
+- **REST APIs**, **JSON**, **XML parsing**
+- **Shell scripting** (ETL pipelines)
+
+#### Visualization & Reporting
+- **Matplotlib**, **Seaborn**
+- **Plotly**
+- **Tableau**
+- **Grafana**
+- **Google Data Studio**
+- **Excel / Google Sheets** (advanced use)
+
+#### Cloud & Infrastructure
+- **Google Cloud Platform** (BigQuery, Storage, Colab)
+- **AWS S3** (basic familiarity)
+- **Heroku** (deployment, scheduling)
+- **VPS (Ubuntu)** (remote hosting, cron scheduling)
+- **Docker** (containerization)
+- **GitHub Actions** (CI/CD pipelines)
+
+#### Tools & Development Environments
+- **Git**, **GitHub**
+- **VS Code**, **PyCharm**
+- **Conda**, **virtualenv**
 
 
 ### Languages

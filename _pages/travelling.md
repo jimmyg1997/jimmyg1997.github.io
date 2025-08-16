@@ -2551,7 +2551,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
 ## Travel Summary {#travel-summary}
 
 <div class="travel-summary-section" style="margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">

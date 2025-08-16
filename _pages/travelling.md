@@ -1365,7 +1365,7 @@ document.addEventListener('DOMContentLoaded', function() {
       lng: 19.9370,
       title: "Lighting of the Christmas Tree – Krakow Main Square",
       description: "Krakow's Main Square comes alive each December with the magical lighting ceremony of its iconic Christmas tree. This year's tree stands 15 meters tall and dazzles with 26,000 energy-saving lights, 63 icicles, and over 1,000 baubles, creating a festive atmosphere in the heart of the city. The event draws locals and visitors alike to celebrate the start of the holiday season beneath the historic spires of St. Mary's Basilica. The lighting ceremony is a highlight of Krakow's winter, perfect for families, photographers, and anyone seeking the true spirit of Christmas in Poland.",
-      date: "8 December 2024",
+      date: "2025.12",
       instagramPostId: "DDUThw5sDOr",
       instagramUrl: "https://www.instagram.com/p/DDUThw5sDOr/",
       city: "Kraków",
@@ -2551,6 +2551,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+
 ## Travel Summary {#travel-summary}
 
 <div class="travel-summary-section" style="margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
@@ -2592,23 +2593,26 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .insight-value {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #001f3f;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
 }
 
 .insight-label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #666;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
 }
 
 .insight-sublabel {
-  font-size: 0.7rem;
-  color: #999;
-  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.3rem;
+  font-weight: 400;
 }
 
 .countries-section {
@@ -2783,7 +2787,11 @@ document.addEventListener('DOMContentLoaded', function() {
         'Vietnam': '🇻🇳', 'Greece': '🇬🇷', 'Poland': '🇵🇱', 'France': '🇫🇷',
         'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Germany': '🇩🇪', 'Thailand': '🇹🇭',
         'Japan': '🇯🇵', 'USA': '🇺🇸', 'UK': '🇬🇧', 'Netherlands': '🇳🇱',
-        'Portugal': '🇵🇹', 'Czech Republic': '🇨🇿', 'Austria': '🇦🇹'
+        'Portugal': '🇵🇹', 'Czech Republic': '🇨🇿', 'Austria': '🇦🇹',
+        'Switzerland': '🇨🇭', 'Norway': '🇳🇴', 'Estonia': '🇪🇪', 'Lithuania': '🇱🇹',
+        'Egypt': '🇪🇬', 'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'Colombia': '🇨🇴',
+        'Mexico': '🇲🇽', 'San Marino': '🇸🇲', 'Singapore': '🇸🇬', 'Nepal': '🇳🇵',
+        'Morocco': '🇲🇦', 'Kenya': '🇰🇪', 'North Macedonia': '🇲🇰', 'Slovakia': '🇸🇰'
       };
       return flags[country] || '🌍';
     }
@@ -2860,13 +2868,35 @@ document.addEventListener('DOMContentLoaded', function() {
         .sort(([,a], [,b]) => b.posts - a.posts)[0];
     }
     
-    // Generate insights HTML with improved statistics
+    // Generate better insights with additional statistics
+    const totalContinents = new Set();
+    const continentMap = {
+      'Europe': ['Greece', 'Poland', 'France', 'Italy', 'Spain', 'Germany', 'Netherlands', 'UK', 'Portugal', 'Czech Republic', 'Austria', 'Switzerland', 'Norway', 'Estonia', 'Lithuania', 'San Marino', 'North Macedonia', 'Slovakia'],
+      'Asia': ['Vietnam', 'Thailand', 'Japan', 'Singapore', 'Nepal'],
+      'Americas': ['USA', 'Costa Rica', 'Panama', 'Colombia', 'Mexico'],
+      'Africa': ['Egypt', 'Morocco', 'Kenya']
+    };
+    
+    uniqueCountries.forEach(country => {
+      for (let continent in continentMap) {
+        if (continentMap[continent].includes(country)) {
+          totalContinents.add(continent);
+          break;
+        }
+      }
+    });
+
+    // Calculate travel intensity (posts per active month)
+    const activeMonths = Object.keys(monthlyData).length;
+    const travelIntensity = activeMonths > 0 ? (posts.length / activeMonths).toFixed(1) : '0';
+    
+    // Generate insights HTML with better styling and new statistics
     const insightsHTML = `
       <div class="insights-grid">
         <div class="insight-card">
-          <div class="insight-value">${travelSpan}</div>
+          <div class="insight-value">${travelSpan} ${travelSpan === 1 ? 'Year' : 'Years'}</div>
           <div class="insight-label">Travel Span</div>
-          <div class="insight-sublabel">${firstYear} - ${lastYear}</div>
+          <div class="insight-sublabel">${firstYear} – ${lastYear}</div>
         </div>
         <div class="insight-card">
           <div class="insight-value">${mostActiveYear}</div>
@@ -2886,15 +2916,20 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         ` : `
         <div class="insight-card">
-          <div class="insight-value">${postsPerMonth}</div>
-          <div class="insight-label">Posts/Month</div>
-          <div class="insight-sublabel">Average</div>
+          <div class="insight-value">${travelIntensity}</div>
+          <div class="insight-label">Travel Intensity</div>
+          <div class="insight-sublabel">Posts/Month</div>
         </div>
         `}
         <div class="insight-card">
+          <div class="insight-value">${totalContinents.size}</div>
+          <div class="insight-label">Continents</div>
+          <div class="insight-sublabel">Explored</div>
+        </div>
+        <div class="insight-card">
           <div class="insight-value">${(uniqueCountries.length / years.length).toFixed(1)}</div>
           <div class="insight-label">Countries/Year</div>
-          <div class="insight-sublabel">Average rate</div>
+          <div class="insight-sublabel">Average Rate</div>
         </div>
       </div>
     `;
@@ -2945,9 +2980,9 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     `;
     
-    // Update DOM
+    // Update DOM - Remove countries section
     document.getElementById('travel-insights').innerHTML = insightsHTML;
-    document.getElementById('countries-visited').innerHTML = countriesHTML;
+    document.getElementById('countries-visited').innerHTML = ''; // Remove countries section
     document.getElementById('travel-timeline-viz').innerHTML = timelineHTML;
     
   }, 100);

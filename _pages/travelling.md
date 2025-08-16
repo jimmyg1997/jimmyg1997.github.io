@@ -2556,14 +2556,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="travel-timeline-section" style="margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #001f3f;">
   <div style="text-align: center; margin-bottom: 1.5rem;">
-    <h3 style="color: #001f3f; margin-bottom: 0.5rem; font-size: 1.3rem;">🗓️ Journey Summary</h3>
+    <h3 style="color: #001f3f; margin-bottom: 0.5rem; font-size: 1.3rem;">🗓️ Journey by Year</h3>
   </div>
   
   <div id="travel-summary-stats" style="margin-bottom: 1.5rem;">
-    <!-- Stats will be populated by JavaScript -->
+    <!-- Different stats will be populated by JavaScript -->
   </div>
   
-  <div id="horizontal-timeline" style="position: relative;">
+  <div id="yearly-timeline" style="position: relative;">
     <!-- Timeline will be populated by JavaScript -->
   </div>
 </div>
@@ -2583,11 +2583,11 @@ document.addEventListener('DOMContentLoaded', function() {
   padding: 0.8rem 1.2rem;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  min-width: 80px;
+  min-width: 100px;
 }
 
 .stat-number {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #001f3f;
 }
@@ -2598,114 +2598,129 @@ document.addEventListener('DOMContentLoaded', function() {
   margin-top: 0.2rem;
 }
 
-.horizontal-timeline {
+.yearly-timeline {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 1rem;
   overflow-x: auto;
   padding: 1rem 0;
+  justify-content: center;
 }
 
-.timeline-dot {
+.year-bubble {
   position: relative;
-  min-width: 60px;
   text-align: center;
+  min-width: 120px;
   cursor: pointer;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  background: #001f3f;
-  border-radius: 50%;
-  margin: 0 auto 0.5rem;
-  border: 3px solid white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
-.timeline-dot:hover .dot {
-  transform: scale(1.3);
-  background: #0074D9;
+.year-bubble:hover {
+  transform: translateY(-3px);
 }
 
-.timeline-line {
-  height: 2px;
-  background: #ddd;
-  flex-grow: 1;
-  min-width: 20px;
-}
-
-.dot-info {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #001f3f;
+.bubble {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 3px solid white;
+  transition: all 0.3s ease;
+}
+
+.year-bubble:hover .bubble {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transform: scale(1.05);
+}
+
+.bubble-year {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.bubble-count {
   font-size: 0.7rem;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  margin-bottom: 0.5rem;
+  opacity: 0.9;
 }
 
-.timeline-dot:hover .dot-info {
-  opacity: 1;
+.countries-flags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  max-width: 100px;
 }
 
-.dot-info::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 4px solid transparent;
-  border-top-color: #001f3f;
+.country-flag {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
 }
 
-.dot-date {
-  font-size: 0.7rem;
-  color: #666;
-  margin-top: 0.3rem;
+.country-flag:hover {
+  transform: scale(1.3);
 }
 
-.country-list {
+.timeline-connector {
+  height: 2px;
+  background: linear-gradient(to right, #ddd, #001f3f, #ddd);
+  align-self: center;
+  margin-top: 40px;
+  flex-grow: 1;
+  min-width: 30px;
+}
+
+.most-visited {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid #ddd;
 }
 
-.country-tag {
+.favorite-destination {
   display: inline-block;
-  background: white;
-  border: 1px solid #ddd;
-  padding: 0.2rem 0.6rem;
+  background: linear-gradient(135deg, #001f3f, #0074D9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
   margin: 0.2rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  color: #555;
 }
 
 @media (max-width: 768px) {
-  .summary-stats {
-    gap: 1rem;
+  .yearly-timeline {
+    gap: 0.5rem;
+    justify-content: flex-start;
   }
   
-  .stat-box {
-    padding: 0.6rem 1rem;
+  .year-bubble {
+    min-width: 100px;
   }
   
-  .horizontal-timeline {
-    gap: 0.3rem;
+  .bubble {
+    width: 60px;
+    height: 60px;
   }
   
-  .timeline-dot {
-    min-width: 50px;
+  .bubble-year {
+    font-size: 0.9rem;
+  }
+  
+  .countries-flags {
+    max-width: 80px;
+  }
+  
+  .country-flag {
+    font-size: 1rem;
   }
 }
 </style>
@@ -2719,73 +2734,125 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const posts = window.myTravelPosts;
-    const sortedPosts = [...posts].sort((a, b) => a.date.localeCompare(b.date)); // Oldest first for timeline
-    
-    // Calculate stats
-    const countries = [...new Set(posts.map(post => post.country))];
-    const cities = [...new Set(posts.map(post => post.city))];
-    
-    // Format date
-    function formatDate(dateStr) {
-      const [year, month] = dateStr.split('-');
-      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-      return `${monthNames[parseInt(month) - 1]} ${year}`;
-    }
     
     function getCountryFlag(country) {
       const flags = {
         'Vietnam': '🇻🇳', 'Greece': '🇬🇷', 'Poland': '🇵🇱', 'France': '🇫🇷',
-        'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Germany': '🇩🇪'
+        'Italy': '🇮🇹', 'Spain': '🇪🇸', 'Germany': '🇩🇪', 'Thailand': '🇹🇭',
+        'Japan': '🇯🇵', 'USA': '🇺🇸', 'UK': '🇬🇧', 'Netherlands': '🇳🇱'
       };
-      return flags[country] || '📍';
+      return flags[country] || '🌍';
     }
     
-    // Generate stats HTML
+    // Group posts by year and get unique countries per year
+    const yearlyData = {};
+    posts.forEach(post => {
+      const year = post.date.split('-')[0];
+      if (!yearlyData[year]) {
+        yearlyData[year] = {
+          countries: new Set(),
+          posts: 0
+        };
+      }
+      yearlyData[year].countries.add(post.country);
+      yearlyData[year].posts++;
+    });
+    
+    // Convert to array and sort by year
+    const sortedYears = Object.keys(yearlyData).sort();
+    
+    // Calculate different stats (not duplicating the map stats)
+    const allCountries = [...new Set(posts.map(post => post.country))];
+    const totalYears = sortedYears.length;
+    const avgCountriesPerYear = totalYears > 0 ? (allCountries.length / totalYears).toFixed(1) : 0;
+    
+    // Find most visited region/continent (simplified)
+    const continents = {
+      'Europe': ['Greece', 'Poland', 'France', 'Italy', 'Spain', 'Germany', 'Netherlands', 'UK'],
+      'Asia': ['Vietnam', 'Thailand', 'Japan'],
+      'Americas': ['USA'],
+    };
+    
+    let continentCounts = {};
+    allCountries.forEach(country => {
+      for (let continent in continents) {
+        if (continents[continent].includes(country)) {
+          continentCounts[continent] = (continentCounts[continent] || 0) + 1;
+        }
+      }
+    });
+    
+    const favContinent = Object.keys(continentCounts).reduce((a, b) => 
+      continentCounts[a] > continentCounts[b] ? a : b, 'World'
+    );
+    
+    // Generate different stats HTML
     const statsHTML = `
       <div class="summary-stats">
         <div class="stat-box">
-          <div class="stat-number">${countries.length}</div>
-          <div class="stat-label">Countries</div>
+          <div class="stat-number">${totalYears}</div>
+          <div class="stat-label">Travel Years</div>
         </div>
         <div class="stat-box">
-          <div class="stat-number">${cities.length}</div>
-          <div class="stat-label">Cities</div>
+          <div class="stat-number">${avgCountriesPerYear}</div>
+          <div class="stat-label">Countries/Year</div>
         </div>
         <div class="stat-box">
-          <div class="stat-number">${posts.length}</div>
-          <div class="stat-label">Posts</div>
+          <div class="stat-number">${favContinent}</div>
+          <div class="stat-label">Fav Region</div>
         </div>
       </div>
     `;
     
     // Generate timeline HTML
     const timelineHTML = `
-      <div class="horizontal-timeline">
-        ${sortedPosts.map((post, index) => {
+      <div class="yearly-timeline">
+        ${sortedYears.map((year, index) => {
+          const yearData = yearlyData[year];
+          const countries = Array.from(yearData.countries);
+          
           return `
-            <div class="timeline-dot">
-              <div class="dot-info">${getCountryFlag(post.country)} ${post.city}</div>
-              <div class="dot"></div>
-              <div class="dot-date">${formatDate(post.date)}</div>
+            <div class="year-bubble" title="${countries.join(', ')}">
+              <div class="bubble">
+                <div class="bubble-year">${year}</div>
+                <div class="bubble-count">${countries.length} countries</div>
+              </div>
+              <div class="countries-flags">
+                ${countries.map(country => 
+                  `<span class="country-flag" title="${country}">${getCountryFlag(country)}</span>`
+                ).join('')}
+              </div>
             </div>
-            ${index < sortedPosts.length - 1 ? '<div class="timeline-line"></div>' : ''}
+            ${index < sortedYears.length - 1 ? '<div class="timeline-connector"></div>' : ''}
           `;
         }).join('')}
       </div>
     `;
     
-    // Generate country list
-    const countriesHTML = `
-      <div class="country-list">
-        ${countries.map(country => 
-          `<span class="country-tag">${getCountryFlag(country)} ${country}</span>`
+    // Most visited countries section
+    const countryFrequency = {};
+    posts.forEach(post => {
+      countryFrequency[post.country] = (countryFrequency[post.country] || 0) + 1;
+    });
+    
+    const topCountries = Object.entries(countryFrequency)
+      .sort(([,a], [,b]) => b - a)
+      .slice(0, 3);
+    
+    const favoritesHTML = `
+      <div class="most-visited">
+        <div style="color: #666; font-size: 0.9rem; margin-bottom: 0.8rem;">Most Posted About:</div>
+        ${topCountries.map(([country, count]) => 
+          `<span class="favorite-destination">
+            ${getCountryFlag(country)} ${country} (${count})
+          </span>`
         ).join('')}
       </div>
     `;
     
     // Update DOM
     document.getElementById('travel-summary-stats').innerHTML = statsHTML;
-    document.getElementById('horizontal-timeline').innerHTML = timelineHTML + countriesHTML;
+    document.getElementById('yearly-timeline').innerHTML = timelineHTML + favoritesHTML;
     
   }, 100);
 });

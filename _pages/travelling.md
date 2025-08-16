@@ -2971,7 +2971,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update DOM - Remove countries section
     document.getElementById('travel-insights').innerHTML = insightsHTML;
-    document.getElementById('countries-visited').innerHTML = ''; // Remove countries section
     document.getElementById('travel-timeline-viz').innerHTML = timelineHTML;
     
   }, 100);

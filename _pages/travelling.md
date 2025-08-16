@@ -2337,6 +2337,67 @@ document.addEventListener('DOMContentLoaded', function() {
       city: "Da Bia",
       country: "Vietnam"
     },
+    {
+      lat: 50.0481,
+      lng: 19.9846,
+      title: "Time to TRAVEL | Tauron Arena, Kraków",
+      description: "Aerial drone footage over Tauron Arena in Kraków, Poland, drifting towards the lush park that surrounds the area. The video captures the vibrant park vibes: a picturesque little lake, walking paths weaving through a sea of green, and a variety of recreational spaces. The scenery feels calm, green, and urban—perfect for summer relaxation and outdoor activity. The accompanying caption celebrates the park’s ‘motion, contrast, and space,’ highlighting urban nature with sky views and inviting paths.",
+      date: "2025.06",
+      instagramPostId: "DMtgknzI8Ex",
+      instagramUrl: "https://www.instagram.com/p/DMtgknzI8Ex/",
+      city: "Kraków",
+      country: "Poland"
+    },
+    {
+      lat: 1.3009,
+      lng: 103.8588,
+      title: "Haji Ln, Singapore",
+      description: "Haji Lane is one of Singapore’s most iconic streets, known for its vibrant street art, indie boutiques, and lively bars. The spot buzzes with a chill, musical atmosphere—street tunes floating in the air, drinks in hand, and local culture all around. A standout moment: while relaxing with a beer, a spontaneous group of ~20 golfers launched into an energetic, off-key singalong of 'I’m in love with the shape of you,' filling the lane with their laughter and good vibes. Haji Lane radiates unforgettable energy, commitment, and local charm.",
+      date: "2025.08",
+      instagramPostId: "DMtkomTIR2R",
+      instagramUrl: "https://www.instagram.com/p/DMtkomTIR2R/",
+      city: "Singapore",
+      country: "Singapore"
+    },
+    {
+      lat: 20.6800,
+      lng: 105.2520,
+      title: "Hearty Meals | MyQuestVietnam",
+      description: "Food memories from the MyQuestVietnam experience in Da Bia Village, Vietnam. The local guesthouse keepers prepared most of the meals, serving up delicious dishes packed with flavor and comfort. Volunteers also joined in the kitchen, learning to make tamales and fresh spring rolls from the locals—a wholesome, hands-on cultural exchange. Lunch breaks became cherished rituals: everyone gathered to eat, chat, and unwind, often surprised by watermelon or other thoughtful treats. These meals brought the volunteer community together, adding warmth and gratitude to every busy workday.",
+      date: "2025.04",
+      instagramPostId: "DM07-L3s-sT",
+      instagramUrl: "https://www.instagram.com/p/DM07-L3s-sT/",
+      city: "Da Bia",
+      country: "Vietnam"
+    },
+    {
+      lat: 20.6600,
+      lng: 105.2520,
+      title: "Paper Workshop | From Plants to Paper",
+      description: "A memorable paper-making workshop deep in a Vietnamese village, witnessing the transformation of plant fibers into delicate sheets of paper—crafted entirely by hand and heart. The process includes soaking bark for days, boiling and softening, pounding into pulp, mixing with water, scooping onto bamboo screens, and pressing under the sun. Each step, precise and patient, is passed down through generations, reflecting the rhythmic flow and pride of the village. The experience reveals the beauty and artistry behind everyday items, showing how powerful stories can be found in simple things like paper.",
+      date: "2025.08",
+      instagramPostId: "DM09MDNMGkv",
+      instagramUrl: "https://www.instagram.com/p/DM09MDNMGkv/",
+      city: "Da Bia",
+      country: "Vietnam"
+    },
+    {
+      lat: 39.9730,
+      lng: 20.7284,
+      title: "Hidden Gem in Epirus: Papingo, Zagorochoria",
+      description: "Papingo in Zagorochoria, Epirus, is a stunning mountain village renowned for its stone-built houses, alpine vistas, and pure nature. Surrounded by dramatic views of Vikos Gorge, it's perfect for hiking, slow-paced relaxation, and taking in soul-refreshing scenery. The vibe is peaceful and authentic, making it one of the best spots to experience Greece's pristine mountainous beauty. Highly recommended for your Greece bucket list.",
+      date: "2025.05",
+      instagramPostId: "DNDipHos2oO",
+      instagramUrl: "https://www.instagram.com/p/DNDipHos2oO/",
+      city: "Papingo",
+      country: "Greece"
+    }
+
+
+
+
+
+
 
 
 

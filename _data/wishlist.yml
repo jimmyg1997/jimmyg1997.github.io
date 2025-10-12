@@ -147,7 +147,8 @@
   category: tech
   description: "Advanced coding AI assistant subscription"
   link: "https://www.cursor.com/pricing"
-  bought: false
+  bought: true
+  date_bought: "2025-09"
   image: "../assets/images/wishlist/cursor-pro.png"
 
 - name: "Bag Hangers"

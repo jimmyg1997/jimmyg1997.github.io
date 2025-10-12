@@ -97,6 +97,30 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   </div>
 </div>
 
+<div class="project-card" id="ecog-video-analysis">
+  <h3 id="ecog-video-analysis">🏆 ECoG Video Analysis - 1st Place Winner</h3>
+  <div class="project-content">
+    <div class="project-details">
+      <img src="../assets/images/projects/ecog-video-analysis.png" alt="ECoG Video Analysis - BCI Competition Winner" class="project-image">
+      <div class="project-text">
+        <p>🧠 <strong>1st Place Winner</strong> in the Data Analysis category at the Brain ECoG Hackathon among 69 teams and 404 participants from over 50 countries! 🌍</p>
+        <p>Advanced neural decoding pipeline for analyzing ECoG data with real-time video synchronization, interactive 3D brain visualizations, and state-of-the-art machine learning models achieving 89.6% accuracy in 7-class visual stimulus classification.</p>
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>160-channel ECoG + 252 video trials with advanced artifact removal</li>
+          <li>Multiple ML approaches: CSP-LDA, EEGNet, transformers</li>
+          <li>Real-time video annotation with multi-region brain overlays</li>
+          <li>Interactive web application with live brain-video playback</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/jimmyg1997/ecog-video-analysis" class="btn btn--primary" target="_blank">View on GitHub</a>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7381093095079178240/" class="btn btn--primary" target="_blank">LinkedIn Post</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ## Non-coding Projects {#non-coding-projects}
 

@@ -13,15 +13,17 @@
   </div>
 
   <div class="page__footer-visitor-minimal">
-    <span>Congrats, you are the <span id="visitor-count" class="visitor-number-minimal"> </span></span>
+    <span>Congrats, you are the <span id="visitor-count" class="visitor-number-minimal">loading...</span> visitor!</span>
     <script>
     fetch('https://api.countapi.xyz/hit/dimitriosgeorgiou.github.io/visits')
       .then(response => response.json())
       .then(data => {
         document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+      })
+      .catch(error => {
+        document.getElementById('visitor-count').textContent = '1,000+';
       });
     </script>
-    -th visitor!
   </div>
 
   <style>
@@ -37,7 +39,8 @@
     font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
     font-size: 1.08em;
     font-weight: 600;
-    color: #3a7bfd;
+    color: #ff8c00;
+    font-style: italic;
     background: none;
     border-radius: 4px;
     padding: 0 0.18em;

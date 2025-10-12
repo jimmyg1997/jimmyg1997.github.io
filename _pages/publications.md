@@ -97,6 +97,24 @@ header:
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288560720093310976/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
   </div>
 </div>
+<hr>
+
+<div class="publication-item">
+  <h3 id="hsbc-summer-school-2025">🎓 HSBC Summer School 2025 | Semi-supervised Machine Learning Project</h3>
+  <p class="publication-authors">Dimitrios Georgiou</p>
+  <p class="publication-venue"><em>HSBC Summer School 2025, Kraków</em>, 2025</p>
+  <p class="publication-abstract">
+    🎓 Presenting my team's <strong>semi-supervised Machine Learning (ML)</strong> project at the HSBC Summer School was an incredible experience — revisiting a project initially shared during our Academic Partnership with the University of Economics in Kraków, now in front of bachelor's, master's, and PhD students, graduates, and HSBC professionals. 🌍✨
+    
+    💬 What truly stood out was the level of engagement from the audience. Many participants provided thoughtful feedback after the session, and several, with genuine respect and curiosity, reached out to continue discussions. These conversations explored topics from AI and ML to LLMs, reflecting on the future we are shaping and the opportunities that lie ahead.
+    
+    💡 <strong>Key takeaways:</strong> Open dialogue enriches understanding. Every question sparks new perspectives. Technical knowledge is important, but clarity and approachability in presenting complex topics make the difference. Creating spaces for meaningful interaction encourages future collaborations and deeper exploration of technology's impact.
+  </p>
+  <img src="../assets/images/publications/2025_hsbc_summer_school.png" alt="HSBC Summer School 2025 Presentation">
+  <div class="publication-buttons">
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382460403420643329/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+  </div>
+</div>
 
 ## Industry Publications & Articles
 

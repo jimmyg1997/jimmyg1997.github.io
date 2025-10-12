@@ -65,7 +65,7 @@ feature_row2:
   max-width: 900px;
   margin: 0 auto 0.7rem auto; /* even smaller bottom margin */
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.1em;
   font-weight: 500;
   color: #23272f;
   background: rgba(255,255,255,0.92);
@@ -142,7 +142,7 @@ h2, h3 {
   filter: drop-shadow(0 2px 6px rgba(58,123,253,0.13));
 }
 .now-content h3 {
-  font-size: 1.32em;
+  font-size: 1.2em;
   font-weight: 800;
   margin-bottom: 1.1em;
   letter-spacing: 0.01em;
@@ -159,7 +159,7 @@ h2, h3 {
   display: flex;
   flex-direction: column;
   gap: 0.65em;
-  font-size: 1.07em;
+  font-size: 0.95em;
   color: #23272f;
   align-items: flex-start;
   animation: fadeInList 1.2s cubic-bezier(0.4,0,0.2,1);
@@ -225,7 +225,7 @@ h2, h3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 1.08em;
+  font-size: 0.95em;
   background: rgba(245,250,255,0.97);
   border-radius: 9px;
   padding: 0.32em 0.7em 0.32em 0.7em;
@@ -263,7 +263,7 @@ h2, h3 {
   word-break: break-word;
 }
 .now-desc {
-  font-size: 1.08em;
+  font-size: 0.95em;
   color: #23272f;
   font-weight: 500;
   display: inline-block;
@@ -316,6 +316,7 @@ h2, h3 {
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <div class="now-timeline">
+      <div class="now-timeline-row"><span class="now-dot">🏆</span> <span class="now-date">2025.01</span> <span class="now-desc">1st Place Winner - Brain ECoG Hackathon (69 teams, 404 participants)</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.06 – Present</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>

@@ -240,6 +240,153 @@ excerpt: "Exploring the world one adventure at a time"
   }
 }
 
+/* Custom Instagram Gallery Styles */
+.instagram-feed {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.instagram-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.instagram-post {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.instagram-post:hover {
+  transform: translateY(-2px);
+}
+
+.instagram-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #efefef;
+}
+
+.instagram-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.instagram-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-user {
+  flex: 1;
+  text-align: left;
+}
+
+.instagram-user strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.instagram-user span {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.instagram-more {
+  font-size: 18px;
+  color: #262626;
+  cursor: pointer;
+}
+
+.instagram-image {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.instagram-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.instagram-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.instagram-icons span {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.instagram-icons span:hover {
+  transform: scale(1.1);
+}
+
+.instagram-save {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.instagram-likes {
+  padding: 0 12px 8px;
+  text-align: left;
+}
+
+.instagram-likes strong {
+  font-size: 14px;
+  color: #262626;
+}
+
+.instagram-caption {
+  padding: 0 12px 8px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #262626;
+}
+
+.instagram-caption strong {
+  font-weight: 600;
+}
+
+.instagram-time {
+  padding: 0 12px 12px;
+  text-align: left;
+  font-size: 12px;
+  color: #8e8e8e;
+  text-transform: uppercase;
+}
+
 @media (min-width: 900px) {
   .instagram-feed {
     max-width: 100%;
@@ -259,34 +406,13 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-post {
     flex: 1;
-    height: 500px;
-    margin: 0;
-    background: transparent;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     overflow: hidden;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-  }
-  .instagram-embed-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .instagram-embed-container iframe {
-    width: 100% !important;
-    height: 500px !important;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
+    transition: transform 0.2s ease;
   }
 }
 @media (max-width: 899px) and (min-width: 600px) {
@@ -328,34 +454,100 @@ excerpt: "Exploring the world one adventure at a time"
 
 <div class="instagram-feed">
   <div class="instagram-grid">
-    <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+      <div class="instagram-header">
+        <div class="instagram-avatar">
+          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
         </div>
-      </blockquote>
+        <div class="instagram-user">
+          <strong>dimiles.away</strong>
+          <span>Muzeum Sztuki i Tech</span>
+        </div>
+        <div class="instagram-more">⋯</div>
+      </div>
+      <div class="instagram-image">
+        <img src="/assets/images/travel/paris.jpg" alt="Paris travel" />
+      </div>
+      <div class="instagram-actions">
+        <div class="instagram-icons">
+          <span class="like-icon">♡</span>
+          <span class="comment-icon">💬</span>
+          <span class="share-icon">📤</span>
+        </div>
+        <div class="instagram-save">🔖</div>
+      </div>
+      <div class="instagram-likes">
+        <strong>234 likes</strong>
+      </div>
+      <div class="instagram-caption">
+        <strong>dimiles.away</strong> Exploring the beautiful streets of Paris! 🇫🇷 Every corner tells a story. #paris #travel #explore #wanderlust
+      </div>
+      <div class="instagram-time">3 HOURS AGO</div>
     </div>
-    <!-- Instagram Post 2 -->
+    
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DMDgGKJMEnE/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+      <div class="instagram-header">
+        <div class="instagram-avatar">
+          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
         </div>
-      </blockquote>
+        <div class="instagram-user">
+          <strong>dimiles.away</strong>
+          <span>Zakopane, Tatra Mountains</span>
+        </div>
+        <div class="instagram-more">⋯</div>
+      </div>
+      <div class="instagram-image">
+        <img src="/assets/images/travel/tatra.jpg" alt="Tatra Mountains" />
+      </div>
+      <div class="instagram-actions">
+        <div class="instagram-icons">
+          <span class="like-icon">♡</span>
+          <span class="comment-icon">💬</span>
+          <span class="share-icon">📤</span>
+        </div>
+        <div class="instagram-save">🔖</div>
+      </div>
+      <div class="instagram-likes">
+        <strong>189 likes</strong>
+      </div>
+      <div class="instagram-caption">
+        <strong>dimiles.away</strong> Breathtaking views from the Tatra Mountains! 🏔️ Nature never fails to amaze me. #tatramountains #nature #hiking #poland
+      </div>
+      <div class="instagram-time">1 DAY AGO</div>
     </div>
-    <!-- Instagram Post 3 -->
+    
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:320px; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+      <div class="instagram-header">
+        <div class="instagram-avatar">
+          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
         </div>
-      </blockquote>
+        <div class="instagram-user">
+          <strong>dimiles.away</strong>
+          <span>Amador Causeway, Panama City</span>
+        </div>
+        <div class="instagram-more">⋯</div>
+      </div>
+      <div class="instagram-image">
+        <img src="/assets/images/travel/panama.jpg" alt="Panama City" />
+      </div>
+      <div class="instagram-actions">
+        <div class="instagram-icons">
+          <span class="like-icon">♡</span>
+          <span class="comment-icon">💬</span>
+          <span class="share-icon">📤</span>
+        </div>
+        <div class="instagram-save">🔖</div>
+      </div>
+      <div class="instagram-likes">
+        <strong>312 likes</strong>
+      </div>
+      <div class="instagram-caption">
+        <strong>dimiles.away</strong> Scenic waterfront causeway in Panama City! 🌊 Perfect spot for sunset views and dining. #panama #causeway #sunset #travel
+      </div>
+      <div class="instagram-time">2 DAYS AGO</div>
     </div>
   </div>
 </div>
-
-<script async src="//www.instagram.com/embed.js"></script>
 <script>
   window.addEventListener('load', function() {
     if (typeof instgrm !== 'undefined') {

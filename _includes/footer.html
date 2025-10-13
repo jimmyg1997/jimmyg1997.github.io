@@ -222,55 +222,12 @@
   .social-link i {
     font-size: 0.9rem;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     width: 1em;
     height: 1em;
     text-align: center;
     vertical-align: middle;
-  }
-
-  /* AGGRESSIVE FontAwesome icon centering fix */
-  .social-link i::before {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    line-height: 1 !important;
-  }
-
-  .social-link i svg {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 100% !important;
-    height: 100% !important;
-    display: block !important;
-  }
-
-  /* Force centering for all FontAwesome icon types */
-  .social-link i.fab,
-  .social-link i.fas,
-  .social-link i.far,
-  .social-link i.fal,
-  .social-link i.fad {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    vertical-align: middle !important;
   }
 
   .social-link:nth-child(1) { background: #0077b5; color: white; }

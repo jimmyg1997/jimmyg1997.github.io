@@ -253,7 +253,7 @@ excerpt: "Exploring the world one adventure at a time"
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   background: transparent;
@@ -468,7 +468,7 @@ excerpt: "Exploring the world one adventure at a time"
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
     background: transparent;
@@ -499,7 +499,7 @@ excerpt: "Exploring the world one adventure at a time"
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     background: transparent;
     border-radius: 0;
@@ -514,7 +514,7 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 600px !important;
+    height: 800px !important;
   }
 }
 @media (max-width: 599px) {
@@ -540,7 +540,7 @@ excerpt: "Exploring the world one adventure at a time"
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -548,7 +548,7 @@ excerpt: "Exploring the world one adventure at a time"
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DMDgGKJMEnE/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DMDgGKJMEnE/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -556,7 +556,7 @@ excerpt: "Exploring the world one adventure at a time"
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>

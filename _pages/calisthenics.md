@@ -401,13 +401,17 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 .instagram-feed {
   margin: 2rem 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .instagram-grid {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 100%;
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   background: transparent;
   border-radius: 0;
@@ -425,6 +429,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease;
+  margin: 0 auto;
 }
 
 .instagram-post:hover {
@@ -612,12 +617,16 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-feed {
     max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .instagram-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
     background: transparent;
     border-radius: 0;
@@ -634,13 +643,21 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease;
+    margin: 0 auto;
   }
 }
 @media (max-width: 899px) and (min-width: 600px) {
+  .instagram-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .instagram-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 500px;
+    width: 100%;
     background: transparent;
     border-radius: 0;
     box-shadow: none;
@@ -650,10 +667,11 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-post {
     width: 100%;
     height: auto;
+    margin: 0 auto;
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 540px !important;
+    height: 600px !important;
   }
 }
 @media (max-width: 599px) {
@@ -735,7 +753,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -743,7 +761,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIEwq9Vs0qV/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>
@@ -751,7 +769,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     <div class="instagram-post">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
         <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=600&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:600px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
         </div>
       </blockquote>
     </div>

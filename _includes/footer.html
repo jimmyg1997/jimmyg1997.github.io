@@ -1,48 +1,49 @@
 <div class="page__footer-follow">
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-  <!-- Newsletter Section -->
-  <div class="footer-newsletter">
-    <div class="newsletter-container">
-      <h4>📧 Stay Updated</h4>
-      <p>Get notified about new projects, research insights, and professional updates.</p>
-      <div id="mc_embed_signup">
-        <form action="https://gmail.us3.list-manage.com/subscribe/post?u=c76a8e2ec2bd989affb9a074f&amp;id=4646542adb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c76a8e2ec2bd989affb9a074f_4646542adb" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Social Links & Visitor Counter -->
-  <div class="footer-content">
-    <div class="footer-social">
-      <h4>🔗 Connect</h4>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dimitriosgeorgiou/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/jimmyg1997/" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="mailto:dgeorgiou3@gmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+  <!-- Compact Footer Content -->
+  <div class="footer-main">
+    <div class="footer-left">
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dimitriosgeorgiou/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/jimmyg1997/" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          <a href="mailto:dgeorgiou3@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="footer-visitor">
-      <div class="visitor-counter">
-        <span class="visitor-label">You are visitor</span>
-        <span id="visitor-count" class="visitor-number">loading...</span>
-        <span class="visitor-suffix">🎉</span>
+    <div class="footer-center">
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us3.list-manage.com/subscribe/post?u=c76a8e2ec2bd989affb9a074f&amp;id=4646542adb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c76a8e2ec2bd989affb9a074f_4646542adb" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-visitor">
+        <div class="visitor-counter">
+          <span class="visitor-label">Visitor</span>
+          <span id="visitor-count" class="visitor-number">loading...</span>
+        </div>
       </div>
     </div>
   </div>
@@ -99,186 +100,196 @@
   </script>
 
   <style>
-  /* Professional Footer Styling - Compact & Narrow */
+  /* Ultra-Compact Professional Footer */
   .page__footer-follow {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-top: 1px solid #dee2e6;
-    padding: 1.5rem 0 1rem 0;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 0;
     margin-top: 2rem;
   }
 
-  .footer-newsletter {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  .newsletter-container h4 {
-    color: #001f3f;
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-    font-weight: 600;
-  }
-
-  .newsletter-container p {
-    color: #6c757d;
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-    line-height: 1.4;
-  }
-
-  #mc_embed_signup {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  #mc_embed_signup input[type="email"] {
-    width: 100%;
-    padding: 0.6rem 0.8rem;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
-    transition: border-color 0.3s ease;
-  }
-
-  #mc_embed_signup input[type="email"]:focus {
-    outline: none;
-    border-color: #001f3f;
-  }
-
-  #mc_embed_signup input[type="submit"] {
-    background: #001f3f;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    width: 100%;
-  }
-
-  #mc_embed_signup input[type="submit"]:hover {
-    background: #00346c;
-  }
-
-  .footer-content {
+  .footer-main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 1rem;
-    gap: 3rem;
+    gap: 2rem;
+  }
+
+  /* Left Section - Social Links */
+  .footer-left {
+    flex: 0 0 auto;
   }
 
   .footer-social h4 {
-    color: #001f3f;
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
+    color: #495057;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .social-links {
     display: flex;
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: #001f3f;
+    width: 28px;
+    height: 28px;
+    background: #6c757d;
     color: white;
-    border-radius: 50%;
+    border-radius: 4px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    font-size: 0.8rem;
   }
 
   .social-links a:hover {
-    background: #00346c;
+    background: #001f3f;
     transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(0, 31, 63, 0.3);
   }
 
-  .footer-visitor {
+  /* Center Section - Newsletter */
+  .footer-center {
+    flex: 1;
+    max-width: 250px;
+  }
+
+  .footer-newsletter h4 {
+    color: #495057;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     text-align: center;
+  }
+
+  #mc_embed_signup {
+    width: 100%;
+  }
+
+  #mc_embed_signup input[type="email"] {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+  }
+
+  #mc_embed_signup input[type="email"]:focus {
+    outline: none;
+    border-color: #001f3f;
+    box-shadow: 0 0 0 2px rgba(0, 31, 63, 0.1);
+  }
+
+  #mc_embed_signup input[type="submit"] {
+    background: #001f3f;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  #mc_embed_signup input[type="submit"]:hover {
+    background: #00346c;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 31, 63, 0.2);
+  }
+
+  /* Right Section - Visitor Counter */
+  .footer-right {
+    flex: 0 0 auto;
+    text-align: right;
   }
 
   .visitor-counter {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 0.2rem;
   }
 
   .visitor-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: #6c757d;
     font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
   .visitor-number {
     font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #ff8c00;
     font-style: italic;
-    text-shadow: 0 1px 2px rgba(255, 140, 0, 0.3);
-  }
-
-  .visitor-suffix {
-    font-size: 1rem;
   }
 
   /* Mobile Responsive */
   @media (max-width: 768px) {
-    .footer-content {
+    .footer-main {
       flex-direction: column;
+      gap: 1rem;
       text-align: center;
-      gap: 1.2rem;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: none;
+      width: 100%;
+    }
+
+    .footer-center {
       max-width: 100%;
     }
 
-    .footer-social {
-      order: 2;
+    .visitor-counter {
+      align-items: center;
     }
 
-    .footer-visitor {
-      order: 1;
+    .footer-right {
+      text-align: center;
     }
 
     .social-links {
       justify-content: center;
     }
-
-    .newsletter-container {
-      padding: 0 0.5rem;
-    }
-
-    #mc_embed_signup {
-      max-width: 280px;
-    }
   }
 
   @media (max-width: 480px) {
-    .footer-content {
-      gap: 1rem;
+    .footer-main {
+      gap: 0.8rem;
     }
-    
-    .social-links {
-      gap: 0.6rem;
-    }
-    
+
     .social-links a {
-      width: 28px;
-      height: 28px;
-      font-size: 0.8rem;
+      width: 26px;
+      height: 26px;
+      font-size: 0.7rem;
+    }
+
+    #mc_embed_signup input[type="email"],
+    #mc_embed_signup input[type="submit"] {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.6rem;
     }
   }
   </style>

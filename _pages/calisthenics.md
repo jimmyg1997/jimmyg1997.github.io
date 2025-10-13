@@ -213,14 +213,21 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   align-items: center;
   justify-content: center;
 }
-.instagram-embed-container iframe {
-  width: 320px !important;
-  height: 320px !important;
-  max-width: 100%;
-  max-height: 100%;
-  border: none;
-  display: block;
-  margin: 0 auto;
+/* Instagram blockquote styling for larger display */
+.instagram-media {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+.instagram-media iframe {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 600px !important;
+  max-height: 1000px !important;
+  border: none !important;
+  border-radius: 8px !important;
 }
 /* Instagram Feed Desktop Fix: 3 posts side by side, post fits inside square */
 @media (min-width: 700px) {
@@ -409,8 +416,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 .instagram-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 800px;
+  gap: 2rem;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background: transparent;
@@ -624,8 +631,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 800px;
+    gap: 2rem;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background: transparent;
@@ -655,8 +662,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 700px;
+    gap: 2rem;
+    max-width: 1000px;
     width: 100%;
     background: transparent;
     border-radius: 0;
@@ -669,9 +676,10 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     height: auto;
     margin: 0 auto;
   }
-  .instagram-embed-container iframe {
+  .instagram-media iframe {
     width: 100% !important;
-    height: 800px !important;
+    min-height: 700px !important;
+    max-height: 1000px !important;
   }
 }
 @media (max-width: 599px) {
@@ -751,26 +759,20 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGtlycKsmB9/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGtlycKsmB9/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DGtlycKsmB9/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIEwq9Vs0qV/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DIEwq9Vs0qV/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIEwq9Vs0qV/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DIEwq9Vs0qV/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
     <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DFKocpts1JU/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFKocpts1JU/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DFKocpts1JU/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
   </div>

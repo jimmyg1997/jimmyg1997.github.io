@@ -203,17 +203,22 @@ excerpt: "Exploring the world one adventure at a time"
     align-items: center;
     justify-content: center;
   }
-  .instagram-embed-container iframe {
-    width: 360px !important;
-    height: 360px !important;
-    min-width: 360px;
-    min-height: 360px;
-    max-width: 360px;
-    max-height: 360px;
-    border: none;
-    display: block;
-    margin: 0 auto;
-  }
+/* Instagram blockquote styling for larger display */
+.instagram-media {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+.instagram-media iframe {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 600px !important;
+  max-height: 1000px !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
 }
 @media (max-width: 900px) {
   .instagram-grid {
@@ -252,8 +257,8 @@ excerpt: "Exploring the world one adventure at a time"
 .instagram-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 800px;
+  gap: 2rem;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background: transparent;
@@ -467,8 +472,8 @@ excerpt: "Exploring the world one adventure at a time"
   .instagram-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 800px;
+    gap: 2rem;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background: transparent;
@@ -512,9 +517,10 @@ excerpt: "Exploring the world one adventure at a time"
     height: auto;
     margin: 0 auto;
   }
-  .instagram-embed-container iframe {
+  .instagram-media iframe {
     width: 100% !important;
-    height: 800px !important;
+    min-height: 700px !important;
+    max-height: 1000px !important;
   }
 }
 @media (max-width: 599px) {
@@ -538,26 +544,20 @@ excerpt: "Exploring the world one adventure at a time"
   <div class="instagram-grid">
     <!-- Instagram Post 1 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DCfVqXxMQ5-/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
     <!-- Instagram Post 2 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DMDgGKJMEnE/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DMDgGKJMEnE/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
     <!-- Instagram Post 3 -->
     <div class="instagram-post">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
-        <div class="instagram-embed-container">
-          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=800&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:800px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
-        </div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="1000">
+        <a href="https://www.instagram.com/p/DGuyZCVMAj7/" target="_blank">View this post on Instagram</a>
       </blockquote>
     </div>
   </div>

@@ -387,6 +387,70 @@ excerpt: "Exploring the world one adventure at a time"
   text-transform: uppercase;
 }
 
+/* Loading spinner */
+.instagram-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #8e8e8e;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3897f0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Instagram overlay for hover effect */
+.instagram-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-post:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+  background: white;
+  color: #3897f0;
+}
+
 @media (min-width: 900px) {
   .instagram-feed {
     max-width: 100%;
@@ -453,101 +517,164 @@ excerpt: "Exploring the world one adventure at a time"
 ## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
-  <div class="instagram-grid">
-    <div class="instagram-post">
-      <div class="instagram-header">
-        <div class="instagram-avatar">
-          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
-        </div>
-        <div class="instagram-user">
-          <strong>dimiles.away</strong>
-          <span>Muzeum Sztuki i Tech</span>
-        </div>
-        <div class="instagram-more">⋯</div>
-      </div>
-      <div class="instagram-image">
-        <img src="/assets/images/travel/paris.jpg" alt="Paris travel" />
-      </div>
-      <div class="instagram-actions">
-        <div class="instagram-icons">
-          <span class="like-icon">♡</span>
-          <span class="comment-icon">💬</span>
-          <span class="share-icon">📤</span>
-        </div>
-        <div class="instagram-save">🔖</div>
-      </div>
-      <div class="instagram-likes">
-        <strong>234 likes</strong>
-      </div>
-      <div class="instagram-caption">
-        <strong>dimiles.away</strong> Exploring the beautiful streets of Paris! 🇫🇷 Every corner tells a story. #paris #travel #explore #wanderlust
-      </div>
-      <div class="instagram-time">3 HOURS AGO</div>
-    </div>
-    
-    <div class="instagram-post">
-      <div class="instagram-header">
-        <div class="instagram-avatar">
-          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
-        </div>
-        <div class="instagram-user">
-          <strong>dimiles.away</strong>
-          <span>Zakopane, Tatra Mountains</span>
-        </div>
-        <div class="instagram-more">⋯</div>
-      </div>
-      <div class="instagram-image">
-        <img src="/assets/images/travel/tatra.jpg" alt="Tatra Mountains" />
-      </div>
-      <div class="instagram-actions">
-        <div class="instagram-icons">
-          <span class="like-icon">♡</span>
-          <span class="comment-icon">💬</span>
-          <span class="share-icon">📤</span>
-        </div>
-        <div class="instagram-save">🔖</div>
-      </div>
-      <div class="instagram-likes">
-        <strong>189 likes</strong>
-      </div>
-      <div class="instagram-caption">
-        <strong>dimiles.away</strong> Breathtaking views from the Tatra Mountains! 🏔️ Nature never fails to amaze me. #tatramountains #nature #hiking #poland
-      </div>
-      <div class="instagram-time">1 DAY AGO</div>
-    </div>
-    
-    <div class="instagram-post">
-      <div class="instagram-header">
-        <div class="instagram-avatar">
-          <img src="/assets/images/me/profile_v1.png" alt="Profile" />
-        </div>
-        <div class="instagram-user">
-          <strong>dimiles.away</strong>
-          <span>Amador Causeway, Panama City</span>
-        </div>
-        <div class="instagram-more">⋯</div>
-      </div>
-      <div class="instagram-image">
-        <img src="/assets/images/travel/panama.jpg" alt="Panama City" />
-      </div>
-      <div class="instagram-actions">
-        <div class="instagram-icons">
-          <span class="like-icon">♡</span>
-          <span class="comment-icon">💬</span>
-          <span class="share-icon">📤</span>
-        </div>
-        <div class="instagram-save">🔖</div>
-      </div>
-      <div class="instagram-likes">
-        <strong>312 likes</strong>
-      </div>
-      <div class="instagram-caption">
-        <strong>dimiles.away</strong> Scenic waterfront causeway in Panama City! 🌊 Perfect spot for sunset views and dining. #panama #causeway #sunset #travel
-      </div>
-      <div class="instagram-time">2 DAYS AGO</div>
+  <div class="instagram-grid" id="instagram-grid">
+    <!-- Instagram posts will be loaded here via API -->
+    <div class="instagram-loading">
+      <div class="loading-spinner"></div>
+      <p>Loading Instagram posts...</p>
     </div>
   </div>
 </div>
+
+<script>
+// Instagram API Integration with Custom Display
+document.addEventListener('DOMContentLoaded', function() {
+  const instagramGrid = document.getElementById('instagram-grid');
+  
+  // Instagram post URLs to fetch
+  const instagramPosts = [
+    'https://www.instagram.com/p/DCfVqXxMQ5-/',
+    'https://www.instagram.com/p/DMDgGKJMEnE/',
+    'https://www.instagram.com/p/DGuyZCVMAj7/'
+  ];
+  
+  // Function to create custom Instagram post element
+  function createInstagramPost(postData) {
+    const postElement = document.createElement('div');
+    postElement.className = 'instagram-post';
+    postElement.innerHTML = `
+      <div class="instagram-header">
+        <div class="instagram-avatar">
+          <img src="${postData.profile_pic || '/assets/images/me/profile_v1.png'}" alt="Profile" />
+        </div>
+        <div class="instagram-user">
+          <strong>${postData.username || 'dimiles.away'}</strong>
+          <span>${postData.location || 'Traveling'}</span>
+        </div>
+        <div class="instagram-more">⋯</div>
+      </div>
+      <div class="instagram-image">
+        <img src="${postData.media_url}" alt="${postData.caption || 'Instagram post'}" />
+        <div class="instagram-overlay">
+          <a href="${postData.permalink}" target="_blank" class="instagram-link">
+            <span>View on Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="instagram-actions">
+        <div class="instagram-icons">
+          <span class="like-icon">♡</span>
+          <span class="comment-icon">💬</span>
+          <span class="share-icon">📤</span>
+        </div>
+        <div class="instagram-save">🔖</div>
+      </div>
+      <div class="instagram-likes">
+        <strong>${postData.like_count || '0'} likes</strong>
+      </div>
+      <div class="instagram-caption">
+        <strong>${postData.username || 'dimiles.away'}</strong> ${postData.caption || 'Check out this travel post!'}
+      </div>
+      <div class="instagram-time">${postData.timestamp || 'RECENT'}</div>
+    `;
+    return postElement;
+  }
+  
+  // Function to fetch Instagram post data
+  async function fetchInstagramPost(postUrl) {
+    try {
+      // Use Instagram's oEmbed API to get post data
+      const response = await fetch(`https://graph.facebook.com/v18.0/instagram_oembed?url=${encodeURIComponent(postUrl)}&access_token=YOUR_ACCESS_TOKEN`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch Instagram data');
+      }
+      
+      const data = await response.json();
+      
+      // Extract data from oEmbed response
+      return {
+        media_url: data.thumbnail_url,
+        caption: data.title,
+        permalink: postUrl,
+        username: 'dimiles.away',
+        location: 'Traveling',
+        like_count: Math.floor(Math.random() * 500) + 50, // Simulated like count
+        timestamp: 'RECENT'
+      };
+    } catch (error) {
+      console.error('Error fetching Instagram post:', error);
+      // Fallback data
+      return {
+        media_url: '/assets/images/travel-header.png',
+        caption: 'Check out this travel post!',
+        permalink: postUrl,
+        username: 'dimiles.away',
+        location: 'Traveling',
+        like_count: 234,
+        timestamp: 'RECENT'
+      };
+    }
+  }
+  
+  // Load Instagram posts
+  async function loadInstagramPosts() {
+    try {
+      const posts = await Promise.all(
+        instagramPosts.map(postUrl => fetchInstagramPost(postUrl))
+      );
+      
+      // Clear loading state
+      instagramGrid.innerHTML = '';
+      
+      // Add posts to grid
+      posts.forEach(postData => {
+        const postElement = createInstagramPost(postData);
+        instagramGrid.appendChild(postElement);
+      });
+      
+    } catch (error) {
+      console.error('Error loading Instagram posts:', error);
+      // Show fallback content
+      instagramGrid.innerHTML = `
+        <div class="instagram-post">
+          <div class="instagram-header">
+            <div class="instagram-avatar">
+              <img src="/assets/images/me/profile_v1.png" alt="Profile" />
+            </div>
+            <div class="instagram-user">
+              <strong>dimiles.away</strong>
+              <span>Traveling</span>
+            </div>
+            <div class="instagram-more">⋯</div>
+          </div>
+          <div class="instagram-image">
+            <img src="/assets/images/travel-header.png" alt="Travel adventure" />
+          </div>
+          <div class="instagram-actions">
+            <div class="instagram-icons">
+              <span class="like-icon">♡</span>
+              <span class="comment-icon">💬</span>
+              <span class="share-icon">📤</span>
+            </div>
+            <div class="instagram-save">🔖</div>
+          </div>
+          <div class="instagram-likes">
+            <strong>234 likes</strong>
+          </div>
+          <div class="instagram-caption">
+            <strong>dimiles.away</strong> Exploring the world one destination at a time! 🌍 #travel #adventure #wanderlust
+          </div>
+          <div class="instagram-time">RECENT</div>
+        </div>
+      `;
+    }
+  }
+  
+  // Load posts when page loads
+  loadInstagramPosts();
+});
+</script>
 <script>
   window.addEventListener('load', function() {
     if (typeof instgrm !== 'undefined') {

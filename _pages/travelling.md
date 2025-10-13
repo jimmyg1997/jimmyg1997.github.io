@@ -242,19 +242,19 @@ excerpt: "Exploring the world one adventure at a time"
 
 @media (min-width: 900px) {
   .instagram-feed {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     max-width: 100%;
     margin: 0 auto;
   }
   .instagram-post {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 300px;
     margin: 0;
     background: #fff;
     border-radius: 8px;
@@ -275,8 +275,8 @@ excerpt: "Exploring the world one adventure at a time"
     justify-content: center;
   }
   .instagram-embed-container iframe {
-    width: 180px !important;
-    height: 180px !important;
+    width: 100% !important;
+    height: 300px !important;
     border: none;
     display: block;
     margin: 0 auto;
@@ -286,15 +286,17 @@ excerpt: "Exploring the world one adventure at a time"
 }
 @media (max-width: 899px) and (min-width: 600px) {
   .instagram-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .instagram-post {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
   }
   .instagram-embed-container iframe {
-    width: 200px !important;
-    height: 200px !important;
+    width: 100% !important;
+    height: 300px !important;
   }
 }
 @media (max-width: 599px) {

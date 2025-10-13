@@ -399,20 +399,20 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 
 @media (min-width: 900px) {
   .instagram-feed {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     max-width: 100%;
     margin: 0 auto;
   }
   .instagram-post {
-    width: 180px;
-    height: 180px;
-    max-width: none;
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
     min-width: 0;
     margin: 0;
     background: #fff;
@@ -436,8 +436,8 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
     justify-content: center;
   }
   .instagram-embed-container iframe {
-    width: 180px !important;
-    height: 180px !important;
+    width: 100% !important;
+    height: 300px !important;
     aspect-ratio: 1/1;
     min-width: 0;
     min-height: 0;
@@ -450,15 +450,17 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
 }
 @media (max-width: 899px) and (min-width: 600px) {
   .instagram-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .instagram-post {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
   }
   .instagram-embed-container iframe {
-    width: 200px !important;
-    height: 200px !important;
+    width: 100% !important;
+    height: 300px !important;
   }
 }
 @media (max-width: 599px) {

@@ -85,7 +85,6 @@ header:
 
 <div class="publication-item">
   <h3 id="complaints-classification-uek">Complaints Classification : Sentinment Analytics, Machine Learning to assess if customer queries should have been logged as complaint</h3>
-  <p class="publication-authors">Dimitrios Georgiou</p>
   <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, January 2025</p>
   <p class="publication-abstract">
 
@@ -101,14 +100,19 @@ header:
 
 <div class="publication-item">
   <h3 id="hsbc-summer-school-2025">🎓 HSBC Summer School 2025 | Semi-supervised Machine Learning Project</h3>
-  <p class="publication-authors">Dimitrios Georgiou</p>
+
   <p class="publication-venue"><em>HSBC Summer School 2025, Kraków</em>, 2025</p>
   <p class="publication-abstract">
-    🎓 Presenting my team's <strong>semi-supervised Machine Learning (ML)</strong> project at the HSBC Summer School was an incredible experience — revisiting a project initially shared during our Academic Partnership with the University of Economics in Kraków, now in front of bachelor's, master's, and PhD students, graduates, and HSBC professionals. 🌍✨
-    
-    💬 What truly stood out was the level of engagement from the audience. Many participants provided thoughtful feedback after the session, and several, with genuine respect and curiosity, reached out to continue discussions. These conversations explored topics from AI and ML to LLMs, reflecting on the future we are shaping and the opportunities that lie ahead.
-    
-    💡 <strong>Key takeaways:</strong> Open dialogue enriches understanding. Every question sparks new perspectives. Technical knowledge is important, but clarity and approachability in presenting complex topics make the difference. Creating spaces for meaningful interaction encourages future collaborations and deeper exploration of technology's impact.
+
+    🎓 Presented our semi-supervised ML project at HSBC Summer School
+
+    <ul> 
+      <li> Shared work with bachelor's, master's, and PhD students plus HSBC professionals 🌍</li>
+      <li> Audience engagement was exceptional—thoughtful questions and follow-up discussions ✨</li>
+      <li>Conversations ranged from AI/ML to LLMs and the future of technology 💡</li>
+      <li> Key insight: Clear communication and genuine dialogue matter as much as technical expertise 💬</li>
+    </ul>
+
   </p>
   <img src="../assets/images/publications/2025_hsbc_summer_school.png" alt="HSBC Summer School 2025 Presentation">
   <div class="publication-buttons">

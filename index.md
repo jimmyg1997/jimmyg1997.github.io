@@ -142,11 +142,12 @@ h2, h3 {
   filter: drop-shadow(0 2px 6px rgba(58,123,253,0.13));
 }
 .now-content h3 {
-  font-size: 1.2em;
-  font-weight: 800;
+  font-size: 1.1em;
+  font-weight: 700;
   margin-bottom: 1.1em;
   letter-spacing: 0.01em;
   color: #2a2d3a;
+  text-align: left;
   background: linear-gradient(90deg, #3a7bfd 30%, #00c6fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -216,28 +217,30 @@ h2, h3 {
 .now-timeline {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.4em;
   margin-top: 1.1em;
   align-items: flex-start;
   width: 100%;
+  text-align: left;
 }
 .now-timeline-row {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 0.95em;
+  font-size: 0.85em;
   background: rgba(245,250,255,0.97);
-  border-radius: 9px;
-  padding: 0.32em 0.7em 0.32em 0.7em;
-  box-shadow: 0 1px 4px rgba(58,123,253,0.04);
+  border-radius: 6px;
+  padding: 0.4em 0.8em 0.4em 0.8em;
+  box-shadow: 0 1px 3px rgba(58,123,253,0.06);
   font-weight: 500;
-  min-height: 2.1em;
+  min-height: 2.2em;
   position: relative;
   transition: background 0.18s, box-shadow 0.18s;
   border: 1px solid #e3e8f0;
-  margin-bottom: 0.15em;
+  margin-bottom: 0.1em;
   width: 100%;
   flex-wrap: wrap;
+  text-align: left;
 }
 .now-timeline-row:hover {
   background: rgba(230,245,255,1);
@@ -254,20 +257,23 @@ h2, h3 {
 }
 .now-date {
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.98em;
+  font-size: 0.8em;
   color: #3a7bfd;
   font-weight: 600;
   margin-right: 1.1em;
-  min-width: 8.5em;
+  min-width: 7.5em;
   display: inline-block;
   word-break: break-word;
+  text-align: left;
 }
 .now-desc {
-  font-size: 0.95em;
+  font-size: 0.85em;
   color: #23272f;
   font-weight: 500;
   display: inline-block;
   word-break: break-word;
+  text-align: left;
+  line-height: 1.3;
 }
 @media (max-width: 700px) {
   .now-timeline-row {
@@ -316,7 +322,7 @@ h2, h3 {
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <div class="now-timeline">
-      <div class="now-timeline-row"><span class="now-dot">🏆</span> <span class="now-date">2025.01</span> <span class="now-desc">1st Place Winner - Brain ECoG Hackathon (69 teams, 404 participants)</span></div>
+      <div class="now-timeline-row"><span class="now-dot">🏆</span> <span class="now-date">2025.09</span> <span class="now-desc">1st Place Winner - Brain ECoG Hackathon (69 teams, 404 participants)</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.06 – Present</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
       <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>

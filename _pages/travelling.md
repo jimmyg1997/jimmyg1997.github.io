@@ -248,19 +248,19 @@ excerpt: "Exploring the world one adventure at a time"
 
 .instagram-grid {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
   max-width: 100%;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 1rem;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .instagram-post {
-  flex: 1;
+  width: 100%;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -458,18 +458,18 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-grid {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
     max-width: 100%;
     margin: 0 auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 1rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
     box-sizing: border-box;
   }
   .instagram-post {
-    flex: 1;
+    width: 100%;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -482,21 +482,21 @@ excerpt: "Exploring the world one adventure at a time"
 @media (max-width: 899px) and (min-width: 600px) {
   .instagram-grid {
     display: flex;
-    flex-direction: row;
-    gap: 0.8rem;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 0.8rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
     box-sizing: border-box;
   }
   .instagram-post {
-    flex: 1;
-    height: 400px;
+    width: 100%;
+    height: auto;
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 400px !important;
+    height: 540px !important;
   }
 }
 @media (max-width: 599px) {
@@ -517,164 +517,35 @@ excerpt: "Exploring the world one adventure at a time"
 ## Instagram Feed {#instagram-feed}
 
 <div class="instagram-feed">
-  <div class="instagram-grid" id="instagram-grid">
-    <!-- Instagram posts will be loaded here via API -->
-    <div class="instagram-loading">
-      <div class="loading-spinner"></div>
-      <p>Loading Instagram posts...</p>
+  <div class="instagram-grid">
+    <!-- Instagram Post 1 -->
+    <div class="instagram-post">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DCfVqXxMQ5-/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DCfVqXxMQ5-/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+        </div>
+      </blockquote>
+    </div>
+    <!-- Instagram Post 2 -->
+    <div class="instagram-post">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DMDgGKJMEnE/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DMDgGKJMEnE/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+        </div>
+      </blockquote>
+    </div>
+    <!-- Instagram Post 3 -->
+    <div class="instagram-post">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGuyZCVMAj7/" data-instgrm-version="14" data-instgrm-width="100%">
+        <div class="instagram-embed-container">
+          <iframe src="https://www.instagram.com/p/DGuyZCVMAj7/embed/captioned/cr=1&v=14&wp=320&rd=https%3A%2F%2Fjimmyg1997.github.io" frameborder="0" scrolling="no" allowtransparency style="width:100%; height:540px; max-width:100%; max-height:100%; display:block; margin:0 auto;"></iframe>
+        </div>
+      </blockquote>
     </div>
   </div>
 </div>
 
-<script>
-// Instagram API Integration with Custom Display
-document.addEventListener('DOMContentLoaded', function() {
-  const instagramGrid = document.getElementById('instagram-grid');
-  
-  // Instagram post URLs to fetch
-  const instagramPosts = [
-    'https://www.instagram.com/p/DCfVqXxMQ5-/',
-    'https://www.instagram.com/p/DMDgGKJMEnE/',
-    'https://www.instagram.com/p/DGuyZCVMAj7/'
-  ];
-  
-  // Function to create custom Instagram post element
-  function createInstagramPost(postData) {
-    const postElement = document.createElement('div');
-    postElement.className = 'instagram-post';
-    postElement.innerHTML = `
-      <div class="instagram-header">
-        <div class="instagram-avatar">
-          <img src="${postData.profile_pic || '/assets/images/me/profile_v1.png'}" alt="Profile" />
-        </div>
-        <div class="instagram-user">
-          <strong>${postData.username || 'dimiles.away'}</strong>
-          <span>${postData.location || 'Traveling'}</span>
-        </div>
-        <div class="instagram-more">⋯</div>
-      </div>
-      <div class="instagram-image">
-        <img src="${postData.media_url}" alt="${postData.caption || 'Instagram post'}" />
-        <div class="instagram-overlay">
-          <a href="${postData.permalink}" target="_blank" class="instagram-link">
-            <span>View on Instagram</span>
-          </a>
-        </div>
-      </div>
-      <div class="instagram-actions">
-        <div class="instagram-icons">
-          <span class="like-icon">♡</span>
-          <span class="comment-icon">💬</span>
-          <span class="share-icon">📤</span>
-        </div>
-        <div class="instagram-save">🔖</div>
-      </div>
-      <div class="instagram-likes">
-        <strong>${postData.like_count || '0'} likes</strong>
-      </div>
-      <div class="instagram-caption">
-        <strong>${postData.username || 'dimiles.away'}</strong> ${postData.caption || 'Check out this travel post!'}
-      </div>
-      <div class="instagram-time">${postData.timestamp || 'RECENT'}</div>
-    `;
-    return postElement;
-  }
-  
-  // Function to fetch Instagram post data
-  async function fetchInstagramPost(postUrl) {
-    try {
-      // Use Instagram's oEmbed API to get post data
-      const response = await fetch(`https://graph.facebook.com/v18.0/instagram_oembed?url=${encodeURIComponent(postUrl)}&access_token=YOUR_ACCESS_TOKEN`);
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch Instagram data');
-      }
-      
-      const data = await response.json();
-      
-      // Extract data from oEmbed response
-      return {
-        media_url: data.thumbnail_url,
-        caption: data.title,
-        permalink: postUrl,
-        username: 'dimiles.away',
-        location: 'Traveling',
-        like_count: Math.floor(Math.random() * 500) + 50, // Simulated like count
-        timestamp: 'RECENT'
-      };
-    } catch (error) {
-      console.error('Error fetching Instagram post:', error);
-      // Fallback data
-      return {
-        media_url: '/assets/images/travel-header.png',
-        caption: 'Check out this travel post!',
-        permalink: postUrl,
-        username: 'dimiles.away',
-        location: 'Traveling',
-        like_count: 234,
-        timestamp: 'RECENT'
-      };
-    }
-  }
-  
-  // Load Instagram posts
-  async function loadInstagramPosts() {
-    try {
-      const posts = await Promise.all(
-        instagramPosts.map(postUrl => fetchInstagramPost(postUrl))
-      );
-      
-      // Clear loading state
-      instagramGrid.innerHTML = '';
-      
-      // Add posts to grid
-      posts.forEach(postData => {
-        const postElement = createInstagramPost(postData);
-        instagramGrid.appendChild(postElement);
-      });
-      
-    } catch (error) {
-      console.error('Error loading Instagram posts:', error);
-      // Show fallback content
-      instagramGrid.innerHTML = `
-        <div class="instagram-post">
-          <div class="instagram-header">
-            <div class="instagram-avatar">
-              <img src="/assets/images/me/profile_v1.png" alt="Profile" />
-            </div>
-            <div class="instagram-user">
-              <strong>dimiles.away</strong>
-              <span>Traveling</span>
-            </div>
-            <div class="instagram-more">⋯</div>
-          </div>
-          <div class="instagram-image">
-            <img src="/assets/images/travel-header.png" alt="Travel adventure" />
-          </div>
-          <div class="instagram-actions">
-            <div class="instagram-icons">
-              <span class="like-icon">♡</span>
-              <span class="comment-icon">💬</span>
-              <span class="share-icon">📤</span>
-            </div>
-            <div class="instagram-save">🔖</div>
-          </div>
-          <div class="instagram-likes">
-            <strong>234 likes</strong>
-          </div>
-          <div class="instagram-caption">
-            <strong>dimiles.away</strong> Exploring the world one destination at a time! 🌍 #travel #adventure #wanderlust
-          </div>
-          <div class="instagram-time">RECENT</div>
-        </div>
-      `;
-    }
-  }
-  
-  // Load posts when page loads
-  loadInstagramPosts();
-});
-</script>
+<script async src="//www.instagram.com/embed.js"></script>
 <script>
   window.addEventListener('load', function() {
     if (typeof instgrm !== 'undefined') {

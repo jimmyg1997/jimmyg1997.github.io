@@ -129,15 +129,15 @@
   }
 
   .footer-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 
   .footer-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
     align-items: center;
   }
 
@@ -239,7 +239,7 @@
   /* Newsletter Section */
   .newsletter-form {
     width: 100%;
-    max-width: 450px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -251,6 +251,8 @@
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .input-group:focus-within {
@@ -261,11 +263,12 @@
   .input-group input {
     flex: 1;
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem;
     font-size: 1rem;
     background: transparent;
     outline: none;
     min-width: 0;
+    box-sizing: border-box;
   }
 
   .input-group input::placeholder {
@@ -275,7 +278,7 @@
   .subscribe-btn {
     background: linear-gradient(135deg, #001f3f, #00346c);
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -283,6 +286,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-sizing: border-box;
   }
 
   .subscribe-btn:hover {
@@ -339,7 +343,7 @@
     }
 
     .newsletter-form {
-      max-width: 450px;
+      max-width: 100%;
     }
   }
 

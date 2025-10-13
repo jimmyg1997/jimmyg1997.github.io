@@ -259,7 +259,7 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-post {
     flex: 1;
-    height: 300px;
+    height: 500px;
     margin: 0;
     background: transparent;
     border-radius: 8px;
@@ -281,7 +281,7 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 300px !important;
+    height: 500px !important;
     border: none;
     display: block;
     margin: 0 auto;
@@ -302,11 +302,11 @@ excerpt: "Exploring the world one adventure at a time"
   }
   .instagram-post {
     flex: 1;
-    height: 250px;
+    height: 400px;
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 250px !important;
+    height: 400px !important;
   }
 }
 @media (max-width: 599px) {

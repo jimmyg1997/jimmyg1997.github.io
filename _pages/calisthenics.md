@@ -416,7 +416,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   }
   .instagram-post {
     flex: 1;
-    height: 300px;
+    height: 500px;
     max-width: none;
     min-width: 0;
     margin: 0;
@@ -434,7 +434,6 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   .instagram-embed-container {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1/1;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -442,8 +441,7 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 300px !important;
-    aspect-ratio: 1/1;
+    height: 500px !important;
     min-width: 0;
     min-height: 0;
     max-width: 100%;
@@ -466,11 +464,11 @@ excerpt: "Documenting my fitness journey, workout progress, and nutritional insi
   }
   .instagram-post {
     flex: 1;
-    height: 250px;
+    height: 400px;
   }
   .instagram-embed-container iframe {
     width: 100% !important;
-    height: 250px !important;
+    height: 400px !important;
   }
 }
 @media (max-width: 599px) {

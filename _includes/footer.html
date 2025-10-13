@@ -233,6 +233,16 @@
     vertical-align: middle;
   }
 
+  /* Fix FontAwesome SVG centering */
+  .social-link i svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
   .social-link:nth-child(1) { background: #0077b5; color: white; }
   .social-link:nth-child(2) { background: #333; color: white; }
   .social-link:nth-child(3) { background: #4285f4; color: white; }
@@ -247,20 +257,20 @@
   /* Newsletter Section */
   .footer-newsletter {
     flex: 1;
-    max-width: 400px;
+    max-width: 1600px;
     margin: 0 auto;
   }
 
   .newsletter-input-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: #ffffff;
     border: 1px solid #d1d5db;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    min-height: 200px;
+    height: 300px;
   }
 
   .newsletter-input-group:focus-within {
@@ -273,11 +283,11 @@
     flex: 1;
     border: none;
     padding: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     background: transparent;
     outline: none;
     color: #374151;
-    border-bottom: 1px solid #e5e7eb;
+    border-right: 1px solid #e5e7eb;
   }
 
   .newsletter-input-group input::placeholder {
@@ -287,7 +297,7 @@
   .newsletter-btn {
     background: linear-gradient(135deg, #001f3f, #00346c);
     border: none;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -296,10 +306,11 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    min-width: 200px;
   }
 
   .newsletter-btn::before {
@@ -324,7 +335,7 @@
   }
 
   .newsletter-btn i {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-right: 0.5rem;
   }
 

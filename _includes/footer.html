@@ -179,17 +179,12 @@
   .social-link i {
     font-size: 0.9rem;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     line-height: 1;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+    display: block;
   }
 
   .social-link:nth-child(1) { background: #0077b5; color: white; }
@@ -206,7 +201,7 @@
   /* Newsletter Section */
   .footer-newsletter {
     flex: 1;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -229,8 +224,8 @@
   .newsletter-input-group input {
     flex: 1;
     border: none;
-    padding: 0.6rem 1rem;
-    font-size: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
     background: transparent;
     outline: none;
     color: #374151;
@@ -243,7 +238,7 @@
   .newsletter-btn {
     background: linear-gradient(135deg, #001f3f, #00346c);
     border: none;
-    padding: 0.6rem 1rem;
+    padding: 1rem 1.5rem;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -276,7 +271,7 @@
   }
 
   .newsletter-btn i {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   /* Stats & Info Section */

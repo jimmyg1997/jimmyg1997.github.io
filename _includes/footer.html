@@ -1,12 +1,11 @@
 <div class="page__footer-follow">
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-  <!-- Elegant Modern Footer -->
+  <!-- Minimal Elegant Footer -->
   <div class="footer-main">
     <div class="footer-content">
       <!-- Social Links -->
       <div class="footer-social">
-        <h4>Connect</h4>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/dimitriosgeorgiou/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
@@ -20,15 +19,17 @@
           <a href="mailto:dgeorgiou3@gmail.com" class="social-link" title="Email">
             <i class="fas fa-envelope"></i>
           </a>
+          <a href="https://twitter.com/dimitriosgeo" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
       </div>
 
       <!-- Newsletter -->
       <div class="footer-newsletter">
-        <h4>Stay Updated</h4>
         <form action="https://gmail.us3.list-manage.com/subscribe/post?u=c76a8e2ec2bd989affb9a074f&amp;id=4646542adb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="newsletter-input-group">
-            <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Enter your email" required>
+            <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Subscribe to updates" required>
             <button type="submit" class="newsletter-btn">
               <i class="fas fa-paper-plane"></i>
             </button>
@@ -37,11 +38,14 @@
         </form>
       </div>
 
-      <!-- Visitor Counter -->
-      <div class="footer-visitor">
-        <h4>Visitor</h4>
+      <!-- Stats & Info -->
+      <div class="footer-stats">
         <div class="visitor-counter">
           <span class="visitor-text">You are the <span class="visitor-number" id="visitor-count">loading...</span>-th visitor</span>
+        </div>
+        <div class="footer-meta">
+          <span class="meta-item">📍 Athens, Greece</span>
+          <span class="meta-item">🕒 Last updated: {{ site.time | date: '%B %Y' }}</span>
         </div>
       </div>
     </div>
@@ -99,25 +103,25 @@
     </script>
 
   <style>
-  /* Elegant Modern Footer */
+  /* Minimal Elegant Footer */
   .page__footer-follow {
-    background: #ffffff;
-    border-top: 1px solid #f0f0f0;
-    padding: 2rem 0;
+    background: #fafafa;
+    border-top: 1px solid #e8e8e8;
+    padding: 1.5rem 0;
     margin-top: 3rem;
   }
 
   .footer-main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 3rem;
+    align-items: center;
+    gap: 2rem;
   }
 
   /* Social Section */
@@ -125,29 +129,20 @@
     flex: 0 0 auto;
   }
 
-  .footer-social h4 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
   .social-links {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
   }
@@ -161,8 +156,8 @@
     bottom: 0;
     background: rgba(255, 255, 255, 0.1);
     opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 50%;
+    transition: opacity 0.2s ease;
+    border-radius: 6px;
   }
 
   .social-link:hover::before {
@@ -170,7 +165,7 @@
   }
 
   .social-link i {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     z-index: 1;
   }
 
@@ -178,126 +173,115 @@
   .social-link:nth-child(2) { background: #333; color: white; }
   .social-link:nth-child(3) { background: #4285f4; color: white; }
   .social-link:nth-child(4) { background: #ea4335; color: white; }
+  .social-link:nth-child(5) { background: #1da1f2; color: white; }
 
   .social-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   /* Newsletter Section */
   .footer-newsletter {
     flex: 1;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
-  }
-
-  .footer-newsletter h4 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-align: center;
   }
 
   .newsletter-input-group {
     display: flex;
-    background: #f8f9fa;
-    border: 2px solid #e9ecef;
-    border-radius: 50px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
   .newsletter-input-group:focus-within {
     border-color: #001f3f;
-    box-shadow: 0 4px 16px rgba(0, 31, 63, 0.1);
-    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 31, 63, 0.1);
   }
 
   .newsletter-input-group input {
     flex: 1;
     border: none;
-    padding: 1rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
     background: transparent;
     outline: none;
-    color: #2c3e50;
+    color: #374151;
   }
 
   .newsletter-input-group input::placeholder {
-    color: #6c757d;
+    color: #9ca3af;
   }
 
   .newsletter-btn {
     background: #001f3f;
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1rem;
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    margin: 2px;
   }
 
   .newsletter-btn:hover {
     background: #00346c;
-    transform: scale(1.05);
   }
 
   .newsletter-btn i {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
-  /* Visitor Section */
-  .footer-visitor {
+  /* Stats & Info Section */
+  .footer-stats {
     flex: 0 0 auto;
     text-align: right;
   }
 
-  .footer-visitor h4 {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
   .visitor-counter {
-    text-align: right;
+    margin-bottom: 0.5rem;
   }
 
   .visitor-text {
-    font-size: 0.85rem;
-    color: #6c757d;
-    line-height: 1.4;
+    font-size: 0.7rem;
+    color: #6b7280;
+    line-height: 1.3;
   }
 
   .visitor-number {
     font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #ff8c00;
-    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #f59e0b;
+    transition: all 0.2s ease;
     margin: 0 0.1rem;
   }
 
   .visitor-number:hover {
-    transform: scale(1.1);
-    color: #ff6b00;
+    color: #d97706;
+  }
+
+  .footer-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .meta-item {
+    font-size: 0.65rem;
+    color: #9ca3af;
+    line-height: 1.2;
   }
 
   /* Mobile Responsive */
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
       text-align: center;
     }
 
@@ -305,12 +289,16 @@
       max-width: 100%;
     }
 
-    .footer-visitor {
+    .footer-stats {
       text-align: center;
     }
 
     .visitor-counter {
       text-align: center;
+    }
+
+    .footer-meta {
+      align-items: center;
     }
 
     .social-links {
@@ -324,25 +312,29 @@
     }
 
     .footer-content {
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
     .social-link {
-      width: 36px;
-      height: 36px;
+      width: 28px;
+      height: 28px;
     }
 
     .social-link i {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     .newsletter-input-group input {
-      padding: 0.8rem 1.2rem;
-      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.75rem;
     }
 
     .newsletter-btn {
-      padding: 0.8rem 1.2rem;
+      padding: 0.5rem 0.8rem;
+    }
+
+    .newsletter-btn i {
+      font-size: 0.75rem;
     }
   }
   </style>

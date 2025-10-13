@@ -235,26 +235,41 @@
     vertical-align: middle;
   }
 
-  /* Fix FontAwesome SVG centering - comprehensive approach */
-  .social-link i svg,
+  /* AGGRESSIVE FontAwesome icon centering fix */
   .social-link i::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Additional centering for FontAwesome icons */
-  .social-link i.fab,
-  .social-link i.fas {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    height: 100% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    line-height: 1 !important;
+  }
+
+  .social-link i svg {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+  }
+
+  /* Force centering for all FontAwesome icon types */
+  .social-link i.fab,
+  .social-link i.fas,
+  .social-link i.far,
+  .social-link i.fal,
+  .social-link i.fad {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    vertical-align: middle !important;
   }
 
   .social-link:nth-child(1) { background: #0077b5; color: white; }
@@ -271,7 +286,7 @@
   /* Newsletter Section */
   .footer-newsletter {
     flex: 1;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
   }
 

@@ -65,7 +65,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
         </button>
       </div>
       <div class="article-body" id="article-body-new-year-reflection">
-        <div class="article-content">
+        <div class="article-content article-content-collapsed" id="article-content-new-year-reflection">
           <p>Both mentally and physically. In good times and in bad. Life can excite you during moments of conquest, but it can also test your mental resilience during moments of illness and vulnerability. It is puzzling. We all strive to become the best versions of ourselves. We all have dreams. We all have goals. None is better than anyone else's. At the end of the day, we are human beings. We are humans who love each other and that is the most important thing.</p>
           
           <p>Celebrate small wins. Think of others before yourself, because by default, when you think of others, you end up taking care of yourself too. Let's prioritize others, and life will find a way to prioritize us as well. Let's celebrate our small wins. Let's build gratitude. Let's celebrate the small wins of our loved ones too. Because life is always about small wins. It's always about evolving mentally or physically and growing.</p>
@@ -118,6 +118,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
           
           <p class="article-ending"><strong>Life is a journey like a river. There is the past, the present, and the destination ahead.<br>And the beauty lies in flowing.</strong></p>
         </div>
+        <button class="expand-btn" onclick="toggleExpand('new-year-reflection')" id="expand-btn-new-year-reflection">
+          <span>📖</span>
+          <span>Expand Article</span>
+        </button>
       </div>
       <div class="article-links">
         <a href="https://substack.com/@dimitriosgeorgiou2/note/c-193809829?r=l5igs&utm_medium=ios&utm_source=notes-share-action" target="_blank" class="article-link substack">
@@ -153,7 +157,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .articles-intro p {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #495057;
   line-height: 1.6;
@@ -173,13 +177,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.55rem 1.1rem;
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
   border-radius: 7px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -222,12 +226,12 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .filter-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.9rem;
   border: 2px solid #e9ecef;
   background: white;
   border-radius: 18px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #495057;
   cursor: pointer;
@@ -250,13 +254,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 /* Section Title */
 .section-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 2rem 0 1.25rem 0;
+  margin: 1.75rem 0 1rem 0;
   text-align: center;
   position: relative;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
   letter-spacing: -0.01em;
 }
 
@@ -331,10 +335,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-tag {
-  padding: 0.2rem 0.6rem;
+  padding: 0.18rem 0.55rem;
   border-radius: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -366,7 +370,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-date {
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: #6c757d;
   font-weight: 600;
   white-space: nowrap;
@@ -375,10 +379,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 0 0 0.85rem 0;
+  margin: 0 0 0.75rem 0;
   line-height: 1.3;
   flex-grow: 1;
   letter-spacing: -0.01em;
@@ -388,9 +392,9 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: #6c757d;
   font-weight: 500;
 }
@@ -407,16 +411,16 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .voice-select-small {
-  padding: 0.45rem 0.6rem;
+  padding: 0.4rem 0.55rem;
   border: 2px solid #e9ecef;
   border-radius: 6px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   background: white;
   color: #495057;
   cursor: pointer;
   flex: 1;
-  min-width: 140px;
+  min-width: 130px;
   transition: all 0.3s ease;
 }
 
@@ -428,19 +432,19 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.45rem 0.85rem;
+  padding: 0.4rem 0.75rem;
   border: 2px solid #001f3f;
   background: white;
   color: #001f3f;
   border-radius: 6px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   flex: 1;
   justify-content: center;
-  min-width: 90px;
+  min-width: 85px;
 }
 
 .speech-btn-small:hover {
@@ -463,30 +467,75 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-content {
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  line-height: 1.7;
+  font-size: 0.8rem;
+  line-height: 1.65;
   color: #2c3e50;
   max-width: 100%;
 }
 
+.article-content-collapsed {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-content-collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none;
+}
+
+.expand-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+  border: 2px solid #001f3f;
+  background: white;
+  color: #001f3f;
+  border-radius: 7px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expand-btn:hover {
+  background: #001f3f;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.expand-btn.expanded {
+  background: #001f3f;
+  color: white;
+}
+
 .article-content p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   font-weight: 400;
 }
 
 .article-content h4 {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 1.5rem 0 0.75rem 0;
+  margin: 1.25rem 0 0.65rem 0;
   letter-spacing: 0.02em;
 }
 
 .article-content h4.article-month {
-  margin-top: 1.75rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.2rem;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -529,10 +578,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-ending {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 0.85rem;
   border-top: 2px solid #e9ecef;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: center;
   color: #001f3f;
 }
@@ -549,12 +598,12 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.9rem;
+  gap: 0.3rem;
+  padding: 0.45rem 0.85rem;
   border-radius: 7px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   transition: all 0.3s ease;
   flex: 1;
@@ -585,7 +634,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-link span:first-child {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 /* Filtering Animation */
@@ -754,6 +803,18 @@ function wrapWordsInSpans(articleContent, articleId) {
 }
 
 // Update highlighting based on speech progress
+let userScrolling = false;
+let scrollTimeout = null;
+
+// Track user scrolling
+document.addEventListener('scroll', function() {
+  userScrolling = true;
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    userScrolling = false;
+  }, 1000);
+}, true);
+
 function updateHighlighting(articleId, progress) {
   const articleContent = document.querySelector(`#article-body-${articleId} .article-content`);
   if (!articleContent) return;
@@ -780,8 +841,15 @@ function updateHighlighting(articleId, progress) {
     if (span) {
       if (i === currentIndex) {
         span.classList.add('word-current');
-        // Scroll to current word
-        span.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        // Only auto-scroll if user is not manually scrolling and word is not visible
+        if (!userScrolling) {
+          const rect = span.getBoundingClientRect();
+          const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+          if (!isVisible) {
+            // Use a gentler scroll that doesn't interrupt user
+            span.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+          }
+        }
       } else {
         span.classList.add('word-highlight');
       }
@@ -997,4 +1065,26 @@ document.addEventListener('DOMContentLoaded', function() {
     stopSpeech();
   });
 });
+
+// Toggle expand/collapse article
+function toggleExpand(articleId) {
+  const articleContent = document.getElementById(`article-content-${articleId}`);
+  const expandBtn = document.getElementById(`expand-btn-${articleId}`);
+  
+  if (!articleContent || !expandBtn) return;
+  
+  if (articleContent.classList.contains('article-content-collapsed')) {
+    // Expand
+    articleContent.classList.remove('article-content-collapsed');
+    expandBtn.querySelector('span:last-child').textContent = 'Collapse Article';
+    expandBtn.classList.add('expanded');
+  } else {
+    // Collapse
+    articleContent.classList.add('article-content-collapsed');
+    expandBtn.querySelector('span:last-child').textContent = 'Expand Article';
+    expandBtn.classList.remove('expanded');
+    // Scroll to top of article
+    articleContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 </script>

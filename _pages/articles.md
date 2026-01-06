@@ -59,6 +59,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
         <select class="voice-select-small" id="voice-select-new-year-reflection">
           <option value="">Select Voice</option>
         </select>
+        <div class="speed-control">
+          <label for="speed-slider-new-year-reflection" class="speed-label">Speed:</label>
+          <input type="range" class="speed-slider" id="speed-slider-new-year-reflection" min="0.5" max="2.0" step="0.1" value="1.0">
+          <span class="speed-value" id="speed-value-new-year-reflection">1.0x</span>
+        </div>
         <button class="speech-btn-small" onclick="toggleSpeech('new-year-reflection')" id="speech-btn-new-year-reflection">
           <span>🔊</span>
           <span>Listen</span>
@@ -428,6 +433,78 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   border-color: #001f3f;
 }
 
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+.speed-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #495057;
+  white-space: nowrap;
+}
+
+.speed-slider {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #e9ecef;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.speed-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #001f3f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 31, 63, 0.2);
+}
+
+.speed-slider::-webkit-slider-thumb:hover {
+  background: #0074D9;
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 31, 63, 0.3);
+}
+
+.speed-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #001f3f;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 31, 63, 0.2);
+}
+
+.speed-slider::-moz-range-thumb:hover {
+  background: #0074D9;
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 31, 63, 0.3);
+}
+
+.speed-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #001f3f;
+  min-width: 35px;
+  text-align: center;
+}
+
 .speech-btn-small {
   display: inline-flex;
   align-items: center;
@@ -694,8 +771,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   }
   
   .voice-select-small,
-  .speech-btn-small {
+  .speech-btn-small,
+  .speed-control {
     width: 100%;
+  }
+  
+  .speed-control {
+    min-width: 100%;
   }
 }
 </style>
@@ -901,6 +983,10 @@ function toggleSpeech(articleId) {
     return;
   }
   
+  // Get speed from slider
+  const speedSlider = document.getElementById(`speed-slider-${articleId}`);
+  const speechRate = speedSlider ? parseFloat(speedSlider.value) : 1.0;
+  
   // Create utterance
   const utterance = new SpeechSynthesisUtterance(text);
   
@@ -911,13 +997,13 @@ function toggleSpeech(articleId) {
   }
   
   // Set properties
-  utterance.rate = 1.0;
+  utterance.rate = speechRate;
   utterance.pitch = 1.0;
   utterance.volume = 1.0;
   
-  // Calculate estimated duration (rough estimate: 150 words per minute)
+  // Calculate estimated duration (rough estimate: 150 words per minute at 1.0x speed)
   const wordCount = text.split(/\s+/).length;
-  const estimatedDuration = (wordCount / 150) * 60 * 1000; // in milliseconds
+  const estimatedDuration = (wordCount / 150) * 60 * 1000 / speechRate; // in milliseconds, adjusted for speed
   
   // Event handlers
   utterance.onstart = () => {
@@ -1026,6 +1112,26 @@ function stopSpeech() {
 // Filter functionality
 document.addEventListener('DOMContentLoaded', function() {
   initSpeechSynthesis();
+  
+  // Initialize speed sliders
+  const speedSliders = document.querySelectorAll('.speed-slider');
+  speedSliders.forEach(slider => {
+    // Update display value on change
+    slider.addEventListener('input', function() {
+      const articleId = this.id.replace('speed-slider-', '');
+      const speedValue = document.getElementById(`speed-value-${articleId}`);
+      if (speedValue) {
+        speedValue.textContent = parseFloat(this.value).toFixed(1) + 'x';
+      }
+    });
+    
+    // Set initial display value
+    const articleId = slider.id.replace('speed-slider-', '');
+    const speedValue = document.getElementById(`speed-value-${articleId}`);
+    if (speedValue) {
+      speedValue.textContent = parseFloat(slider.value).toFixed(1) + 'x';
+    }
+  });
   
   const filterButtons = document.querySelectorAll('.filter-btn');
   const articleCards = document.querySelectorAll('.article-card');

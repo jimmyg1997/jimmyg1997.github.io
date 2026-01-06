@@ -500,6 +500,34 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   color: #495057;
 }
 
+/* Live text highlighting during speech */
+.article-content .word-highlight {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.3);
+}
+
+.article-content .word-current {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  color: #001f3f;
+  font-weight: 600;
+  padding: 2px 4px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.5);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.3);
+  }
+}
+
 .article-ending {
   margin-top: 1.5rem;
   padding-top: 1rem;
@@ -629,6 +657,10 @@ let synth = null;
 let voices = [];
 let currentUtterance = null;
 let speakingArticleId = null;
+let highlightInterval = null;
+let wordSpans = [];
+let currentWordIndex = 0;
+let speechStartTime = 0;
 
 // Initialize speech synthesis
 function initSpeechSynthesis() {
@@ -668,6 +700,97 @@ function initSpeechSynthesis() {
   }
 }
 
+// Wrap words in spans for highlighting
+function wrapWordsInSpans(articleContent, articleId) {
+  // Clear existing word spans
+  wordSpans = [];
+  currentWordIndex = 0;
+  
+  // Check if already wrapped
+  if (articleContent.querySelector('.word-span')) {
+    wordSpans = Array.from(articleContent.querySelectorAll('.word-span'));
+    return;
+  }
+  
+  // Get all text nodes and wrap words
+  function processNode(node) {
+    if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+      const text = node.textContent;
+      const parent = node.parentNode;
+      
+      // Split text into words while preserving spaces
+      const words = text.split(/(\s+)/);
+      const fragment = document.createDocumentFragment();
+      
+      words.forEach((word) => {
+        if (word.trim()) {
+          const span = document.createElement('span');
+          span.className = 'word-span';
+          span.setAttribute('data-word-index', wordSpans.length);
+          span.textContent = word;
+          wordSpans.push(span);
+          fragment.appendChild(span);
+        } else if (word) {
+          // Preserve whitespace
+          fragment.appendChild(document.createTextNode(word));
+        }
+      });
+      
+      parent.replaceChild(fragment, node);
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      // Skip script and style tags
+      if (node.tagName === 'SCRIPT' || node.tagName === 'STYLE') {
+        return;
+      }
+      // Process child nodes (create array copy to avoid live node list issues)
+      const children = Array.from(node.childNodes);
+      children.forEach(processNode);
+    }
+  }
+  
+  // Process all nodes in article content
+  const children = Array.from(articleContent.childNodes);
+  children.forEach(processNode);
+}
+
+// Update highlighting based on speech progress
+function updateHighlighting(articleId, progress) {
+  const articleContent = document.querySelector(`#article-body-${articleId} .article-content`);
+  if (!articleContent) return;
+  
+  // Remove all highlights
+  articleContent.querySelectorAll('.word-highlight, .word-current').forEach(span => {
+    span.classList.remove('word-highlight', 'word-current');
+  });
+  
+  // Calculate which word should be highlighted
+  const totalWords = wordSpans.length;
+  if (totalWords === 0) return;
+  
+  const targetIndex = Math.floor(progress * totalWords);
+  const currentIndex = Math.min(targetIndex, totalWords - 1);
+  
+  // Highlight current word and a few surrounding words
+  const highlightRange = 3; // Highlight 3 words before and after
+  const startIndex = Math.max(0, currentIndex - highlightRange);
+  const endIndex = Math.min(totalWords - 1, currentIndex + highlightRange);
+  
+  for (let i = startIndex; i <= endIndex; i++) {
+    const span = wordSpans[i];
+    if (span) {
+      if (i === currentIndex) {
+        span.classList.add('word-current');
+        // Scroll to current word
+        span.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+      } else {
+        span.classList.add('word-highlight');
+      }
+    }
+  }
+  
+  currentWordIndex = currentIndex;
+}
+
 // Toggle speech
 function toggleSpeech(articleId) {
   const articleBody = document.getElementById(`article-body-${articleId}`);
@@ -698,6 +821,11 @@ function toggleSpeech(articleId) {
     return;
   }
   
+  // Wrap words in spans for highlighting (only if not already wrapped)
+  if (wordSpans.length === 0 || speakingArticleId !== articleId) {
+    wrapWordsInSpans(articleContent, articleId);
+  }
+  
   const text = articleContent.innerText || articleContent.textContent;
   
   if (!text || !text.trim()) {
@@ -719,17 +847,44 @@ function toggleSpeech(articleId) {
   utterance.pitch = 1.0;
   utterance.volume = 1.0;
   
+  // Calculate estimated duration (rough estimate: 150 words per minute)
+  const wordCount = text.split(/\s+/).length;
+  const estimatedDuration = (wordCount / 150) * 60 * 1000; // in milliseconds
+  
   // Event handlers
   utterance.onstart = () => {
     speakingArticleId = articleId;
+    speechStartTime = Date.now();
+    currentWordIndex = 0;
+    
     if (speechBtn) {
       speechBtn.classList.add('active');
       speechBtn.querySelector('span:last-child').textContent = 'Stop';
     }
+    
+    // Start highlighting interval
+    highlightInterval = setInterval(() => {
+      if (synth && synth.speaking && speakingArticleId === articleId) {
+        const elapsed = Date.now() - speechStartTime;
+        const progress = Math.min(elapsed / estimatedDuration, 1);
+        updateHighlighting(articleId, progress);
+      }
+    }, 100); // Update every 100ms
   };
   
   utterance.onend = () => {
+    clearInterval(highlightInterval);
+    highlightInterval = null;
     speakingArticleId = null;
+    
+    // Remove all highlights
+    const content = document.querySelector(`#article-body-${articleId} .article-content`);
+    if (content) {
+      content.querySelectorAll('.word-highlight, .word-current').forEach(span => {
+        span.classList.remove('word-highlight', 'word-current');
+      });
+    }
+    
     if (speechBtn) {
       speechBtn.classList.remove('active');
       speechBtn.querySelector('span:last-child').textContent = 'Listen';
@@ -737,11 +892,23 @@ function toggleSpeech(articleId) {
   };
   
   utterance.onerror = (event) => {
+    clearInterval(highlightInterval);
+    highlightInterval = null;
+    
     // Only show error if it's not a user cancellation
     if (event.error !== 'interrupted' && event.error !== 'canceled') {
       console.error('Speech error:', event.error);
     }
     speakingArticleId = null;
+    
+    // Remove all highlights
+    const content = document.querySelector(`#article-body-${articleId} .article-content`);
+    if (content) {
+      content.querySelectorAll('.word-highlight, .word-current').forEach(span => {
+        span.classList.remove('word-highlight', 'word-current');
+      });
+    }
+    
     if (speechBtn) {
       speechBtn.classList.remove('active');
       speechBtn.querySelector('span:last-child').textContent = 'Listen';
@@ -755,10 +922,25 @@ function toggleSpeech(articleId) {
 
 // Stop speech
 function stopSpeech() {
+  // Clear highlighting interval
+  if (highlightInterval) {
+    clearInterval(highlightInterval);
+    highlightInterval = null;
+  }
+  
   if (synth) {
     synth.cancel();
   }
+  
   if (speakingArticleId) {
+    // Remove all highlights
+    const content = document.querySelector(`#article-body-${speakingArticleId} .article-content`);
+    if (content) {
+      content.querySelectorAll('.word-highlight, .word-current').forEach(span => {
+        span.classList.remove('word-highlight', 'word-current');
+      });
+    }
+    
     const speechBtn = document.getElementById(`speech-btn-${speakingArticleId}`);
     if (speechBtn) {
       speechBtn.classList.remove('active');
@@ -770,6 +952,7 @@ function stopSpeech() {
     speakingArticleId = null;
   }
   currentUtterance = null;
+  currentWordIndex = 0;
 }
 
 // Filter functionality

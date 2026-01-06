@@ -6,19 +6,16 @@ main:
     url: /publications/
   - title: "Projects"
     url: /projects/
-    children:
-      - title: "Data Science"
-        url: /datascience/
-      - title: "PhD & Healthcare"
-        url: /phd/
+  - title: "Articles"
+    url: /articles/
   - title: "Personal"
     url: /personal/
+  - title: "Volunteering"
+    url: /volunteering/
   - title: "Travelling"
     url: /travelling/
   - title: "Calisthenics"
     url: /calisthenics/
-  - title: "Volunteering"
-    url: /volunteering/
   - title: "Wishlist"
     url: /wishlist/
   - title: "Contact"

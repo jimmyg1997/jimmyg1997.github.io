@@ -36,72 +36,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   <button class="filter-btn" data-filter="life">Life</button>
 </div>
 
-<!-- Featured Article Section -->
-<div class="featured-article-section">
-  <h2 class="section-title">✨ Featured Article</h2>
-  <article class="featured-article-card" data-tags="reflection life growth" data-article-id="new-year-reflection">
-    <div class="featured-article-content">
-      <div class="article-header">
-        <div class="article-tags">
-          <span class="article-tag tag-reflection">Reflection</span>
-          <span class="article-tag tag-life">Life</span>
-          <span class="article-tag tag-growth">Growth</span>
-        </div>
-        <div class="article-meta-top">
-          <span class="article-date">January 2025</span>
-          <span class="article-separator">•</span>
-          <span class="article-read-time">5 min read</span>
-        </div>
-      </div>
-      
-      <h3 class="article-title">New Year Reflection: Life as a River</h3>
-      
-      <div class="article-actions">
-        <div class="speech-controls">
-          <button class="speech-btn" onclick="toggleSpeech('new-year-reflection')" id="speech-btn-new-year-reflection">
-            <span class="btn-icon">🔊</span>
-            <span class="btn-text">Listen</span>
-          </button>
-          <select class="voice-select" id="voice-select-new-year-reflection" style="display: none;">
-            <option value="">Select Voice</option>
-          </select>
-        </div>
-        <div class="article-external-links">
-          <a href="https://substack.com/@dimitriosgeorgiou2/note/c-193809829?r=l5igs&utm_medium=ios&utm_source=notes-share-action" target="_blank" class="article-link substack">
-            <span>📰</span>
-            <span>Substack</span>
-          </a>
-          <a href="https://www.linkedin.com/posts/dimitrios-georgiou_%F0%9D%99%83%F0%9D%99%96%F0%9D%99%A5%F0%9D%99%A5%F0%9D%99%AE-%F0%9D%99%89%F0%9D%99%9A%F0%9D%99%AC-%F0%9D%99%94%F0%9D%99%9A%F0%9D%99%96%F0%9D%99%A7-%CE%BA%CE%B1%CE%BB%CE%AE-%CF%87%CF%81%CE%BF%CE%BD%CE%B9%AC-share-7412354983838412800-VTAB?utm_source=share&utm_medium=member_ios&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" target="_blank" class="article-link linkedin">
-            <span>💼</span>
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </div>
-      
-      <div class="article-body" id="article-body-new-year-reflection">
-        <div class="article-content">
-          <p>On a different note, I wrote a <strong>New Year reflection</strong> on Substack about life as a river - moving through countries, people, love, travel, music, discipline, and moments of stillness. It's about the small wins that quietly shape us, the paradox of feeling at home and away at the same time, and the people who make everything meaningful.</p>
-          
-          <p>I wrote about traveling, closing chapters, finding purpose through kindness, and learning to slow down with the people who matter most especially family. I also wrote from a place of vulnerability, about fear, resilience, my mother's health, and how fragile life really is.</p>
-          
-          <p>It's a personal reflection on growth, gratitude, emotions, and choosing presence over noise. If you've ever felt in between places, carried a lot silently, or learned something important through love and loss, this one is for you.</p>
-          
-          <p>Happy New Year to everyone 🎉</p>
-          
-          <p><em>Καλή Χρονιά</em></p>
-        </div>
-      </div>
-    </div>
-  </article>
-</div>
-
 <!-- All Articles Grid -->
 <div class="articles-section">
   <h2 class="section-title">All Articles</h2>
   <div class="articles-grid" id="articlesGrid">
     
     <!-- Article 1 -->
-    <article class="article-card" data-tags="reflection life growth" data-article-id="new-year-reflection-2">
+    <article class="article-card" data-tags="reflection life growth" data-article-id="new-year-reflection">
       <div class="article-card-header">
         <div class="article-tags">
           <span class="article-tag tag-reflection">Reflection</span>
@@ -112,28 +53,70 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       </div>
       <h3 class="article-title">New Year Reflection: Life as a River</h3>
       <div class="article-meta">
-        <span class="article-read-time">5 min read</span>
+        <span class="article-read-time">8 min read</span>
       </div>
       <div class="article-actions-compact">
-        <button class="speech-btn-small" onclick="toggleSpeech('new-year-reflection-2')" id="speech-btn-new-year-reflection-2">
+        <select class="voice-select-small" id="voice-select-new-year-reflection">
+          <option value="">Select Voice</option>
+        </select>
+        <button class="speech-btn-small" onclick="toggleSpeech('new-year-reflection')" id="speech-btn-new-year-reflection">
           <span>🔊</span>
           <span>Listen</span>
         </button>
-        <select class="voice-select-small" id="voice-select-new-year-reflection-2" style="display: none;">
-          <option value="">Voice</option>
-        </select>
       </div>
-      <div class="article-body" id="article-body-new-year-reflection-2">
+      <div class="article-body" id="article-body-new-year-reflection">
         <div class="article-content">
-          <p>On a different note, I wrote a <strong>New Year reflection</strong> on Substack about life as a river - moving through countries, people, love, travel, music, discipline, and moments of stillness. It's about the small wins that quietly shape us, the paradox of feeling at home and away at the same time, and the people who make everything meaningful.</p>
+          <p>Both mentally and physically. In good times and in bad. Life can excite you during moments of conquest, but it can also test your mental resilience during moments of illness and vulnerability. It is puzzling. We all strive to become the best versions of ourselves. We all have dreams. We all have goals. None is better than anyone else's. At the end of the day, we are human beings. We are humans who love each other and that is the most important thing.</p>
           
-          <p>I wrote about traveling, closing chapters, finding purpose through kindness, and learning to slow down with the people who matter most especially family. I also wrote from a place of vulnerability, about fear, resilience, my mother's health, and how fragile life really is.</p>
+          <p>Celebrate small wins. Think of others before yourself, because by default, when you think of others, you end up taking care of yourself too. Let's prioritize others, and life will find a way to prioritize us as well. Let's celebrate our small wins. Let's build gratitude. Let's celebrate the small wins of our loved ones too. Because life is always about small wins. It's always about evolving mentally or physically and growing.</p>
           
-          <p>It's a personal reflection on growth, gratitude, emotions, and choosing presence over noise. If you've ever felt in between places, carried a lot silently, or learned something important through love and loss, this one is for you.</p>
+          <h4 class="article-month">January</h4>
+          <p>In January, I was at my best friend's house in Costa Rica. We were celebrating his new life, his new job, and time with his family. I felt more than welcome I felt like part of the family. I practiced the Spanish I knew back then, and it made me extremely happy because I could invest in local life and the local way of thinking and working. I also gave a speech at the University of Economics, which proved to me that I am capable of standing in front of an audience and speaking about something I know well. That boosted my confidence. When my mom called me and I heard pride in her voice, I became even more proud of myself.</p>
           
-          <p>Happy New Year to everyone 🎉</p>
+          <h4 class="article-month">February</h4>
+          <p>In February, my partner came with me to Greece, and I showed her my culture. I felt proud driving my car while she listened attentively as we stood at the Temple of Poseidon. I may live in Poland, but I belong to both Greece and Poland or maybe I don't belong anywhere. This is the paradox of living abroad. You feel both at home and away from home at the same time. But one thing is certain: the more you invest, the more present and blessed you feel. And the more you appreciate one home while being in the other.</p>
+          <p>When I finished HYROX in Katowice, my friends and my partner were proud of me especially because I was sick. And once again, I was proud of myself. Sharing moments with them is just as important as spending time alone for self-reflection.</p>
           
-          <p><em>Καλή Χρονιά</em></p>
+          <h4 class="article-month">March</h4>
+          <p>In March, I visited a childhood friend who now lives in Switzerland. We discovered CERN together and explored nearby areas, even touching picturesque villages in France. Catching up after so many years, in a new country but with the same childhood friends, felt like a moment suspended in time. Everything felt aligned. When you give good energy and genuinely share your interests with people, life feels ordered and meaningful.</p>
+          
+          <h4 class="article-month">April</h4>
+          <p>In April, I visited Greece, Singapore, and Vietnam. Singapore marked, for now, the end of my solo-travel chapter. After traveling solo to more than 30 countries and deeply investing in local experiences, I felt it was time for closure. Closure matters whether for small habits or passions that defined us for years. Proper closure is maturity.</p>
+          <p>Then came #MyQuestVietnam with Wheeling2Help: eight days with strangers in a Vietnamese village, without drama or toxicity only kindness and mutual support. Our modern lives are full of stress, materialism, and noise. This was my third time experiencing this kind of purity, and it reminded me how easy kindness actually is. The smiles of young and old locals were enough to fill my heart with joy and gratitude. I will never forget our team leader and our nightly gratitude circles, where for one hour we expressed ourselves openly.</p>
+          
+          <h4 class="article-month">May</h4>
+          <p>In May, I evolved my calisthenics skills, played more tennis, and embraced life in Kraków. Kraków is a beautiful city compact enough to explore, yet vibrant enough to never get bored. A blend of preserved history and modern lifestyle.</p>
+          <p>But the most important moment was my trip with my father to Zagorochoria. Green landscapes, stone houses, slow living, healthy lifestyles. Our parents grow older, and we never know which moment will be the last. No matter the drama buy your father that gift, tell him "I love you," take him on a trip. Just do it. If they can't hike anymore, don't hike. Sit with them. Drink Greek coffee. Listen. Actively listen. You have so much to learn and gain.</p>
+          
+          <h4 class="article-month">June</h4>
+          <p>In June, ΛΕΞ one of my favorite artists filled a stadium of 60,000 people. An ordinary person made extraordinary by people. He speaks about social issues and touches souls. The energy in that stadium was indescribable. At some point, I realized my sister was there too fully present and enjoying it. That realization made me smile deeply. Music truly moves people, generations, neighborhoods, entire cities.</p>
+          <p>I'm grateful for the beauty of Milos and Sifnos, but even more grateful for that shared emotional moment with my sister whether she realized it or not.</p>
+          
+          <h4 class="article-month">July</h4>
+          <p>July was filled with Polish summer moments, beaches, friends, and the WINNY Festival. After six years of being pescatarian for health reasons, I decided to close that chapter and transition to a more carnivorous diet. Another closure another evolution.</p>
+          <p>Between social gardens with HSBC, tennis sessions, house gatherings, whiskey cocktail bars, and Japanese restaurants, I ended the month in Greece, visiting the KLIMAKA NGO office. Contributing as an AI engineer creating ideas and implementing them from scratch fills me with childlike enthusiasm. It reminds me of life's true purpose: being surrounded by good people and contributing with kindness to mental health and longevity.</p>
+          
+          <h4 class="article-month">August</h4>
+          <p>August filled my heart with gratitude. For ten years, my university friends and I have honored a ritual: summer vacation together. Fifteen people, same nationality, different ambitions, living across eight countries. Organizing it is NP-hard but measuring its emotional value is impossible.</p>
+          <p>This year, after ten years of friendship, there was no competition only honesty. I sent a message of appreciation, and it was received with warmth. These people are my family.</p>
+          
+          <h4 class="article-month">September</h4>
+          <p>In September, my heart exploded when my partner jokingly said she wants to become a Chess Grandmaster. We play every day, improving little by little. Growth mindset. Celebrate small wins even losses. Appreciate the game, the time together, the dedication, and visualize how compound effort leads to big goals.</p>
+          <p>That month also brought intense music moments Novel 729 on stage, turning pain into power. The festival "OFF the hook", an experience that pushes you out of your comfort zone. We jumped, screamed, and released months of stored energy. Is just myself.</p>
+          
+          <h4 class="article-month">October</h4>
+          <p>October is special it's my birthday. Being born is a huge win. Why not celebrate it? Living abroad makes gathering loved ones hard, but they came. I gave them my energy, my thoughts, my care. People matter. When we're gone, it's not material things that remain, but memories.</p>
+          <p>Can you be alone? Enjoy coffee alone? A quiet night alone? If yes, you're free. This birthday was unique. One lesson from years of CBT, work, and my partner's caring nature: taking care of people is deeply fulfilling. Not for reward but because it gives meaning.</p>
+          
+          <h4 class="article-month">November</h4>
+          <p>In November, I fell in love with my partner all over again in Tunisia. Living with someone reveals everything. After fights, respect and communication allow joy to flourish. Life is short. Hug after arguments. Drop the ego. Dance. Appreciate each day. Tunisia spoke for us.</p>
+          <p>This year is about stoicism using emotions as a compass between realization, thoughts, and reactions. Life is fragile. My mom had surgery, and it reminded me again: buy that gift, hug your grandma, kiss your mom. It means more to them than you can imagine. Mom, I love you.</p>
+          
+          <h4 class="article-month">December</h4>
+          <p>December is a recap month but for me, every month is a recap. "Live non-commercially." Celebrate daily. Labels help us reflect: who we were, who we are, where we're heading and with whom.</p>
+          <p>Family drama was resolved. For the first time in a long while, I truly felt family. Jazz Christmas nights, Wrocław's Christmas market, Athens with my partner, and over 30 beautiful souls I proudly call friends. Health first. Kindness second. Career third. Life is short.</p>
+          
+          <p class="article-ending"><strong>Life is a journey like a river. There is the past, the present, and the destination ahead.<br>And the beauty lies in flowing.</strong></p>
         </div>
       </div>
       <div class="article-links">
@@ -160,21 +143,21 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 /* Articles Intro */
 .articles-intro {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 1.75rem;
-  border-radius: 12px;
-  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.25rem 0;
   text-align: center;
   border: 1px solid #dee2e6;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .articles-intro p {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
   color: #495057;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -183,20 +166,20 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .articles-social-links {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.65rem 1.25rem;
-  border-radius: 8px;
+  gap: 0.35rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 7px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -207,8 +190,8 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .substack-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 103, 25, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(255, 103, 25, 0.25);
 }
 
 .linkedin-link {
@@ -217,34 +200,34 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .linkedin-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 119, 181, 0.25);
 }
 
 .social-icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Filter Buttons */
 .articles-filter {
   display: flex;
   justify-content: center;
-  gap: 0.6rem;
-  margin: 2rem 0;
+  gap: 0.5rem;
+  margin: 1.75rem 0;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.85rem;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .filter-btn {
-  padding: 0.55rem 1.1rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #e9ecef;
   background: white;
-  border-radius: 20px;
+  border-radius: 18px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #495057;
   cursor: pointer;
@@ -261,19 +244,19 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
   color: white;
   border-color: transparent;
-  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 31, 63, 0.18);
 }
 
 /* Section Title */
 .section-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 2.5rem 0 1.5rem 0;
+  margin: 2rem 0 1.25rem 0;
   text-align: center;
   position: relative;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.6rem;
   letter-spacing: -0.01em;
 }
 
@@ -283,182 +266,29 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
+  width: 50px;
+  height: 2.5px;
   background: linear-gradient(90deg, #001f3f, #0074D9);
   border-radius: 2px;
-}
-
-/* Featured Article */
-.featured-article-section {
-  margin: 2rem 0;
-}
-
-.featured-article-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border: 2px solid #001f3f;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 6px 20px rgba(0, 31, 63, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.featured-article-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #001f3f, #0074D9, #001f3f);
-}
-
-.featured-article-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(0, 31, 63, 0.15);
-}
-
-.featured-article-content {
-  width: 100%;
-}
-
-.article-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.25rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.article-meta-top {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  color: #6c757d;
-  font-weight: 500;
-}
-
-/* Article Actions */
-.article-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 1.25rem 0;
-  flex-wrap: wrap;
-}
-
-.speech-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.speech-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.25rem;
-  border: 2px solid #001f3f;
-  background: white;
-  color: #001f3f;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.speech-btn:hover {
-  background: #001f3f;
-  color: white;
-  transform: translateY(-1px);
-}
-
-.speech-btn.active {
-  background: #001f3f;
-  color: white;
-}
-
-.voice-select {
-  padding: 0.6rem 0.85rem;
-  border: 2px solid #e9ecef;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  background: white;
-  color: #495057;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-width: 180px;
-}
-
-.voice-select:hover {
-  border-color: #001f3f;
-}
-
-.article-external-links {
-  display: flex;
-  gap: 0.6rem;
-  margin-left: auto;
-  flex-wrap: wrap;
-}
-
-/* Article Body */
-.article-body {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e9ecef;
-}
-
-.article-content {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: #2c3e50;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.article-content p {
-  margin-bottom: 1.25rem;
-  font-weight: 400;
-}
-
-.article-content strong {
-  font-weight: 600;
-  color: #001f3f;
-}
-
-.article-content em {
-  font-style: italic;
-  color: #495057;
 }
 
 /* Article Cards */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.75rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1.25rem 0;
 }
 
 .article-card {
   background: white;
   border: 1px solid #e9ecef;
-  border-radius: 14px;
-  padding: 1.75rem;
+  border-radius: 12px;
+  padding: 1.5rem;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -476,8 +306,8 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 31, 63, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 31, 63, 0.1);
   border-color: #001f3f;
 }
 
@@ -489,25 +319,25 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1rem;
-  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  gap: 0.6rem;
 }
 
 .article-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
   flex: 1;
 }
 
 .article-tag {
-  padding: 0.25rem 0.7rem;
-  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
 }
 
 .tag-reflection {
@@ -536,47 +366,33 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-date {
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #6c757d;
   font-weight: 600;
   white-space: nowrap;
-  padding-top: 0.25rem;
+  padding-top: 0.2rem;
 }
 
 .article-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 0 0 1rem 0;
-  line-height: 1.35;
+  margin: 0 0 0.85rem 0;
+  line-height: 1.3;
   flex-grow: 1;
   letter-spacing: -0.01em;
-}
-
-.article-excerpt {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #495057;
-  line-height: 1.65;
-  margin: 0 0 1rem 0;
-  flex-grow: 1;
 }
 
 .article-meta {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #6c757d;
   font-weight: 500;
-}
-
-.article-separator {
-  color: #adb5bd;
 }
 
 .article-read-time {
@@ -585,22 +401,40 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-actions-compact {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+}
+
+.voice-select-small {
+  padding: 0.45rem 0.6rem;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  background: white;
+  color: #495057;
+  cursor: pointer;
+  flex: 1;
+  min-width: 140px;
+  transition: all 0.3s ease;
+}
+
+.voice-select-small:hover {
+  border-color: #001f3f;
 }
 
 .speech-btn-small {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.9rem;
+  gap: 0.3rem;
+  padding: 0.45rem 0.85rem;
   border: 2px solid #001f3f;
   background: white;
   color: #001f3f;
-  border-radius: 7px;
+  border-radius: 6px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -620,40 +454,84 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   color: white;
 }
 
-.voice-select-small {
-  padding: 0.5rem 0.65rem;
-  border: 2px solid #e9ecef;
-  border-radius: 7px;
+/* Article Body */
+.article-body {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.article-content {
   font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
-  background: white;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  max-width: 100%;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.article-content h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #001f3f;
+  margin: 1.5rem 0 0.75rem 0;
+  letter-spacing: 0.02em;
+}
+
+.article-content h4.article-month {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.article-content strong {
+  font-weight: 600;
+  color: #001f3f;
+}
+
+.article-content em {
+  font-style: italic;
   color: #495057;
-  cursor: pointer;
-  flex: 1;
-  min-width: 100px;
+}
+
+.article-ending {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e9ecef;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #001f3f;
 }
 
 .article-links {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
   flex-wrap: wrap;
 }
 
 .article-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.55rem 1rem;
-  border-radius: 8px;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 7px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: all 0.3s ease;
   flex: 1;
   justify-content: center;
-  min-width: 110px;
+  min-width: 100px;
 }
 
 .article-link.substack {
@@ -664,7 +542,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-link.substack:hover {
   transform: translateY(-1px);
-  box-shadow: 0 3px 10px rgba(255, 103, 25, 0.3);
+  box-shadow: 0 3px 8px rgba(255, 103, 25, 0.25);
 }
 
 .article-link.linkedin {
@@ -675,11 +553,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-link.linkedin:hover {
   transform: translateY(-1px);
-  box-shadow: 0 3px 10px rgba(0, 119, 181, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 119, 181, 0.25);
 }
 
 .article-link span:first-child {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* Filtering Animation */
@@ -709,17 +587,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     gap: 1.25rem;
   }
   
-  .featured-article-card {
-    padding: 1.5rem;
-  }
-  
   .articles-filter {
-    padding: 0.85rem;
+    padding: 0.75rem;
   }
   
   .filter-btn {
-    padding: 0.5rem 0.95rem;
-    font-size: 0.75rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.7rem;
   }
   
   .article-links {
@@ -731,24 +605,20 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   }
   
   .section-title {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   
   .article-content {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
-  .article-actions {
+  .article-actions-compact {
     flex-direction: column;
   }
   
-  .article-external-links {
-    margin-left: 0;
+  .voice-select-small,
+  .speech-btn-small {
     width: 100%;
-  }
-  
-  .article-external-links .article-link {
-    flex: 1;
   }
 }
 </style>
@@ -773,7 +643,7 @@ function initSpeechSynthesis() {
     
     // Populate voice selects
     function populateVoiceSelects() {
-      const selects = document.querySelectorAll('.voice-select, .voice-select-small');
+      const selects = document.querySelectorAll('.voice-select-small');
       selects.forEach(select => {
         const currentValue = select.value;
         select.innerHTML = '<option value="">Select Voice</option>';
@@ -815,6 +685,12 @@ function toggleSpeech(articleId) {
     stopSpeech();
   }
   
+  // Check if voice is selected
+  if (!voiceSelect || !voiceSelect.value) {
+    alert('Please select a voice first');
+    return;
+  }
+  
   // Get article text
   const articleContent = articleBody.querySelector('.article-content');
   if (!articleContent) {
@@ -833,11 +709,9 @@ function toggleSpeech(articleId) {
   const utterance = new SpeechSynthesisUtterance(text);
   
   // Set voice
-  if (voiceSelect && voiceSelect.value) {
-    const voiceIndex = parseInt(voiceSelect.value);
-    if (voices[voiceIndex]) {
-      utterance.voice = voices[voiceIndex];
-    }
+  const voiceIndex = parseInt(voiceSelect.value);
+  if (voices[voiceIndex]) {
+    utterance.voice = voices[voiceIndex];
   }
   
   // Set properties
@@ -850,10 +724,7 @@ function toggleSpeech(articleId) {
     speakingArticleId = articleId;
     if (speechBtn) {
       speechBtn.classList.add('active');
-      speechBtn.querySelector('.btn-text').textContent = 'Stop';
-    }
-    if (voiceSelect) {
-      voiceSelect.style.display = 'inline-block';
+      speechBtn.querySelector('span:last-child').textContent = 'Stop';
     }
   };
   
@@ -861,7 +732,7 @@ function toggleSpeech(articleId) {
     speakingArticleId = null;
     if (speechBtn) {
       speechBtn.classList.remove('active');
-      speechBtn.querySelector('.btn-text').textContent = 'Listen';
+      speechBtn.querySelector('span:last-child').textContent = 'Listen';
     }
   };
   
@@ -873,7 +744,7 @@ function toggleSpeech(articleId) {
     speakingArticleId = null;
     if (speechBtn) {
       speechBtn.classList.remove('active');
-      speechBtn.querySelector('.btn-text').textContent = 'Listen';
+      speechBtn.querySelector('span:last-child').textContent = 'Listen';
     }
   };
   
@@ -891,7 +762,7 @@ function stopSpeech() {
     const speechBtn = document.getElementById(`speech-btn-${speakingArticleId}`);
     if (speechBtn) {
       speechBtn.classList.remove('active');
-      const btnText = speechBtn.querySelector('.btn-text');
+      const btnText = speechBtn.querySelector('span:last-child');
       if (btnText) {
         btnText.textContent = 'Listen';
       }
@@ -906,7 +777,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initSpeechSynthesis();
   
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const articleCards = document.querySelectorAll('.article-card, .featured-article-card');
+  const articleCards = document.querySelectorAll('.article-card');
   
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {

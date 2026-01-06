@@ -57,10 +57,6 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       <h3 class="article-title">New Year Reflection: Life as a River</h3>
       
       <div class="article-actions">
-        <button class="read-article-btn" onclick="toggleArticle('new-year-reflection')">
-          <span class="btn-icon">📖</span>
-          <span class="btn-text">Read Article</span>
-        </button>
         <div class="speech-controls">
           <button class="speech-btn" onclick="toggleSpeech('new-year-reflection')" id="speech-btn-new-year-reflection">
             <span class="btn-icon">🔊</span>
@@ -82,7 +78,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
         </div>
       </div>
       
-      <div class="article-body" id="article-body-new-year-reflection" style="display: none;">
+      <div class="article-body" id="article-body-new-year-reflection">
         <div class="article-content">
           <p>On a different note, I wrote a <strong>New Year reflection</strong> on Substack about life as a river - moving through countries, people, love, travel, music, discipline, and moments of stillness. It's about the small wins that quietly shape us, the paradox of feeling at home and away at the same time, and the people who make everything meaningful.</p>
           
@@ -115,15 +111,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
         <span class="article-date">Jan 2025</span>
       </div>
       <h3 class="article-title">New Year Reflection: Life as a River</h3>
-      <p class="article-excerpt">A personal reflection on life as a river - moving through countries, people, love, travel, music, discipline, and moments of stillness. It's about the small wins that quietly shape us, the paradox of feeling at home and away at the same time, and the people who make everything meaningful.</p>
       <div class="article-meta">
         <span class="article-read-time">5 min read</span>
       </div>
       <div class="article-actions-compact">
-        <button class="read-article-btn-small" onclick="toggleArticle('new-year-reflection-2')">
-          <span>📖</span>
-          <span>Read</span>
-        </button>
         <button class="speech-btn-small" onclick="toggleSpeech('new-year-reflection-2')" id="speech-btn-new-year-reflection-2">
           <span>🔊</span>
           <span>Listen</span>
@@ -132,7 +123,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
           <option value="">Voice</option>
         </select>
       </div>
-      <div class="article-body" id="article-body-new-year-reflection-2" style="display: none;">
+      <div class="article-body" id="article-body-new-year-reflection-2">
         <div class="article-content">
           <p>On a different note, I wrote a <strong>New Year reflection</strong> on Substack about life as a river - moving through countries, people, love, travel, music, discipline, and moments of stillness. It's about the small wins that quietly shape us, the paradox of feeling at home and away at the same time, and the people who make everything meaningful.</p>
           
@@ -169,21 +160,21 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 /* Articles Intro */
 .articles-intro {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 2.5rem;
-  border-radius: 16px;
-  margin: 2rem 0;
+  padding: 1.75rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
   text-align: center;
   border: 1px solid #dee2e6;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .articles-intro p {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #495057;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -192,20 +183,20 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .articles-social-links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  border-radius: 10px;
+  gap: 0.4rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -217,7 +208,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .substack-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255, 103, 25, 0.35);
+  box-shadow: 0 4px 12px rgba(255, 103, 25, 0.3);
 }
 
 .linkedin-link {
@@ -227,33 +218,33 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .linkedin-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 119, 181, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
 }
 
 .social-icon {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Filter Buttons */
 .articles-filter {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
-  margin: 2.5rem 0;
+  gap: 0.6rem;
+  margin: 2rem 0;
   flex-wrap: wrap;
-  padding: 1.25rem;
+  padding: 1rem;
   background: white;
-  border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .filter-btn {
-  padding: 0.7rem 1.4rem;
+  padding: 0.55rem 1.1rem;
   border: 2px solid #e9ecef;
   background: white;
-  border-radius: 25px;
+  border-radius: 20px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #495057;
   cursor: pointer;
@@ -263,28 +254,27 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .filter-btn:hover {
   border-color: #001f3f;
   color: #001f3f;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 31, 63, 0.1);
+  transform: translateY(-1px);
 }
 
 .filter-btn.active {
   background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
   color: white;
   border-color: transparent;
-  box-shadow: 0 4px 14px rgba(0, 31, 63, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.2);
 }
 
 /* Section Title */
 .section-title {
   font-family: 'Inter', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 3.5rem 0 2rem 0;
+  margin: 2.5rem 0 1.5rem 0;
   text-align: center;
   position: relative;
-  padding-bottom: 1rem;
-  letter-spacing: -0.02em;
+  padding-bottom: 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 .section-title::after {
@@ -293,23 +283,23 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
+  width: 60px;
+  height: 3px;
   background: linear-gradient(90deg, #001f3f, #0074D9);
   border-radius: 2px;
 }
 
 /* Featured Article */
 .featured-article-section {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .featured-article-card {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: 2px solid #001f3f;
-  border-radius: 20px;
-  padding: 3rem;
-  box-shadow: 0 10px 30px rgba(0, 31, 63, 0.12);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 31, 63, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -323,13 +313,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 4px;
   background: linear-gradient(90deg, #001f3f, #0074D9, #001f3f);
 }
 
 .featured-article-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 40px rgba(0, 31, 63, 0.18);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 31, 63, 0.15);
 }
 
 .featured-article-content {
@@ -340,7 +330,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -350,7 +340,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   align-items: center;
   gap: 0.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #6c757d;
   font-weight: 500;
 }
@@ -359,37 +349,9 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 1.5rem 0;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
   flex-wrap: wrap;
-}
-
-.read-article-btn, .speech-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #001f3f;
-  background: white;
-  color: #001f3f;
-  border-radius: 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.read-article-btn:hover, .speech-btn:hover {
-  background: #001f3f;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 31, 63, 0.2);
-}
-
-.read-article-btn.active, .speech-btn.active {
-  background: #001f3f;
-  color: white;
 }
 
 .speech-controls {
@@ -398,16 +360,44 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   gap: 0.5rem;
 }
 
-.voice-select {
-  padding: 0.75rem 1rem;
-  border: 2px solid #e9ecef;
-  border-radius: 10px;
+.speech-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.25rem;
+  border: 2px solid #001f3f;
+  background: white;
+  color: #001f3f;
+  border-radius: 8px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.speech-btn:hover {
+  background: #001f3f;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.speech-btn.active {
+  background: #001f3f;
+  color: white;
+}
+
+.voice-select {
+  padding: 0.6rem 0.85rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
   background: white;
   color: #495057;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 180px;
 }
 
 .voice-select:hover {
@@ -416,30 +406,29 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-external-links {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   margin-left: auto;
   flex-wrap: wrap;
 }
 
 /* Article Body */
 .article-body {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 2px solid #e9ecef;
-  animation: fadeIn 0.4s ease-in;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e9ecef;
 }
 
 .article-content {
   font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.75;
   color: #2c3e50;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .article-content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-weight: 400;
 }
 
@@ -456,20 +445,20 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 /* Article Cards */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0;
 }
 
 .article-card {
   background: white;
   border: 1px solid #e9ecef;
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 14px;
+  padding: 1.75rem;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
 }
@@ -480,15 +469,15 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, #001f3f, #0074D9);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .article-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(0, 31, 63, 0.14);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 31, 63, 0.12);
   border-color: #001f3f;
 }
 
@@ -500,25 +489,25 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.25rem;
-  gap: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.75rem;
 }
 
 .article-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
   flex: 1;
 }
 
 .article-tag {
-  padding: 0.3rem 0.85rem;
-  border-radius: 14px;
+  padding: 0.25rem 0.7rem;
+  border-radius: 12px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .tag-reflection {
@@ -547,31 +536,31 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-date {
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #6c757d;
   font-weight: 600;
   white-space: nowrap;
-  padding-top: 0.3rem;
+  padding-top: 0.25rem;
 }
 
 .article-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #001f3f;
-  margin: 0 0 1.25rem 0;
-  line-height: 1.4;
+  margin: 0 0 1rem 0;
+  line-height: 1.35;
   flex-grow: 1;
   letter-spacing: -0.01em;
 }
 
 .article-excerpt {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: #495057;
-  line-height: 1.7;
-  margin: 0 0 1.25rem 0;
+  line-height: 1.65;
+  margin: 0 0 1rem 0;
   flex-grow: 1;
 }
 
@@ -579,9 +568,9 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #6c757d;
   font-weight: 500;
 }
@@ -596,57 +585,57 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 .article-actions-compact {
   display: flex;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
-.read-article-btn-small, .speech-btn-small {
+.speech-btn-small {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1rem;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
   border: 2px solid #001f3f;
   background: white;
   color: #001f3f;
-  border-radius: 8px;
+  border-radius: 7px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   flex: 1;
   justify-content: center;
-  min-width: 100px;
+  min-width: 90px;
 }
 
-.read-article-btn-small:hover, .speech-btn-small:hover {
+.speech-btn-small:hover {
   background: #001f3f;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
-.read-article-btn-small.active, .speech-btn-small.active {
+.speech-btn-small.active {
   background: #001f3f;
   color: white;
 }
 
 .voice-select-small {
-  padding: 0.6rem 0.75rem;
+  padding: 0.5rem 0.65rem;
   border: 2px solid #e9ecef;
-  border-radius: 8px;
+  border-radius: 7px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background: white;
   color: #495057;
   cursor: pointer;
   flex: 1;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 .article-links {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   margin-top: auto;
   flex-wrap: wrap;
 }
@@ -654,17 +643,17 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1.1rem;
-  border-radius: 10px;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   transition: all 0.3s ease;
   flex: 1;
   justify-content: center;
-  min-width: 120px;
+  min-width: 110px;
 }
 
 .article-link.substack {
@@ -674,9 +663,8 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-link.substack:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(255, 103, 25, 0.3);
-  border-color: #ff6719;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(255, 103, 25, 0.3);
 }
 
 .article-link.linkedin {
@@ -686,13 +674,12 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-link.linkedin:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0, 119, 181, 0.3);
-  border-color: #0077b5;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 119, 181, 0.3);
 }
 
 .article-link span:first-child {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Filtering Animation */
@@ -701,13 +688,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-card.fade-in {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.4s ease-in;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -719,20 +706,20 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 @media (max-width: 768px) {
   .articles-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
   
   .featured-article-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
   }
   
   .articles-filter {
-    padding: 1rem;
+    padding: 0.85rem;
   }
   
   .filter-btn {
-    padding: 0.6rem 1.1rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.75rem;
   }
   
   .article-links {
@@ -744,11 +731,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
   }
   
   .article-content {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .article-actions {
@@ -758,6 +745,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   .article-external-links {
     margin-left: 0;
     width: 100%;
+  }
+  
+  .article-external-links .article-link {
+    flex: 1;
   }
 }
 </style>
@@ -807,36 +798,11 @@ function initSpeechSynthesis() {
   }
 }
 
-// Toggle article visibility
-function toggleArticle(articleId) {
-  const articleBody = document.getElementById(`article-body-${articleId}`);
-  const btn = document.querySelector(`[onclick="toggleArticle('${articleId}')"]`);
-  
-  if (articleBody.style.display === 'none') {
-    articleBody.style.display = 'block';
-    if (btn) {
-      btn.classList.add('active');
-      btn.querySelector('.btn-text').textContent = 'Hide Article';
-    }
-  } else {
-    articleBody.style.display = 'none';
-    if (btn) {
-      btn.classList.remove('active');
-      btn.querySelector('.btn-text').textContent = 'Read Article';
-    }
-  }
-}
-
 // Toggle speech
 function toggleSpeech(articleId) {
   const articleBody = document.getElementById(`article-body-${articleId}`);
   const speechBtn = document.getElementById(`speech-btn-${articleId}`);
   const voiceSelect = document.getElementById(`voice-select-${articleId}`);
-  
-  // If another article is speaking, stop it
-  if (speakingArticleId && speakingArticleId !== articleId) {
-    stopSpeech();
-  }
   
   // If this article is already speaking, stop it
   if (speakingArticleId === articleId && synth && synth.speaking) {
@@ -844,19 +810,22 @@ function toggleSpeech(articleId) {
     return;
   }
   
-  // Get article text
-  if (articleBody.style.display === 'none') {
-    // Show article first
-    toggleArticle(articleId);
+  // If another article is speaking, stop it first
+  if (speakingArticleId && speakingArticleId !== articleId) {
+    stopSpeech();
   }
   
+  // Get article text
   const articleContent = articleBody.querySelector('.article-content');
-  if (!articleContent) return;
+  if (!articleContent) {
+    console.error('Article content not found');
+    return;
+  }
   
   const text = articleContent.innerText || articleContent.textContent;
   
-  if (!text.trim()) {
-    alert('No content to read. Please open the article first.');
+  if (!text || !text.trim()) {
+    console.error('No content to read');
     return;
   }
   
@@ -865,7 +834,10 @@ function toggleSpeech(articleId) {
   
   // Set voice
   if (voiceSelect && voiceSelect.value) {
-    utterance.voice = voices[parseInt(voiceSelect.value)];
+    const voiceIndex = parseInt(voiceSelect.value);
+    if (voices[voiceIndex]) {
+      utterance.voice = voices[voiceIndex];
+    }
   }
   
   // Set properties
@@ -893,13 +865,16 @@ function toggleSpeech(articleId) {
     }
   };
   
-  utterance.onerror = () => {
+  utterance.onerror = (event) => {
+    // Only show error if it's not a user cancellation
+    if (event.error !== 'interrupted' && event.error !== 'canceled') {
+      console.error('Speech error:', event.error);
+    }
     speakingArticleId = null;
     if (speechBtn) {
       speechBtn.classList.remove('active');
       speechBtn.querySelector('.btn-text').textContent = 'Listen';
     }
-    alert('Error reading article. Please try again.');
   };
   
   // Speak
@@ -909,14 +884,17 @@ function toggleSpeech(articleId) {
 
 // Stop speech
 function stopSpeech() {
-  if (synth && synth.speaking) {
+  if (synth) {
     synth.cancel();
   }
   if (speakingArticleId) {
     const speechBtn = document.getElementById(`speech-btn-${speakingArticleId}`);
     if (speechBtn) {
       speechBtn.classList.remove('active');
-      speechBtn.querySelector('.btn-text').textContent = 'Listen';
+      const btnText = speechBtn.querySelector('.btn-text');
+      if (btnText) {
+        btnText.textContent = 'Listen';
+      }
     }
     speakingArticleId = null;
   }
@@ -958,6 +936,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.hidden) {
       stopSpeech();
     }
+  });
+  
+  // Stop speech on page unload
+  window.addEventListener('beforeunload', function() {
+    stopSpeech();
   });
 });
 </script>

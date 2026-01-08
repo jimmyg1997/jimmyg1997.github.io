@@ -19,12 +19,13 @@ locale                   : "en-US"
 title                    : "Dimitrios Georgiou"
 title_separator          : "-"
 name                     : "Dimitrios Georgiou"
-description              : "Personal website showcasing my work, research, and interests"
-url                      : "https://dimitriosgeorgiou.github.io"
+description              : "Data Scientist, ML Researcher & Healthcare Innovator | Exploring AI, Machine Learning, and Personal Development"
+url                      : "https://jimmyg1997.github.io"
 baseurl                  : ""
-repository               : "jimmyg1997/dimitriosgeorgiou.github.io"
-teaser                   : # Default teaser image "assets/images/contents/main-cover.jpg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+repository               : "jimmyg1997/jimmyg1997.github.io"
+teaser                   : "/assets/images/overall/publications-thumb.png"
+logo                     : "/assets/images/me/profile_v1.png"
+og_image                 : "/assets/images/banner.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -108,9 +109,9 @@ analytics:
 author:
   name             : "Dimitrios Georgiou"
   avatar           : "/assets/images/me/profile_v1.png"
-  bio              : "Data Scientist at HSBC"
+  bio              : "Sr. ML Engineer @ Grid Dynamics | PhD Candidate in Bioinformatics | Healthcare AI | Finance"
   location         : "Krakow, Poland"
-  email            : 
+  email            : "dgeorgiou3@gmail.com" 
   links:
     - label: "dgeorgiou3@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
@@ -250,7 +251,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  # - jemoji  # Temporarily disabled for local testing due to nokogiri issue
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe

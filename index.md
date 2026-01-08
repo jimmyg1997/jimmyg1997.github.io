@@ -4,13 +4,8 @@ permalink: /
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg
-  # actions:
-  #   - label: "Contact Me"
-  #     url: "/contact/"
+  overlay_image: /assets/images/banner.png
 excerpt: "Data Scientist • Researcher • Calisthenics Athlete • Traveller"
-intro: 
-  - excerpt: "Welcome to my personal website. I’m passionate about 𝘥𝘢𝘵𝘢 𝘴𝘤𝘪𝘦𝘯𝘤𝘦,𝘩𝘦𝘢𝘭𝘵𝘩𝘤𝘢𝘳𝘦 𝘳𝘦𝘴𝘦𝘢𝘳𝘤𝘩, and 𝘱𝘦𝘳𝘴𝘰𝘯𝘢𝘭 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘮𝘦𝘯𝘵 — constantly exploring the intersection of analytics, movement, and meaningful impact"
 
 feature_row:
   - image_path: ../assets/images/overall/cv-thumb.png
@@ -28,8 +23,8 @@ feature_row:
     btn_label: "Read Publications"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/projects-thumb.png
-    alt: "🧠 Projects"
-    title: "🧠 Projects"
+    alt: "Projects"
+    title: "Projects"
     excerpt: "Exploring the intersection of data science, machine learning, and healthcare"
     url: "/projects/"
     btn_label: "View Projects"
@@ -37,283 +32,39 @@ feature_row:
 
 feature_row2:
   - image_path: ../assets/images/overall/travel-thumb.png
-    alt: "✈️ Travelling"
+    alt: "Travelling"
     title: "✈️ Travelling"
     excerpt: "Exploring the world one adventure at a time"
     url: "/travelling/"
     btn_label: "Explore"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/calisthenics-thumb.png
-    alt: "🏋️‍♂️ Calisthenics & Nutrition"
+    alt: "Calisthenics"
     title: "🏋️‍♂️ Calisthenics & Nutrition"
     excerpt: "Documenting my fitness journey, workout progress, and nutritional insights"
     url: "/calisthenics/"
     btn_label: "Learn More"
     btn_class: "btn--primary"
   - image_path: ../assets/images/overall/personal-thumb.jpg
-    alt: "🌱 Personal Development"
+    alt: "Personal"
     title: "🌱 Personal Development"
-    excerpt: "Continuous learning, Books, Courses  I recommend."
+    excerpt: "Continuous learning, Books, Courses I recommend."
     url: "/personal/"
     btn_label: "Discover"
     btn_class: "btn--primary"
 ---
 
-<style>
-/* Welcome text full-width and prominent */
-.feature-row--center {
-  max-width: 900px;
-  margin: 0 auto 0.7rem auto; /* even smaller bottom margin */
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #23272f;
-  background: rgba(255,255,255,0.92);
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 1.5em 1.2em 1.1em 1.2em; /* tighter padding */
-}
-
-/* Minimal section divider */
-.section-divider {
-  border: none;
-  border-top: 1px solid #e3e8f0;
-  height: 0;
-  margin: 1.1rem 0 1.1rem 0; /* much less vertical space */
-  background: none;
-}
-
-/* Feature rows: minimal vertical spacing */
-.feature__wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem; /* less gap between cards */
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto 0.7rem auto; /* less bottom margin */
-  padding: 0;
-}
-.feature__item {
-  flex: 1 1 300px;
-  min-width: 260px;
-  max-width: 340px;
-  margin: 0 0.3em 0.7em 0.3em; /* less vertical margin */
-}
-
-/* Headings: minimal spacing */
-h2, h3 {
-  margin-top: 0.7em;
-  margin-bottom: 0.5em;
-}
-
-/* Current Focus card: less margin above/below */
-.now-section {
-  display: flex;
-  justify-content: center;
-  margin: 1.3em 0 1.3em 0;
-  animation: fadeInCard 0.9s cubic-bezier(0.4,0,0.2,1);
-}
-@keyframes fadeInCard {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: none; }
-}
-.now-content {
-  background: linear-gradient(135deg, rgba(255,255,255,0.85) 60%, rgba(230,245,255,0.85) 100%);
-  border-radius: 22px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.13), 0 1.5px 8px rgba(0,0,0,0.07);
-  border: 1.5px solid rgba(60,120,255,0.13);
-  backdrop-filter: blur(7px);
-  padding: 2.3em 2.5em 1.7em 2.5em;
-  max-width: 500px;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  transition: box-shadow 0.2s;
-}
-.now-content:hover {
-  box-shadow: 0 10px 40px rgba(0,0,0,0.17), 0 2px 12px rgba(0,0,0,0.09);
-}
-.now-content .now-icon {
-  font-size: 2.1em;
-  color: #3a7bfd;
-  margin-bottom: 0.18em;
-  display: block;
-  filter: drop-shadow(0 2px 6px rgba(58,123,253,0.13));
-}
-.now-content h3 {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-bottom: 1.1em;
-  letter-spacing: 0.01em;
-  color: #2a2d3a;
-  text-align: left;
-  background: linear-gradient(90deg, #3a7bfd 30%, #00c6fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.now-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65em;
-  font-size: 0.95em;
-  color: #23272f;
-  align-items: flex-start;
-  animation: fadeInList 1.2s cubic-bezier(0.4,0,0.2,1);
-}
-@keyframes fadeInList {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: none; }
-}
-.now-list li {
-  display: flex;
-  align-items: center;
-  background: rgba(245,250,255,0.85);
-  border-radius: 9px;
-  padding: 0.32em 0.9em 0.32em 0.6em;
-  margin-bottom: 0.1em;
-  box-shadow: 0 1px 4px rgba(58,123,253,0.04);
-  font-weight: 500;
-  min-height: 2.1em;
-  position: relative;
-  transition: background 0.18s, box-shadow 0.18s;
-}
-.now-list li::before {
-  content: '';
-  display: inline-block;
-  width: 0.68em;
-  height: 0.68em;
-  border-radius: 50%;
-  margin-right: 0.85em;
-  background: linear-gradient(135deg, #3a7bfd 60%, #00c6fb 100%);
-  box-shadow: 0 1px 4px rgba(58,123,253,0.13);
-}
-.now-list li:hover {
-  background: rgba(230,245,255,0.97);
-  box-shadow: 0 2px 8px rgba(58,123,253,0.09);
-}
-@media (max-width: 700px) {
-  .feature-row--center, .feature__wrapper, .now-content {
-    max-width: 98vw;
-    padding: 0.7em 0.3em 0.7em 0.3em;
-  }
-  .now-content {
-    max-width: 98vw;
-    padding: 1.2em 0.5em 1.2em 0.5em;
-  }
-  .now-list {
-    font-size: 1em;
-  }
-}
-
-/* Remove extra margin above feature row if any */
-.section-divider + h2, .section-divider + h3, .section-divider + div.feature__wrapper {
-  margin-top: 0.2em !important;
-}
-.now-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
-  margin-top: 1.1em;
-  align-items: flex-start;
-  width: 100%;
-  text-align: left;
-}
-.now-timeline-row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  font-size: 0.85em;
-  background: rgba(245,250,255,0.97);
-  border-radius: 6px;
-  padding: 0.4em 0.8em 0.4em 0.8em;
-  box-shadow: 0 1px 3px rgba(58,123,253,0.06);
-  font-weight: 500;
-  min-height: 2.2em;
-  position: relative;
-  transition: background 0.18s, box-shadow 0.18s;
-  border: 1px solid #e3e8f0;
-  margin-bottom: 0.1em;
-  width: 100%;
-  flex-wrap: wrap;
-  text-align: left;
-}
-.now-timeline-row:hover {
-  background: rgba(230,245,255,1);
-  box-shadow: 0 2px 8px rgba(58,123,253,0.09);
-}
-.now-dot {
-  font-size: 1.2em;
-  margin-right: 0.7em;
-  color: #3a7bfd;
-  width: 1.2em;
-  display: inline-block;
-  text-align: center;
-  flex-shrink: 0;
-}
-.now-date {
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.8em;
-  color: #3a7bfd;
-  font-weight: 600;
-  margin-right: 1.1em;
-  min-width: 7.5em;
-  display: inline-block;
-  word-break: break-word;
-  text-align: left;
-}
-.now-desc {
-  font-size: 0.85em;
-  color: #23272f;
-  font-weight: 500;
-  display: inline-block;
-  word-break: break-word;
-  text-align: left;
-  line-height: 1.3;
-}
-@media (max-width: 700px) {
-  .now-timeline-row {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5em 0.7em 0.5em 0.7em;
-    font-size: 1em;
-  }
-  .now-date {
-    margin-right: 0;
-    min-width: 0;
-    margin-bottom: 0.2em;
-  }
-  .now-desc {
-    font-size: 1em;
-  }
-}
-</style>
-
-<div class="landing-page">
-{% include feature_row id="intro" type="center" %}
+<div class="intro-simple">
+  <p>Welcome to my personal website. I'm passionate about <em>data science</em>, <em>healthcare research</em>, and <em>personal development</em> — constantly exploring the intersection of analytics, movement, and meaningful impact</p>
 </div>
-
-<div class="section-divider"></div>
 
 ## Professional Journey
 
-<div class="feature__wrapper">
 {% include feature_row %}
-</div>
-
-<div class="section-divider"></div>
 
 ## Personal Interests
 
-<div class="feature__wrapper">
 {% include feature_row id="feature_row2" %}
-</div>
-
-<div class="section-divider"></div>
 
 ## Current Focus
 
@@ -322,95 +73,213 @@ h2, h3 {
     <span class="now-icon">🎯</span>
     <h3>What I'm Working On</h3>
     <div class="now-timeline">
-      <div class="now-timeline-row"><span class="now-dot">🏆</span> <span class="now-date">2025.09</span> <span class="now-desc">1st Place Winner - Brain ECoG Hackathon (69 teams, 404 participants)</span></div>
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.06 – Present</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science</span></div>
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2022.01 – Present</span> <span class="now-desc">🏋️ Calisthenics milestone training</span></div>
-      <div class="now-timeline-row"><span class="now-dot">●</span> <span class="now-date">2024.03 – Present</span> <span class="now-desc">🇪🇸 Pursuing B2 in Spanish</span></div>
+      <div class="now-timeline-row now-active"><span class="now-dot">●</span> <span class="now-date">2025.12 – Present</span> <span class="now-desc">🧠 Building ML/LLM models @ Grid Dynamics</span></div>
+      <div class="now-timeline-row now-active"><span class="now-dot">●</span> <span class="now-date">2025.06 – Present</span> <span class="now-desc">🔬 PhD research in healthcare data science @ Ionian Panepistimio</span></div>
+      <div class="now-timeline-row now-active"><span class="now-dot">●</span> <span class="now-date">2025.02 – Present</span> <span class="now-desc">🧠 Building LLM models @ KLIMAKA NGO</span></div>
+      <div class="now-timeline-row now-active"><span class="now-dot">●</span> <span class="now-date">2024.03 – Present</span> <span class="now-desc">🇪🇸 Pursuing B2 in Spanish</span></div>
+      <div class="now-timeline-row now-active"><span class="now-dot">●</span> <span class="now-date">2022.01 – Present</span> <span class="now-desc">🏋️ Calisthenics milestone training</span></div>
+      <div class="now-timeline-row now-finished"><span class="now-dot">●</span> <span class="now-date">(2024.06 - 2025.11)</span> <span class="now-desc">🧠 Building ML models @ HSBC</span></div>
+      <div class="now-timeline-row now-finished"><span class="now-dot">●</span> <span class="now-date">2025.11</span> <span class="now-desc">EIT Health i-Days 2025 | 2nd Place 🥈 (HygeIA)</span></div>
+      <div class="now-timeline-row now-finished"><span class="now-dot">●</span> <span class="now-date">2025.09</span> <span class="now-desc">Brain ECoG Hackathon (69 teams, 404 participants) | 1st Place Winner 🏆</span></div>
     </div>
   </div>
 </div>
 
-<div class="section-divider"></div>
-
-<!-- ## Gift Ideas
-
-<div class="wishlist-section">
-  <div class="wishlist-content">
-    <p>Looking for gift ideas? Check out my wishlist!</p>
-    <a href="/wishlist/" class="btn btn--primary">View Wishlist</a>
+<div class="cv-timeline-container">
+  <div class="cv-timeline">
+    <!-- Professional Work - Grouped together -->
+    <div class="cv-timeline-item" data-type="work" data-label="HSBC (2024.06 - 2025.11)">
+      <div class="cv-timeline-bar" style="left: 50%; width: 28.3%;">
+        <span class="cv-timeline-bar-label">💼 HSBC</span>
+      </div>
+      <div class="cv-timeline-label">HSBC</div>
+    </div>
+    <div class="cv-timeline-item" data-type="work" data-label="KLIMAKA NGO (2025.02 - Present)">
+      <div class="cv-timeline-bar" style="left: 61.7%; width: 38.3%;">
+        <span class="cv-timeline-bar-label">💼 KLIMAKA NGO</span>
+      </div>
+      <div class="cv-timeline-label">KLIMAKA NGO</div>
+    </div>
+    <div class="cv-timeline-item" data-type="work" data-label="Grid Dynamics (2025.12 - Present)">
+      <div class="cv-timeline-bar" style="left: 80%; width: 20%;">
+        <span class="cv-timeline-bar-label">💼 Grid Dynamics</span>
+      </div>
+      <div class="cv-timeline-label">Grid Dynamics</div>
+    </div>
+    <!-- Education - Grouped together -->
+    <div class="cv-timeline-item" data-type="education" data-label="Spanish B2 (2024.03 - Present)">
+      <div class="cv-timeline-bar" style="left: 43.3%; width: 56.7%;">
+        <span class="cv-timeline-bar-label">🇪🇸 Spanish B2</span>
+      </div>
+      <div class="cv-timeline-label">Spanish B2</div>
+    </div>
+    <div class="cv-timeline-item" data-type="education" data-label="PhD Research (2025.06 - Present)">
+      <div class="cv-timeline-bar" style="left: 70%; width: 30%;">
+        <span class="cv-timeline-bar-label">🔬 PhD Research</span>
+      </div>
+      <div class="cv-timeline-label">PhD Research</div>
+    </div>
+    <!-- Personal Development - Grouped together -->
+    <div class="cv-timeline-item" data-type="personal" data-label="Calisthenics (2022.01 - Present)">
+      <div class="cv-timeline-bar" style="left: 0%; width: 100%;">
+        <span class="cv-timeline-bar-label">🏋️ Calisthenics</span>
+      </div>
+      <div class="cv-timeline-label">Calisthenics</div>
+    </div>
   </div>
-</div> -->
+  <div class="cv-timeline-axis">
+    <div class="cv-timeline-year">2022</div>
+    <div class="cv-timeline-year">2023</div>
+    <div class="cv-timeline-year">2024</div>
+    <div class="cv-timeline-year">2025</div>
+    <div class="cv-timeline-year">2026</div>
+  </div>
+  <div class="cv-timeline-legend">
+    <div class="cv-timeline-legend-item">
+      <span class="cv-timeline-legend-color" style="background: #3b82f6;"></span>
+      <span>Professional Work</span>
+    </div>
+    <div class="cv-timeline-legend-item">
+      <span class="cv-timeline-legend-color" style="background: #10b981;"></span>
+      <span>Education & Research</span>
+    </div>
+    <div class="cv-timeline-legend-item">
+      <span class="cv-timeline-legend-color" style="background: #8b5cf6;"></span>
+      <span>Fitness Lifestyle</span>
+    </div>
+  </div>
+</div>
 
-<style>
-.landing-page .section-divider {
-  border: none;
-  border-top: 1px solid #e3e8f0;
-  height: 0;
-  margin: 0.7rem 0 0.7rem 0 !important;
-  background: none;
-}
-.landing-page h2, .landing-page h3, .landing-page h4 {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.3em !important;
-  line-height: 1.15;
-}
-.landing-page .feature__wrapper {
-  gap: 0.7rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.landing-page .feature__item {
-  margin: 0 0.2em 0.5em 0.2em !important;
-  padding: 1.1em 1em 1em 1em !important;
-}
-.landing-page .feature-row--center {
-  margin-bottom: 0.5rem !important;
-  padding: 1.1em 1em 1em 1em !important;
-}
-.landing-page .now-section {
-  margin: 0.7em 0 0.7em 0 !important;
-}
-.landing-page .now-content {
-  padding: 1.2em 1em 1em 1em !important;
-}
-.landing-page .now-list {
-  gap: 0.3em !important;
-}
-.landing-page .now-list li {
-  padding: 0.18em 0.7em !important;
-  margin-bottom: 0.05em !important;
-}
-.landing-page .skills-grid {
-  gap: 0.6rem 0.8rem !important;
-  margin-top: 0.5rem !important;
-}
-.landing-page .skill-item {
-  padding: 0.7rem 0.7rem 0.5rem 0.7rem !important;
-  margin-bottom: 0.3em !important;
-}
-.landing-page .workout-day {
-  margin: 0.7em 0 1em 0 !important;
-  padding: 0.7em 0.7em 0.7em 0.7em !important;
-}
-.landing-page .workout-table th, .landing-page .workout-table td {
-  padding: 0.3em 0.7em !important;
-}
-.landing-page .instagram-grid {
-  gap: 0.7rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.landing-page .instagram-post {
-  margin: 0.3rem !important;
-}
-.landing-page .nutrition-card {
-  margin-bottom: 0.5em !important;
-  padding: 0.7em 0.7em !important;
-}
-@media (max-width: 700px) {
-  .landing-page .feature-row--center, .landing-page .feature__wrapper, .landing-page .now-content, .landing-page .workout-day, .landing-page .skill-item {
-    padding: 0.5em 0.3em 0.5em 0.3em !important;
-    margin-bottom: 0.3em !important;
+<script>
+// CV Timeline Filter Functionality
+(function() {
+  'use strict';
+  
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTimelineFilters);
+  } else {
+    initTimelineFilters();
   }
-}
-</style>
+  
+  function initTimelineFilters() {
+    const timelineContainer = document.querySelector('.cv-timeline-container');
+    if (!timelineContainer) return;
+    
+    const timelineItems = document.querySelectorAll('.cv-timeline-item');
+    if (timelineItems.length === 0) return;
+    
+    // Safely get URL parameters
+    let urlParams = null;
+    try {
+      if (window.location && window.location.search) {
+        urlParams = new URLSearchParams(window.location.search);
+      }
+    } catch (e) {
+      console.warn('Could not parse URL parameters:', e);
+    }
+    
+    // Get filter from URL or default to 'all'
+    const filterType = urlParams ? (urlParams.get('type') || 'all') : 'all';
+    const filterLabel = urlParams ? (urlParams.get('label') || 'all') : 'all';
+    const filterYear = urlParams ? (urlParams.get('year') || 'all') : 'all';
+    
+    // Apply initial filters
+    applyFilters(filterType, filterLabel, filterYear);
+    
+    // Make legend items clickable
+    const legendItems = document.querySelectorAll('.cv-timeline-legend-item');
+    legendItems.forEach(item => {
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', function() {
+        const text = this.textContent.trim();
+        let type = 'all';
+        
+        if (text.includes('Professional Work')) type = 'work';
+        else if (text.includes('Education') || text.includes('Research')) type = 'education';
+        else if (text.includes('Fitness')) type = 'personal';
+        
+        updateURLAndFilter(type, 'all', 'all');
+      });
+    });
+    
+    // Make timeline labels clickable
+    timelineItems.forEach(item => {
+      const label = item.querySelector('.cv-timeline-label');
+      if (label) {
+        label.style.cursor = 'pointer';
+        label.addEventListener('click', function() {
+          const itemLabel = item.getAttribute('data-label');
+          const itemType = item.getAttribute('data-type');
+          updateURLAndFilter(itemType, itemLabel, 'all');
+        });
+      }
+    });
+    
+    // Make year labels clickable
+    const yearLabels = document.querySelectorAll('.cv-timeline-year');
+    yearLabels.forEach(year => {
+      year.style.cursor = 'pointer';
+      year.addEventListener('click', function() {
+        const yearValue = this.textContent.trim();
+        updateURLAndFilter('all', 'all', yearValue);
+      });
+    });
+  }
+  
+  function applyFilters(type, label, year) {
+    const timelineItems = document.querySelectorAll('.cv-timeline-item');
+    
+    timelineItems.forEach(item => {
+      let show = true;
+      
+      // Filter by type
+      if (type !== 'all') {
+        const itemType = item.getAttribute('data-type');
+        if (itemType !== type) show = false;
+      }
+      
+      // Filter by label
+      if (label !== 'all' && show) {
+        const itemLabel = item.getAttribute('data-label');
+        if (!itemLabel || !itemLabel.includes(label)) show = false;
+      }
+      
+      // Filter by year
+      if (year !== 'all' && show) {
+        const itemLabel = item.getAttribute('data-label');
+        if (!itemLabel || !itemLabel.includes(year)) show = false;
+      }
+      
+      // Apply visibility
+      if (show) {
+        item.style.opacity = '1';
+        item.style.pointerEvents = 'auto';
+      } else {
+        item.style.opacity = '0.3';
+        item.style.pointerEvents = 'none';
+      }
+    });
+  }
+  
+  function updateURLAndFilter(type, label, year) {
+    // Build URL parameters safely
+    const params = new URLSearchParams();
+    if (type !== 'all') params.set('type', type);
+    if (label !== 'all') params.set('label', label);
+    if (year !== 'all') params.set('year', year);
+    
+    // Update URL without page reload
+    const newURL = params.toString() 
+      ? window.location.pathname + '?' + params.toString() + window.location.hash
+      : window.location.pathname + window.location.hash;
+    
+    if (window.history && window.history.pushState) {
+      window.history.pushState({}, '', newURL);
+    }
+    
+    // Apply filters
+    applyFilters(type, label, year);
+  }
+})();
+</script>

@@ -1,21 +1,17 @@
-// Professional Timeline - Simple & Clean
+// Professional Experience Visualization - Card Grid Design
 (function() {
   'use strict';
   
-  const data = [
-    { type: 'work', name: 'Grid Dynamics', desc: 'Building ML/LLM models', start: '2025-12', end: null, icon: '🧠' },
-    { type: 'work', name: 'KLIMAKA NGO', desc: 'Building LLM models', start: '2025-02', end: null, icon: '🧠' },
-    { type: 'work', name: 'HSBC', desc: 'Building ML models', start: '2024-06', end: '2025-11', icon: '🧠' },
-    { type: 'education', name: 'PhD Research', desc: 'PhD research in healthcare data science @ Ionian Panepistimio', start: '2025-06', end: null, icon: '🔬' },
-    { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸' },
-    { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️' },
-    { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈' },
-    { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' }
+  const experiences = [
+    { type: 'work', name: 'Grid Dynamics', desc: 'Building ML/LLM models', start: '2025-12', end: null, icon: '🧠', color: '#2563eb' },
+    { type: 'work', name: 'KLIMAKA NGO', desc: 'Building LLM models', start: '2025-02', end: null, icon: '🧠', color: '#2563eb' },
+    { type: 'work', name: 'HSBC', desc: 'Building ML models', start: '2024-06', end: '2025-11', icon: '🧠', color: '#2563eb' },
+    { type: 'education', name: 'PhD Research', desc: 'PhD research in healthcare data science @ Ionian Panepistimio', start: '2025-06', end: null, icon: '🔬', color: '#059669' },
+    { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸', color: '#059669' },
+    { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️', color: '#7c3aed' },
+    { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈', color: '#f59e0b' },
+    { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆', color: '#f59e0b' }
   ];
-  
-  const startYear = 2022;
-  const endYear = 2026;
-  const totalMonths = (endYear - startYear + 1) * 12;
   
   function parseDate(str) {
     if (!str) return null;
@@ -28,18 +24,24 @@
     return { year: d.getFullYear(), month: d.getMonth() + 1 };
   }
   
-  function toMonths(date) {
-    return (date.year - startYear) * 12 + (date.month - 1);
-  }
-  
-  function toPercent(months) {
-    return (months / totalMonths) * 100;
-  }
-  
   function formatDate(date) {
     if (!date) return '';
     const m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return `${m[date.month - 1]} ${date.year}`;
+  }
+  
+  function formatDateRange(item) {
+    const start = parseDate(item.start);
+    const end = item.end ? parseDate(item.end) : getCurrent();
+    if (!start) return '';
+    
+    if (item.end && item.end === item.start) {
+      return formatDate(start);
+    }
+    if (item.end) {
+      return `${formatDate(start)} - ${formatDate(end)}`;
+    }
+    return `${formatDate(start)} - Present`;
   }
   
   function init() {
@@ -56,104 +58,44 @@
   function render(timeline) {
     timeline.innerHTML = '';
     
-    // Calculate positions and rows
-    const items = [];
-    const rows = [];
-    
-    data.forEach((item, idx) => {
-      const start = parseDate(item.start);
-      const end = item.end ? parseDate(item.end) : getCurrent();
-      if (!start) return;
-      
-      const startM = toMonths(start);
-      const endM = toMonths(end);
-      const left = toPercent(startM);
-      const width = toPercent(endM - startM);
-      
-      // Find row
-      let row = 0;
-      for (let r = 0; r < rows.length; r++) {
-        const overlap = rows[r].some(e => {
-          const eRight = e.left + e.width;
-          return !((left + width) <= e.left || left >= eRight);
-        });
-        if (!overlap) {
-          row = r;
-          break;
-        }
-        row = r + 1;
-      }
-      
-      if (!rows[row]) rows[row] = [];
-      rows[row].push({ left, width });
-      
-      items.push({ item, idx, left, width, row, start, end });
+    // Sort by start date (newest first)
+    const sorted = [...experiences].sort((a, b) => {
+      const aStart = parseDate(a.start);
+      const bStart = parseDate(b.start);
+      if (!aStart || !bStart) return 0;
+      return bStart.year - aStart.year || bStart.month - aStart.month;
     });
     
-    const maxRow = rows.length - 1;
+    // Create grid
+    const grid = document.createElement('div');
+    grid.className = 'cv-experience-grid';
     
-    // Create wrapper
-    const wrapper = document.createElement('div');
-    wrapper.className = 'cv-timeline-wrapper';
-    
-    // Labels column
-    const labelsCol = document.createElement('div');
-    labelsCol.className = 'cv-labels-column';
-    
-    items.forEach(({ item, row, start, end }) => {
-      const label = document.createElement('div');
-      label.className = `cv-label-row cv-${item.type}`;
-      label.style.top = `${row * 50 + 10}px`;
+    sorted.forEach((item, idx) => {
+      const card = document.createElement('div');
+      card.className = `cv-experience-card cv-${item.type}`;
+      card.setAttribute('data-type', item.type);
       
-      const dateStr = item.end && item.end === item.start
-        ? formatDate(start)
-        : item.end
-        ? `${formatDate(start)} - ${formatDate(end)}`
-        : `${formatDate(start)} - Present`;
+      const dateStr = formatDateRange(item);
+      const isActive = !item.end;
       
-      label.innerHTML = `
-        <div class="cv-label-date">${dateStr}</div>
-        <div class="cv-label-text">${item.icon} ${item.name}</div>
+      card.innerHTML = `
+        <div class="cv-card-header" style="background: ${item.color}20; border-left: 4px solid ${item.color}">
+          <div class="cv-card-icon">${item.icon}</div>
+          <div class="cv-card-title">${item.name}</div>
+        </div>
+        <div class="cv-card-body">
+          <div class="cv-card-date">${dateStr}</div>
+          <div class="cv-card-desc">${item.desc}</div>
+          ${isActive ? '<div class="cv-card-badge">Active</div>' : ''}
+        </div>
       `;
       
-      labelsCol.appendChild(label);
+      grid.appendChild(card);
     });
     
-    // Timeline column
-    const timelineCol = document.createElement('div');
-    timelineCol.className = 'cv-timeline-column';
+    timeline.appendChild(grid);
     
-    // Year markers
-    for (let y = startYear; y <= endYear; y++) {
-      const marker = document.createElement('div');
-      marker.className = 'cv-year-marker';
-      marker.textContent = y;
-      marker.style.left = `${((y - startYear) / (endYear - startYear)) * 100}%`;
-      timelineCol.appendChild(marker);
-    }
-    
-    // Bars
-    items.forEach(({ item, left, width, row }) => {
-      const bar = document.createElement('div');
-      bar.className = `cv-timeline-bar cv-${item.type}`;
-      bar.style.left = `${left}%`;
-      bar.style.width = `${Math.max(width, 1.5)}%`;
-      bar.style.top = `${row * 50 + 10}px`;
-      bar.style.zIndex = maxRow - row + 1;
-      
-      bar.innerHTML = `<span class="cv-bar-icon">${item.icon}</span><span class="cv-bar-text">${item.name}</span>`;
-      bar.title = `${item.name}: ${item.desc}`;
-      
-      timelineCol.appendChild(bar);
-    });
-    
-    wrapper.appendChild(labelsCol);
-    wrapper.appendChild(timelineCol);
-    timeline.appendChild(wrapper);
-    
-    timeline.style.height = `${(maxRow + 1) * 50 + 30}px`;
-    
-    // Render axis
+    // Render timeline axis
     renderAxis();
   }
   
@@ -162,13 +104,15 @@
     if (!axis) return;
     
     axis.innerHTML = '';
+    axis.className = 'cv-timeline-axis';
     
-    for (let y = startYear; y <= endYear; y++) {
+    const years = [2022, 2023, 2024, 2025, 2026];
+    years.forEach(year => {
       const el = document.createElement('div');
       el.className = 'cv-axis-year';
-      el.textContent = y;
+      el.textContent = year;
       axis.appendChild(el);
-    }
+    });
   }
   
   function setupFilters() {
@@ -187,9 +131,14 @@
   }
   
   function filter(type) {
-    document.querySelectorAll('.cv-timeline-bar, .cv-label-row').forEach(el => {
-      const itemType = el.className.match(/cv-(work|education|personal|achievement)/)?.[1];
-      el.style.opacity = (type === 'all' || itemType === type) ? '1' : '0.2';
+    document.querySelectorAll('.cv-experience-card').forEach(card => {
+      const cardType = card.getAttribute('data-type');
+      if (type === 'all' || cardType === type) {
+        card.style.display = 'block';
+        card.style.opacity = '1';
+      } else {
+        card.style.display = 'none';
+      }
     });
   }
   

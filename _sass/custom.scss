@@ -3017,156 +3017,131 @@ html body .btn:active {
 }
 
 /* ============================================
-   CV TIMELINE - Simple Professional Design
+   CV EXPERIENCE - Card Grid Design
    ============================================ */
 
 .cv-timeline-container {
   margin: 3rem 0;
-  padding: 2rem;
+  padding: 2.5rem;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid rgba(0, 31, 63, 0.1);
-  box-shadow: 0 2px 12px rgba(0, 31, 63, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 31, 63, 0.08);
 }
 
 .cv-timeline {
-  position: relative;
   margin-bottom: 2rem;
-  min-height: 250px;
 }
 
-.cv-timeline-wrapper {
-  display: flex;
-  gap: 2rem;
-  position: relative;
+.cv-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.cv-labels-column {
-  width: 200px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.cv-label-row {
-  position: absolute;
-  width: 100%;
-  padding: 0.5rem 0;
-  font-size: 0.8125rem;
-  line-height: 1.5;
-}
-
-.cv-label-date {
-  color: #6b7280;
-  font-size: 0.75rem;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.cv-label-text {
-  color: #001f3f;
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
-.cv-timeline-column {
-  flex: 1;
-  position: relative;
-  min-height: 200px;
-  border-top: 2px solid rgba(0, 31, 63, 0.15);
-  padding-top: 10px;
-  margin-top: 20px;
-}
-
-.cv-year-marker {
-  position: absolute;
-  top: -25px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #9ca3af;
-  transform: translateX(-50%);
+.cv-experience-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 31, 63, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  cursor: pointer;
   
-  &::after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: calc(100vh - 50px);
-    background: rgba(0, 31, 63, 0.1);
-    z-index: 0;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 31, 63, 0.12);
+    border-color: rgba(0, 31, 63, 0.2);
   }
 }
 
-.cv-timeline-bar {
-  position: absolute;
-  height: 36px;
-  border-radius: 6px;
+.cv-card-header {
+  padding: 1.25rem;
   display: flex;
   align-items: center;
-  padding: 0 12px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 100px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 31, 63, 0.05);
 }
 
-.cv-bar-icon {
-  margin-right: 8px;
+.cv-card-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.cv-card-title {
   font-size: 1rem;
+  font-weight: 700;
+  color: #001f3f;
+  line-height: 1.3;
+  flex: 1;
 }
 
-.cv-bar-text {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+.cv-card-body {
+  padding: 1.25rem;
+  position: relative;
 }
 
-.cv-timeline-bar.cv-work {
-  background: #2563eb;
+.cv-card-date {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
 }
 
-.cv-timeline-bar.cv-education {
-  background: #059669;
+.cv-card-desc {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
-.cv-timeline-bar.cv-personal {
-  background: #7c3aed;
+.cv-card-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-top: 0.5rem;
 }
 
-.cv-timeline-bar.cv-achievement {
-  background: #f59e0b;
+.cv-experience-card.cv-work .cv-card-header {
+  border-left-color: #2563eb;
 }
 
-.cv-timeline-bar:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+.cv-experience-card.cv-education .cv-card-header {
+  border-left-color: #059669;
+}
+
+.cv-experience-card.cv-personal .cv-card-header {
+  border-left-color: #7c3aed;
+}
+
+.cv-experience-card.cv-achievement .cv-card-header {
+  border-left-color: #f59e0b;
 }
 
 .cv-timeline-axis {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
   border-top: 1px solid rgba(0, 31, 63, 0.1);
-  margin-left: 200px;
 }
 
 .cv-axis-year {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  color: #6b7280;
-  text-align: center;
-  cursor: pointer;
+  color: #9ca3af;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
   transition: all 0.2s ease;
-  padding: 0.5rem;
-  border-radius: 4px;
-  flex: 1;
+  cursor: pointer;
   
   &:hover {
     color: #001f3f;
@@ -3251,40 +3226,20 @@ html body .btn:active {
     padding: 1.5rem;
   }
   
-  .cv-timeline {
-    padding-left: 0;
-    min-height: auto;
+  .cv-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
   
-  .cv-timeline-labels {
-    position: relative;
-    width: 100%;
-    margin-bottom: 1rem;
+  .cv-card-header {
+    padding: 1rem;
   }
   
-  .cv-timeline-label {
-    position: relative;
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    background: #f8f9fa;
-    border-radius: 6px;
-  }
-  
-  .cv-timeline-grid {
-    margin-top: 0;
-    border-top: none;
-    padding-top: 1rem;
-  }
-  
-  .cv-timeline-bar {
-    position: relative;
-    margin-bottom: 0.5rem;
-    width: 100% !important;
-    left: 0 !important;
+  .cv-card-body {
+    padding: 1rem;
   }
   
   .cv-timeline-axis {
-    margin-left: 0;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
@@ -3292,9 +3247,9 @@ html body .btn:active {
   .cv-axis-year {
     flex: 1;
     min-width: 60px;
+    text-align: center;
   }
-  
-  .cv-timeline {
+}
     min-height: 200px;
     padding: 1.5rem 0 0.5rem;
   }

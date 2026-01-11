@@ -1,4 +1,4 @@
-// Professional Timeline - Clean & Working
+// Interactive Professional Timeline with Zoom & Details
 (function() {
   'use strict';
   
@@ -13,9 +13,16 @@
     { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' }
   ];
   
-  const startYear = 2022;
-  const endYear = 2026;
-  const totalMonths = (endYear - startYear + 1) * 12;
+  const config = {
+    startYear: 2022,
+    endYear: 2026,
+    zoomLevel: 1, // 1 = years, 2 = months
+    rowHeight: 56,
+    labelWidth: 220
+  };
+  
+  let selectedItem = null;
+  let expandedItem = null;
   
   function parseDate(str) {
     if (!str) return null;
@@ -29,10 +36,10 @@
   }
   
   function toMonths(date) {
-    return (date.year - startYear) * 12 + (date.month - 1);
+    return (date.year - config.startYear) * 12 + (date.month - 1);
   }
   
-  function toPercent(months) {
+  function toPercent(months, totalMonths) {
     return Math.max(0, Math.min(100, (months / totalMonths) * 100));
   }
   
@@ -60,15 +67,62 @@
     const container = document.querySelector('.cv-timeline-container');
     if (!container) return;
     
-    const timeline = container.querySelector('.cv-timeline');
-    if (!timeline) return;
-    
-    render(timeline);
+    createControls(container);
+    render();
     setupFilters();
   }
   
-  function render(timeline) {
+  function createControls(container) {
+    const controls = document.createElement('div');
+    controls.className = 'cv-timeline-controls';
+    controls.innerHTML = `
+      <div class="cv-zoom-controls">
+        <button class="cv-zoom-btn ${config.zoomLevel === 1 ? 'active' : ''}" data-zoom="1">
+          <span>Years</span>
+        </button>
+        <button class="cv-zoom-btn ${config.zoomLevel === 2 ? 'active' : ''}" data-zoom="2">
+          <span>Months</span>
+        </button>
+      </div>
+      <button class="cv-reset-btn" id="cv-reset">Reset View</button>
+    `;
+    
+    const timeline = container.querySelector('.cv-timeline');
+    if (timeline) {
+      container.insertBefore(controls, timeline);
+    }
+    
+    // Zoom controls
+    controls.querySelectorAll('.cv-zoom-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        config.zoomLevel = parseInt(btn.getAttribute('data-zoom'));
+        controls.querySelectorAll('.cv-zoom-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+      });
+    });
+    
+    document.getElementById('cv-reset')?.addEventListener('click', () => {
+      config.zoomLevel = 1;
+      selectedItem = null;
+      expandedItem = null;
+      controls.querySelectorAll('.cv-zoom-btn').forEach(b => {
+        b.classList.toggle('active', parseInt(b.getAttribute('data-zoom')) === 1);
+      });
+      clearFilters();
+      render();
+    });
+  }
+  
+  function render() {
+    const timeline = document.querySelector('.cv-timeline');
+    if (!timeline) return;
+    
     timeline.innerHTML = '';
+    
+    const totalMonths = config.zoomLevel === 1 
+      ? (config.endYear - config.startYear + 1) * 12
+      : (config.endYear - config.startYear + 1) * 12;
     
     // Calculate positions
     const items = [];
@@ -81,11 +135,11 @@
       
       const startM = toMonths(start);
       const endM = toMonths(end);
-      const left = toPercent(startM);
-      const right = toPercent(endM);
-      const width = Math.max(1.5, right - left);
+      const left = toPercent(startM, totalMonths);
+      const right = toPercent(endM, totalMonths);
+      const width = Math.max(2, right - left);
       
-      // Find non-overlapping row
+      // Find row
       let row = 0;
       for (let r = 0; r < rows.length; r++) {
         const hasOverlap = rows[r].some(existing => {
@@ -106,78 +160,101 @@
     });
     
     const maxRow = rows.length - 1;
-    const rowHeight = 50;
-    const labelWidth = 200;
+    const timelineHeight = (maxRow + 1) * config.rowHeight + 60;
     
-    // Create container
+    // Create wrapper
     const wrapper = document.createElement('div');
     wrapper.className = 'cv-timeline-wrapper';
-    wrapper.style.position = 'relative';
-    wrapper.style.minHeight = `${(maxRow + 1) * rowHeight + 40}px`;
-    wrapper.style.paddingLeft = `${labelWidth}px`;
+    wrapper.style.minHeight = `${timelineHeight}px`;
+    wrapper.style.paddingLeft = `${config.labelWidth}px`;
     
-    // Labels on left
+    // Labels
     const labels = document.createElement('div');
     labels.className = 'cv-labels';
-    labels.style.position = 'absolute';
-    labels.style.left = '0';
-    labels.style.top = '0';
-    labels.style.width = `${labelWidth - 20}px`;
     
     items.forEach(({ item, row, start, end }) => {
       const label = document.createElement('div');
       label.className = `cv-label cv-${item.type}`;
-      label.style.position = 'absolute';
-      label.style.top = `${row * rowHeight + 10}px`;
-      label.style.width = '100%';
+      label.style.top = `${row * config.rowHeight + 15}px`;
       
       const dateStr = formatDateRange(item);
+      const isExpanded = expandedItem === item.name;
+      
       label.innerHTML = `
         <div class="cv-label-date">${dateStr}</div>
         <div class="cv-label-name">${item.icon} ${item.name}</div>
+        ${isExpanded ? `<div class="cv-label-desc">${item.desc}</div>` : ''}
       `;
       
       labels.appendChild(label);
     });
     
-    // Timeline bars
+    // Timeline bars container
     const barsContainer = document.createElement('div');
     barsContainer.className = 'cv-bars-container';
+    barsContainer.style.height = `${timelineHeight}px`;
+    barsContainer.style.borderTop = '3px solid rgba(0, 31, 63, 0.15)';
+    barsContainer.style.marginTop = '25px';
+    barsContainer.style.paddingTop = '15px';
     barsContainer.style.position = 'relative';
-    barsContainer.style.width = '100%';
-    barsContainer.style.height = `${(maxRow + 1) * rowHeight + 40}px`;
-    barsContainer.style.borderTop = '2px solid rgba(0, 31, 63, 0.15)';
-    barsContainer.style.marginTop = '20px';
-    barsContainer.style.paddingTop = '10px';
     
-    // Year markers
-    for (let y = startYear; y <= endYear; y++) {
-      const marker = document.createElement('div');
-      marker.className = 'cv-year-marker';
-      marker.textContent = y;
-      marker.style.position = 'absolute';
-      marker.style.top = '-25px';
-      marker.style.left = `${((y - startYear) / (endYear - startYear)) * 100}%`;
-      marker.style.transform = 'translateX(-50%)';
-      barsContainer.appendChild(marker);
+    // Year/Month markers
+    if (config.zoomLevel === 1) {
+      for (let y = config.startYear; y <= config.endYear; y++) {
+        const marker = document.createElement('div');
+        marker.className = 'cv-year-marker';
+        marker.textContent = y;
+        marker.style.left = `${((y - config.startYear) / (config.endYear - config.startYear)) * 100}%`;
+        barsContainer.appendChild(marker);
+      }
+    } else {
+      const monthLabels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+      for (let y = config.startYear; y <= config.endYear; y++) {
+        monthLabels.forEach((m, i) => {
+          const marker = document.createElement('div');
+          marker.className = 'cv-month-marker';
+          marker.textContent = m;
+          marker.title = `${monthLabels[i]} ${y}`;
+          const monthsFromStart = (y - config.startYear) * 12 + i;
+          marker.style.left = `${(monthsFromStart / totalMonths) * 100}%`;
+          barsContainer.appendChild(marker);
+        });
+      }
     }
     
     // Bars
     items.forEach(({ item, left, width, row }) => {
       const bar = document.createElement('div');
-      bar.className = `cv-timeline-bar cv-${item.type}`;
-      bar.style.position = 'absolute';
+      bar.className = `cv-timeline-bar cv-${item.type} ${selectedItem === item.name ? 'selected' : ''} ${expandedItem === item.name ? 'expanded' : ''}`;
       bar.style.left = `${left}%`;
       bar.style.width = `${width}%`;
-      bar.style.top = `${row * rowHeight + 10}px`;
-      bar.style.height = `${rowHeight - 10}px`;
+      bar.style.top = `${row * config.rowHeight + 15}px`;
+      bar.style.height = `${config.rowHeight - 10}px`;
       bar.style.zIndex = maxRow - row + 1;
       
       bar.innerHTML = `
-        <span class="cv-bar-icon">${item.icon}</span>
-        <span class="cv-bar-name">${item.name}</span>
+        <div class="cv-bar-content">
+          <span class="cv-bar-icon">${item.icon}</span>
+          <span class="cv-bar-name">${item.name}</span>
+        </div>
+        <div class="cv-bar-details">${item.desc}</div>
       `;
-      bar.title = `${item.name}: ${item.desc}`;
+      
+      bar.setAttribute('data-item', item.name);
+      bar.setAttribute('data-desc', item.desc);
+      bar.setAttribute('data-date', formatDateRange(item));
+      
+      // Click to expand
+      bar.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (expandedItem === item.name) {
+          expandedItem = null;
+        } else {
+          expandedItem = item.name;
+        }
+        selectedItem = item.name;
+        render();
+      });
       
       barsContainer.appendChild(bar);
     });
@@ -186,7 +263,15 @@
     wrapper.appendChild(barsContainer);
     timeline.appendChild(wrapper);
     
-    // Render axis
+    // Click outside to deselect
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.cv-timeline-bar')) {
+        selectedItem = null;
+        expandedItem = null;
+        render();
+      }
+    });
+    
     renderAxis();
   }
   
@@ -195,12 +280,26 @@
     if (!axis) return;
     
     axis.innerHTML = '';
+    axis.className = `cv-timeline-axis cv-zoom-${config.zoomLevel}`;
     
-    for (let y = startYear; y <= endYear; y++) {
-      const el = document.createElement('div');
-      el.className = 'cv-axis-year';
-      el.textContent = y;
-      axis.appendChild(el);
+    if (config.zoomLevel === 1) {
+      for (let y = config.startYear; y <= config.endYear; y++) {
+        const el = document.createElement('div');
+        el.className = 'cv-axis-year';
+        el.textContent = y;
+        axis.appendChild(el);
+      }
+    } else {
+      const monthLabels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+      for (let y = config.startYear; y <= config.endYear; y++) {
+        monthLabels.forEach((m, i) => {
+          const el = document.createElement('div');
+          el.className = 'cv-axis-month';
+          el.textContent = m;
+          el.title = `${monthLabels[i]} ${y}`;
+          axis.appendChild(el);
+        });
+      }
     }
   }
   
@@ -222,7 +321,13 @@
   function filter(type) {
     document.querySelectorAll('.cv-timeline-bar, .cv-label').forEach(el => {
       const itemType = el.className.match(/cv-(work|education|personal|achievement)/)?.[1];
-      el.style.opacity = (type === 'all' || itemType === type) ? '1' : '0.2';
+      el.style.opacity = (type === 'all' || itemType === type) ? '1' : '0.25';
+    });
+  }
+  
+  function clearFilters() {
+    document.querySelectorAll('.cv-timeline-bar, .cv-label').forEach(el => {
+      el.style.opacity = '1';
     });
   }
   

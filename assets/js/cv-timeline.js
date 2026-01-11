@@ -202,9 +202,17 @@
   
   function renderTimeline() {
     const timeline = document.querySelector('.cv-timeline');
-    if (!timeline) return;
+    if (!timeline) {
+      console.warn('CV Timeline: Timeline element not found in renderTimeline');
+      return;
+    }
     
     const { positions, maxRow } = calculatePositions();
+    
+    if (positions.length === 0) {
+      console.warn('CV Timeline: No positions calculated');
+      return;
+    }
     
     timeline.innerHTML = '';
     

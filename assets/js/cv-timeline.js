@@ -1,24 +1,28 @@
-// Interactive Professional Timeline with Zoom & Details
+// Professional Timeline - Reorganized & Beautiful
 (function() {
   'use strict';
   
+  // Reorganized data: sorted by start date, grouped logically
   const data = [
-    { type: 'work', name: 'Grid Dynamics', desc: 'Building ML/LLM models', start: '2025-12', end: null, icon: '🧠' },
-    { type: 'work', name: 'KLIMAKA NGO', desc: 'Building LLM models', start: '2025-02', end: null, icon: '🧠' },
-    { type: 'work', name: 'HSBC', desc: 'Building ML models', start: '2024-06', end: '2025-11', icon: '🧠' },
-    { type: 'education', name: 'PhD Research', desc: 'PhD research in healthcare data science @ Ionian Panepistimio', start: '2025-06', end: null, icon: '🔬' },
-    { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸' },
-    { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️' },
-    { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈' },
-    { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' }
+    // Long-term ongoing activities (sorted by start)
+    { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️', priority: 1 },
+    { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸', priority: 2 },
+    { type: 'work', name: 'HSBC', desc: 'Building ML models', start: '2024-06', end: '2025-11', icon: '🧠', priority: 3 },
+    { type: 'work', name: 'KLIMAKA NGO', desc: 'Building LLM models', start: '2025-02', end: null, icon: '🧠', priority: 4 },
+    { type: 'education', name: 'PhD Research', desc: 'PhD research in healthcare data science @ Ionian Panepistimio', start: '2025-06', end: null, icon: '🔬', priority: 5 },
+    { type: 'work', name: 'Grid Dynamics', desc: 'Building ML/LLM models', start: '2025-12', end: null, icon: '🧠', priority: 6 },
+    
+    // Achievements (sorted by date)
+    { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆', priority: 7 },
+    { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈', priority: 8 }
   ];
   
   const config = {
     startYear: 2022,
     endYear: 2026,
-    zoomLevel: 1, // 1 = years, 2 = months
-    rowHeight: 56,
-    labelWidth: 220
+    zoomLevel: 1,
+    rowHeight: 60,
+    labelWidth: 240
   };
   
   let selectedItem = null;
@@ -92,7 +96,6 @@
       container.insertBefore(controls, timeline);
     }
     
-    // Zoom controls
     controls.querySelectorAll('.cv-zoom-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         config.zoomLevel = parseInt(btn.getAttribute('data-zoom'));
@@ -120,15 +123,21 @@
     
     timeline.innerHTML = '';
     
-    const totalMonths = config.zoomLevel === 1 
-      ? (config.endYear - config.startYear + 1) * 12
-      : (config.endYear - config.startYear + 1) * 12;
+    const totalMonths = (config.endYear - config.startYear + 1) * 12;
     
-    // Calculate positions
+    // Calculate positions with better overlap handling
     const items = [];
     const rows = [];
     
-    data.forEach((item, idx) => {
+    // Sort by start date for better organization
+    const sortedData = [...data].sort((a, b) => {
+      const aStart = parseDate(a.start);
+      const bStart = parseDate(b.start);
+      if (!aStart || !bStart) return 0;
+      return aStart.year - bStart.year || aStart.month - bStart.month || a.priority - b.priority;
+    });
+    
+    sortedData.forEach((item, idx) => {
       const start = parseDate(item.start);
       const end = item.end ? parseDate(item.end) : getCurrent();
       if (!start) return;
@@ -137,14 +146,15 @@
       const endM = toMonths(end);
       const left = toPercent(startM, totalMonths);
       const right = toPercent(endM, totalMonths);
-      const width = Math.max(2, right - left);
+      const width = Math.max(3, right - left);
       
-      // Find row
+      // Smart row assignment - prefer same row if no overlap
       let row = 0;
       for (let r = 0; r < rows.length; r++) {
         const hasOverlap = rows[r].some(existing => {
           const existingRight = existing.left + existing.width;
-          return !((left + width) <= existing.left || left >= existingRight);
+          const margin = 0.5; // Small margin to prevent touching
+          return !((left + width + margin) <= existing.left || (left - margin) >= existingRight);
         });
         if (!hasOverlap) {
           row = r;
@@ -160,7 +170,7 @@
     });
     
     const maxRow = rows.length - 1;
-    const timelineHeight = (maxRow + 1) * config.rowHeight + 60;
+    const timelineHeight = (maxRow + 1) * config.rowHeight + 80;
     
     // Create wrapper
     const wrapper = document.createElement('div');
@@ -168,20 +178,24 @@
     wrapper.style.minHeight = `${timelineHeight}px`;
     wrapper.style.paddingLeft = `${config.labelWidth}px`;
     
-    // Labels
+    // Labels column
     const labels = document.createElement('div');
     labels.className = 'cv-labels';
     
     items.forEach(({ item, row, start, end }) => {
       const label = document.createElement('div');
       label.className = `cv-label cv-${item.type}`;
-      label.style.top = `${row * config.rowHeight + 15}px`;
+      label.style.top = `${row * config.rowHeight + 20}px`;
       
       const dateStr = formatDateRange(item);
       const isExpanded = expandedItem === item.name;
+      const isActive = !item.end;
       
       label.innerHTML = `
-        <div class="cv-label-date">${dateStr}</div>
+        <div class="cv-label-header">
+          <div class="cv-label-date">${dateStr}</div>
+          ${isActive ? '<span class="cv-active-badge">Active</span>' : ''}
+        </div>
         <div class="cv-label-name">${item.icon} ${item.name}</div>
         ${isExpanded ? `<div class="cv-label-desc">${item.desc}</div>` : ''}
       `;
@@ -194,9 +208,10 @@
     barsContainer.className = 'cv-bars-container';
     barsContainer.style.height = `${timelineHeight}px`;
     barsContainer.style.borderTop = '3px solid rgba(0, 31, 63, 0.15)';
-    barsContainer.style.marginTop = '25px';
-    barsContainer.style.paddingTop = '15px';
+    barsContainer.style.marginTop = '30px';
+    barsContainer.style.paddingTop = '20px';
     barsContainer.style.position = 'relative';
+    barsContainer.style.background = 'linear-gradient(to bottom, transparent 0%, rgba(0, 31, 63, 0.02) 100%)';
     
     // Year/Month markers
     if (config.zoomLevel === 1) {
@@ -222,27 +237,28 @@
       }
     }
     
-    // Bars
+    // Timeline bars
     items.forEach(({ item, left, width, row }) => {
       const bar = document.createElement('div');
       bar.className = `cv-timeline-bar cv-${item.type} ${selectedItem === item.name ? 'selected' : ''} ${expandedItem === item.name ? 'expanded' : ''}`;
       bar.style.left = `${left}%`;
       bar.style.width = `${width}%`;
-      bar.style.top = `${row * config.rowHeight + 15}px`;
-      bar.style.height = `${config.rowHeight - 10}px`;
+      bar.style.top = `${row * config.rowHeight + 20}px`;
+      bar.style.height = `${config.rowHeight - 15}px`;
       bar.style.zIndex = maxRow - row + 1;
+      
+      const isActive = !item.end;
       
       bar.innerHTML = `
         <div class="cv-bar-content">
           <span class="cv-bar-icon">${item.icon}</span>
           <span class="cv-bar-name">${item.name}</span>
+          ${isActive ? '<span class="cv-bar-pulse"></span>' : ''}
         </div>
         <div class="cv-bar-details">${item.desc}</div>
       `;
       
       bar.setAttribute('data-item', item.name);
-      bar.setAttribute('data-desc', item.desc);
-      bar.setAttribute('data-date', formatDateRange(item));
       
       // Click to expand
       bar.addEventListener('click', (e) => {

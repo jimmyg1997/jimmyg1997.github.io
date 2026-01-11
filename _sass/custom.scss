@@ -3018,100 +3018,119 @@ html body .btn:active {
 
 /* ============================================
    CV TIMELINE GRAPH VISUALIZATION
+   Elegant & Professional Design
    ============================================ */
 
 .cv-timeline-container {
-  margin: 3rem 0;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 4rem 0;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 31, 63, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 31, 63, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #10b981 50%, #8b5cf6 100%);
+    opacity: 0.6;
+  }
 }
 
 .cv-timeline {
   position: relative;
-  min-height: 200px;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
+  min-height: 240px;
+  margin-bottom: 3rem;
+  padding: 2rem 0 1rem;
 }
 
 .cv-timeline-item {
   position: relative;
-  margin-bottom: 1.5rem;
-  height: 50px;
+  margin-bottom: 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
 }
 
 .cv-timeline-bar {
   position: absolute;
-  height: 40px;
-  border-radius: 8px;
+  height: 44px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 0 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  padding: 0 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  
-  &[data-type="work"] {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  }
-  
-  &[data-type="education"] {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  }
-  
-  &[data-type="personal"] {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-  }
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 2;
 }
 
 .cv-timeline-item[data-type="work"] .cv-timeline-bar {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cv-timeline-item[data-type="education"] .cv-timeline-bar {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cv-timeline-item[data-type="personal"] .cv-timeline-bar {
-  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cv-timeline-bar:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  z-index: 3;
 }
 
 .cv-timeline-bar-label {
   color: white;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
   white-space: nowrap;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .cv-timeline-label {
   position: absolute;
-  top: 50px;
+  top: 58px;
   left: 0;
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.8125rem;
+  color: #4b5563;
   font-weight: 500;
-  padding: 0.5rem 0;
-  transition: color 0.2s ease;
+  padding: 0.625rem 0;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+  min-width: 140px;
 }
 
 .cv-timeline-label:hover {
   color: #001f3f;
+  font-weight: 600;
 }
 
 .cv-timeline-axis {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  padding: 1rem 0;
-  border-top: 2px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(0, 31, 63, 0.12);
   position: relative;
 }
 
@@ -3121,112 +3140,178 @@ html body .btn:active {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #e0e0e0 10%, #e0e0e0 90%, transparent 100%);
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(0, 31, 63, 0.08) 5%, 
+    rgba(0, 31, 63, 0.12) 50%, 
+    rgba(0, 31, 63, 0.08) 95%, 
+    transparent 100%
+  );
 }
 
 .cv-timeline-year {
-  font-size: 0.85rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  color: #666;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  color: #6b7280;
+  padding: 0.75rem 0.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  flex: 1;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .cv-timeline-year:hover {
-  background: #f5f5f5;
   color: #001f3f;
+  transform: translateY(-2px);
 }
 
 .cv-timeline-year::before {
   content: '';
   position: absolute;
-  top: -1rem;
+  top: -1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
-  height: 12px;
-  background: #e0e0e0;
+  width: 1px;
+  height: 16px;
+  background: linear-gradient(180deg, rgba(0, 31, 63, 0.2) 0%, transparent 100%);
+}
+
+.cv-timeline-year::after {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(0, 31, 63, 0.1);
 }
 
 .cv-timeline-legend {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 3rem;
+  margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(0, 31, 63, 0.08);
   flex-wrap: wrap;
 }
 
 .cv-timeline-legend-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.01em;
+  position: relative;
 }
 
 .cv-timeline-legend-item:hover {
-  background: #f5f5f5;
+  background: rgba(0, 31, 63, 0.04);
   color: #001f3f;
+  transform: translateY(-1px);
 }
 
 .cv-timeline-legend-color {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
   display: inline-block;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+/* Fade effect for filtered items */
+.cv-timeline-item[style*="opacity: 0.3"] {
+  .cv-timeline-bar {
+    opacity: 0.3;
+    filter: grayscale(0.5);
+  }
+  
+  .cv-timeline-label {
+    opacity: 0.4;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .cv-timeline-container {
-    padding: 1rem;
-    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+  }
+  
+  .cv-timeline {
+    min-height: 200px;
+    padding: 1.5rem 0 0.5rem;
   }
   
   .cv-timeline-item {
-    height: 60px;
+    height: 64px;
+    margin-bottom: 2.5rem;
   }
   
   .cv-timeline-bar {
-    height: 35px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+  }
+  
+  .cv-timeline-bar-label {
     font-size: 0.8rem;
-    padding: 0 8px;
   }
   
   .cv-timeline-label {
     font-size: 0.75rem;
-    top: 40px;
+    top: 44px;
+    min-width: 120px;
   }
   
   .cv-timeline-axis {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.25rem;
+    padding: 1.25rem 0;
   }
   
   .cv-timeline-year {
     font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    flex: 0 0 auto;
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .cv-timeline-year::before {
+    height: 12px;
+  }
+  
+  .cv-timeline-year::after {
+    width: 5px;
+    height: 5px;
   }
   
   .cv-timeline-legend {
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
   }
   
   .cv-timeline-legend-item {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 0.8125rem;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  
+  .cv-timeline-legend-color {
+    width: 16px;
+    height: 16px;
   }
 }
 

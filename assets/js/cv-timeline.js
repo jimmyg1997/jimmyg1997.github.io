@@ -104,11 +104,24 @@
   
   function init() {
     const container = document.querySelector('.cv-timeline-container');
-    if (!container) return;
+    if (!container) {
+      console.warn('CV Timeline: Container not found');
+      return;
+    }
+    
+    const timeline = container.querySelector('.cv-timeline');
+    if (!timeline) {
+      console.warn('CV Timeline: Timeline element not found');
+      return;
+    }
     
     createControls(container);
-    renderTimeline();
-    setupListeners();
+    
+    // Small delay to ensure DOM is ready
+    setTimeout(() => {
+      renderTimeline();
+      setupListeners();
+    }, 100);
   }
   
   function createControls(container) {
@@ -240,7 +253,9 @@
       timeline.appendChild(itemEl);
     });
     
-    timeline.style.height = `${(maxRow + 1) * (config.itemHeight + config.itemSpacing) + 20}px`;
+    const calculatedHeight = (maxRow + 1) * (config.itemHeight + config.itemSpacing) + 20;
+    timeline.style.height = `${Math.max(calculatedHeight, 300)}px`;
+    timeline.style.position = 'relative';
     
     renderAxis();
     attachListeners();

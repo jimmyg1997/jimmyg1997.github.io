@@ -1,8 +1,8 @@
-// Professional Timeline Visualization - Clean Design
+// Professional Timeline - Simple & Clean
 (function() {
   'use strict';
   
-  const timelineData = [
+  const data = [
     { type: 'work', name: 'Grid Dynamics', desc: 'Building ML/LLM models', start: '2025-12', end: null, icon: '🧠' },
     { type: 'work', name: 'KLIMAKA NGO', desc: 'Building LLM models', start: '2025-02', end: null, icon: '🧠' },
     { type: 'work', name: 'HSBC', desc: 'Building ML models', start: '2024-06', end: '2025-11', icon: '🧠' },
@@ -13,69 +13,71 @@
     { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' }
   ];
   
-  const config = {
-    startYear: 2022,
-    endYear: 2026,
-    totalMonths: 60
-  };
+  const startYear = 2022;
+  const endYear = 2026;
+  const totalMonths = (endYear - startYear + 1) * 12;
   
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
+  function parseDate(str) {
+    if (!str) return null;
+    const [y, m] = str.split('-').map(Number);
+    return { year: y, month: m || 1 };
+  }
+  
+  function getCurrent() {
+    const d = new Date();
+    return { year: d.getFullYear(), month: d.getMonth() + 1 };
+  }
+  
+  function toMonths(date) {
+    return (date.year - startYear) * 12 + (date.month - 1);
+  }
+  
+  function toPercent(months) {
+    return (months / totalMonths) * 100;
+  }
+  
+  function formatDate(date) {
+    if (!date) return '';
+    const m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `${m[date.month - 1]} ${date.year}`;
   }
   
   function init() {
     const container = document.querySelector('.cv-timeline-container');
     if (!container) return;
     
-    renderTimeline();
-    setupInteractions();
+    const timeline = container.querySelector('.cv-timeline');
+    if (!timeline) return;
+    
+    render(timeline);
+    setupFilters();
   }
   
-  function parseDate(dateStr) {
-    if (!dateStr) return null;
-    const [year, month] = dateStr.split('-').map(Number);
-    return { year, month: month || 1 };
-  }
-  
-  function getCurrentDate() {
-    const now = new Date();
-    return { year: now.getFullYear(), month: now.getMonth() + 1 };
-  }
-  
-  function dateToMonths(date) {
-    return (date.year - config.startYear) * 12 + (date.month - 1);
-  }
-  
-  function formatDate(date) {
-    if (!date) return '';
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return `${months[date.month - 1]} ${date.year}`;
-  }
-  
-  function calculateLayout() {
+  function render(timeline) {
+    timeline.innerHTML = '';
+    
+    // Calculate positions and rows
     const items = [];
     const rows = [];
     
-    timelineData.forEach((item, index) => {
-      const startDate = parseDate(item.start);
-      const endDate = item.end ? parseDate(item.end) : getCurrentDate();
-      if (!startDate) return;
+    data.forEach((item, idx) => {
+      const start = parseDate(item.start);
+      const end = item.end ? parseDate(item.end) : getCurrent();
+      if (!start) return;
       
-      const startMonths = dateToMonths(startDate);
-      const endMonths = dateToMonths(endDate);
-      const left = (startMonths / config.totalMonths) * 100;
-      const width = ((endMonths - startMonths) / config.totalMonths) * 100;
+      const startM = toMonths(start);
+      const endM = toMonths(end);
+      const left = toPercent(startM);
+      const width = toPercent(endM - startM);
       
       // Find row
       let row = 0;
       for (let r = 0; r < rows.length; r++) {
-        const overlaps = rows[r].some(existing => {
-          const existingRight = existing.left + existing.width;
-          return !((left + width) <= existing.left || left >= existingRight);
+        const overlap = rows[r].some(e => {
+          const eRight = e.left + e.width;
+          return !((left + width) <= e.left || left >= eRight);
         });
-        if (!overlaps) {
+        if (!overlap) {
           row = r;
           break;
         }
@@ -85,97 +87,73 @@
       if (!rows[row]) rows[row] = [];
       rows[row].push({ left, width });
       
-      items.push({
-        item,
-        index,
-        left,
-        width,
-        row,
-        startDate,
-        endDate
-      });
+      items.push({ item, idx, left, width, row, start, end });
     });
     
-    return { items, maxRow: rows.length - 1 };
-  }
-  
-  function renderTimeline() {
-    const timeline = document.querySelector('.cv-timeline');
-    if (!timeline) return;
+    const maxRow = rows.length - 1;
     
-    const { items, maxRow } = calculateLayout();
+    // Create wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'cv-timeline-wrapper';
     
-    timeline.innerHTML = '';
+    // Labels column
+    const labelsCol = document.createElement('div');
+    labelsCol.className = 'cv-labels-column';
     
-    // Create grid
-    const grid = document.createElement('div');
-    grid.className = 'cv-timeline-grid';
-    
-    // Year markers
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      const marker = document.createElement('div');
-      marker.className = 'cv-year-marker';
-      marker.textContent = year;
-      marker.style.left = `${((year - config.startYear) / (config.endYear - config.startYear)) * 100}%`;
-      grid.appendChild(marker);
-    }
-    
-    // Timeline bars
-    items.forEach(({ item, left, width, row, startDate, endDate }) => {
-      const bar = document.createElement('div');
-      bar.className = `cv-timeline-bar cv-${item.type}`;
-      bar.style.left = `${left}%`;
-      bar.style.width = `${Math.max(width, 2)}%`;
-      bar.style.top = `${row * 50 + 30}px`;
-      bar.style.zIndex = maxRow - row + 1;
-      
-      const dateStr = item.end && item.end === item.start
-        ? formatDate(startDate)
-        : item.end
-        ? `${formatDate(startDate)} - ${formatDate(endDate)}`
-        : `${formatDate(startDate)} - Present`;
-      
-      bar.innerHTML = `
-        <span class="cv-bar-icon">${item.icon}</span>
-        <span class="cv-bar-name">${item.name}</span>
-        <div class="cv-bar-tooltip">
-          <strong>${item.name}</strong><br>
-          ${item.desc}<br>
-          <em>${dateStr}</em>
-        </div>
-      `;
-      
-      grid.appendChild(bar);
-    });
-    
-    // Labels on the left
-    const labels = document.createElement('div');
-    labels.className = 'cv-timeline-labels';
-    
-    items.forEach(({ item, row, startDate, endDate }) => {
+    items.forEach(({ item, row, start, end }) => {
       const label = document.createElement('div');
-      label.className = `cv-timeline-label cv-${item.type}`;
-      label.style.top = `${row * 50 + 30}px`;
+      label.className = `cv-label-row cv-${item.type}`;
+      label.style.top = `${row * 50 + 10}px`;
       
       const dateStr = item.end && item.end === item.start
-        ? formatDate(startDate)
+        ? formatDate(start)
         : item.end
-        ? `${formatDate(startDate)} - ${formatDate(endDate)}`
-        : `${formatDate(startDate)} - Present`;
+        ? `${formatDate(start)} - ${formatDate(end)}`
+        : `${formatDate(start)} - Present`;
       
       label.innerHTML = `
         <div class="cv-label-date">${dateStr}</div>
-        <div class="cv-label-name">${item.icon} ${item.name}</div>
+        <div class="cv-label-text">${item.icon} ${item.name}</div>
       `;
       
-      labels.appendChild(label);
+      labelsCol.appendChild(label);
     });
     
-    timeline.appendChild(labels);
-    timeline.appendChild(grid);
+    // Timeline column
+    const timelineCol = document.createElement('div');
+    timelineCol.className = 'cv-timeline-column';
     
-    timeline.style.height = `${(maxRow + 1) * 50 + 60}px`;
+    // Year markers
+    for (let y = startYear; y <= endYear; y++) {
+      const marker = document.createElement('div');
+      marker.className = 'cv-year-marker';
+      marker.textContent = y;
+      marker.style.left = `${((y - startYear) / (endYear - startYear)) * 100}%`;
+      timelineCol.appendChild(marker);
+    }
     
+    // Bars
+    items.forEach(({ item, left, width, row }) => {
+      const bar = document.createElement('div');
+      bar.className = `cv-timeline-bar cv-${item.type}`;
+      bar.style.left = `${left}%`;
+      bar.style.width = `${Math.max(width, 1.5)}%`;
+      bar.style.top = `${row * 50 + 10}px`;
+      bar.style.zIndex = maxRow - row + 1;
+      
+      bar.innerHTML = `<span class="cv-bar-icon">${item.icon}</span><span class="cv-bar-text">${item.name}</span>`;
+      bar.title = `${item.name}: ${item.desc}`;
+      
+      timelineCol.appendChild(bar);
+    });
+    
+    wrapper.appendChild(labelsCol);
+    wrapper.appendChild(timelineCol);
+    timeline.appendChild(wrapper);
+    
+    timeline.style.height = `${(maxRow + 1) * 50 + 30}px`;
+    
+    // Render axis
     renderAxis();
   }
   
@@ -185,40 +163,17 @@
     
     axis.innerHTML = '';
     
-    for (let year = config.startYear; year <= config.endYear; year++) {
-      const yearEl = document.createElement('div');
-      yearEl.className = 'cv-axis-year';
-      yearEl.textContent = year;
-      axis.appendChild(yearEl);
+    for (let y = startYear; y <= endYear; y++) {
+      const el = document.createElement('div');
+      el.className = 'cv-axis-year';
+      el.textContent = y;
+      axis.appendChild(el);
     }
   }
   
-  function setupInteractions() {
-    // Bar hover effects
-    document.addEventListener('mouseover', (e) => {
-      const bar = e.target.closest('.cv-timeline-bar');
-      if (bar) {
-        const tooltip = bar.querySelector('.cv-bar-tooltip');
-        if (tooltip) {
-          tooltip.style.display = 'block';
-          const rect = bar.getBoundingClientRect();
-          tooltip.style.left = `${rect.left + rect.width / 2}px`;
-          tooltip.style.top = `${rect.top - 60}px`;
-        }
-      }
-    });
-    
-    document.addEventListener('mouseout', (e) => {
-      const bar = e.target.closest('.cv-timeline-bar');
-      if (bar) {
-        const tooltip = bar.querySelector('.cv-bar-tooltip');
-        if (tooltip) tooltip.style.display = 'none';
-      }
-    });
-    
-    // Legend filtering
-    document.querySelectorAll('.cv-timeline-legend-item').forEach(item => {
-      item.addEventListener('click', function() {
+  function setupFilters() {
+    document.querySelectorAll('.cv-timeline-legend-item').forEach(el => {
+      el.addEventListener('click', function() {
         const text = this.textContent.trim();
         let type = 'all';
         if (text.includes('Professional')) type = 'work';
@@ -226,19 +181,21 @@
         else if (text.includes('Fitness')) type = 'personal';
         else if (text.includes('Achievement')) type = 'achievement';
         
-        filterByType(type);
+        filter(type);
       });
     });
   }
   
-  function filterByType(type) {
-    document.querySelectorAll('.cv-timeline-bar, .cv-timeline-label').forEach(el => {
+  function filter(type) {
+    document.querySelectorAll('.cv-timeline-bar, .cv-label-row').forEach(el => {
       const itemType = el.className.match(/cv-(work|education|personal|achievement)/)?.[1];
-      if (type === 'all' || itemType === type) {
-        el.style.opacity = '1';
-      } else {
-        el.style.opacity = '0.2';
-      }
+      el.style.opacity = (type === 'all' || itemType === type) ? '1' : '0.2';
     });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();

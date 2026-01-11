@@ -3017,12 +3017,12 @@ html body .btn:active {
 }
 
 /* ============================================
-   CV TIMELINE - Fresh Clean Design
+   CV TIMELINE - Simple Professional Design
    ============================================ */
 
 .cv-timeline-container {
   margin: 3rem 0;
-  padding: 2.5rem;
+  padding: 2rem;
   background: #ffffff;
   border-radius: 12px;
   border: 1px solid rgba(0, 31, 63, 0.1);
@@ -3032,24 +3032,27 @@ html body .btn:active {
 .cv-timeline {
   position: relative;
   margin-bottom: 2rem;
-  min-height: 300px;
-  padding-left: 200px;
+  min-height: 250px;
 }
 
-.cv-timeline-labels {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 180px;
-  height: 100%;
+.cv-timeline-wrapper {
+  display: flex;
+  gap: 2rem;
+  position: relative;
 }
 
-.cv-timeline-label {
+.cv-labels-column {
+  width: 200px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cv-label-row {
   position: absolute;
   width: 100%;
-  padding-right: 20px;
+  padding: 0.5rem 0;
   font-size: 0.8125rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .cv-label-date {
@@ -3059,23 +3062,24 @@ html body .btn:active {
   margin-bottom: 4px;
 }
 
-.cv-label-name {
+.cv-label-text {
   color: #001f3f;
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-.cv-timeline-grid {
+.cv-timeline-column {
+  flex: 1;
   position: relative;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid rgba(0, 31, 63, 0.1);
+  min-height: 200px;
+  border-top: 2px solid rgba(0, 31, 63, 0.15);
+  padding-top: 10px;
   margin-top: 20px;
 }
 
 .cv-year-marker {
   position: absolute;
-  top: -20px;
+  top: -25px;
   font-size: 0.75rem;
   font-weight: 600;
   color: #9ca3af;
@@ -3084,11 +3088,11 @@ html body .btn:active {
   &::after {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
-    height: 100vh;
+    height: calc(100vh - 50px);
     background: rgba(0, 31, 63, 0.1);
     z-index: 0;
   }
@@ -3096,11 +3100,11 @@ html body .btn:active {
 
 .cv-timeline-bar {
   position: absolute;
-  height: 32px;
+  height: 36px;
   border-radius: 6px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 12px;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.8125rem;
@@ -3109,57 +3113,17 @@ html body .btn:active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 80px;
+  min-width: 100px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .cv-bar-icon {
-  margin-right: 6px;
+  margin-right: 8px;
   font-size: 1rem;
 }
 
-.cv-bar-name {
+.cv-bar-text {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.cv-bar-tooltip {
-  position: fixed;
-  background: rgba(0, 31, 63, 0.95);
-  color: white;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  line-height: 1.6;
-  white-space: normal;
-  max-width: 250px;
-  z-index: 1000;
-  pointer-events: none;
-  display: none;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  transform: translateX(-50%);
-  
-  strong {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 0.875rem;
-  }
-  
-  em {
-    display: block;
-    margin-top: 4px;
-    opacity: 0.9;
-    font-size: 0.6875rem;
-  }
-  
-  &::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: rgba(0, 31, 63, 0.95);
-  }
 }
 
 .cv-timeline-bar.cv-work {
@@ -3202,6 +3166,7 @@ html body .btn:active {
   transition: all 0.2s ease;
   padding: 0.5rem;
   border-radius: 4px;
+  flex: 1;
   
   &:hover {
     color: #001f3f;

@@ -220,14 +220,6 @@
       `;
       itemEl.appendChild(label);
       
-      // Bar on the right
-      const bar = document.createElement('div');
-      bar.className = 'cv-timeline-bar';
-      bar.style.left = `${config.labelWidth + 20}px`;
-      bar.style.width = `calc(100% - ${config.labelWidth + 40}px)`;
-      bar.style.marginLeft = `${(left / 100) * (window.innerWidth - config.labelWidth - 60))}px`;
-      bar.style.width = `${(width / 100) * (window.innerWidth - config.labelWidth - 60))}px`;
-      
       // Bar container with percentage-based positioning
       const barContainer = document.createElement('div');
       barContainer.className = 'cv-bar-container';

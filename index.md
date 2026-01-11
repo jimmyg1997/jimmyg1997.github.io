@@ -105,5 +105,9 @@ feature_row2:
       <span class="cv-timeline-legend-color" style="background: #7c3aed;"></span>
       <span>Fitness Lifestyle</span>
     </div>
+    <div class="cv-timeline-legend-item">
+      <span class="cv-timeline-legend-color" style="background: #f59e0b;"></span>
+      <span>Achievements</span>
+    </div>
   </div>
 </div>

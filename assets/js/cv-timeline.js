@@ -1,25 +1,100 @@
-// CV Timeline - Clean, Compact, Elegant Design
+// CV Timeline - Comprehensive Professional Timeline
 (function() {
   'use strict';
   
-  // Timeline data - no duplicates
+  // Complete timeline data with all information
   const timelineData = [
-    { type: 'work', name: 'HSBC', start: '2024-06', end: '2025-11', icon: '💼' },
-    { type: 'work', name: 'KLIMAKA NGO', start: '2025-02', end: null, icon: '💼' },
-    { type: 'work', name: 'Grid Dynamics', start: '2025-12', end: null, icon: '💼' },
-    { type: 'education', name: 'Spanish B2', start: '2024-03', end: null, icon: '🇪🇸' },
-    { type: 'education', name: 'PhD Research', start: '2025-06', end: null, icon: '🔬' },
-    { type: 'personal', name: 'Calisthenics', start: '2022-01', end: null, icon: '🏋️' }
+    // Professional Work
+    { 
+      type: 'work', 
+      name: 'Grid Dynamics', 
+      description: 'Building ML/LLM models',
+      start: '2025-12', 
+      end: null, 
+      icon: '🧠',
+      status: 'active'
+    },
+    { 
+      type: 'work', 
+      name: 'KLIMAKA NGO', 
+      description: 'Building LLM models',
+      start: '2025-02', 
+      end: null, 
+      icon: '🧠',
+      status: 'active'
+    },
+    { 
+      type: 'work', 
+      name: 'HSBC', 
+      description: 'Building ML models',
+      start: '2024-06', 
+      end: '2025-11', 
+      icon: '🧠',
+      status: 'finished'
+    },
+    
+    // Education & Research
+    { 
+      type: 'education', 
+      name: 'PhD Research', 
+      description: 'PhD research in healthcare data science @ Ionian Panepistimio',
+      start: '2025-06', 
+      end: null, 
+      icon: '🔬',
+      status: 'active'
+    },
+    { 
+      type: 'education', 
+      name: 'Spanish B2', 
+      description: 'Pursuing B2 in Spanish',
+      start: '2024-03', 
+      end: null, 
+      icon: '🇪🇸',
+      status: 'active'
+    },
+    
+    // Personal
+    { 
+      type: 'personal', 
+      name: 'Calisthenics', 
+      description: 'Calisthenics milestone training',
+      start: '2022-01', 
+      end: null, 
+      icon: '🏋️',
+      status: 'active'
+    },
+    
+    // Achievements
+    { 
+      type: 'achievement', 
+      name: 'EIT Health i-Days 2025', 
+      description: '2nd Place (HygeIA)',
+      start: '2025-11', 
+      end: '2025-11', 
+      icon: '🥈',
+      status: 'finished'
+    },
+    { 
+      type: 'achievement', 
+      name: 'Brain ECoG Hackathon', 
+      description: '1st Place Winner (69 teams, 404 participants)',
+      start: '2025-09', 
+      end: '2025-09', 
+      icon: '🏆',
+      status: 'finished'
+    }
   ];
   
   const config = {
     startYear: 2022,
     endYear: 2026,
-    itemHeight: 36,
-    itemSpacing: 8
+    itemHeight: 48,
+    itemSpacing: 12,
+    labelWidth: 180
   };
   
-  let currentZoom = 1; // 1 = years, 2 = months
+  let currentZoom = 1;
+  let selectedIndex = null;
   
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
@@ -41,12 +116,8 @@
     controls.className = 'cv-timeline-controls';
     controls.innerHTML = `
       <div class="cv-zoom-group">
-        <button class="cv-zoom-btn" id="zoom-out" title="Years View">
-          <span>Years</span>
-        </button>
-        <button class="cv-zoom-btn" id="zoom-in" title="Months View">
-          <span>Months</span>
-        </button>
+        <button class="cv-zoom-btn ${currentZoom === 1 ? 'active' : ''}" id="zoom-years">Years</button>
+        <button class="cv-zoom-btn ${currentZoom === 2 ? 'active' : ''}" id="zoom-months">Months</button>
       </div>
       <button class="cv-reset-btn" id="reset-view">Reset</button>
     `;
@@ -92,14 +163,14 @@
       
       const left = Math.max(0, dateToPosition(startDate));
       const right = Math.min(100, dateToPosition(endDate));
-      const width = Math.max(1, right - left);
+      const width = Math.max(2, right - left);
       
       // Find non-overlapping row
       let row = 0;
       for (let r = 0; r < rows.length; r++) {
         const hasOverlap = rows[r].some(existing => {
           const existingRight = existing.left + existing.width;
-          return !(right <= existing.left || left >= existingRight);
+          return !(right <= existing.left + 1 || left >= existingRight - 1);
         });
         if (!hasOverlap) {
           row = r;
@@ -122,42 +193,64 @@
     
     const { positions, maxRow } = calculatePositions();
     
-    // Clear existing
     timeline.innerHTML = '';
     
-    // Create compact items
+    // Create timeline items with labels
     positions.forEach(({ left, width, row, item, index }) => {
       const itemEl = document.createElement('div');
-      itemEl.className = `cv-timeline-item cv-${item.type}`;
+      itemEl.className = `cv-timeline-item cv-${item.type} ${selectedIndex === index ? 'selected' : ''}`;
       itemEl.setAttribute('data-index', index);
       itemEl.style.top = `${row * (config.itemHeight + config.itemSpacing)}px`;
       
-      const bar = document.createElement('div');
-      bar.className = 'cv-timeline-bar';
-      bar.style.left = `${left}%`;
-      bar.style.width = `${width}%`;
-      bar.style.zIndex = maxRow - row + 1;
-      
+      // Label on the left
+      const label = document.createElement('div');
+      label.className = 'cv-item-label';
       const startDate = parseDate(item.start);
       const endDate = item.end ? parseDate(item.end) : getCurrentDate();
-      const dateStr = item.end 
+      const dateStr = item.end && item.end === item.start
+        ? formatDate(startDate)
+        : item.end
         ? `${formatDate(startDate)} - ${formatDate(endDate)}`
         : `${formatDate(startDate)} - Present`;
       
-      bar.innerHTML = `<span class="cv-bar-icon">${item.icon}</span><span class="cv-bar-text">${item.name}</span>`;
-      bar.setAttribute('data-tooltip', `${item.name}\n${dateStr}`);
+      label.innerHTML = `
+        <div class="cv-label-date">${dateStr}</div>
+        <div class="cv-label-name">${item.icon} ${item.name}</div>
+        <div class="cv-label-desc">${item.description}</div>
+      `;
+      itemEl.appendChild(label);
       
-      itemEl.appendChild(bar);
+      // Bar on the right
+      const bar = document.createElement('div');
+      bar.className = 'cv-timeline-bar';
+      bar.style.left = `${config.labelWidth + 20}px`;
+      bar.style.width = `calc(100% - ${config.labelWidth + 40}px)`;
+      bar.style.marginLeft = `${(left / 100) * (window.innerWidth - config.labelWidth - 60))}px`;
+      bar.style.width = `${(width / 100) * (window.innerWidth - config.labelWidth - 60))}px`;
+      
+      // Bar container with percentage-based positioning
+      const barContainer = document.createElement('div');
+      barContainer.className = 'cv-bar-container';
+      
+      const actualBar = document.createElement('div');
+      actualBar.className = 'cv-bar';
+      actualBar.style.left = `${left}%`;
+      actualBar.style.width = `${width}%`;
+      actualBar.style.zIndex = maxRow - row + 1;
+      actualBar.innerHTML = `<span class="cv-bar-content">${item.name}</span>`;
+      
+      const tooltipText = `${item.name}\n${item.description}\n${dateStr}`;
+      actualBar.setAttribute('data-tooltip', tooltipText);
+      
+      barContainer.appendChild(actualBar);
+      itemEl.appendChild(barContainer);
+      
       timeline.appendChild(itemEl);
     });
     
-    // Update height
     timeline.style.height = `${(maxRow + 1) * (config.itemHeight + config.itemSpacing) + 20}px`;
     
-    // Render axis
     renderAxis();
-    
-    // Re-attach listeners
     attachListeners();
   }
   
@@ -166,10 +259,9 @@
     if (!axis) return;
     
     axis.innerHTML = '';
+    axis.className = `cv-timeline-axis ${currentZoom === 1 ? 'cv-years' : 'cv-months'}`;
     
     if (currentZoom === 1) {
-      // Years view - compact
-      axis.className = 'cv-timeline-axis cv-years';
       for (let year = config.startYear; year <= config.endYear; year++) {
         const el = document.createElement('div');
         el.className = 'cv-axis-label';
@@ -178,8 +270,6 @@
         axis.appendChild(el);
       }
     } else {
-      // Months view
-      axis.className = 'cv-timeline-axis cv-months';
       for (let year = config.startYear; year <= config.endYear; year++) {
         for (let month = 1; month <= 12; month++) {
           const el = document.createElement('div');
@@ -196,20 +286,20 @@
   }
   
   function attachListeners() {
-    // Bar interactions
-    document.querySelectorAll('.cv-timeline-bar').forEach(bar => {
+    document.querySelectorAll('.cv-bar').forEach(bar => {
       bar.addEventListener('mouseenter', showTooltip);
       bar.addEventListener('mouseleave', hideTooltip);
       bar.addEventListener('click', (e) => {
         e.stopPropagation();
-        document.querySelectorAll('.cv-timeline-item').forEach(item => {
-          item.classList.remove('selected');
-        });
-        e.currentTarget.closest('.cv-timeline-item')?.classList.add('selected');
+        const item = e.target.closest('.cv-timeline-item');
+        if (item) {
+          document.querySelectorAll('.cv-timeline-item').forEach(i => i.classList.remove('selected'));
+          item.classList.add('selected');
+          selectedIndex = parseInt(item.getAttribute('data-index'));
+        }
       });
     });
     
-    // Axis clicks
     document.querySelectorAll('.cv-axis-label').forEach(label => {
       label.addEventListener('click', () => {
         const year = label.getAttribute('data-year');
@@ -219,6 +309,7 @@
   }
   
   function showTooltip(e) {
+    hideTooltip();
     const tooltip = document.createElement('div');
     tooltip.className = 'cv-tooltip';
     tooltip.textContent = e.target.getAttribute('data-tooltip');
@@ -226,7 +317,7 @@
     
     const rect = e.target.getBoundingClientRect();
     tooltip.style.left = `${rect.left + rect.width / 2}px`;
-    tooltip.style.top = `${rect.top - 45}px`;
+    tooltip.style.top = `${rect.top - 50}px`;
     
     setTimeout(() => tooltip.classList.add('visible'), 10);
   }
@@ -236,28 +327,26 @@
   }
   
   function setupListeners() {
-    // Zoom buttons
-    document.getElementById('zoom-in')?.addEventListener('click', () => {
+    document.getElementById('zoom-years')?.addEventListener('click', () => {
+      currentZoom = 1;
+      updateZoomUI();
+      renderTimeline();
+    });
+    
+    document.getElementById('zoom-months')?.addEventListener('click', () => {
       currentZoom = 2;
       updateZoomUI();
       renderTimeline();
     });
     
-    document.getElementById('zoom-out')?.addEventListener('click', () => {
-      currentZoom = 1;
-      updateZoomUI();
-      renderTimeline();
-    });
-    
-    // Reset
     document.getElementById('reset-view')?.addEventListener('click', () => {
       currentZoom = 1;
+      selectedIndex = null;
       updateZoomUI();
       clearFilters();
       renderTimeline();
     });
     
-    // Legend
     document.querySelectorAll('.cv-timeline-legend-item').forEach(item => {
       item.addEventListener('click', function() {
         const text = this.textContent.trim();
@@ -265,32 +354,29 @@
         if (text.includes('Professional')) type = 'work';
         else if (text.includes('Education')) type = 'education';
         else if (text.includes('Fitness')) type = 'personal';
+        else if (text.includes('Achievement')) type = 'achievement';
         filterByType(type);
       });
     });
     
-    // Click outside
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.cv-timeline-item')) {
         document.querySelectorAll('.cv-timeline-item').forEach(item => {
           item.classList.remove('selected');
         });
+        selectedIndex = null;
       }
     });
   }
   
   function updateZoomUI() {
-    const zoomIn = document.getElementById('zoom-in');
-    const zoomOut = document.getElementById('zoom-out');
-    
-    if (zoomIn) zoomIn.classList.toggle('active', currentZoom === 2);
-    if (zoomOut) zoomOut.classList.toggle('active', currentZoom === 1);
+    document.getElementById('zoom-years')?.classList.toggle('active', currentZoom === 1);
+    document.getElementById('zoom-months')?.classList.toggle('active', currentZoom === 2);
   }
   
   function filterByType(type) {
     document.querySelectorAll('.cv-timeline-item').forEach(item => {
-      const itemType = item.className.includes('cv-work') ? 'work' :
-                      item.className.includes('cv-education') ? 'education' : 'personal';
+      const itemType = item.className.match(/cv-(work|education|personal|achievement)/)?.[1];
       if (type === 'all' || itemType === type) {
         item.style.opacity = '1';
       } else {
@@ -318,4 +404,13 @@
       item.style.opacity = '1';
     });
   }
+  
+  // Handle window resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      renderTimeline();
+    }, 250);
+  });
 })();

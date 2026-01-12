@@ -3301,6 +3301,33 @@ html body .btn:active {
   }
 }
 
+.cv-gantt-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 31, 63, 0.1);
+  margin-left: 200px;
+  gap: 0;
+}
+
+.cv-axis-year {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+  flex: 1;
+  
+  &:hover {
+    color: #001f3f;
+    background: rgba(0, 31, 63, 0.05);
+  }
+}
+
 /* Responsive for Gantt chart */
 @media (max-width: 768px) {
   .cv-timeline {
@@ -3452,8 +3479,8 @@ html body .btn:active {
     margin-bottom: 0.5rem;
   }
   
-  .cv-timeline-axis {
-    margin-left: 0;
+  .cv-gantt-axis {
+    margin-left: 160px;
     flex-wrap: wrap;
     gap: 0.5rem;
   }

@@ -342,6 +342,61 @@
     });
   }
   
+  function setupZoom(chartArea, zoomContainer) {
+    let isDragging = false;
+    let startX = 0;
+    let scrollLeft = 0;
+    
+    // Mouse wheel zoom (Ctrl/Cmd + scroll)
+    chartArea.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        config.zoomLevel = Math.max(config.minZoom, Math.min(config.maxZoom, config.zoomLevel + delta));
+        zoomContainer.style.transform = `scale(${config.zoomLevel})`;
+        zoomContainer.style.width = `${100 / config.zoomLevel}%`;
+        const currentHeight = chartArea.offsetHeight;
+        zoomContainer.style.minHeight = `${currentHeight / config.zoomLevel}px`;
+      }
+    }, { passive: false });
+    
+    // Drag to pan
+    chartArea.addEventListener('mousedown', (e) => {
+      if (e.button === 0) {
+        isDragging = true;
+        chartArea.style.cursor = 'grabbing';
+        startX = e.pageX - chartArea.offsetLeft;
+        scrollLeft = chartArea.scrollLeft;
+      }
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - chartArea.offsetLeft;
+      const walk = (x - startX) * 2;
+      chartArea.scrollLeft = scrollLeft - walk;
+    });
+    
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      chartArea.style.cursor = 'grab';
+    });
+    
+    // Touch support for mobile
+    let touchStartX = 0;
+    chartArea.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].pageX - chartArea.offsetLeft;
+      scrollLeft = chartArea.scrollLeft;
+    }, { passive: true });
+    
+    chartArea.addEventListener('touchmove', (e) => {
+      const x = e.touches[0].pageX - chartArea.offsetLeft;
+      const walk = (x - touchStartX) * 2;
+      chartArea.scrollLeft = scrollLeft - walk;
+    }, { passive: true });
+  }
+  
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

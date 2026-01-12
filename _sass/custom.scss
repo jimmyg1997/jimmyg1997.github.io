@@ -3101,6 +3101,7 @@ html body .btn:active {
   border-right: 1px solid rgba(0, 31, 63, 0.1);
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  overflow: visible;
 }
 
 .cv-gantt-label {
@@ -3113,6 +3114,7 @@ html body .btn:active {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 .cv-label-content {
@@ -3121,6 +3123,7 @@ html body .btn:active {
   gap: 1.25rem;
   width: 100%;
   min-width: 0;
+  overflow: visible;
 }
 
 .cv-label-icon {
@@ -3140,6 +3143,7 @@ html body .btn:active {
   flex-direction: column;
   justify-content: center;
   gap: 0.125rem;
+  max-width: none;
 }
 
 .cv-label-name {
@@ -3152,6 +3156,7 @@ html body .btn:active {
   text-overflow: clip;
   line-height: 1.4;
   letter-spacing: 0.01em;
+  max-width: none;
 }
 
 .cv-label-date {
@@ -3163,6 +3168,7 @@ html body .btn:active {
   overflow: visible;
   text-overflow: clip;
   letter-spacing: 0.01em;
+  max-width: none;
 }
 
 .cv-label-badge {

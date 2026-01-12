@@ -17,7 +17,7 @@
     startYear: 2022,
     endYear: 2026,
     rowHeight: 60,
-    labelWidth: 350,
+    labelWidth: 380,
     barHeight: 44
   };
   

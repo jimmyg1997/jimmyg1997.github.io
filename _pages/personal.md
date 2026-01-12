@@ -1202,8 +1202,22 @@ document.addEventListener('DOMContentLoaded', function() {
         <h4 id="1984">1984</h4>
         <p class="book-author">by George Orwell</p>
         <p class="book-rating">Rating: ⭐⭐⭐⭐</p>
-        <p><strong>My Review:</strong> I love how διαχρονικό (timeless) this book is. It's literally talking about telescreens that watch us all the time and we cannot escape from our fate - basically what big companies are doing today. I'm a bit sad that the book had only 3 parts and not so much action, but it's a book of knowledge - I learned a lot about communism and actually about fascism specifically. It also touches on parts of "The Art of War" (war is peace), which gives me motivation to read that essential book next. Overall, I recommend it. I'm so sad about Winston (spoiler alert), but we cannot escape! There was hope of rebellion and it happened many times throughout history, but not this time.</p>
-        <a href="https://www.goodreads.com/book/show/61439040-1984" class="btn btn--primary btn--small" target="_blank">View on Goodreads</a>
+        <p class="book-summary">A dystopian novel about totalitarian surveillance and thought control in a future society. A timeless masterpiece that remains eerily relevant today.</p>
+        <div class="book-review" id="review-1984">
+          <div class="book-review-summary" id="review-1984-summary">
+            <p><strong>My Review:</strong> I love how διαχρονικό (timeless) this book is. It's literally talking about telescreens that watch us all the time and we cannot escape from our fate - basically what big companies are doing today...</p>
+            <button class="btn btn--primary btn--small" onclick="toggleBookReview('1984')">Read Full Review</button>
+          </div>
+          <div class="book-review-full" id="review-1984-full" style="display: none;">
+            <p><strong>My Review:</strong></p>
+            <p>I love how διαχρονικό (timeless) this book is. It's literally talking about telescreens that watch us all the time and we cannot escape from our fate - basically what big companies are doing today. The parallels between Orwell's vision and our current reality with constant surveillance, data collection, and the loss of privacy are striking.</p>
+            <p>I'm a bit sad that the book had only 3 parts and not so much action, but it's a book of knowledge - I learned a lot about communism and actually about fascism specifically. The way Orwell explores the mechanisms of totalitarian control, thought manipulation, and the destruction of individual freedom is both educational and deeply disturbing.</p>
+            <p>It also touches on parts of "The Art of War" (war is peace), which gives me motivation to read that essential book next. The concept of doublethink and the manipulation of language to control thought is particularly fascinating.</p>
+            <p>Overall, I recommend it. I'm so sad about Winston (spoiler alert), but we cannot escape! There was hope of rebellion and it happened many times throughout history, but not this time. The ending is heartbreaking and serves as a powerful warning about the fragility of human resistance against absolute power.</p>
+            <button class="btn btn--primary btn--small" onclick="toggleBookReview('1984')">Collapse Review</button>
+          </div>
+        </div>
+        <a href="https://www.goodreads.com/book/show/61439040-1984" class="btn btn--primary btn--small" target="_blank" style="margin-top: 0.5rem;">View on Goodreads</a>
       </div>
     </div>
     
@@ -1397,6 +1411,28 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
 <script>
+// Toggle book review expand/collapse
+function toggleBookReview(bookId) {
+  const summary = document.getElementById(`review-${bookId}-summary`);
+  const full = document.getElementById(`review-${bookId}-full`);
+  
+  if (!summary || !full) return;
+  
+  const isExpanded = full.style.display !== 'none';
+  
+  if (isExpanded) {
+    // Collapse
+    full.style.display = 'none';
+    summary.style.display = 'block';
+  } else {
+    // Expand
+    summary.style.display = 'none';
+    full.style.display = 'block';
+    // Smooth scroll to review
+    full.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
 // TOC fix for Competitions
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {

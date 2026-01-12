@@ -825,6 +825,55 @@ main {
   border-color: #2563eb;
 }
 
+.book-summary {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.book-review {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 31, 63, 0.1);
+}
+
+.book-review-summary {
+  p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+}
+
+.book-review-full {
+  animation: fadeIn 0.3s ease-in;
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .book-card img {
   width: 80px !important;
   height: 120px !important;

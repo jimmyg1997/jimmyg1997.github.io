@@ -121,13 +121,22 @@
     });
     
     const maxRow = rows.length - 1;
-    const chartHeight = (maxRow + 1) * config.rowHeight + 60;
+    const chartHeight = (maxRow + 1) * config.rowHeight + 80;
     
     // Create Gantt chart structure
     const ganttWrapper = document.createElement('div');
     ganttWrapper.className = 'cv-gantt-wrapper';
     ganttWrapper.style.height = `${chartHeight}px`;
     ganttWrapper.style.paddingLeft = `${config.labelWidth}px`;
+    
+    // Test: Verify layout calculations
+    console.log('Gantt Chart Layout:', {
+      totalItems: items.length,
+      maxRow: maxRow,
+      chartHeight: chartHeight,
+      labelWidth: config.labelWidth,
+      rowHeight: config.rowHeight
+    });
     
     // Labels column
     const labelsCol = document.createElement('div');
@@ -136,8 +145,6 @@
     items.forEach(({ item, row, start, end }) => {
       const label = document.createElement('div');
       label.className = `cv-gantt-label cv-${item.type}`;
-      label.style.top = `${row * config.rowHeight + 8}px`;
-      
       const dateStr = formatDateRange(item);
       const isActive = !item.end;
       
@@ -208,6 +215,39 @@
     ganttWrapper.appendChild(labelsCol);
     ganttWrapper.appendChild(chartArea);
     timeline.appendChild(ganttWrapper);
+    
+    // Test: Verify all elements are properly positioned
+    setTimeout(() => {
+      const allLabels = document.querySelectorAll('.cv-gantt-label');
+      const allBars = document.querySelectorAll('.cv-gantt-bar');
+      console.log('Layout Test:', {
+        labelsCount: allLabels.length,
+        barsCount: allBars.length,
+        labelsMatch: allLabels.length === items.length,
+        barsMatch: allBars.length === items.length
+      });
+      
+      // Check for overlapping text
+      allLabels.forEach((label, idx) => {
+        const rect = label.getBoundingClientRect();
+        const content = label.querySelector('.cv-label-content');
+        if (content) {
+          const contentRect = content.getBoundingClientRect();
+          const name = label.querySelector('.cv-label-name');
+          const badge = label.querySelector('.cv-label-badge');
+          
+          if (name && badge) {
+            const nameRect = name.getBoundingClientRect();
+            const badgeRect = badge.getBoundingClientRect();
+            const overlap = nameRect.right > badgeRect.left;
+            
+            if (overlap) {
+              console.warn(`Label ${idx} (${items[idx].item.name}): Text overlapping with badge`);
+            }
+          }
+        }
+      });
+    }, 100);
     
     // Render time axis
     renderTimeAxis();

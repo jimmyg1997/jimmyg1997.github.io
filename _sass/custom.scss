@@ -3450,33 +3450,12 @@ html body .btn:active {
     width: 100%;
   }
   
-  .cv-timeline-wrapper {
-    padding-left: 0 !important;
+  .cv-gantt-wrapper {
+    min-width: 600px;
   }
   
-  .cv-labels {
-    position: relative !important;
-    width: 100% !important;
-    margin-bottom: 1rem;
-  }
-  
-  .cv-label {
-    position: relative !important;
-    margin-bottom: 0.75rem;
-    padding: 0.75rem;
-    background: #f8f9fa;
-    border-radius: 6px;
-  }
-  
-  .cv-bars-container {
-    margin-top: 1rem;
-  }
-  
-  .cv-timeline-bar {
-    position: relative !important;
-    width: 100% !important;
-    left: 0 !important;
-    margin-bottom: 0.5rem;
+  .cv-gantt-labels {
+    width: 160px;
   }
   
   .cv-gantt-axis {

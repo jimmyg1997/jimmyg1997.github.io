@@ -3066,7 +3066,7 @@ html body .btn:active {
 }
 
 /* ============================================
-   CV TIMELINE - Modern Vertical Design
+   CV TIMELINE - Gantt Chart Design
    ============================================ */
 
 .cv-timeline-container {
@@ -3081,174 +3081,253 @@ html body .btn:active {
 .cv-timeline {
   margin-bottom: 2rem;
   position: relative;
+  overflow-x: auto;
 }
 
-.cv-vertical-timeline {
+.cv-gantt-wrapper {
   position: relative;
-  padding-left: 3rem;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    left: 1.5rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(180deg, 
-      rgba(37, 99, 235, 0.3) 0%,
-      rgba(5, 150, 105, 0.3) 25%,
-      rgba(124, 58, 237, 0.3) 50%,
-      rgba(245, 158, 11, 0.3) 75%,
-      rgba(37, 99, 235, 0.3) 100%
-    );
-    border-radius: 2px;
-  }
+  width: 100%;
+  min-width: 800px;
 }
 
-.cv-timeline-item {
-  position: relative;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
+.cv-gantt-labels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
   background: white;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 31, 63, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.06);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:hover {
-    transform: translateX(8px);
-    box-shadow: 0 4px 16px rgba(0, 31, 63, 0.12);
-    border-color: rgba(0, 31, 63, 0.2);
-  }
-  
-  &.active {
-    border-left: 4px solid #059669;
-    
-    .cv-item-dot {
-      background: #059669;
-      box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.2);
-    }
-  }
+  z-index: 10;
+  border-right: 1px solid rgba(0, 31, 63, 0.1);
 }
 
-.cv-item-line {
+.cv-gantt-label {
   position: absolute;
-  left: -3rem;
-  top: 2rem;
-  width: 2px;
-  height: calc(100% + 1rem);
-  background: rgba(0, 31, 63, 0.1);
-}
-
-.cv-item-dot {
-  position: absolute;
-  left: -2.75rem;
-  top: 1.75rem;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 2;
-}
-
-.cv-timeline-item.cv-work .cv-item-dot {
-  background: #2563eb;
-}
-
-.cv-timeline-item.cv-education .cv-item-dot {
-  background: #059669;
-}
-
-.cv-timeline-item.cv-personal .cv-item-dot {
-  background: #7c3aed;
-}
-
-.cv-timeline-item.cv-achievement .cv-item-dot {
-  background: #f59e0b;
-}
-
-.cv-item-content {
-  position: relative;
-}
-
-.cv-item-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-.cv-item-icon {
-  font-size: 2rem;
-  line-height: 1;
-  flex-shrink: 0;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.cv-item-title-group {
-  flex: 1;
-}
-
-.cv-item-title {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #001f3f;
-  line-height: 1.3;
-}
-
-.cv-item-date {
+  width: 100%;
+  padding: 0.5rem 1rem;
   font-size: 0.8125rem;
-  font-weight: 500;
-  color: #6b7280;
+  transition: all 0.2s ease;
 }
 
-.cv-item-badge {
+.cv-label-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cv-label-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.cv-label-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-label-name {
+  font-weight: 600;
+  color: #001f3f;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cv-label-date {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.cv-label-badge {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
+  padding: 0.125rem 0.5rem;
   background: rgba(5, 150, 105, 0.1);
   color: #059669;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 12px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border-radius: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
-.cv-item-desc {
-  font-size: 0.875rem;
-  color: #4b5563;
-  line-height: 1.6;
-  margin: 0;
+.cv-gantt-chart {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 31, 63, 0.02) 100%);
 }
 
-/* Responsive for vertical timeline */
+.cv-gantt-year-marker {
+  position: absolute;
+  top: -30px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9ca3af;
+  transform: translateX(-50%);
+  z-index: 5;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100vh);
+    background: linear-gradient(180deg, rgba(0, 31, 63, 0.15) 0%, transparent 100%);
+    z-index: 0;
+  }
+}
+
+.cv-gantt-bar {
+  position: absolute;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  
+  .cv-bar-content {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 100%;
+    gap: 0.5rem;
+  }
+  
+  .cv-bar-icon {
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  }
+  
+  .cv-bar-text {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.cv-gantt-bar.cv-work {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+    z-index: 20;
+  }
+}
+
+.cv-gantt-bar.cv-education {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+    z-index: 20;
+  }
+}
+
+.cv-gantt-bar.cv-personal {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+    z-index: 20;
+  }
+}
+
+.cv-gantt-bar.cv-achievement {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+    z-index: 20;
+  }
+}
+
+.cv-gantt-tooltip {
+  position: fixed;
+  background: rgba(0, 31, 63, 0.95);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  white-space: normal;
+  max-width: 250px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateX(-50%) translateY(-8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  
+  strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  &.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 31, 63, 0.95);
+  }
+}
+
+/* Responsive for Gantt chart */
 @media (max-width: 768px) {
-  .cv-vertical-timeline {
-    padding-left: 2rem;
-    
-    &::before {
-      left: 1rem;
-    }
+  .cv-timeline {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
-  .cv-timeline-item {
-    padding: 1.25rem;
-    margin-bottom: 2rem;
+  .cv-gantt-wrapper {
+    min-width: 600px;
   }
   
-  .cv-item-dot {
-    left: -1.75rem;
+  .cv-gantt-labels {
+    width: 160px;
   }
   
-  .cv-item-icon {
-    font-size: 1.75rem;
+  .cv-label-name {
+    font-size: 0.8125rem;
   }
   
-  .cv-item-title {
-    font-size: 1rem;
+  .cv-label-date {
+    font-size: 0.6875rem;
+  }
+  
+  .cv-gantt-axis {
+    margin-left: 160px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 }
 

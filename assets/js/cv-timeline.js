@@ -16,9 +16,9 @@
   const config = {
     startYear: 2022,
     endYear: 2026,
-    rowHeight: 50,
-    labelWidth: 320,
-    barHeight: 36
+    rowHeight: 60,
+    labelWidth: 350,
+    barHeight: 44
   };
   
   function parseDate(str) {
@@ -136,7 +136,7 @@
     items.forEach(({ item, row, start, end }) => {
       const label = document.createElement('div');
       label.className = `cv-gantt-label cv-${item.type}`;
-      label.style.top = `${row * config.rowHeight + 7}px`;
+      label.style.top = `${row * config.rowHeight + 8}px`;
       
       const dateStr = formatDateRange(item);
       const isActive = !item.end;
@@ -182,7 +182,7 @@
       bar.className = `cv-gantt-bar cv-${item.type}`;
       bar.style.left = `${left}%`;
       bar.style.width = `${width}%`;
-      bar.style.top = `${row * config.rowHeight + 7}px`;
+      bar.style.top = `${row * config.rowHeight + 8}px`;
       bar.style.height = `${config.barHeight}px`;
       bar.style.zIndex = maxRow - row + 1;
       

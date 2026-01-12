@@ -18,7 +18,10 @@
     endYear: 2026,
     rowHeight: 60,
     labelWidth: 360,
-    barHeight: 44
+    barHeight: 44,
+    zoomLevel: 1.0,
+    minZoom: 0.5,
+    maxZoom: 3.0
   };
   
   function parseDate(str) {
@@ -167,7 +170,7 @@
       labelsCol.appendChild(label);
     });
     
-    // Chart area
+    // Chart area with zoom container
     const chartArea = document.createElement('div');
     chartArea.className = 'cv-gantt-chart';
     chartArea.style.height = `${chartHeight}px`;
@@ -175,6 +178,16 @@
     chartArea.style.marginTop = '30px';
     chartArea.style.paddingTop = '10px';
     chartArea.style.position = 'relative';
+    chartArea.style.overflow = 'auto';
+    chartArea.style.cursor = 'grab';
+    
+    const zoomContainer = document.createElement('div');
+    zoomContainer.className = 'cv-gantt-zoom-container';
+    zoomContainer.style.transform = `scale(${config.zoomLevel})`;
+    zoomContainer.style.transformOrigin = 'top left';
+    zoomContainer.style.width = `${100 / config.zoomLevel}%`;
+    zoomContainer.style.position = 'relative';
+    zoomContainer.style.minHeight = `${chartHeight / config.zoomLevel}px`;
     
     // Year markers
     for (let y = config.startYear; y <= config.endYear; y++) {
@@ -182,7 +195,7 @@
       marker.className = 'cv-gantt-year-marker';
       marker.textContent = y;
       marker.style.left = `${((y - config.startYear) / (config.endYear - config.startYear)) * 100}%`;
-      chartArea.appendChild(marker);
+      zoomContainer.appendChild(marker);
     }
     
     // Gantt bars
@@ -206,17 +219,23 @@
       
       bar.title = `${item.name}: ${item.desc}`;
       bar.setAttribute('data-desc', item.desc);
+      bar.setAttribute('data-name', item.name);
       
-      // Hover tooltip
-      bar.addEventListener('mouseenter', showTooltip);
+      // Hover tooltip with full text
+      bar.addEventListener('mouseenter', (e) => showTooltip(e, item));
       bar.addEventListener('mouseleave', hideTooltip);
       
-      chartArea.appendChild(bar);
+      zoomContainer.appendChild(bar);
     });
+    
+    chartArea.appendChild(zoomContainer);
     
     ganttWrapper.appendChild(labelsCol);
     ganttWrapper.appendChild(chartArea);
     timeline.appendChild(ganttWrapper);
+    
+    // Add zoom controls
+    setupZoom(chartArea, zoomContainer);
     
     // Test: Verify all elements are properly positioned
     setTimeout(() => {
@@ -255,20 +274,28 @@
     renderTimeAxis();
   }
   
-  function showTooltip(e) {
+  function showTooltip(e, item) {
     hideTooltip();
-    const bar = e.currentTarget;
-    const desc = bar.getAttribute('data-desc');
-    const name = bar.querySelector('.cv-bar-text').textContent;
+    const bar = e.currentTarget || e;
+    const desc = item ? item.desc : bar.getAttribute('data-desc');
+    const name = item ? item.name : bar.getAttribute('data-name');
+    const dateStr = item ? formatDateRange(item) : '';
     
     const tooltip = document.createElement('div');
     tooltip.className = 'cv-gantt-tooltip';
-    tooltip.innerHTML = `<strong>${name}</strong><br>${desc}`;
+    tooltip.innerHTML = `
+      <div class="cv-tooltip-header">
+        <span class="cv-tooltip-icon">${item ? item.icon : '📌'}</span>
+        <strong>${name}</strong>
+      </div>
+      <div class="cv-tooltip-date">${dateStr}</div>
+      <div class="cv-tooltip-desc">${desc}</div>
+    `;
     document.body.appendChild(tooltip);
     
     const rect = bar.getBoundingClientRect();
     tooltip.style.left = `${rect.left + rect.width / 2}px`;
-    tooltip.style.top = `${rect.top - 50}px`;
+    tooltip.style.top = `${rect.top - tooltip.offsetHeight - 10}px`;
     tooltip.style.transform = 'translateX(-50%)';
     
     setTimeout(() => tooltip.classList.add('visible'), 10);

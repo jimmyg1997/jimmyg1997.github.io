@@ -3094,51 +3094,63 @@ html body .btn:active {
   position: absolute;
   left: 0;
   top: 0;
-  width: 200px;
+  width: 220px;
   height: 100%;
   background: white;
   z-index: 10;
   border-right: 1px solid rgba(0, 31, 63, 0.1);
+  padding-right: 1rem;
 }
 
 .cv-gantt-label {
   position: absolute;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   font-size: 0.8125rem;
   transition: all 0.2s ease;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .cv-label-content {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.625rem;
+  width: 100%;
 }
 
 .cv-label-icon {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   flex-shrink: 0;
+  line-height: 1;
 }
 
 .cv-label-text {
   flex: 1;
   min-width: 0;
+  overflow: hidden;
 }
 
 .cv-label-name {
   font-weight: 600;
   color: #001f3f;
   font-size: 0.875rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.3;
 }
 
 .cv-label-date {
   font-size: 0.75rem;
   color: #6b7280;
   font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cv-label-badge {
@@ -3151,8 +3163,9 @@ html body .btn:active {
   border-radius: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-left: auto;
+  margin-left: 0.5rem;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .cv-gantt-chart {
@@ -3189,22 +3202,24 @@ html body .btn:active {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  min-width: 80px;
+  min-width: 100px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.3);
   
   .cv-bar-content {
     display: flex;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 14px;
     height: 100%;
-    gap: 0.5rem;
+    gap: 0.625rem;
+    white-space: nowrap;
   }
   
   .cv-bar-icon {
     font-size: 1.125rem;
     flex-shrink: 0;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    line-height: 1;
   }
   
   .cv-bar-text {
@@ -3215,6 +3230,7 @@ html body .btn:active {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -3307,7 +3323,7 @@ html body .btn:active {
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 31, 63, 0.1);
-  margin-left: 200px;
+  margin-left: 220px;
   gap: 0;
 }
 
@@ -3455,11 +3471,11 @@ html body .btn:active {
   }
   
   .cv-gantt-labels {
-    width: 160px;
+    width: 180px;
   }
   
   .cv-gantt-axis {
-    margin-left: 160px;
+    margin-left: 180px;
     flex-wrap: wrap;
     gap: 0.5rem;
   }

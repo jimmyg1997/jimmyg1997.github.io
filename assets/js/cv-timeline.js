@@ -17,7 +17,7 @@
     startYear: 2022,
     endYear: 2026,
     rowHeight: 50,
-    labelWidth: 200,
+    labelWidth: 220,
     barHeight: 36
   };
   
@@ -151,6 +151,9 @@
           ${isActive ? '<span class="cv-label-badge">ACTIVE</span>' : ''}
         </div>
       `;
+      
+      // Ensure proper height alignment
+      label.style.height = `${config.rowHeight}px`;
       
       labelsCol.appendChild(label);
     });

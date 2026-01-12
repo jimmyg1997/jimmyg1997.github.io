@@ -159,7 +159,9 @@
         </div>
       `;
       
-      // Ensure proper height alignment
+      // Set position and height
+      const labelTop = row * config.rowHeight + 8;
+      label.style.top = `${labelTop}px`;
       label.style.height = `${config.rowHeight}px`;
       
       labelsCol.appendChild(label);

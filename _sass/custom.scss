@@ -2877,8 +2877,8 @@ html body .btn:active {
 }
 
 .project-image {
-      position: absolute;
-      top: 0;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2886,16 +2886,19 @@ html body .btn:active {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   background: #f8fafc;
-  display: block;
+  display: none; /* Changed from block to none - will be shown by JS */
+  z-index: 0;
 }
 
 .project-image.active {
   opacity: 1;
   z-index: 1;
+  display: block !important; /* Force display for active image */
 }
 
 .project-image:not(.active) {
   z-index: 0;
+  display: none;
 }
 
 .gallery-nav {

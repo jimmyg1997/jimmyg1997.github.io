@@ -11,146 +11,463 @@ header:
   overlay_image: /assets/images/publications-header.png
 ---
 
-<style>
-/***** Compact font and centered buttons for publications *****/
-@media (min-width: 700px) {
-  .publication-box, .publication-box * {
-    font-size: 0.93em;
-    line-height: 1.22;
-    padding: 1.1em 1.2em;
-  }
-  .publication-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 0.7em;
-    margin-top: 0.7em;
-    flex-wrap: wrap;
-  }
-  .publication-buttons a {
-    font-size: 0.93em;
-    padding: 0.38em 1.1em;
-    margin: 0.15em 0;
-  }
-}
-</style>
-
-## Academic Publications
+## Academic Publications {#academic-publications}
 
 <div class="publication-item">
+  <div class="publication-content">
   <h3 id="multi-source-fusion-stock-selection">A Generalization of Multi-Source Fusion-Based Framework to Stock Selection</h3>
-  <p class="publication-authors">V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong</p>
-  <p class="publication-venue"><em>Information Fusion</em>, 2024</p>
-  <p class="publication-abstract">A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
   <img src="../assets/images/publications/2024_information_fusion_multi_source_stocks.png" alt="Stock Selection Framework Image">
-  <br>
+    <p><strong>Authors:</strong> V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong</p>
+    <p><em>Information Fusion, 2024</em></p>
+    <p>A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making.</p>
   <div class="publication-buttons">
     <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:u-x6o8ySG0sC" class="btn btn--primary btn--small" target="_blank">Google Scholar</a>
     <a href="https://www.sciencedirect.com/science/article/pii/S1566253523003342" class="btn btn--primary btn--small" target="_blank">DOI</a>
-    <a href="https://pdf.sciencedirectassets.com/272144/1-s2.0-S1566253523X00104/1-s2.0-S1566253523003342/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECYaCXVzLWVhc3QtMSJHMEUCIERAmTjqV9LkmgdRu0gfgnn%2BimRpMRthFoPQ8UtfEVJLAiEAwVvQRP0Ug9tiH6bpjLwbJe34eVKFqpRtASu69H4A5xgqswUILxAFGgwwNTkwMDM1NDY4NjUiDF%2B1YBehQukr%2FM5dqiqQBVT9wV739%2FqSJc2aXdMGRtijYQKWvnFEZOUhzYYhN091aLzd9RCAarRf6DqMDIA78jk%2Bbl2kci0wRYQVmnEcsx%2FEIhpN2fPCPp%2FMnpK5RI%2BCqrPhXBA0Yy7eP1kIyO9xbYgKPmGpTaTSjttLj0rRPlNV6pSUAJ4ZfxQjkMwHLt6gJnVBoEjNeYbP%2FMZgAmAcM7HZw78QBio0ySBBkTXjhVHkQiCv21tNDLRLIPMwA4iCjmfsGqXb9KiGzTqHQttKe%2F8Ha%2FZnISmOyd55OwHuPlDcGMImXUUDBBFWHPdj4uBh2X4EvbPBVow4b8axefXSeR2ORosC17pOH0ngSnRY4D7TY87UWN0WolrmTTdxateD60M6efG7T3bfESZ71qZ42lhXFGQeKGrbUdfSOCdCmsibInw8YCn7y2W4axb4JYUerE0JSpiTjSoUJTKNoiGQ8yisyw%2BfigNqdwxRlCJwFt1YBYIBuhVzPrieKKNfRW4BwrCpjXsimBMhXOMgHeyOSNAyYGmbDcsD9PyLvPvjtKR23j%2FV4QphC35IhSDgrnPZUFhq%2FPcA1VLwjnFO3sIrkT57QAenlP7wD%2B60LciXF6CBRy%2B4V0TTbWSfJAnnfpWJdLV1VL8JnQe3hhZ2XJfrVifJmf%2FhDdbK%2B5zpId78sQO9lIAFA%2BTwg972PgABAkgjjzxW6lQgzHtQ0coNEHrOBlAPcoyI8SNjQx4gpwFqypluZPncJ1VRwlRqyNcm34G7tPtgPn22ESe1dKL%2Bbd%2BfhHTVi5afj8caS7FQ0xaqptbaUtWDM8DHc2SAXN02xTWZSFjqp0I1xn2Ys%2BzY8zgnlVOAXGWBdEwkAyk4Mg4M%2BLDS3JWp0Oa9nbnXWxiFwN4%2FMLOrn8MGOrEBAxP0iSVtMwf1bcGbDMjtMeUSEUVrQCHnPOG0CTdjeXwAtqu2vaMF5YoDCP2MT7V%2B2%2FT5biurqlydlHgRnujIk64%2F%2B%2B5owpAjLAk6aNSKkA5UD%2Fw8L5rJ%2BSMjAeqZbbyg86WBIjj5neSenV1B8srNgRyRvLsjRY5heWBMSrRogf6KAb9MswwlT0cD20Np4TmWKnTyJv6spNgKHt5JGigNHS4ABrEL7GiOcK4bhiPf1ouM&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250704T143429Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYZBYIDYBN%2F20250704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2426a03338f561806e4bf2364e792737a202be2980ad88304832ba3116c168d1&hash=a9b7b4dea8b1ba40e16743783a02e8acebdd93b1ec61286e6ae4bb8a410dfd2c&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1566253523003342&tid=spdf-f2addbc1-de85-4721-82a4-3c7a3cca352a&sid=213d12ef3e2f994b7b784a7716f20f388801gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=16025b515806505008&rr=959f57fffb7decb8&cc=pl" class="btn btn--primary btn--small" target="_blank">pdf</a>
+      <a href="https://pdf.sciencedirectassets.com/272144/1-s2.0-S1566253523X00104/1-s2.0-S1566253523003342/main.pdf" class="btn btn--primary btn--small" target="_blank">PDF</a>
+    </div>
   </div>
 </div>
-<hr>
 
 <div class="publication-item">
+  <div class="publication-content">
   <h3 id="covid-19-severity-prediction">A Machine Learning-Based Web Tool for the Severity Prediction of COVID-19</h3>
-  <p class="publication-authors">A Christodoulou, MS Katsarou, C Emmanouil, M Gavrielatos, D Georgiou, et al.</p>
-  <p class="publication-venue"><em>BioTech</em>, 2024</p>
-  <p class="publication-abstract">Development of a web-based machine learning tool designed to predict the severity of COVID-19 using advanced predictive models.</p>
-
   <img src="../assets/images/publications/2024_biotech_covid.png" alt="COVID-19 ML tool">
-  <br>
+    <p><strong>Authors:</strong> A Christodoulou, MS Katsarou, C Emmanouil, M Gavrielatos, D Georgiou, et al.</p>
+    <p><em>BioTech, 2024</em></p>
+    <p>Development of a web-based machine learning tool designed to predict the severity of COVID-19 using advanced predictive models.</p>
   <div class="publication-buttons">
     <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=whiGlXQAAAAJ&citation_for_view=whiGlXQAAAAJ:d1gkVwhDpl0C" class="btn btn--primary btn--small" target="_blank">Google Scholar</a>
     <a href="https://doi.org/10.3390/biotech13030022" class="btn btn--primary btn--small" target="_blank">DOI</a>
-    <a href="https://www.mdpi.com/2673-6284/13/3/22" class="btn btn--primary btn--small" target="_blank">pdf</a>
-    <a href="https://www.michalopoulos.net/covid/" class="btn btn--primary btn--small" target="_blank">website</a>
+      <a href="https://www.mdpi.com/2673-6284/13/3/22" class="btn btn--primary btn--small" target="_blank">PDF</a>
+      <a href="https://www.michalopoulos.net/covid/" class="btn btn--primary btn--small" target="_blank">Website</a>
+    </div>
   </div>
 </div>
-<hr>
 
 <div class="publication-item">
+  <div class="publication-content">
   <h3 id="fmri-dyslexia-classification">fMRI-Based Classification and Visual Explanation of Dyslexia and Spelling Disorder using Machine & Deep Learning</h3>
-  <p class="publication-authors">D Georgiou</p>
-  <p class="publication-venue"><em>National Technical University of Athens</em>, 2022</p>
-  <p class="publication-abstract">A research study applying machine and deep learning techniques to classify and provide visual explanations for dyslexia and spelling disorders using fMRI data.</p>
-  <br>
-  <img src="../assets/images/publications/2022_thesis.png" alt="fFMRI Dyslexia">
+    <img src="../assets/images/publications/2022_thesis.png" alt="fMRI Dyslexia">
+    <p><strong>Author:</strong> D Georgiou</p>
+    <p><em>National Technical University of Athens, 2022</em></p>
+    <p>A research study applying machine and deep learning techniques to classify and provide visual explanations for dyslexia and spelling disorders using fMRI data.</p>
   <div class="publication-buttons">
-    <a href="http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593" class="btn btn--primary btn--small" target="_blank">pdf</a>
+      <a href="http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593" class="btn btn--primary btn--small" target="_blank">PDF</a>
+    </div>
   </div>
 </div>
-<hr>
 
-## Academic Presentations
+## Academic Presentations {#academic-presentations}
 
 <div class="publication-item">
-  <h3 id="complaints-classification-uek">Complaints Classification : Sentinment Analytics, Machine Learning to assess if customer queries should have been logged as complaint</h3>
-  <p class="publication-venue"><em>University of Economics in Krakow (UEK)</em>, January 2025</p>
-  <p class="publication-abstract">
-
-  🗣️ I introduced students to using Machine Learning (ML) for Complaint Classification 📊, demonstrating how ML enhances customer experience by detecting sentiment and repeat complaints, leading to smarter business decisions. 🚀 I emphasized that ML isn't just about models but solving real problems. 💡 To build a strong career, I advised students to think critically 🔍, invest in practical skills like Python & cloud tools 🛠️, and strengthen their network for better opportunities. 🌐
-    
-  </p>
-  <img src="../assets/images/publications/2025_uek.png" alt="UEK Complaints Classification">
+  <div class="publication-content">
+    <h3 id="university-academy-2025">University Academy 2025 - Semi-supervised Machine Learning Project</h3>
+    <div class="publication-logos">
+      <div class="publication-logo-wrapper">
+        <img src="/assets/logos/hsbc.png" alt="HSBC Logo" class="publication-logo">
+        <span class="publication-logo-name">HSBC</span>
+      </div>
+      <div class="publication-logo-wrapper">
+        <img src="/assets/logos/uek.jpg" alt="UEK Logo" class="publication-logo">
+        <span class="publication-logo-name">UEK</span>
+      </div>
+    </div>
+    <p style="font-style: italic; color: #64748b; margin-top: 0.5rem; margin-bottom: 1rem; font-size: 0.875rem;">Complaints Classification: Sentiment Analytics, Machine Learning to assess if customer queries should have been logged as complaint</p>
+    <div class="project-gallery">
+      <div class="gallery-container" id="uek-gallery">
+        <img src="/assets/images/publications/2025_uek-1.jpeg" alt="UEK Complaints Classification" class="project-image active" data-index="0">
+        <img src="/assets/images/publications/2025_uek-2.jpeg" alt="UEK Complaints Classification" class="project-image" data-index="1">
+        
+        <button class="gallery-nav prev" onclick="changeImageUekPub(-1)">‹</button>
+        <button class="gallery-nav next" onclick="changeImageUekPub(1)">›</button>
+        
+        <div class="gallery-dots">
+          <span class="dot active" onclick="currentImageUekPub(0)"></span>
+          <span class="dot" onclick="currentImageUekPub(1)"></span>
+        </div>
+      </div>
+    </div>
+    <p><em>University of Economics in Krakow (UEK), January 2025</em></p>
+    <p>I introduced students to using Machine Learning (ML) for Complaint Classification, demonstrating how ML enhances customer experience by detecting sentiment and repeat complaints, leading to smarter business decisions. I emphasized that ML isn't just about models but solving real problems. To build a strong career, I advised students to think critically, invest in practical skills like Python & cloud tools, and strengthen their network for better opportunities.</p>
   <div class="publication-buttons">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288560720093310976/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+    </div>
   </div>
 </div>
-<hr>
 
 <div class="publication-item">
-  <h3 id="hsbc-summer-school-2025">🎓 HSBC Summer School 2025 | Semi-supervised Machine Learning Project</h3>
-
-  <p class="publication-venue"><em>HSBC Summer School 2025, Kraków</em>, 2025</p>
-  <p class="publication-abstract">
-
-    🎓 Presented our semi-supervised ML project at HSBC Summer School
-
-    <ul> 
-      <li> Shared work with bachelor's, master's, and PhD students plus HSBC professionals 🌍</li>
-      <li> Audience engagement was exceptional—thoughtful questions and follow-up discussions ✨</li>
-      <li>Conversations ranged from AI/ML to LLMs and the future of technology 💡</li>
-      <li> Key insight: Clear communication and genuine dialogue matter as much as technical expertise 💬</li>
-    </ul>
-
-  </p>
-  <img src="../assets/images/publications/2025_hsbc_summer_school.png" alt="HSBC Summer School 2025 Presentation">
-  <div class="publication-buttons">
-    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382460403420643329/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+  <div class="publication-content">
+    <h3 id="hsbc-summer-school-2025">HSBC Summer School 2025 - Semi-supervised Machine Learning Project</h3>
+    <div class="publication-logos">
+      <div class="publication-logo-wrapper">
+        <img src="/assets/logos/hsbc.png" alt="HSBC Logo" class="publication-logo">
+        <span class="publication-logo-name">HSBC</span>
+      </div>
+    </div>
+    <div class="project-gallery">
+      <div class="gallery-container" id="hsbc-summer-gallery">
+        <img src="/assets/images/publications/2025_hsbc_summer_school-1.jpeg" alt="HSBC Summer School 2025" class="project-image active" data-index="0">
+        <img src="/assets/images/publications/2025_hsbc_summer_school-2.jpeg" alt="HSBC Summer School 2025" class="project-image" data-index="1">
+        
+        <button class="gallery-nav prev" onclick="changeImageHsbcSummer(-1)">‹</button>
+        <button class="gallery-nav next" onclick="changeImageHsbcSummer(1)">›</button>
+        
+        <div class="gallery-dots">
+          <span class="dot active" onclick="currentImageHsbcSummer(0)"></span>
+          <span class="dot" onclick="currentImageHsbcSummer(1)"></span>
+  </div>
+</div>
+    </div>
+    <p><em>HSBC Summer School 2025, Kraków</em></p>
+    <p>Presented our semi-supervised ML project at HSBC Summer School. Shared work with bachelor's, master's, and PhD students plus HSBC professionals. Audience engagement was exceptional with thoughtful questions and follow-up discussions. Conversations ranged from AI/ML to LLMs and the future of technology. Key insight: Clear communication and genuine dialogue matter as much as technical expertise.</p>
+    <div class="publication-buttons">
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382460403420643329/" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
+    </div>
   </div>
 </div>
 
-## Industry Publications & Articles
-
-{% for pub in site.publications %}
-  {% if pub.type == "industry" %}
-  <div class="publication-item">
-    <h3><a href="{{ pub.url }}">{{ pub.title }}</a></h3>
-    <p class="publication-authors">{{ pub.authors }}</p>
-    <p class="publication-venue"><em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}</p>
-    <p class="publication-abstract">{{ pub.excerpt }}</p>
+<div class="publication-item">
+  <div class="publication-content">
+    <h3 id="klimaka-ai-webinar">KLIMAKA NGO - Understanding AI, Applications in Psychology, Psychotherapy & Psychiatry</h3>
+    <div class="publication-logos">
+      <div class="publication-logo-wrapper">
+        <img src="/assets/logos/klimaka.png" alt="Klimaka Logo" class="publication-logo">
+        <span class="publication-logo-name">Klimaka NGO</span>
+      </div>
+    </div>
+    <div class="project-gallery">
+      <div class="gallery-container" id="klimaka-gallery">
+        <img src="/assets/images/publications/klimaka-1.jpeg" alt="Klimaka AI Webinar" class="project-image active" data-index="0">
+        <img src="/assets/images/publications/klimaka-2.jpeg" alt="Klimaka AI Webinar" class="project-image" data-index="1">
+        <img src="/assets/images/publications/klimaka-3.jpeg" alt="Klimaka AI Webinar" class="project-image" data-index="2">
+        <img src="/assets/images/publications/klimaka-4.jpeg" alt="Klimaka AI Webinar" class="project-image" data-index="3">
+        <img src="/assets/images/publications/klimaka-5.jpeg" alt="Klimaka AI Webinar" class="project-image" data-index="4">
+        
+        <button class="gallery-nav prev" onclick="changeImageKlimaka(-1)">‹</button>
+        <button class="gallery-nav next" onclick="changeImageKlimaka(1)">›</button>
+        
+        <div class="gallery-dots">
+          <span class="dot active" onclick="currentImageKlimaka(0)"></span>
+          <span class="dot" onclick="currentImageKlimaka(1)"></span>
+          <span class="dot" onclick="currentImageKlimaka(2)"></span>
+          <span class="dot" onclick="currentImageKlimaka(3)"></span>
+          <span class="dot" onclick="currentImageKlimaka(4)"></span>
+        </div>
+      </div>
+    </div>
+    <p><em>Klimaka NGO, August 2025</em></p>
+    <p>Delivered an internal webinar on Artificial Intelligence to over 60 participants at Klimaka NGO, exploring AI's evolution, impact on mental health, multimodal AI systems, and its applications in psychology, psychotherapy, and psychiatry. Discussed ongoing AI projects at Klimaka and actionable ideas for leveraging AI to address societal challenges in mental health and suicide prevention.</p>
     <div class="publication-buttons">
-      {% if pub.link %}<a href="{{ pub.link }}" class="btn btn--primary btn--small" target="_blank">Read Article</a>{% endif %}
+      <a href="https://www.linkedin.com/posts/dimitrios-georgiou_artificialintelligence-ai-mentalhealth-activity-7369739952537985024-1AJg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" class="btn btn--primary btn--small" target="_blank">LinkedIn Post</a>
     </div>
   </div>
-  <hr>
-  {% endif %}
-{% endfor %}
+</div>
 
-## Conference Presentations
+<script>
+// UEK Gallery functionality for Publications page
+let currentImageIndexUekPub = 0;
+let imagesUekPub = [];
+let dotsUekPub = [];
 
-{% for pub in site.publications %}
-  {% if pub.type == "conference" %}
-  <div class="publication-item">
-    <h3>{{ pub.title }}</h3>
-    <p class="publication-authors">{{ pub.authors }}</p>
-    <p class="publication-venue"><em>{{ pub.venue }}</em>, {{ pub.date | date: "%Y" }}</p>
-    <p class="publication-abstract">{{ pub.excerpt }}</p>
-    <div class="publication-buttons">
-      {% if pub.slides %}<a href="{{ pub.slides }}" class="btn btn--primary btn--small" target="_blank">Slides</a>{% endif %}
-      {% if pub.poster %}<a href="{{ pub.poster }}" class="btn btn--primary btn--small" target="_blank">Poster</a>{% endif %}
-    </div>
-  </div>
-  <hr>
-  {% endif %}
-{% endfor %} 
+function showImageUekPub(index) {
+  if (imagesUekPub.length === 0) return;
+  imagesUekPub.forEach((img, i) => {
+    if (img && img.complete && img.naturalHeight !== 0) {
+      img.classList.toggle('active', i === index);
+      img.style.display = i === index ? 'block' : 'none';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+  dotsUekPub.forEach((dot, i) => {
+    if (dot) {
+      dot.classList.toggle('active', i === index);
+    }
+  });
+}
+
+function changeImageUekPub(direction) {
+  if (imagesUekPub.length === 0) return;
+  const validImages = Array.from(imagesUekPub).map((img, i) => ({img, i})).filter(({img}) => img && img.complete && img.naturalHeight !== 0);
+  if (validImages.length === 0) return;
+  
+  const currentValidIndex = validImages.findIndex(({i}) => i === currentImageIndexUekPub);
+  let newIndex = currentValidIndex + direction;
+  
+  if (newIndex >= validImages.length) {
+    newIndex = 0;
+  } else if (newIndex < 0) {
+    newIndex = validImages.length - 1;
+  }
+  
+  currentImageIndexUekPub = validImages[newIndex].i;
+  showImageUekPub(currentImageIndexUekPub);
+}
+
+function currentImageUekPub(index) {
+  if (imagesUekPub.length === 0) return;
+  const img = imagesUekPub[index];
+  if (img && img.complete && img.naturalHeight !== 0) {
+    currentImageIndexUekPub = index;
+    showImageUekPub(currentImageIndexUekPub);
+  }
+}
+
+// Klimaka Gallery functionality
+let currentImageIndexKlimaka = 0;
+let imagesKlimaka = [];
+let dotsKlimaka = [];
+
+function showImageKlimaka(index) {
+  if (imagesKlimaka.length === 0) return;
+  imagesKlimaka.forEach((img, i) => {
+    if (img && img.complete && img.naturalHeight !== 0) {
+      img.classList.toggle('active', i === index);
+      img.style.display = i === index ? 'block' : 'none';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+  dotsKlimaka.forEach((dot, i) => {
+    if (dot) {
+      dot.classList.toggle('active', i === index);
+    }
+  });
+}
+
+function changeImageKlimaka(direction) {
+  if (imagesKlimaka.length === 0) return;
+  const validImages = Array.from(imagesKlimaka).map((img, i) => ({img, i})).filter(({img}) => img && img.complete && img.naturalHeight !== 0);
+  if (validImages.length === 0) return;
+  
+  const currentValidIndex = validImages.findIndex(({i}) => i === currentImageIndexKlimaka);
+  let newIndex = currentValidIndex + direction;
+  
+  if (newIndex >= validImages.length) {
+    newIndex = 0;
+  } else if (newIndex < 0) {
+    newIndex = validImages.length - 1;
+  }
+  
+  currentImageIndexKlimaka = validImages[newIndex].i;
+  showImageKlimaka(currentImageIndexKlimaka);
+}
+
+function currentImageKlimaka(index) {
+  if (imagesKlimaka.length === 0) return;
+  const img = imagesKlimaka[index];
+  if (img && img.complete && img.naturalHeight !== 0) {
+    currentImageIndexKlimaka = index;
+    showImageKlimaka(currentImageIndexKlimaka);
+  }
+}
+
+// HSBC Summer School Gallery functionality
+let currentImageIndexHsbcSummer = 0;
+let imagesHsbcSummer = [];
+let dotsHsbcSummer = [];
+
+function showImageHsbcSummer(index) {
+  if (imagesHsbcSummer.length === 0) return;
+  imagesHsbcSummer.forEach((img, i) => {
+    if (img && img.complete && img.naturalHeight !== 0) {
+      img.classList.toggle('active', i === index);
+      img.style.display = i === index ? 'block' : 'none';
+    } else {
+      img.style.display = 'none';
+    }
+  });
+  dotsHsbcSummer.forEach((dot, i) => {
+    if (dot) {
+      dot.classList.toggle('active', i === index);
+    }
+  });
+}
+
+function changeImageHsbcSummer(direction) {
+  if (imagesHsbcSummer.length === 0) return;
+  const validImages = Array.from(imagesHsbcSummer).map((img, i) => ({img, i})).filter(({img}) => img && img.complete && img.naturalHeight !== 0);
+  if (validImages.length === 0) return;
+  
+  const currentValidIndex = validImages.findIndex(({i}) => i === currentImageIndexHsbcSummer);
+  let newIndex = currentValidIndex + direction;
+  
+  if (newIndex >= validImages.length) {
+    newIndex = 0;
+  } else if (newIndex < 0) {
+    newIndex = validImages.length - 1;
+  }
+  
+  currentImageIndexHsbcSummer = validImages[newIndex].i;
+  showImageHsbcSummer(currentImageIndexHsbcSummer);
+}
+
+function currentImageHsbcSummer(index) {
+  if (imagesHsbcSummer.length === 0) return;
+  const img = imagesHsbcSummer[index];
+  if (img && img.complete && img.naturalHeight !== 0) {
+    currentImageIndexHsbcSummer = index;
+    showImageHsbcSummer(currentImageIndexHsbcSummer);
+  }
+}
+
+// Initialize galleries on load
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize UEK gallery
+  imagesUekPub = Array.from(document.querySelectorAll('#uek-gallery .project-image'));
+  dotsUekPub = Array.from(document.querySelectorAll('#uek-gallery .dot'));
+
+  // Function to initialize gallery after images load
+  function initUekGallery() {
+    // Find the first image with 'active' class or first valid image
+    let firstValid = 0;
+    for (let i = 0; i < imagesUekPub.length; i++) {
+      if (imagesUekPub[i] && imagesUekPub[i].classList.contains('active')) {
+        firstValid = i;
+        break;
+      }
+    }
+    
+    // Show the first active image or first valid image
+    showImageUekPub(firstValid);
+  }
+
+  imagesUekPub.forEach((img) => {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+      const visibleImages = Array.from(imagesUekPub).filter(img => img && img.complete && img.naturalHeight !== 0);
+      if (visibleImages.length === 0) {
+        const galleryContainer = document.getElementById('uek-gallery');
+        if (galleryContainer && !galleryContainer.querySelector('.image-placeholder')) {
+          const placeholder = document.createElement('div');
+          placeholder.className = 'image-placeholder';
+          placeholder.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #64748b; font-size: 0.875rem; z-index: 0;';
+          placeholder.innerHTML = '📷 Images coming soon';
+          galleryContainer.appendChild(placeholder);
+        }
+      }
+    });
+    
+    // Wait for image to load, then initialize
+    if (img.complete) {
+      // Image already loaded
+      if (img.naturalHeight === 0) {
+        img.style.display = 'none';
+      }
+    } else {
+      // Image still loading - wait for it
+      img.addEventListener('load', function() {
+        initUekGallery();
+      });
+    }
+  });
+
+  // Initialize immediately if all images are loaded, otherwise wait
+  const allLoaded = imagesUekPub.every(img => img.complete);
+  if (allLoaded) {
+    initUekGallery();
+  } else {
+    // Wait a bit for images to start loading, then initialize
+    setTimeout(initUekGallery, 100);
+  }
+
+  // Initialize HSBC Summer School gallery
+  imagesHsbcSummer = Array.from(document.querySelectorAll('#hsbc-summer-gallery .project-image'));
+  dotsHsbcSummer = Array.from(document.querySelectorAll('#hsbc-summer-gallery .dot'));
+
+  function initHsbcSummerGallery() {
+    let firstValid = 0;
+    for (let i = 0; i < imagesHsbcSummer.length; i++) {
+      if (imagesHsbcSummer[i] && imagesHsbcSummer[i].classList.contains('active')) {
+        firstValid = i;
+        break;
+      }
+    }
+    showImageHsbcSummer(firstValid);
+  }
+
+  imagesHsbcSummer.forEach((img) => {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+      const visibleImages = Array.from(imagesHsbcSummer).filter(img => img && img.complete && img.naturalHeight !== 0);
+      if (visibleImages.length === 0) {
+        const galleryContainer = document.getElementById('hsbc-summer-gallery');
+        if (galleryContainer && !galleryContainer.querySelector('.image-placeholder')) {
+          const placeholder = document.createElement('div');
+          placeholder.className = 'image-placeholder';
+          placeholder.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #64748b; font-size: 0.875rem; z-index: 0;';
+          placeholder.innerHTML = '📷 Images coming soon';
+          galleryContainer.appendChild(placeholder);
+        }
+      }
+    });
+    
+    if (img.complete) {
+      if (img.naturalHeight === 0) {
+        img.style.display = 'none';
+      }
+    } else {
+      img.addEventListener('load', function() {
+        initHsbcSummerGallery();
+      });
+    }
+  });
+
+  const allHsbcLoaded = imagesHsbcSummer.every(img => img.complete);
+  if (allHsbcLoaded) {
+    initHsbcSummerGallery();
+  } else {
+    setTimeout(initHsbcSummerGallery, 100);
+  }
+
+  // Initialize Klimaka gallery
+  imagesKlimaka = Array.from(document.querySelectorAll('#klimaka-gallery .project-image'));
+  dotsKlimaka = Array.from(document.querySelectorAll('#klimaka-gallery .dot'));
+
+  function initKlimakaGallery() {
+    let firstValid = 0;
+    for (let i = 0; i < imagesKlimaka.length; i++) {
+      if (imagesKlimaka[i] && imagesKlimaka[i].classList.contains('active')) {
+        firstValid = i;
+        break;
+      }
+    }
+    showImageKlimaka(firstValid);
+  }
+
+  imagesKlimaka.forEach((img) => {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+      const visibleImages = Array.from(imagesKlimaka).filter(img => img && img.complete && img.naturalHeight !== 0);
+      if (visibleImages.length === 0) {
+        const galleryContainer = document.getElementById('klimaka-gallery');
+        if (galleryContainer && !galleryContainer.querySelector('.image-placeholder')) {
+          const placeholder = document.createElement('div');
+          placeholder.className = 'image-placeholder';
+          placeholder.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #64748b; font-size: 0.875rem; z-index: 0;';
+          placeholder.innerHTML = '📷 Images coming soon';
+          galleryContainer.appendChild(placeholder);
+        }
+      }
+    });
+    
+    if (img.complete) {
+      if (img.naturalHeight === 0) {
+        img.style.display = 'none';
+      }
+    } else {
+      img.addEventListener('load', function() {
+        initKlimakaGallery();
+      });
+    }
+  });
+
+  const allKlimakaLoaded = imagesKlimaka.every(img => img.complete);
+  if (allKlimakaLoaded) {
+    initKlimakaGallery();
+  } else {
+    setTimeout(initKlimakaGallery, 100);
+  }
+});
+
+</script>

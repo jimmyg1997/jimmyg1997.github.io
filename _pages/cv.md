@@ -50,12 +50,15 @@ header:
 </div>
 <span style="color:#555; font-size:0.97em;">Dec 2025 - Present | Krakow, Poland</span>
 <p><em>Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on enabling LLMs and advanced ML workflows.</em></p>
-<ul>
+<ul id="grid-dynamics-summary">
   <li>Architect and implement scalable ML infrastructure and tooling to support the full ML lifecycle — from data ingestion and preprocessing, through training/fine-tuning/evaluation, to deployment and monitoring. Build production-ready ML services: clean, maintainable and scalable codebases, API endpoints, model serving, CI/CD pipelines and deployment to cloud or containerized environments.</li>
   <li>Collaborate with stakeholders (product managers, architects, domain experts) to translate business requirements into ML/AI solutions — including LLM-based features, semantic search, RAG pipelines, and custom model workflows. Optimize model performance and compute efficiency, including distributed training, batch & streaming data pipelines, resource utilization, latency, and reliability for ML workloads.</li>
+</ul>
+<ul id="grid-dynamics-details" style="display:none;">
   <li>Provide technical leadership, mentor peers, contribute to architectural decisions, code reviews, standards and best practices for ML engineering across the team. Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.</li>
   <li>Experiment with cutting-edge ML/AI, including generative AI/LLMs, modern architectures and tooling — contributing to innovation, proofs-of-concept (PoCs), and future roadmap of the company's AI capabilities.</li>
 </ul>
+<span class="cv-expand-link" onclick="toggleCvDetails('grid-dynamics')" id="grid-dynamics-toggle">Expand</span>
 <div><strong>Skills:</strong> Machine Learning Engineering, LLMs, RAG Systems, Semantic Search, MLOps, Distributed Training, Model Serving, CI/CD, Technical Leadership, Prompt Engineering</div>
 <div><strong>Tech Stack:</strong> Python, SQL (BigQuery, PostgreSQL, MySQL), Apache Spark, PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Cloud Platforms (GCP, AWS), Docker, API Development, Data Pipelines, Model Deployment</div>
 
@@ -740,7 +743,61 @@ header:
 .cv-logo-demokritos {
   height: 44px !important;
 }
+
+/* Expand/Collapse for CV sections */
+.cv-expand-link {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.cv-expand-link:hover {
+  color: #1d4ed8;
+}
+
+/* Make all links more visible with blue color */
+.page__content a {
+  color: #2563eb !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  transition: color 0.2s ease;
+}
+
+.page__content a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: underline !important;
+}
+
+.page__content a:visited {
+  color: #3b82f6 !important;
+}
+
+.page__content a:active {
+  color: #1e40af !important;
+}
 </style>
+
+<script>
+function toggleCvDetails(id) {
+  const details = document.getElementById(id + '-details');
+  const toggle = document.getElementById(id + '-toggle');
+  if (details && toggle) {
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+      toggle.textContent = 'Collapse';
+    } else {
+      details.style.display = 'none';
+      toggle.textContent = 'Expand';
+    }
+  }
+}
+</script>
 
 ## Volunteering & Activities
 

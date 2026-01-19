@@ -105,8 +105,8 @@
       const right = toPercent(endM, totalMonths);
       // Ensure minimum width for visibility, especially for single-month items
       const calculatedWidth = right - left;
-      // Increased minimum width to 4% to ensure text is readable
-      const width = Math.max(4, calculatedWidth);
+      // Increased minimum width to 5% to ensure text is readable and prevent overlap
+      const width = Math.max(5, calculatedWidth);
       
       // Find non-overlapping row with better spacing
       let row = 0;
@@ -114,7 +114,7 @@
         const hasOverlap = rows[r].some(existing => {
           const existingRight = existing.left + existing.width;
           // Increased margin to prevent any overlap, especially for same-category items
-          const margin = 1.0; // Increased from 0.5 to ensure clear separation
+          const margin = 1.5; // Increased from 1.0 to ensure clear separation and prevent text overlap
           const itemRight = left + width;
           // Check if there's any overlap (with margin buffer)
           return !((itemRight + margin) <= existing.left || (left - margin) >= existingRight);

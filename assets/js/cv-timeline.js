@@ -179,24 +179,14 @@
       labelsCol.appendChild(label);
     });
     
-    // Chart area with zoom container
-    const chartArea = document.createElement('div');
-    chartArea.className = 'cv-gantt-chart';
-    chartArea.style.height = `${chartHeight}px`;
-    chartArea.style.borderTop = '2px solid rgba(0, 31, 63, 0.15)';
-    chartArea.style.marginTop = '50px'; // Increased to accommodate year markers with background
-    chartArea.style.paddingTop = '10px';
-    chartArea.style.position = 'relative';
-    chartArea.style.overflow = 'auto';
-    chartArea.style.cursor = 'grab';
-    
-    const zoomContainer = document.createElement('div');
-    zoomContainer.className = 'cv-gantt-zoom-container';
-    zoomContainer.style.transform = `scale(${config.zoomLevel})`;
-    zoomContainer.style.transformOrigin = 'top left';
-    zoomContainer.style.width = `${100 / config.zoomLevel}%`;
-    zoomContainer.style.position = 'relative';
-    zoomContainer.style.minHeight = `${chartHeight / config.zoomLevel}px`;
+    // Year markers container (fixed position above chart)
+    const yearMarkersContainer = document.createElement('div');
+    yearMarkersContainer.className = 'cv-gantt-year-markers-container';
+    yearMarkersContainer.style.position = 'relative';
+    yearMarkersContainer.style.height = '40px';
+    yearMarkersContainer.style.marginBottom = '10px';
+    yearMarkersContainer.style.width = '100%';
+    yearMarkersContainer.style.paddingLeft = `${config.labelWidth}px`;
     
     // Year markers with smart spacing to prevent overlap
     const yearCount = config.endYear - config.startYear + 1;
@@ -209,7 +199,7 @@
     }
     
     // Smart filtering: only show markers that have enough space between them
-    const minSpacing = 8; // Minimum percentage spacing between markers
+    const minSpacing = 10; // Increased minimum spacing
     const visibleMarkers = [];
     let lastPosition = -minSpacing;
     
@@ -225,15 +215,33 @@
       }
     });
     
-    // Render visible markers
+    // Render visible markers in fixed container
     visibleMarkers.forEach(({ year, position }) => {
       const marker = document.createElement('div');
       marker.className = 'cv-gantt-year-marker';
       marker.textContent = year;
       marker.style.left = `${position}%`;
       marker.setAttribute('data-year', year);
-      zoomContainer.appendChild(marker);
+      yearMarkersContainer.appendChild(marker);
     });
+    
+    // Chart area with zoom container
+    const chartArea = document.createElement('div');
+    chartArea.className = 'cv-gantt-chart';
+    chartArea.style.height = `${chartHeight}px`;
+    chartArea.style.borderTop = '2px solid rgba(0, 31, 63, 0.15)';
+    chartArea.style.paddingTop = '10px';
+    chartArea.style.position = 'relative';
+    chartArea.style.overflow = 'auto';
+    chartArea.style.cursor = 'grab';
+    
+    const zoomContainer = document.createElement('div');
+    zoomContainer.className = 'cv-gantt-zoom-container';
+    zoomContainer.style.transform = `scale(${config.zoomLevel})`;
+    zoomContainer.style.transformOrigin = 'top left';
+    zoomContainer.style.width = `${100 / config.zoomLevel}%`;
+    zoomContainer.style.position = 'relative';
+    zoomContainer.style.minHeight = `${chartHeight / config.zoomLevel}px`;
     
     // Gantt bars
     items.forEach(({ item, left, width, row }) => {

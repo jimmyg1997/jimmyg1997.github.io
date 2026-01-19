@@ -109,7 +109,10 @@ analytics:
 author:
   name             : "Dimitrios Georgiou"
   avatar           : "/assets/images/me/profile_v1.png"
-  bio              : "Sr. ML Engineer @ Grid Dynamics | PhD Candidate in Bioinformatics | Healthcare AI | Finance"
+  bio              : |
+    Sr. ML Engineer @ Grid Dynamics
+    PhD Candidate in Bioinformatics
+    Healthcare AI | Finance
   location         : "Krakow, Poland"
   email            : "dgeorgiou3@gmail.com" 
   links:

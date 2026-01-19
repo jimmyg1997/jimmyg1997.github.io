@@ -2200,6 +2200,9 @@ html {
 }
 
 .author__bio {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-top: 0.5rem;
   font-size: 1.125rem !important;
   color: var(--text-dark) !important;
   line-height: 1.6 !important;

@@ -3247,8 +3247,8 @@ html body .btn:active {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-  min-width: 80px;
+  overflow: visible; /* Changed from hidden to visible to show full text on hover */
+  min-width: 100px; /* Increased from 80px */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.3);
   
@@ -3260,6 +3260,8 @@ html body .btn:active {
     gap: 0.5rem;
     white-space: nowrap;
     box-sizing: border-box;
+    justify-content: flex-start;
+    overflow: hidden; /* Keep content hidden but allow bar to show tooltip */
   }
   
   .cv-bar-icon {
@@ -3282,6 +3284,7 @@ html body .btn:active {
     letter-spacing: 0.01em;
     flex: 1;
     min-width: 0;
+    max-width: 100%; /* Ensure text doesn't overflow bar */
   }
   
   &:hover {

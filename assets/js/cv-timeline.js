@@ -184,7 +184,7 @@
     chartArea.className = 'cv-gantt-chart';
     chartArea.style.height = `${chartHeight}px`;
     chartArea.style.borderTop = '2px solid rgba(0, 31, 63, 0.15)';
-    chartArea.style.marginTop = '30px';
+    chartArea.style.marginTop = '45px'; // Increased from 30px to accommodate year markers
     chartArea.style.paddingTop = '10px';
     chartArea.style.position = 'relative';
     chartArea.style.overflow = 'auto';

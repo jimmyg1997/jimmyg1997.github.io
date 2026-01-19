@@ -179,7 +179,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Personal productivity application for tracking daily habits and building consistent routines.</p>
     <p><strong>Features:</strong> Daily habit logging, progress visualization, streak tracking, customizable habit categories, and data persistence for long-term progress monitoring.</p>
     <p><strong>Implementation:</strong> Built with modern web technologies, featuring an intuitive interface for quick daily check-ins and comprehensive analytics to visualize habit consistency over time.</p>
-    <p><strong>Tech Stack:</strong> [To be updated based on your implementation]</p>
+    <p><strong>Tech Stack:</strong> React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion.</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/habit-tracker" class="btn btn--primary" target="_blank">View Code</a>
     </div>

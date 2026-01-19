@@ -3222,17 +3222,19 @@ html body .btn:active {
 
 .cv-gantt-year-marker {
   position: absolute;
-  top: -30px;
-  font-size: 0.75rem;
-  font-weight: 700;
+  top: -35px; /* Increased from -30px to prevent overlap */
+  font-size: 0.625rem; /* Reduced from 0.75rem */
+  font-weight: 600; /* Reduced from 700 */
   color: #9ca3af;
   transform: translateX(-50%);
   z-index: 5;
+  white-space: nowrap; /* Prevent text wrapping */
+  padding: 0 4px; /* Add padding to prevent overlap */
   
   &::after {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 35px; /* Adjusted to match top position */
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
@@ -3274,7 +3276,7 @@ html body .btn:active {
   }
   
   .cv-bar-text {
-    font-size: 0.6875rem;
+    font-size: 0.625rem; /* Reduced from 0.6875rem */
     font-weight: 600;
     color: white;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);

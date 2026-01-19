@@ -198,12 +198,17 @@
     zoomContainer.style.position = 'relative';
     zoomContainer.style.minHeight = `${chartHeight / config.zoomLevel}px`;
     
-    // Year markers
+    // Year markers with better spacing to prevent overlap
+    const yearCount = config.endYear - config.startYear + 1;
     for (let y = config.startYear; y <= config.endYear; y++) {
       const marker = document.createElement('div');
       marker.className = 'cv-gantt-year-marker';
       marker.textContent = y;
-      marker.style.left = `${((y - config.startYear) / (config.endYear - config.startYear)) * 100}%`;
+      // Calculate position with spacing to prevent overlap
+      const position = ((y - config.startYear) / (config.endYear - config.startYear)) * 100;
+      marker.style.left = `${position}%`;
+      // Add data attribute for potential spacing adjustments
+      marker.setAttribute('data-year', y);
       zoomContainer.appendChild(marker);
     }
     

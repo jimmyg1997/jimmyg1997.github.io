@@ -48,7 +48,8 @@
   description: "A guide to building good habits and breaking bad ones"
   link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/"
   image: "../assets/images/wishlist/atomic-habits.jpg"
-  bought: false
+  bought: true
+  date_bought: "2025-12"
 
 
 - name: "Parallettes (caliathletics)"
@@ -57,7 +58,8 @@
   description: "Hydration and electrolyte supplements for workouts"
   link: "https://shop.caliathletics.com/products/wooden-parallettes-mini"
   always_needed: true
-  bought: false
+  bought: true
+  date_bought: "2025-12"
   image: "../assets/images/wishlist/parallettes.png"
 
 - name: "Weight Dip Belt (caliathletics)"
@@ -115,7 +117,8 @@
   category: tech
   description: "Wireless earbuds with noise cancellation"
   link: "https://www.amazon.com/Apple-Generation-Lightning-Resistant-Headphones/dp/B0BDHB9Y8H"
-  bought: false
+  bought: true
+  date_bought: "2025-12"
   image: "../assets/images/wishlist/airpods-3rd.png"
 
 - name: "Kindle (E-reader)"
@@ -123,8 +126,25 @@
   category: tech
   description: "Digital book reader for convenient reading"
   link: "https://www.amazon.com/Kindle-Essentials-Bundle-including-release/dp/B0D9ZWBFWQ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.L48IRoKSK08xBAtJAmkzvoc7DwgPk5s3dl6xlAmREGzuVL6J0ALAkCgTDwUXtUKaLGOCyH3wMidIyVAtq_TKiIvN4r0ViPaNnHDPrFDkPgdOiDMIrrmT-VZe5kdbFZgd1SGI5lk_yXssvkzfECq39UkMhHwjs474qbVe_Rkylr4NhmxtmkfEyF_C9BazeHLPnD76pxVWm8J_wmCuKOzrth_Atjt8fzBrvIKlcIGZII8.a7dCbexcgziD2N8h53mZ-0OhGKYkk-C2Du3Mg5FQwLI&dib_tag=se&keywords=kindle&qid=1748638690&sr=8-5&th=1"
-  bought: false
+  bought: true
+  date_bought: "2025-12"
   image: "../assets/images/wishlist/kindle.png"
+
+- name: "Alexa+"
+  price_range: "$80 - $120"
+  category: tech
+  description: "Amazon Echo Show 8 (3rd Gen) - Smart display with Alexa"
+  link: "https://allegro.pl/oferta/amazon-echo-show-8-3-gen-czarny-17942567476?utm_feed=aa34192d-eee2-4419-9a9a-de66b9dfae24&utm_term=xmas-2025&utm_content=bpg&utm_source=google&utm_medium=cpc&utm_campaign=_all_xmas-2025&ev_adgr=xmas2025&ev_campaign_id=23316321014&gad_source=1&gad_campaignid=23316321014&gbraid=0AAAAAD24kbOMq0Jq_T0TkdK_IHXZvOitX&gclid=Cj0KCQiA6Y7KBhC1ARIsAOxhqtNASs2ADV7u1iijkU6CVcZN8uEiB4RcFvCpslYHklFGUdHfl0jjy90aAvwzEALw_wcB"
+  image: "../assets/images/wishlist/alexa.png"
+  bought: false
+
+- name: "Raspberry Pi"
+  price_range: "$50 - $100"
+  category: tech
+  description: "Raspberry Pi 4B WiFi with 4GB RAM and accessories - Mini computer for DIY projects"
+  link: "https://allegro.pl/oferta/zestaw-z-raspberry-pi-4b-wifi-4gb-ram-akcesoria-13146680836?utm_feed=aa34192d-eee2-4419-9a9a-de66b9dfae24&utm_content=high-asp&utm_source=google&utm_medium=cpc&utm_campaign=_elktrk_komputery-hpp_pla_ss&ev_adgr=cc-hpp-ss&ev_campaign_id=22716159258&gad_source=1&gad_campaignid=22716159258&gbraid=0AAAAAD24kbNWukfLFFSRhHzt4yzJE141x&gclid=Cj0KCQiAxonKBhC1ARIsAIHq_ltEPTA5ZJbwKEeVO63vxPVsHD5-_EFRcNh60INmcZT40ReR6UQwC44aAniSEALw_wcB"
+  image: "../assets/images/wishlist/rasberrie-pie.png"
+  bought: false
 
 - name: "Nikon D7500 20.9MP DSLR Camera with AF-S DX NIKKOR 18-140mm f/3.5-5.6G ED VR Lens, Black"
   price_range: "$769"
@@ -152,66 +172,76 @@
   image: "../assets/images/wishlist/cursor-pro.png"
 
 - name: "Bag Hangers"
-  price_range: "$10 - $20"
+  price_range: "$8 - $10"
   category: travel
-  description: "Hooks or hangers for organizing bags while traveling"
-  link: null
+  description: "FresKaro heavy duty wiregate carabiners (15kN-3372lbs) - lightweight aluminum carabiners for organizing bags, backpacks, and gear while traveling"
+  link: "https://www.amazon.com/FresKaro-Carabiner-Caribeener-Caribeaner-Lightweight/dp/B09TKLS8LS/ref=sr_1_4_sspa?dib=eyJ2IjoiMSJ9.lZh3caz7J2AN5XERiMHOCjJOB5ynf7FTcZRt58Y6ShwtR5InqCJTTQHVEXJIZ-pxKfTEOMxMtn7UmsGiVsd3_XtO47qcesmuTSLFqqXdl_wzt0sLbZ2Ktl4dFvv-Ooe-Xei0TeiSRRxmaB1zMaraG5QfLqnt-JlusZD-dUu58yhP1A38LHM0FZVzcRzsHCIUx0zPLc0YWBP19jwUxPnPBTpPRUdQdeRHk3IO_g7EJEI8SJC1GKpC5MOAfV2vz-I8P6_7XAxpTStzp4b93Y8jGava2db_U8Y1K-vwWCvth7Y.sMT7Wn0oq7pr1oSeI_pCGnuOwdWPsIf-n-H0xzXkLBo&dib_tag=se&keywords=carabiner%2Bbag&qid=1766103157&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+  image: "../assets/images/wishlist/hangers.jpg"
   bought: false
   
-- name: "Travel Planner for Tickets"
+- name: "Travel Organizer - Passport Holder for Couples"
   price_range: "$15 - $30"
   category: travel
-  description: "Organizer for travel documents and tickets"
-  link: null
+  description: "Travel organizer and passport holder for couples, keeps documents and tickets organized"
+  link: "https://levoyage.pl/pl/p/Organizer-podrozny%2C-Etui-na-paszport-dla-pary-Oliwka/343"
+  image: "../assets/images/wishlist/organizer.png"
   bought: false
   
-- name: "New Travel Bag (Primark)"
-  price_range: "50€ (~$55)"
+- name: "Wittchen Expandable Multifunctional Backpack"
+  price_range: "$80 - $100"
   category: travel
-  description: "Durable travel bag for trips and adventures"
-  link: null
-  bought: false
+  description: "Water-resistant expandable backpack for air travel, Free on Board compliant, with padded 17\" laptop pocket and multiple compartments"
+  link: "https://www.wittchen.com/en-US/poszerzany-plecak-wielofunkcyjny-do-samolotu-szary,p7233872"
+  image: "../assets/images/wishlist/backpack.png"
+  bought: true
+  date_bought: "2026-01"
 
-- name: "Video Lights"
-  price_range: "5€ (~$5.50)"
-  category: content_creation
-  description: "Basic lighting setup for video recording"
-  link: null
-  bought: false
-  
 - name: "TikTok Background Poster"
-  price_range: "$15 - $40"
+  price_range: "$8 - $12"
   category: content_creation
-  description: "Background decoration for social media content"
-  link: null
+  description: "2D flat background cloth suitable for party photo backdrop, wall decoration - perfect for social media content"
+  link: "https://www.temu.com/pl/2d-flat-1pc-background-cloth--pages-suitable-for-party-photo-backdrop-wall-decoration--in--sizes-dildre-1474-g-601102239548003.html?top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F80d169b3-d979-47a2-b8aa-c1d9acd9e863.jpg&spec_gallery_id=317537&sku_id=17603717564150&share_token=oHpfk3Ul5x4FPoWoQG6rT3lBAHZgB97YgtSGItraalH0xXuaXv6oKdVJS6ANP7LkQStRxA0z18_2vvbfk8XXfMRDdwFGzKpTQcX2_ZVNqPUpkeWbPhu8DSp_dam57V0Pl3uniJBihv6yNL5v6ANYbi_ht85kaVSmbcKq1Utj51o&_x_vst_scene=adg&_x_ads_sub_channel=shopping&_x_ns_prz_type=-1&_x_ns_sku_id=17603717564150&_x_ns_gid=601102239548003&_x_ads_channel=google&_x_gmc_account=762730731&_x_login_type=Google&_x_ns_gg_lnk_type=adr&_x_ads_account=7293790144&_x_ads_set=20238826689&_x_ads_id=158402559748&_x_ads_creative_id=660984550541&_x_ns_source=g&_x_ns_gclid=Cj0KCQiA6Y7KBhC1ARIsAOxhqtPTxkFjoA2QqacS5Nb87bWkhB14l8UTCSje_UVeon9Hns3w3kauMVAaAmLIEALw_wcB&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=17603717564150&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=CkAKCAiA6Y7KBhBQEjAACayf5CsTTSz9a6BNkFdWpZJoxoTdl5fvMtGriGLbxt_3z6WE7Us9vLC4DieuK00aAlXl&_x_ns_gbraid=0AAAAAo4mICFjniiJZ_WkMtz0SwK9OEUDt&_x_ns_targetid=pla-2367777088238&refer_page_name=kuiper&refer_page_id=13554_1766102900114_rn5rpaqupf&refer_page_sn=13554&_x_sessn_id=x8y9dw1wkf"
+  image: "../assets/images/wishlist/background-tik-tok.png"
   bought: false
   
 - name: "Portable Ring Light"
   price_range: "$30 - $60"
   category: content_creation
-  description: "Compact lighting for @dimisthenics or @dimiles.away content"
-  link: null
+  description: "Feegar flash selfie stick with tripod, Bluetooth LED lamp, and remote control - compact lighting for @dimisthenics or @dimiles.away content"
+  link: "https://allegro.pl/oferta/feegar-flash-kijek-do-selfie-stick-tripod-bluetooth-led-lampa-pilot-uchwyt-14351177576?offerId=14351177576&inventoryUnitId=5qE5n_wdhbx_cCbEtkWpbA&adGroupId=YmY1ZTZhOTgtZDhjZC00YjQ3LWJiZTQtYjk4ZTBlNjZiMzlkAA&campaignId=OTA4YTdiNWMtMDFlZC00YTIxLTkyODItMzcxODM0YTE2NDllAA&clientId=OTc0NzcyNTUA&sig=9f771e3af4b40a2db2be8811c0a4d1d1&utm_feed=aa34192d-eee2-4419-9a9a-de66b9dfae24&utm_term=promo&utm_content=bpg&utm_source=google&utm_medium=ads&gad_source=1&gad_campaignid=20786481809&gbraid=0AAAAAoNvgYuVyqfUMLNtSsCb6UeBgLJCK&gclid=Cj0KCQiA6Y7KBhC1ARIsAOxhqtMTrkyX5-KjLEVXCkt-fLF3CWqfsIQr3EmV4IvtZnMLDmJ6eo2t424aAsMnEALw_wcB"
+  image: "../assets/images/wishlist/portable-light.png"
   bought: false
   
 - name: "Tripod with Smartphone Remote"
   price_range: "$30 - $80"
   category: content_creation
-  description: "Versatile tripod for mobile photography and videography"
-  link: null
+  description: "Blavec selfie stick with LED ring light (25cm), tripod (2-3 meters), and remote control for mobile photography and videography"
+  link: "https://allegro.pl/oferta/blavec-selfie-stick-z-lampa-aura-led-ring-25cm-p-55-tripod-2-3-metra-pilot-18151745726?offerId=18151745726&inventoryUnitId=cbTTohkziujPHH0q8CT5MQ&adGroupId=ZmE3ZTBhNGYtYzRiMy00NzBiLWIyNzgtYjNhOWJkNTRkZDU5AA&campaignId=MTNjNTFlMWEtMTU5YS00MTFmLTg0NWMtZTc3ODE2Zjg3NDFkAA&clientId=MTIwODkzMjc0AA&sig=7b2c5c9e510c3fc63c9825e6b3cc9de4&utm_feed=cba59b59-8d0f-48d0-98a0-e9d1127523e2&utm_source=google&utm_medium=ads&gad_source=1&gad_campaignid=23373527180&gbraid=0AAAABCWqeXk4cQEPphg230axzvadLOf7O&gclid=Cj0KCQiA6Y7KBhC1ARIsAOxhqtOOwxT0j7dnnlXUuXiS-uRAZhpiBBbNLO0H-N9VdkUZqQYKsdn3-6oaAneqEALw_wcB"
+  image: "../assets/images/wishlist/tripod.png"
   bought: false
   
 - name: "Canva Pro Premium Subscription"
   price_range: "$12.99/month"
   category: content_creation
   description: "Premium design tool for creating Threads & posts"
-  link: null
+  link: "https://www.canva.com/pro/"
+  image: "../assets/images/wishlist/canva-pro.png"
   bought: false
 
 - name: "Polaroid/Instax Mini Camera"
   price_range: "$70 - $150"
   category: creative
-  description: "Instant camera for capturing candid travel/artistic memories"
-  link: null
+  description: "Fujifilm Instax Mini 12 instant camera for capturing candid travel/artistic memories"
+  link: "https://mediamarkt.pl/pl/product/_aparat-fujifilm-instax-mini-12-zielony-1473404.html?utm_source=google&utm_medium=pmax&utm_campaign=rt_shopping_na_nsp_na_PMAX-Akcje-specjalne-PLA-d2c-ALL-NA&utm_term=google&utm_content=OSB0002NVE-OSE0003JRC&gad_source=1&gad_campaignid=22810294684&gbraid=0AAAAADL_Di2i91DCzoCm7TnNz3QolZH7O&gclid=Cj0KCQiA6Y7KBhC1ARIsAOxhqtP4F9YTD6PqYHRQbZbiQ74gq5aFub-ZSPUdD6q3rwkE4ZSwMHYnjykaAm6vEALw_wcB"
+  image: "../assets/images/wishlist/polaroid.png"
+  bought: false
+
+- name: "VEVOR Handpan, 55 cm, 9 nut, d-moll"
+  price_range: "$200 - $250"
+  category: creative
+  description: "Professional handpan drum with 9 notes in d-minor key, includes mallets, stand, and transport bag. Steel handpan with healing sound, 440 Hz tuning, suitable for meditation, yoga, music performances, and personal relaxation"
+  link: "https://www.vevor.pl/bebny-stalowe-c_13377/beben-reczny-vevor-55-cm-9-nutowy-beben-reczny-d-moll-z-mlotkiem-p_010616954484?adp=gmc&country=PL&utm_source=google&utm_medium=cpc&utm_id=19584200626&ad_group=148992910527&ad_id=645272057883&utm_term=&gad_source=1&gad_campaignid=19584200626&gbraid=0AAAAAoiy73HYANOOMkLYM_y4n20keBfDR&gclid=Cj0KCQiA6Y7KBhCkARIsAOxhqtPOsXiTckMtVArv_5UPktgrMEiAmPeVnyaj_ORUdxoQJH9aY6Sw6rIaAtLsEALw_wcB"
+  image: "../assets/images/wishlist/handpan.png"
   bought: false
 
 - name: "Adizero Adios Pro 4 (Apr2025)"
@@ -253,6 +283,22 @@
   bought: false
   image: "../assets/images/wishlist/tailoring-super-baggy.png"
 
+- name: "Slim-fit coat in wool"
+  price_range: "$150 - $200"
+  category: clothing
+  description: "Elegant slim-fit wool coat from Hugo Boss"
+  link: "https://www.hugoboss.com/slim-fit-coat-in-wool-and-cashmere/hbeu50549187_001.html#cgid=22100"
+  bought: false
+  image: "../assets/images/wishlist/hugo-boss-coat.png"
+
+- name: "Black Jeans Super Baggy"
+  price_range: "$50 - $60"
+  category: clothing
+  description: "Comfortable super baggy black jeans from Bershka"
+  link: "https://www.bershka.com/pl/jeansy-o-kroju-super-baggy-c0p189277049.html?colorId=809"
+  bought: false
+  image: "../assets/images/wishlist/black-jeans.png"
+
 
 - name: "Minimalist Watch (eg. Marlin Jet Automatic)"
   price_range: "$200 - $300"
@@ -268,7 +314,8 @@
   category: clothing
   description: "A versatile camel sweater for professional and semi-formal occasions"
   link: "https://www.zalando.pl/polo-ralph-lauren-long-sleeve-sweter-camel-melange-po222q0ed-b11.html?ssku=PO222Q0ED-B11000M000&lang=pl&otid=default&wmc=SEM480_NB_GO._6748070217_703410928_38453349724.&opc=2211&mpp=google|v1||pla-18283950120||9067394||g|c||161674294310||pla|PO222Q0ED-B11000M000|18283950120|1|&gclsrc=aw.ds&gad_source=1&gad_campaignid=703410928&gbraid=0AAAAADM1oAacWed9NDfKGQNtz2Wtk_xF3&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjdwEfWUw6h2xjL-aWxud1vRjlTGLIXy4WBBBrKYEK4ZO1DhiTmLhC8aAnV4EALw_wcB"
-  bought: false
+  bought: true
+  date_bought: "2026-01"
   image: "../assets/images/wishlist/sweater-camel.png"
 
 
@@ -287,7 +334,7 @@
   description: "Tickets to live music events or summer festivals"
   bought: false
   image: "../assets/images/wishlist/summer-concert.png"
-  link: "https://www.icloud.com/notes/0b9GEyqu0x7wJircVviKJbRuw"
+  link: "https://www.notion.so/Festivals-Concerts-2bf3dd005f5c80b79aebf8c9415df3a9?source=copy_link"
 
 - name: "Ceramics Workshop in Krakow (eg. Lyko)"
   price_range: "$80 - $100"
@@ -298,7 +345,7 @@
   image: "../assets/images/wishlist/ceramic-workshop.png"
 
 - name: "Airpoint Aerodynamic Airplane Simulation in Krakow"
-  price_range: "$150 - $170"
+  price_range: "$60 - $80"
   category: experiences
   description: "Immersive flight simulation experience"
   bought: false

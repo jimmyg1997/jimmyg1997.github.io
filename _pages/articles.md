@@ -49,7 +49,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
           <span class="article-tag tag-life">Life</span>
           <span class="article-tag tag-growth">Growth</span>
         </div>
-        <span class="article-date">Jan 2025</span>
+        <span class="article-date">Jan 2026</span>
       </div>
       <h3 class="article-title">New Year Reflection: Life as a River</h3>
       <div class="article-meta">
@@ -182,13 +182,13 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.5rem 1rem;
-  border-radius: 7px;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -214,7 +214,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .social-icon {
-  font-size: 0.9rem;
+  font-size: 1.125rem;
 }
 
 /* Filter Buttons */

@@ -145,7 +145,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Clinical decision support system for Greek hospitals enabling doctors to assess patient suicide risk through validated screening tools.</p>
     <p><strong>Technical Implementation:</strong> Built with Streamlit for rapid deployment, integrated with PostgreSQL for secure data storage, and featuring real-time risk scoring algorithms. Implements GDPR-compliant data handling and encrypted patient information storage.</p>
     <p><strong>Impact:</strong> Deployed in pilot hospitals, supporting mental health professionals in early intervention and risk assessment.</p>
-    <p><strong>Tech Stack:</strong> Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/suicide-prevention-survey" class="btn btn--primary" target="_blank">View Code</a>
     </div>
@@ -161,7 +161,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Machine learning system for COVID-19 diagnosis based solely on genetic factors, supporting clinical decision-making when traditional testing is unavailable.</p>
     <p><strong>ML Pipeline:</strong> Feature engineering on genetic markers, ensemble models (Random Forest, XGBoost, LightGBM), SHAP values for model interpretability, and cross-validation for robust performance.</p>
     <p><strong>Results:</strong> 87% accuracy in predicting COVID-19 status from genetic factors, with detailed feature importance analysis identifying key genetic markers.</p>
-    <p><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/COVID-19-Tabular-Classification-Genes" class="btn btn--primary" target="_blank">View Code</a>
     </div>
@@ -179,7 +179,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Personal productivity application for tracking daily habits and building consistent routines.</p>
     <p><strong>Features:</strong> Daily habit logging, progress visualization, streak tracking, customizable habit categories, and data persistence for long-term progress monitoring.</p>
     <p><strong>Implementation:</strong> Built with modern web technologies, featuring an intuitive interface for quick daily check-ins and comprehensive analytics to visualize habit consistency over time.</p>
-    <p><strong>Tech Stack:</strong> React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion.</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion.</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/habit-tracker" class="btn btn--primary" target="_blank">View Code</a>
     </div>
@@ -195,7 +195,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Automated email intelligence system integrating multiple Google APIs and OpenAI for smart email summarization and reporting.</p>
     <p><strong>Features:</strong> Gmail API integration for email extraction, OpenAI GPT for intelligent summarization, automatic Google Docs report generation, Telegram notifications, and CLI configuration management.</p>
     <p><strong>Architecture:</strong> Modular Python design with async processing, configurable pipelines, and scheduled automation via cron jobs.</p>
-    <p><strong>Tech Stack:</strong> Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/gmail-newsletter-reporter" class="btn btn--primary" target="_blank">View Code</a>
     </div>
@@ -211,7 +211,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Purpose:</strong> Full-stack survey creation and analysis platform with real-time visualization and statistical insights.</p>
     <p><strong>Features:</strong> Dynamic poll creation interface, real-time response collection, interactive charts (Plotly), statistical analysis (Chi-square, correlation), and exportable reports.</p>
     <p><strong>Analytics:</strong> Response distribution analysis, demographic segmentation, trend identification, and automated insight generation.</p>
-    <p><strong>Tech Stack:</strong> Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/polls-analyzer" class="btn btn--primary" target="_blank">View Code</a>
     </div>
@@ -228,7 +228,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Architecture:</strong> FastAPI for high-performance async endpoints, Docker Compose for containerization, Uvicorn for ASGI server, and comprehensive API documentation with Swagger UI.</p>
     <p><strong>Features:</strong> Automated feature generation, missing value imputation, categorical encoding, feature scaling, and feature selection algorithms. RESTful API design with input validation and error handling.</p>
     <p><strong>Performance:</strong> Handles 1000+ requests/second, horizontal scaling via Docker Swarm, and production-ready logging and monitoring.</p>
-    <p><strong>Tech Stack:</strong> Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest</p>
     <div class="project-links">
       <a href="https://github.com/jimmyg1997/ml-feature-engineering-fastapi-docker" class="btn btn--primary" target="_blank">View Code</a>
     </div>

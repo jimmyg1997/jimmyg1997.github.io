@@ -9,6 +9,8 @@
     { type: 'education', name: 'PhD Research', desc: 'PhD research in healthcare data science @ Ionian Panepistimio', start: '2025-06', end: null, icon: '🔬' },
     { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸' },
     { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️' },
+    { type: 'personal', name: 'Article Writing', desc: 'Writing articles on Substack & LinkedIn', start: '2026-01', end: null, icon: '✍️', link: '/articles/#new-year-reflection' },
+    { type: 'personal', name: 'Finished "1984"', desc: 'Completed reading George Orwell\'s 1984', start: '2025-12', end: '2025-12', icon: '📚', link: '/personal/#1984' },
     { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' },
     { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈' }
   ];
@@ -100,7 +102,9 @@
       const endM = toMonths(end);
       const left = toPercent(startM, totalMonths);
       const right = toPercent(endM, totalMonths);
-      const width = Math.max(2, right - left);
+      // Ensure minimum width for visibility, especially for single-month items
+      const calculatedWidth = right - left;
+      const width = Math.max(3, calculatedWidth); // Minimum 3% width for visibility
       
       // Find non-overlapping row
       let row = 0;
@@ -221,6 +225,15 @@
       bar.setAttribute('data-desc', item.desc);
       bar.setAttribute('data-name', item.name);
       
+      // Make clickable if link exists
+      if (item.link) {
+        bar.setAttribute('data-has-link', 'true');
+        bar.addEventListener('click', (e) => {
+          e.stopPropagation();
+          window.location.href = item.link;
+        });
+      }
+      
       // Hover tooltip with full text
       bar.addEventListener('mouseenter', (e) => showTooltip(e, item));
       bar.addEventListener('mouseleave', hideTooltip);
@@ -280,9 +293,14 @@
     const desc = item ? item.desc : bar.getAttribute('data-desc');
     const name = item ? item.name : bar.getAttribute('data-name');
     const dateStr = item ? formatDateRange(item) : '';
+    const link = item ? item.link : null;
     
     const tooltip = document.createElement('div');
     tooltip.className = 'cv-gantt-tooltip';
+    let linkHtml = '';
+    if (link) {
+      linkHtml = `<div class="cv-tooltip-link"><a href="${link}" target="_blank">View Details →</a></div>`;
+    }
     tooltip.innerHTML = `
       <div class="cv-tooltip-header">
         <span class="cv-tooltip-icon">${item ? item.icon : '📌'}</span>
@@ -290,6 +308,7 @@
       </div>
       <div class="cv-tooltip-date">${dateStr}</div>
       <div class="cv-tooltip-desc">${desc}</div>
+      ${linkHtml}
     `;
     document.body.appendChild(tooltip);
     

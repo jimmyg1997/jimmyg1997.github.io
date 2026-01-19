@@ -174,7 +174,7 @@
       // Set position and height
       const labelTop = row * config.rowHeight + 8;
       label.style.top = `${labelTop}px`;
-      label.style.height = `${config.rowHeight}px`;
+      label.style.height = `${config.rowHeight}px`; // Match rowHeight
       
       labelsCol.appendChild(label);
     });

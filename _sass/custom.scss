@@ -3131,7 +3131,7 @@ html body .btn:active {
   padding: 0.5rem 0;
   font-size: 0.8125rem;
   transition: all 0.2s ease;
-  height: 60px;
+  height: 65px; /* Increased from 60px to match rowHeight */
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;

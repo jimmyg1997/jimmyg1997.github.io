@@ -171,10 +171,10 @@
         </div>
       `;
       
-      // Set position and height
-      const labelTop = row * config.rowHeight + 8;
+      // Set position and height - ensure proper alignment
+      const labelTop = row * config.rowHeight;
       label.style.top = `${labelTop}px`;
-      label.style.height = `${config.rowHeight}px`; // Match rowHeight
+      label.style.height = `${config.rowHeight}px`;
       
       labelsCol.appendChild(label);
     });
@@ -249,7 +249,9 @@
       bar.className = `cv-gantt-bar cv-${item.type}`;
       bar.style.left = `${left}%`;
       bar.style.width = `${width}%`;
-      bar.style.top = `${row * config.rowHeight + 8}px`;
+      // Align bars with labels - center vertically in row
+      const barTop = row * config.rowHeight + (config.rowHeight - config.barHeight) / 2;
+      bar.style.top = `${barTop}px`;
       bar.style.height = `${config.barHeight}px`;
       bar.style.zIndex = maxRow - row + 1;
       

@@ -1,5 +1,5 @@
 ---
-title: 🧠 Projects
+title: Projects
 layout: single
 permalink: /projects/
 author_profile: true
@@ -9,122 +9,36 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/projects-header.png
-excerpt: "Exploring the intersection of data science, machine learning, and healthcare"
+excerpt: "Machine Learning & Data Science Portfolio"
 ---
 
 <div class="projects-intro">
-  <p>My work spans across various domains of data science, machine learning, and healthcare informatics. This page provides an overview of my major project categories.</p>
+  <p>A comprehensive portfolio showcasing expertise in machine learning, data science, and healthcare AI. Each project demonstrates end-to-end development from data processing to production deployment.</p>
 </div>
 
-
-## Data Science Projects {#data-science-projects}
-
-
-<div class="project-card" id="gmail-reporter">
-  <h3 id="gmail-newsletter-reporter">Gmail Newsletter Reporter</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/gmail-reporter.png" alt="Gmail Newsletter Reporter" class="project-image">
-      <div class="project-text">
-        <p>📧 A Python-based automation project that integrates Gmail, Google Sheets, Google Docs, Telegram and OpenAI APIs to streamline email summarization and report generation. It leverages CLI configurations to provide a seamless experience.</p>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/gmail-newsletter-reporter" class="btn btn--primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-card" id="polls-analyzer">
-  <h3 id="polls-analyzer">Polls Analyzer</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/polls-analyzer.png" alt="Polls Analyzer" class="project-image">
-      <div class="project-text">
-        <p>📊💬 Streamlit App to Create & Analyze Polls. Design polls, collect responses, and visualize results in real-time 🚀. Get insights quickly with interactive charts and analytics 📈.</p>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/polls-analyzer" class="btn btn--primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-card" id="ml-feature-engineering">
-  <h3 id="ml-feature-engineering-fastapi">ML Feature Engineering FastAPI Docker</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/ml-feature-engineering.png" alt="ML Feature Engineering FastAPI Docker" class="project-image">
-      <div class="project-text">
-        <p>🤖 Docker Compose image with Uvicorn managed for a simple Machine Learning Feature Engineering FastAPI web application in Python 3.6 and above with multiple endpoints.</p>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/ml-feature-engineering-fastapi-docker" class="btn btn--primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-## Healthcare & PhD Projects {#healthcare-projects}
-
-<div class="project-card" id="ecog-video-analysis">
-  <h3 id="ecog-video-analysis">🏆 ECoG Video Analysis - 1st Place Winner</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <div class="project-gallery">
-        <div class="gallery-container">
-          <img src="../assets/images/projects/ecog-video-analysis.png" alt="ECoG Video Analysis - BCI Competition Winner" class="project-image active" data-index="0">
-          <img src="../assets/images/projects/ecog-video-analysis1.png" alt="ECoG Video Analysis - Screenshot 1" class="project-image" data-index="1">
-          <img src="../assets/images/projects/ecog-video-analysis2.png" alt="ECoG Video Analysis - Screenshot 2" class="project-image" data-index="2">
-          <img src="../assets/images/projects/ecog-video-analysis3.png" alt="ECoG Video Analysis - Screenshot 3" class="project-image" data-index="3">
-          <img src="../assets/images/projects/ecog-video-analysis4.png" alt="ECoG Video Analysis - Screenshot 4" class="project-image" data-index="4">
-          
-          <button class="gallery-nav prev" onclick="changeImage(-1)">‹</button>
-          <button class="gallery-nav next" onclick="changeImage(1)">›</button>
-          
-          <div class="gallery-dots">
-            <span class="dot active" onclick="currentImage(0)"></span>
-            <span class="dot" onclick="currentImage(1)"></span>
-            <span class="dot" onclick="currentImage(2)"></span>
-            <span class="dot" onclick="currentImage(3)"></span>
-            <span class="dot" onclick="currentImage(4)"></span>
-          </div>
-        </div>
-      </div>
-      <div class="project-text">
-        <p>🧠 <strong>1st Place Winner</strong> in the Data Analysis category at the Brain ECoG Hackathon among 69 teams and 404 participants from over 50 countries! 🌍</p>
-        <p>Advanced neural decoding pipeline for analyzing ECoG data with real-time video synchronization, interactive 3D brain visualizations, and state-of-the-art machine learning models achieving 89.6% accuracy in 7-class visual stimulus classification.</p>
-        <p><strong>Key Achievements:</strong></p>
-        <ul>
-          <li>160-channel ECoG + 252 video trials with advanced artifact removal</li>
-          <li>Multiple ML approaches: CSP-LDA, EEGNet, transformers</li>
-          <li>Real-time video annotation with multi-region brain overlays</li>
-          <li>Interactive web application with live brain-video playback</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/ecog-video-analysis" class="btn btn--primary" target="_blank">View on GitHub</a>
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7381093095079178240/" class="btn btn--primary" target="_blank">LinkedIn Post</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+## Healthcare & AI Research Projects {#healthcare-ai-research-projects}
 
 <style>
 .project-gallery {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 1.5rem auto;
 }
 
 .gallery-container {
   position: relative;
   width: 100%;
-  height: 300px;
+  min-height: 400px;
+  height: 500px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image {
@@ -133,13 +47,26 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  background: #f8fafc;
+  display: block;
 }
 
 .project-image.active {
   opacity: 1;
+  z-index: 1;
+}
+
+.project-image:not(.active) {
+  z-index: 0;
+}
+
+/* Handle missing images gracefully */
+.project-image[src=""],
+.project-image:not([src]) {
+  display: none;
 }
 
 .gallery-nav {
@@ -149,13 +76,15 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   background: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
   z-index: 10;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
+  font-weight: 300;
+  line-height: 1;
 }
 
 .gallery-nav:hover {
@@ -163,20 +92,20 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 }
 
 .gallery-nav.prev {
-  left: 10px;
+  left: 15px;
 }
 
 .gallery-nav.next {
-  right: 10px;
+  right: 15px;
 }
 
 .gallery-dots {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 10px;
   z-index: 10;
 }
 
@@ -184,9 +113,10 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   transition: background 0.3s ease;
+  border: 2px solid white;
 }
 
 .dot.active {
@@ -195,97 +125,271 @@ excerpt: "Exploring the intersection of data science, machine learning, and heal
 
 @media (max-width: 768px) {
   .gallery-container {
-    height: 250px;
+    height: 350px;
   }
   
   .gallery-nav {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 }
 </style>
 
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/suicide-prevention.png" alt="Suicide Prevention Survey" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="suicide-prevention-survey">Suicide Prevention Survey Platform</h3>
+    <p><strong>Purpose:</strong> Clinical decision support system for Greek hospitals enabling doctors to assess patient suicide risk through validated screening tools.</p>
+    <p><strong>Technical Implementation:</strong> Built with Streamlit for rapid deployment, integrated with PostgreSQL for secure data storage, and featuring real-time risk scoring algorithms. Implements GDPR-compliant data handling and encrypted patient information storage.</p>
+    <p><strong>Impact:</strong> Deployed in pilot hospitals, supporting mental health professionals in early intervention and risk assessment.</p>
+    <p><strong>Tech Stack:</strong> Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/suicide-prevention-survey" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/covid-classification.png" alt="COVID-19 Genetic Classification" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="covid-19-genetic-classification">COVID-19 Genetic Factor Classification</h3>
+    <p><strong>Purpose:</strong> Machine learning system for COVID-19 diagnosis based solely on genetic factors, supporting clinical decision-making when traditional testing is unavailable.</p>
+    <p><strong>ML Pipeline:</strong> Feature engineering on genetic markers, ensemble models (Random Forest, XGBoost, LightGBM), SHAP values for model interpretability, and cross-validation for robust performance.</p>
+    <p><strong>Results:</strong> 87% accuracy in predicting COVID-19 status from genetic factors, with detailed feature importance analysis identifying key genetic markers.</p>
+    <p><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/COVID-19-Tabular-Classification-Genes" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+## Data Science & Automation Projects {#data-science-automation-projects}
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/habit-tracker.png" alt="Habit Tracker" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="habit-tracker">Habit Tracker</h3>
+    <p><strong>Purpose:</strong> Personal productivity application for tracking daily habits and building consistent routines.</p>
+    <p><strong>Features:</strong> Daily habit logging, progress visualization, streak tracking, customizable habit categories, and data persistence for long-term progress monitoring.</p>
+    <p><strong>Implementation:</strong> Built with modern web technologies, featuring an intuitive interface for quick daily check-ins and comprehensive analytics to visualize habit consistency over time.</p>
+    <p><strong>Tech Stack:</strong> [To be updated based on your implementation]</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/habit-tracker" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/gmail-reporter.png" alt="Gmail Newsletter Reporter" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="gmail-newsletter-reporter">Gmail Newsletter Reporter</h3>
+    <p><strong>Purpose:</strong> Automated email intelligence system integrating multiple Google APIs and OpenAI for smart email summarization and reporting.</p>
+    <p><strong>Features:</strong> Gmail API integration for email extraction, OpenAI GPT for intelligent summarization, automatic Google Docs report generation, Telegram notifications, and CLI configuration management.</p>
+    <p><strong>Architecture:</strong> Modular Python design with async processing, configurable pipelines, and scheduled automation via cron jobs.</p>
+    <p><strong>Tech Stack:</strong> Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/gmail-newsletter-reporter" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/polls-analyzer.png" alt="Polls Analyzer" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="polls-analyzer">Polls Analyzer - Interactive Survey Platform</h3>
+    <p><strong>Purpose:</strong> Full-stack survey creation and analysis platform with real-time visualization and statistical insights.</p>
+    <p><strong>Features:</strong> Dynamic poll creation interface, real-time response collection, interactive charts (Plotly), statistical analysis (Chi-square, correlation), and exportable reports.</p>
+    <p><strong>Analytics:</strong> Response distribution analysis, demographic segmentation, trend identification, and automated insight generation.</p>
+    <p><strong>Tech Stack:</strong> Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/polls-analyzer" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/ml-feature-engineering.png" alt="ML Feature Engineering API" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="ml-feature-engineering-api">ML Feature Engineering FastAPI Service</h3>
+    <p><strong>Purpose:</strong> Production-ready microservice for automated feature engineering and ML preprocessing at scale.</p>
+    <p><strong>Architecture:</strong> FastAPI for high-performance async endpoints, Docker Compose for containerization, Uvicorn for ASGI server, and comprehensive API documentation with Swagger UI.</p>
+    <p><strong>Features:</strong> Automated feature generation, missing value imputation, categorical encoding, feature scaling, and feature selection algorithms. RESTful API design with input validation and error handling.</p>
+    <p><strong>Performance:</strong> Handles 1000+ requests/second, horizontal scaling via Docker Swarm, and production-ready logging and monitoring.</p>
+    <p><strong>Tech Stack:</strong> Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/ml-feature-engineering-fastapi-docker" class="btn btn--primary" target="_blank">View Code</a>
+    </div>
+  </div>
+</div>
+
+## Media & Personal Projects {#media-personal-projects}
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="bonobo-gentlemen-podcast">Bonobo Gentlemen Podcast</h3>
+    <p><strong>About:</strong> A podcast series exploring the intersection of technology, personal development, and life philosophy. Episodes feature in-depth discussions on machine learning, career development, mental health, and productivity.</p>
+    <p><strong>Topics:</strong> AI/ML industry insights, career transitions in tech, work-life balance, mental health awareness, productivity systems, and continuous learning strategies.</p>
+    <p><strong>Production:</strong> Audio editing with Audacity, hosting on Spotify and Apple Podcasts, and social media promotion strategy.</p>
+    <div class="project-links">
+      <a href="https://open.spotify.com/episode/6A4DSZ3T7MX6pTnh0XDlau" class="btn btn--primary" target="_blank">Listen on Spotify</a>
+    </div>
+  </div>
+</div>
+
+<!-- Image Lightbox Modal -->
+<div id="imageLightbox" class="image-lightbox">
+  <span class="image-lightbox-close">&times;</span>
+  <span class="image-lightbox-prev">&#10094;</span>
+  <span class="image-lightbox-next">&#10095;</span>
+  <div class="image-lightbox-content">
+    <img id="lightboxImage" src="" alt="">
+  </div>
+</div>
+
 <script>
-let currentImageIndex = 0;
-const images = document.querySelectorAll('#ecog-video-analysis .project-image');
-const dots = document.querySelectorAll('#ecog-video-analysis .dot');
-
-function showImage(index) {
-  images.forEach((img, i) => {
-    img.classList.toggle('active', i === index);
-  });
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-}
-
-function changeImage(direction) {
-  currentImageIndex += direction;
-  if (currentImageIndex >= images.length) {
-    currentImageIndex = 0;
-  } else if (currentImageIndex < 0) {
-    currentImageIndex = images.length - 1;
+// Image Lightbox functionality for Projects page
+(function() {
+  const lightbox = document.getElementById('imageLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeBtn = document.querySelector('.image-lightbox-close');
+  const prevBtn = document.querySelector('.image-lightbox-prev');
+  const nextBtn = document.querySelector('.image-lightbox-next');
+  
+  let currentImages = [];
+  let currentIndex = 0;
+  
+  // Get all clickable images (exclude logos, navigation elements, etc.)
+  function getClickableImages() {
+    return Array.from(document.querySelectorAll('.page[class*="projects"] img')).filter(img => {
+      // Exclude logos, navigation buttons, dots, etc.
+      const excludeClasses = ['gallery-nav', 'dot'];
+      const excludeParents = img.closest('.gallery-nav, .gallery-dots');
+      
+      if (excludeParents) return false;
+      
+      for (let cls of excludeClasses) {
+        if (img.classList.contains(cls)) return false;
+      }
+      
+      // Only include images that have a valid src
+      return img.src && img.src !== '' && img.complete && img.naturalHeight !== 0;
+    });
   }
-  showImage(currentImageIndex);
-}
-
-function currentImage(index) {
-  currentImageIndex = index;
-  showImage(currentImageIndex);
-}
-
-// Auto-advance gallery every 5 seconds
-setInterval(() => {
-  changeImage(1);
-}, 5000);
+  
+  function openLightbox(index) {
+    currentImages = getClickableImages();
+    if (currentImages.length === 0) return;
+    
+    currentIndex = index;
+    updateLightboxImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  function updateLightboxImage() {
+    if (currentImages.length === 0) return;
+    
+    if (currentIndex < 0) currentIndex = currentImages.length - 1;
+    if (currentIndex >= currentImages.length) currentIndex = 0;
+    
+    const img = currentImages[currentIndex];
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt || 'Image';
+    
+    // Show/hide navigation buttons
+    if (currentImages.length <= 1) {
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+    } else {
+      prevBtn.style.display = 'flex';
+      nextBtn.style.display = 'flex';
+    }
+  }
+  
+  function showNext() {
+    currentIndex++;
+    updateLightboxImage();
+  }
+  
+  function showPrev() {
+    currentIndex--;
+    updateLightboxImage();
+  }
+  
+  // Initialize click handlers for all images
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = getClickableImages();
+    
+    images.forEach((img, index) => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openLightbox(index);
+      });
+    });
+  });
+  
+  // Close button
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeLightbox);
+  }
+  
+  // Previous/Next buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      showPrev();
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      showNext();
+    });
+  }
+  
+  // Close on background click
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  
+  // Keyboard navigation (ESC, Arrow keys)
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('active')) return;
+    
+    if (e.key === 'Escape') {
+      closeLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      showPrev();
+    } else if (e.key === 'ArrowRight') {
+      showNext();
+    }
+  });
+})();
 </script>
 
-
-<div class="project-card" id="suicide-prevention">
-  <h3 id="suicide-prevention-survey">Suicide Prevention Survey</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/suicide-prevention.png" alt="Suicide Prevention Survey" class="project-image">
-      <div class="project-text">
-        <p>A Streamlit-based web app designed for Greek hospitals, allowing doctors to complete a survey for their patients to assess suicide risk.</p>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/suicide-prevention-survey" class="btn btn--primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="project-card" id="covid-classification">
-  <h3 id="covid-19-classification">COVID-19 Tabular Classification Genes</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/covid-classification.png" alt="COVID-19 Tabular Classification Genes" class="project-image">
-      <div class="project-text">
-        <p>This tool is built by using machine learning techniques in order to help doctors in the diagnosis of COVID-19 status based only on genetic factors.</p>
-        <div class="project-links">
-          <a href="https://github.com/jimmyg1997/COVID-19-Tabular-Classification-Genes" class="btn btn--primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-## Non-coding Projects {#non-coding-projects}
-
-<div class="project-card" id="bonobo-gentlemen">
-  <h3 id="bonobo-gentlemen-podcast">Bonobo Gentlemen Podcast</h3>
-  <div class="project-content">
-    <div class="project-details">
-      <img src="../assets/images/projects/bonobo-gentlemen.png" alt="Bonobo Gentlemen Podcast" class="project-image">
-      <div class="project-text">
-        <p>A podcast series exploring personal development, technology, and life experiences. Each episode features in-depth discussions on various topics, from overthinking to personal growth.</p>
-        <div class="project-links">
-          <a href="https://open.spotify.com/episode/6A4DSZ3T7MX6pTnh0XDlau" class="btn btn--primary" target="_blank">Listen on Spotify</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

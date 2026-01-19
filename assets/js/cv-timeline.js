@@ -10,6 +10,7 @@
     { type: 'education', name: 'Spanish B2', desc: 'Pursuing B2 in Spanish', start: '2024-03', end: null, icon: '🇪🇸' },
     { type: 'personal', name: 'Calisthenics', desc: 'Calisthenics milestone training', start: '2022-01', end: null, icon: '🏋️' },
     { type: 'personal', name: 'Article Writing', desc: 'Writing articles on Substack & LinkedIn', start: '2026-01', end: null, icon: '✍️', link: '/articles/#new-year-reflection' },
+    { type: 'personal', name: 'Habit Tracker', desc: 'Personal habit tracking application', start: '2026-01', end: null, icon: '📊', link: '/projects/#habit-tracker' },
     { type: 'personal', name: 'Finished "1984"', desc: 'Completed reading George Orwell\'s 1984', start: '2025-12', end: '2025-12', icon: '📚', link: '/personal/#1984' },
     { type: 'achievement', name: 'Brain ECoG Hackathon', desc: '1st Place Winner (69 teams, 404 participants)', start: '2025-09', end: '2025-09', icon: '🏆' },
     { type: 'achievement', name: 'EIT Health i-Days 2025', desc: '2nd Place (HygeIA)', start: '2025-11', end: '2025-11', icon: '🥈' }

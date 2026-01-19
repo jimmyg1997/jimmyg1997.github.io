@@ -19,9 +19,9 @@
   const config = {
     startYear: 2022,
     endYear: 2026,
-    rowHeight: 60,
+    rowHeight: 65, // Increased from 60 to give more vertical space
     labelWidth: 360,
-    barHeight: 44,
+    barHeight: 48, // Increased from 44 to give more space for text
     zoomLevel: 1.0,
     minZoom: 0.5,
     maxZoom: 3.0
@@ -105,15 +105,19 @@
       const right = toPercent(endM, totalMonths);
       // Ensure minimum width for visibility, especially for single-month items
       const calculatedWidth = right - left;
-      const width = Math.max(3, calculatedWidth); // Minimum 3% width for visibility
+      // Increased minimum width to 4% to ensure text is readable
+      const width = Math.max(4, calculatedWidth);
       
-      // Find non-overlapping row
+      // Find non-overlapping row with better spacing
       let row = 0;
       for (let r = 0; r < rows.length; r++) {
         const hasOverlap = rows[r].some(existing => {
           const existingRight = existing.left + existing.width;
-          const margin = 0.5;
-          return !((left + width + margin) <= existing.left || (left - margin) >= existingRight);
+          // Increased margin to prevent any overlap, especially for same-category items
+          const margin = 1.0; // Increased from 0.5 to ensure clear separation
+          const itemRight = left + width;
+          // Check if there's any overlap (with margin buffer)
+          return !((itemRight + margin) <= existing.left || (left - margin) >= existingRight);
         });
         if (!hasOverlap) {
           row = r;
@@ -123,7 +127,7 @@
       }
       
       if (!rows[row]) rows[row] = [];
-      rows[row].push({ left, width });
+      rows[row].push({ left, width, item: item }); // Store item reference for debugging
       
       items.push({ item, left, width, row, start, end });
     });

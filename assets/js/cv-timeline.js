@@ -184,7 +184,7 @@
     chartArea.className = 'cv-gantt-chart';
     chartArea.style.height = `${chartHeight}px`;
     chartArea.style.borderTop = '2px solid rgba(0, 31, 63, 0.15)';
-    chartArea.style.marginTop = '45px'; // Increased from 30px to accommodate year markers
+    chartArea.style.marginTop = '50px'; // Increased to accommodate year markers with background
     chartArea.style.paddingTop = '10px';
     chartArea.style.position = 'relative';
     chartArea.style.overflow = 'auto';
@@ -198,19 +198,42 @@
     zoomContainer.style.position = 'relative';
     zoomContainer.style.minHeight = `${chartHeight / config.zoomLevel}px`;
     
-    // Year markers with better spacing to prevent overlap
+    // Year markers with smart spacing to prevent overlap
     const yearCount = config.endYear - config.startYear + 1;
+    const markers = [];
+    
+    // Calculate positions for all years first
     for (let y = config.startYear; y <= config.endYear; y++) {
+      const position = ((y - config.startYear) / (config.endYear - config.startYear)) * 100;
+      markers.push({ year: y, position });
+    }
+    
+    // Smart filtering: only show markers that have enough space between them
+    const minSpacing = 8; // Minimum percentage spacing between markers
+    const visibleMarkers = [];
+    let lastPosition = -minSpacing;
+    
+    markers.forEach(({ year, position }) => {
+      // Always show first and last year
+      if (year === config.startYear || year === config.endYear) {
+        visibleMarkers.push({ year, position });
+        lastPosition = position;
+      } else if (position - lastPosition >= minSpacing) {
+        // Only show if there's enough space from the last marker
+        visibleMarkers.push({ year, position });
+        lastPosition = position;
+      }
+    });
+    
+    // Render visible markers
+    visibleMarkers.forEach(({ year, position }) => {
       const marker = document.createElement('div');
       marker.className = 'cv-gantt-year-marker';
-      marker.textContent = y;
-      // Calculate position with spacing to prevent overlap
-      const position = ((y - config.startYear) / (config.endYear - config.startYear)) * 100;
+      marker.textContent = year;
       marker.style.left = `${position}%`;
-      // Add data attribute for potential spacing adjustments
-      marker.setAttribute('data-year', y);
+      marker.setAttribute('data-year', year);
       zoomContainer.appendChild(marker);
-    }
+    });
     
     // Gantt bars
     items.forEach(({ item, left, width, row }) => {

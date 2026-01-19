@@ -3229,7 +3229,10 @@ html body .btn:active {
   transform: translateX(-50%);
   z-index: 5;
   white-space: nowrap; /* Prevent text wrapping */
-  padding: 0 4px; /* Add padding to prevent overlap */
+  padding: 0 6px; /* Increased padding for better spacing */
+  background: rgba(255, 255, 255, 0.9); /* Subtle background to prevent text overlap */
+  border-radius: 3px;
+  pointer-events: none; /* Prevent interference with interactions */
   
   &::after {
     content: '';

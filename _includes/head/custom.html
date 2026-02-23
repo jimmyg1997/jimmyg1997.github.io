@@ -1,73 +1,12 @@
 <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
-<link rel="icon" type="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
-<link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/site.webmanifest">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}{{ site.baseurl }}/assets/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}{{ site.baseurl }}/assets/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}{{ site.baseurl }}/assets/images/icons/favicon-16x16.png">
+<link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/assets/images/icons/site.webmanifest">
 <link rel="mask-icon" href="{{ site.url }}{{ site.baseurl }}/assets/images/icons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-
-<script>
-// Comprehensive jQuery patch to prevent all smooth-scroll errors
-(function() {
-  var checkInterval = setInterval(function() {
-    if (typeof jQuery !== 'undefined') {
-      clearInterval(checkInterval);
-      
-      // 1. Patch jQuery.fn.init to catch empty selectors
-      var originalInit = jQuery.fn.init;
-      jQuery.fn.init = function(selector, context, root) {
-        if (selector === '#' || selector === '#_' || selector === '') {
-          return originalInit.call(this, [], context, root);
-        }
-        try {
-          return originalInit.call(this, selector, context, root);
-        } catch (e) {
-          console.warn('jQuery selector error caught:', selector);
-          return originalInit.call(this, [], context, root);
-        }
-      };
-      jQuery.fn.init.prototype = originalInit.prototype;
-      
-      // 2. Patch jQuery.fn.offset to return safe values for empty objects
-      var originalOffset = jQuery.fn.offset;
-      jQuery.fn.offset = function() {
-        if (this.length === 0) {
-          return { top: 0, left: 0 };
-        }
-        return originalOffset.apply(this, arguments);
-      };
-      
-      // 3. Disable theme's smooth scroll entirely
-      jQuery(document).off('click.smoothScroll');
-      jQuery(document).on('click.smoothScroll', 'a[href^="#"]', function(e) {
-        var href = jQuery(this).attr('href');
-        if (!href || href === '#' || href === '#_' || href === '') {
-          e.preventDefault();
-          e.stopImmediatePropagation();
-          return false;
-        }
-      });
-    }
-  }, 1);
-})();
-</script>
-
-<!-- Google Fonts: Playfair Display + DM Sans + JetBrains Mono -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Prevent dark mode flash -->
-<script>
-  (function() {
-    var stored = localStorage.getItem('dg-theme');
-    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var theme = stored || (prefersDark ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-  })();
-</script>
-
-<script src="{{ site.url }}{{ site.baseurl }}/assets/js/design-system.js" defer></script>
 
 <!-- end custom head snippets -->

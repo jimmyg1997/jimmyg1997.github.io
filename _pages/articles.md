@@ -24,6 +24,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       <span class="social-icon">💼</span>
       <span>LinkedIn</span>
     </a>
+    <a href="https://x.com/jimmyg1997" target="_blank" class="social-link x-link">
+      <span class="social-icon">𝕏</span>
+      <span>X (Twitter)</span>
+    </a>
   </div>
 </div>
 
@@ -140,6 +144,76 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       </div>
     </article>
 
+    <!-- Article 2 -->
+    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-1">
+      <div class="article-card-header">
+        <div class="article-tags">
+          <span class="article-tag tag-growth">Growth</span>
+        </div>
+        <span class="article-date">Feb 2026</span>
+      </div>
+      <h3 class="article-title">Healthcare AI | Literature Research Synthesis | Part 1</h3>
+      <div class="article-meta">
+        <span class="article-read-time">6 min read</span>
+      </div>
+      <div class="article-actions-compact">
+        <select class="voice-select-small" id="voice-select-healthcare-ai-lit-part-1">
+          <option value="">Select Voice</option>
+        </select>
+        <div class="speed-control">
+          <label for="speed-slider-healthcare-ai-lit-part-1" class="speed-label">Speed:</label>
+          <input type="range" class="speed-slider" id="speed-slider-healthcare-ai-lit-part-1" min="0.5" max="2.0" step="0.1" value="1.0">
+          <span class="speed-value" id="speed-value-healthcare-ai-lit-part-1">1.0x</span>
+        </div>
+        <button class="speech-btn-small" onclick="toggleSpeech('healthcare-ai-lit-part-1')" id="speech-btn-healthcare-ai-lit-part-1">
+          <span>🔊</span>
+          <span>Listen</span>
+        </button>
+      </div>
+      <div class="article-body" id="article-body-healthcare-ai-lit-part-1">
+        <div class="article-content article-content-collapsed" id="article-content-healthcare-ai-lit-part-1">
+          <p><strong>[Healthcare AI | Literature Research Synthesis | Part 1]</strong></p>
+          <p><strong>Breaking Down Silos: Fusing Genomics, Imaging, and EHR Data with Agentic Foundation Models.</strong> Recent 2026 advancements show that true precision medicine has moved beyond static, single-task algorithms. Genomics, high-resolution imaging, and electronic health records (EHR) are now being integrated into multimodal agentic systems where specialized AI agents collaborate to formulate clinical strategies [1].</p>
+          <p><strong>🧬 Overcoming Single-Modality Limits.</strong> Traditional models analyzing only EHRs miss critical genetic context. The latest foundational models directly integrate Polygenic Risk Scores (PRS) with longitudinal EHR sequences, significantly improving predictive accuracy for complex conditions like type 2 diabetes and coronary artery disease [1].</p>
+          <p><strong>🧩 Unifying Heterogeneous Data.</strong> As illustrated in Figure 2, multimodal architectures use cross-attention mechanisms to structurally fuse static genetic attributes with dynamic, time-series clinical events into a shared latent space [1, 3].</p>
+          <p><strong>🚀 Enhancing Diagnostic Precision via Multi-Agent Systems.</strong> We are moving from single models to collaborative networks. Architectures now utilize specialized agents that debate and verify findings across multi-omics and unstructured EHR data to prevent hallucinations and improve diagnostic reasoning [4].</p>
+          <p><strong>🛠️ Addressing Data Silos with MCP.</strong> Standardizing diverse data is the prerequisite for agentic tool use. Figure 3 outlines the traditional OHDSI ETL stack used to map clinical data into research-ready OMOP structures. In 2026, the breakthrough is that agents now use the Model Context Protocol (MCP) as a secure “handshake” to interact with these standardized repositories in real-time [2].</p>
+          <p><strong>💊 Accelerating Drug Discovery Under New Regulations.</strong> Multimodal AI screening of complex patient profiles is accelerating clinical trials. Crucially, these pipelines are now aligned with the unified FDA and EMA “Guiding Principles of Good AI Practice”, published January 14, 2026, ensuring stringent transatlantic regulatory alignment [5].</p>
+          <p>My perspective is that fusing multi-omics, imaging, and clinical text into cohesive, agentic AI architectures is the necessary foundation for the next generation of predictive, personalized, and preventive care.</p>
+          <p><strong>Sources:</strong><br>
+          [1] <a href="https://lnkd.in/dqCW2HNh" target="_blank">lnkd.in/dqCW2HNh</a><br>
+          [2] <a href="https://lnkd.in/d_UjEVCD" target="_blank">lnkd.in/d_UjEVCD</a><br>
+          [3] <a href="https://lnkd.in/deQsHnRJ" target="_blank">lnkd.in/deQsHnRJ</a><br>
+          [4] <a href="https://lnkd.in/dZgUYPzs" target="_blank">lnkd.in/dZgUYPzs</a><br>
+          [5] <a href="https://lnkd.in/dumKgtiE" target="_blank">lnkd.in/dumKgtiE</a>
+          </p>
+          <p><strong>Figures:</strong><br>
+          • Figure 1: Conceptual Architecture of Agentic Foundation Models (Synthesized via NotebookLM)<br>
+          • Figure 2: <a href="https://lnkd.in/d_UjEVCD" target="_blank">lnkd.in/d_UjEVCD</a><br>
+          • Figure 3: <a href="https://lnkd.in/dqCW2HNh" target="_blank">lnkd.in/dqCW2HNh</a>
+          </p>
+        </div>
+        <button class="expand-btn" onclick="toggleExpand('healthcare-ai-lit-part-1')" id="expand-btn-healthcare-ai-lit-part-1">
+          <span>📖</span>
+          <span>Expand Article</span>
+        </button>
+      </div>
+      <div class="article-links">
+        <a href="https://dgeorgiou.substack.com/publish/posts/detail/189259679/share-center" target="_blank" class="article-link substack">
+          <span>📰</span>
+          <span>Substack</span>
+        </a>
+        <a href="https://www.linkedin.com/posts/dimitrios-georgiou_%CA%9C%E1%B4%87%E1%B4%80%CA%9F%E1%B4%9B%CA%9C%E1%B4%84%E1%B4%80%CA%80%E1%B4%87-%E1%B4%80%C9%AA-%CA%9F%C9%AA%E1%B4%9B%E1%B4%87%CA%80%E1%B4%80%E1%B4%9B%E1%B4%9C%CA%80%E1%B4%87-%CA%80%E1%B4%87%EA%9C%B1%E1%B4%87%E1%B4%80%CA%80%E1%B4%84%CA%9C-%EA%9C%B1%CA%8F%C9%B4%E1%B4%9B%CA%9C%E1%B4%87%EA%9C%B1%C9%AA%EA%9C%B1-activity-7432802785592545280-ILsx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" target="_blank" class="article-link linkedin">
+          <span>💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://x.com/jimmyg1997/status/2027038661917680064?s=20" target="_blank" class="article-link x">
+          <span>𝕏</span>
+          <span>X (Twitter)</span>
+        </a>
+      </div>
+    </article>
+
     <!-- More articles will be added here as you publish them -->
     
   </div>
@@ -211,6 +285,16 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .linkedin-link:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0, 119, 181, 0.25);
+}
+
+.x-link {
+  background: linear-gradient(135deg, #000000 0%, #343a40 100%);
+  color: white;
+}
+
+.x-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .social-icon {
@@ -708,6 +792,17 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-link.linkedin:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 8px rgba(0, 119, 181, 0.25);
+}
+
+.article-link.x {
+  background: linear-gradient(135deg, #000000 0%, #343a40 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.article-link.x:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
 .article-link span:first-child {

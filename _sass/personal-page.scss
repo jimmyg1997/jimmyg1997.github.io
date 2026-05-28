@@ -276,9 +276,10 @@ body.dg-page-personal .stat-card:hover {
 }
 
 body.dg-page-personal .page[class*="personal"] .gallery-container {
-  min-height: 240px;
-  height: 280px;
-  max-width: 100%;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: auto;
+  max-width: min(680px, 100%);
   border-color: #dbeafe;
 }
 
@@ -325,8 +326,9 @@ body.dg-page-personal .seminar-item {
   }
 
   body.dg-page-personal .page[class*="personal"] .gallery-container {
-    height: 200px;
-    min-height: 200px;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
   }
 }
 

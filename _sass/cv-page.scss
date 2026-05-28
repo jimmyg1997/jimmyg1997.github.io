@@ -233,6 +233,56 @@
     color: var(--text-body);
   }
 
+  /* Certifications grid (generated in cv.md script) */
+  .cv-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0 2rem;
+  }
+
+  .cv-cert-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.875rem 1rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .cv-cert-card h3 {
+    margin: 0 0 0.45rem !important;
+    padding: 0 0 0.4rem !important;
+    border-top: none !important;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--text-sm) !important;
+    line-height: 1.45;
+  }
+
+  .cv-cert-card p {
+    margin: 0.35rem 0 !important;
+    font-size: var(--text-sm);
+    line-height: 1.55;
+  }
+
+  .cv-cert-card ul {
+    margin: 0.45rem 0 0.25rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .cv-cert-card li {
+    margin-bottom: 0.25rem !important;
+    font-size: var(--text-xs) !important;
+    line-height: 1.55 !important;
+  }
+
+  .cv-cert-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin-top: 0.25rem;
+  }
+
   .cv-company-row {
     display: flex;
     align-items: center;
@@ -454,6 +504,10 @@
 
 @media (max-width: 768px) {
   .dg-cv .cv-languages-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .dg-cv .cv-cert-grid {
     grid-template-columns: 1fr;
   }
 }

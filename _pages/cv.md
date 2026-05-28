@@ -18,7 +18,7 @@ header:
 </div>
 
 <div class="cv-download-section">
-  <a href="https://drive.google.com/file/d/1w1fEtlQIcSq32F1ZRjFRlP97h5B9pGvC/view?usp=sharing" class="btn btn--primary btn--small" target="_blank">
+  <a href="https://drive.google.com/file/d/17bcl9lgvpxiK31X02FnxgpS6UygmYR0o/view?usp=drive_link" class="btn btn--primary btn--small" target="_blank">
     <i class="fas fa-download"></i> Download CV
   </a>
 </div>
@@ -200,11 +200,22 @@ header:
 <span style="color:#555; font-size:0.97em;">2015 – 2022 | Athens, Greece</span>
 <ul>
   <li>Major: Computing & Software Systems (GPA: 9.1/10.0, Top 5%).</li>
+  <li>Integrated 5-year engineering degree combining computer science, software systems, mathematics, signal processing, and intelligent systems.</li>
+  <li>Completed advanced coursework in machine learning, statistical signal processing, pattern recognition, software engineering, optimization, and data-driven modeling.</li>
   <li>Thesis: "Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data"
     [<a href="http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/18593" target="_blank">pdf</a>] 
     [<a href="https://www.linkedin.com/in/dimitrios-georgiou/overlay/1635506062299/single-media-viewer/" target="_blank">slides</a>]
   </li>
+  <li>Thesis focus: interpretable neuroimaging AI, combining classical ML and deep learning with visual explainability to support transparent decision-making in educational/clinical contexts.</li>
 </ul>
+<div class="cv-meta cv-meta--section"><span class="cv-meta__label">Activities & Societies</span></div>
+<ul>
+  <li>Active in <strong>IEEE NTUA SB</strong>, <strong>EESTEC LC Athens</strong>, and broader <strong>IEEE</strong> student activities, with participation in technical events and algorithmic problem-solving initiatives.</li>
+  <li>Awarded <strong>2nd place nationwide</strong> in <strong>IEEEXtreme 13.0</strong>; ranked <strong>159/4103 teams globally (Top 4%)</strong>. [<a href="/cv/#honors-awards">award</a>]</li>
+  <li>Supported student-led STEM engagement through workshop activities (including Arduino-focused sessions). [<a href="/volunteering/#arduino-workshop" target="_blank">workshop</a>]</li>
+  <li>Contributed to student-community initiatives and cross-disciplinary collaboration through outreach and volunteering during university years.</li>
+</ul>
+<div class="cv-meta"><span class="cv-meta__label">Academic Highlights</span><span class="cv-meta__value">Top 5% cohort performance, high distinction GPA, interdisciplinary AI + neuroscience thesis, strong blend of theoretical foundations and applied ML engineering.</span></div>
 <div class="cv-meta"><span class="cv-meta__label">Skills</span><span class="cv-meta__value">Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, NLP, Python, Signal Processing, Git</span></div>
 
 ### Minor in Finance {#deree}
@@ -215,7 +226,11 @@ header:
 <span style="color:#555; font-size:0.97em;">2017 – 2020 | Athens, Greece</span>
 <ul>
   <li>Focused on Finance and Data Analytics (GPA: 3.82/4.00).</li>
+  <li>Completed in parallel with NTUA studies, strengthening business literacy and decision-making frameworks alongside core engineering training.</li>
+  <li>Relevant coursework: <strong>Instruments &amp; Markets</strong>, <strong>Foundations of Investments</strong>, <strong>Portfolio Management</strong>.</li>
+  <li>Awarded a <strong>Stavros Niarchos Foundation (SNF) Merit Scholarship</strong> for parallel studies at Deree. [<a href="/cv/#honors-awards">scholarship</a>]</li>
 </ul>
+<div class="cv-meta"><span class="cv-meta__label">Academic Highlights</span><span class="cv-meta__value">Parallel-track distinction with strong GPA; integrated finance knowledge with Python/ML analytics mindset for practical, data-informed decision support.</span></div>
 <div class="cv-meta"><span class="cv-meta__label">Skills</span><span class="cv-meta__value">Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git</span></div>
 
 ### Summer School in Foundations of Neuroscience {#harvard}
@@ -229,6 +244,152 @@ header:
 </ul>
 <div class="cv-meta"><span class="cv-meta__label">Skills</span><span class="cv-meta__value">Data Processing, Data Analysis, Data Visualization, Data Extraction, Python</span></div>
 
+## Licenses & Certifications
+
+### 34th Panhellenic Congress of Psychiatry - Certificate of Attendance
+<p><em>Hellenic Psychiatric Association · Issued May 2026</em></p>
+<p>[<a href="https://drive.google.com/file/d/1BdWwStxyPn-DH9VCW4sC5Cw8zYZkMrCV/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/1BdWwStxyPn-DH9VCW4sC5Cw8zYZkMrCV/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=1BdWwStxyPn-DH9VCW4sC5Cw8zYZkMrCV&sz=w1000" alt="34th Panhellenic Congress of Psychiatry certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+<p>Presented an e-poster on an LLM-powered pipeline for post-call analysis of suicide crisis hotline recordings (1018, KLIMAKA NGO), supporting clinical review workflows.</p>
+
+### Certificate of Attendance | Blockchain & Cryptocurrencies Workshop
+<p><em>Get_Involved · Issued Mar 2021</em></p>
+<p>[<a href="https://drive.google.com/file/d/1PKOrlIge98-0WDvOHua_okan2LsmSgpW/view?usp=sharing&trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1PKOrlIge98-0WDvOHua_okan2LsmSgpW/view?usp=sharing&trk=public_profile_certification-title" target="_blank"><img src="https://drive.google.com/thumbnail?id=1PKOrlIge98-0WDvOHua_okan2LsmSgpW&sz=w1000" alt="Blockchain & Cryptocurrencies Workshop certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Introduction to Psychology
+<p><em>Coursera · Issued Dec 2020</em></p>
+<p>[<a href="https://coursera.org/account/accomplishments/certificate/JVZZT8Q3G67XJVZZT8Q3G67X?trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+
+### The Complete Self-Driving Car Course - Applied Deep Learning Get certificate
+<p><em>Udemy · Issued May 2019</em></p>
+<p>[<a href="https://udemy.com/certificate/UC-NRDFRGQY/?trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+
+### Certificate of participation in the Soft Skills Academy
+<p><em>Soft Skills Academy Athens · Issued Nov 2017</em></p>
+<p>[<a href="https://drive.google.com/file/d/1E0m2j-jj43qlaOwisvLJiXhuTe_wTcOi/view?usp=sharing&trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1E0m2j-jj43qlaOwisvLJiXhuTe_wTcOi/view?usp=sharing&trk=public_profile_certification-title" target="_blank"><img src="https://drive.google.com/thumbnail?id=1E0m2j-jj43qlaOwisvLJiXhuTe_wTcOi&sz=w1000" alt="Soft Skills Academy certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Certificate in the Theory of Basic Coaching Skills
+<p><em>Coaching Evolution International | Pamela Caravas · Issued Apr 2017</em></p>
+<p>[<a href="https://drive.google.com/file/d/1zrfeWvr8clRd3GAzGmdqZF9lw1zNnMiw/view?usp=sharing&trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1zrfeWvr8clRd3GAzGmdqZF9lw1zNnMiw/view?usp=sharing&trk=public_profile_certification-title" target="_blank"><img src="https://drive.google.com/thumbnail?id=1zrfeWvr8clRd3GAzGmdqZF9lw1zNnMiw&sz=w1000" alt="Basic Coaching Skills certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Certificate of Proficiency in English
+<p><em>University of Michigan · Issued May 2013</em></p>
+<p>[<a href="https://drive.google.com/file/d/1EKVbFH5ysR-dxofmiOkfuMiYqvRXrRtV/view?usp=sharing&trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1EKVbFH5ysR-dxofmiOkfuMiYqvRXrRtV/view?usp=sharing&trk=public_profile_certification-title" target="_blank"><img src="https://drive.google.com/thumbnail?id=1EKVbFH5ysR-dxofmiOkfuMiYqvRXrRtV&sz=w1000" alt="Certificate of Proficiency in English preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Diplome d'Etudes en Langue Francaise/ Delf B2
+<p><em>Institut francais · Issued May 2013</em></p>
+
+### Adobe Dreamwaver ®CS3
+<p><em>Certiport - A Pearson VUE Business · Issued Feb 2012</em></p>
+<p>[<a href="https://certiport.com/Portal/Pages/CredentialVerification.aspx?trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+
+### Microsoft Office Specialist - Master
+<p><em>Microsoft · Issued May 2011</em></p>
+<p>[<a href="https://certiport.com/Portal/Pages/CredentialVerification.aspx?trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+
+### IC3 Key Applications
+<p><em>Certiport - A Pearson VUE Business · Issued May 2005</em></p>
+<p>[<a href="https://certiport.com/Portal/Pages/CredentialVerification.aspx?trk=public_profile_certification-title" target="_blank">View Certificate</a>]</p>
+
+### AI Advanced
+<p><em>HSBC · Issued Nov 2025 · Expires Nov 2027</em></p>
+<p><strong>Credential ID:</strong> 6f992943-1916-411e-a59c-e3ccc7319e45</p>
+<p>[<a href="https://www.credly.com/badges/6f992943-1916-411e-a59c-e3ccc7319e45/public_url" target="_blank">Show Credential</a>]</p>
+
+### i-Days 2025: Certificate of Participation
+<p><em>EIT Health · Issued Nov 2025</em></p>
+<p><strong>Credential ID:</strong> 72d532a21194</p>
+<p>[<a href="https://verify.eu.certifyme.org/verify/72d532a21194" target="_blank">Show Credential</a>]</p>
+
+### Certificate of Attendance - Bio3 Forum 2025
+<p><em>BioInnovation Greece · Issued Sep 2025</em></p>
+<p>[<a href="https://drive.google.com/file/d/18ZRmsBcx8lTjEdoLei2tBPxvNk4JAo9z/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/18ZRmsBcx8lTjEdoLei2tBPxvNk4JAo9z/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=18ZRmsBcx8lTjEdoLei2tBPxvNk4JAo9z&sz=w1000" alt="Bio3 Forum 2025 certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Machine Learning in Production
+<p><em>DeepLearning.AI · Issued Aug 2025</em></p>
+<p><strong>Credential ID:</strong> 9WZV4QBFY7O9</p>
+<p>[<a href="https://www.coursera.org/account/accomplishments/verify/9WZV4QBFY7O9" target="_blank">Show Credential</a>]</p>
+<ul>
+  <li>Identify key components of the ML project lifecycle and select deployment/monitoring patterns for different production scenarios.</li>
+  <li>Optimize model performance by prioritizing disproportionately important examples and key dataset slices.</li>
+  <li>Solve production challenges across structured, unstructured, small, and big data with strong label-consistency practices.</li>
+</ul>
+
+### ASPIRE: Growth Mindset
+<p><em>HSBC · Issued Jun 2025 · Expires Jun 2027</em></p>
+<p><strong>Credential ID:</strong> cb635d34-ca2a-40bc-a6e8-81ba8a0decc9</p>
+<p>[<a href="https://www.credly.com/badges/cb635d34-ca2a-40bc-a6e8-81ba8a0decc9/linked_in_profile" target="_blank">Show Credential</a>]</p>
+
+### Certificate of Completion | Intro to Neural Spike Analysis in Python
+<p><em>Universitatsklinikum Bonn · Issued Jun 2025</em></p>
+<p>[<a href="https://drive.google.com/file/d/1rHVkP29CXac5vrwCa2sp9MlBnXnkBkSV/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/1rHVkP29CXac5vrwCa2sp9MlBnXnkBkSV/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=1rHVkP29CXac5vrwCa2sp9MlBnXnkBkSV&sz=w1000" alt="Neural spike analysis certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+<ul>
+  <li>Characterizing and visualizing neural spiking with Pandas, Seaborn, and SciPy.</li>
+  <li>Simulating and analyzing synchronous spiking events with Elephant.</li>
+  <li>Preprocessing and spike sorting with Scikit-Learn and SpikeInterface.</li>
+</ul>
+
+### Certificate of Completion | Early Health Technology Assessment
+<p><em>InnoStars · Issued Jun 2025</em></p>
+<p>[<a href="https://drive.google.com/file/d/15mmLowuh4D1dQIhBKgV98QEKmzPdoGp4/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/15mmLowuh4D1dQIhBKgV98QEKmzPdoGp4/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=15mmLowuh4D1dQIhBKgV98QEKmzPdoGp4&sz=w1000" alt="Early HTA certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+<ul>
+  <li>Economic environment for medical technologies.</li>
+  <li>Early-phase health technology assessment.</li>
+  <li>Business model and value framework development.</li>
+  <li>Strategic pricing and NPV calculations.</li>
+  <li>Engaging health care providers and patients as purchasers.</li>
+  <li>Company valuation, investor relations, and exit strategies.</li>
+</ul>
+
+### Certificate of Completion | Generative AI for Healthcare
+<p><em>Google · Issued Feb 2025</em></p>
+<p><strong>Credential ID:</strong> 14142481</p>
+<p>[<a href="https://www.skills.google/public_profiles/fa6a602e-5839-4557-aca9-facd06d90cc1/badges/14142481?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank">Show Credential</a>]</p>
+
+### Certificate of Completion | HelloAI Advanced RIS Scholarship
+<p><em>EIT Health · Issued Jan 2025</em></p>
+<p><strong>Credential ID:</strong> vpnbd7fxja</p>
+<p>[<a href="https://drive.google.com/file/d/1Iyrq1NLmTby3Rda9Ca7JfCZl9HuPFQWz/view" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1Iyrq1NLmTby3Rda9Ca7JfCZl9HuPFQWz/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=1Iyrq1NLmTby3Rda9Ca7JfCZl9HuPFQWz&sz=w1000" alt="HelloAI Advanced RIS certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
+### Certificate of Completion | Building Robust Experiments with Python and PsychoPy
+<p><em>Universitatsklinikum Bonn · Issued Dec 2024</em></p>
+<p>[<a href="https://drive.google.com/file/d/1mvU852LsUGz5xNk3VgWhdeHWTvISWE5o/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/1mvU852LsUGz5xNk3VgWhdeHWTvISWE5o/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=1mvU852LsUGz5xNk3VgWhdeHWTvISWE5o&sz=w1000" alt="Building robust experiments certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+<ul>
+  <li>Setting up experiments with PsychoPy for behavioral research.</li>
+  <li>Field validations using Pydantic for data integrity.</li>
+  <li>Using mocks and patches to simulate dependencies during testing.</li>
+  <li>Automated testing with Pytest for robust and reliable experiments.</li>
+</ul>
+
+### Certificate of Completion | ANDA-NI Neuroinformatics
+<p><em>Universitatsklinikum Bonn · Issued Sep 2024</em></p>
+<p>[<a href="https://drive.google.com/file/d/129cmRDcC0P0URCq2JXJyfyAv1Jb1xb6K/view" target="_blank">Show Credential</a>]</p>
+<p><a href="https://drive.google.com/file/d/129cmRDcC0P0URCq2JXJyfyAv1Jb1xb6K/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=129cmRDcC0P0URCq2JXJyfyAv1Jb1xb6K&sz=w1000" alt="ANDA-NI Neuroinformatics certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+<p>"ANDA-NI Neuroinformatics: Electrophysiological Data Processing and Packaging with Python, Nix, Neo, and DataLad"</p>
+<ul>
+  <li>Data representations for neuroscience data and metadata: JSON, YAML, HDF5, NIX, and Neo.</li>
+  <li>Version control and data management with Git, Git-Annex, and DataLad.</li>
+  <li>Data sharing platforms with GitHub and Gin-G-Node.</li>
+</ul>
+
+### Project Management: Solving Common Project Problems
+<p><em>LinkedIn · Issued May 2022</em></p>
+<p>[<a href="https://uber.okta.com/app/linkedinlearning/exk1wtr9bfoGhgA861d8/sso/saml?SAMLRequest=fZJfb9owFMW%2FiuV34iQtjFiEKoyyorUlXbNp2svkpCa4GN%2Fg6xC2T1%2BXP133Uj9Z8jk%2B5%2F50R1f7jSY7aVGBSWkUhJRIU8GTMnVKvxez3pBejUcoNjpueNa6lfkmt61ER7zRID%2B%2BpLS1hoNAhdyIjUTuKv6Y3d3yOAh5Y8FBBZqSqTcqI9whbOVcg5yxtpQ2gLUTQQUbJpqGaWXW0lfQUljjmzC5X0eds0m5hC%2BrOhsOoqchQwT2Gk%2FJDGwlD%2BVSuhQaJSXzaUpv578vnyExq13SB3DhVpV1WJfLJHqGxkswF4hqJ%2F%2BZEFs5N%2BiEcSmNw3jQC%2Fu9eFhEF%2Fwy5v0wiJLoFyX5aaCJMkdQH01fHkXIb4oi7%2BWLx4KSH2fgXkBPePkh3b7n%2BvHHvry0ryjp%2BIyy67rgDO9A841gNrnOTkca2x1vk4G8yGZJstB%2F87vtQxM1mVis2xr26ufNp6%2FX9Yi9r%2Fa2B%2Fe%2By3yag1bVH5JpDd1nK4XzIJ1tJWXjk%2B%2F%2FjRm%2FAA%3D%3D&RelayState=https%3A%2F%2Fwww.linkedin.com%2Flearning-login%2Fcontinue%3Faccount%3D2006716%26authUUID%3DYN6pk9xiTSyO7eAU5L5hpA%253D%253D%26forceAccount%3Dfalse%26lastLoginStep%3DLOGIN_ENTERPRISE%26loginStepRetryCount%3D0%26redirect%3Dhttps%253A%252F%252Fwww%252Elinkedin%252Ecom%252Flearning%252Fcertificates%252Fd26b9464aa5c2f6161312a6b5321f1a2bcb3a3b655c2f9d8a464df7d873c5349%253Flipi%253Durn%25253Ali%25253Apage%25253Ad_flagship3_profile_view_base_certifications_details%25253BPt3QSwibTBWdz24sKK15WA%25253D%25253D%26forceActivation%3Dfalse" target="_blank">Show Credential</a>]</p>
+
+### International English Language Testing System (IELTS)
+<p><em>British Council · Issued Nov 2020</em></p>
+<p>[<a href="https://drive.google.com/file/d/1q3RgdZtXIfihWtjrFlNXAC1cTod608mO/view" target="_blank">View Certificate</a>]</p>
+<p><a href="https://drive.google.com/file/d/1q3RgdZtXIfihWtjrFlNXAC1cTod608mO/view" target="_blank"><img src="https://drive.google.com/thumbnail?id=1q3RgdZtXIfihWtjrFlNXAC1cTod608mO&sz=w1000" alt="IELTS certificate preview" style="max-width:260px; border:1px solid #e2e8f0; border-radius:8px;" /></a></p>
+
 
 ## Skills
 
@@ -236,11 +397,11 @@ header:
 
 <div class="cv-skills-container">
   <div class="cv-skill-category">
-    <h4 id="programming-scripting-languages" class="cv-skill-category-title">Programming & Scripting Languages</h4>
+    <h4 id="languages" class="cv-skill-category-title">Languages</h4>
     <div class="cv-skill-badges">
       <span class="cv-skill-badge advanced">Python</span>
       <span class="cv-skill-badge intermediate">C/C++</span>
-      <span class="cv-skill-badge advanced">SQL</span>
+      <span class="cv-skill-badge advanced">SQL (PostgreSQL, BigQuery)</span>
       <span class="cv-skill-badge basic">MATLAB</span>
       <span class="cv-skill-badge basic">Java</span>
       <span class="cv-skill-badge basic">HTML/CSS/JavaScript</span>
@@ -252,69 +413,83 @@ header:
   <div class="cv-skill-category">
     <h4 id="machine-learning-ai" class="cv-skill-category-title">Machine Learning & AI</h4>
     <div class="cv-skill-badges">
-      <span class="cv-skill-badge advanced">TensorFlow 2.x</span>
-      <span class="cv-skill-badge advanced">Keras</span>
       <span class="cv-skill-badge advanced">PyTorch</span>
+      <span class="cv-skill-badge advanced">TensorFlow</span>
       <span class="cv-skill-badge advanced">Scikit-learn</span>
-      <span class="cv-skill-badge advanced">🤗 Hugging Face Transformers</span>
       <span class="cv-skill-badge advanced">XGBoost</span>
       <span class="cv-skill-badge advanced">LightGBM</span>
-      <span class="cv-skill-badge advanced">OpenAI API</span>
+      <span class="cv-skill-badge advanced">Computer Vision</span>
+      <span class="cv-skill-badge advanced">OpenCV</span>
+      <span class="cv-skill-badge intermediate">Distributed Training</span>
       <span class="cv-skill-badge intermediate">MLflow</span>
     </div>
   </div>
 
   <div class="cv-skill-category">
-    <h4 id="data-engineering-etl" class="cv-skill-category-title">Data Engineering & ETL</h4>
+    <h4 id="generative-ai-agents" class="cv-skill-category-title">Generative AI & Agents</h4>
+    <div class="cv-skill-badges">
+      <span class="cv-skill-badge advanced">LLM Orchestration</span>
+      <span class="cv-skill-badge advanced">LangGraph</span>
+      <span class="cv-skill-badge advanced">LangChain</span>
+      <span class="cv-skill-badge advanced">LlamaIndex</span>
+      <span class="cv-skill-badge advanced">OpenAI API</span>
+      <span class="cv-skill-badge advanced">Agentic Patterns</span>
+      <span class="cv-skill-badge intermediate">Tool Use</span>
+      <span class="cv-skill-badge intermediate">Multi-agent Systems</span>
+      <span class="cv-skill-badge advanced">RAG</span>
+      <span class="cv-skill-badge advanced">Vector Databases</span>
+      <span class="cv-skill-badge advanced">Pinecone</span>
+      <span class="cv-skill-badge advanced">Hybrid Retrieval</span>
+      <span class="cv-skill-badge advanced">NLP</span>
+      <span class="cv-skill-badge advanced">Hugging Face Transformers</span>
+      <span class="cv-skill-badge intermediate">Fine-tuning (LoRA)</span>
+      <span class="cv-skill-badge intermediate">Embeddings</span>
+      <span class="cv-skill-badge intermediate">Tokenization</span>
+    </div>
+  </div>
+
+  <div class="cv-skill-category">
+    <h4 id="data-infrastructure" class="cv-skill-category-title">Data & Infrastructure</h4>
     <div class="cv-skill-badges">
       <span class="cv-skill-badge advanced">Pandas</span>
-      <span class="cv-skill-badge advanced">NumPy</span>
-      <span class="cv-skill-badge advanced">SciPy</span>
-      <span class="cv-skill-badge intermediate">OpenCV</span>
-      <span class="cv-skill-badge intermediate">Apache Airflow</span>
-      <span class="cv-skill-badge intermediate">Apache Kafka</span>
-      <span class="cv-skill-badge basic">Apache Spark</span>
-      <span class="cv-skill-badge basic">Hive</span>
-      <span class="cv-skill-badge advanced">REST APIs</span>
-      <span class="cv-skill-badge advanced">JSON/XML</span>
-      <span class="cv-skill-badge intermediate">Shell scripting</span>
-    </div>
-  </div>
-
-  <div class="cv-skill-category">
-    <h4 id="visualization-reporting" class="cv-skill-category-title">Visualization & Reporting</h4>
-    <div class="cv-skill-badges">
-      <span class="cv-skill-badge advanced">Matplotlib</span>
-      <span class="cv-skill-badge advanced">Seaborn</span>
-      <span class="cv-skill-badge advanced">Plotly</span>
-      <span class="cv-skill-badge intermediate">Tableau</span>
-      <span class="cv-skill-badge intermediate">Grafana</span>
-      <span class="cv-skill-badge intermediate">Google Data Studio</span>
-      <span class="cv-skill-badge advanced">Excel / Google Sheets</span>
-    </div>
-  </div>
-
-  <div class="cv-skill-category">
-    <h4 id="cloud-infrastructure" class="cv-skill-category-title">Cloud & Infrastructure</h4>
-    <div class="cv-skill-badges">
+      <span class="cv-skill-badge advanced">Spark</span>
+      <span class="cv-skill-badge advanced">Kafka</span>
+      <span class="cv-skill-badge advanced">Airflow</span>
+      <span class="cv-skill-badge advanced">SQL</span>
       <span class="cv-skill-badge advanced">Google Cloud Platform</span>
-      <span class="cv-skill-badge basic">AWS S3</span>
-      <span class="cv-skill-badge intermediate">Heroku</span>
-      <span class="cv-skill-badge intermediate">VPS (Ubuntu)</span>
-      <span class="cv-skill-badge advanced">Docker</span>
-      <span class="cv-skill-badge intermediate">GitHub Actions</span>
+      <span class="cv-skill-badge intermediate">Docker</span>
+      <span class="cv-skill-badge intermediate">Kubernetes</span>
+      <span class="cv-skill-badge intermediate">CI/CD</span>
+      <span class="cv-skill-badge intermediate">REST APIs</span>
+      <span class="cv-skill-badge intermediate">Model Serving</span>
+      <span class="cv-skill-badge intermediate">Grafana</span>
     </div>
   </div>
 
   <div class="cv-skill-category">
-    <h4 id="tools-development-environments" class="cv-skill-category-title">Tools & Development Environments</h4>
+    <h4 id="bioinformatics-medical-ai" class="cv-skill-category-title">Bioinformatics & Medical AI</h4>
     <div class="cv-skill-badges">
-      <span class="cv-skill-badge advanced">Git</span>
-      <span class="cv-skill-badge advanced">GitHub</span>
-      <span class="cv-skill-badge advanced">VS Code</span>
-      <span class="cv-skill-badge intermediate">PyCharm</span>
-      <span class="cv-skill-badge advanced">Conda</span>
-      <span class="cv-skill-badge advanced">virtualenv</span>
+      <span class="cv-skill-badge advanced">Multimodal Fusion</span>
+      <span class="cv-skill-badge advanced">fMRI</span>
+      <span class="cv-skill-badge advanced">Omics (Tabular)</span>
+      <span class="cv-skill-badge advanced">SHAP</span>
+      <span class="cv-skill-badge advanced">Grad-CAM</span>
+      <span class="cv-skill-badge advanced">CNNs</span>
+      <span class="cv-skill-badge advanced">MRI Transfer</span>
+      <span class="cv-skill-badge intermediate">Few-shot Learning</span>
+      <span class="cv-skill-badge advanced">Genomics</span>
+      <span class="cv-skill-badge advanced">Proteomics</span>
+    </div>
+  </div>
+
+  <div class="cv-skill-category">
+    <h4 id="visualization-tools" class="cv-skill-category-title">Visualization & Tools</h4>
+    <div class="cv-skill-badges">
+      <span class="cv-skill-badge advanced">Plotly</span>
+      <span class="cv-skill-badge advanced">Seaborn</span>
+      <span class="cv-skill-badge intermediate">Matplotlib</span>
+      <span class="cv-skill-badge intermediate">Tableau</span>
+      <span class="cv-skill-badge intermediate">Bash</span>
     </div>
   </div>
 </div>
@@ -419,6 +594,73 @@ function toggleCvDetails(id) {
     }
   }
 }
+
+function parseIssuedDateFromCard(card) {
+  const text = card.textContent || '';
+  const match = text.match(/Issued\s+([A-Za-z]+)\s+(\d{4})/i);
+  if (!match) return -1;
+  const monthToken = match[1].toLowerCase().replace(/\./g, '');
+  const monthMap = {
+    jan: 0, january: 0,
+    feb: 1, february: 1,
+    mar: 2, march: 2,
+    apr: 3, april: 3,
+    may: 4,
+    jun: 5, june: 5,
+    jul: 6, july: 6,
+    aug: 7, august: 7,
+    sep: 8, sept: 8, september: 8,
+    oct: 9, october: 9,
+    nov: 10, november: 10,
+    dec: 11, december: 11
+  };
+  const month = monthMap[monthToken];
+  const year = parseInt(match[2], 10);
+  if (month === undefined || Number.isNaN(year)) return -1;
+  return new Date(year, month, 1).getTime();
+}
+
+function buildCertificationGrid() {
+  const cvRoot = document.querySelector('.dg-cv');
+  if (!cvRoot) return;
+
+  const certHeading = Array.from(cvRoot.querySelectorAll('h2'))
+    .find((h) => (h.textContent || '').trim().toLowerCase().includes('licenses & certifications'));
+  if (!certHeading) return;
+
+  const certNodes = [];
+  let node = certHeading.nextElementSibling;
+  while (node && node.tagName !== 'H2') {
+    certNodes.push(node);
+    node = node.nextElementSibling;
+  }
+  if (!certNodes.length) return;
+
+  const cards = [];
+  for (let i = 0; i < certNodes.length; i++) {
+    if (certNodes[i].tagName !== 'H3') continue;
+    const card = document.createElement('article');
+    card.className = 'cv-cert-card';
+    card.appendChild(certNodes[i]);
+    i++;
+    while (i < certNodes.length && certNodes[i].tagName !== 'H3') {
+      card.appendChild(certNodes[i]);
+      i++;
+    }
+    i--;
+    cards.push(card);
+  }
+
+  cards.sort((a, b) => parseIssuedDateFromCard(b) - parseIssuedDateFromCard(a));
+
+  const grid = document.createElement('div');
+  grid.className = 'cv-cert-grid';
+  cards.forEach((card) => grid.appendChild(card));
+
+  certHeading.insertAdjacentElement('afterend', grid);
+}
+
+document.addEventListener('DOMContentLoaded', buildCertificationGrid);
 </script>
 
 ## Volunteering & Activities

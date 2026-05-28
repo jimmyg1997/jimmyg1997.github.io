@@ -1,0 +1,648 @@
+{
+  "/entrepreneurship/#hygeia": {
+    "paragraphs": [
+      "Voice-first bystander CPR & first aid",
+      "hygeIA turns a panicked bystander into a guided first responder during cardiac arrest — in Greek, hands on the chest, not on the screen . Medical steps come only from hardcoded ERC 2025 protocols; a Greek LLM (Meltemi) classifies voice intent, never generates clinical advice.",
+      "Born from our EIT Health i-Days 2025 team project (2nd place nationwide); the product evolved into a full emergency CPR experience with offline-first architecture."
+    ],
+    "bullets": [
+      "Hybrid safety architecture — ERC JSON state machine + Meltemi NLU; zero free-form medical output from the LLM",
+      "Zero-touch emergency flow — one EMERGENCY tap, then voice-driven CPR with ~110 BPM metronome and Greek TTS",
+      "Offline-capable core — protocols, keyword NLU fallback, and documented on-device Meltemi GGUF path",
+      "EMS ecosystem hooks — AED map (Supabase), typed 112/EKAB GPS dispatch, GoodSAM-style nearby-bystander alerts",
+      "Engineering rigor — Jest on every state transition; demo mode for investor and clinical pitches"
+    ],
+    "meta": []
+  },
+  "/entrepreneurship/#roomatos": {
+    "paragraphs": [
+      "AI-first roommate matching for Greece",
+      "Roomatos helps people find compatible roommates by lifestyle — not just rent and postcode. I co-founded the product and build the compatibility scoring and matching engine that powers Explore, Roomatch, and group household flows.",
+      "Stack Next.js · TypeScript · Supabase · Stripe · next-intl · TensorFlow.js (verification)"
+    ],
+    "bullets": [
+      "Weighted matching — location, budget, habits, and lifestyle signals with explainable pairwise scores for 1:1 and group applications",
+      "Full product surface — explore & filters, inbox, trainings with XP/badges, house groups, rent tracker, digital agreements",
+      "Monetization — Stripe premium, freemium Roomatch daily limits, bilingual Greek/English UX",
+      "Production platform — Next.js 15, Supabase (32+ tables, RLS), Vercel; GDPR audit and Playwright E2E",
+      "Hybrid safety architecture — ERC JSON state machine + Meltemi NLU; zero free-form medical output from the LLM",
+      "Zero-touch emergency flow — one EMERGENCY tap, then voice-driven CPR with ~110 BPM metronome and Greek TTS",
+      "Offline-capable core — protocols, keyword NLU fallback, and documented on-device Meltemi GGUF path",
+      "EMS ecosystem hooks — AED map (Supabase), typed 112/EKAB GPS dispatch, GoodSAM-style nearby-bystander alerts",
+      "Engineering rigor — Jest on every state transition; demo mode for investor and clinical pitches"
+    ],
+    "meta": []
+  },
+  "/publications/#phd-ionian-seminar-2026": {
+    "paragraphs": [
+      "Department of Informatics, Ionian University · PhD Progress Seminar 2026",
+      "First public presentation of my PhD research on multimodal AI for precision medicine — integrating clinical text, medical imaging, and omics data toward improved diagnosis, biomarker discovery, and personalized treatment. Supervised by Andreas Kanavos.",
+      "Complaints Classification: Sentiment Analytics, Machine Learning to assess if customer queries should have been logged as complaint"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/publications/#klimaka-34th-psychiatry-congress": {
+    "paragraphs": [
+      "34th Panhellenic Psychiatry Congress, Alexandroupoli · 2026",
+      "E-poster with Akis Makrygiannis on AI & clinical support for Suicide Intervention Line 1018 at KLIMAKA NGO — a post-call, non-diagnostic system that gives clinicians a structured second look for supervision and training.",
+      "Klimaka NGO, August 2025"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/articles/#iceland-fire-and-ice": {
+    "paragraphs": [
+      "Between fire and ice, Iceland reminded me how small we are — and how much clarity appears when you step outside routine. Black-sand beaches, geothermal valleys, and silence that resets the mind.",
+      "Between fire and ice, Iceland reminded me how small we are — and how much clarity appears when you step outside routine. This piece is a travel reflection on landscapes that feel otherworldly, silence that resets the mind, and the kind of momentum you bring back home.",
+      "From black-sand beaches to geothermal valleys, the trip was less about ticking sights and more about presence: cold air, warm conversations, long drives, and the humility of standing next to forces older than any career plan."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/articles/#healthcare-ai-lit-part-2": {
+    "paragraphs": [
+      "A radiologist gets a heatmap and is told that is the AI explanation — but does that mean anything? From fragile SHAP maps to Concept Bottleneck Models and the EU AI Act, this piece asks what clinical trust actually requires.",
+      "[Healthcare AI | Literature Research Synthesis | Part 2]",
+      "A radiologist gets shown a heatmap and told that's the AI's explanation. Does that actually mean anything? Or are we just dressing up uncertainty in pretty colors?"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/articles/#healthcare-ai-lit-part-1": {
+    "paragraphs": [
+      "Precision medicine is moving beyond single-modality models: genomics, imaging, and EHR data are fused in agentic systems where specialized AI agents collaborate on clinical strategy — with MCP standardizing real-time access to research-ready data.",
+      "[Healthcare AI | Literature Research Synthesis | Part 1]",
+      "Breaking Down Silos: Fusing Genomics, Imaging, and EHR Data with Agentic Foundation Models. Recent 2026 advancements show that true precision medicine has moved beyond static, single-task algorithms. Genomics, high-resolution imaging, and electronic health records (EHR) are now being integrated into multimodal agentic systems where specialized AI agents collaborate to formulate clinical strategies [1]."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/articles/#new-year-reflection": {
+    "paragraphs": [
+      "Life can excite you in moments of conquest and test your resilience in moments of illness. Celebrate small wins, build gratitude, and remember that flowing forward — like a river — is where the beauty lies.",
+      "Both mentally and physically. In good times and in bad. Life can excite you during moments of conquest, but it can also test your mental resilience during moments of illness and vulnerability. It is puzzling. We all strive to become the best versions of ourselves. We all have dreams. We all have goals. None is better than anyone else's. At the end of the day, we are human beings. We are humans who love each other and that is the most important thing.",
+      "Celebrate small wins. Think of others before yourself, because by default, when you think of others, you end up taking care of yourself too. Let's prioritize others, and life will find a way to prioritize us as well. Let's celebrate our small wins. Let's build gratitude. Let's celebrate the small wins of our loved ones too. Because life is always about small wins. It's always about evolving mentally or physically and growing."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#grid-dynamics": {
+    "paragraphs": [
+      "Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on enabling LLMs and advanced ML workflows."
+    ],
+    "bullets": [
+      "Provide technical leadership, mentor peers, contribute to architectural decisions, code reviews, standards and best practices for ML engineering across the team. Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.",
+      "Experiment with cutting-edge ML/AI, including generative AI/LLMs, modern architectures and tooling — contributing to innovation, proofs-of-concept (PoCs), and future roadmap of the company's AI capabilities.",
+      "Architect and implement scalable ML infrastructure and tooling to support the full ML lifecycle — from data ingestion and preprocessing, through training/fine-tuning/evaluation, to deployment and monitoring. Build production-ready ML services: clean, maintainable and scalable codebases, API endpoints, model serving, CI/CD pipelines and deployment to cloud or containerized environments.",
+      "Collaborate with stakeholders (product managers, architects, domain experts) to translate business requirements into ML/AI solutions — including LLM-based features, semantic search, RAG pipelines, and custom model workflows. Optimize model performance and compute efficiency, including distributed training, batch & streaming data pipelines, resource utilization, latency, and reliability for ML workloads."
+    ],
+    "meta": [
+      "Skills: Machine Learning Engineering, LLMs, RAG Systems, Semantic Search, MLOps, Distributed Training, Model Serving, CI/CD, Technical Leadership, Prompt Engineering",
+      "Tech Stack: Python, SQL (BigQuery, PostgreSQL, MySQL), Apache Spark, PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Cloud Platforms (GCP, AWS), Docker, API Development, Data Pipelines, Model Deployment"
+    ]
+  },
+  "/projects/#habit-tracker": {
+    "paragraphs": [
+      "Tech Stack: React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion."
+    ],
+    "bullets": [
+      "Purpose: Personal productivity application for tracking daily habits and building consistent routines.",
+      "Features: Daily habit logging, progress visualization, streak tracking, customizable habit categories, and data persistence for long-term progress monitoring.",
+      "Implementation: Built with modern web technologies, featuring an intuitive interface for quick daily check-ins and comprehensive analytics to visualize habit consistency over time."
+    ],
+    "meta": [
+      "Tech Stack: React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion."
+    ]
+  },
+  "/projects/#suicide-prevention-survey": {
+    "paragraphs": [
+      "Technical Implementation: Built with Streamlit for rapid deployment, integrated with PostgreSQL for secure data storage, and featuring real-time risk scoring algorithms. Implements GDPR-compliant data handling and encrypted patient information storage.",
+      "Impact: Deployed in pilot hospitals, supporting mental health professionals in early intervention and risk assessment.",
+      "Tech Stack: Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption"
+    ],
+    "bullets": [
+      "Purpose: Clinical decision support system for Greek hospitals enabling doctors to assess patient suicide risk through validated screening tools."
+    ],
+    "meta": [
+      "Tech Stack: Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption"
+    ]
+  },
+  "/projects/#polls-analyzer": {
+    "paragraphs": [
+      "Tech Stack: Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite"
+    ],
+    "bullets": [
+      "Purpose: Full-stack survey creation and analysis platform with real-time visualization and statistical insights.",
+      "Features: Dynamic poll creation interface, real-time response collection, interactive charts (Plotly), statistical analysis (Chi-square, correlation), and exportable reports.",
+      "Analytics: Response distribution analysis, demographic segmentation, trend identification, and automated insight generation."
+    ],
+    "meta": [
+      "Tech Stack: Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite"
+    ]
+  },
+  "/projects/#gmail-newsletter-reporter": {
+    "paragraphs": [
+      "Tech Stack: Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)"
+    ],
+    "bullets": [
+      "Purpose: Automated email intelligence system integrating multiple Google APIs and OpenAI for smart email summarization and reporting.",
+      "Features: Gmail API integration for email extraction, OpenAI GPT for intelligent summarization, automatic Google Docs report generation, Telegram notifications, and CLI configuration management.",
+      "Architecture: Modular Python design with async processing, configurable pipelines, and scheduled automation via cron jobs."
+    ],
+    "meta": [
+      "Tech Stack: Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)"
+    ]
+  },
+  "/projects/#covid-19-genetic-classification": {
+    "paragraphs": [
+      "ML Pipeline: Feature engineering on genetic markers, ensemble models (Random Forest, XGBoost, LightGBM), SHAP values for model interpretability, and cross-validation for robust performance.",
+      "Results: 87% accuracy in predicting COVID-19 status from genetic factors, with detailed feature importance analysis identifying key genetic markers.",
+      "Tech Stack: Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn"
+    ],
+    "bullets": [
+      "Purpose: Machine learning system for COVID-19 diagnosis based solely on genetic factors, supporting clinical decision-making when traditional testing is unavailable."
+    ],
+    "meta": [
+      "Tech Stack: Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn"
+    ]
+  },
+  "/projects/#ml-feature-engineering-api": {
+    "paragraphs": [
+      "Performance: Handles 1000+ requests/second, horizontal scaling via Docker Swarm, and production-ready logging and monitoring.",
+      "Tech Stack: Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest"
+    ],
+    "bullets": [
+      "Purpose: Production-ready microservice for automated feature engineering and ML preprocessing at scale.",
+      "Architecture: FastAPI for high-performance async endpoints, Docker Compose for containerization, Uvicorn for ASGI server, and comprehensive API documentation with Swagger UI.",
+      "Features: Automated feature generation, missing value imputation, categorical encoding, feature scaling, and feature selection algorithms. RESTful API design with input validation and error handling."
+    ],
+    "meta": [
+      "Tech Stack: Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest"
+    ]
+  },
+  "/personal/#eit-health-idays-2025-competition": {
+    "paragraphs": [
+      "EIT Health · EKT (National Documentation Centre)",
+      "2nd Place (Nationwide) among 11 teams across undergraduate and postgraduate programs.",
+      "Event: i-Days 2025 with NKUA — organized by EKT & EIT Health."
+    ],
+    "bullets": [
+      "160-channel ECoG + 252 synchronized video trials with artifact removal",
+      "CSP-LDA, EEGNet, and Transformer architectures",
+      "Interactive Streamlit app with live brain–video playback"
+    ],
+    "meta": []
+  },
+  "/personal/#ecog-video-analysis-winner": {
+    "paragraphs": [
+      "Brain ECoG Hackathon · BR4N.IO",
+      "1st Place · Data Analysis — 69 teams, 404 participants, 50+ countries (IEEE SMC, Vienna).",
+      "Technical overview: Neural decoding pipeline for ECoG data with real-time video sync, 3D brain visualizations, and ML models reaching 89.6% accuracy on 7-class visual stimulus classification."
+    ],
+    "bullets": [
+      "160-channel ECoG + 252 synchronized video trials with artifact removal",
+      "CSP-LDA, EEGNet, and Transformer architectures",
+      "Interactive Streamlit app with live brain–video playback"
+    ],
+    "meta": []
+  },
+  "/personal/#ai-advanced-hsbc": {
+    "paragraphs": [
+      "Issued: Nov 2025 · Expires: Nov 2027",
+      "Credential ID: 6f992943-1916-411e-a59c-e3ccc7319e45",
+      "An AI Advanced badge has been awarded for the completion of the AI Advanced modules within the pathway; covering the topics of the responsible use of AI; 4 core programming languages (Python, SQL, Git and Shell Scripting); Big Data and the statistics necessary for an AI developer; advanced methods for engineering your data ready for your AI application; advanced concepts within Machine Learning; deep learning and how to build and deploy a deep learning model; and a deeper dive into specialisms."
+    ],
+    "bullets": [
+      "Transcriptomics & Metagenomics: Approaches to study gene expression and microbial communities at scale",
+      "Omics for Personalized Medicine: Leveraging genomics for patient-specific diagnostics and therapeutics",
+      "Oxford Nanopore Sequencing: Hands-on training with long-read sequencing technologies",
+      "Prompt Engineering & LLM Applications: Applying large language models to biological data analysis",
+      "Tools & Platforms: Practical sessions with QIIME 2 , Galaxy , Geneious , R , and LLM frameworks",
+      "Embracing Change: Reinforced adaptability as a core skill in navigating an evolving workplace",
+      "Intentional Development: Designed an Individual Development Plan (IDP) with SMART goals in collaboration with a line manager",
+      "Personal Effectiveness: Built self-awareness and authenticity through exercises in personal branding and values alignment",
+      "Presentation & Communication: Learned to craft impactful messages and engage diverse audiences using structured storytelling techniques",
+      "Customer Focus: Solved real-world challenges emphasizing customer-centric thinking and relationship-building"
+    ],
+    "meta": []
+  },
+  "/personal/#eebg-2025": {
+    "paragraphs": [
+      "Jagiellonian University & Małopolska Centre of Biotechnology",
+      "This one-week intensive workshop held in Kraków, Poland, brought together global researchers and participants to explore cutting-edge advances in genomics, metagenomics, and AI in bioinformatics:",
+      "Participants gained deep insights from lectures delivered by internationally recognized scientists, including André G. Uitterlinden (Erasmus Univ), Anton Nekrutenko (PennState), and Tomasz Kościółek (Sano), among many others."
+    ],
+    "bullets": [
+      "Transcriptomics & Metagenomics: Approaches to study gene expression and microbial communities at scale",
+      "Omics for Personalized Medicine: Leveraging genomics for patient-specific diagnostics and therapeutics",
+      "Oxford Nanopore Sequencing: Hands-on training with long-read sequencing technologies",
+      "Prompt Engineering & LLM Applications: Applying large language models to biological data analysis",
+      "Tools & Platforms: Practical sessions with QIIME 2 , Galaxy , Geneious , R , and LLM frameworks",
+      "Embracing Change: Reinforced adaptability as a core skill in navigating an evolving workplace",
+      "Intentional Development: Designed an Individual Development Plan (IDP) with SMART goals in collaboration with a line manager",
+      "Personal Effectiveness: Built self-awareness and authenticity through exercises in personal branding and values alignment",
+      "Presentation & Communication: Learned to craft impactful messages and engage diverse audiences using structured storytelling techniques",
+      "Customer Focus: Solved real-world challenges emphasizing customer-centric thinking and relationship-building"
+    ],
+    "meta": []
+  },
+  "/personal/#aspire-growth-mindset": {
+    "paragraphs": [
+      "This professional development certification focused on cultivating a growth mindset and enhancing leadership potential through structured learning, reflection, and real-world application:",
+      "Skills: Growth Mindset · Professional Development · Communication · Presentation Skills · Customer Focus · Interview Preparation · Personal Branding · Self-awareness · IDP · Career Planning",
+      "University of Bonn & iBOTS (Innovative Brain Organization Technologies & Signals)"
+    ],
+    "bullets": [
+      "Embracing Change: Reinforced adaptability as a core skill in navigating an evolving workplace",
+      "Intentional Development: Designed an Individual Development Plan (IDP) with SMART goals in collaboration with a line manager",
+      "Personal Effectiveness: Built self-awareness and authenticity through exercises in personal branding and values alignment",
+      "Presentation & Communication: Learned to craft impactful messages and engage diverse audiences using structured storytelling techniques",
+      "Customer Focus: Solved real-world challenges emphasizing customer-centric thinking and relationship-building",
+      "Interview Skills: Practiced the CAR model and behavioral techniques to strengthen career narrative and confidence under pressure",
+      "Business Application: Presented strategic learning outcomes to senior leaders, bridging knowledge with tangible impact",
+      "Spike Train Metrics: Raster plots, PSTHs, and Cross-Correlograms using NumPy and Matplotlib to interpret neural activity",
+      "Spike Detection and Extraction: Filtering, peak detection, and PCA-based clustering using ScipySignal , Scikit-learn , and SpikeInterface",
+      "Poisson-Based Statistical Modeling: Investigating neural population structure and coherence with Elephant , Neo , and SciPy"
+    ],
+    "meta": []
+  },
+  "/personal/#spike-analysis-python": {
+    "paragraphs": [
+      "University of Bonn & iBOTS (Innovative Brain Organization Technologies & Signals)",
+      "This intensive 18-hour workshop focused on extracting, modeling, and analyzing neural spike trains from both real and simulated electrophysiology recordings:",
+      "Skills: Neural Spike Analysis · Python · NumPy · SciPy · SpikeInterface · Scikit-learn · Elephant · Neo · Jupyter Notebooks · Raster Plots · PSTH · Poisson Modeling · Signal Processing · Experimental Design"
+    ],
+    "bullets": [
+      "Spike Train Metrics: Raster plots, PSTHs, and Cross-Correlograms using NumPy and Matplotlib to interpret neural activity",
+      "Spike Detection and Extraction: Filtering, peak detection, and PCA-based clustering using ScipySignal , Scikit-learn , and SpikeInterface",
+      "Poisson-Based Statistical Modeling: Investigating neural population structure and coherence with Elephant , Neo , and SciPy",
+      "Hands-on implementation in Jupyter Notebooks combining theoretical background with reproducible coding workflows",
+      "Visualizing continuous neural signals related to behavior using Matplotlib",
+      "Frequency analysis of LFPs and spikes with ScipySignal for identifying neural oscillations",
+      "Relating LFPs and spikes via Current Source Density and Coherence Analyses using Elephant",
+      "Time-Frequency Decomposition with Wavelet Transform and Fourier Analysis",
+      "Neuropixels data processing using Neo and Pandas for large-scale multi-area neural recordings",
+      "Signal filtering and artifact removal via Notch Filtering and Bandpass Filtering"
+    ],
+    "meta": []
+  },
+  "/personal/#lfp-analysis-python": {
+    "paragraphs": [
+      "University of Bonn & iBOTS (Innovative Brain Organization Technologies & Signals)",
+      "This intensive 18-hour workshop provided hands-on experience in analyzing Local Field Potentials (LFPs) and spike data:",
+      "Skills: Electrophysiology · Python · ScipySignal · Wavelet Transform · Neo · Notch Filtering · Bandpass Filtering · Elephant · Fourier Analysis · Neuropixels · Matplotlib · Pandas · Signal Processing · Experimental Design"
+    ],
+    "bullets": [
+      "Visualizing continuous neural signals related to behavior using Matplotlib",
+      "Frequency analysis of LFPs and spikes with ScipySignal for identifying neural oscillations",
+      "Relating LFPs and spikes via Current Source Density and Coherence Analyses using Elephant",
+      "Time-Frequency Decomposition with Wavelet Transform and Fourier Analysis",
+      "Neuropixels data processing using Neo and Pandas for large-scale multi-area neural recordings",
+      "Signal filtering and artifact removal via Notch Filtering and Bandpass Filtering",
+      "Setting up experiments with 𝘗𝘳𝘰𝘱𝘩𝘰𝘱𝘺, a powerful tool for behavioral research",
+      "Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity",
+      "Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing",
+      "Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments"
+    ],
+    "meta": []
+  },
+  "/personal/#building-robust-experiments": {
+    "paragraphs": [
+      "University of Bonn & iBOTS (Innovative Brain Organization Technologies & Signals)",
+      "This intensive 18-hour workshop provided hands-on experience with experimental design:",
+      "Skills: PsychoPy · Pydantic · pytest · Mocks · Git · GitHub · Patches · Design of Experiments (DOE)"
+    ],
+    "bullets": [
+      "Setting up experiments with 𝘗𝘳𝘰𝘱𝘩𝘰𝘱𝘺, a powerful tool for behavioral research",
+      "Field Validations using 𝘗𝘺𝘥𝘢𝘯𝘵𝘪𝘤 for data integrity",
+      "Implementing 𝘔𝘰𝘤𝘬𝘴 and 𝘗𝘢𝘵𝘤𝘩𝘦𝘴 to simulate dependencies during testing",
+      "Automated Testing with 𝘗𝘺𝘵𝘦𝘴𝘵 to ensure robust and reliable experiments",
+      "Data Representations for Neuroscience Data and Metadata: JSON, YAML, HDF5, NIX and Neo",
+      "Version Control and Data Management with Git, Git-Annex, and DataLad",
+      "Data Sharing Platforms with GitHub and Gin-G-Node"
+    ],
+    "meta": []
+  },
+  "/personal/#anda-ni-neuroinformatics": {
+    "paragraphs": [
+      "University of Bonn & iBOTS (Innovative Brain Organization Technologies & Signals)",
+      "Skills: Neo · Gin-G-Node · JSON · Git · Data Representation · Neuroscience · GitHub · NIX · YAML · HDF5 · DataLad · Git-Annex"
+    ],
+    "bullets": [
+      "Data Representations for Neuroscience Data and Metadata: JSON, YAML, HDF5, NIX and Neo",
+      "Version Control and Data Management with Git, Git-Annex, and DataLad",
+      "Data Sharing Platforms with GitHub and Gin-G-Node"
+    ],
+    "meta": []
+  },
+  "/publications/#hsbc-summer-school-2025": {
+    "paragraphs": [
+      "HSBC Summer School 2025, Kraków",
+      "Presented our semi-supervised ML project at HSBC Summer School. Shared work with bachelor's, master's, and PhD students plus HSBC professionals. Audience engagement was exceptional with thoughtful questions and follow-up discussions. Conversations ranged from AI/ML to LLMs and the future of technology. Key insight: Clear communication and genuine dialogue matter as much as technical expertise."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/publications/#klimaka-ai-webinar": {
+    "paragraphs": [
+      "Klimaka NGO, August 2025",
+      "Delivered an internal webinar on Artificial Intelligence to over 60 participants at Klimaka NGO, exploring AI's evolution, impact on mental health, multimodal AI systems, and applications in psychology, psychotherapy, and psychiatry."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#wheeling2help-vietnam-2025": {
+    "paragraphs": [
+      "Volunteered with Wheeling2help in Da Bia, Vietnam, focusing on community development. Collaborating with the Muong ethnic community, I contributed to improving infrastructure at the local kindergarten and cultural centre, assisted in agricultural tasks, and participated in traditional art workshops. This immersive experience deepened my appreciation for cultural heritage preservation and reinforced my commitment to sustainable community empowerment."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#uek-job-fair-2025": {
+    "paragraphs": [
+      "Represented HSBC at the UEK Job Fairs 2025 (04/03/2025) at Krakow University of Economics, part of the first job fairs of the 2025 Spring edition. Engaged with students and graduates about career opportunities in: • Permanent roles across Risk & Compliance, Technology, Operations, Global Transformation, and Finance • The HSBC Graduate Programme – a structured pathway to leadership roles • Summer internships in Data, Engineering, Operations, and CyberSecurity As part of the RCAS team working in Automation as a Data Scientist, I had the opportunity to dive deeper into technology-driven discussions. At HSBC, fairness and transparency in the selection process are key, ensuring candidates are evaluated based on their skills, potential, and values. More details about the UEK Job Fair | HSBC Job Vacancies"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#klimaka": {
+    "paragraphs": [],
+    "bullets": [
+      "Developing personalized mental health assessment tools using Large Language Models (LLMs), tailored to individual patient profiles.",
+      "Ensuring GDPR compliance and ethical handling of sensitive mental health data.",
+      "Conducting ML research on healthcare applications to improve clinical decision support.",
+      "Developing a feedback loop between clinicians and AI tools to enhance question quality and clinical relevance.",
+      "Implementing an internal AI Platform to host all in-development AI tools as well as a centralized educational repository for internal knowledge sharing.",
+      "(2026) E-poster at the 34th Panhellenic Psychiatry Congress (Alexandroupoli) on AI-assisted clinical support for Suicide Intervention Line 1018. [ e-poster ]",
+      "(Aug. 2025) Delivered internal webinar: \" Understanding AI – Applications in Psychology, Psychotherapy & Psychiatry \" to 60+ participants. [ webinar ]",
+      "(2025) Contributing to the HygeIA first-aid mobile app, supporting suicide prevention through self-assessment tools and access to crisis resources; app won 2nd place in EIT Health i-Days 2025 .",
+      "(2025) Actively engaged in workshops, hands-on sessions, and collaborative projects at the EEBG 2025 , applying genomics, metagenomics, transcriptomics, and LLM-based AI techniques to real-world bioinformatics challenges.",
+      "(May 2025) KLIMAKA's Active Participation at the 33rd Panhellenic Psychiatry Congress (Ioannina): Supported the presentation of pilot results from the \"Anti-Suicide Shield\" program at Laiko General Hospital, enhancing the visibility of the initiative and clinical data."
+    ],
+    "meta": [
+      "Activities & Recognition: Large Language Models (LLM), Mental Health, Suicide Prevention, Project Management, Python, Data Analysis, Data Extraction, Data Processing, Version Control, Bioinformatics",
+      "Tech Stack: Python, OpenAI API, FastAPI, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Hugging Face Transformers, Jupyter, Git, REST APIs, Mobile App Frameworks (Flutter/React Native), GDPR Compliance Tools, Data Visualization (Matplotlib, Seaborn, Plotly), Cloud Platforms (GCP, AWS)"
+    ]
+  },
+  "/cv/#phd": {
+    "paragraphs": [
+      "Multimodal AI for precision medicine — integrating clinical text, medical imaging, and omics toward better diagnosis, biomarker discovery, and personalized treatment. Supervised by Andreas Kanavos."
+    ],
+    "bullets": [
+      "Building an interpretable multimodal framework that fuses EHR/clinical text, imaging, and tabular omics for predictive analytics in precision medicine.",
+      "Applying deep learning, NLP, and CNN-based medical imaging pipelines alongside hybrid statistical–ML models for genomic and proteomic data.",
+      "Prioritizing explainability (SHAP, Grad-CAM) and robustness on small, heterogeneous clinical datasets via transfer and few-shot learning.",
+      "Exploring LLMs with RAG to ground models in current literature and structured biomedical knowledge bases.",
+      "(2026) Presented progress at the PhD Progress Seminar 2026 — Ionian University (multimodal AI for precision medicine). [ seminar ]"
+    ],
+    "meta": [
+      "Activities & Recognition: Multimodal AI, Explainable AI, Precision Medicine, Bioinformatics, Deep Learning, NLP, Medical Imaging, LLMs, RAG"
+    ]
+  },
+  "/publications/#university-academy-2025": {
+    "paragraphs": [
+      "Complaints Classification: Sentiment Analytics, Machine Learning to assess if customer queries should have been logged as complaint",
+      "University of Economics in Krakow (UEK), January 2025",
+      "I introduced students to using Machine Learning (ML) for Complaint Classification, demonstrating how ML enhances customer experience by detecting sentiment and repeat complaints, leading to smarter business decisions. I emphasized that ML isn't just about models but solving real problems. To build a strong career, I advised students to think critically, invest in practical skills like Python & cloud tools, and strengthen their network for better opportunities."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#hsbc": {
+    "paragraphs": [],
+    "bullets": [
+      "Led 50+ QC Oversight sessions, 15+ analytical reviews, and multiple tool evaluations (Tesseract, AWS Textract, clustering, semantic similarity models), delivering dashboards, hybrid scoring frameworks, and process improvements adopted across A&A and RCAS teams.",
+      "Developed 3+ major internal tools (QC Tracker, GenAI Solution Tracker, RCAS Resources Tracker), ran 20+ innovation sessions, automated data pipelines, and implemented prompt engineering & RAG architectures to optimize AI-driven compliance solutions.",
+      "Leading analytical projects across investigations, intelligence delivery, transaction monitoring, network analytics, and other Compliance Analytics initiatives, delivering solutions to complex investigations across multiple lines of business.",
+      "Developing end-to-end Data Science solutions and analytical models using statistical and machine learning techniques to provide actionable insights.",
+      "Conducting multi-dimensional data analysis and visualizations, performing R&D using advanced statistical and mathematical modeling, and identifying process improvement opportunities to support proactive strategy building.",
+      "Presented a semi-supervised ML project (complaints classification using sentiment analytics) at Krakow University of Economics (2025.01) and HSBC Summer School (2025.09). [ presentation ] [ presentation ]",
+      "Represented HSBC at the UEK Job Fairs 2025 , engaging with students and graduates on career opportunities in Risk, Compliance, Technology, Operations, and Finance. [ volunteering event ]",
+      "Participated in 10+ mentoring and coaching sessions, competitions (Hackathon, Learning Hub, Agile May), and contributed to D&I initiatives and onboarding support, positively impacting teams of 4–8+ members."
+    ],
+    "meta": [
+      "Activities & Recognition: Data Science, Machine Learning, Data Extraction, Data Analysis, Data Visualization, Automation, Compliance Adherence",
+      "Tech Stack: Python, SQL, Pandas, NumPy, SciPy, Git, scikit-learn, TensorFlow, Keras, BigQuery, GCP, Matplotlib, Seaborn, Plotly, Jupyter"
+    ]
+  },
+  "/volunteering/#erasmus-youth-exchange-2024": {
+    "paragraphs": [
+      "Led the Greek team 🇬🇷 at the Erasmus+ Youth Exchange, «rECOnnect», held in Tatra Mountains, Murzasichle, Zakopane, Poland📍. Focused on environmental initiatives and youth leadership development."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#wheeling2help-nepal-2024": {
+    "paragraphs": [
+      "Volunteered with Wheeling2help in Nepal, focusing on community empowerment through environmental conservation, sports development, and educational support initiatives."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#wheeling2help-kenya-2024": {
+    "paragraphs": [
+      "Volunteered with Wheeling2help in Kenya, working on environmental conservation, sports development, and education initiatives for sustainable community impact."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/publications/#multi-source-fusion-stock-selection": {
+    "paragraphs": [
+      "Authors: V Snášel, JD Velásquez, M Pant, D Georgiou, L Kong",
+      "Information Fusion, 2024",
+      "A novel framework for multi-source fusion-based stock selection, leveraging advanced machine learning techniques for financial decision-making."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/publications/#covid-19-severity-prediction": {
+    "paragraphs": [
+      "BioTech, 2024",
+      "Authors: A Christodoulou, MS Katsarou, C Emmanouil, M Gavrielatos, D Georgiou, et al.",
+      "Development of a web-based machine learning tool designed to predict the severity of COVID-19 using advanced predictive models."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/calisthenics/#advanced-skills-2025": {
+    "paragraphs": [
+      "Working on front lever pull-ups and planche progressions, with consistent training 5 days per week. Focus on straight arm strength and skill development."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/calisthenics/#intermediate-training-2024": {
+    "paragraphs": [
+      "Achieved first milestones on basics (weighted dips, weighted pull-ups, weighted chin-ups), 100% form of handstand hold (and handstand variations), first attempts of weighted muscle-ups. Increased training frequency to 4 days per week, and began focusing on more advanced calisthenics skills."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/calisthenics/#intermediate-training-2023": {
+    "paragraphs": [
+      "Achieved muscle-ups, front lever (fast enough) and handstand holds, mastered back lever."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/calisthenics/#building-foundations-2022": {
+    "paragraphs": [
+      "Focused on mastering the basics: pull-ups, dips, push-ups, and core strength. Established consistent training routine of 3 days per week."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#unhcr-donations": {
+    "paragraphs": [
+      "I have been supporting UNHCR (The UN Refugee Agency) through monthly donations since mid-2023. UNHCR works tirelessly to protect and assist millions of refugees, asylum-seekers, and internally displaced people around the world. In 2024, I made monthly donations of €15.00, totaling €180.00 for the year. These donations help UNHCR provide shelter, medicine, and essential items to millions of people who have been displaced and found themselves in danger. The support also enables psychosocial, economic, and legal assistance, helping people regain their dignity and rebuild their lives. I continue to make monthly donations to support UNHCR's mission. If you would like to support UNHCR's work, you can donate here ."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#uber": {
+    "paragraphs": [],
+    "bullets": [
+      "Working with Central & Country teams to identify which processes should be automated",
+      "Preparing tech documentation for the completed projects",
+      "Measuring the business impact of my automation initiatives",
+      "Implemented and maintaining 25+ automation projects (real-time, non real-time)",
+      "Project 1: Optimize Natural Language Processing (NLP) models to efficiently analyse drivers' open-end comments to understand patterns (topics clustering, sentiment) and increase DSAT ( Driver Satisfaction )",
+      "Project 2: Optimise current Tabular Data Models to efficiently analyse restaurants features to understand patterns (feature importance) and predict the probability of churn, to enhance restaurants retention and satisfaction",
+      "Programming Languages Python, SQL and JavaScript (Google Scripts)",
+      "APIs AWS S3, Google (Sheets, Drive, Email), Apache Kafka, Kirby (for Hive tables), Apache Thrift, QueryRunner (for Presto and Pinot), Grafana, Google BigQuery",
+      "Common Libraries NumPy, Pandas, Scikit Learn, NLTK, seaborn, requests, typing",
+      "Extra Tools uWork, Logger, Docker, Phabricator"
+    ],
+    "meta": []
+  },
+  "/cv/#brfaa": {
+    "paragraphs": [],
+    "bullets": [
+      "Developed and published a web-based tool for COVID-19 severity prediction using machine learning. [ Google Scholar ] [ DOI ] [ pdf ] [ website ]",
+      "Conducting research on the effects of various factors in Parkinson's disease onset and progression, applying machine and deep learning techniques.",
+      "Applied feature importance analysis, visual explanation techniques, and embedding methods for Parkinson's classification using raw tabular data from the Greek Parkinson Database.",
+      "Built and tested machine learning pipelines for tabular data, including data preprocessing, model evaluation, and iterative optimization.",
+      "Collaborated with interdisciplinary teams to integrate bioinformatics insights into ML models.",
+      "Presented a poster at the 6th HBP Student Conference on Interdisciplinary Brain Research. [ poster ]",
+      "Research highlighted in peer-reviewed publication: \" A machine-learning-based web tool for the severity prediction of COVID-19 \"",
+      "Actively contributing to an ongoing manuscript on Parkinson's disease progression using machine and deep learning."
+    ],
+    "meta": [
+      "Activities & Recognition: Python, Scikit-learn, XGBoost, Keras, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Git"
+    ]
+  },
+  "/cv/#harvard": {
+    "paragraphs": [],
+    "bullets": [
+      "Completed Foundations of Neuroscience Summer Program with SNF/ACG Scholarship."
+    ],
+    "meta": [
+      "Skills: Data Processing, Data Analysis, Data Visualization, Data Extraction, Python"
+    ]
+  },
+  "/publications/#fmri-dyslexia-classification": {
+    "paragraphs": [
+      "National Technical University of Athens, 2022",
+      "A research study applying machine and deep learning techniques to classify and provide visual explanations for dyslexia and spelling disorders using fMRI data."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#ntua": {
+    "paragraphs": [],
+    "bullets": [
+      "Major: Computing & Software Systems (GPA: 9.1/10.0, Top 5%).",
+      "Thesis: \"Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data\" [ pdf ] [ slides ]"
+    ],
+    "meta": [
+      "Skills: Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, NLP, Python, Signal Processing, Git"
+    ]
+  },
+  "/travelling/#living-krakow": {
+    "paragraphs": [
+      "My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#cognihub-marketing": {
+    "paragraphs": [
+      "Led marketing initiatives for CogniHub, an interdisciplinary non-profit student organization promoting interdisciplinarity through events, talks, and workshops."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#citycampus-rd": {
+    "paragraphs": [
+      "Conducted competitive research and analyzed statistics using Python, Google Analytics, and SimilarWeb to improve educational platform performance."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#honors-awards": {
+    "paragraphs": [
+      "Worldwide: 1st place in the Data Analysis category",
+      "Participation: Among 69 teams and 404 participants from 50+ countries 🌍",
+      "Event: Brain ECoG Hackathon 2025, organized by g.tec medical engineering GmbH and IEEE SMC, Vienna, Austria 🧠🏆"
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/cv/#deree": {
+    "paragraphs": [],
+    "bullets": [
+      "Focused on Finance and Data Analytics (GPA: 3.82/4.00)."
+    ],
+    "meta": [
+      "Skills: Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git"
+    ]
+  },
+  "/cv/#demokritos": {
+    "paragraphs": [],
+    "bullets": [
+      "Developed diagnostic classification models for Alzheimer's disease using the Pitt Corpus dataset, which contains text and audio data from Alzheimer's patients.",
+      "Performed comprehensive data preprocessing including text normalization, feature extraction, and handling of imbalanced datasets with limited sample sizes.",
+      "Implemented cross-validation strategies to address the small sample size challenge, ensuring robust model evaluation despite limited data availability.",
+      "Applied advanced NLP and ML models including LSTM, CNN, and BERT for multi-modal classification of Alzheimer's disease from patient transcripts and speech patterns."
+    ],
+    "meta": [
+      "Tech Stack: Python, TensorFlow, PyTorch, Hugging Face Transformers, Librosa, Scikit-learn, NLTK, Pandas, Jupyter"
+    ]
+  },
+  "/volunteering/#web-summit-volunteer": {
+    "paragraphs": [
+      "Member of the Media Team at the world's largest tech conference in Lisbon, Portugal, assisting in interview booths and press conferences."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#cansat-greece": {
+    "paragraphs": [
+      "Responsible for supporting one of ten participating school teams with programming and information-related challenges throughout the 8-month program."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#job-fair-athens": {
+    "paragraphs": [
+      "Organized panels, speeches, and sessions on various topics including Technology and Life failures during the two-day event."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#tedx-athens": {
+    "paragraphs": [
+      "Managed registration and ticketing operations for the TEDxAthens event."
+    ],
+    "bullets": [],
+    "meta": []
+  },
+  "/volunteering/#arduino-workshop": {
+    "paragraphs": [
+      "Organized and conducted a 4-day Arduino workshop for students."
+    ],
+    "bullets": [],
+    "meta": []
+  }
+}

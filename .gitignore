@@ -1,0 +1,9 @@
+.autopilot.json
+tmp/
+
+# Local development artifacts
+_site/
+.bundle/
+vendor/
+.cursor/
+.DS_Store

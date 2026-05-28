@@ -35,6 +35,7 @@
     {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
 
     {% for node in nodes %}
+        {% assign listItemClass = '' %}
         {% if node == "" %}
             {% continue %}
         {% endif %}
@@ -65,9 +66,11 @@
             {% assign space = space | prepend: '    ' %}
         {% endfor %}
 
-        {% unless include.item_class == blank %}
-            {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
-        {% endunless %}
+        {% comment %}Only emit Kramdown IAL when item_class is a real string; otherwise {: .} leaks into the TOC as visible junk.{% endcomment %}
+        {% assign _item_class = include.item_class | default: '' | strip %}
+        {% if _item_class != '' %}
+            {% capture listItemClass %}{:.{{ _item_class | replace: '%level%', headerLevel }}}{% endcapture %}
+        {% endif %}
 
         {% capture my_toc %}{{ my_toc }}
 {{ space }}{{ listModifier }} {{ listItemClass }} [{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}#{{ html_id }}){% endcapture %}

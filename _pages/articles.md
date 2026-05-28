@@ -11,8 +11,6 @@ header:
 excerpt: "Thoughts, reflections, and insights on life, travel, growth, and everything in between"
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
 <div class="articles-intro">
   <p>Welcome to my articles section. Here I share personal reflections, travel stories, life lessons, and thoughts on growth, purpose, and the journey of living between places. Each article is available on both Substack and LinkedIn.</p>
   <div class="articles-social-links">
@@ -40,13 +38,83 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   <button class="filter-btn" data-filter="life">Life</button>
 </div>
 
+<div class="articles-stats" aria-label="Articles overview">
+  <div class="articles-stat">
+    <span class="articles-stat-value" id="articlesStatCount">4</span>
+    <span class="articles-stat-label">Articles</span>
+  </div>
+  <div class="articles-stat">
+    <span class="articles-stat-value">3</span>
+    <span class="articles-stat-label">Platforms</span>
+  </div>
+  <div class="articles-stat">
+    <span class="articles-stat-value" id="articlesStatTopics">4</span>
+    <span class="articles-stat-label">Topics</span>
+  </div>
+  <div class="articles-stat">
+    <span class="articles-stat-value" id="articlesStatReadTime"><span id="articlesStatReadNum">25</span><span class="articles-stat-unit"> min</span></span>
+    <span class="articles-stat-label">Total read time</span>
+  </div>
+</div>
+
 <!-- All Articles Grid -->
 <div class="articles-section">
   <h2 class="section-title">All Articles</h2>
   <div class="articles-grid" id="articlesGrid">
     
+    <!-- Iceland -->
+    <article class="article-card" id="iceland-fire-and-ice" data-tags="travel reflection life" data-article-id="iceland-fire-and-ice" data-sort="202604">
+      <div class="article-card-header">
+        <div class="article-tags">
+          <span class="article-tag tag-travel">Travel</span>
+          <span class="article-tag tag-reflection">Reflection</span>
+          <span class="article-tag tag-life">Life</span>
+        </div>
+        <span class="article-date">Apr 2026</span>
+      </div>
+      <h3 class="article-title">Iceland: Fire and Ice</h3>
+      <div class="article-meta">
+        <span class="article-read-time">5 min read</span>
+      </div>
+      <p class="article-excerpt">Between fire and ice, Iceland reminded me how small we are — and how much clarity appears when you step outside routine. Black-sand beaches, geothermal valleys, and silence that resets the mind.</p>
+      <button class="expand-btn" onclick="toggleExpand('iceland-fire-and-ice')" id="expand-btn-iceland-fire-and-ice" type="button">
+        <span>📖</span>
+        <span>Read Article</span>
+      </button>
+      <div class="article-actions-compact">
+        <select class="voice-select-small" id="voice-select-iceland-fire-and-ice">
+          <option value="">Select Voice</option>
+        </select>
+        <div class="speed-control">
+          <label for="speed-slider-iceland-fire-and-ice" class="speed-label">Speed:</label>
+          <input type="range" class="speed-slider" id="speed-slider-iceland-fire-and-ice" min="0.5" max="2.0" step="0.1" value="1.0">
+          <span class="speed-value" id="speed-value-iceland-fire-and-ice">1.0x</span>
+        </div>
+        <button class="speech-btn-small" onclick="toggleSpeech('iceland-fire-and-ice')" id="speech-btn-iceland-fire-and-ice">
+          <span>🔊</span>
+          <span>Listen</span>
+        </button>
+      </div>
+      <div class="article-body" id="article-body-iceland-fire-and-ice">
+        <div class="article-content article-content-collapsed" id="article-content-iceland-fire-and-ice">
+          <p>Between fire and ice, Iceland reminded me how small we are — and how much clarity appears when you step outside routine. This piece is a travel reflection on landscapes that feel otherworldly, silence that resets the mind, and the kind of momentum you bring back home.</p>
+          <p>From black-sand beaches to geothermal valleys, the trip was less about ticking sights and more about presence: cold air, warm conversations, long drives, and the humility of standing next to forces older than any career plan.</p>
+        </div>
+      </div>
+      <div class="article-links">
+        <a href="https://dgeorgiou.substack.com/p/4ec" target="_blank" class="article-link substack" rel="noopener">
+          <span>📰</span>
+          <span>Substack</span>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7453386186292711424/" target="_blank" class="article-link linkedin" rel="noopener">
+          <span>💼</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </article>
+
     <!-- Article 1 -->
-    <article class="article-card" data-tags="reflection life growth" data-article-id="new-year-reflection">
+    <article class="article-card" id="new-year-reflection" data-tags="reflection life growth" data-article-id="new-year-reflection" data-sort="202601">
       <div class="article-card-header">
         <div class="article-tags">
           <span class="article-tag tag-reflection">Reflection</span>
@@ -59,6 +127,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       <div class="article-meta">
         <span class="article-read-time">8 min read</span>
       </div>
+      <p class="article-excerpt">Life can excite you in moments of conquest and test your resilience in moments of illness. Celebrate small wins, build gratitude, and remember that flowing forward — like a river — is where the beauty lies.</p>
+      <button class="expand-btn" onclick="toggleExpand('new-year-reflection')" id="expand-btn-new-year-reflection" type="button">
+        <span>📖</span>
+        <span>Read Article</span>
+      </button>
       <div class="article-actions-compact">
         <select class="voice-select-small" id="voice-select-new-year-reflection">
           <option value="">Select Voice</option>
@@ -127,10 +200,6 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
           
           <p class="article-ending"><strong>Life is a journey like a river. There is the past, the present, and the destination ahead.<br>And the beauty lies in flowing.</strong></p>
         </div>
-        <button class="expand-btn" onclick="toggleExpand('new-year-reflection')" id="expand-btn-new-year-reflection">
-          <span>📖</span>
-          <span>Expand Article</span>
-        </button>
       </div>
       <div class="article-links">
         <a href="https://substack.com/@dimitriosgeorgiou2/note/c-193809829?r=l5igs&utm_medium=ios&utm_source=notes-share-action" target="_blank" class="article-link substack">
@@ -145,7 +214,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     </article>
 
     <!-- Article 2 -->
-    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-1">
+    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-1" data-sort="202602">
       <div class="article-card-header">
         <div class="article-tags">
           <span class="article-tag tag-growth">Growth</span>
@@ -156,6 +225,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       <div class="article-meta">
         <span class="article-read-time">6 min read</span>
       </div>
+      <p class="article-excerpt">Precision medicine is moving beyond single-modality models: genomics, imaging, and EHR data are fused in agentic systems where specialized AI agents collaborate on clinical strategy — with MCP standardizing real-time access to research-ready data.</p>
+      <button class="expand-btn" onclick="toggleExpand('healthcare-ai-lit-part-1')" id="expand-btn-healthcare-ai-lit-part-1" type="button">
+        <span>📖</span>
+        <span>Read Article</span>
+      </button>
       <div class="article-actions-compact">
         <select class="voice-select-small" id="voice-select-healthcare-ai-lit-part-1">
           <option value="">Select Voice</option>
@@ -193,10 +267,6 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
           • Figure 3: <a href="https://lnkd.in/dqCW2HNh" target="_blank">lnkd.in/dqCW2HNh</a>
           </p>
         </div>
-        <button class="expand-btn" onclick="toggleExpand('healthcare-ai-lit-part-1')" id="expand-btn-healthcare-ai-lit-part-1">
-          <span>📖</span>
-          <span>Expand Article</span>
-        </button>
       </div>
       <div class="article-links">
         <a href="https://dgeorgiou.substack.com/publish/posts/detail/189259679/share-center" target="_blank" class="article-link substack">
@@ -214,14 +284,207 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
       </div>
     </article>
 
+    <!-- Article 3 -->
+    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-2" data-sort="202603">
+      <div class="article-card-header">
+        <div class="article-tags">
+          <span class="article-tag tag-growth">Growth</span>
+        </div>
+        <span class="article-date">Mar 2026</span>
+      </div>
+      <h3 class="article-title">Healthcare AI | Literature Research Synthesis | Part 2</h3>
+      <div class="article-meta">
+        <span class="article-read-time">6 min read</span>
+      </div>
+      <p class="article-excerpt">A radiologist gets a heatmap and is told that is the AI explanation — but does that mean anything? From fragile SHAP maps to Concept Bottleneck Models and the EU AI Act, this piece asks what clinical trust actually requires.</p>
+      <button class="expand-btn" onclick="toggleExpand('healthcare-ai-lit-part-2')" id="expand-btn-healthcare-ai-lit-part-2" type="button">
+        <span>📖</span>
+        <span>Read Article</span>
+      </button>
+      <div class="article-actions-compact">
+        <select class="voice-select-small" id="voice-select-healthcare-ai-lit-part-2">
+          <option value="">Select Voice</option>
+        </select>
+        <div class="speed-control">
+          <label for="speed-slider-healthcare-ai-lit-part-2" class="speed-label">Speed:</label>
+          <input type="range" class="speed-slider" id="speed-slider-healthcare-ai-lit-part-2" min="0.5" max="2.0" step="0.1" value="1.0">
+          <span class="speed-value" id="speed-value-healthcare-ai-lit-part-2">1.0x</span>
+        </div>
+        <button class="speech-btn-small" onclick="toggleSpeech('healthcare-ai-lit-part-2')" id="speech-btn-healthcare-ai-lit-part-2">
+          <span>🔊</span>
+          <span>Listen</span>
+        </button>
+      </div>
+      <div class="article-body" id="article-body-healthcare-ai-lit-part-2">
+        <div class="article-content article-content-collapsed" id="article-content-healthcare-ai-lit-part-2">
+          <p><strong>[Healthcare AI | Literature Research Synthesis | Part 2]</strong></p>
+          <p>A radiologist gets shown a heatmap and told that's the AI's explanation. Does that actually mean anything? Or are we just dressing up uncertainty in pretty colors?</p>
+          <p><strong>🎨 The Fragility of Post Hoc Methods.</strong> A meta-analysis of 67 studies found SHAP fidelity at just 0.38, while LIME reached 0.81, yet both remain sensitive to perturbations and explanation instability [1, Fig. 2]. Ghorbani et al. showed imperceptible input changes can completely flip saliency maps without changing the prediction [2]. The explanation itself becomes the attack surface. Worse: post-hoc visuals can increase automation bias and over-reliance on AI outputs among clinicians [3]. False confidence is more dangerous than no explanation at all.</p>
+          <p><strong>🏗️ Ante Hoc Architectures: Prescriptive, Not Descriptive.</strong> Concept Bottleneck Models (CBMs) constrain what the model is allowed to do [7, Fig. 3]. Every prediction must pass through expert-defined clinical concepts—sclerosis, bone spurs, narrow joint space—before reaching a diagnosis. No shortcuts. Honest caveat: CBMs require expert-labeled concept libraries. If a rare condition was never defined, the model cannot reason about it. That makes clinical scope explicit and auditable [5].</p>
+          <p><strong>🤝 Why Transparent 90% Beats Opaque 95%.</strong> Interpretable models carry a 5 to 7% AUC penalty [1]. But black-box gains often reflect spurious correlations, scanner artifacts, positioning, not biology [5]. Wu et al. (2025) showed their concept-based model boosted junior doctor diagnostic accuracy by 42% on rare choroidal tumors by making reasoning visible, not hiding it [4, Fig. 4].</p>
+          <p><strong>⚖️ The EU AI Act.</strong> Articles 13 and 14 mandate transparency and human oversight, explicitly flagging automation bias as a legal risk [6]. Ante-hoc architectures are purpose-built to comply.</p>
+          <p>My personal perspective: I have seen SHAP explanations that change completely when you add one irrelevant feature. That is not clinical trust. That is statistical noise with a pretty color map. The future of medical AI belongs to systems that think in clinical concepts, not just pixels.</p>
+          <p><strong>References:</strong><br>
+          [1] https://shorturl.at/1K9UH<br>
+          [2] https://shorturl.at/gFoZr<br>
+          [3] https://shorturl.at/13iId<br>
+          [4] https://shorturl.at/spcPT<br>
+          [5] https://shorturl.at/BuJSC<br>
+          [6] EU AI Act (lnkd.in/dUAec5Ua)<br>
+          [7] https://lnkd.in/dTQNrxWV
+          </p>
+        </div>
+      </div>
+      <div class="article-links">
+        <a href="https://www.linkedin.com/posts/dimitrios-georgiou_%CA%9C%E1%B4%87%E1%B4%80%CA%9F%E1%B4%9B%CA%9C%E1%B4%84%E1%B4%80%CA%80%E1%B4%87-%E1%B4%80%C9%AA-%CA%9F%C9%AA%E1%B4%9B%E1%B4%87%CA%80%E1%B4%80%E1%B4%9B%E1%B4%9C%CA%80%E1%B4%87-%CA%80%E1%B4%87%EA%9C%B1%E1%B4%87%E1%B4%80%CA%80%E1%B4%84%CA%9C-%EA%9C%B1%CA%8F%C9%B4%E1%B4%9B%CA%9C%E1%B4%87%EA%9C%B1%C9%AA%EA%9C%B1-activity-7439445130798870528-fw5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9iLVIBxYpeomo-Y21fFLHo-YyxI_Rj_vk" target="_blank" class="article-link linkedin">
+          <span>💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://x.com/jimmyg1997/status/2033701631674450118?s=20" target="_blank" class="article-link x">
+          <span>𝕏</span>
+          <span>X (Twitter)</span>
+        </a>
+      </div>
+    </article>
+
     <!-- More articles will be added here as you publish them -->
     
   </div>
 </div>
 
+
+<div id="articleModal" class="article-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+  <div class="article-modal-backdrop" data-modal-close></div>
+  <div class="article-modal-dialog">
+    <button type="button" class="article-modal-close" data-modal-close aria-label="Close article">&times;</button>
+    <h2 class="article-modal-title" id="articleModalTitle"></h2>
+    <div class="article-modal-actions"></div>
+    <div class="article-modal-body"></div>
+    <div class="article-modal-links"></div>
+  </div>
+</div>
+
+<script src="/assets/js/articles-page.js"></script>
+
 <style>
-/* Import Inter Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Typography: use global CSS variables from _sass/custom.scss (DM Sans / Playfair) */
+
+/* Card bodies open in modal */
+.article-card .article-content,
+.article-card .article-content-collapsed::after {
+  display: none;
+}
+
+.article-card .article-body {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.article-card .expand-btn {
+  margin-top: 0;
+}
+
+.article-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.article-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.article-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 14, 0.55);
+  backdrop-filter: blur(4px);
+}
+.article-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 100%);
+  max-height: min(88vh, 900px);
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem 1.75rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+  transform: translateY(12px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+.article-modal.is-open .article-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+body.article-modal-open {
+  overflow: hidden;
+}
+.article-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+}
+.articles-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+.articles-stat {
+  text-align: center;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid #e8e8e4;
+  border-radius: 10px;
+  background: #fafaf8;
+}
+.articles-stat-value {
+  display: block;
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+.articles-stat-value .articles-stat-unit {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0;
+}
+.articles-stat-label {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+@media (max-width: 640px) {
+  .articles-stats { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* Articles Intro */
 .articles-intro {
@@ -235,7 +498,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .articles-intro p {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 400;
   color: #495057;
@@ -253,46 +516,46 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   flex-wrap: wrap;
 }
 
-.social-link {
+.articles-social-links .social-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.875rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
 
-.substack-link {
+.articles-social-links .substack-link {
   background: linear-gradient(135deg, #ff6719 0%, #ff8533 100%);
   color: white;
 }
 
-.substack-link:hover {
+.articles-social-links .substack-link:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(255, 103, 25, 0.25);
 }
 
-.linkedin-link {
+.articles-social-links .linkedin-link {
   background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
   color: white;
 }
 
-.linkedin-link:hover {
+.articles-social-links .linkedin-link:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0, 119, 181, 0.25);
 }
 
-.x-link {
+.articles-social-links .x-link {
   background: linear-gradient(135deg, #000000 0%, #343a40 100%);
   color: white;
 }
 
-.x-link:hover {
+.articles-social-links .x-link:hover {
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
@@ -315,12 +578,12 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .filter-btn {
-  padding: 0.45rem 0.9rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #e9ecef;
   background: white;
   border-radius: 18px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
   font-weight: 600;
   color: #495057;
   cursor: pointer;
@@ -342,7 +605,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 
 /* Section Title */
 .section-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
   color: #001f3f;
@@ -426,7 +689,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-tag {
   padding: 0.18rem 0.55rem;
   border-radius: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -458,7 +721,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-date {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   color: #6c757d;
   font-weight: 600;
@@ -467,7 +730,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 700;
   color: #001f3f;
@@ -481,15 +744,27 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 0.75rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.65rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
   color: #6c757d;
   font-weight: 500;
 }
 
 .article-read-time {
   font-weight: 500;
+}
+
+.article-excerpt {
+  font-family: var(--font-sans, "DM Sans", system-ui, sans-serif);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #495057;
+  margin: 0 0 0.85rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .article-actions-compact {
@@ -503,7 +778,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   padding: 0.4rem 0.55rem;
   border: 2px solid #e9ecef;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   background: white;
   color: #495057;
@@ -526,7 +801,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .speed-label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   font-weight: 600;
   color: #495057;
@@ -581,7 +856,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .speed-value {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   font-weight: 600;
   color: #001f3f;
@@ -592,14 +867,14 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .speech-btn-small {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.4rem 0.75rem;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
   border: 2px solid #001f3f;
   background: white;
   color: #001f3f;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.65rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -627,7 +902,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-content {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.8rem;
   line-height: 1.65;
   color: #2c3e50;
@@ -654,16 +929,18 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .expand-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
-  padding: 0.5rem 1rem;
-  margin-top: 0.75rem;
+  padding: 0.6rem 1.15rem;
+  margin: 0 0 0.85rem 0;
   border: 2px solid #001f3f;
   background: white;
   color: #001f3f;
-  border-radius: 7px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
   font-weight: 600;
+  width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -685,7 +962,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 }
 
 .article-content h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.85rem;
   font-weight: 700;
   color: #001f3f;
@@ -759,12 +1036,12 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 .article-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.45rem 0.85rem;
-  border-radius: 7px;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
   font-weight: 600;
   transition: all 0.3s ease;
   flex: 1;

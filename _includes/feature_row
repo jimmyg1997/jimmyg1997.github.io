@@ -4,7 +4,7 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
-<div class="feature__wrapper">
+<div class="feature__wrapper{% if include.id == 'feature_row2' %} feature__wrapper--photos{% endif %}">
 
   {% for f in feature_row %}
 
@@ -17,7 +17,7 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if f.image_path %}
-          <div class="archive__item-teaser">
+          <div class="archive__item-teaser{% if f.image_focus %} archive__item-teaser--{{ f.image_focus }}{% endif %}">
             <img src=
               {% if f.image_path contains "://" %}
                 "{{ f.image_path }}"

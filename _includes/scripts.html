@@ -10,7 +10,7 @@
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/cv-timeline.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/home-journey.js' | relative_url }}?v=28"></script>
   <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   
   <script>
@@ -61,17 +61,6 @@
       return false;
     }, true);
     
-    // Also block it in the bubble phase
-    document.addEventListener('click', function(e) {
-      const link = e.target.closest('a');
-      if (link && link.getAttribute('href')?.startsWith('#')) {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        return false;
-      }
-    }, false);
-    
     // Handle page load with hash
     window.addEventListener('load', function() {
       const hash = window.location.hash;
@@ -93,55 +82,101 @@
   
   // Fix TOC anchor links - SIMPLIFIED AND MORE RELIABLE
   (function() {
+    function slugify(text) {
+      return text.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+    }
+
+    function normalizeText(text) {
+      return text.trim().toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ');
+    }
+
     function fixTOCLinks() {
-      // Build a map of all heading IDs to their actual elements
       const headingMap = new Map();
-      const allHeadings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]');
-      
+      const textMap = new Map();
+      const allHeadings = document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id], h1, h2, h3, h4, h5, h6');
+
       allHeadings.forEach(function(heading) {
         const id = heading.getAttribute('id');
         if (id) {
           headingMap.set(id.toLowerCase(), heading);
-          // Also store without special chars for matching
           const cleanId = id.toLowerCase().replace(/[^\w-]/g, '');
           if (cleanId !== id.toLowerCase()) {
             headingMap.set(cleanId, heading);
           }
         }
+
+        const headingText = normalizeText(heading.textContent);
+        if (headingText && !textMap.has(headingText)) {
+          textMap.set(headingText, heading);
+        }
       });
-      
-      // Fix all TOC links
+
+      document.querySelectorAll('[id]').forEach(function(el) {
+        const id = el.getAttribute('id');
+        if (!id || id.length > 80) return;
+        headingMap.set(id.toLowerCase(), el);
+        const cleanId = id.toLowerCase().replace(/[^\w-]/g, '');
+        if (cleanId) headingMap.set(cleanId, el);
+      });
+
+      function resolveTarget(linkText) {
+        const normalized = normalizeText(linkText);
+        const slug = slugify(linkText);
+        const simple = normalized.replace(/\s+/g, '');
+
+        if (slug && headingMap.has(slug)) return headingMap.get(slug);
+        if (document.getElementById(slug)) return document.getElementById(slug);
+        if (textMap.has(normalized)) return textMap.get(normalized);
+
+        if (simple && headingMap.has(simple)) return headingMap.get(simple);
+
+        let bestMatch = null;
+        allHeadings.forEach(function(heading) {
+          const hText = normalizeText(heading.textContent);
+          if (hText === normalized) bestMatch = heading;
+        });
+        return bestMatch;
+      }
+
       const tocLinks = document.querySelectorAll('.toc__menu a[href^="#"]');
-      
+
       tocLinks.forEach(function(link) {
         const href = link.getAttribute('href');
-        if (!href || href === '#' || href === '#_') return;
-        
+        if (!href || href === '#_') return;
+
+        if (href === '#' || href === '') {
+          const target = resolveTarget(link.textContent);
+          if (target && target.id) {
+            link.setAttribute('href', '#' + target.id);
+          }
+          return;
+        }
+
         const targetId = href.substring(1).toLowerCase();
         const targetElement = document.getElementById(targetId) || headingMap.get(targetId);
-        
-        // If target doesn't exist, try to find a close match
+
         if (!targetElement) {
           const cleanTargetId = targetId.replace(/[^\w-]/g, '');
           const matchedHeading = headingMap.get(cleanTargetId);
-          
+
           if (matchedHeading) {
             const correctId = matchedHeading.getAttribute('id');
             link.setAttribute('href', '#' + correctId);
           }
         } else {
-          // Verify the link text matches the heading text (roughly)
-          const linkText = link.textContent.trim().toLowerCase().replace(/[^\w\s]/g, '');
-          const headingText = targetElement.textContent.trim().toLowerCase().replace(/[^\w\s]/g, '');
-          
-          // If they don't match at all, try to find a better match
+          const linkText = normalizeText(link.textContent);
+          const headingText = normalizeText(targetElement.textContent);
+
           if (linkText && headingText && !linkText.includes(headingText.substring(0, 10)) && !headingText.includes(linkText.substring(0, 10))) {
-            // Look for a heading that matches the link text better
             let bestMatch = null;
             let bestScore = 0;
-            
+
             allHeadings.forEach(function(heading) {
-              const hText = heading.textContent.trim().toLowerCase().replace(/[^\w\s]/g, '');
+              const hText = normalizeText(heading.textContent);
               if (hText.includes(linkText) || linkText.includes(hText)) {
                 const score = Math.min(linkText.length, hText.length) / Math.max(linkText.length, hText.length);
                 if (score > bestScore && score > 0.5) {
@@ -150,10 +185,9 @@
                 }
               }
             });
-            
-            if (bestMatch) {
-              const correctId = bestMatch.getAttribute('id');
-              link.setAttribute('href', '#' + correctId);
+
+            if (bestMatch && bestMatch.id) {
+              link.setAttribute('href', '#' + bestMatch.getAttribute('id'));
             }
           }
         }

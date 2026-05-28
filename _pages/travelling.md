@@ -5,6 +5,7 @@ permalink: /travelling/
 author_profile: true
 toc: true
 toc_sticky: true
+toc_h_max: 3
 header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
@@ -12,7 +13,9 @@ header:
 excerpt: "Exploring the world one adventure at a time"
 ---
 
-<div class="travel-intro">
+<div class="dg-travel" markdown="1">
+
+<div class="travel-intro dg-travel-hero">
   <p>Join me on my travel adventures around the world. This section features destinations I've visited, travel tips, and photo galleries from my journeys. Follow me on Instagram for more travel content.</p>
   <div class="social-connect">
     <span class="connect-text">Follow my journey</span>
@@ -48,7 +51,7 @@ excerpt: "Exploring the world one adventure at a time"
   </div>
 </div>
 
-<script async src="//www.instagram.com/embed.js"></script>
+<script async src="https://www.instagram.com/embed.js"></script>
 <script>
   window.addEventListener('load', function() {
     if (typeof instgrm !== 'undefined' && instgrm.Embeds) {
@@ -65,543 +68,13 @@ excerpt: "Exploring the world one adventure at a time"
   });
 </script>
 
-<style>
-/* Some global blog CSS likely forces canvas height:auto; that breaks WebGL maps.
-   Explicitly force MapLibre / OpenLayers canvases to fill their containers. */
-#openlayers-map {
-  position: relative;
-}
 
-#openlayers-map .ol-viewport {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-</style>
-
-<style>
-
-.social-connect {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-.connect-text {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9em;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.instagram-btn {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.instagram-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.instagram-btn:hover::before {
-    left: 100%;
-}
-
-.instagram-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-.instagram-btn i {
-    font-size: 1.2em;
-}
-
-/* Font Awesome fallback */
-.fab {
-    display: inline-block;
-    width: 1.2em;
-    height: 1.2em;
-    text-align: center;
-}
-
-.fab::before {
-    content: "📸";
-    font-size: 1em;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .glass-card {
-        padding: 30px 20px;
-    }
-    
-    .intro-header h2 {
-        font-size: 1.8em;
-    }
-    
-    .fitness-intro p {
-        font-size: 1em;
-    }
-    
-    .instagram-btn {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
-}
-
-/* Additional glassmorphism elements */
-.glass-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-}
-
-/* Floating elements for extra visual interest */
-.floating-element {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.floating-element:nth-child(1) {
-    width: 20px;
-    height: 20px;
-    top: 10%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.floating-element:nth-child(2) {
-    width: 15px;
-    height: 15px;
-    top: 20%;
-    right: 15%;
-    animation-delay: 2s;
-}
-
-.floating-element:nth-child(3) {
-    width: 25px;
-    height: 25px;
-    bottom: 20%;
-    left: 20%;
-    animation-delay: 4s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-}
-
-/* Instagram Feed Desktop Fix: 3 posts side by side, post fits inside square */
-@media (min-width: 700px) {
-  .instagram-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  .instagram-post {
-    width: 360px;
-    min-width: 360px;
-    max-width: 360px;
-    height: auto;
-    min-height: 360px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    overflow: visible;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 0 360px;
-    box-sizing: border-box;
-  }
-  .instagram-embed-container {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-/* Instagram blockquote styling for larger display */
-.instagram-media {
-  width: 100% !important;
-  max-width: 1000px !important;
-  margin: 0 auto !important;
-  display: block !important;
-}
-
-.instagram-media iframe {
-  width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  border: none !important;
-  border-radius: 8px !important;
-  object-fit: contain !important;
-}
-}
-@media (max-width: 900px) {
-  .instagram-grid {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .instagram-post {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    flex: 1 1 100%;
-    height: auto;
-  }
-  .instagram-embed-container,
-  .instagram-embed-container iframe {
-    width: 100% !important;
-    height: auto !important;
-    min-width: 0;
-    min-height: 0;
-    max-width: 100%;
-    max-height: none;
-  }
-}
-
-/* Custom Instagram Gallery Styles */
-.instagram-feed {
-  margin: 2rem 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.instagram-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.instagram-post {
-  width: 100%;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease;
-  margin: 0 auto;
-}
-
-.instagram-post:hover {
-  transform: translateY(-2px);
-}
-
-.instagram-header {
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  border-bottom: 1px solid #efefef;
-}
-
-.instagram-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 12px;
-}
-
-.instagram-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.instagram-user {
-  flex: 1;
-  text-align: left;
-}
-
-.instagram-user strong {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  color: #262626;
-}
-
-.instagram-user span {
-  font-size: 12px;
-  color: #8e8e8e;
-}
-
-.instagram-more {
-  font-size: 18px;
-  color: #262626;
-  cursor: pointer;
-}
-
-.instagram-image {
-  width: 100%;
-  aspect-ratio: 1;
-  overflow: visible;
-}
-
-.instagram-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.instagram-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 12px;
-}
-
-.instagram-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.instagram-icons span {
-  font-size: 24px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.instagram-icons span:hover {
-  transform: scale(1.1);
-}
-
-.instagram-save {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.instagram-likes {
-  padding: 0 12px 8px;
-  text-align: left;
-}
-
-.instagram-likes strong {
-  font-size: 14px;
-  color: #262626;
-}
-
-.instagram-caption {
-  padding: 0 12px 8px;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #262626;
-}
-
-.instagram-caption strong {
-  font-weight: 600;
-}
-
-.instagram-time {
-  padding: 0 12px 12px;
-  text-align: left;
-  font-size: 12px;
-  color: #8e8e8e;
-  text-transform: uppercase;
-}
-
-/* Loading spinner */
-.instagram-loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  color: #8e8e8e;
-}
-
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3897f0;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Instagram overlay for hover effect */
-.instagram-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.instagram-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.instagram-post:hover .instagram-overlay {
-  opacity: 1;
-}
-
-.instagram-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 16px;
-  border: 2px solid white;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.instagram-link:hover {
-  background: white;
-  color: #3897f0;
-}
-
-@media (min-width: 900px) {
-  .instagram-feed {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .instagram-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .instagram-post {
-    width: 100%;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 899px) and (min-width: 600px) {
-  .instagram-feed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .instagram-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 700px;
-    width: 100%;
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .instagram-post {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .instagram-media iframe {
-    width: 100% !important;
-    min-height: 700px !important;
-    max-height: 1000px !important;
-  }
-}
-@media (max-width: 599px) {
-  .instagram-grid {
-    grid-template-columns: 1fr;
-  }
-  .instagram-post {
-    width: 100%;
-    height: auto;
-  }
-  .instagram-embed-container iframe {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-</style>
 
 ## Travel Summary {#travel-summary}
 
-<div class="travel-summary-section" style="margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; border: 1px solid #dee2e6;">
+<div class="travel-summary-section">
   
-  <div id="travel-insights" style="margin-bottom: 2rem;">
+  <div id="travel-insights">
     <!-- Insights will be populated by JavaScript -->
   </div>
   <div id="travel-timeline-viz">
@@ -614,25 +87,25 @@ excerpt: "Exploring the world one adventure at a time"
 
 ## Interactive Travel Map {#interactive-travel-map}
 
-<div style="margin: 3rem 0;">
-  <div style="background: linear-gradient(135deg, #fff3e0 0%, #f5f5f5 100%); padding: 1rem 1.5rem; border-radius: 10px; margin-bottom: 1rem; border-left: 4px solid #FF9800;">
-    <p style="margin: 0; color: #333; font-size: 0.95rem; line-height: 1.6;">
-      <strong style="color: #F57C00;">📸 Detailed Interactive Map</strong> — Full Instagram post embeds in popups. Click any marker to view the complete post with images and captions. Best for detailed exploration!
+<div class="dg-travel-map-wrap">
+  <div class="dg-travel-map-callout">
+    <p>
+      <strong>📸 Detailed Interactive Map</strong> — Full Instagram post embeds in popups. Click any marker to view the complete post with images and captions. Best for detailed exploration!
     </p>
   </div>
-  <div id="openlayers-map" style="width: 100%; height: 450px; border-radius: 12px; border: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.06);"></div>
-  <div class="travel-stats" style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; text-align: center;">
-    <div style="background: #f8f9fa; padding: 0.75rem 1.25rem; border-radius: 8px; border-left: 4px solid #001f3f;">
-      <strong id="openlayers-countries" style="font-size: 2.0em; color: #001f3f;">0</strong>
-      <div style="color: #666; font-size: 1.05em;">Countries</div>
+  <div id="openlayers-map"></div>
+  <div class="travel-stats">
+    <div class="dg-travel-stat dg-travel-stat--countries">
+      <strong id="openlayers-countries" class="dg-travel-stat-num dg-travel-stat-num--navy">0</strong>
+      <div class="dg-travel-stat-label">Countries</div>
     </div>
-    <div style="background: #f8f9fa; padding: 0.75rem 1.25rem; border-radius: 8px; border-left: 4px solid #28a745;">
-      <strong id="openlayers-cities" style="font-size: 2.0em; color: #28a745;">0</strong>
-      <div style="color: #666; font-size: 1.05em;">Cities</div>
+    <div class="dg-travel-stat dg-travel-stat--cities">
+      <strong id="openlayers-cities" class="dg-travel-stat-num dg-travel-stat-num--green">0</strong>
+      <div class="dg-travel-stat-label">Cities</div>
     </div>
-    <div style="background: #f8f9fa; padding: 0.75rem 1.25rem; border-radius: 8px; border-left: 4px solid #dc3545;">
-      <strong id="openlayers-posts" style="font-size: 2.0em; color: #dc3545;">0</strong>
-      <div style="color: #666; font-size: 1.05em;">Posts</div>
+    <div class="dg-travel-stat dg-travel-stat--posts">
+      <strong id="openlayers-posts" class="dg-travel-stat-num dg-travel-stat-num--red">0</strong>
+      <div class="dg-travel-stat-label">Posts</div>
     </div>
   </div>
 </div>
@@ -952,75 +425,6 @@ if (document.readyState === 'loading') {
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-<style>
-/* Custom styling for marker clusters */
-.marker-cluster-small,
-.marker-cluster-medium,
-.marker-cluster-large {
-  background-clip: padding-box;
-  border-radius: 50%;
-}
-
-.marker-cluster-small {
-  background-color: rgba(0, 116, 217, 0.6);
-}
-
-.marker-cluster-small div {
-  background-color: rgba(0, 116, 217, 0.8);
-  width: 30px;
-  height: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  line-height: 30px;
-}
-
-.marker-cluster-medium {
-  background-color: rgba(0, 116, 217, 0.6);
-}
-
-.marker-cluster-medium div {
-  background-color: rgba(0, 116, 217, 0.8);
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-  margin-top: 5px;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  line-height: 40px;
-}
-
-.marker-cluster-large {
-  background-color: rgba(0, 31, 63, 0.6);
-}
-
-.marker-cluster-large div {
-  background-color: rgba(0, 31, 63, 0.8);
-  width: 50px;
-  height: 50px;
-  margin-left: 5px;
-  margin-top: 5px;
-  border-radius: 25px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  line-height: 50px;
-}
-
-.marker-cluster {
-  background-clip: padding-box;
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-</style>
 
 <!-- Load travel posts data from external file -->
 <script src="{{ '/assets/js/travel-posts-data.js' | relative_url }}"></script>
@@ -1036,14 +440,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   console.log('Travel data loaded with', window.myTravelPosts.length, 'posts. Initializing map with clustering...');
-  
+
+  const travelMapEl = document.getElementById('travel-map');
+  if (!travelMapEl) {
+    console.log('Leaflet map #travel-map not in DOM; skipping Leaflet init.');
+    const dataReadyEvent = new CustomEvent('travelDataReady', {
+      detail: { posts: window.myTravelPosts }
+    });
+    window.dispatchEvent(dataReadyEvent);
+    return;
+  }
+
   const dataReadyEvent = new CustomEvent('travelDataReady', { 
     detail: { posts: window.myTravelPosts } 
   });
   window.dispatchEvent(dataReadyEvent);
 
   // Initialize the main interactive map (lightweight & scroll-friendly)
-  const travelMap = L.map('travel-map', {
+  const travelMap = L.map(travelMapEl, {
     center: [50.0647, 19.9450], // Centered on Krakow
     zoom: 4,
     maxZoom: 18,                // allow zooming in to city level
@@ -1206,9 +620,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const uniqueCountries = [...new Set(myTravelPosts.map(post => post.country))];
   const uniqueCities = [...new Set(myTravelPosts.map(post => post.city))];
 
-  document.getElementById('countries-visited').textContent = uniqueCountries.length;
-  document.getElementById('cities-explored').textContent = uniqueCities.length;
-  document.getElementById('travel-posts').textContent = myTravelPosts.length;
+  const countriesVisitedEl = document.getElementById('countries-visited');
+  const citiesExploredEl = document.getElementById('cities-explored');
+  const travelPostsEl = document.getElementById('travel-posts');
+  if (countriesVisitedEl) countriesVisitedEl.textContent = String(uniqueCountries.length);
+  if (citiesExploredEl) citiesExploredEl.textContent = String(uniqueCities.length);
+  if (travelPostsEl) travelPostsEl.textContent = String(myTravelPosts.length);
 
   // Fit map to show all markers with padding
   if (myTravelPosts.length > 0) {
@@ -1230,392 +647,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-<style>
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.insight-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  padding: 2rem 1.5rem;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,31,63,0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.insight-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #001f3f, #0074D9, #001f3f);
-  transform: scaleX(0);
-  transition: transform 0.4s ease;
-}
-
-.insight-card:hover::before {
-  transform: scaleX(1);
-}
-
-.insight-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(0,31,63,0.15);
-  border-color: rgba(0,31,63,0.2);
-}
-
-.insight-value {
-  font-size: 1.75rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.insight-label {
-  font-size: 0.75rem;
-  color: #495057;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-}
-
-.insight-sublabel {
-  font-size: 0.7rem;
-  color: #6c757d;
-  margin-top: 0.4rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.countries-section {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.countries-header {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #001f3f;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.countries-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.country-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: #f8f9fa;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  border: 1px solid #e9ecef;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.country-item:hover {
-  background: #001f3f;
-  color: white;
-  transform: translateY(-1px);
-}
-
-.country-flag {
-  font-size: 1.1rem;
-}
-
-.country-posts {
-  background: #001f3f;
-  color: white;
-  padding: 0.1rem 0.4rem;
-  border-radius: 10px;
-  font-size: 0.7rem;
-  margin-left: 0.2rem;
-}
-
-.country-item:hover .country-posts {
-  background: white;
-  color: #001f3f;
-}
-
-/* Elegant Timeline Styles */
-.timeline-viz-elegant {
-  background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
-  margin-top: 2rem;
-  border: 1px solid rgba(0,31,63,0.08);
-  max-width: 100%;
-}
-
-.timeline-header-elegant {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid rgba(0,31,63,0.1);
-}
-
-.timeline-icon {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-title {
-  margin: 0;
-  color: #001f3f;
-  font-size: 1.35rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.timeline-container {
-  position: relative;
-  padding-left: 2rem;
-}
-
-.timeline-year-card {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-  position: relative;
-  padding-left: 1rem;
-}
-
-.timeline-year-card:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  left: 1.5rem;
-  top: 4rem;
-  bottom: -2.5rem;
-  width: 2px;
-  background: linear-gradient(180deg, #001f3f 0%, rgba(0,31,63,0.2) 50%, transparent 100%);
-}
-
-.year-marker {
-  flex-shrink: 0;
-  width: 80px;
-  position: relative;
-}
-
-.year-number {
-  background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.6rem 0.85rem;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,31,63,0.2);
-  position: relative;
-  z-index: 2;
-}
-
-.year-line {
-  display: none;
-}
-
-.year-content {
-  flex: 1;
-  min-width: 0;
-  padding-top: 0.25rem;
-}
-
-.year-stats-compact {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.stat-badge {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 18px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.countries-badge {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  color: #1565C0;
-  border: 1px solid rgba(21,101,192,0.2);
-}
-
-.posts-badge {
-  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
-  color: #7b1fa2;
-  border: 1px solid rgba(123,31,162,0.2);
-}
-
-.countries-flow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  line-height: 1.6;
-}
-
-.country-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  background: white;
-  padding: 0.4rem 0.7rem;
-  border-radius: 14px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #2c3e50;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.08);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: default;
-}
-
-.country-chip:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,31,63,0.15);
-  background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
-  color: white;
-  border-color: transparent;
-}
-
-/* Page-specific styles removed - using global page__inner-wrap styles */
-
-@media (max-width: 768px) {
-  .insights-grid {
-  grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
-  }
-  
-  .insight-card {
-    padding: 0.8rem;
-  }
-  
-  .insight-value {
-    font-size: 1.5rem;
-  }
-  
-  .insight-label {
-    font-size: 0.7rem;
-  }
-  
-  .insight-sublabel {
-    font-size: 0.65rem;
-  }
-  
-  .countries-grid {
-    gap: 0.5rem;
-  }
-  
-  .timeline-viz-elegant {
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-  }
-  
-  .timeline-header-elegant {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-  }
-  
-  .timeline-icon {
-    font-size: 2rem;
-  }
-  
-  .timeline-title {
-    font-size: 1.2rem;
-  }
-  
-  .timeline-icon {
-    font-size: 1.8rem;
-  }
-  
-  .year-number {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.75rem;
-  }
-  
-  .stat-badge {
-    font-size: 0.65rem;
-    padding: 0.3rem 0.6rem;
-  }
-  
-  .country-chip {
-    font-size: 0.7rem;
-    padding: 0.35rem 0.6rem;
-  }
-  
-  .timeline-container {
-    padding-left: 1rem;
-  }
-  
-  .timeline-year-card {
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding-left: 0.5rem;
-  }
-  
-  .timeline-year-card:not(:last-child)::after {
-    left: 0.75rem;
-    top: 3.5rem;
-  }
-  
-  .year-marker {
-    width: 100%;
-  }
-  
-  .year-number {
-    font-size: 1.1rem;
-    padding: 0.6rem 0.9rem;
-  }
-  
-  .year-content {
-    padding-top: 0;
-  }
-  
-  .year-stats-compact {
-    margin-bottom: 0.75rem;
-  }
-  
-  .countries-flow {
-    gap: 0.4rem;
-  }
-  
-  .country-chip {
-    font-size: 0.8125rem;
-    padding: 0.4rem 0.7rem;
-  }
-  
-  .page__content {
-    padding-right: 1rem !important;
-  }
-}
-</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -1812,7 +843,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const postCount = yearData.posts;
             
             return `
-              <div class="timeline-year-card" style="animation: slideInLeft 0.6s ease ${index * 0.15}s both;">
+              <div class="timeline-year-card" style="--dg-stagger: ${index * 0.15}s">
                 <div class="year-marker">
                   <div class="year-number">${year}</div>
                   <div class="year-line"></div>
@@ -1835,18 +866,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }).join('')}
         </div>
       </div>
-      <style>
-        @keyframes slideInLeft {
-          from {
-            opacity: 0;
-            transform: translateX(-30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-      </style>
     `;
     
     // Update DOM - Remove countries section
@@ -1868,8 +887,8 @@ document.addEventListener('DOMContentLoaded', function() {
       <br>
       <h3 id="easter-vietnam">Easter in Vietnam</h3>
       <p>In April 2025, I volunteered with the Greek NGO Wheeling2Help in the community of Da Bia village</p>
-      <div style="text-align: center;">
-        <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0"  class="btn btn--primary btn--small" target="_blank">View #MyQuestVietnam </a>
+      <div class="dg-travel-card-actions">
+        <a href="https://docs.google.com/presentation/d/14IV8N7H1TE7uuJi1_hkzmBSuPvgtpl5Ga_izE_hoCZ4/edit?slide=id.g35dda03171d_0_0#slide=id.g35dda03171d_0_0" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">View #MyQuestVietnam </a>
       </div>
     </div>
   </div>
@@ -1882,77 +901,20 @@ document.addEventListener('DOMContentLoaded', function() {
       <br>
       <h3 id="living-krakow">Living in Krakow</h3>
       <p>My experience living in the beautiful city of Krakow, Poland, exploring its rich history, stunning architecture, and vibrant culture</p>
-      <div style="text-align: center;">
-        <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small">
-          View the Guide
+      <div class="dg-travel-card-actions">
+        <a href="https://docs.google.com/document/d/1kK6SqDRhKBvHyOYG5KcFabgdDate7vDF46-kQatG8io/edit?tab=t.0#heading=h.ukpp0t44nwxx" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+          View guide 2025
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1dYDaIxDiz94BPewq0vuozeq66F9CO_0WskmQvpzfASA/edit?usp=drive_web&ouid=103203469061251460255" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+          View guide 2026
         </a>
       </div>
+    </div>
   </div>
 
-  </div>
 </div>
 
-<style>
-.recent-travels {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
+</div>
 
-.travel-card {
-  background: var(--bg-white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.travel-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
-}
-
-.travel-image {
-  width: 100%;
-  height: auto;
-  min-height: 200px;
-  overflow: visible;
-  background: var(--bg-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.travel-image img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  display: block;
-}
-
-.travel-content {
-  padding: 1.5rem;
-}
-
-.travel-content h3 {
-  margin: 0 0 1rem 0;
-  color: var(--text-dark);
-  font-size: 1.5rem;
-}
-
-.travel-content p {
-  color: var(--text-body);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .recent-travels {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 
 

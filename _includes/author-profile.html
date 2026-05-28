@@ -32,7 +32,11 @@
     {% else %}
       <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
     {% endif %}
-    {% if author.bio %}
+    {% if site.tagline.primary %}
+      <div class="author__bio" itemprop="description">
+        {% include site-tagline.html variant="sidebar" %}
+      </div>
+    {% elsif author.bio %}
       <p class="author__bio" itemprop="description">
         {{ author.bio }}
       </p>

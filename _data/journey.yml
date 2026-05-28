@@ -1,0 +1,699 @@
+# Journey timeline: lane = site section. start/end: YYYY-MM.
+
+intro: "Each row matches part of the site. Earlier years are compressed; the last 15 months are expanded. Hover any bar or pin for details; click for the full popup with links to CV, projects, and more."
+
+chart:
+  start_year: 2015
+  end_year: 2026
+  focus_start: "2025-02"
+  condensed_ratio: 0.34
+
+filters:
+  - id: all
+    label: All
+  - id: work
+    label: Work
+  - id: education
+    label: Education
+  - id: publications
+    label: Publications
+  - id: articles
+    label: Articles
+  - id: projects
+    label: Projects
+  - id: entrepreneurship
+    label: Entrepreneurship
+  - id: honors
+    label: Honors & Awards
+  - id: personal
+    label: Personal
+  - id: volunteering
+    label: Volunteering
+  - id: calisthenics
+    label: Calisthenics
+  - id: travel
+    label: Travel
+
+lanes:
+  - id: work
+    label: Work
+  - id: education
+    label: Education
+  - id: publications
+    label: Publications
+  - id: articles
+    label: Articles
+  - id: projects
+    label: Projects
+  - id: entrepreneurship
+    label: Entrepreneurship
+  - id: honors
+    label: Honors & Awards
+  - id: personal
+    label: Personal
+  - id: volunteering
+    label: Volunteering
+  - id: calisthenics
+    label: Calisthenics
+  - id: travel
+    label: Travel
+
+milestones:
+  - sort: 202601e
+    lane: entrepreneurship
+    start: "2026-01"
+    end: null
+    when: "Jan 2026 - Present"
+    title: "hygeIA · Co-builder"
+    summary: "Workplace SOS platform — ERC 2025 + Greek LLM, offline AI, Law 5239/2025 compliance."
+    detail:
+      - "Archimedes Demo Day 2026 · B2B for industry, maritime, and education"
+    link: "/entrepreneurship/#hygeia"
+
+  - sort: 202509e
+    lane: entrepreneurship
+    start: "2025-09"
+    end: null
+    when: "Sep 2025 - Present"
+    title: "Roomatos · Co-founder"
+    summary: "Greece-first AI roommate platform — lifestyle matching, groups, Stripe premium."
+    detail:
+      - "Matching engine, explore, trainings, rent tracker on Next.js + Supabase"
+    link: "/entrepreneurship/#roomatos"
+
+  - sort: 202605
+    lane: publications
+    start: "2026-05"
+    end: "2026-05"
+    when: "May 2026"
+    title: "PhD Seminar @ Ionian Univ."
+    summary: "First public PhD progress talk — multimodal AI for precision medicine."
+    link: "/publications/#phd-ionian-seminar-2026"
+
+  - sort: 202605b
+    lane: publications
+    start: "2026-05"
+    end: "2026-05"
+    when: "May 2026"
+    title: "E-poster @ Psychiatry Congress"
+    summary: "34th Panhellenic Psychiatry Congress — AI support for Suicide Line 1018."
+    detail:
+      - "Alexandroupoli · KLIMAKA NGO"
+    link: "/publications/#klimaka-34th-psychiatry-congress"
+
+  - sort: 202604
+    lane: articles
+    start: "2026-04"
+    end: "2026-04"
+    when: "Apr 2026"
+    title: "Iceland · Travel Essay"
+    summary: "Fire & Ice — travel reflection and lessons from the road."
+    link: "/articles/#iceland-fire-and-ice"
+
+  - sort: 202603
+    lane: articles
+    start: "2026-03"
+    end: "2026-03"
+    when: "Mar 2026"
+    title: "Healthcare AI · Part 2"
+    summary: "Literature review: interpretability, regulation, and clinical trust."
+    detail:
+      - "XAI, FDA/EU AI Act context, deployment in hospitals"
+    link: "/articles/#healthcare-ai-lit-part-2"
+
+  - sort: 202602
+    lane: articles
+    start: "2026-02"
+    end: "2026-02"
+    when: "Feb 2026"
+    title: "Healthcare AI · Part 1"
+    summary: "Multimodal fusion and agentic clinical AI — literature synthesis."
+    detail:
+      - "EHR + imaging + omics, LLM agents in care pathways"
+    link: "/articles/#healthcare-ai-lit-part-1"
+
+  - sort: 202601
+    lane: articles
+    start: "2026-01"
+    end: "2026-01"
+    when: "Jan 2026"
+    title: "New Year · Reflection"
+    summary: "Personal growth, habits, and intentions for 2026."
+    link: "/articles/#new-year-reflection"
+
+  - sort: 202512
+    lane: work
+    start: "2025-12"
+    end: null
+    when: "Dec 2025 - Present"
+    title: "Sr ML Engineer @ Grid Dynamics"
+    summary: "Production ML infrastructure, LLM features, RAG pipelines, and model serving at scale."
+    detail:
+      - "Krakow, Poland — full ML lifecycle from data to deployment"
+      - "LLMs, semantic search, distributed training, MLOps"
+    link: "/cv/#grid-dynamics"
+    featured: true
+
+  - sort: 202601p
+    lane: projects
+    start: "2026-01"
+    end: "2026-03"
+    when: "Jan - Mar 2026"
+    title: "Habit Tracker · React PWA"
+    summary: "Personal habits app with streaks, charts, and Supabase sync."
+    detail:
+      - "React + TypeScript + Supabase"
+      - "Daily logging, progress visualization, PWA install"
+    link: "/projects/#habit-tracker"
+
+  - sort: 202509p
+    lane: projects
+    start: "2025-06"
+    end: "2025-08"
+    when: "Jun - Aug 2025"
+    title: "Suicide Survey @ KLIMAKA"
+    summary: "Streamlit clinical decision support for Greek hospitals — PHQ-9 and risk screening."
+    detail:
+      - "GDPR-compliant dynamic questionnaires"
+      - "Laiko General Hospital emergency integration"
+    link: "/projects/#suicide-prevention-survey"
+
+  - sort: 202502p
+    lane: projects
+    start: "2025-02"
+    end: "2025-04"
+    when: "Feb - Apr 2025"
+    title: "Polls Analyzer · Streamlit"
+    summary: "Survey ingestion, real-time charts, and statistical analysis in Streamlit."
+    link: "/projects/#polls-analyzer"
+
+  - sort: 202409p
+    lane: projects
+    start: "2024-09"
+    end: "2024-11"
+    when: "Sep - Nov 2024"
+    title: "Newsletter Reporter · Gmail"
+    summary: "Gmail → OpenAI → Google Docs pipeline with Telegram delivery alerts."
+    detail:
+      - "Automated newsletter digests from inbox labels"
+    link: "/projects/#gmail-newsletter-reporter"
+
+  - sort: 202403p
+    lane: projects
+    start: "2024-03"
+    end: "2024-05"
+    when: "Mar - May 2024"
+    title: "COVID Genetics · ML"
+    summary: "Genetic-marker classification with ensembles and SHAP explainability."
+    link: "/projects/#covid-19-genetic-classification"
+
+  - sort: 202208p
+    lane: projects
+    start: "2022-08"
+    end: "2022-10"
+    when: "Aug - Oct 2022"
+    title: "Feature API · FastAPI"
+    summary: "Microservice for automated feature engineering at scale."
+    link: "/projects/#ml-feature-engineering-api"
+
+  - sort: 202511
+    lane: honors
+    start: "2025-11"
+    end: "2025-11"
+    when: "Nov 2025"
+    title: "2nd Place @ EIT i-Days"
+    summary: "Nationwide EIT Health i-Days 2025 with HygeIA first-aid / suicide-prevention app."
+    detail:
+      - "11 competing teams · Greece"
+      - "HygeIA mobile app for bystander CPR guidance"
+    link: "/personal/#eit-health-idays-2025-competition"
+    award: "2nd Place"
+
+  - sort: 202510
+    lane: honors
+    start: "2025-10"
+    end: "2025-10"
+    when: "Oct 2025"
+    title: "1st Place @ BR4N.IO ECoG"
+    summary: "Worldwide 1st in Data Analysis — 69 teams, 404 participants, Vienna (IEEE SMC)."
+    detail:
+      - "ECoG video analysis hackathon track"
+    link: "/personal/#ecog-video-analysis-winner"
+    award: "1st Place"
+
+  - sort: 202511p
+    lane: personal
+    start: "2025-11"
+    end: "2025-11"
+    when: "Nov 2025"
+    title: "AI Advanced · HSBC"
+    summary: "HSBC AI Advanced badge — responsible AI, Python/SQL/Git, ML, deep learning, and deployment."
+    detail:
+      - "Data engineering, statistics, and specialisms pathway"
+    link: "/personal/#ai-advanced-hsbc"
+
+  - sort: 202507p
+    lane: personal
+    start: "2025-07"
+    end: "2025-07"
+    when: "Jul 2025"
+    title: "EEBG 2025 · Kraków"
+    summary: "East European Bioinformatics & Genomics Workshop — genomics, metagenomics, and LLMs in bioinformatics."
+    detail:
+      - "Jagiellonian University · QIIME 2, Galaxy, Nanopore, prompt engineering"
+    link: "/personal/#eebg-2025"
+
+  - sort: 202507b
+    lane: personal
+    start: "2025-07"
+    end: "2025-07"
+    when: "Jul 2025"
+    title: "ASPIRE · Growth Mindset"
+    summary: "HSBC ASPIRE certification — growth mindset, IDP, communication, and leadership development."
+    link: "/personal/#aspire-growth-mindset"
+
+  - sort: 202506p
+    lane: personal
+    start: "2025-06"
+    end: "2025-06"
+    when: "Jun 2025"
+    title: "Neural Spike Analysis"
+    summary: "18h iBOTS workshop — spike trains, PSTHs, Poisson modeling, SpikeInterface & Elephant."
+    detail:
+      - "University of Bonn · electrophysiology in Python"
+    link: "/personal/#spike-analysis-python"
+
+  - sort: 202503p
+    lane: personal
+    start: "2025-03"
+    end: "2025-03"
+    when: "Mar 2025"
+    title: "LFP Analysis · Python"
+    summary: "18h iBOTS workshop — local field potentials, wavelets, coherence, Neuropixels data."
+    link: "/personal/#lfp-analysis-python"
+
+  - sort: 202412p
+    lane: personal
+    start: "2024-12"
+    end: "2024-12"
+    when: "Dec 2024"
+    title: "Robust Experiments · PsychoPy"
+    summary: "iBOTS workshop — PsychoPy experiments, Pydantic validation, pytest, mocks & patches."
+    link: "/personal/#building-robust-experiments"
+
+  - sort: 202409p
+    lane: personal
+    start: "2024-09"
+    end: "2024-09"
+    when: "Sep 2024"
+    title: "ANDA-NI Neuroinformatics"
+    summary: "Neuroinformatics workshop — HDF5, NIX, Neo, Git-Annex, DataLad, and open neuroscience data."
+    link: "/personal/#anda-ni-neuroinformatics"
+
+  - sort: 202509
+    lane: publications
+    start: "2025-09"
+    end: "2025-09"
+    when: "Sep 2025"
+    title: "Talk @ HSBC Summer School"
+    summary: "Semi-supervised ML — complaints classification with sentiment analytics."
+    link: "/publications/#hsbc-summer-school-2025"
+
+  - sort: 202508
+    lane: publications
+    start: "2025-08"
+    end: "2025-08"
+    when: "Aug 2025"
+    title: "Webinar @ KLIMAKA"
+    summary: "Internal webinar: AI in psychology, psychotherapy & psychiatry (60+ attendees)."
+    link: "/publications/#klimaka-ai-webinar"
+
+  - sort: 202504
+    lane: volunteering
+    start: "2025-04"
+    end: "2025-04"
+    when: "Apr 2025"
+    title: "Volunteer @ Wheeling2help Vietnam"
+    summary: "Community volunteering in Da Bia, Vietnam."
+    link: "/volunteering/#wheeling2help-vietnam-2025"
+
+  - sort: 202503
+    lane: volunteering
+    start: "2025-03"
+    end: "2025-03"
+    when: "Mar 2025"
+    title: "Job Fair @ UEK (HSBC)"
+    summary: "Represented HSBC at Krakow University of Economics career fair."
+    link: "/volunteering/#uek-job-fair-2025"
+
+  - sort: 202503
+    lane: work
+    start: "2025-03"
+    end: null
+    when: "Mar 2025 - Present"
+    title: "AI Researcher @ KLIMAKA NGO"
+    summary: "Mental-health LLMs, GDPR-safe clinical tools, and suicide-prevention AI (parallel role, remote)."
+    detail:
+      - "Line 1018 clinical support, HygeIA app, Laiko Hospital pilots"
+      - "Internal AI platform and psychiatry congress e-posters"
+    link: "/cv/#klimaka"
+    featured: true
+
+  - sort: 202506
+    lane: education
+    start: "2025-06"
+    end: null
+    when: "Jun 2025 - Present"
+    title: "PhD Bioinformatics @ Ionian University"
+    summary: "Multimodal AI for precision medicine — clinical text, imaging, and omics with explainability."
+    detail:
+      - "Supervisor Andreas Kanavos · Corfu, Greece"
+      - "LLMs + RAG, SHAP/Grad-CAM, few-shot clinical learning"
+    link: "/cv/#phd"
+    featured: true
+
+  - sort: 202501
+    lane: publications
+    start: "2025-01"
+    end: "2025-01"
+    when: "Jan 2025"
+    title: "Talk @ UEK Academy"
+    summary: "Semi-supervised complaints classification — Krakow University of Economics."
+    link: "/publications/#university-academy-2025"
+
+  - sort: 202411
+    lane: work
+    start: "2024-06"
+    end: "2025-11"
+    when: "Jun 2024 - Nov 2025"
+    title: "Data Scientist @ HSBC"
+    summary: "Compliance analytics, GenAI/RAG for investigations, and internal automation tooling."
+    detail:
+      - "50+ QC sessions, GenAI trackers, prompt engineering for RCAS"
+      - "Presentations at UEK Academy and HSBC Summer School"
+    link: "/cv/#hsbc"
+
+  - sort: 202405
+    lane: volunteering
+    start: "2024-05"
+    end: "2024-06"
+    when: "May - Jun 2024"
+    title: "Team Lead @ Erasmus+ Poland"
+    summary: "Erasmus+ youth exchange — team lead role in Poland."
+    link: "/volunteering/#erasmus-youth-exchange-2024"
+
+  - sort: 202405
+    lane: volunteering
+    start: "2024-05"
+    end: "2024-05"
+    when: "May 2024"
+    title: "Volunteer @ Wheeling2help Nepal"
+    summary: "Community volunteering with Wheeling2help in Nepal."
+    link: "/volunteering/#wheeling2help-nepal-2024"
+
+  - sort: 202401
+    lane: volunteering
+    start: "2024-01"
+    end: "2024-01"
+    when: "Jan 2024"
+    title: "Volunteer @ Wheeling2help Kenya"
+    summary: "Community volunteering with Wheeling2help in Kenya."
+    link: "/volunteering/#wheeling2help-kenya-2024"
+
+  - sort: 202401
+    lane: publications
+    start: "2024-06"
+    end: "2024-06"
+    when: "Jun 2024"
+    title: "Paper · Information Fusion"
+    summary: "Multi-source fusion framework for stock selection (journal article)."
+    link: "/publications/#multi-source-fusion-stock-selection"
+
+  - sort: 202401
+    lane: publications
+    start: "2024-03"
+    end: "2024-03"
+    when: "Mar 2024"
+    title: "COVID Tool · BioTech"
+    summary: "Machine-learning web tool for COVID-19 severity prediction (published)."
+    link: "/publications/#covid-19-severity-prediction"
+
+  - sort: 202501c
+    lane: calisthenics
+    start: "2025-01"
+    end: null
+    when: "2025 - Present"
+    title: "Advanced Skills"
+    summary: "Front lever pull-ups and planche progressions — 5-day split, straight-arm focus."
+    detail:
+      - "Tuck planche, front lever pulls, HSPU progressions"
+    link: "/calisthenics/#advanced-skills-2025"
+
+  - sort: 202401c
+    lane: calisthenics
+    start: "2024-01"
+    end: "2024-12"
+    when: "2024"
+    title: "Intermediate · 2024"
+    summary: "Weighted basics, handstand mastery, first weighted muscle-ups — 4 days/week."
+    detail:
+      - "Weighted dips, pull-ups, chin-ups; advanced skill focus"
+    link: "/calisthenics/#intermediate-training-2024"
+
+  - sort: 202301c
+    lane: calisthenics
+    start: "2023-01"
+    end: "2023-12"
+    when: "2023"
+    title: "Intermediate · 2023"
+    summary: "Muscle-ups, front lever, handstand holds, back lever mastered."
+    link: "/calisthenics/#intermediate-training-2023"
+
+  - sort: 202201c
+    lane: calisthenics
+    start: "2022-01"
+    end: "2022-12"
+    when: "2022"
+    title: "Building Foundations"
+    summary: "Pull-ups, dips, push-ups, core — consistent 3-day/week routine."
+    link: "/calisthenics/#building-foundations-2022"
+
+  - sort: 202306
+    lane: volunteering
+    start: "2023-06"
+    end: null
+    when: "Mid 2023 - Present"
+    title: "Supporter @ UNHCR"
+    summary: "Monthly donations to UN Refugee Agency."
+    link: "/volunteering/#unhcr-donations"
+
+  - sort: 202112
+    lane: work
+    start: "2021-12"
+    end: "2024-05"
+    when: "Dec 2021 - May 2024"
+    title: "Automation Specialist @ Uber"
+    summary: "Advanced analytics automation — 25+ projects across NLP, tabular ML, and ops tooling."
+    detail:
+      - "Driver DSAT NLP, restaurant churn models, real-time pipelines"
+      - "Python, SQL, BigQuery, Kafka, internal Uber stack"
+    link: "/cv/#uber"
+
+  - sort: 202109
+    lane: work
+    start: "2021-09"
+    end: "2021-12"
+    when: "Sep - Dec 2021"
+    title: "ML Research @ BRFAA"
+    summary: "Published COVID-19 severity web tool; Parkinson's progression ML with explainability."
+    detail:
+      - "Biomedical Research Foundation, Academy of Athens"
+      - "Peer-reviewed COVID tool + ongoing Parkinson's manuscript"
+    link: "/cv/#brfaa"
+
+  - sort: 202103
+    lane: work
+    start: "2021-03"
+    end: "2021-09"
+    when: "Mar - Sep 2021"
+    title: "Ops Intern @ Uber"
+    summary: "Local Operations intern — rider/driver analytics and fare-estimation optimization in Athens."
+    detail:
+      - "SQL/Python insights for Athens & Thessaloniki markets"
+      - "Taxi fare fraud reduction and UX improvements"
+    link: "/cv/#uber"
+
+  - sort: 202106
+    lane: education
+    start: "2021-06"
+    end: "2021-08"
+    when: "Summer 2021"
+    title: "Neuroscience @ Harvard"
+    summary: "Summer program in Foundations of Neuroscience (remote)."
+    detail:
+      - "Harvard University summer school credential"
+    link: "/cv/#harvard"
+
+  - sort: 202206
+    lane: publications
+    start: "2022-06"
+    end: "2022-06"
+    when: "Jun 2022"
+    title: "MEng Thesis @ NTUA"
+    summary: "fMRI-based dyslexia classification with visual explanations."
+    link: "/publications/#fmri-dyslexia-classification"
+
+  - sort: 202206
+    lane: education
+    start: "2015-09"
+    end: "2022-06"
+    when: "2015 - 2022"
+    title: "Computer Science @ NTUA"
+    bar_label: "2015–2022 · NTUA"
+    summary: "MEng Electrical & Computer Engineering — Computing & Software Systems (GPA 9.1/10, top 5%)."
+    detail:
+      - "Thesis: fMRI dyslexia classification with visual explanations"
+      - "Parallel Finance minor @ Deree (SNF scholarship)"
+    link: "/cv/#ntua"
+
+  - sort: 202406
+    lane: travel
+    start: "2024-06"
+    end: null
+    when: "Jun 2024 - Present"
+    title: "Base · Kraków, Poland"
+    summary: "Living in Kraków — city guides and trips on the travel map."
+    detail:
+      - "Central Europe hub for work and exploration"
+    link: "/travelling/#living-krakow"
+
+  - sort: 202110
+    lane: volunteering
+    start: "2021-01"
+    end: "2023-10"
+    when: "2021 - 2023"
+    title: "Marketing @ CogniHub"
+    summary: "Marketing coordinator for ed-tech NGO."
+    link: "/volunteering/#cognihub-marketing"
+
+  - sort: 202101
+    lane: volunteering
+    start: "2021-01"
+    end: "2021-11"
+    when: "Jan - Nov 2021"
+    title: "R&D @ citycampus.gr"
+    summary: "Research & development specialist for education platform."
+    link: "/volunteering/#citycampus-rd"
+
+  - sort: 201910
+    lane: honors
+    start: "2019-10"
+    end: "2019-10"
+    when: "Oct 2019"
+    title: "2nd Place @ IEEEXtreme 13.0"
+    summary: "Algorithmic programming competition — IEEE NTUA Student Branch."
+    link: "/cv/#honors-awards"
+    award: "2nd Place"
+
+  - sort: 201709
+    lane: honors
+    start: "2017-09"
+    end: "2020-06"
+    when: "2017 - 2020"
+    title: "SNF Scholarship @ Deree"
+    summary: "Stavros Niarchos Foundation scholarship — parallel Finance minor at American College of Greece."
+    detail:
+      - "Finance & data analytics track alongside NTUA"
+    link: "/cv/#deree"
+
+  - sort: 201509
+    lane: honors
+    start: "2015-06"
+    end: "2015-06"
+    when: "Jun 2015"
+    title: "Honorary Award · Greece"
+    summary: "Highest nationwide university entrance exam score — Ministry of Education & Eurobank EFG."
+    link: "/cv/#honors-awards"
+
+  - sort: 201909
+    lane: work
+    start: "2019-09"
+    end: "2019-10"
+    when: "Sep - Oct 2019"
+    title: "DS Intern @ Demokritos"
+    summary: "Alzheimer's classification from Pitt Corpus speech + text (LSTM, CNN, BERT)."
+    detail:
+      - "National Center for Scientific Research Demokritos"
+      - "NLP on imbalanced clinical transcripts"
+    link: "/cv/#demokritos"
+
+  - sort: 201708
+    lane: education
+    start: "2017-09"
+    end: "2020-06"
+    when: "2017 - 2020"
+    title: "Finance Minor @ Deree"
+    bar_label: "2017–2020 · Deree"
+    summary: "Parallel Finance & data analytics minor — American College of Greece (SNF scholarship)."
+    detail:
+      - "GPA 3.82/4.00 · Finance & data analytics track alongside NTUA"
+    link: "/cv/#deree"
+
+  - sort: 201811
+    lane: volunteering
+    start: "2018-11"
+    end: "2018-11"
+    when: "Nov 2018"
+    title: "Volunteer @ Web Summit"
+    summary: "Student volunteer at Web Summit Lisbon."
+    link: "/volunteering/#web-summit-volunteer"
+
+  - sort: 201709
+    lane: volunteering
+    start: "2017-09"
+    end: "2018-04"
+    when: "Sep 2017 - Apr 2018"
+    title: "Outreach @ CanSat Greece"
+    summary: "Contact person for CanSat Greece STEM outreach."
+    link: "/volunteering/#cansat-greece"
+
+  - sort: 201711
+    lane: volunteering
+    start: "2017-11"
+    end: "2018-04"
+    when: "Nov 2017 - Apr 2018"
+    title: "Volunteer @ Job Fair Athens"
+    summary: "Main event projects volunteer — Athens job fair."
+    link: "/volunteering/#job-fair-athens"
+
+  - sort: 201705
+    lane: volunteering
+    start: "2017-05"
+    end: "2017-05"
+    when: "May 2017"
+    title: "Volunteer @ TEDxAthens"
+    summary: "Registration and ticketing volunteer."
+    link: "/volunteering/#tedx-athens"
+
+  - sort: 201612
+    lane: volunteering
+    start: "2016-12"
+    end: "2016-12"
+    when: "Dec 2016"
+    title: "Workshops @ IEEE NTUA"
+    summary: "Arduino workshop organizer — IEEE NTUA Student Branch."
+    link: "/volunteering/#arduino-workshop"
+
+footer_links:
+  - label: "Full CV"
+    url: "/cv/"
+  - label: "Publications"
+    url: "/publications/"
+  - label: "Articles"
+    url: "/articles/"
+  - label: "Projects"
+    url: "/projects/"
+  - label: "Honors & Personal"
+    url: "/personal/"
+  - label: "Volunteering"
+    url: "/volunteering/#volunteering-timeline"

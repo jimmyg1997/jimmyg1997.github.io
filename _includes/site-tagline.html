@@ -1,0 +1,8 @@
+{% assign tagline_primary = include.primary | default: site.tagline.primary %}
+{% assign tagline_secondary = include.secondary | default: site.tagline.secondary %}
+<div class="dg-tagline{% if include.variant %} dg-tagline--{{ include.variant }}{% endif %}">
+  <span class="dg-tagline__primary">{{ tagline_primary }}</span>
+  {% if tagline_secondary %}
+    <span class="dg-tagline__secondary">{{ tagline_secondary }}</span>
+  {% endif %}
+</div>

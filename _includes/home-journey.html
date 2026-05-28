@@ -1,0 +1,59 @@
+{% assign journey = site.data.journey %}
+
+<section class="dg-journey" aria-labelledby="dg-journey-heading">
+  <header class="dg-journey__header">
+    <h2 id="dg-journey-heading" class="dg-journey__title">Journey at a glance</h2>
+    <p class="dg-journey__intro">{{ journey.intro }}</p>
+  </header>
+
+  <div class="dg-journey__filters" role="tablist" aria-label="Highlight content lane">
+    {% for f in journey.filters %}
+      <button
+        type="button"
+        class="dg-journey__filter{% if f.id == 'all' %} is-active{% endif %}"
+        data-journey-filter="{{ f.id }}"
+        role="tab"
+        aria-selected="{% if f.id == 'all' %}true{% else %}false{% endif %}"
+      >{{ f.label }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="dg-journey__chart-panel">
+    <p class="dg-journey__scroll-hint">Scroll &rarr; · gold zone = last 15 months · <strong>hover</strong> = preview card · <strong>click</strong> = full popup</p>
+    <div class="dg-journey__chart-scroll" id="dg-journey-scroll" tabindex="0">
+      <div
+        class="dg-journey__chart"
+        id="dg-journey-chart"
+        data-start-year="{{ journey.chart.start_year }}"
+        data-end-year="{{ journey.chart.end_year }}"
+        aria-label="Timeline by content area"
+      ></div>
+    </div>
+  </div>
+
+  <script src="{{ '/assets/js/travel-posts-data.js' | relative_url }}"></script>
+
+  <div class="dg-journey__modal" id="dg-journey-modal" hidden aria-hidden="true">
+    <div class="dg-journey__modal-backdrop" data-journey-modal-close></div>
+    <div
+      class="dg-journey__modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="dg-journey-modal-title"
+    >
+      <button type="button" class="dg-journey__modal-close" data-journey-modal-close aria-label="Close">&times;</button>
+      <div class="dg-journey__modal-body" id="dg-journey-modal-body"></div>
+    </div>
+  </div>
+
+  <script type="application/json" id="dg-journey-data">
+    {"chart":{{ journey.chart | jsonify }},"lanes":{{ journey.lanes | jsonify }},"milestones":{{ journey.milestones | jsonify }},"snippets":{{ site.data.journey_snippets | jsonify }}}
+  </script>
+
+  <footer class="dg-journey__footer">
+    {% for link in journey.footer_links %}
+      <a class="dg-journey__footer-link" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+    {% endfor %}
+    <a class="dg-journey__footer-link" href="{{ '/travelling/' | relative_url }}">Travelling</a>
+  </footer>
+</section>

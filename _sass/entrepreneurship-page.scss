@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/* Entrepreneurship page — ventures (Roomatos, hygeIA) */
+
+body.dg-page-entrepreneurship {
+  --dg-e-primary: #047857;
+  --dg-e-primary-dark: #065f46;
+  --dg-e-primary-light: #10b981;
+  --dg-e-muted: #ecfdf5;
+  --dg-e-border: #a7f3d0;
+  --dg-e-heading: #064e3b;
+
+  .page__content h2 {
+    color: var(--dg-e-heading) !important;
+    border-bottom-color: #d1fae5 !important;
+    border-top-color: #d1fae5 !important;
+  }
+
+  .page__content h2::after {
+    background: linear-gradient(90deg, var(--dg-e-primary-dark), var(--dg-e-primary-light)) !important;
+  }
+
+  .page__content h3 {
+    font-family: var(--font-sans) !important;
+    color: var(--dg-e-heading) !important;
+  }
+
+  .page__content h4 {
+    font-family: var(--font-sans) !important;
+  }
+
+  .toc__menu a.active {
+    color: var(--dg-e-primary-dark) !important;
+    background: rgba(5, 150, 105, 0.1) !important;
+    border-left-color: var(--dg-e-primary) !important;
+  }
+
+  .toc__menu a:hover {
+    color: var(--dg-e-primary) !important;
+  }
+}
+
+.dg-entrepreneurship-intro {
+  margin: 0.75rem 0 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, var(--dg-e-muted, #ecfdf5) 0%, #fff 65%);
+  border: 1px solid var(--dg-e-border, #a7f3d0);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.06);
+
+  p {
+    margin: 0;
+    font-size: var(--text-base, 1rem);
+    line-height: 1.75;
+    color: #334155;
+  }
+}
+
+.dg-entrepreneurship-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 0 0 2rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dg-entrepreneurship-stat {
+  text-align: center;
+  padding: 1rem 0.75rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  border-top: 3px solid var(--dg-e-primary, #047857);
+}
+
+.dg-entrepreneurship-stat__value {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--text-md, 1.125rem);
+  font-weight: 700;
+  color: var(--dg-e-primary, #047857);
+  margin: 0.25rem 0;
+  line-height: 1.2;
+}
+
+.dg-entrepreneurship-stat__label {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.dg-entrepreneurship-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem 0 2.5rem;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dg-venture-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem 1.6rem 1.6rem;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+  border-top: 4px solid var(--dg-e-primary, #047857);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 22px rgba(5, 150, 105, 0.1);
+    border-color: #6ee7b7;
+  }
+
+  h3 {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-md, 1.125rem) !important;
+    font-weight: 600 !important;
+    color: var(--dg-e-heading, #064e3b) !important;
+    margin: 0 0 0.2rem !important;
+    line-height: 1.35 !important;
+  }
+
+  h4 {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-sm, 0.875rem) !important;
+    font-weight: 600 !important;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--dg-e-heading, #064e3b) !important;
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  p {
+    font-size: var(--text-sm, 0.875rem);
+    line-height: 1.7;
+    color: #475569;
+    margin: 0.5rem 0;
+  }
+
+  ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.15rem;
+
+    li {
+      font-size: var(--text-sm, 0.875rem);
+      line-height: 1.65;
+      color: #475569;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  a:not(.btn) {
+    color: var(--dg-e-primary, #047857);
+    font-weight: 500;
+  }
+}
+
+.dg-venture-card--health {
+  border-top-color: #0d9488;
+
+  .dg-venture-card__period,
+  .dg-venture-card__market {
+    background: #fff;
+    border-color: #99f6e4;
+    color: #0f766e;
+  }
+
+  .dg-venture-card__note {
+    background: #fff;
+    border: 1px solid #ccfbf1;
+    border-left: 3px solid #0d9488;
+  }
+
+  .dg-venture-card__stack {
+    background: #fff;
+    border: 1px solid #e8e8e4;
+  }
+}
+
+.dg-venture-card__header--hygeia {
+  align-items: flex-start;
+}
+
+.dg-venture-card__brand--hygeia {
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.dg-venture-card__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dg-venture-card__tagline--hygeia {
+  font-size: 0.9375rem !important;
+  color: #334155 !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+  max-width: none;
+}
+
+.dg-venture-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.dg-venture-card__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.dg-venture-card__logo {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.dg-venture-card__logo--hygeia {
+  height: 56px;
+  max-width: 200px;
+  flex-shrink: 0;
+}
+
+.dg-venture-card__logo-placeholder {
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #0d9488, #047857);
+  border-radius: 10px;
+  letter-spacing: -0.02em;
+}
+
+.dg-venture-card__tagline {
+  font-size: 0.8125rem !important;
+  color: #64748b !important;
+  margin: 0 !important;
+}
+
+.dg-venture-card__status {
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  background: var(--dg-e-muted, #ecfdf5);
+  color: var(--dg-e-primary-dark, #065f46);
+  border: 1px solid var(--dg-e-border, #a7f3d0);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dg-venture-card__status--health {
+  background: #f0fdfa;
+  color: #0f766e;
+  border-color: #99f6e4;
+  white-space: normal;
+  line-height: 1.45;
+  max-width: 10rem;
+  text-align: right;
+}
+
+.dg-venture-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.dg-venture-card__period,
+.dg-venture-card__market {
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #64748b;
+}
+
+.dg-venture-card__lead {
+  font-size: 0.9375rem !important;
+  color: #334155 !important;
+}
+
+.dg-venture-card__note {
+  padding: 0.65rem 0.85rem;
+  background: #f8fafc;
+  border-left: 3px solid var(--dg-e-primary-light, #10b981);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.8125rem !important;
+}
+
+.dg-venture-card__stack {
+  margin-top: 1rem !important;
+  padding: 0.65rem 0.85rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-size: 0.8125rem !important;
+  color: #64748b !important;
+
+  b {
+    font-family: var(--font-mono, "JetBrains Mono", monospace);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dg-e-primary-dark, #065f46);
+  }
+}
+
+.dg-venture-card__media {
+  margin: 1.25rem 0 0.5rem;
+  text-align: center;
+}
+
+.dg-venture-card__media-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dg-venture-card__media-caption {
+  font-size: 0.75rem !important;
+  color: #94a3b8 !important;
+  margin-top: 0.5rem !important;
+}
+
+.dg-venture-card__media--hygeia {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ecfdf5;
+
+  .dg-venture-card__media-img {
+    max-width: 480px;
+    background: #fff;
+    border: 1px solid #ccfbf1;
+    box-shadow: none;
+  }
+
+  .dg-venture-card__media-caption {
+    color: #0f766e !important;
+    font-family: var(--font-mono, "JetBrains Mono", monospace);
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.dg-venture-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+
+  .btn--primary {
+    background: var(--dg-e-primary, #047857);
+    border-color: var(--dg-e-primary, #047857);
+    border-radius: 6px;
+  }
+
+  .btn--primary:hover {
+    background: var(--dg-e-primary-dark, #065f46);
+    border-color: var(--dg-e-primary-dark, #065f46);
+  }
+}
+
+.dg-entrepreneurship-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.dg-entrepreneurship-principle {
+  padding: 1.15rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  h4 {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-md, 1.125rem) !important;
+    font-weight: 600 !important;
+    color: var(--dg-e-heading, #064e3b) !important;
+    margin: 0 0 0.4rem !important;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: #64748b;
+  }
+}
+
+@media (max-width: 640px) {
+  .dg-venture-card__header--hygeia {
+    flex-direction: column;
+  }
+
+  .dg-venture-card__status--health {
+    max-width: none;
+    text-align: left;
+  }
+
+  .dg-venture-card__logo--hygeia {
+    height: 48px;
+    max-width: 170px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dg-venture-card:hover {
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+  }
+}

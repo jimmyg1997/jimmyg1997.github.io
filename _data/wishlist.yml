@@ -94,6 +94,15 @@
   bought: false
   image: "../assets/images/wishlist/foam-roller.png"
 
+- name: "Google Fitbit Air (Obsidian) + Sport Band L"
+  price_range: "~€145"
+  category: fitness
+  description: "Screenless activity tracker with 24/7 heart rate, Google Health coaching — on my buy list (todo)"
+  link: "https://www.amazon.de/Google-Fitbit-Aktivit%C3%A4tstracker-Fitness-Tracking-Herzfrequenzmessung-Obsidian/dp/B0GY1QBQPS"
+  image: "../assets/images/wishlist/fitbit-air-obsidian-band.png"
+  bought: false
+  date_added: "2026-06"
+
 - name: "Drone"
   price_range: "$270"
   category: tech
@@ -170,6 +179,15 @@
   bought: true
   date_bought: "2025-09"
   image: "../assets/images/wishlist/cursor-pro.png"
+
+- name: "JCPal JetSync Magnetic USB-C SSD 512GB"
+  price_range: "~469 PLN / ~€110"
+  category: tech
+  description: "MagSafe-mountable portable NVMe SSD (10 Gb/s) for iPhone 4K ProRes and Mac — bought for myself"
+  link: "https://ispot.pl/jcpal-jetsync-magnetic-usb-c-ssd-512gb-ssd-dysk-zewnetrzny"
+  image: "../assets/images/wishlist/jcpal-jetsync-ssd-512gb.png"
+  bought: true
+  date_bought: "2026-06"
 
 - name: "Bag Hangers"
   price_range: "$8 - $10"

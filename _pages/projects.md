@@ -18,6 +18,23 @@ excerpt: "Machine Learning & Data Science Portfolio"
 
 ## Healthcare & AI Research Projects {#healthcare-ai-research-projects}
 
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/greek-clinical-agent-lab.png" alt="Greek Clinical Agent Lab — framework comparison report dashboard" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="greek-clinical-agent-lab">Greek Clinical Agent Lab</h3>
+    <p><strong>Purpose:</strong> Controlled research lab comparing <strong>AutoGen</strong>, <strong>LangGraph</strong>, and <strong>CrewAI</strong> on Greek mental-health helpline audio — same Whisper transcript, same clinical safety rules, measured side-by-side.</p>
+    <p><strong>Architecture:</strong> ASR-first pipeline with local <code>faster-whisper</code> (frozen transcript shared by all frameworks) → parallel agent orchestration → rule-based clinical enrichment (C-SSRS-style risk flags, evidence spans, hallucination guard, de-identification) → live comparison dashboard with exportable reports.</p>
+    <p><strong>Results (sample session, ~13 min Greek audio):</strong> Whisper <code>large-v2</code> WER <strong>9.8%</strong> vs human gold · LangGraph orchestration <strong>2.65s</strong> (fastest) · AutoGen <strong>4.21s</strong> with 100% entity F1 · CrewAI <strong>19.5s</strong> with 4-role crew · all three agreed on supervisor review for active ideation.</p>
+    <p><strong>Note:</strong> Educational research prototype — not for clinical deployment. Built to explore agent orchestration where mistakes matter, on anonymized helpline-style audio (ΚΛΙΜΑΚΑ domain).</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python 3.12, FastAPI, faster-whisper, OpenAI (NER only), AutoGen, LangGraph, CrewAI, Grafana/Prometheus/Loki, vanilla JS dashboard</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/greek-clinical-agent-lab" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
+    </div>
+  </div>
+</div>
+
 <style>
 .project-gallery {
   position: relative;
@@ -169,6 +186,21 @@ excerpt: "Machine Learning & Data Science Portfolio"
 </div>
 
 ## Data Science & Automation Projects {#data-science-automation-projects}
+
+<div class="project-card full-width">
+  <div class="project-image-wrapper">
+    <img src="/assets/images/projects/yt-notebooklm-obsidian.png" alt="YouTube to NotebookLM to Obsidian — vault dashboard graph view" class="project-main-image">
+  </div>
+  <div class="project-content">
+    <h3 id="yt-notebooklm-obsidian">YouTube → NotebookLM → Obsidian</h3>
+    <p><strong>Purpose:</strong> End-to-end automation that turns any YouTube playlist or channel into searchable, linked Obsidian notes — with summaries, key ideas, wikilinks, and optional NotebookLM artifacts (audio overview, mind map, quiz, flashcards).</p>
+    <p><strong>Features:</strong> Resume-safe pipeline (<code>--resume</code>, <code>--update</code>), Greek/English subtitle support, local vault dashboard with topic sync and scoped graph views, and single-video ingest from the browser UI.</p>
+    <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, OpenAI / Gemini, NotebookLM, Obsidian Markdown, Playwright, pytest</p>
+    <div class="project-links">
+      <a href="https://github.com/jimmyg1997/yt-notebooklm-obsidian" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
+    </div>
+  </div>
+</div>
 
 <div class="project-card full-width">
   <div class="project-image-wrapper">

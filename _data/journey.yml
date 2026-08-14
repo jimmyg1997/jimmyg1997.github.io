@@ -101,6 +101,17 @@ milestones:
       - "Alexandroupoli · KLIMAKA NGO"
     link: "/publications/#klimaka-34th-psychiatry-congress"
 
+  - sort: 202606
+    lane: articles
+    start: "2026-06"
+    end: "2026-06"
+    when: "Jun 2026"
+    title: "Healthcare AI · Part 3"
+    summary: "Interactive clinical agent benchmarks — EHR navigation to psychiatric empathy."
+    detail:
+      - "MedAgentBench, AgentClinic, PsychiatryBench, PsychBench"
+    link: "/articles/#healthcare-ai-lit-part-3"
+
   - sort: 202604
     lane: articles
     start: "2026-04"
@@ -152,6 +163,32 @@ milestones:
       - "Krakow, Poland — full ML lifecycle from data to deployment"
       - "LLMs, semantic search, distributed training, MLOps"
     link: "/cv/#grid-dynamics"
+    featured: true
+
+  - sort: 202607p
+    lane: projects
+    start: "2026-07"
+    end: "2026-07"
+    when: "Jul 2026"
+    title: "YouTube → NotebookLM → Obsidian"
+    summary: "Playlist-to-vault pipeline with enrichment, NotebookLM artifacts, and a local dashboard for graph/topic exploration."
+    detail:
+      - "Python pipeline: transcripts → OpenAI enrichment → Obsidian notes"
+      - "Vault dashboard with ingest, topic sync, bilingual UI"
+    link: "/projects/#yt-notebooklm-obsidian"
+    featured: true
+
+  - sort: 202606p
+    lane: projects
+    start: "2026-06"
+    end: "2026-06"
+    when: "Jun 2026"
+    title: "Greek Clinical Agent Lab"
+    summary: "AutoGen vs LangGraph vs CrewAI on Greek helpline audio — shared Whisper ASR, clinical safety rules, live dashboard."
+    detail:
+      - "Controlled benchmark: one frozen transcript, three frameworks"
+      - "WER 9.8% · LangGraph 2.65s · rule-based risk & evidence spans"
+    link: "/projects/#greek-clinical-agent-lab"
     featured: true
 
   - sort: 202601p

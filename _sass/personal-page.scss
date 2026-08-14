@@ -55,15 +55,9 @@ body.dg-page-personal .stat-card:hover {
   margin: 1rem 0 2rem;
 }
 
-.dg-personal-grid--competitions {
-  grid-template-columns: 1fr;
-
-  @media (min-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-  }
-}
-
+/* Card grids — single column (sequential) throughout personal page */
+.dg-personal-grid,
+.dg-personal-grid--competitions,
 .dg-personal-grid--workshops {
   grid-template-columns: 1fr;
 }

@@ -26,23 +26,24 @@ header:
 ## Professional Experience
 
 ### Senior Machine Learning Engineer {#grid-dynamics}
+<div class="cv-role cv-role--compact" id="grid-dynamics-role">
 <div class="cv-company-row">
   <img src="/assets/logos/grid-dynamics-logo.png" alt="Grid Dynamics Logo" class="cv-logo">
   <span><em>Grid Dynamics</em></span>
 </div>
 <span style="color:#555; font-size:0.97em;">Dec 2025 - Present | Krakow, Poland</span>
-<p><em>Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on enabling LLMs and advanced ML workflows.</em></p>
-<ul id="grid-dynamics-summary">
-  <li>Architect and implement scalable ML infrastructure and tooling to support the full ML lifecycle — from data ingestion and preprocessing, through training/fine-tuning/evaluation, to deployment and monitoring. Build production-ready ML services: clean, maintainable and scalable codebases, API endpoints, model serving, CI/CD pipelines and deployment to cloud or containerized environments.</li>
-  <li>Collaborate with stakeholders (product managers, architects, domain experts) to translate business requirements into ML/AI solutions — including LLM-based features, semantic search, RAG pipelines, and custom model workflows. Optimize model performance and compute efficiency, including distributed training, batch & streaming data pipelines, resource utilization, latency, and reliability for ML workloads.</li>
-</ul>
-<ul id="grid-dynamics-details" style="display:none;">
-  <li>Provide technical leadership, mentor peers, contribute to architectural decisions, code reviews, standards and best practices for ML engineering across the team. Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.</li>
+<p><em>Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on LLMs, computer vision, and advanced ML workflows.</em></p>
+<ul>
+  <li><strong>Wandelbots Project (Feb 2026 – Jun 2026):</strong> Collaborated with a cross-functional team to build an end-to-end robotic inspection system on the Wandelbots NOVA platform; leveraged SAM3 (zero-shot segmentation), RGBTrack/FoundationPose (6-DoF pose estimation), and DINOv2 alongside classical CV techniques across factory use cases (screwboard, rubber mat, control box/cables), achieving sub-millimetre accuracy in physical LAB conditions.</li>
+  <li>Architect scalable ML infrastructure and production-ready services covering the full lifecycle — data ingestion, training/fine-tuning, deployment, and monitoring — with API endpoints, model serving, and CI/CD pipelines on GCP/AWS.</li>
+  <li>Collaborate with stakeholders to deliver ML/AI solutions (LLM features, RAG pipelines, semantic search); provide technical leadership through architectural decisions, code reviews, and mentoring.</li>
+  <li>Optimize model performance and compute efficiency, including distributed training, batch &amp; streaming data pipelines, resource utilization, latency, and reliability for ML workloads.</li>
+  <li>Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.</li>
   <li>Experiment with cutting-edge ML/AI, including generative AI/LLMs, modern architectures and tooling — contributing to innovation, proofs-of-concept (PoCs), and future roadmap of the company's AI capabilities.</li>
 </ul>
-<span class="cv-expand-link" onclick="toggleCvDetails('grid-dynamics')" id="grid-dynamics-toggle">Expand</span>
-<div class="cv-meta"><span class="cv-meta__label">Skills</span><span class="cv-meta__value">Machine Learning Engineering, LLMs, RAG Systems, Semantic Search, MLOps, Distributed Training, Model Serving, CI/CD, Technical Leadership, Prompt Engineering</span></div>
-<div class="cv-meta"><span class="cv-meta__label">Tech Stack</span><span class="cv-meta__value">Python, SQL (BigQuery, PostgreSQL, MySQL), Apache Spark, PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Cloud Platforms (GCP, AWS), Docker, API Development, Data Pipelines, Model Deployment</span></div>
+<div class="cv-meta"><span class="cv-meta__label">Skills</span><span class="cv-meta__value">Machine Learning Engineering, Computer Vision, Robotics, LLMs, RAG Systems, Semantic Search, MLOps, Pose Estimation, Model Serving, CI/CD, Technical Leadership, Prompt Engineering</span></div>
+<div class="cv-meta"><span class="cv-meta__label">Tech Stack</span><span class="cv-meta__value">Python, PyTorch, SAM3, DINOv2, FoundationPose, RGBTrack, OpenCV, SQL (BigQuery, PostgreSQL), Apache Spark, TensorFlow, Scikit-learn, Wandelbots NOVA, NLP, GCP, AWS, Docker, Kubernetes, API Development, CI/CD, Data Pipelines</span></div>
+</div>
 
 ### AI Researcher for Mental Health Projects {#klimaka}
 <div class="cv-company-row">
@@ -581,20 +582,6 @@ header:
 </div>
 
 <script>
-function toggleCvDetails(id) {
-  const details = document.getElementById(id + '-details');
-  const toggle = document.getElementById(id + '-toggle');
-  if (details && toggle) {
-    if (details.style.display === 'none') {
-      details.style.display = 'block';
-      toggle.textContent = 'Collapse';
-    } else {
-      details.style.display = 'none';
-      toggle.textContent = 'Expand';
-    }
-  }
-}
-
 function parseIssuedDateFromCard(card) {
   const text = card.textContent || '';
   const match = text.match(/Issued\s+([A-Za-z]+)\s+(\d{4})/i);

@@ -8,11 +8,11 @@ header:
   overlay_color: "#001f3f"
   overlay_filter: "0.5"
   overlay_image: /assets/images/travel-header.png
-excerpt: "Thoughts, reflections, and insights on life, travel, growth, and everything in between"
+excerpt: "Healthcare AI research, travel essays, and personal reflections on life, purpose, and the journey between places"
 ---
 
 <div class="articles-intro">
-  <p>Welcome to my articles section. Here I share personal reflections, travel stories, life lessons, and thoughts on growth, purpose, and the journey of living between places. Each article is available on both Substack and LinkedIn.</p>
+  <p>Welcome to my articles section. I share healthcare AI literature syntheses, travel essays, and personal reflections on life, purpose, and living between places. Most pieces are on Substack and LinkedIn.</p>
   <div class="articles-social-links">
     <a href="https://substack.com/@dimitriosgeorgiou2" target="_blank" class="social-link substack-link">
       <span class="social-icon">📰</span>
@@ -32,15 +32,15 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
 <!-- Tag Filter -->
 <div class="articles-filter">
   <button class="filter-btn active" data-filter="all">All Articles</button>
-  <button class="filter-btn" data-filter="reflection">Reflection</button>
+  <button class="filter-btn" data-filter="healthcare-ai">Healthcare AI</button>
   <button class="filter-btn" data-filter="travel">Travel</button>
-  <button class="filter-btn" data-filter="growth">Growth</button>
-  <button class="filter-btn" data-filter="life">Life</button>
+  <button class="filter-btn" data-filter="reflection">Reflection</button>
+  <button class="filter-btn" data-filter="personal">Personal</button>
 </div>
 
 <div class="articles-stats" aria-label="Articles overview">
   <div class="articles-stat">
-    <span class="articles-stat-value" id="articlesStatCount">4</span>
+    <span class="articles-stat-value" id="articlesStatCount">5</span>
     <span class="articles-stat-label">Articles</span>
   </div>
   <div class="articles-stat">
@@ -52,7 +52,7 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     <span class="articles-stat-label">Topics</span>
   </div>
   <div class="articles-stat">
-    <span class="articles-stat-value" id="articlesStatReadTime"><span id="articlesStatReadNum">25</span><span class="articles-stat-unit"> min</span></span>
+    <span class="articles-stat-value" id="articlesStatReadTime"><span id="articlesStatReadNum">31</span><span class="articles-stat-unit"> min</span></span>
     <span class="articles-stat-label">Total read time</span>
   </div>
 </div>
@@ -62,13 +62,81 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
   <h2 class="section-title">All Articles</h2>
   <div class="articles-grid" id="articlesGrid">
     
+    <!-- Healthcare AI Part 3 -->
+    <article class="article-card" id="healthcare-ai-lit-part-3" data-tags="healthcare-ai" data-article-id="healthcare-ai-lit-part-3" data-sort="202606">
+      <div class="article-card-header">
+        <div class="article-tags">
+          <span class="article-tag tag-healthcare-ai">Healthcare AI</span>
+        </div>
+        <span class="article-date">Jun 2026</span>
+      </div>
+      <h3 class="article-title">Healthcare AI | Literature Research Synthesis | Part 3</h3>
+      <div class="article-meta">
+        <span class="article-read-time">6 min read</span>
+      </div>
+      <p class="article-excerpt">Static medical exams miss what real care demands: navigating messy EHRs, requesting the right imaging, and sequential clinical reasoning. From MedAgentBench to PsychBench — a tour of interactive agent benchmarks measuring true clinical utility.</p>
+      <button class="expand-btn" onclick="toggleExpand('healthcare-ai-lit-part-3')" id="expand-btn-healthcare-ai-lit-part-3" type="button">
+        <span>📖</span>
+        <span>Read Article</span>
+      </button>
+      <div class="article-actions-compact">
+        <select class="voice-select-small" id="voice-select-healthcare-ai-lit-part-3">
+          <option value="">Select Voice</option>
+        </select>
+        <div class="speed-control">
+          <label for="speed-slider-healthcare-ai-lit-part-3" class="speed-label">Speed:</label>
+          <input type="range" class="speed-slider" id="speed-slider-healthcare-ai-lit-part-3" min="0.5" max="2.0" step="0.1" value="1.0">
+          <span class="speed-value" id="speed-value-healthcare-ai-lit-part-3">1.0x</span>
+        </div>
+        <button class="speech-btn-small" onclick="toggleSpeech('healthcare-ai-lit-part-3')" id="speech-btn-healthcare-ai-lit-part-3">
+          <span>🔊</span>
+          <span>Listen</span>
+        </button>
+      </div>
+      <div class="article-body" id="article-body-healthcare-ai-lit-part-3">
+        <div class="article-content article-content-collapsed" id="article-content-healthcare-ai-lit-part-3">
+          <p><strong>[Healthcare AI | Literature Research Synthesis | Part 3]</strong></p>
+          <p><strong>From EHR Navigation to Empathy: A New Era of Medical AI Benchmarking.</strong> We often obsess over whether an AI can pass a medical exam, but real-world clinical care is not a multiple-choice test. It requires interacting with patients, navigating messy EHRs, and sequential reasoning. Here is how we evaluate autonomous AI agents today.</p>
+          <p><strong>🏥 General Medicine &amp; EHR Navigation:</strong></p>
+          <ul>
+            <li><strong>MedAgentBench (Stanford):</strong> Tests LLMs on a FHIR-compliant EHR (300 tasks, 100 patient profiles, &gt;700k records) to query patient data and handle multi-step workflows [1].</li>
+            <li><strong>AgentClinic:</strong> Simulates 9 medical specialties where agents actively request multimodal data like EKGs, MRIs, and X-rays [2].</li>
+            <li><strong>HealthBench:</strong> Evaluates agents across thousands of open-ended medical and triage conversations.</li>
+            <li><strong>AgentRx:</strong> Evaluates single and collaborative agents on multimodal clinical risk prediction using fragmented, temporal EHR data, clinical notes, and imaging.</li>
+          </ul>
+          <p><strong>🧠 Specialized Psychiatry Benchmarks:</strong></p>
+          <ul>
+            <li><strong>PsychiatryBench:</strong> Built from foundational texts (DSM-5-TR, Stahl's) to test complex psychiatric reasoning and treatment planning [3].</li>
+            <li><strong>MentalBench-10:</strong> Focuses deeply on affective alignment and empathy in conversational mental healthcare.</li>
+            <li><strong>PsychBench:</strong> An epidemiological audit evaluating 28,800 LLM-generated profiles across 120 intersectional demographic cohorts to test population-level validity and stereotype rigidity [4].</li>
+          </ul>
+          <p>My perspective: Building AI that "knows" the answer is only half the battle. The true frontier is developing agents that know how to safely navigate noisy EHRs, ask the right sequential questions, and demonstrate true epidemiological fidelity.</p>
+          <p><strong>Sources:</strong><br>
+          [1] Jiang et al. (2025). MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents. <a href="https://lnkd.in/dFQZZfUQ" target="_blank" rel="noopener">lnkd.in/dFQZZfUQ</a><br>
+          [2] Schmidgall et al. (2024). AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments. <a href="https://lnkd.in/dkqfch4X" target="_blank" rel="noopener">lnkd.in/dkqfch4X</a><br>
+          [3] Fouda et al. (2026). A Multi-Task Benchmark for LLMs in Psychiatry. <a href="https://lnkd.in/dNB5qNDe" target="_blank" rel="noopener">lnkd.in/dNB5qNDe</a><br>
+          [4] Keough (2026). PsychBench: Auditing Epidemiological Fidelity in Large Language Model Mental Health Simulations. <a href="https://lnkd.in/dxbm3M5A" target="_blank" rel="noopener">lnkd.in/dxbm3M5A</a>
+          </p>
+        </div>
+      </div>
+      <div class="article-links">
+        <a href="https://dgeorgiou.substack.com/p/from-ehr-navigation-to-empathy-a" target="_blank" class="article-link substack" rel="noopener">
+          <span>📰</span>
+          <span>Substack</span>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7470014332806979584/" target="_blank" class="article-link linkedin" rel="noopener">
+          <span>💼</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </article>
+
     <!-- Iceland -->
-    <article class="article-card" id="iceland-fire-and-ice" data-tags="travel reflection life" data-article-id="iceland-fire-and-ice" data-sort="202604">
+    <article class="article-card" id="iceland-fire-and-ice" data-tags="travel reflection" data-article-id="iceland-fire-and-ice" data-sort="202604">
       <div class="article-card-header">
         <div class="article-tags">
           <span class="article-tag tag-travel">Travel</span>
           <span class="article-tag tag-reflection">Reflection</span>
-          <span class="article-tag tag-life">Life</span>
         </div>
         <span class="article-date">Apr 2026</span>
       </div>
@@ -114,12 +182,11 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     </article>
 
     <!-- Article 1 -->
-    <article class="article-card" id="new-year-reflection" data-tags="reflection life growth" data-article-id="new-year-reflection" data-sort="202601">
+    <article class="article-card" id="new-year-reflection" data-tags="reflection personal" data-article-id="new-year-reflection" data-sort="202601">
       <div class="article-card-header">
         <div class="article-tags">
           <span class="article-tag tag-reflection">Reflection</span>
-          <span class="article-tag tag-life">Life</span>
-          <span class="article-tag tag-growth">Growth</span>
+          <span class="article-tag tag-personal">Personal</span>
         </div>
         <span class="article-date">Jan 2026</span>
       </div>
@@ -214,10 +281,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     </article>
 
     <!-- Article 2 -->
-    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-1" data-sort="202602">
+    <article class="article-card" data-tags="healthcare-ai" data-article-id="healthcare-ai-lit-part-1" data-sort="202602">
       <div class="article-card-header">
         <div class="article-tags">
-          <span class="article-tag tag-growth">Growth</span>
+          <span class="article-tag tag-healthcare-ai">Healthcare AI</span>
         </div>
         <span class="article-date">Feb 2026</span>
       </div>
@@ -285,10 +352,10 @@ excerpt: "Thoughts, reflections, and insights on life, travel, growth, and every
     </article>
 
     <!-- Article 3 -->
-    <article class="article-card" data-tags="growth" data-article-id="healthcare-ai-lit-part-2" data-sort="202603">
+    <article class="article-card" data-tags="healthcare-ai" data-article-id="healthcare-ai-lit-part-2" data-sort="202603">
       <div class="article-card-header">
         <div class="article-tags">
-          <span class="article-tag tag-growth">Growth</span>
+          <span class="article-tag tag-healthcare-ai">Healthcare AI</span>
         </div>
         <span class="article-date">Mar 2026</span>
       </div>
@@ -512,56 +579,93 @@ body.article-modal-open {
 .articles-social-links {
   display: flex;
   justify-content: center;
-  gap: 0.6rem;
+  align-items: center;
+  gap: 0.75rem;
   flex-wrap: wrap;
+  margin-top: 0.25rem;
 }
 
 .articles-social-links .social-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0;
+  min-height: 0;
+  flex-shrink: 0;
+  padding: 0.625rem 1.25rem;
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.875rem;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid transparent !important;
+  background: #fff;
+  box-shadow: none;
+}
+
+.articles-social-links .social-link:hover {
+  transform: translateY(-1px);
+  background: inherit;
+}
+
+.articles-social-links .social-link .social-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .articles-social-links .substack-link {
   background: linear-gradient(135deg, #ff6719 0%, #ff8533 100%);
-  color: white;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.articles-social-links .substack-link *,
+.articles-social-links .substack-link:hover * {
+  color: #fff !important;
+  background: transparent !important;
 }
 
 .articles-social-links .substack-link:hover {
-  transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(255, 103, 25, 0.25);
 }
 
 .articles-social-links .linkedin-link {
   background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
-  color: white;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.articles-social-links .linkedin-link *,
+.articles-social-links .linkedin-link:hover * {
+  color: #fff !important;
+  background: transparent !important;
 }
 
 .articles-social-links .linkedin-link:hover {
-  transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0, 119, 181, 0.25);
 }
 
 .articles-social-links .x-link {
   background: linear-gradient(135deg, #000000 0%, #343a40 100%);
-  color: white;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.articles-social-links .x-link *,
+.articles-social-links .x-link:hover * {
+  color: #fff !important;
+  background: transparent !important;
 }
 
 .articles-social-links .x-link:hover {
-  transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-}
-
-.social-icon {
-  font-size: 1.125rem;
 }
 
 /* Filter Buttons */
@@ -696,6 +800,12 @@ body.article-modal-open {
   letter-spacing: 0.3px;
 }
 
+.tag-healthcare-ai {
+  background: linear-gradient(135deg, #e8f4f8 0%, #cce7ef 100%);
+  color: #0b5f73;
+  border: 1px solid rgba(11, 95, 115, 0.2);
+}
+
 .tag-reflection {
   background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
   color: #1565C0;
@@ -708,16 +818,10 @@ body.article-modal-open {
   border: 1px solid rgba(230, 81, 0, 0.2);
 }
 
-.tag-growth {
-  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
-  color: #7b1fa2;
-  border: 1px solid rgba(123, 31, 162, 0.2);
-}
-
-.tag-life {
-  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-  color: #2e7d32;
-  border: 1px solid rgba(46, 125, 50, 0.2);
+.tag-personal {
+  background: linear-gradient(135deg, #f5f0e8 0%, #e8dfd0 100%);
+  color: #5c4d3c;
+  border: 1px solid rgba(92, 77, 60, 0.2);
 }
 
 .article-date {

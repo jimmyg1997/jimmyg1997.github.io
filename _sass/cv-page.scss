@@ -283,6 +283,27 @@
     margin-top: 0.25rem;
   }
 
+  .cv-role--compact {
+    p,
+    li,
+    .cv-meta__value {
+      font-size: 0.8125rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .cv-meta__label {
+      font-size: 0.6875rem !important;
+    }
+
+    ul {
+      margin-bottom: 0.5rem !important;
+    }
+
+    li {
+      margin-bottom: 0.35rem !important;
+    }
+  }
+
   .cv-company-row {
     display: flex;
     align-items: center;
@@ -464,22 +485,6 @@
     max-width: 180px !important;
   }
 
-  .cv-expand-link {
-    color: var(--primary);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: var(--text-sm);
-    display: inline-block;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    transition: color 0.2s ease;
-  }
-
-  .cv-expand-link:hover {
-    color: var(--primary-dark);
-  }
 
   a {
     color: var(--primary) !important;

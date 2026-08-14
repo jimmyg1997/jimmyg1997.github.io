@@ -1,16 +1,16 @@
 {
   "/entrepreneurship/#hygeia": {
     "paragraphs": [
-      "Voice-first bystander CPR & first aid",
-      "hygeIA turns a panicked bystander into a guided first responder during cardiac arrest — in Greek, hands on the chest, not on the screen . Medical steps come only from hardcoded ERC 2025 protocols; a Greek LLM (Meltemi) classifies voice intent, never generates clinical advice.",
-      "Born from our EIT Health i-Days 2025 team project (2nd place nationwide); the product evolved into a full emergency CPR experience with offline-first architecture."
+      "The Uber of First Aid — workplace SOS · AI · compliance",
+      "hygeIA is an end-to-end workplace emergency platform for Greece — one SOS tap logs GPS, alerts the floor, occupational physician, and manager in under 10 seconds, then opens real-time Greek voice guidance through ERC 2025 protocols. Medical steps come only from a hardcoded protocol engine; Meltemi classifies voice intent and never generates clinical advice. Works offline in warehouses, basements, and at sea.",
+      "Co-built with Papageorgiou Vasiliki (MD) and Skreka Theodora (Occupational Health). Pitched at Archimedes Accelerator Demo Day (Athens, June 2026). Evolved from EIT Health i-Days 2025 (2nd place nationwide)."
     ],
     "bullets": [
-      "Hybrid safety architecture — ERC JSON state machine + Meltemi NLU; zero free-form medical output from the LLM",
-      "Zero-touch emergency flow — one EMERGENCY tap, then voice-driven CPR with ~110 BPM metronome and Greek TTS",
-      "Offline-capable core — protocols, keyword NLU fallback, and documented on-device Meltemi GGUF path",
-      "EMS ecosystem hooks — AED map (Supabase), typed 112/EKAB GPS dispatch, GoodSAM-style nearby-bystander alerts",
-      "Engineering rigor — Jest on every state transition; demo mode for investor and clinical pitches"
+      "SOS → response pipeline — one-tap emergency, push/SMS alerts, AI guide live in ~10s, admin EKAB dispatch with one tap, automatic accident log book",
+      "Greek AI assistant — Meltemi NLU with offline edge path; two-way voice so hands stay on the patient, not the screen",
+      "ERC 2025 real-time guidance — JSON state machine, voice confirmation, injury photo upload with AI triage assist",
+      "Compliance by design — Law 5239/2025 alignment, HSE admin dashboard, certification expiry alerts, PDF reports for inspections",
+      "High-risk verticals — factories >250 staff, Piraeus shipping fleets (STCW + offline), private schools"
     ],
     "meta": []
   },
@@ -25,11 +25,11 @@
       "Full product surface — explore & filters, inbox, trainings with XP/badges, house groups, rent tracker, digital agreements",
       "Monetization — Stripe premium, freemium Roomatch daily limits, bilingual Greek/English UX",
       "Production platform — Next.js 15, Supabase (32+ tables, RLS), Vercel; GDPR audit and Playwright E2E",
-      "Hybrid safety architecture — ERC JSON state machine + Meltemi NLU; zero free-form medical output from the LLM",
-      "Zero-touch emergency flow — one EMERGENCY tap, then voice-driven CPR with ~110 BPM metronome and Greek TTS",
-      "Offline-capable core — protocols, keyword NLU fallback, and documented on-device Meltemi GGUF path",
-      "EMS ecosystem hooks — AED map (Supabase), typed 112/EKAB GPS dispatch, GoodSAM-style nearby-bystander alerts",
-      "Engineering rigor — Jest on every state transition; demo mode for investor and clinical pitches"
+      "SOS → response pipeline — one-tap emergency, push/SMS alerts, AI guide live in ~10s, admin EKAB dispatch with one tap, automatic accident log book",
+      "Greek AI assistant — Meltemi NLU with offline edge path; two-way voice so hands stay on the patient, not the screen",
+      "ERC 2025 real-time guidance — JSON state machine, voice confirmation, injury photo upload with AI triage assist",
+      "Compliance by design — Law 5239/2025 alignment, HSE admin dashboard, certification expiry alerts, PDF reports for inspections",
+      "High-risk verticals — factories >250 staff, Piraeus shipping fleets (STCW + offline), private schools"
     ],
     "meta": []
   },
@@ -49,6 +49,23 @@
       "Klimaka NGO, August 2025"
     ],
     "bullets": [],
+    "meta": []
+  },
+  "/articles/#healthcare-ai-lit-part-3": {
+    "paragraphs": [
+      "Static medical exams miss what real care demands: navigating messy EHRs, requesting the right imaging, and sequential clinical reasoning. From MedAgentBench to PsychBench — a tour of interactive agent benchmarks measuring true clinical utility.",
+      "[Healthcare AI | Literature Research Synthesis | Part 3]",
+      "From EHR Navigation to Empathy: A New Era of Medical AI Benchmarking. We often obsess over whether an AI can pass a medical exam, but real-world clinical care is not a multiple-choice test. It requires interacting with patients, navigating messy EHRs, and sequential reasoning. Here is how we evaluate autonomous AI agents today."
+    ],
+    "bullets": [
+      "MedAgentBench (Stanford): Tests LLMs on a FHIR-compliant EHR (300 tasks, 100 patient profiles, >700k records) to query patient data and handle multi-step workflows [1].",
+      "AgentClinic: Simulates 9 medical specialties where agents actively request multimodal data like EKGs, MRIs, and X-rays [2].",
+      "HealthBench: Evaluates agents across thousands of open-ended medical and triage conversations.",
+      "AgentRx: Evaluates single and collaborative agents on multimodal clinical risk prediction using fragmented, temporal EHR data, clinical notes, and imaging.",
+      "PsychiatryBench: Built from foundational texts (DSM-5-TR, Stahl's) to test complex psychiatric reasoning and treatment planning [3].",
+      "MentalBench-10: Focuses deeply on affective alignment and empathy in conversational mental healthcare.",
+      "PsychBench: An epidemiological audit evaluating 28,800 LLM-generated profiles across 120 intersectional demographic cohorts to test population-level validity and stereotype rigidity [4]."
+    ],
     "meta": []
   },
   "/articles/#iceland-fire-and-ice": {
@@ -89,17 +106,18 @@
   },
   "/cv/#grid-dynamics": {
     "paragraphs": [
-      "Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on enabling LLMs and advanced ML workflows."
+      "Designing, building and scaling production-grade AI/ML systems and infrastructure, with emphasis on LLMs, computer vision, and advanced ML workflows."
     ],
     "bullets": [
-      "Provide technical leadership, mentor peers, contribute to architectural decisions, code reviews, standards and best practices for ML engineering across the team. Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.",
-      "Experiment with cutting-edge ML/AI, including generative AI/LLMs, modern architectures and tooling — contributing to innovation, proofs-of-concept (PoCs), and future roadmap of the company's AI capabilities.",
-      "Architect and implement scalable ML infrastructure and tooling to support the full ML lifecycle — from data ingestion and preprocessing, through training/fine-tuning/evaluation, to deployment and monitoring. Build production-ready ML services: clean, maintainable and scalable codebases, API endpoints, model serving, CI/CD pipelines and deployment to cloud or containerized environments.",
-      "Collaborate with stakeholders (product managers, architects, domain experts) to translate business requirements into ML/AI solutions — including LLM-based features, semantic search, RAG pipelines, and custom model workflows. Optimize model performance and compute efficiency, including distributed training, batch & streaming data pipelines, resource utilization, latency, and reliability for ML workloads."
+      "Architect scalable ML infrastructure and production-ready services covering the full lifecycle — data ingestion, training/fine-tuning, deployment, and monitoring — with API endpoints, model serving, and CI/CD pipelines on GCP/AWS.",
+      "Collaborate with stakeholders to deliver ML/AI solutions (LLM features, RAG pipelines, semantic search); provide technical leadership through architectural decisions, code reviews, and mentoring.",
+      "Optimize model performance and compute efficiency, including distributed training, batch & streaming data pipelines, resource utilization, latency, and reliability for ML workloads.",
+      "Collaborate with data engineering, devops and product teams to integrate ML systems into broader data infrastructure, ensuring data quality, compliance, ethical AI practices, and smooth production integrations.",
+      "Experiment with cutting-edge ML/AI, including generative AI/LLMs, modern architectures and tooling — contributing to innovation, proofs-of-concept (PoCs), and future roadmap of the company's AI capabilities."
     ],
     "meta": [
-      "Skills: Machine Learning Engineering, LLMs, RAG Systems, Semantic Search, MLOps, Distributed Training, Model Serving, CI/CD, Technical Leadership, Prompt Engineering",
-      "Tech Stack: Python, SQL (BigQuery, PostgreSQL, MySQL), Apache Spark, PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, NLP, Cloud Platforms (GCP, AWS), Docker, API Development, Data Pipelines, Model Deployment"
+      "Skills: Machine Learning Engineering, Computer Vision, Robotics, LLMs, RAG Systems, Semantic Search, MLOps, Pose Estimation, Model Serving, CI/CD, Technical Leadership, Prompt Engineering",
+      "Tech Stack: Python, PyTorch, SAM3, DINOv2, FoundationPose, RGBTrack, OpenCV, SQL (BigQuery, PostgreSQL), Apache Spark, TensorFlow, Scikit-learn, Wandelbots NOVA, NLP, GCP, AWS, Docker, Kubernetes, API Development, CI/CD, Data Pipelines"
     ]
   },
   "/projects/#habit-tracker": {
@@ -553,9 +571,17 @@
     "paragraphs": [],
     "bullets": [
       "Major: Computing & Software Systems (GPA: 9.1/10.0, Top 5%).",
-      "Thesis: \"Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data\" [ pdf ] [ slides ]"
+      "Integrated 5-year engineering degree combining computer science, software systems, mathematics, signal processing, and intelligent systems.",
+      "Completed advanced coursework in machine learning, statistical signal processing, pattern recognition, software engineering, optimization, and data-driven modeling.",
+      "Thesis: \"Machine & Deep Learning Classification and Visual Explanation of Dyslexia and Spelling Deficiency Using fMRI Data\" [ pdf ] [ slides ]",
+      "Thesis focus: interpretable neuroimaging AI, combining classical ML and deep learning with visual explainability to support transparent decision-making in educational/clinical contexts.",
+      "Active in IEEE NTUA SB , EESTEC LC Athens , and broader IEEE student activities, with participation in technical events and algorithmic problem-solving initiatives.",
+      "Awarded 2nd place nationwide in IEEEXtreme 13.0 ; ranked 159/4103 teams globally (Top 4%) . [ award ]",
+      "Supported student-led STEM engagement through workshop activities (including Arduino-focused sessions). [ workshop ]",
+      "Contributed to student-community initiatives and cross-disciplinary collaboration through outreach and volunteering during university years."
     ],
     "meta": [
+      "Activities & Societies: Top 5% cohort performance, high distinction GPA, interdisciplinary AI + neuroscience thesis, strong blend of theoretical foundations and applied ML engineering.",
       "Skills: Data Processing, REST APIs, Bioinformatics, Deep Learning, Data Science, Data Analysis, Data Visualization, Statistical Modeling, Machine Learning, MLOps, Version Control, TensorFlow, Computer Vision, Apache Spark, SQL, Data Extraction, NLP, Python, Signal Processing, Git"
     ]
   },
@@ -592,9 +618,13 @@
   "/cv/#deree": {
     "paragraphs": [],
     "bullets": [
-      "Focused on Finance and Data Analytics (GPA: 3.82/4.00)."
+      "Focused on Finance and Data Analytics (GPA: 3.82/4.00).",
+      "Completed in parallel with NTUA studies, strengthening business literacy and decision-making frameworks alongside core engineering training.",
+      "Relevant coursework: Instruments & Markets , Foundations of Investments , Portfolio Management .",
+      "Awarded a Stavros Niarchos Foundation (SNF) Merit Scholarship for parallel studies at Deree. [ scholarship ]"
     ],
     "meta": [
+      "Academic Highlights: Parallel-track distinction with strong GPA; integrated finance knowledge with Python/ML analytics mindset for practical, data-informed decision support.",
       "Skills: Data Processing, Data Science, Data Analysis, Data Visualization, Machine Learning, Portfolio Management, Data Extraction, Python, Git"
     ]
   },

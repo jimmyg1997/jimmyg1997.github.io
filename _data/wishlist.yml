@@ -103,6 +103,24 @@
   bought: false
   date_added: "2026-06"
 
+- name: "Insta360 X4 — 360° Action Camera"
+  price_range: "~1,700 PLN / ~$425"
+  category: tech
+  description: "8K 360° HDR camera with 72MP photos, FlowState stabilization, and invisible selfie stick effect — for travel and calisthenics content"
+  link: "https://allegro.pl/oferta/insta360-x4-kamera-sportowa-360-hdr-72mp-stabilizacja-akumulator-18436268446"
+  image: "../assets/images/wishlist/insta360-x4.png"
+  bought: false
+  date_added: "2026-06"
+
+- name: "Ray-Ban Meta Wayfarer (Gen 2) — Matte Black"
+  price_range: "~1,900 PLN / ~$459"
+  category: tech
+  description: "AI smart glasses with built-in camera, open-ear audio, and Meta AI — hands-free capture and calls on the go"
+  link: "https://www.mediaexpert.pl/gaming/pokoj-gracza/okulary-ai/okulary-ray-ban-meta-wayfarer-gen-2-czarny-mat-2"
+  image: "../assets/images/wishlist/ray-ban-meta-wayfarer-gen2.png"
+  bought: false
+  date_added: "2026-06"
+
 - name: "Drone"
   price_range: "$270"
   category: tech

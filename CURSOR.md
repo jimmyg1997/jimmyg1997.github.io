@@ -42,6 +42,10 @@ bundle exec jekyll build
 
 # CV timeline logic test
 node scripts/verify-journey-data.js
+
+# Travel screenshot ingest (localhost only)
+# Add OPENAI_API_KEY or ANTHROPIC_API_KEY to scripts/travel-ingest/.env
+node scripts/travel-ingest/server.mjs   # → http://127.0.0.1:8765
 ```
 
 ## Resolving problems

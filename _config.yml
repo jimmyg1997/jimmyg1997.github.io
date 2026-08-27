@@ -23,9 +23,9 @@ description              : "Senior ML Engineer | AI Engineer | PhD Candidate —
 tagline:
   primary: "Senior ML Engineer | AI Engineer | PhD Candidate"
   secondary: "Calisthenics Athlete | Traveller"
-url                      : "https://jimmyg1997.github.io"
+url                      : "https://dimigeorgiou.github.io"
 baseurl                  : ""
-repository               : "jimmyg1997/jimmyg1997.github.io"
+repository               : "dimigeorgiou/dimigeorgiou.github.io"
 teaser                   : "/assets/images/overall/publications-thumb.png"
 logo                     : "/assets/images/me/profile_v1.png"
 og_image                 : "/assets/images/banner.png"
@@ -125,7 +125,7 @@ author:
       url: "https://www.linkedin.com/in/dimitrios-georgiou/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jimmyg1997/"
+      url: "https://github.com/dimigeorgiou/"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=whiGlXQAAAAJ&hl=en"
@@ -138,7 +138,7 @@ footer:
       url: "https://www.linkedin.com/in/dimitrios-georgiou/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jimmyg1997/"
+      url: "https://github.com/dimigeorgiou/"
 
 
 # Reading Files

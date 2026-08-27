@@ -1,5 +1,6 @@
 .autopilot.json
 tmp/
+scripts/travel-ingest/.env
 
 # Local development artifacts
 _site/

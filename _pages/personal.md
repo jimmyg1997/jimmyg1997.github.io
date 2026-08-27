@@ -152,7 +152,7 @@ excerpt: "Continuous learning, Seminars, Courses and Books I recommend."
   <p class="dg-personal-skills"><b>Tech stack</b> Python, PyTorch, MNE-Python, Scikit-learn, Plotly, Streamlit, NumPy, Pandas</p>
 
   <div class="project-links">
-    <a href="https://github.com/jimmyg1997/ecog-video-analysis" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">View Code</a>
+    <a href="https://github.com/dimigeorgiou/ecog-video-analysis" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">View Code</a>
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7381093095079178240/" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">LinkedIn Post</a>
   </div>
 </article>

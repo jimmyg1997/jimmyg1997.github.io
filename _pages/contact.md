@@ -25,7 +25,7 @@ excerpt: "Get in touch with me"
       action="https://formspree.io/f/xqarllrb"
       method="POST"
     >
-      <input type="hidden" name="_subject" value="New message from dimitriosgeorgiou.github.io">
+      <input type="hidden" name="_subject" value="New message from dimigeorgiou.github.io">
       <input type="hidden" name="_format" value="plain">
       <input type="hidden" name="_replyto" value="">
       <input type="text" name="_gotcha" class="dg-contact__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -73,7 +73,7 @@ excerpt: "Get in touch with me"
       </a>
     </li>
     <li>
-      <a href="https://github.com/jimmyg1997/" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/dimigeorgiou/" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-github" aria-hidden="true"></i>
         <span>GitHub</span>
       </a>

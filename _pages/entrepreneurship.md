@@ -115,7 +115,7 @@ excerpt: "Ventures at the intersection of AI, product, and real-world impact in 
   </div>
 
   <div class="dg-venture-card__links">
-    <a href="https://github.com/jimmyg1997/hygeIA" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://github.com/dimigeorgiou/hygeIA" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="/personal/#eit-health-idays-2025-competition" class="btn btn--primary btn--small">i-Days competition</a>
   </div>
 </article>

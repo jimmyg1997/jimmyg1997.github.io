@@ -1186,11 +1186,16 @@ html {
 }
 
 .archive__item-excerpt {
-  font-size: var(--text-xs);
-  color: var(--text-body);
-  line-height: 1.3;
+  font-size: var(--text-sm);
+  color: var(--text-dark);
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   flex-grow: 1;
+}
+
+.feature__wrapper .archive__item-excerpt {
+  font-size: 0.9375rem;
+  line-height: 1.55;
 }
 
 .archive__item .btn {

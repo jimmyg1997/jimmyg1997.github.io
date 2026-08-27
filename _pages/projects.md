@@ -30,7 +30,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Note:</strong> Educational research prototype — not for clinical deployment. Built to explore agent orchestration where mistakes matter, on anonymized helpline-style audio (ΚΛΙΜΑΚΑ domain).</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python 3.12, FastAPI, faster-whisper, OpenAI (NER only), AutoGen, LangGraph, CrewAI, Grafana/Prometheus/Loki, vanilla JS dashboard</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/greek-clinical-agent-lab" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
+      <a href="https://github.com/dimigeorgiou/greek-clinical-agent-lab" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
     </div>
   </div>
 </div>
@@ -164,7 +164,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Impact:</strong> Deployed in pilot hospitals, supporting mental health professionals in early intervention and risk assessment.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, Streamlit, PostgreSQL, Pandas, Plotly, Security Encryption</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/suicide-prevention-survey" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/suicide-prevention-survey" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>
@@ -180,7 +180,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Results:</strong> 87% accuracy in predicting COVID-19 status from genetic factors, with detailed feature importance analysis identifying key genetic markers.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, Scikit-learn, XGBoost, SHAP, Pandas, NumPy, Seaborn</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/COVID-19-Tabular-Classification-Genes" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/COVID-19-Tabular-Classification-Genes" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>
@@ -197,7 +197,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Features:</strong> Resume-safe pipeline (<code>--resume</code>, <code>--update</code>), Greek/English subtitle support, local vault dashboard with topic sync and scoped graph views, and single-video ingest from the browser UI.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, OpenAI / Gemini, NotebookLM, Obsidian Markdown, Playwright, pytest</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/yt-notebooklm-obsidian" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
+      <a href="https://github.com/dimigeorgiou/yt-notebooklm-obsidian" class="btn btn--primary" target="_blank" rel="noopener">View Code</a>
     </div>
   </div>
 </div>
@@ -213,7 +213,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Implementation:</strong> Built with modern web technologies, featuring an intuitive interface for quick daily check-ins and comprehensive analytics to visualize habit consistency over time.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> React 18 + TypeScript, Vite, Tailwind CSS, Supabase (database/auth), Capacitor (iOS/Android), Vite PWA, Recharts, Framer Motion.</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/habit-tracker" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/habit-tracker" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>
@@ -229,7 +229,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Architecture:</strong> Modular Python design with async processing, configurable pipelines, and scheduled automation via cron jobs.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, Gmail API, Google Sheets API, Google Docs API, OpenAI API, Telegram Bot API, AsyncIO, Click (CLI)</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/gmail-newsletter-reporter" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/gmail-newsletter-reporter" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>
@@ -245,7 +245,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Analytics:</strong> Response distribution analysis, demographic segmentation, trend identification, and automated insight generation.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, Streamlit, Plotly, Pandas, NumPy, SciPy, SQLite</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/polls-analyzer" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/polls-analyzer" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>
@@ -262,7 +262,7 @@ excerpt: "Machine Learning & Data Science Portfolio"
     <p><strong>Performance:</strong> Handles 1000+ requests/second, horizontal scaling via Docker Swarm, and production-ready logging and monitoring.</p>
     <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, Docker, Uvicorn, Scikit-learn, Pandas, Pydantic, Pytest</p>
     <div class="project-links">
-      <a href="https://github.com/jimmyg1997/ml-feature-engineering-fastapi-docker" class="btn btn--primary" target="_blank">View Code</a>
+      <a href="https://github.com/dimigeorgiou/ml-feature-engineering-fastapi-docker" class="btn btn--primary" target="_blank">View Code</a>
     </div>
   </div>
 </div>

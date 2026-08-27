@@ -7,6 +7,7 @@
   border: 1px solid var(--border, #e8e8e4);
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-sans, "DM Sans", sans-serif);
 }
 
 .dg-journey__header {
@@ -15,15 +16,17 @@
 }
 
 .dg-journey__title {
-  font-family: var(--font-display, "Playfair Display", serif);
-  font-size: 2rem;
-  font-weight: 600;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin: 0 0 0.5rem;
   color: var(--text-dark, #111);
 }
 
 .dg-journey__intro {
   margin: 0;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--text-body, #333);
@@ -37,9 +40,10 @@
 }
 
 .dg-journey__filter {
-  font-family: var(--font-mono, "JetBrains Mono", monospace);
-  font-size: 0.7rem;
-  letter-spacing: 0.07em;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 0.45rem 0.75rem;
   border: 1px solid var(--border, #e8e8e4);
@@ -69,10 +73,10 @@
 .dg-journey__scroll-hint {
   margin: 0;
   padding: 0.5rem 0.85rem 0;
-  font-family: var(--font-mono, "JetBrains Mono", monospace);
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
   color: var(--text-light, #888);
 }
 
@@ -227,9 +231,10 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  gap: 0.35rem;
   padding: 0 0.5rem;
   font-family: var(--font-sans, "DM Sans", sans-serif);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-dark, #111);
@@ -259,6 +264,7 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--text-dark, #111);
+  overflow: hidden;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   box-sizing: border-box;
 
@@ -547,12 +553,11 @@
 
 
 .dg-journey__bar-title {
-  flex: 0 1 auto;
+  display: block;
   min-width: 0;
-  max-width: calc(100% - 8px);
-  padding: 0 0.35rem;
-  font-family: var(--font-body, "DM Sans", system-ui, sans-serif);
-  font-size: 0.58rem;
+  max-width: 100%;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.55rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 1.15;
@@ -561,14 +566,6 @@
   text-overflow: ellipsis;
   pointer-events: none;
   color: var(--text-dark, #111);
-
-  &.is-at-start {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 0;
-    max-width: min(14rem, calc(100% - 6px));
-  }
 }
 
 .dg-journey__tooltip--rich {
@@ -579,8 +576,9 @@
 .dg-journey__tooltip-bullets {
   margin: 0 0 0.35rem;
   padding: 0 0 0 1rem;
-  font-size: 0.74rem;
-  line-height: 1.45;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.76rem;
+  line-height: 1.5;
   color: var(--text-body, #333);
 
   li {
@@ -782,17 +780,33 @@
 .dg-journey__tooltip {
   position: fixed;
   z-index: 10050;
-  max-width: 18rem;
-  padding: 0.55rem 0.7rem;
+  max-width: 22rem;
+  max-height: min(22rem, 58vh);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.7rem 0.85rem 0.75rem;
   background: var(--bg-white, #fff);
   border: 1px solid var(--border, #e8e8e4);
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14);
-  pointer-events: none;
-  transition: opacity 0.12s ease;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+  pointer-events: auto;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(17, 17, 17, 0.28) transparent;
 
   &[hidden] {
     display: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(17, 17, 17, 0.22);
+    border-radius: 8px;
   }
 }
 
@@ -818,7 +832,7 @@
 
 .dg-journey__tooltip-title {
   display: block;
-  font-family: var(--font-display, "Playfair Display", serif);
+  font-family: var(--font-sans, "DM Sans", sans-serif);
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.25;
@@ -836,8 +850,9 @@
 
 .dg-journey__tooltip-summary {
   margin: 0 0 0.35rem;
-  font-size: 0.78rem;
-  line-height: 1.45;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: var(--text-body, #333);
 }
 
@@ -871,12 +886,21 @@
 }
 
 .dg-journey__tooltip-link {
-  display: block;
-  font-family: var(--font-mono, "JetBrains Mono", monospace);
-  font-size: 0.58rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
   color: var(--accent, #c8a96e);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--accent-hover, #b8965a);
+    text-decoration: underline;
+  }
 }
 
 .dg-journey__modal {
@@ -887,6 +911,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
+  font-family: var(--font-sans, "DM Sans", sans-serif);
 
   &[hidden] {
     display: none;
@@ -991,7 +1016,7 @@
 }
 
 .dg-journey__modal-title {
-  font-family: var(--font-display, "Playfair Display", serif);
+  font-family: var(--font-sans, "DM Sans", sans-serif);
   font-size: 1.35rem;
   font-weight: 600;
   line-height: 1.25;
@@ -1098,7 +1123,7 @@ body.dg-journey-modal-open {
 .dg-journey__detail-lane--travel { background: rgba(3, 105, 161, 0.12); }
 
 .dg-journey__detail-title {
-  font-family: var(--font-display, "Playfair Display", serif);
+  font-family: var(--font-sans, "DM Sans", sans-serif);
   font-size: 1.15rem;
   font-weight: 600;
   margin: 0 0 0.2rem;

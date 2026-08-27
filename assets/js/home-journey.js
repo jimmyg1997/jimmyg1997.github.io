@@ -37,7 +37,7 @@
 
   var startYear = data.chart.start_year || 2015;
   var endYear = data.chart.end_year || 2026;
-  var labelW = 128;
+  var labelW = 148;
   var chartW = 1100;
   var rowHMin = 26;
   var axisH = 34;
@@ -62,6 +62,25 @@
   tipEl.setAttribute('role', 'tooltip');
   tipEl.hidden = true;
   document.body.appendChild(tipEl);
+
+  var tipItem = null;
+  var hideTipTimer = null;
+
+  function cancelHideTip() {
+    if (hideTipTimer) {
+      clearTimeout(hideTipTimer);
+      hideTipTimer = null;
+    }
+  }
+
+  function scheduleHideTip() {
+    cancelHideTip();
+    hideTipTimer = setTimeout(function () {
+      hideTipTimer = null;
+      if (tipEl.matches(':hover')) return;
+      hideTip();
+    }, 200);
+  }
 
   function parseDate(str) {
     if (!str) return null;
@@ -671,34 +690,44 @@
     return mergeTravelByPixelGap(out, TRAVEL_PIN_MIN_GAP);
   }
 
-  function travelBarLabel(item, widthPx) {
-    var meta = travelClusterMeta(item.travelPlaces || []);
-    var flags = meta.flags;
-    var n = item.pinLabel || String(meta.cityCount || 0);
-    if (widthPx < 34) return flags || n;
-    if (widthPx < 58) {
-      return (flags ? flags + ' ' : '') + meta.cityCount + (meta.cityCount === 1 ? ' city' : ' cities');
+  function fitBarLabel(item, widthPx) {
+    if (item.lane === 'travel' && item.cluster) {
+      var meta = travelClusterMeta(item.travelPlaces || []);
+      var flags = meta.flags;
+      var n = meta.cityCount || 0;
+      var cities = n + (n === 1 ? ' city' : ' cities');
+      if (widthPx < 28) return flags || String(n);
+      if (widthPx < 72) return flags ? flags + ' ' + n : cities;
+      return (flags ? flags + ' ' : '') + cities;
     }
-    return (
-      (flags ? flags + ' ' : '') +
-      meta.cityCount +
-      ' cities \u00b7 ' +
-      shortTitle(item.when || item.title, 16)
-    );
-  }
 
-  function barDisplayLabel(item, widthPx) {
-    var label = item.bar_label || item.title || '';
-    if (item.lane === 'education' && item.start && item.end && !item.bar_label) {
-      var rs = parseDate(item.start);
-      var re = parseDate(item.end);
-      if (rs && re && monthSpan(rs, re) > 24) {
-        label = rs.year + '\u2013' + re.year + ' \u00b7 ' + shortTitle(item.title, 28);
-      }
+    var full = item.bar_label || item.title || '';
+    if (!full) return '';
+    var maxChars = Math.floor((widthPx - 12) / 5.5);
+    if (maxChars < 3) return '';
+    if (full.length <= maxChars) return full;
+
+    var title = item.title || '';
+    var candidates = [];
+    if (item.bar_label) candidates.push(item.bar_label);
+    candidates.push(title);
+    var at = title.split(' @ ');
+    if (at.length === 2) {
+      candidates.push(at[1]);
+      candidates.push(at[0]);
     }
-    if (!label) return '';
-    var maxChars = Math.max(10, Math.floor((widthPx || 80) / 5.2));
-    return label.length <= maxChars ? label : shortTitle(label, maxChars);
+    var mid = title.split(' \u00b7 ');
+    if (mid.length === 2) {
+      candidates.push(mid[0]);
+      candidates.push(mid[1]);
+    }
+
+    var best = '';
+    candidates.forEach(function (c) {
+      if (!c) return;
+      if (c.length <= maxChars && c.length > best.length) best = c;
+    });
+    return best || shortTitle(full, maxChars);
   }
 
   function itemPageContent(item) {
@@ -844,6 +873,9 @@
   }
 
   function showTip(item, clientX, clientY) {
+    cancelHideTip();
+    if (tipItem === item && !tipEl.hidden) return;
+
     var lane = laneLabel[item.lane] || item.lane;
     var badges = '';
     var travelRich = item.lane === 'travel' && item.travelPlaces && item.travelPlaces.length;
@@ -877,9 +909,9 @@
 
     var body = '';
     if (travelRich) {
-      body = buildTravelDetailHtml(item, 6, 1);
+      body = buildTravelDetailHtml(item, 8, 1);
     } else {
-      body = buildItemDetailHtml(item, 4);
+      body = buildItemDetailHtml(item, 8, { paraLimit: 3 });
     }
 
     var whenLine =
@@ -887,8 +919,17 @@
         ? '<span class="dg-journey__tooltip-when">' + escapeHtml(item.when) + '</span>'
         : '';
 
-    var linkHint =
-      '<span class="dg-journey__tooltip-link">Click for full popup &rarr;</span>';
+    var link = item.link || '';
+    var cta = '';
+    if (link && link !== '#') {
+      var ctaLabel = item.lane === 'travel' ? 'Open travel map' : 'Open on ' + lane;
+      cta =
+        '<a class="dg-journey__tooltip-link" href="' +
+        escapeHtml(link) +
+        '">' +
+        escapeHtml(ctaLabel) +
+        ' \u2192</a>';
+    }
 
     tipEl.className = 'dg-journey__tooltip' + (rich ? ' dg-journey__tooltip--rich' : '');
     tipEl.innerHTML =
@@ -903,8 +944,10 @@
       '</strong>' +
       whenLine +
       body +
-      linkHint;
+      cta;
+    tipEl.scrollTop = 0;
     tipEl.hidden = false;
+    tipItem = item;
     positionTip(clientX, clientY);
   }
 
@@ -912,20 +955,24 @@
     tipEl.style.left = '0';
     tipEl.style.top = '0';
     var rect = tipEl.getBoundingClientRect();
-    var pad = 14;
-    var left = x + pad;
-    var top = y - rect.height - pad;
-    if (top < 8) top = y + pad;
+    var left = x - 28;
+    var top = y - 20;
     if (left + rect.width > window.innerWidth - 8) {
-      left = x - rect.width - pad;
+      left = window.innerWidth - rect.width - 8;
+    }
+    if (top + rect.height > window.innerHeight - 8) {
+      top = window.innerHeight - rect.height - 8;
     }
     if (left < 8) left = 8;
+    if (top < 8) top = 8;
     tipEl.style.left = left + 'px';
     tipEl.style.top = top + 'px';
   }
 
   function hideTip() {
+    cancelHideTip();
     tipEl.hidden = true;
+    tipItem = null;
   }
 
   function barCenterPx(b) {
@@ -1065,7 +1112,7 @@
     el.addEventListener('mouseleave', function () {
       if (!canHover) return;
       el.classList.remove('is-active');
-      hideTip();
+      scheduleHideTip();
     });
 
     el.addEventListener('focus', function () {
@@ -1118,21 +1165,13 @@
     };
   }
 
-  function addBarTitle(el, item, widthPx, startPx) {
-    if (widthPx < 14) return;
+  function addBarTitle(el, item, widthPx) {
+    var label = fitBarLabel(item, widthPx);
+    if (!label) return;
     var title = document.createElement('span');
     title.className = 'dg-journey__bar-title';
-    var label =
-      item.lane === 'travel' && item.cluster
-        ? travelBarLabel(item, widthPx)
-        : barDisplayLabel(item, widthPx);
     title.textContent = label;
-    title.setAttribute('title', item.title);
-    /* Long spans: keep label at the true start date, not visually centered on the bar. */
-    if (widthPx >= 72 && startPx != null) {
-      title.classList.add('is-at-start');
-      title.style.left = '4px';
-    }
+    title.setAttribute('title', item.title || label);
     el.appendChild(title);
   }
 
@@ -1224,7 +1263,7 @@
       el.style.width = b.widthPx + 'px';
       el.style.height = barH + 'px';
       el.style.top = top + 'px';
-      addBarTitle(el, item, b.widthPx, b.leftPx);
+      addBarTitle(el, item, b.widthPx);
     }
 
     bindBar(el, item);
@@ -1352,7 +1391,9 @@
       var lab = document.createElement('div');
       lab.className = 'dg-journey__lane-label';
       lab.style.width = labelW + 'px';
-      lab.textContent = block.row.label;
+      lab.textContent = block.row.emoji
+        ? block.row.emoji + ' ' + block.row.label
+        : block.row.label;
       rowEl.appendChild(lab);
 
       var area = document.createElement('div');
@@ -1414,6 +1455,27 @@
   if (scrollEl) {
     scrollEl.addEventListener('scroll', hideTip);
   }
+
+  tipEl.addEventListener('mouseenter', function () {
+    cancelHideTip();
+  });
+  tipEl.addEventListener('mouseleave', function () {
+    scheduleHideTip();
+  });
+  tipEl.addEventListener(
+    'wheel',
+    function (e) {
+      e.stopPropagation();
+      var max = tipEl.scrollHeight - tipEl.clientHeight;
+      if (max <= 0) {
+        e.preventDefault();
+        return;
+      }
+      e.preventDefault();
+      tipEl.scrollTop += e.deltaY;
+    },
+    { passive: false }
+  );
 
   milestones = milestones.concat(buildTravelMilestones(window.myTravelPosts || []));
 

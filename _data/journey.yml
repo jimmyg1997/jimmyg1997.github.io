@@ -1,6 +1,6 @@
 # Journey timeline: lane = site section. start/end: YYYY-MM.
 
-intro: "Each row matches part of the site. Earlier years are compressed; the last 15 months are expanded. Hover any bar or pin for details; click for the full popup with links to CV, projects, and more."
+intro: "Each row matches part of the site. Earlier years are compressed; the last 15 months are expanded. Hover any bar or pin to read the card — scroll inside it for more, and use the link when you want the full page."
 
 chart:
   start_year: 2015
@@ -37,26 +37,37 @@ filters:
 lanes:
   - id: work
     label: Work
+    emoji: "💼"
   - id: education
     label: Education
+    emoji: "🎓"
   - id: publications
     label: Publications
+    emoji: "📄"
   - id: articles
     label: Articles
+    emoji: "✍️"
   - id: projects
     label: Projects
+    emoji: "💻"
   - id: entrepreneurship
     label: Entrepreneurship
+    emoji: "🚀"
   - id: honors
     label: Honors & Awards
+    emoji: "🏆"
   - id: personal
     label: Personal
+    emoji: "🌱"
   - id: volunteering
     label: Volunteering
+    emoji: "🤝"
   - id: calisthenics
     label: Calisthenics
+    emoji: "🏋️"
   - id: travel
     label: Travel
+    emoji: "✈️"
 
 milestones:
   - sort: 202601e
